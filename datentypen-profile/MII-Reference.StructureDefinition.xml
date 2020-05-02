@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
-  <version value="0.9" />
+  <version value="1.0" />
   <name value="MII-Reference" />
-  <status value="draft" />
+  <status value="active" />
   <description value="Einheitliche Vorgabe zur Verwendung von Logical References" />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="rim" />
     <uri value="http://hl7.org/v3" />
