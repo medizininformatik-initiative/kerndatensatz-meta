@@ -24,6 +24,7 @@
         <severity value="error" />
         <human value="Either reference.reference XOR reference.identifier exists" />
         <expression value="$this.reference.exists() xor ($this.identifier.value.exists() and $this.identifier.system.exists()) xor $this.extension('http://hl7.org/fhir/StructureDefinition/data-absent-reason').exists()" />
+        <source value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference" />
       </constraint>
     </element>
     <element id="Reference.reference">
@@ -36,11 +37,42 @@
     </element>
     <element id="Reference.identifier.system">
       <path value="Reference.identifier.system" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Reference.identifier.value">
       <path value="Reference.identifier.value" />
+      <min value="1" />
       <mustSupport value="true" />
+    </element>
+    <element id="Reference.identifier.assigner">
+      <path value="Reference.identifier.assigner" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Reference.identifier.assigner.reference">
+      <path value="Reference.identifier.assigner.reference" />
+      <max value="0" />
+    </element>
+    <element id="Reference.identifier.assigner.identifier">
+      <path value="Reference.identifier.assigner.identifier" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Reference.identifier.assigner.identifier.system">
+      <path value="Reference.identifier.assigner.identifier.system" />
+      <min value="1" />
+      <fixedUri value="https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Reference.identifier.assigner.identifier.value">
+      <path value="Reference.identifier.assigner.identifier.value" />
+      <min value="1" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/ValueSet/core-location-identifier" />
+      </binding>
     </element>
   </differential>
 </StructureDefinition>
