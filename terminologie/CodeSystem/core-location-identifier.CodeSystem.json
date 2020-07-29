@@ -114,8 +114,13 @@
       "definition": "MIRACUM"
     },
     {
-      "code": "UKGM",
-      "display": "Universitätsklinikum Gießen/Marburg",
+      "code": "UKGI",
+      "display": "Universitätsklinikum Gießen",
+      "definition": "MIRACUM"
+    },
+    {
+      "code": "UKMB",
+      "display": "Universitätsklinikum Marburg",
       "definition": "MIRACUM"
     },
     {
