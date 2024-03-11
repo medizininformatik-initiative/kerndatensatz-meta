@@ -208,12 +208,40 @@
     {
       "code": "UME",
       "display": "Universitätsklinikum Essen",
-      "definition": "Essen"
+      "definition": "Essen",
+      "property": [
+        {
+          "code": "Konsortium",
+          "valueString": "SMITH"
+        },
+        {
+          "code": "uri",
+          "valueString": "uk-essen.de"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
     },
     {
       "code": "UKF",
       "display": "Universitätsklinikum Frankfurt",
-      "definition": "Frankfurt"
+      "definition": "Frankfurt",
+      "property": [
+        {
+          "code": "Konsortium",
+          "valueString": "MIRACUM"
+        },
+        {
+          "code": "uri",
+          "valueString": "kgu.de"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
     },
     {
       "code": "UKFR",
@@ -321,36 +349,19 @@
         },
         {
           "code": "uri",
-          "valueString": "uk-essen.de"
-        },
-        {
-          "code": "status",
-          "valueCode": "active"
-        },
-        {
-          "code": "Konsortium",
-          "valueString": "MIRACUM"
-        },
-        {
-          "code": "uri",
-          "valueString": "kgu.de"
-        },
-        {
-          "code": "status",
-          "valueCode": "active"
-        },
-        {
-          "code": "Konsortium",
-          "valueString": "SMITH"
-        },
-        {
-          "code": "uri",
           "valueString": "uke.de"
         },
         {
           "code": "status",
           "valueCode": "active"
-        },
+        }
+      ]
+    },
+    {
+      "code": "MHH",
+      "display": "Medizinische Hochschule Hannover",
+      "definition": "Hannover",
+      "property": [
         {
           "code": "Konsortium",
           "valueString": "HiGHmed"
@@ -364,11 +375,6 @@
           "valueCode": "active"
         }
       ]
-    },
-    {
-      "code": "MHH",
-      "display": "Medizinische Hochschule Hannover",
-      "definition": "Hannover"
     },
     {
       "code": "UKHD",
@@ -443,7 +449,14 @@
         {
           "code": "status",
           "valueCode": "active"
-        },
+        }
+      ]
+    },
+    {
+      "code": "UMMD",
+      "display": "Universitätsklinikum Magdeburg",
+      "definition": "Magdeburg",
+      "property": [
         {
           "code": "Konsortium",
           "valueString": "MIRACUM"
@@ -457,11 +470,6 @@
           "valueCode": "active"
         }
       ]
-    },
-    {
-      "code": "UMMD",
-      "display": "Universitätsklinikum Magdeburg",
-      "definition": "Magdeburg"
     },
     {
       "code": "UM",
@@ -608,7 +616,14 @@
         {
           "code": "status",
           "valueCode": "active"
-        },
+        }
+      ]
+    },
+    {
+      "code": "UMR",
+      "display": "Universitätsmedizin Rostock",
+      "definition": "Rostock",
+      "property": [
         {
           "code": "Konsortium",
           "valueString": "SMITH"
@@ -622,11 +637,6 @@
           "valueCode": "active"
         }
       ]
-    },
-    {
-      "code": "UMR",
-      "display": "Universitätsmedizin Rostock",
-      "definition": "Rostock"
     },
     {
       "code": "UKS",
@@ -682,7 +692,14 @@
         {
           "code": "status",
           "valueCode": "active"
-        },
+        }
+      ]
+    },
+    {
+      "code": "UKU",
+      "display": "Universitätsklinikum Ulm",
+      "definition": "Ulm",
+      "property": [
         {
           "code": "Konsortium",
           "valueString": "DIFUTURE"
@@ -696,11 +713,6 @@
           "valueCode": "active"
         }
       ]
-    },
-    {
-      "code": "UKU",
-      "display": "Universitätsklinikum Ulm",
-      "definition": "Ulm"
     },
     {
       "code": "UKW",

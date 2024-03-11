@@ -77,13 +77,13 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UKEr insert AddUri(www.uk-erlangen.de)
 * #UKEr insert AddStatus(active)
 * #UME "Universitätsklinikum Essen" "Essen"
-* #UKE insert AddKonsortium(SMITH)
-* #UKE insert AddUri(uk-essen.de)
-* #UKE insert AddStatus(active)
+* #UME insert AddKonsortium(SMITH)
+* #UME insert AddUri(uk-essen.de)
+* #UME insert AddStatus(active)
 * #UKF "Universitätsklinikum Frankfurt" "Frankfurt"
-* #UKE insert AddKonsortium(MIRACUM)
-* #UKE insert AddUri(kgu.de)
-* #UKE insert AddStatus(active)
+* #UKF insert AddKonsortium(MIRACUM)
+* #UKF insert AddUri(kgu.de)
+* #UKF insert AddStatus(active)
 * #UKFR "Universitätsklinikum Freiburg" "MIRACUM"
 * #UKFR insert AddKonsortium(MIRACUM)
 * #UKFR insert AddUri(uniklinik-freiburg.de)
@@ -109,9 +109,9 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UKE insert AddUri(uke.de)
 * #UKE insert AddStatus(active)
 * #MHH "Medizinische Hochschule Hannover" "Hannover"
-* #UKE insert AddKonsortium(HiGHmed)
-* #UKE insert AddUri(mh-hannover.de)
-* #UKE insert AddStatus(active)
+* #MHH insert AddKonsortium(HiGHmed)
+* #MHH insert AddUri(mh-hannover.de)
+* #MHH insert AddStatus(active)
 * #UKHD "Universitätsklinikum Heidelberg" "Heidelberg"
 * #UKHD insert AddKonsortium(HiGHmed)
 * #UKHD insert AddUri(ukhd.de)
@@ -129,9 +129,9 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UKL insert AddUri(uniklinikum-leipzig.de)
 * #UKL insert AddStatus(active)
 * #UMMD "Universitätsklinikum Magdeburg" "Magdeburg"
-* #UKL insert AddKonsortium(MIRACUM)
-* #UKL insert AddUri(www.med.uni-magdeburg.de)
-* #UKL insert AddStatus(active)
+* #UMMD insert AddKonsortium(MIRACUM)
+* #UMMD insert AddUri(www.med.uni-magdeburg.de)
+* #UMMD insert AddStatus(active)
 * #UM "Universitätsmedizin der Johannes Gutenberg-Universität Mainz" "Mainz"
 * #UM insert AddKonsortium(MIRACUM)
 * #UM insert AddUri(unimedizin-mainz.de)
@@ -164,9 +164,9 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UKR insert AddUri(ukr.de)
 * #UKR insert AddStatus(active)
 * #UMR "Universitätsmedizin Rostock" "Rostock"
-* #UKR insert AddKonsortium(SMITH)
-* #UKR insert AddUri(med.uni-rostock.de)
-* #UKR insert AddStatus(active)
+* #UMR insert AddKonsortium(SMITH)
+* #UMR insert AddUri(med.uni-rostock.de)
+* #UMR insert AddStatus(active)
 * #UKS "Universitätsklinikum des Saarlandes" "Saarbrücken / Homburg"
 * #UKS insert AddKonsortium(DIFUTURE)
 * #UKS insert AddUri(uks.eu)
@@ -180,9 +180,9 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UKT insert AddUri(medizin.uni-tuebingen.de)
 * #UKT insert AddStatus(active)
 * #UKU "Universitätsklinikum Ulm" "Ulm"
-* #UKT insert AddKonsortium(DIFUTURE)
-* #UKT insert AddUri(uniklinik-ulm.de)
-* #UKT insert AddStatus(active)
+* #UKU insert AddKonsortium(DIFUTURE)
+* #UKU insert AddUri(uniklinik-ulm.de)
+* #UKU insert AddStatus(active)
 * #UKW "Universitätsklinikum Würzburg" "Würzburg"
 * #UKW insert AddKonsortium(HiGHmed)
 * #UKW insert AddUri(ukw.de)
