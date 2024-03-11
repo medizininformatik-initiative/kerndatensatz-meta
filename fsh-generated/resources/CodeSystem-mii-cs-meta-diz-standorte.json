@@ -1,0 +1,868 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "MII_CS_Meta_DIZ_Standorte",
+  "id": "mii-cs-meta-diz-standorte",
+  "title": "MII CS Meta DIZ Standorte",
+  "description": "Medizininformatik-Initiative Standorte",
+  "url": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+  "concept": [
+    {
+      "code": "UKA",
+      "display": "Uniklinik RWTH Aachen",
+      "definition": "Aachen",
+      "property": [
+        {
+          "code": "Konsortium",
+          "valueString": "SMITH"
+        },
+        {
+          "code": "uri",
+          "valueString": "ukaachen.de"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
+    },
+    {
+      "code": "UKAU",
+      "display": "Universitätsklinikum Augsburg",
+      "definition": "Augsburg",
+      "property": [
+        {
+          "code": "Konsortium",
+          "valueString": "DIFUTURE"
+        },
+        {
+          "code": "uri",
+          "valueString": "uk-augsburg.de"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
+    },
+    {
+      "code": "Charité",
+      "display": "Charité - Universitätsmedizin Berlin",
+      "definition": "Berlin",
+      "property": [
+        {
+          "code": "Konsortium",
+          "valueString": "HiGHmed"
+        },
+        {
+          "code": "uri",
+          "valueString": "charite.de"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
+    },
+    {
+      "code": "UKOWL",
+      "display": "Universitätsklinikum OWL",
+      "definition": "Bielefeld",
+      "property": [
+        {
+          "code": "Konsortium",
+          "valueString": "NA"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
+    },
+    {
+      "code": "UKRUB",
+      "display": "Universitätsklinikum der Ruhr-Universität Bochum",
+      "definition": "Bochum",
+      "property": [
+        {
+          "code": "Konsortium",
+          "valueString": "SMITH"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
+    },
+    {
+      "code": "UKB",
+      "display": "Universitätsklinikum Bonn",
+      "definition": "Bonn",
+      "property": [
+        {
+          "code": "Konsortium",
+          "valueString": "SMITH"
+        },
+        {
+          "code": "uri",
+          "valueString": "ukbonn.de"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
+    },
+    {
+      "code": "KCH",
+      "display": "Klinikum Chemnitz",
+      "definition": "Chemnitz",
+      "property": [
+        {
+          "code": "Konsortium",
+          "valueString": "MIRACUM"
+        },
+        {
+          "code": "uri",
+          "valueString": "klinikumchemnitz.de"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
+    },
+    {
+      "code": "CTK",
+      "display": "Carl-Thiem-Klinikum Cottbus",
+      "definition": "Cottbus",
+      "property": [
+        {
+          "code": "Konsortium",
+          "valueString": "HiGHmed"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
+    },
+    {
+      "code": "UKDD",
+      "display": "Universitätsklinikum Carl Gustav Carus Dresden",
+      "definition": "Dresden",
+      "property": [
+        {
+          "code": "Konsortium",
+          "valueString": "MIRACUM"
+        },
+        {
+          "code": "uri",
+          "valueString": "ukdd.de"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
+    },
+    {
+      "code": "UKD",
+      "display": "Universitätsklinikum Düsseldorf",
+      "definition": "Düsseldorf",
+      "property": [
+        {
+          "code": "Konsortium",
+          "valueString": "SMITH"
+        },
+        {
+          "code": "uri",
+          "valueString": "uniklinik-duesseldorf.de"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
+    },
+    {
+      "code": "UKEr",
+      "display": "Universitätsklinikum Erlangen",
+      "definition": "Erlangen",
+      "property": [
+        {
+          "code": "Konsortium",
+          "valueString": "MIRACUM"
+        },
+        {
+          "code": "uri",
+          "valueString": "www.uk-erlangen.de"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
+    },
+    {
+      "code": "UME",
+      "display": "Universitätsklinikum Essen",
+      "definition": "Essen"
+    },
+    {
+      "code": "UKF",
+      "display": "Universitätsklinikum Frankfurt",
+      "definition": "Frankfurt"
+    },
+    {
+      "code": "UKFR",
+      "display": "Universitätsklinikum Freiburg",
+      "definition": "MIRACUM",
+      "property": [
+        {
+          "code": "Konsortium",
+          "valueString": "MIRACUM"
+        },
+        {
+          "code": "uri",
+          "valueString": "uniklinik-freiburg.de"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
+    },
+    {
+      "code": "UKGI",
+      "display": "Universitätsklinikum Gießen",
+      "definition": "Gießen",
+      "property": [
+        {
+          "code": "Konsortium",
+          "valueString": "MIRACUM"
+        },
+        {
+          "code": "uri",
+          "valueString": "uni-giessen.de"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
+    },
+    {
+      "code": "UMG",
+      "display": "Universitätsmedizin Göttingen",
+      "definition": "Göttingen",
+      "property": [
+        {
+          "code": "Konsortium",
+          "valueString": "HiGHmed"
+        },
+        {
+          "code": "uri",
+          "valueString": "umg.eu"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
+    },
+    {
+      "code": "UKG",
+      "display": "Universitätsmedizin Greifswald",
+      "definition": "Greifswald",
+      "property": [
+        {
+          "code": "Konsortium",
+          "valueString": "MIRACUM"
+        },
+        {
+          "code": "uri",
+          "valueString": "www.medizin.uni-greifswald.de"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
+    },
+    {
+      "code": "UKH",
+      "display": "Universitätsklinikum Halle (Saale)",
+      "definition": "Halle (Saale)",
+      "property": [
+        {
+          "code": "Konsortium",
+          "valueString": "SMITH"
+        },
+        {
+          "code": "uri",
+          "valueString": "uk-halle.de"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
+    },
+    {
+      "code": "UKE",
+      "display": "Universitätsklinikum Hamburg-Eppendorf",
+      "definition": "Hamburg",
+      "property": [
+        {
+          "code": "Konsortium",
+          "valueString": "SMITH"
+        },
+        {
+          "code": "uri",
+          "valueString": "uk-essen.de"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "Konsortium",
+          "valueString": "MIRACUM"
+        },
+        {
+          "code": "uri",
+          "valueString": "kgu.de"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "Konsortium",
+          "valueString": "SMITH"
+        },
+        {
+          "code": "uri",
+          "valueString": "uke.de"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "Konsortium",
+          "valueString": "HiGHmed"
+        },
+        {
+          "code": "uri",
+          "valueString": "mh-hannover.de"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
+    },
+    {
+      "code": "MHH",
+      "display": "Medizinische Hochschule Hannover",
+      "definition": "Hannover"
+    },
+    {
+      "code": "UKHD",
+      "display": "Universitätsklinikum Heidelberg",
+      "definition": "Heidelberg",
+      "property": [
+        {
+          "code": "Konsortium",
+          "valueString": "HiGHmed"
+        },
+        {
+          "code": "uri",
+          "valueString": "ukhd.de"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
+    },
+    {
+      "code": "UKJ",
+      "display": "Universitätsklinikum Jena",
+      "definition": "Jena",
+      "property": [
+        {
+          "code": "Konsortium",
+          "valueString": "SMITH"
+        },
+        {
+          "code": "uri",
+          "valueString": "uniklinikum-jena.de"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
+    },
+    {
+      "code": "UKK",
+      "display": "Universitätsklinikum Köln",
+      "definition": "Köln",
+      "property": [
+        {
+          "code": "Konsortium",
+          "valueString": "HiGHmed"
+        },
+        {
+          "code": "uri",
+          "valueString": "uk-koeln.de"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
+    },
+    {
+      "code": "UKL",
+      "display": "Universitätsklinikum Leipzig",
+      "definition": "Leipzig",
+      "property": [
+        {
+          "code": "Konsortium",
+          "valueString": "SMITH"
+        },
+        {
+          "code": "uri",
+          "valueString": "uniklinikum-leipzig.de"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "Konsortium",
+          "valueString": "MIRACUM"
+        },
+        {
+          "code": "uri",
+          "valueString": "www.med.uni-magdeburg.de"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
+    },
+    {
+      "code": "UMMD",
+      "display": "Universitätsklinikum Magdeburg",
+      "definition": "Magdeburg"
+    },
+    {
+      "code": "UM",
+      "display": "Universitätsmedizin der Johannes Gutenberg-Universität Mainz",
+      "definition": "Mainz",
+      "property": [
+        {
+          "code": "Konsortium",
+          "valueString": "MIRACUM"
+        },
+        {
+          "code": "uri",
+          "valueString": "unimedizin-mainz.de"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
+    },
+    {
+      "code": "UMM",
+      "display": "Universitätsklinikum Mannheim",
+      "definition": "Mannheim",
+      "property": [
+        {
+          "code": "Konsortium",
+          "valueString": "MIRACUM"
+        },
+        {
+          "code": "uri",
+          "valueString": "umm.de"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
+    },
+    {
+      "code": "UKMR",
+      "display": "Universitätsklinikum Marburg",
+      "definition": "Marburg",
+      "property": [
+        {
+          "code": "Konsortium",
+          "valueString": "MIRACUM"
+        },
+        {
+          "code": "uri",
+          "valueString": "uni-marburg.de"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
+    },
+    {
+      "code": "KUM",
+      "display": "Klinikum der Universität München",
+      "definition": "München / LMU",
+      "property": [
+        {
+          "code": "Konsortium",
+          "valueString": "DIFUTURE"
+        },
+        {
+          "code": "uri",
+          "valueString": "lmu-klinikum.de"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
+    },
+    {
+      "code": "MRI",
+      "display": "Klinikum rechts der Isar",
+      "definition": "München / TUM",
+      "property": [
+        {
+          "code": "Konsortium",
+          "valueString": "DIFUTURE"
+        },
+        {
+          "code": "uri",
+          "valueString": "mri.tum.de"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
+    },
+    {
+      "code": "UKM",
+      "display": "Universitätsklinikum Münster",
+      "definition": "Münster",
+      "property": [
+        {
+          "code": "Konsortium",
+          "valueString": "HiGHmed"
+        },
+        {
+          "code": "uri",
+          "valueString": "ukm.de"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
+    },
+    {
+      "code": "UOL",
+      "display": "Carl von Ossietzky Universität Oldenburg",
+      "definition": "Oldenburg",
+      "property": [
+        {
+          "code": "Konsortium",
+          "valueString": "HiGHmed"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
+    },
+    {
+      "code": "UKR",
+      "display": "Universitätsklinikum Regensburg",
+      "definition": "Regensburg",
+      "property": [
+        {
+          "code": "Konsortium",
+          "valueString": "DIFUTURE"
+        },
+        {
+          "code": "uri",
+          "valueString": "ukr.de"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "Konsortium",
+          "valueString": "SMITH"
+        },
+        {
+          "code": "uri",
+          "valueString": "med.uni-rostock.de"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
+    },
+    {
+      "code": "UMR",
+      "display": "Universitätsmedizin Rostock",
+      "definition": "Rostock"
+    },
+    {
+      "code": "UKS",
+      "display": "Universitätsklinikum des Saarlandes",
+      "definition": "Saarbrücken / Homburg",
+      "property": [
+        {
+          "code": "Konsortium",
+          "valueString": "DIFUTURE"
+        },
+        {
+          "code": "uri",
+          "valueString": "uks.eu"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
+    },
+    {
+      "code": "UKSH",
+      "display": "Universitätsklinikum Schleswig-Holstein",
+      "definition": "Schleswig-Holstein",
+      "property": [
+        {
+          "code": "Konsortium",
+          "valueString": "HiGHmed"
+        },
+        {
+          "code": "uri",
+          "valueString": "uksh.de"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
+    },
+    {
+      "code": "UKT",
+      "display": "Universitätsklinikum Tübingen",
+      "definition": "DIFUTURE",
+      "property": [
+        {
+          "code": "Konsortium",
+          "valueString": "DIFUTURE"
+        },
+        {
+          "code": "uri",
+          "valueString": "medizin.uni-tuebingen.de"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "Konsortium",
+          "valueString": "DIFUTURE"
+        },
+        {
+          "code": "uri",
+          "valueString": "uniklinik-ulm.de"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
+    },
+    {
+      "code": "UKU",
+      "display": "Universitätsklinikum Ulm",
+      "definition": "Ulm"
+    },
+    {
+      "code": "UKW",
+      "display": "Universitätsklinikum Würzburg",
+      "definition": "Würzburg",
+      "property": [
+        {
+          "code": "Konsortium",
+          "valueString": "HiGHmed"
+        },
+        {
+          "code": "uri",
+          "valueString": "ukw.de"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
+    },
+    {
+      "code": "HUKW",
+      "display": "Universität Witten/Herdecke",
+      "definition": "Witten / Herdecke",
+      "property": [
+        {
+          "code": "Konsortium",
+          "valueString": "NA"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
+    },
+    {
+      "code": "RBK",
+      "display": "Robert-Bosch-Krankenhaus",
+      "definition": "Stuttgart",
+      "property": [
+        {
+          "code": "Konsortium",
+          "valueString": "HiGHmed"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
+    },
+    {
+      "code": "FDPG",
+      "display": "Forschungsdatenplattform",
+      "property": [
+        {
+          "code": "Konsortium",
+          "valueString": "MII"
+        },
+        {
+          "code": "uri",
+          "valueString": "forschen-fuer-gesundheit.de"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
+    },
+    {
+      "code": "HiGHmed",
+      "display": "Konsortium",
+      "property": [
+        {
+          "code": "Konsortium",
+          "valueString": "MII"
+        },
+        {
+          "code": "uri",
+          "valueString": "highmed.org"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
+    },
+    {
+      "code": "DSF",
+      "display": "Heilbronn",
+      "property": [
+        {
+          "code": "Konsortium",
+          "valueString": "MII"
+        },
+        {
+          "code": "uri",
+          "valueString": "hs-heilbronn.de"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
+    },
+    {
+      "code": "CRR",
+      "display": "Zentrale Plattform",
+      "property": [
+        {
+          "code": "Konsortium",
+          "valueString": "NUM"
+        },
+        {
+          "code": "uri",
+          "valueString": "num-codex.de"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "valueSet": "https://www.medizininformatik-initiative.de/fhir/core/ValueSet/core-location-identifier",
+  "experimental": false,
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "version": "2024.0.0",
+  "date": "2024-03-11",
+  "caseSensitive": true,
+  "compositional": false,
+  "copyright": "Medizininformatik-Initiative",
+  "property": [
+    {
+      "code": "Konsortium",
+      "uri": "https://www.medizininformatik-initiative.de/de/konsortien",
+      "type": "string"
+    },
+    {
+      "code": "uri",
+      "uri": "https://www.medizininformatik-initiative.de/de/konsortien/datenintegrationszentren",
+      "type": "string"
+    },
+    {
+      "code": "status",
+      "uri": "http://hl7.org/fhir/concept-properties#status",
+      "type": "code"
+    }
+  ],
+  "count": 45
+}
