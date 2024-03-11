@@ -1,0 +1,13 @@
+.DS_Store
+Thumbs.db
+/input-cache
+/output
+/temp
+/template
+fsh-generated/includes
+ImplementationGuide-medizininformatikinitiative-modulmedikation-implementationguide.json
+menu.xml
+.vscode
+ImplementationGuide-mii-ig-*
+fsh-index.json
+fsh-index.txt
