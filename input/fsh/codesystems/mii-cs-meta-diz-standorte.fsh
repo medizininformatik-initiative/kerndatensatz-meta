@@ -49,6 +49,7 @@ Description: "Medizininformatik-Initiative Standorte"
 * #Charité insert AddStatus(active)
 * #UKOWL "Universitätsklinikum OWL" "Bielefeld"
 * #UKOWL insert AddKonsortium(NA)
+* #UKOWL insert AddUri(ukowl.de)
 * #UKOWL insert AddStatus(active)
 * #"UK RUB" "Universitätsklinikum der Ruhr-Universität Bochum" "Bochum"
 * #"UK RUB" insert AddKonsortium(SMITH)
@@ -63,6 +64,7 @@ Description: "Medizininformatik-Initiative Standorte"
 * #KCH insert AddStatus(active)
 * #CTK "Carl-Thiem-Klinikum Cottbus" "Cottbus"
 * #CTK insert AddKonsortium(HiGHmed)
+* #CTK insert AddUri(ctk.de)
 * #CTK insert AddStatus(active)
 * #UKDD "Universitätsklinikum Carl Gustav Carus Dresden" "Dresden"
 * #UKDD insert AddKonsortium(MIRACUM)

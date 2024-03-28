@@ -75,6 +75,10 @@
           "valueString": "NA"
         },
         {
+          "code": "uri",
+          "valueString": "ukowl.de"
+        },
+        {
           "code": "status",
           "valueCode": "active"
         }
@@ -141,6 +145,10 @@
         {
           "code": "Konsortium",
           "valueString": "HiGHmed"
+        },
+        {
+          "code": "uri",
+          "valueString": "ctk.de"
         },
         {
           "code": "status",
