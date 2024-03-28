@@ -800,8 +800,9 @@
       ]
     },
     {
-      "code": "DSF",
-      "display": "Heilbronn",
+      "code": "HHN",
+      "display": "Hochschule Heilbronn",
+      "definition": "Heilbronn",
       "property": [
         {
           "code": "Konsortium",
@@ -819,7 +820,7 @@
     },
     {
       "code": "CRR",
-      "display": "Zentrale Plattform",
+      "display": "Zentrale Plattform NUM",
       "property": [
         {
           "code": "Konsortium",
