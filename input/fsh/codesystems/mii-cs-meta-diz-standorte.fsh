@@ -201,11 +201,11 @@ Description: "Medizininformatik-Initiative Standorte"
 * #HiGHmed insert AddKonsortium(MII)
 * #HiGHmed insert AddUri(highmed.org)
 * #HiGHmed insert AddStatus(active)
-* #DSF "Heilbronn"
-* #DSF insert AddKonsortium(MII)
-* #DSF insert AddUri(hs-heilbronn.de)
-* #DSF insert AddStatus(active)
-* #CRR "Zentrale Plattform"
+* #HHN "Hochschule Heilbronn" "Heilbronn"
+* #HHN insert AddKonsortium(MII)
+* #HHN insert AddUri(hs-heilbronn.de)
+* #HHN insert AddStatus(active)
+* #CRR "Zentrale Plattform NUM"
 * #CRR insert AddKonsortium(NUM)
 * #CRR insert AddUri(num-codex.de)
 * #CRR insert AddStatus(active)
