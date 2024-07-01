@@ -4,7 +4,21 @@
   "url": "https://www.medizininformatik-initiative.de/fhir/core//StructureDefinition/mii-pr-meta-searchparameter",
   "name": "MII_PR_Meta_SearchParameter",
   "title": "MII PR Meta SearchParameter",
-  "status": "active",
+  "status": "draft",
+  "experimental": true,
+  "date": "2024-07-01",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "description": "Das Profil legt die Mindestanforderungen fest, die SearchParameter-Ressourcen im Kerndatensatz erfüllen müssen.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -13,6 +27,32 @@
   "derivation": "constraint",
   "differential": {
     "element": [
+      {
+        "id": "SearchParameter.version",
+        "path": "SearchParameter.version",
+        "min": 1,
+        "patternString": "2024.0.0"
+      },
+      {
+        "id": "SearchParameter.experimental",
+        "path": "SearchParameter.experimental",
+        "min": 1
+      },
+      {
+        "id": "SearchParameter.date",
+        "path": "SearchParameter.date",
+        "min": 1
+      },
+      {
+        "id": "SearchParameter.publisher",
+        "path": "SearchParameter.publisher",
+        "min": 1
+      },
+      {
+        "id": "SearchParameter.contact",
+        "path": "SearchParameter.contact",
+        "min": 1
+      },
       {
         "id": "SearchParameter.code",
         "path": "SearchParameter.code",
