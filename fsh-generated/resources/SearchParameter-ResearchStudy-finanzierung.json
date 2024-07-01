@@ -1,0 +1,16 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "ResearchStudy-finanzierung",
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/SearchParameter/ResearchStudy-finanzierung",
+  "version": "1.0.0-ballot",
+  "name": "SP_MII_Studie_Finanzierung",
+  "status": "active",
+  "description": "Suchparameter für ResearchStudy.extension:Finanzierung",
+  "experimental": false,
+  "code": "finanzierung",
+  "base": [
+    "ResearchStudy"
+  ],
+  "type": "string",
+  "expression": "ResearchStudy.extension.where(url='https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-finanzierung').value"
+}

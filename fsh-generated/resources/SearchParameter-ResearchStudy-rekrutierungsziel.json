@@ -1,0 +1,16 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "ResearchStudy-rekrutierungsziel",
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/SearchParameter/ResearchStudy-rekrutierungsziel",
+  "version": "1.0.0-ballot",
+  "name": "SP_MII_Studie_Rekrutierungsziel",
+  "status": "active",
+  "description": "Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsziel",
+  "experimental": false,
+  "code": "rekrutierungsziel",
+  "base": [
+    "ResearchStudy"
+  ],
+  "type": "number",
+  "expression": "ResearchStudy.extension.where(url='https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-rekrutierung').extension.where(url='rekrutierungsziel').value"
+}

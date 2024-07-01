@@ -1,0 +1,16 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "ResearchStudy-akronym",
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/SearchParameter/ResearchStudy-akronym",
+  "version": "1.0.0-ballot",
+  "name": "SP_MII_Studie_Akronym",
+  "status": "active",
+  "description": "Suchparameter für ResearchStudy.extension:Akronym",
+  "experimental": false,
+  "code": "akronym",
+  "base": [
+    "ResearchStudy"
+  ],
+  "type": "string",
+  "expression": "ResearchStudy.extension.where(url='https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-akronym').value"
+}

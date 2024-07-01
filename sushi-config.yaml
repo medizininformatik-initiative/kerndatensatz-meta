@@ -15,3 +15,5 @@ publisher:
 #dependencies:
 #  de.basisprofil.r4: 1.4.0
 #  de.medizininformatikinitiative.kerndatensatz.meta: 1.0.3
+menu:
+  Home: index.html

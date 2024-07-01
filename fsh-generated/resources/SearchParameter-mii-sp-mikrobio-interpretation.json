@@ -1,0 +1,28 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "mii-sp-mikrobio-interpretation",
+  "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-mikrobio/SearchParameter/Observation-interpretation",
+  "version": "2024.0.0",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "name": "MII_SP_Mikrobio_Interpretation",
+  "status": "active",
+  "experimental": false,
+  "date": "2022-02-21",
+  "description": "Suchparameter für Observation.interpretation",
+  "code": "interpretation",
+  "base": [
+    "Observation"
+  ],
+  "type": "token",
+  "expression": "Observation.interpretation"
+}

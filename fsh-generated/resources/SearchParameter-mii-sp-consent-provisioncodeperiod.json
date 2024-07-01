@@ -1,0 +1,26 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "mii-sp-consent-provisioncodeperiod",
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisioncodeperiod",
+  "version": "1.0.7",
+  "name": "MII_SP_Consent_ProvisionCodePeriod",
+  "status": "active",
+  "date": "2023-05-09",
+  "description": "Composite-Suche nach Zeitraum (period) einer bestimmten, durch einen Code definierten, Provision.",
+  "code": "mii-provision-provision-code-period",
+  "base": [
+    "Consent"
+  ],
+  "type": "composite",
+  "expression": "Consent.provision.provision",
+  "component": [
+    {
+      "definition": "https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisioncode",
+      "expression": "code"
+    },
+    {
+      "definition": "https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisionperiod",
+      "expression": "period"
+    }
+  ]
+}
