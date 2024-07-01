@@ -3,7 +3,7 @@ Parent: SearchParameter
 Id: mii-pr-meta-searchparameter
 Title: "MII PR Meta SearchParameter"
 Description: "Das Profil legt die Mindestanforderungen fest, die SearchParameter-Ressourcen im Kerndatensatz erfüllen müssen."
-* insert Version
+* insert PR_CS_VS_Version
 * insert Publisher
 * ^date = "2024-07-01"
 * ^status = #draft 
