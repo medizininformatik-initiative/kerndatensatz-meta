@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "mii-pr-meta-searchparameter",
   "url": "https://www.medizininformatik-initiative.de/fhir/core//StructureDefinition/mii-pr-meta-searchparameter",
+  "version": "2024.0.0",
   "name": "MII_PR_Meta_SearchParameter",
   "title": "MII PR Meta SearchParameter",
   "status": "draft",
@@ -30,8 +31,7 @@
       {
         "id": "SearchParameter.version",
         "path": "SearchParameter.version",
-        "min": 1,
-        "patternString": "2024.0.0"
+        "min": 1
       },
       {
         "id": "SearchParameter.experimental",
