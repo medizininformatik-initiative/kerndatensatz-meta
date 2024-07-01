@@ -1,0 +1,26 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "mii-sp-patho-attester-mode",
+  "url": "https://www.medizininformatik-initiative.de/fhir/core//SearchParameter/mii-sp-patho-attester-mode",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "version": "2024.0.0",
+  "name": "MII_SP_Patho_Attester_Mode",
+  "code": "attester-mode",
+  "description": "SearchParameter for Composition.attester.mode",
+  "status": "active",
+  "base": [
+    "Composition"
+  ],
+  "type": "token",
+  "expression": "Composition.attester.mode"
+}

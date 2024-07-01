@@ -1,0 +1,27 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "mii-sp-patho-value-ratio-denominator",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/SearchParameter/mii-sp-patho-value-ratio-denominator",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "version": "2024.0.0",
+  "name": "MII_SP_Patho_Value_Ratio_Denominator",
+  "status": "active",
+  "experimental": false,
+  "description": "SearchParameter for Observation.valueRatio.denominator",
+  "code": "value-ratio-denominator",
+  "base": [
+    "Observation"
+  ],
+  "type": "quantity",
+  "expression": "Observation.value.ofType(Ratio).denominator"
+}

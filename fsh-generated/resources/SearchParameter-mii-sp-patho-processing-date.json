@@ -1,0 +1,26 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "mii-sp-patho-processing-date",
+  "url": "https://www.medizininformatik-initiative.de/fhir/core//SearchParameter/mii-sp-patho-processing-date",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "version": "2024.0.0",
+  "name": "MII_SP_Patho_Processing_Date",
+  "description": "SearchParameter for Specimen.processing.time",
+  "status": "active",
+  "code": "processing-date",
+  "base": [
+    "Specimen"
+  ],
+  "type": "date",
+  "expression": "Specimen.processing.time"
+}

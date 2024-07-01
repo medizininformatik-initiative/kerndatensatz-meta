@@ -1,0 +1,16 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "Library-relatedArtifactUrl",
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/SearchParameter/Library-relatedArtifactUrl",
+  "version": "1.0.0-ballot",
+  "name": "SP_MII_Studie_RelatedArtifactUrl",
+  "status": "active",
+  "description": "Suchparameter für Library.relatedArtifact.document.url",
+  "experimental": false,
+  "code": "relatedArtifactUrl",
+  "base": [
+    "Library"
+  ],
+  "type": "uri",
+  "expression": "Library.relatedArtifact.document.url"
+}

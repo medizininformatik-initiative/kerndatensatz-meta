@@ -1,0 +1,28 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "mii-sp-person-otheramtlich",
+  "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/SearchParameter/Patient-OtherAmtlich",
+  "version": "2024.0.0",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "name": "MII_SP_Person_OtherAmtlich",
+  "status": "active",
+  "experimental": false,
+  "date": "2022-02-21",
+  "description": "Suchparameter für Patient.gender.extension:other-amtlich",
+  "code": "other-amtlich",
+  "base": [
+    "Patient"
+  ],
+  "type": "token",
+  "expression": "Patient.gender.extension('http://fhir.de/StructureDefinition/gender-amtlich-de').value"
+}

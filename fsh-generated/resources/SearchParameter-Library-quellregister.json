@@ -1,0 +1,16 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "Library-quellregister",
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/SearchParameter/Library-quellregister",
+  "version": "1.0.0-ballot",
+  "name": "SP_MII_Studie_Quellregister",
+  "status": "active",
+  "description": "Suchparameter für Library.extension:QuellRegister",
+  "experimental": false,
+  "code": "quellregister",
+  "base": [
+    "Library"
+  ],
+  "type": "token",
+  "expression": "Library.extension.where(url='https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-quell-register').value"
+}

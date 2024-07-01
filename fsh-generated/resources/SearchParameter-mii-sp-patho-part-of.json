@@ -1,0 +1,26 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "mii-sp-patho-part-of",
+  "url": "https://www.medizininformatik-initiative.de/fhir/core//SearchParameter/mii-sp-patho-part-of",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "version": "2024.0.0",
+  "name": "MII_SP_Patho_Part_Of",
+  "code": "part-of",
+  "description": "SearchParameter for Media.partOf",
+  "status": "active",
+  "base": [
+    "Media"
+  ],
+  "type": "reference",
+  "expression": "Media.partOf"
+}

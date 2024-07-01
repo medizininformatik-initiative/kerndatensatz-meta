@@ -1,0 +1,16 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "ResearchStudy-armName",
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/SearchParameter/ResearchStudy-armName",
+  "version": "1.0.0-ballot",
+  "name": "SP_MII_Studie_ArmName",
+  "status": "active",
+  "description": "Suchparameter für ResearchStudy.arm.name",
+  "experimental": false,
+  "code": "armName",
+  "base": [
+    "ResearchStudy"
+  ],
+  "type": "string",
+  "expression": "ResearchStudy.arm.name"
+}

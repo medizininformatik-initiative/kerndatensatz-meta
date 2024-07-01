@@ -1,0 +1,16 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "DocumentReference-title",
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/SearchParameter/DocumentReference-title",
+  "version": "1.0.0-ballot",
+  "name": "SP_MII_Studie_Title",
+  "status": "active",
+  "description": "Suchparameter für DocumentReference.content.attachment.title",
+  "experimental": false,
+  "code": "title",
+  "base": [
+    "DocumentReference"
+  ],
+  "type": "string",
+  "expression": "DocumentReference.content.attachment.title"
+}

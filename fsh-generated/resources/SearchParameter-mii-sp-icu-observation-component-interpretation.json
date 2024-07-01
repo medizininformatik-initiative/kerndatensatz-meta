@@ -1,0 +1,28 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "mii-sp-icu-observation-component-interpretation",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/observation-component-interpretation",
+  "version": "2024.0.0-ballot",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "name": "SP_MII_ICU_Observation_Component_Interpretation",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-01-02",
+  "description": "Suchparameter für Observation.component.interpretation",
+  "code": "component-interpretation",
+  "base": [
+    "Observation"
+  ],
+  "type": "token",
+  "expression": "Observation.component.interpretation"
+}

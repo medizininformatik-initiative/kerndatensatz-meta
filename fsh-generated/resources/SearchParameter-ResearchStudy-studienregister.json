@@ -1,0 +1,16 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "ResearchStudy-studienregister",
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/SearchParameter/ResearchStudy-studienregister",
+  "version": "1.0.0-ballot",
+  "name": "SP_MII_Studie_Studienregister",
+  "status": "active",
+  "description": "Suchparameter für ResearchStudy.extension:Studienregister",
+  "experimental": false,
+  "code": "studienregister",
+  "base": [
+    "ResearchStudy"
+  ],
+  "type": "reference",
+  "expression": "ResearchStudy.extension.where(url='https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-studienregister').value"
+}

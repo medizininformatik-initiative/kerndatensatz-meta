@@ -1,0 +1,31 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "mii-pr-meta-searchparameter",
+  "url": "https://www.medizininformatik-initiative.de/fhir/core//StructureDefinition/mii-pr-meta-searchparameter",
+  "name": "MII_PR_Meta_SearchParameter",
+  "title": "MII PR Meta SearchParameter",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "SearchParameter",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/SearchParameter",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "SearchParameter.code",
+        "path": "SearchParameter.code",
+        "constraint": [
+          {
+            "key": "search-param-code-regex",
+            "severity": "error",
+            "human": "In SearchParameter.code DÜRFEN NICHT folgende Zeichen enthalten sein: Leerzeichen, `.`, `$`, `|`.",
+            "expression": "matches('[^\\s.$|]+')",
+            "source": "https://www.medizininformatik-initiative.de/fhir/core//StructureDefinition/mii-pr-meta-searchparameter"
+          }
+        ]
+      }
+    ]
+  }
+}

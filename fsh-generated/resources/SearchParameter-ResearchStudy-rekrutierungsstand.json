@@ -1,0 +1,16 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "ResearchStudy-rekrutierungsstand",
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/SearchParameter/ResearchStudy-rekrutierungsstand",
+  "version": "1.0.0-ballot",
+  "name": "SP_MII_Studie_Rekrutierungsstand",
+  "status": "active",
+  "description": "Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstand",
+  "experimental": false,
+  "code": "rekrutierungsstand",
+  "base": [
+    "ResearchStudy"
+  ],
+  "type": "number",
+  "expression": "ResearchStudy.extension.where(url='https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-rekrutierung').extension.where(url='rekrutierungsstand').value"
+}

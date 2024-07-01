@@ -1,0 +1,26 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "mii-sp-patho-supporting-info",
+  "url": "https://www.medizininformatik-initiative.de/fhir/core//SearchParameter/mii-sp-patho-supporting-info",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "version": "2024.0.0",
+  "name": "MII_SP_Patho_Reason_Code",
+  "description": "SearchParameter for ServiceRequest.supportingInfo",
+  "status": "active",
+  "code": "supporting-info",
+  "base": [
+    "ServiceRequest"
+  ],
+  "type": "reference",
+  "expression": "ServiceRequest.supportingInfo"
+}

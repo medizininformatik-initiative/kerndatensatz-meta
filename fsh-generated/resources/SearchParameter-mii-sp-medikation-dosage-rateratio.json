@@ -1,0 +1,40 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "mii-sp-medikation-dosage-rateratio",
+  "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-RateRatio",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "version": "2024.0.0",
+  "name": "MII_SP_Medikation_Dosage_RateRatio",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-06-27",
+  "description": "MedicationStatement.dosage.doseAndRate.rate.ofType(Ratio) | MedicationAdministration.dosage.rate.ofType(Ratio) | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio)",
+  "code": "rateratio",
+  "base": [
+    "MedicationStatement",
+    "MedicationAdministration",
+    "MedicationRequest"
+  ],
+  "type": "composite",
+  "expression": "MedicationStatement.dosage.doseAndRate.rate.ofType(Ratio) | MedicationAdministration.dosage.rate.ofType(Ratio) | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio)",
+  "component": [
+    {
+      "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-RateRatioNumerator",
+      "expression": "numerator"
+    },
+    {
+      "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-RateRatioDenominator",
+      "expression": "denominator"
+    }
+  ]
+}

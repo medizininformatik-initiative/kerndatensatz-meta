@@ -1,0 +1,16 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "ResearchStudy-label",
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/SearchParameter/ResearchStudy-label",
+  "version": "1.0.0-ballot",
+  "name": "SP_MII_Studie_Label",
+  "status": "active",
+  "description": "Suchparameter für ResearchStudy.extension:label",
+  "experimental": false,
+  "code": "label",
+  "base": [
+    "ResearchStudy"
+  ],
+  "type": "string",
+  "expression": "ResearchStudy.extension.where(url='http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.label').extension.where(url='value').value"
+}

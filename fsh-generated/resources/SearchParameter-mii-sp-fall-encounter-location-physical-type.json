@@ -1,0 +1,28 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "mii-sp-fall-encounter-location-physical-type",
+  "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/SearchParameter/Encounter-location-physicalType",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "version": "2024.0.0",
+  "name": "MII_SP_Fall_Encounter_Location_PhysicalType",
+  "status": "active",
+  "experimental": false,
+  "date": "2023-11-10",
+  "description": "Suchparameter für Encounter.location.physicalType",
+  "code": "location-physical-type",
+  "base": [
+    "Encounter"
+  ],
+  "type": "token",
+  "expression": "Encounter.location.physicalType"
+}

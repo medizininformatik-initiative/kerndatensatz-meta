@@ -1,0 +1,16 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "ResearchStudy-rekrutierungsstart",
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/SearchParameter/ResearchStudy-rekrutierungsstart",
+  "version": "1.0.0-ballot",
+  "name": "SP_MII_Studie_Rekrutierungsstart",
+  "status": "active",
+  "description": "Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstart",
+  "experimental": false,
+  "code": "rekrutierungsstart",
+  "base": [
+    "ResearchStudy"
+  ],
+  "type": "date",
+  "expression": "ResearchStudy.extension.where(url='https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-rekrutierung').extension.where(url='rekrutierungsstart').value"
+}
