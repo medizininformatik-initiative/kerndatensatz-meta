@@ -2614,6 +2614,666 @@
         "method": "PUT",
         "url": "SearchParameter/mii-sp-patho-part-of"
       }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/sp-mii-icu-device-property-type",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "sp-mii-icu-device-property-type",
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/device-property-type",
+        "version": "2024.0.0-ballot",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "name": "SP_MII_ICU_Device_Property_Type",
+        "status": "active",
+        "experimental": false,
+        "date": "2024-01-02",
+        "description": "Suchparameter für Device.property.type",
+        "code": "property-type",
+        "base": [
+          "Device"
+        ],
+        "type": "token",
+        "expression": "Device.property.type"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "SearchParameter/sp-mii-icu-device-property-type"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-icu-devicemetric-source",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-icu-devicemetric-source",
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/devicemetric-source",
+        "version": "2024.0.0-ballot",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "name": "SP_MII_ICU_DeviceMetric_Source",
+        "status": "active",
+        "experimental": false,
+        "date": "2024-01-02",
+        "description": "Suchparameter für DeviceMetric.source",
+        "code": "source",
+        "base": [
+          "DeviceMetric"
+        ],
+        "type": "reference",
+        "expression": "DeviceMetric.source"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "SearchParameter/mii-sp-icu-devicemetric-source"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-icu-observation-bodysite",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-icu-observation-bodysite",
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/observation-bodysite",
+        "version": "2024.0.0-ballot",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "name": "SP_MII_ICU_Observation_BodySite",
+        "status": "active",
+        "experimental": false,
+        "date": "2024-01-02",
+        "description": "Suchparameter für Observation.bodySite",
+        "code": "bodySite",
+        "base": [
+          "Observation"
+        ],
+        "type": "token",
+        "expression": "Observation.bodySite"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "SearchParameter/mii-sp-icu-observation-bodysite"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-icu-observation-component-interpretation",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-icu-observation-component-interpretation",
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/observation-component-interpretation",
+        "version": "2024.0.0-ballot",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "name": "SP_MII_ICU_Observation_Component_Interpretation",
+        "status": "active",
+        "experimental": false,
+        "date": "2024-01-02",
+        "description": "Suchparameter für Observation.component.interpretation",
+        "code": "component-interpretation",
+        "base": [
+          "Observation"
+        ],
+        "type": "token",
+        "expression": "Observation.component.interpretation"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "SearchParameter/mii-sp-icu-observation-component-interpretation"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-icu-observation-component-referencerange",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-icu-observation-component-referencerange",
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/observation-component-referencerange",
+        "version": "2024.0.0-ballot",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "name": "SP_MII_ICU_Observation_Component_ReferenceRange",
+        "status": "active",
+        "experimental": false,
+        "date": "2024-01-02",
+        "description": "Suchparameter für Observation.component.referenceRange",
+        "code": "component-referenceRange",
+        "base": [
+          "Observation"
+        ],
+        "type": "token",
+        "expression": "Observation.component.referenceRange"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "SearchParameter/mii-sp-icu-observation-component-referencerange"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-icu-observation-interpretation",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-icu-observation-interpretation",
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/observation-interpretation",
+        "version": "2024.0.0-ballot",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "name": "SP_MII_ICU_Observation_Interpretation",
+        "status": "active",
+        "experimental": false,
+        "date": "2024-01-02",
+        "description": "Suchparameter für Observation.interpretation",
+        "code": "interpretation",
+        "base": [
+          "Observation"
+        ],
+        "type": "token",
+        "expression": "Observation.interpretation"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "SearchParameter/mii-sp-icu-observation-interpretation"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-icu-observation-issued",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-icu-observation-issued",
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/observation-issued",
+        "version": "2024.0.0-ballot",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "name": "SP_MII_ICU_Observation_Issued",
+        "status": "active",
+        "experimental": false,
+        "date": "2024-01-02",
+        "description": "Suchparameter für Observation.issued",
+        "code": "issued",
+        "base": [
+          "Observation"
+        ],
+        "type": "date",
+        "expression": "Observation.issued"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "SearchParameter/mii-sp-icu-observation-issued"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-icu-observation-referencerange",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-icu-observation-referencerange",
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/observation-referencerange",
+        "version": "2024.0.0-ballot",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "name": "SP_MII_ICU_Observation_ReferenceRange",
+        "status": "active",
+        "experimental": false,
+        "date": "2024-01-02",
+        "description": "Suchparameter für Observation.referenceRange",
+        "code": "referenceRange",
+        "base": [
+          "Observation"
+        ],
+        "type": "token",
+        "expression": "Observation.referenceRange"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "SearchParameter/mii-sp-icu-observation-referencerange"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-icu-procedure-recorder",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-icu-procedure-recorder",
+        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/procedure-recorder",
+        "version": "2024.0.0-ballot",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "name": "SP_MII_ICU_Procedure_Recorder",
+        "status": "active",
+        "experimental": false,
+        "date": "2024-01-02",
+        "description": "Suchparameter für Procedure.recorder",
+        "code": "recorder",
+        "base": [
+          "Procedure"
+        ],
+        "type": "reference",
+        "expression": "Procedure.recorder"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "SearchParameter/mii-sp-icu-procedure-recorder"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/DocumentReference-title",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "DocumentReference-title",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/SearchParameter/DocumentReference-title",
+        "version": "1.0.0-ballot",
+        "name": "SP_MII_Studie_Title",
+        "status": "active",
+        "description": "Suchparameter für DocumentReference.content.attachment.title",
+        "experimental": false,
+        "code": "title",
+        "base": [
+          "DocumentReference"
+        ],
+        "type": "string",
+        "expression": "DocumentReference.content.attachment.title"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "SearchParameter/DocumentReference-title"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/DocumentReference-size",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "DocumentReference-size",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/SearchParameter/DocumentReference-size",
+        "version": "1.0.0-ballot",
+        "name": "SP_MII_Studie_Size",
+        "status": "active",
+        "description": "Suchparameter für DocumentReference.content.attachment.size",
+        "experimental": false,
+        "code": "size",
+        "base": [
+          "DocumentReference"
+        ],
+        "type": "number",
+        "expression": "DocumentReference.content.attachment.size"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "SearchParameter/DocumentReference-size"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/EvidenceVariable-characteristic-description",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "EvidenceVariable-characteristic-description",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/SearchParameter/ResearchStudy-characteristic-description",
+        "version": "1.0.0-ballot",
+        "name": "SP_MII_Studie_CharacteristicDescription",
+        "status": "active",
+        "description": "Suchparameter für ResearchStudy.characteristic.description",
+        "experimental": false,
+        "code": "characteristicDescription",
+        "base": [
+          "EvidenceVariable"
+        ],
+        "type": "string",
+        "expression": "ResearchStudy.characteristic.description"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "SearchParameter/EvidenceVariable-characteristic-description"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/Library-quellregister",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "Library-quellregister",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/SearchParameter/Library-quellregister",
+        "version": "1.0.0-ballot",
+        "name": "SP_MII_Studie_Quellregister",
+        "status": "active",
+        "description": "Suchparameter für Library.extension:QuellRegister",
+        "experimental": false,
+        "code": "quellregister",
+        "base": [
+          "Library"
+        ],
+        "type": "token",
+        "expression": "Library.extension.where(url='https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-quell-register').value"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "SearchParameter/Library-quellregister"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/Library-relatedArtifactUrl",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "Library-relatedArtifactUrl",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/SearchParameter/Library-relatedArtifactUrl",
+        "version": "1.0.0-ballot",
+        "name": "SP_MII_Studie_RelatedArtifactUrl",
+        "status": "active",
+        "description": "Suchparameter für Library.relatedArtifact.document.url",
+        "experimental": false,
+        "code": "relatedArtifactUrl",
+        "base": [
+          "Library"
+        ],
+        "type": "uri",
+        "expression": "Library.relatedArtifact.document.url"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "SearchParameter/Library-relatedArtifactUrl"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/ResearchStudy-armName",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "ResearchStudy-armName",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/SearchParameter/ResearchStudy-armName",
+        "version": "1.0.0-ballot",
+        "name": "SP_MII_Studie_ArmName",
+        "status": "active",
+        "description": "Suchparameter für ResearchStudy.arm.name",
+        "experimental": false,
+        "code": "armName",
+        "base": [
+          "ResearchStudy"
+        ],
+        "type": "string",
+        "expression": "ResearchStudy.arm.name"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "SearchParameter/ResearchStudy-armName"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/ResearchStudy-label",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "ResearchStudy-label",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/SearchParameter/ResearchStudy-label",
+        "version": "1.0.0-ballot",
+        "name": "SP_MII_Studie_Label",
+        "status": "active",
+        "description": "Suchparameter für ResearchStudy.extension:label",
+        "experimental": false,
+        "code": "label",
+        "base": [
+          "ResearchStudy"
+        ],
+        "type": "string",
+        "expression": "ResearchStudy.extension.where(url='http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.label').extension.where(url='value').value"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "SearchParameter/ResearchStudy-label"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/ResearchStudy-akronym",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "ResearchStudy-akronym",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/SearchParameter/ResearchStudy-akronym",
+        "version": "1.0.0-ballot",
+        "name": "SP_MII_Studie_Akronym",
+        "status": "active",
+        "description": "Suchparameter für ResearchStudy.extension:Akronym",
+        "experimental": false,
+        "code": "akronym",
+        "base": [
+          "ResearchStudy"
+        ],
+        "type": "string",
+        "expression": "ResearchStudy.extension.where(url='https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-akronym').value"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "SearchParameter/ResearchStudy-akronym"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/ResearchStudy-finanzierung",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "ResearchStudy-finanzierung",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/SearchParameter/ResearchStudy-finanzierung",
+        "version": "1.0.0-ballot",
+        "name": "SP_MII_Studie_Finanzierung",
+        "status": "active",
+        "description": "Suchparameter für ResearchStudy.extension:Finanzierung",
+        "experimental": false,
+        "code": "finanzierung",
+        "base": [
+          "ResearchStudy"
+        ],
+        "type": "string",
+        "expression": "ResearchStudy.extension.where(url='https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-finanzierung').value"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "SearchParameter/ResearchStudy-finanzierung"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/ResearchStudy-studienregister",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "ResearchStudy-studienregister",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/SearchParameter/ResearchStudy-studienregister",
+        "version": "1.0.0-ballot",
+        "name": "SP_MII_Studie_Studienregister",
+        "status": "active",
+        "description": "Suchparameter für ResearchStudy.extension:Studienregister",
+        "experimental": false,
+        "code": "studienregister",
+        "base": [
+          "ResearchStudy"
+        ],
+        "type": "reference",
+        "expression": "ResearchStudy.extension.where(url='https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-studienregister').value"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "SearchParameter/ResearchStudy-studienregister"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/ResearchStudy-rekrutierungsstand-datum",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "ResearchStudy-rekrutierungsstand-datum",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/SearchParameter/ResearchStudy-rekrutierungsstand-datum",
+        "version": "1.0.0-ballot",
+        "name": "SP_MII_Studie_RekrutierungsstandDatum",
+        "status": "active",
+        "description": "Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstand-datum",
+        "experimental": false,
+        "code": "rekrutierungsstand-datum",
+        "base": [
+          "ResearchStudy"
+        ],
+        "type": "date",
+        "expression": "ResearchStudy.extension.where(url='https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-rekrutierung').extension.where(url='rekrutierungsstand-datum').value"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "SearchParameter/ResearchStudy-rekrutierungsstand-datum"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/ResearchStudy-rekrutierungsstand-genauigkeit",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "ResearchStudy-rekrutierungsstand-genauigkeit",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/SearchParameter/ResearchStudy-rekrutierungsstand-genauigkeit",
+        "version": "1.0.0-ballot",
+        "name": "SP_MII_Studie_RekrutierungsstandGenauigkeit",
+        "status": "active",
+        "description": "Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstand-genauigkeit",
+        "experimental": false,
+        "code": "rekrutierungsstand-genauigkeit",
+        "base": [
+          "ResearchStudy"
+        ],
+        "type": "string",
+        "expression": "ResearchStudy.extension.where(url='https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-rekrutierung').extension.where(url='rekrutierungsstand-genauigkeit').value"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "SearchParameter/ResearchStudy-rekrutierungsstand-genauigkeit"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/ResearchStudy-rekrutierungsstand",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "ResearchStudy-rekrutierungsstand",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/SearchParameter/ResearchStudy-rekrutierungsstand",
+        "version": "1.0.0-ballot",
+        "name": "SP_MII_Studie_Rekrutierungsstand",
+        "status": "active",
+        "description": "Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstand",
+        "experimental": false,
+        "code": "rekrutierungsstand",
+        "base": [
+          "ResearchStudy"
+        ],
+        "type": "number",
+        "expression": "ResearchStudy.extension.where(url='https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-rekrutierung').extension.where(url='rekrutierungsstand').value"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "SearchParameter/ResearchStudy-rekrutierungsstand"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/ResearchStudy-rekrutierungsziel",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "ResearchStudy-rekrutierungsziel",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/SearchParameter/ResearchStudy-rekrutierungsziel",
+        "version": "1.0.0-ballot",
+        "name": "SP_MII_Studie_Rekrutierungsziel",
+        "status": "active",
+        "description": "Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsziel",
+        "experimental": false,
+        "code": "rekrutierungsziel",
+        "base": [
+          "ResearchStudy"
+        ],
+        "type": "number",
+        "expression": "ResearchStudy.extension.where(url='https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-rekrutierung').extension.where(url='rekrutierungsziel').value"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "SearchParameter/ResearchStudy-rekrutierungsziel"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/ResearchStudy-rekrutierungsstart",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "ResearchStudy-rekrutierungsstart",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/SearchParameter/ResearchStudy-rekrutierungsstart",
+        "version": "1.0.0-ballot",
+        "name": "SP_MII_Studie_Rekrutierungsstart",
+        "status": "active",
+        "description": "Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstart",
+        "experimental": false,
+        "code": "rekrutierungsstart",
+        "base": [
+          "ResearchStudy"
+        ],
+        "type": "date",
+        "expression": "ResearchStudy.extension.where(url='https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-rekrutierung').extension.where(url='rekrutierungsstart').value"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "SearchParameter/ResearchStudy-rekrutierungsstart"
+      }
     }
   ]
 }
