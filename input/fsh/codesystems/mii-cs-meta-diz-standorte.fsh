@@ -10,6 +10,14 @@ RuleSet: AddStatus(status)
 * ^property[+].code = #status
 * ^property[=].valueCode = #{status}
 
+RuleSet: AddDeprecationDate(deprecationDate)
+* ^property[+].code = #deprecationDate
+* ^property[=].valueDateTime = "{deprecationDate}"
+
+RuleSet: AddRetirementDate(retirementDate)
+* ^property[+].code = #retirementDate
+* ^property[=].valueDateTime = "{retirementDate}"
+
 CodeSystem: MII_CS_Meta_DIZ_Standorte
 Id: mii-cs-meta-diz-standorte
 Title: "MII CS Meta DIZ Standorte"
@@ -35,6 +43,12 @@ Description: "Medizininformatik-Initiative Standorte"
 * ^property[2].code = #status
 * ^property[2].uri = "http://hl7.org/fhir/concept-properties#status"
 * ^property[2].type = #code
+* ^property[3].code = #deprecationDate
+* ^property[3].uri = "http://hl7.org/fhir/concept-properties#deprecationDate"
+* ^property[3].type = #dateTime
+* ^property[4].code = #retirementDate
+* ^property[4].uri = "http://hl7.org/fhir/concept-properties#retirementDate"
+* ^property[4].type = #dateTime
 * #UKA "Uniklinik RWTH Aachen" "Aachen"
 * #UKA insert AddKonsortium(SMITH)
 * #UKA insert AddUri(ukaachen.de)
@@ -65,7 +79,12 @@ Description: "Medizininformatik-Initiative Standorte"
 * #CTK "Carl-Thiem-Klinikum Cottbus" "Cottbus"
 * #CTK insert AddKonsortium(HiGHmed)
 * #CTK insert AddUri(ctk.de)
-* #CTK insert AddStatus(active)
+* #CTK insert AddStatus(deprecated)
+* #CTK insert AddDeprecationDate(2024-07-03)
+* #MUL-CT "Medizinische Universität Lausitz - Carl Thiem" "Cottbus"
+* #MUL-CT insert AddKonsortium(HiGHmed)
+* #MUL-CT insert AddUri(mul-ct.de)
+* #MUL-CT insert AddStatus(active)
 * #UKDD "Universitätsklinikum Carl Gustav Carus Dresden" "Dresden"
 * #UKDD insert AddKonsortium(MIRACUM)
 * #UKDD insert AddUri(ukdd.de)
