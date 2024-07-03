@@ -152,6 +152,29 @@
         },
         {
           "code": "status",
+          "valueCode": "deprecated"
+        },
+        {
+          "code": "deprecationDate",
+          "valueDateTime": "2024-07-03"
+        }
+      ]
+    },
+    {
+      "code": "MUL-CT",
+      "display": "Medizinische Universität Lausitz - Carl Thiem",
+      "definition": "Cottbus",
+      "property": [
+        {
+          "code": "Konsortium",
+          "valueString": "HiGHmed"
+        },
+        {
+          "code": "uri",
+          "valueString": "mul-ct.de"
+        },
+        {
+          "code": "status",
           "valueCode": "active"
         }
       ]
@@ -883,7 +906,17 @@
       "code": "status",
       "uri": "http://hl7.org/fhir/concept-properties#status",
       "type": "code"
+    },
+    {
+      "code": "deprecationDate",
+      "uri": "http://hl7.org/fhir/concept-properties#deprecationDate",
+      "type": "dateTime"
+    },
+    {
+      "code": "retirementDate",
+      "uri": "http://hl7.org/fhir/concept-properties#retirementDate",
+      "type": "dateTime"
     }
   ],
-  "count": 45
+  "count": 46
 }
