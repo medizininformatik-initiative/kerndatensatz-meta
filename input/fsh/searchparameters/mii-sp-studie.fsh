@@ -33,12 +33,12 @@ Usage: #definition
 * version = "1.0.0-ballot"
 * name = "SP_MII_Studie_CharacteristicDescription"
 * status = #active
-* description = "Suchparameter für ResearchStudy.characteristic.description"
+* description = "Suchparameter für EvidenceVariable.characteristic.description"
 * experimental = false
 * code = #characteristicDescription
 * base = #EvidenceVariable
 * type = #string
-* expression = "ResearchStudy.characteristic.description"
+* expression = "EvidenceVariable.characteristic.description"
 
 Instance: Library-quellregister
 InstanceOf: SearchParameter
