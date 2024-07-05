@@ -1918,7 +1918,7 @@
         "experimental": false,
         "date": "2022-07-07",
         "description": "Suchparameter für Task.for",
-        "code": "reason-reference",
+        "code": "for",
         "base": [
           "Task"
         ],
@@ -2200,7 +2200,7 @@
           "Specimen"
         ],
         "type": "date",
-        "expression": "Specimen.processing.time"
+        "expression": "(Specimen.processing.time as dateTime) | (Specimen.processing.time as Period)"
       },
       "request": {
         "method": "PUT",
