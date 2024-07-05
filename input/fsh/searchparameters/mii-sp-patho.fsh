@@ -77,7 +77,7 @@ Usage: #definition
 * code = #processing-date
 * base = #Specimen
 * type = #date
-* expression = "Specimen.processing.time"
+* expression = "(Specimen.processing.time as dateTime) | (Specimen.processing.time as Period)"
 
 Instance: mii-sp-patho-container-additive
 InstanceOf: SearchParameter
