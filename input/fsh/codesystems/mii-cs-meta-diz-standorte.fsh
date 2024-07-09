@@ -28,7 +28,7 @@ Description: "Medizininformatik-Initiative Standorte"
 * ^experimental = false
 * insert Publisher
 * insert PR_CS_VS_Version
-* ^date = "2024-03-11"
+* ^date = "2024-07-09"
 * ^status = #active
 * ^caseSensitive = true
 * ^compositional = false
@@ -62,7 +62,7 @@ Description: "Medizininformatik-Initiative Standorte"
 * #Charité insert AddUri(charite.de)
 * #Charité insert AddStatus(active)
 * #UKOWL "Universitätsklinikum OWL" "Bielefeld"
-* #UKOWL insert AddKonsortium(NA)
+* #UKOWL insert AddKonsortium(HiGHmed)
 * #UKOWL insert AddUri(ukowl.de)
 * #UKOWL insert AddStatus(active)
 * #"UK RUB" "Universitätsklinikum der Ruhr-Universität Bochum" "Bochum"
@@ -105,7 +105,7 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UKF insert AddKonsortium(MIRACUM)
 * #UKF insert AddUri(kgu.de)
 * #UKF insert AddStatus(active)
-* #UKFR "Universitätsklinikum Freiburg" "MIRACUM"
+* #UKFR "Universitätsklinikum Freiburg" "Freiburg"
 * #UKFR insert AddKonsortium(MIRACUM)
 * #UKFR insert AddUri(uniklinik-freiburg.de)
 * #UKFR insert AddStatus(active)
@@ -210,9 +210,11 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UKW insert AddStatus(active)
 * #HUKW "Universität Witten/Herdecke" "Witten / Herdecke"
 * #HUKW insert AddKonsortium(NA)
-* #HUKW insert AddStatus(active)
+* #HUKW insert AddStatus(deprecated)
+* #HUKW insert AddDeprecationDate(2024-07-09)
 * #RBK "Robert-Bosch-Krankenhaus" "Stuttgart"
 * #RBK insert AddKonsortium(HiGHmed)
+* #RBK insert AddUri(rbk.de)
 * #RBK insert AddStatus(active)
 * #FDPG "Forschungsdatenplattform"
 * #FDPG insert AddKonsortium(MII)
