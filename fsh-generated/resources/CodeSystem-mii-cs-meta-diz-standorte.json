@@ -72,7 +72,7 @@
       "property": [
         {
           "code": "Konsortium",
-          "valueString": "NA"
+          "valueString": "HiGHmed"
         },
         {
           "code": "uri",
@@ -277,7 +277,7 @@
     {
       "code": "UKFR",
       "display": "Universitätsklinikum Freiburg",
-      "definition": "MIRACUM",
+      "definition": "Freiburg",
       "property": [
         {
           "code": "Konsortium",
@@ -775,7 +775,11 @@
         },
         {
           "code": "status",
-          "valueCode": "active"
+          "valueCode": "deprecated"
+        },
+        {
+          "code": "deprecationDate",
+          "valueDateTime": "2024-07-09"
         }
       ]
     },
@@ -787,6 +791,10 @@
         {
           "code": "Konsortium",
           "valueString": "HiGHmed"
+        },
+        {
+          "code": "uri",
+          "valueString": "rbk.de"
         },
         {
           "code": "status",
@@ -887,7 +895,7 @@
     }
   ],
   "version": "2024.0.0",
-  "date": "2024-03-11",
+  "date": "2024-07-09",
   "caseSensitive": true,
   "compositional": false,
   "copyright": "Medizininformatik-Initiative",
