@@ -12,4 +12,4 @@ Usage: #definition
 * code = #postfach
 * base = #Patient
 * type = #string
-* expression = "Patient.address.line.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox').value"
+* expression = "Patient.address.line.extension.where(url = 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox').value"

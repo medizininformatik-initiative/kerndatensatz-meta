@@ -1,8 +1,8 @@
 {
   "resourceType": "Bundle",
-  "id": "mii-meta-searchparam-bundle",
-  "type": "transaction",
-  "timestamp": "2024-06-19T15:49:00+01:00",
+  "id": "mii-meta-searchparam-collection-bundle",
+  "type": "collection",
+  "timestamp": "2024-07-10T18:48:00+01:00",
   "entry": [
     {
       "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-person-adresszusatz",
@@ -33,10 +33,6 @@
         ],
         "type": "string",
         "expression": "Patient.address.line.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator').value"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-person-adresszusatz"
       }
     },
     {
@@ -68,10 +64,6 @@
         ],
         "type": "token",
         "expression": "Patient.identifier.assigner.identifier"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-person-assignerpid"
       }
     },
     {
@@ -106,10 +98,6 @@
         "target": [
           "Consent"
         ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-person-consent"
       }
     },
     {
@@ -141,10 +129,6 @@
         ],
         "type": "token",
         "expression": "Patient.address.city.extension('http://fhir.de/StructureDefinition/destatis/ags').value"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-person-gemeindeschluessel"
       }
     },
     {
@@ -176,10 +160,6 @@
         ],
         "type": "string",
         "expression": "Patient.address.line.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber').value"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-person-hausnummer"
       }
     },
     {
@@ -211,10 +191,6 @@
         ],
         "type": "token",
         "expression": "Patient.gender.extension('http://fhir.de/StructureDefinition/gender-amtlich-de').value"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-person-otheramtlich"
       }
     },
     {
@@ -245,11 +221,7 @@
           "Patient"
         ],
         "type": "string",
-        "expression": "Patient.address.line.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox').value"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-person-postfach"
+        "expression": "Patient.address.line.extension.where(url = 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox').value"
       }
     },
     {
@@ -281,10 +253,6 @@
         ],
         "type": "token",
         "expression": "Patient.name.prefix"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-person-prefix"
       }
     },
     {
@@ -316,10 +284,6 @@
         ],
         "type": "token",
         "expression": "Patient.name.prefix.extension('http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier').value"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-person-prefixqualifier"
       }
     },
     {
@@ -351,10 +315,6 @@
         ],
         "type": "string",
         "expression": "Patient.address.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct').value"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-person-stadtteil"
       }
     },
     {
@@ -386,10 +346,6 @@
         ],
         "type": "string",
         "expression": "Patient.address.line.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName').value"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-person-strasse"
       }
     },
     {
@@ -421,10 +377,6 @@
         ],
         "type": "token",
         "expression": "Condition.code.coding.extension.where(url = 'http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit').value"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-diagnose-icd10gm-diagnosesicherheit"
       }
     },
     {
@@ -456,10 +408,6 @@
         ],
         "type": "token",
         "expression": "Condition.code.coding.extension.where(url = 'http://fhir.de/StructureDefinition/icd-10-gm-mehrfachcodierungs-kennzeichen').value"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-diagnose-icd10gm-mehrfachcodierung"
       }
     },
     {
@@ -491,10 +439,6 @@
         ],
         "type": "token",
         "expression": "Condition.code.coding.extension.where(url = 'http://fhir.de/StructureDefinition/seitenlokalisation').value"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-diagnose-icd10gm-seitenlokalisation"
       }
     },
     {
@@ -526,10 +470,6 @@
         ],
         "type": "token",
         "expression": "Procedure.bodySite"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-prozedur-bodysite"
       }
     },
     {
@@ -561,10 +501,6 @@
         ],
         "type": "date",
         "expression": "Procedure.extension('http://fhir.de/StructureDefinition/ProzedurDokumentationsdatum').value"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-prozedur-dokumentationsdatum"
       }
     },
     {
@@ -596,10 +532,6 @@
         ],
         "type": "token",
         "expression": "Procedure.extension('https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht').value"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-prozedur-durchfuehrungsabsicht"
       }
     },
     {
@@ -631,10 +563,6 @@
         ],
         "type": "token",
         "expression": "Encounter.diagnosis.use"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-fall-encounter-diagnosis-use"
       }
     },
     {
@@ -666,10 +594,6 @@
         ],
         "type": "token",
         "expression": "Encounter.hospitalization.admitSource"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-fall-encounter-hospitalization-admitsource"
       }
     },
     {
@@ -701,10 +625,6 @@
         ],
         "type": "token",
         "expression": "Encounter.location.physicalType"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-fall-encounter-location-physical-type"
       }
     },
     {
@@ -736,10 +656,6 @@
         ],
         "type": "token",
         "expression": "Encounter.serviceType"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-fall-encounter-servicetype"
       }
     },
     {
@@ -778,10 +694,6 @@
           "ge",
           "le"
         ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-medikation-medication-ingredient-strength-numerator"
       }
     },
     {
@@ -820,10 +732,6 @@
           "ge",
           "le"
         ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-medikation-medication-ingredient-strength-denominator"
       }
     },
     {
@@ -865,10 +773,6 @@
             "expression": "denominator"
           }
         ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-medikation-medication-ingredient-strength"
       }
     },
     {
@@ -906,10 +810,6 @@
           "Observation",
           "DiagnosticReport"
         ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-medikation-medication-reasonreference"
       }
     },
     {
@@ -950,10 +850,6 @@
           "below",
           "above"
         ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-medikation-dosage-site"
       }
     },
     {
@@ -994,10 +890,6 @@
           "below",
           "above"
         ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-medikation-dosage-route"
       }
     },
     {
@@ -1037,10 +929,6 @@
           "ge",
           "le"
         ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-medikation-dosage-doserange-low"
       }
     },
     {
@@ -1080,10 +968,6 @@
           "ge",
           "le"
         ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-medikation-dosage-doserange-high"
       }
     },
     {
@@ -1126,10 +1010,6 @@
             "expression": "high"
           }
         ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-medikation-dosage-doserange"
       }
     },
     {
@@ -1170,10 +1050,6 @@
           "ge",
           "le"
         ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-medikation-dosage-dosequantity"
       }
     },
     {
@@ -1214,10 +1090,6 @@
           "ge",
           "le"
         ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-medikation-dosage-rateratio-numerator"
       }
     },
     {
@@ -1258,10 +1130,6 @@
           "ge",
           "le"
         ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-medikation-dosage-rateratio-denominator"
       }
     },
     {
@@ -1305,10 +1173,6 @@
             "expression": "denominator"
           }
         ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-medikation-dosage-rateratio"
       }
     },
     {
@@ -1348,10 +1212,6 @@
           "ge",
           "le"
         ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-medikation-dosage-raterange-low"
       }
     },
     {
@@ -1391,10 +1251,6 @@
           "ge",
           "le"
         ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-medikation-dosage-raterange-high"
       }
     },
     {
@@ -1437,10 +1293,6 @@
             "expression": "high"
           }
         ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-medikation-dosage-raterange"
       }
     },
     {
@@ -1481,10 +1333,6 @@
           "ge",
           "le"
         ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-medikation-dosage-ratequantity"
       }
     },
     {
@@ -1516,10 +1364,6 @@
         ],
         "type": "token",
         "expression": "List.mode"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-medikation-list-mode"
       }
     },
     {
@@ -1541,10 +1385,6 @@
         "expression": "Consent.policy.uri",
         "multipleOr": true,
         "multipleAnd": true
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-consent-policyuri"
       }
     },
     {
@@ -1566,10 +1406,6 @@
         "expression": "Consent.provision.provision.code",
         "multipleOr": true,
         "multipleAnd": true
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-consent-provisioncode"
       }
     },
     {
@@ -1599,10 +1435,6 @@
             "expression": "period"
           }
         ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-consent-provisioncodeperiod"
       }
     },
     {
@@ -1632,10 +1464,6 @@
             "expression": "type"
           }
         ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-consent-provisioncodetype"
       }
     },
     {
@@ -1657,10 +1485,6 @@
         "expression": "Consent.provision.provision.period",
         "multipleOr": true,
         "multipleAnd": true
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-consent-provisionperiod"
       }
     },
     {
@@ -1682,10 +1506,6 @@
         "expression": "Consent.provision.provision.type",
         "multipleOr": true,
         "multipleAnd": true
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-consent-provisiontype"
       }
     },
     {
@@ -1710,10 +1530,6 @@
         "chain": [
           "*"
         ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-biobank-diagnose"
       }
     },
     {
@@ -1745,10 +1561,6 @@
         ],
         "type": "token",
         "expression": "Observation.interpretation"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-mikrobio-interpretation"
       }
     },
     {
@@ -1779,10 +1591,6 @@
         ],
         "type": "token",
         "expression": "ServiceRequest.reasonCode"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-molgen-servicerequest-reasoncode"
       }
     },
     {
@@ -1819,10 +1627,6 @@
           "DiagnosticReport",
           "DocumentReference"
         ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-molgen-servicerequest-reasonreference"
       }
     },
     {
@@ -1853,10 +1657,6 @@
         ],
         "type": "token",
         "expression": "Task.reasonCode"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-molgen-task-reasoncode"
       }
     },
     {
@@ -1890,10 +1690,6 @@
         "target": [
           "Observation"
         ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-molgen-task-reasonreference"
       }
     },
     {
@@ -1927,10 +1723,6 @@
         "target": [
           "Patient"
         ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-molgen-task-for"
       }
     },
     {
@@ -1961,10 +1753,6 @@
         ],
         "type": "token",
         "expression": "FamilyMemberHistory.reasonCode"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-molgen-familymemberhistory-reasoncode"
       }
     },
     {
@@ -2003,10 +1791,6 @@
           "AllergyIntolerance",
           "QuestionnaireResponse"
         ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-molgen-familymemberhistory-reasonreference"
       }
     },
     {
@@ -2036,10 +1820,6 @@
         ],
         "type": "reference",
         "expression": "Specimen.request"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-patho-request"
       }
     },
     {
@@ -2069,10 +1849,6 @@
         ],
         "type": "token",
         "expression": "Specimen.collection.method"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-patho-collection-method"
       }
     },
     {
@@ -2102,10 +1878,6 @@
         ],
         "type": "token",
         "expression": "Specimen.collection.bodySite"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-patho-collection-body-site"
       }
     },
     {
@@ -2135,10 +1907,6 @@
         ],
         "type": "token",
         "expression": "Specimen.processing.procedure"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-patho-processing-procedure"
       }
     },
     {
@@ -2168,10 +1936,6 @@
         ],
         "type": "reference",
         "expression": "Specimen.processing.additive as Reference"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-patho-processing-additive"
       }
     },
     {
@@ -2201,10 +1965,6 @@
         ],
         "type": "date",
         "expression": "(Specimen.processing.time as dateTime) | (Specimen.processing.time as Period)"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-patho-processing-date"
       }
     },
     {
@@ -2234,10 +1994,6 @@
         ],
         "type": "reference",
         "expression": "Specimen.container.additive as Reference"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-patho-container-additive"
       }
     },
     {
@@ -2267,10 +2023,6 @@
         ],
         "type": "token",
         "expression": "Observation.bodySite"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-patho-body-site"
       }
     },
     {
@@ -2310,10 +2062,6 @@
             "expression": "denominator"
           }
         ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-patho-value-ratio"
       }
     },
     {
@@ -2344,10 +2092,6 @@
         ],
         "type": "quantity",
         "expression": "Observation.value.ofType(Ratio).numerator"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-patho-value-ratio-numerator"
       }
     },
     {
@@ -2378,10 +2122,6 @@
         ],
         "type": "quantity",
         "expression": "Observation.value.ofType(Ratio).denominator"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-patho-value-ratio-denominator"
       }
     },
     {
@@ -2411,10 +2151,6 @@
         ],
         "type": "token",
         "expression": "ServiceRequest.reasonCode"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-patho-reason-code"
       }
     },
     {
@@ -2444,10 +2180,6 @@
         ],
         "type": "reference",
         "expression": "ServiceRequest.supportingInfo"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-patho-supporting-info"
       }
     },
     {
@@ -2477,10 +2209,6 @@
         ],
         "type": "reference",
         "expression": "DiagnosticReport.imagingStudy"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-patho-imaging-study"
       }
     },
     {
@@ -2510,10 +2238,6 @@
         ],
         "type": "token",
         "expression": "Composition.attester.mode"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-patho-attester-mode"
       }
     },
     {
@@ -2543,10 +2267,6 @@
         ],
         "type": "reference",
         "expression": "Composition.custodian"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-patho-custodian"
       }
     },
     {
@@ -2576,10 +2296,6 @@
         ],
         "type": "token",
         "expression": "Composition.relatesTo.code"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-patho-relates-to-code"
       }
     },
     {
@@ -2609,10 +2325,6 @@
         ],
         "type": "reference",
         "expression": "Media.partOf"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-patho-part-of"
       }
     },
     {
@@ -2644,10 +2356,6 @@
         ],
         "type": "token",
         "expression": "Device.property.type"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/sp-mii-icu-device-property-type"
       }
     },
     {
@@ -2679,10 +2387,6 @@
         ],
         "type": "reference",
         "expression": "DeviceMetric.source"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-icu-devicemetric-source"
       }
     },
     {
@@ -2714,10 +2418,6 @@
         ],
         "type": "token",
         "expression": "Observation.bodySite"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-icu-observation-bodysite"
       }
     },
     {
@@ -2749,10 +2449,6 @@
         ],
         "type": "token",
         "expression": "Observation.component.interpretation"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-icu-observation-component-interpretation"
       }
     },
     {
@@ -2784,10 +2480,6 @@
         ],
         "type": "token",
         "expression": "Observation.component.referenceRange"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-icu-observation-component-referencerange"
       }
     },
     {
@@ -2819,10 +2511,6 @@
         ],
         "type": "token",
         "expression": "Observation.interpretation"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-icu-observation-interpretation"
       }
     },
     {
@@ -2854,10 +2542,6 @@
         ],
         "type": "date",
         "expression": "Observation.issued"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-icu-observation-issued"
       }
     },
     {
@@ -2889,10 +2573,6 @@
         ],
         "type": "token",
         "expression": "Observation.referenceRange"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-icu-observation-referencerange"
       }
     },
     {
@@ -2924,10 +2604,6 @@
         ],
         "type": "reference",
         "expression": "Procedure.recorder"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-icu-procedure-recorder"
       }
     },
     {
@@ -2947,10 +2623,6 @@
         ],
         "type": "string",
         "expression": "DocumentReference.content.attachment.title"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/DocumentReference-title"
       }
     },
     {
@@ -2970,10 +2642,6 @@
         ],
         "type": "number",
         "expression": "DocumentReference.content.attachment.size"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/DocumentReference-size"
       }
     },
     {
@@ -2993,10 +2661,6 @@
         ],
         "type": "string",
         "expression": "EvidenceVariable.characteristic.description"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/EvidenceVariable-characteristic-description"
       }
     },
     {
@@ -3016,10 +2680,6 @@
         ],
         "type": "token",
         "expression": "Library.extension.where(url='https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-quell-register').value"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/Library-quellregister"
       }
     },
     {
@@ -3039,10 +2699,6 @@
         ],
         "type": "uri",
         "expression": "Library.relatedArtifact.document.url"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/Library-relatedArtifactUrl"
       }
     },
     {
@@ -3062,10 +2718,6 @@
         ],
         "type": "string",
         "expression": "ResearchStudy.arm.name"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/ResearchStudy-armName"
       }
     },
     {
@@ -3085,10 +2737,6 @@
         ],
         "type": "string",
         "expression": "ResearchStudy.extension.where(url='http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.label').extension.where(url='value').value"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/ResearchStudy-label"
       }
     },
     {
@@ -3108,10 +2756,6 @@
         ],
         "type": "string",
         "expression": "ResearchStudy.extension.where(url='https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-akronym').value"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/ResearchStudy-akronym"
       }
     },
     {
@@ -3131,10 +2775,6 @@
         ],
         "type": "string",
         "expression": "ResearchStudy.extension.where(url='https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-finanzierung').value"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/ResearchStudy-finanzierung"
       }
     },
     {
@@ -3154,10 +2794,6 @@
         ],
         "type": "reference",
         "expression": "ResearchStudy.extension.where(url='https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-studienregister').value"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/ResearchStudy-studienregister"
       }
     },
     {
@@ -3177,10 +2813,6 @@
         ],
         "type": "date",
         "expression": "ResearchStudy.extension.where(url='https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-rekrutierung').extension.where(url='rekrutierungsstand-datum').value"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/ResearchStudy-rekrutierungsstand-datum"
       }
     },
     {
@@ -3200,10 +2832,6 @@
         ],
         "type": "string",
         "expression": "ResearchStudy.extension.where(url='https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-rekrutierung').extension.where(url='rekrutierungsstand-genauigkeit').value"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/ResearchStudy-rekrutierungsstand-genauigkeit"
       }
     },
     {
@@ -3223,10 +2851,6 @@
         ],
         "type": "number",
         "expression": "ResearchStudy.extension.where(url='https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-rekrutierung').extension.where(url='rekrutierungsstand').value"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/ResearchStudy-rekrutierungsstand"
       }
     },
     {
@@ -3246,10 +2870,6 @@
         ],
         "type": "number",
         "expression": "ResearchStudy.extension.where(url='https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-rekrutierung').extension.where(url='rekrutierungsziel').value"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/ResearchStudy-rekrutierungsziel"
       }
     },
     {
@@ -3269,10 +2889,6 @@
         ],
         "type": "date",
         "expression": "ResearchStudy.extension.where(url='https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-rekrutierung').extension.where(url='rekrutierungsstart').value"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/ResearchStudy-rekrutierungsstart"
       }
     }
   ]
