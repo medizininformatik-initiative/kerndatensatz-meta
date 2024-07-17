@@ -1,0 +1,57 @@
+- include: recommended
+  name: include-recommended
+
+- name: version-filled
+  filter: (StructureDefinition or ValueSet or CodeSystem or ConceptMap or StructureMap or NamingSystem or SearchParameter or CapabilityStatement or OperationDefinition or ImplementationGuide).exists()
+  # Excluding NamingSystem as they have no version
+  status: "Checking if all resources have version filled"
+  predicate: version.exists() and (version.startsWith('2024.') or (version.startsWith('1.') or (version.startsWith('2.'))
+  error-message: "version not filled (correctly)"
+  files:
+    - /**/*.xml
+    - /**/*.json
+    - "!package.json"
+
+- action: Check for valid ids
+  # See https://github.com/FirelyTeam/firely-net-sdk/issues/1773
+  predicate: id.matches('^[A-Za-z0-9\\-\\.]{1,64}$')
+  error: The resource must have a valid id
+
+- name: naming-convention-id
+  status: "Checking if all resource ids follow the naming convention"
+  predicate: id.matches('^mii-(pr|ex|lm|vs|cs|cm|sm|ns|sp|cps|od|ig|exa)-')
+  error-message: "resource id naming convention mismatch"
+  files:
+    - /**/*.xml
+    - /**/*.json
+    - "!package.json"
+
+- name: naming-convention-name
+  filter: (StructureDefinition or ValueSet or CodeSystem or ConceptMap or StructureMap or NamingSystem or SearchParameter or CapabilityStatement or OperationDefinition or ImplementationGuide).exists()
+  status: "Checking if all resource names follow the naming convention"
+  predicate: name.exists() implies name.matches('^MII_(PR|EX|LM|VS|CS|CM|SM|NS|SP|CPS|OD|IG|EXA)_Fall')
+  error-message: "resource name naming convention mismatch"
+  files:
+    - /**/*.xml
+    - /**/*.json
+    - "!package.json"
+
+- name: naming-convention-title
+  filter: (StructureDefinition or ValueSet or CodeSystem or ConceptMap or StructureMap or NamingSystem or SearchParameter or CapabilityStatement or OperationDefinition or ImplementationGuide).exists()
+  status: "Checking if all resource titles follow the naming convention"
+  predicate: title.exists() implies title.matches('^MII (PR|EX|LM|VS|CS|CM|SM|NS|SP|CPS|OD|IG|EXA)')
+  error-message: "resource name naming convention mismatch"
+  files:
+    - /**/*.xml
+    - /**/*.json
+    - "!package.json"
+
+- name: naming-convention-url
+  filter: (StructureDefinition or ValueSet or CodeSystem or ConceptMap or StructureMap or NamingSystem or SearchParameter or CapabilityStatement or OperationDefinition or ImplementationGuide).exists()
+  status: "Checking if all resource urls follow the naming convention"
+  predicate: url.exists() implies url.matches('^https://www.medizininformatik-initiative.de/fhir/')
+  error-message: "resource url naming convention mismatch"
+  files:
+    - /**/*.xml
+    - /**/*.json
+    - "!package.json"
