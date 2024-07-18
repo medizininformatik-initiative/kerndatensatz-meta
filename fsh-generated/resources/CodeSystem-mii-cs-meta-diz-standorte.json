@@ -484,6 +484,25 @@
       ]
     },
     {
+      "code": "UL",
+      "display": "Universität Leipzig",
+      "definition": "Leipzig",
+      "property": [
+        {
+          "code": "Konsortium",
+          "valueString": "SMITH"
+        },
+        {
+          "code": "uri",
+          "valueString": "uniklinikum-leipzig.de"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        }
+      ]
+    },
+    {
       "code": "UMMD",
       "display": "Universitätsklinikum Magdeburg",
       "definition": "Magdeburg",
@@ -926,5 +945,5 @@
       "type": "dateTime"
     }
   ],
-  "count": 46
+  "count": 47
 }
