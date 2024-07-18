@@ -28,7 +28,7 @@ Description: "Medizininformatik-Initiative Standorte"
 * ^experimental = false
 * insert Publisher
 * insert PR_CS_VS_Version
-* ^date = "2024-07-09"
+* ^date = "2024-07-18"
 * ^status = #active
 * ^caseSensitive = true
 * ^compositional = false
@@ -181,6 +181,9 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UKM insert AddKonsortium(HiGHmed)
 * #UKM insert AddUri(ukm.de)
 * #UKM insert AddStatus(active)
+* #UMO "Universitätsmedizin Oldenburg" "Oldenburg"
+* #UMO insert AddUri(uol.de)
+* #UMO insert AddStatus(active)
 * #UOL "Carl von Ossietzky Universität Oldenburg" "Oldenburg"
 * #UOL insert AddKonsortium(HiGHmed)
 * #UOL insert AddStatus(active)
