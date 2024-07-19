@@ -102,7 +102,6 @@ InstanceOf: Bundle
 * insert AddTransactionEntry(mii-sp-icu-observation-component-referencerange)
 * insert AddTransactionEntry(mii-sp-icu-observation-interpretation)
 * insert AddTransactionEntry(mii-sp-icu-observation-issued)
-* insert AddTransactionEntry(mii-sp-icu-observation-referencerange)
 * insert AddTransactionEntry(mii-sp-icu-procedure-recorder)
 // Studie
 * insert AddTransactionEntry(DocumentReference-title)
