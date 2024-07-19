@@ -13,5 +13,9 @@ Usage: #definition
 * description = "Suchparameter für Observation.referenceRange"
 * code = #referenceRange
 * base = #Observation
-* type = #token
+* type = #composite
 * expression = "Observation.referenceRange"
+* component[0].definition = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/observation-referencerange-high"
+* component[=].expression = "high"
+* component[+].definition = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/observation-referencerange-low"
+* component[=].expression = "low"
