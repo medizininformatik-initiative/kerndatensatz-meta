@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
   "id": "mii-sp-icu-observation-component-referencerange",
-  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/observation-component-referencerange",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/observation-referencerange",
   "version": "2024.0.0-ballot",
   "publisher": "Medizininformatik Initiative",
   "contact": [
@@ -14,15 +14,25 @@
       ]
     }
   ],
-  "name": "SP_MII_ICU_Observation_Component_ReferenceRange",
+  "name": "SP_MII_ICU_Observation_ReferenceRange",
   "status": "active",
   "experimental": false,
   "date": "2024-01-02",
-  "description": "Suchparameter für Observation.component.referenceRange",
-  "code": "component-referenceRange",
+  "description": "Suchparameter für Observation.referenceRange",
+  "code": "reference-range",
   "base": [
     "Observation"
   ],
-  "type": "token",
-  "expression": "Observation.component.referenceRange"
+  "type": "composite",
+  "expression": "Observation.referenceRange | Observation.component.referenceRange",
+  "component": [
+    {
+      "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/observation-referencerange-high",
+      "expression": "high"
+    },
+    {
+      "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/observation-referencerange-low",
+      "expression": "low"
+    }
+  ]
 }
