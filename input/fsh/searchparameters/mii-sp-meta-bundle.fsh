@@ -100,9 +100,10 @@ InstanceOf: Bundle
 * insert AddTransactionEntry(mii-sp-icu-observation-bodysite)
 * insert AddTransactionEntry(mii-sp-icu-observation-component-interpretation)
 * insert AddTransactionEntry(mii-sp-icu-observation-component-referencerange)
+* insert AddTransactionEntry(mii-sp-icu-observation-component-referencerange-low)
+* insert AddTransactionEntry(mii-sp-icu-observation-component-referencerange-high)
 * insert AddTransactionEntry(mii-sp-icu-observation-interpretation)
 * insert AddTransactionEntry(mii-sp-icu-observation-issued)
-* insert AddTransactionEntry(mii-sp-icu-observation-referencerange)
 * insert AddTransactionEntry(mii-sp-icu-procedure-recorder)
 // Studie
 * insert AddTransactionEntry(DocumentReference-title)
@@ -215,7 +216,6 @@ InstanceOf: Bundle
 * insert AddCollectionEntry(mii-sp-icu-observation-component-referencerange)
 * insert AddCollectionEntry(mii-sp-icu-observation-interpretation)
 * insert AddCollectionEntry(mii-sp-icu-observation-issued)
-* insert AddCollectionEntry(mii-sp-icu-observation-referencerange)
 * insert AddCollectionEntry(mii-sp-icu-procedure-recorder)
 // Studie
 * insert AddCollectionEntry(DocumentReference-title)
