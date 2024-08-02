@@ -64,7 +64,7 @@ Usage: #definition
 * code = #processing-additive
 * base = #Specimen
 * type = #reference
-* expression = "Specimen.processing.additive as Reference"
+* expression = "Specimen.processing.additive.ofType(Reference)"
 
 Instance: mii-sp-patho-processing-date
 InstanceOf: SearchParameter
@@ -77,7 +77,7 @@ Usage: #definition
 * code = #processing-date
 * base = #Specimen
 * type = #date
-* expression = "(Specimen.processing.time as dateTime) | (Specimen.processing.time as Period)"
+* expression = "Specimen.processing.time.ofType(dateTime) | Specimen.processing.time.ofType(Period)"
 
 Instance: mii-sp-patho-container-additive
 InstanceOf: SearchParameter
@@ -90,7 +90,7 @@ Usage: #definition
 * code = #container-additive
 * base = #Specimen
 * type = #reference
-* expression = "Specimen.container.additive as Reference"
+* expression = "(Specimen.container.additive.ofType(Reference))"
 
 //-----------------------------------------
 // SearchParameters for Observation

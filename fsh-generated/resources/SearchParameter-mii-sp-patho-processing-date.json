@@ -22,5 +22,5 @@
     "Specimen"
   ],
   "type": "date",
-  "expression": "(Specimen.processing.time as dateTime) | (Specimen.processing.time as Period)"
+  "expression": "Specimen.processing.time.ofType(dateTime) | Specimen.processing.time.ofType(Period)"
 }
