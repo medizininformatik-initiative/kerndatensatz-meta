@@ -2167,7 +2167,7 @@
           "Specimen"
         ],
         "type": "reference",
-        "expression": "Specimen.processing.additive as Reference"
+        "expression": "Specimen.processing.additive.ofType(Reference)"
       },
       "request": {
         "method": "PUT",
@@ -2200,7 +2200,7 @@
           "Specimen"
         ],
         "type": "date",
-        "expression": "(Specimen.processing.time as dateTime) | (Specimen.processing.time as Period)"
+        "expression": "Specimen.processing.time.ofType(dateTime) | Specimen.processing.time.ofType(Period)"
       },
       "request": {
         "method": "PUT",
@@ -2233,7 +2233,7 @@
           "Specimen"
         ],
         "type": "reference",
-        "expression": "Specimen.container.additive as Reference"
+        "expression": "(Specimen.container.additive.ofType(Reference))"
       },
       "request": {
         "method": "PUT",

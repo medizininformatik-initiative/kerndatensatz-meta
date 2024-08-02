@@ -22,5 +22,5 @@
     "Specimen"
   ],
   "type": "reference",
-  "expression": "Specimen.processing.additive as Reference"
+  "expression": "Specimen.processing.additive.ofType(Reference)"
 }

@@ -22,5 +22,5 @@
     "Specimen"
   ],
   "type": "reference",
-  "expression": "Specimen.container.additive as Reference"
+  "expression": "(Specimen.container.additive.ofType(Reference))"
 }
