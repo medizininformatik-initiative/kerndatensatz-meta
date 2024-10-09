@@ -5,6 +5,7 @@ Title: "MII PR Meta SearchParameter"
 Description: "Das Profil legt die Mindestanforderungen fest, die SearchParameter-Ressourcen im Kerndatensatz erfüllen müssen."
 * insert PR_CS_VS_Version
 * insert Publisher
+* insert LicenseCodeableCCBY40
 * ^date = "2024-07-01"
 * ^status = #draft 
 * ^experimental = true

@@ -1,9 +1,9 @@
-canonical: https://www.medizininformatik-initiative.de/fhir/core/
+canonical: https://www.medizininformatik-initiative.de/fhir/modul-meta
 fhirVersion: 4.0.1
 FSHOnly: false
 applyExtensionMetadataToRoot: false
 status: active
-version: 2024.0.0
+version: 2025.0.0
 id: mii-ig-meta-de
 name: MII_IG_Meta_DE
 packageId: de.medizininformatikinitiative.kerndatensatz.meta
@@ -13,7 +13,6 @@ publisher:
   name: Medizininformatik Initiative
   url: https://www.medizininformatik-initiative.de/
 #dependencies:
-#  de.basisprofil.r4: 1.4.0
-#  de.medizininformatikinitiative.kerndatensatz.meta: 1.0.3
+#  hl7.fhir.uv.fhir-for-fair: 1.0.0
 menu:
   Home: index.html

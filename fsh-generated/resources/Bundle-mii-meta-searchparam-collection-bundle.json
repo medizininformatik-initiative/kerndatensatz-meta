@@ -5,12 +5,17 @@
   "timestamp": "2024-07-10T18:48:00+01:00",
   "entry": [
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-person-adresszusatz",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-patient-adresszusatz",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-person-adresszusatz",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/SearchParameter/Patient-Adresszusatz",
-        "version": "2024.0.0",
+        "id": "mii-sp-meta-patient-adresszusatz",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-adresszusatz",
+        "version": "2025.0.0",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -22,10 +27,24 @@
             ]
           }
         ],
-        "name": "MII_SP_Person_Adresszusatz",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Person_Adresszusatz",
         "status": "active",
         "experimental": false,
-        "date": "2022-02-21",
+        "date": "2024-10-07",
         "description": "Suchparameter für Patient.address.line.extension:Adresszusatz",
         "code": "adresszusatz",
         "base": [
@@ -36,12 +55,17 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-person-assignerpid",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-patient-assignerpid",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-person-assignerpid",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/SearchParameter/Patient-AssignerPID",
-        "version": "2024.0.0",
+        "id": "mii-sp-meta-patient-assignerpid",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-assignerpid",
+        "version": "2025.0.0",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -53,10 +77,24 @@
             ]
           }
         ],
-        "name": "MII_SP_Person_AssignerPID",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Patient_AssignerPID",
         "status": "active",
         "experimental": false,
-        "date": "2022-02-21",
+        "date": "2024-10-07",
         "description": "Suchparameter für Patient.identifier.assigner.identifier",
         "code": "assigner-pid",
         "base": [
@@ -67,12 +105,17 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-person-consent",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-researchsubject-consent",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-person-consent",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/SearchParameter/ResearchSubject-Consent",
-        "version": "2024.0.0",
+        "id": "mii-sp-meta-researchsubject-consent",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchsubject-consent",
+        "version": "2025.0.0",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -84,10 +127,24 @@
             ]
           }
         ],
-        "name": "MII_SP_Person_Consent",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_ResearchSubject_Consent",
         "status": "active",
         "experimental": false,
-        "date": "2022-02-21",
+        "date": "2024-10-07",
         "description": "Suchparameter für ResearchSubject.consent",
         "code": "consent",
         "base": [
@@ -101,12 +158,17 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-person-gemeindeschluessel",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-patient-gemeindeschluessel",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-person-gemeindeschluessel",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/SearchParameter/Patient-Gemeindeschluessel",
-        "version": "2024.0.0",
+        "id": "mii-sp-meta-patient-gemeindeschluessel",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-gemeindeschluessel",
+        "version": "2025.0.0",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -118,10 +180,24 @@
             ]
           }
         ],
-        "name": "MII_SP_Person_Gemeindeschluessel",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Patient_Gemeindeschluessel",
         "status": "active",
         "experimental": false,
-        "date": "2022-02-21",
+        "date": "2024-10-07",
         "description": "Suchparameter für Patient.address.city.extension:gemeindeschluessel",
         "code": "gemeindeschluessel",
         "base": [
@@ -132,12 +208,17 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-person-hausnummer",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-patient-hausnummer",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-person-hausnummer",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/SearchParameter/Patient-Hausnummer",
-        "version": "2024.0.0",
+        "id": "mii-sp-meta-patient-hausnummer",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-hausnummer",
+        "version": "2025.0.0",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -149,10 +230,24 @@
             ]
           }
         ],
-        "name": "MII_SP_Person_Hausnummer",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Patient_Hausnummer",
         "status": "active",
         "experimental": false,
-        "date": "2022-02-21",
+        "date": "2024-10-07",
         "description": "Suchparameter für Patient.address.line.extension:Hausnummer",
         "code": "hausnummer",
         "base": [
@@ -163,12 +258,17 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-person-otheramtlich",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-patient-otheramtlich",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-person-otheramtlich",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/SearchParameter/Patient-OtherAmtlich",
-        "version": "2024.0.0",
+        "id": "mii-sp-meta-patient-otheramtlich",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-otheramtlich",
+        "version": "2025.0.0",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -180,10 +280,24 @@
             ]
           }
         ],
-        "name": "MII_SP_Person_OtherAmtlich",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Patient_OtherAmtlich",
         "status": "active",
         "experimental": false,
-        "date": "2022-02-21",
+        "date": "2024-10-07",
         "description": "Suchparameter für Patient.gender.extension:other-amtlich",
         "code": "other-amtlich",
         "base": [
@@ -194,12 +308,17 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-person-postfach",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-patient-postfach",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-person-postfach",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/SearchParameter/Patient-Postfach",
-        "version": "2024.0.0",
+        "id": "mii-sp-meta-patient-postfach",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-postfach",
+        "version": "2025.0.0",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -211,26 +330,45 @@
             ]
           }
         ],
-        "name": "MII_SP_Person_Postfach",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Patient_Postfach",
         "status": "active",
         "experimental": false,
-        "date": "2022-02-21",
+        "date": "2024-10-07",
         "description": "Suchparameter für Patient.address.line.extension:Postfach",
         "code": "postfach",
         "base": [
           "Patient"
         ],
         "type": "string",
-        "expression": "Patient.address.line.extension.where(url = 'http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox').value"
+        "expression": "Patient.address.line.extension.where(url='http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox').value"
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-person-prefix",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-patient-prefix",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-person-prefix",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/SearchParameter/Patient-Prefix",
-        "version": "2024.0.0",
+        "id": "mii-sp-meta-patient-prefix",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-prefix",
+        "version": "2025.0.0",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -242,10 +380,24 @@
             ]
           }
         ],
-        "name": "MII_SP_Person_Prefix",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Patient_Prefix",
         "status": "active",
         "experimental": false,
-        "date": "2022-02-21",
+        "date": "2024-10-07",
         "description": "Suchparameter für Patient.name.prefix",
         "code": "prefix",
         "base": [
@@ -256,12 +408,17 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-person-prefixqualifier",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-patient-prefixqualifier",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-person-prefixqualifier",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/SearchParameter/Patient-PrefixQualifier",
-        "version": "2024.0.0",
+        "id": "mii-sp-meta-patient-prefixqualifier",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-prefixqualifier",
+        "version": "2025.0.0",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -273,10 +430,24 @@
             ]
           }
         ],
-        "name": "MII_SP_Person_PrefixQualifier",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Patient_PrefixQualifier",
         "status": "active",
         "experimental": false,
-        "date": "2022-02-21",
+        "date": "2024-10-07",
         "description": "Suchparameter für Patient.name.prefix.extension:prefix-qualifier",
         "code": "prefix-qualifier",
         "base": [
@@ -287,12 +458,17 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-person-stadtteil",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-patient-stadtteil",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-person-stadtteil",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/SearchParameter/Patient-Stadtteil",
-        "version": "2024.0.0",
+        "id": "mii-sp-meta-patient-stadtteil",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-stadtteil",
+        "version": "2025.0.0",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -304,10 +480,24 @@
             ]
           }
         ],
-        "name": "MII_SP_Person_Stadtteil",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Patient_Stadtteil",
         "status": "active",
         "experimental": false,
-        "date": "2022-02-21",
+        "date": "2024-10-07",
         "description": "Suchparameter für Patient.address.extension:Stadtteil",
         "code": "stadtteil",
         "base": [
@@ -318,12 +508,17 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-person-strasse",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-patient-strasse",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-person-strasse",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-person/SearchParameter/Patient-Strasse",
-        "version": "2024.0.0",
+        "id": "mii-sp-meta-patient-strasse",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-strasse",
+        "version": "2025.0.0",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -335,10 +530,24 @@
             ]
           }
         ],
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
         "name": "MII_SP_Person_Strasse",
         "status": "active",
         "experimental": false,
-        "date": "2022-02-21",
+        "date": "2024-10-07",
         "description": "Suchparameter für Patient.address.line.extension:Strasse",
         "code": "strasse",
         "base": [
@@ -349,12 +558,17 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-diagnose-icd10gm-diagnosesicherheit",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-condition-icd10gm-diagnosesicherheit",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-diagnose-icd10gm-diagnosesicherheit",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/SearchParameter/Condition-code-icd10gm-diagnosesicherheit",
-        "version": "2024.0.0",
+        "id": "mii-sp-meta-condition-icd10gm-diagnosesicherheit",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-icd10gm-diagnosesicherheit",
+        "version": "2025.0.0",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -366,10 +580,24 @@
             ]
           }
         ],
-        "name": "MII_SP_Diagnose-ICD10GM-Diagnosesicherheit",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Condition_ICD10GM_Diagnosesicherheit",
         "status": "active",
         "experimental": false,
-        "date": "2024-03-26",
+        "date": "2024-10-08",
         "description": "Suchparameter für Condition.code.coding:icd10-gm.extension:Diagnosesicherheit",
         "code": "icd10gm-diagnosesicherheit",
         "base": [
@@ -380,12 +608,17 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-diagnose-icd10gm-mehrfachcodierung",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-condition-icd10gm-mehrfachcodierung",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-diagnose-icd10gm-mehrfachcodierung",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/SearchParameter/Condition-code-icd10gm-mehrfachcodierung",
-        "version": "2024.0.0",
+        "id": "mii-sp-meta-condition-icd10gm-mehrfachcodierung",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-icd10gm-mehrfachcodierung",
+        "version": "2025.0.0",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -397,10 +630,24 @@
             ]
           }
         ],
-        "name": "MII_SP_Diagnose-ICD10GM-Mehrfachcodierung",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Condition_ICD10GM_Mehrfachcodierung",
         "status": "active",
         "experimental": false,
-        "date": "2024-03-26",
+        "date": "2024-10-08",
         "description": "Suchparameter für Condition.code.coding:icd10-gm.extension:Mehrfachcodierungs-Kennzeichen",
         "code": "icd10gm-mehrfachcodierung",
         "base": [
@@ -411,12 +658,17 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-diagnose-icd10gm-seitenlokalisation",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-condition-icd10gm-seitenlokalisation",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-diagnose-icd10gm-seitenlokalisation",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/SearchParameter/Condition-code-icd10gm-extension-seitenlokalisation",
-        "version": "2024.0.0",
+        "id": "mii-sp-meta-condition-icd10gm-seitenlokalisation",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-icd10gm-seitenlokalisation",
+        "version": "2025.0.0",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -428,10 +680,24 @@
             ]
           }
         ],
-        "name": "MII_SP_Diagnose-ICD10GM-Seitenlokalisation",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Condition_ICD10GM_Seitenlokalisation",
         "status": "active",
         "experimental": false,
-        "date": "2024-03-26",
+        "date": "2024-10-08",
         "description": "Suchparameter für Condition.code.coding:icd10-gm.extension:Seitenlokalisation",
         "code": "icd10gm-seitenlokalisation",
         "base": [
@@ -442,12 +708,17 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-prozedur-bodysite",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-procedure-bodysite",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-prozedur-bodysite",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/SearchParameter/Procedure-BodySite",
-        "version": "2024.0.0",
+        "id": "mii-sp-meta-procedure-bodysite",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-bodysite",
+        "version": "2025.0.0",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -459,10 +730,24 @@
             ]
           }
         ],
-        "name": "MII_SP_Prozedur_BodySite",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Procedure_BodySite",
         "status": "active",
         "experimental": false,
-        "date": "2024-02-08",
+        "date": "2024-10-08",
         "description": "Suchparameter für Procedure.bodySite",
         "code": "bodySite",
         "base": [
@@ -473,12 +758,17 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-prozedur-dokumentationsdatum",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-procedure-dokumentationsdatum",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-prozedur-dokumentationsdatum",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/SearchParameter/Procedure-Dokumentationsdatum",
-        "version": "2024.0.0",
+        "id": "mii-sp-meta-procedure-dokumentationsdatum",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-dokumentationsdatum",
+        "version": "2025.0.0",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -490,10 +780,24 @@
             ]
           }
         ],
-        "name": "MII_SP_Prozedur_Dokumentationsdatum",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Procedure_Dokumentationsdatum",
         "status": "active",
         "experimental": false,
-        "date": "2024-02-08",
+        "date": "2024-10-08",
         "description": "Suchparameter für Procedure.extension:Dokumentationsdatum",
         "code": "dokumentationsdatum",
         "base": [
@@ -504,12 +808,17 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-prozedur-durchfuehrungsabsicht",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-procedure-durchfuehrungsabsicht",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-prozedur-durchfuehrungsabsicht",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/SearchParameter/Procedure-Durchfuehrungsabsicht",
-        "version": "2024.0.0",
+        "id": "mii-sp-meta-procedure-durchfuehrungsabsicht",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-durchfuehrungsabsicht",
+        "version": "2025.0.0",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -521,7 +830,21 @@
             ]
           }
         ],
-        "name": "MII_SP_Prozedur_Durchfuehrungsabsicht",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Procedure_Durchfuehrungsabsicht",
         "status": "active",
         "experimental": false,
         "date": "2024-04-24",
@@ -535,11 +858,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-fall-encounter-diagnosis-use",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-encounter-diagnosis-use",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-fall-encounter-diagnosis-use",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/SearchParameter/Encounter-diagnosis-use",
+        "id": "mii-sp-meta-encounter-diagnosis-use",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-diagnosis-use",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -551,11 +879,25 @@
             ]
           }
         ],
-        "version": "2024.0.0",
-        "name": "MII_SP_Fall_Encounter_DiagnosisUse",
+        "version": "2025.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Encounter_DiagnosisUse",
         "status": "active",
         "experimental": false,
-        "date": "2023-11-10",
+        "date": "2024-10-08",
         "description": "Suchparameter für Encounter.diagnosis.use",
         "code": "diagnosis-use",
         "base": [
@@ -566,10 +908,15 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-fall-encounter-hospitalization-admitsource",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-encounter-hospitalization-admitsource",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-fall-encounter-hospitalization-admitsource",
+        "id": "mii-sp-meta-encounter-hospitalization-admitsource",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
         "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/SearchParameter/Encounter-hospitalization-admitSource",
         "publisher": "Medizininformatik Initiative",
         "contact": [
@@ -582,11 +929,25 @@
             ]
           }
         ],
-        "version": "2024.0.0",
-        "name": "MII_SP_Fall_Encounter_Hospitalization_AdmitSource",
+        "version": "2025.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Encounter_Hospitalization_AdmitSource",
         "status": "active",
         "experimental": false,
-        "date": "2023-11-10",
+        "date": "2024-10-08",
         "description": "Suchparameter für Encounter.hospitalization.admitSource",
         "code": "hospitalization-admitsource",
         "base": [
@@ -597,11 +958,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-fall-encounter-location-physical-type",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-encounter-location-physical-type",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-fall-encounter-location-physical-type",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/SearchParameter/Encounter-location-physicalType",
+        "id": "mii-sp-meta-encounter-location-physical-type",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-location-physical-type",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -613,11 +979,25 @@
             ]
           }
         ],
-        "version": "2024.0.0",
-        "name": "MII_SP_Fall_Encounter_Location_PhysicalType",
+        "version": "2025.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Encounter_Location_PhysicalType",
         "status": "active",
         "experimental": false,
-        "date": "2023-11-10",
+        "date": "2024-10-08",
         "description": "Suchparameter für Encounter.location.physicalType",
         "code": "location-physical-type",
         "base": [
@@ -628,11 +1008,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-fall-encounter-servicetype",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-encounter-servicetype",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-fall-encounter-servicetype",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/SearchParameter/Encounter-servicetype",
+        "id": "mii-sp-meta-encounter-servicetype",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-servicetype",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -644,11 +1029,25 @@
             ]
           }
         ],
-        "version": "2024.0.0",
-        "name": "MII_SP_Fall_Encounter_ServiceType",
+        "version": "2025.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Encounter_ServiceType",
         "status": "active",
         "experimental": false,
-        "date": "2023-11-10",
+        "date": "2024-10-08",
         "description": "Suchparameter für Encounter.serviceType",
         "code": "service-type",
         "base": [
@@ -659,11 +1058,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-medikation-medication-ingredient-strength-numerator",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-medication-ingredient-strength-numerator",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-medikation-medication-ingredient-strength-numerator",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Medication-IngredientStrengthNumerator",
+        "id": "mii-sp-meta-medication-ingredient-strength-numerator",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength-numerator",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -675,11 +1079,25 @@
             ]
           }
         ],
-        "version": "2024.0.0",
-        "name": "MII_SP_Medikation_Medication_Ingredient_Strength_Numerator",
+        "version": "2025.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Medication_Ingredient_Strength_Numerator",
         "status": "active",
         "experimental": false,
-        "date": "2022-06-28",
+        "date": "2024-10-08",
         "description": "Suchparameter für Medication.ingredient.strength.numerator",
         "code": "ingredient-strength-numerator",
         "base": [
@@ -697,11 +1115,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-medikation-medication-ingredient-strength-denominator",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-medication-ingredient-strength-denominator",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-medikation-medication-ingredient-strength-denominator",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Medication-IngredientStrengthDenominator",
+        "id": "mii-sp-meta-medication-ingredient-strength-denominator",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength-denominator",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -713,11 +1136,25 @@
             ]
           }
         ],
-        "version": "2024.0.0",
-        "name": "MII_SP_Medikation_Medication_Ingredient_Strength_Denominator",
+        "version": "2025.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Medication_Ingredient_Strength_Denominator",
         "status": "active",
         "experimental": false,
-        "date": "2022-06-28",
+        "date": "2024-10-08",
         "description": "Suchparameter für Medication.ingredient.strength.denominator",
         "code": "ingredient-strength-denominator",
         "base": [
@@ -735,11 +1172,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-medikation-medication-ingredient-strength",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-medication-ingredient-strength",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-medikation-medication-ingredient-strength",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Medication-IngredientStrength",
+        "id": "mii-sp-meta-medication-ingredient-strength",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -751,11 +1193,25 @@
             ]
           }
         ],
-        "version": "2024.0.0",
-        "name": "MII_SP_Medikation_Medication_Ingredient_Strength",
+        "version": "2025.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Medication_Ingredient_Strength",
         "status": "active",
         "experimental": false,
-        "date": "2022-09-22",
+        "date": "2024-10-08",
         "description": "Suchparameter für Medication.ingredient.strength",
         "code": "ingredient-strength",
         "base": [
@@ -765,22 +1221,27 @@
         "expression": "Medication.ingredient.strength",
         "component": [
           {
-            "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Medication-IngredientStrengthNumerator",
+            "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength-numerator",
             "expression": "numerator"
           },
           {
-            "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Medication-IngredientStrengthDenominator",
+            "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength-denominator",
             "expression": "denominator"
           }
         ]
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-medikation-medication-reasonreference",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-medication-reasonreference",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-medikation-medication-reasonreference",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Medication-ReasonReference",
+        "id": "mii-sp-meta-medication-reasonreference",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-reasonreference",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -792,11 +1253,25 @@
             ]
           }
         ],
-        "version": "2024.0.0",
-        "name": "MII_SP_Medikation_Medication_ReasonReference",
+        "version": "2025.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Medication_ReasonReference",
         "status": "active",
         "experimental": false,
-        "date": "2022-06-28",
+        "date": "2024-10-08",
         "description": "Suchparameter für (MedicationAdministration|MedicationStatement).reasonReference",
         "code": "reason-reference",
         "base": [
@@ -813,11 +1288,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-medikation-dosage-site",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-medication-dosage-site",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-medikation-dosage-site",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-Site",
+        "id": "mii-sp-meta-medication-dosage-site",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-site",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -829,11 +1309,25 @@
             ]
           }
         ],
-        "version": "2024.0.0",
-        "name": "MII_SP_Medikation_Dosage_Site",
+        "version": "2025.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Medication_Dosage_Site",
         "status": "active",
         "experimental": false,
-        "date": "2024-06-28",
+        "date": "2024-10-08",
         "description": "Suchparameter für (MedicationAdministration|MedicationStatement).dosage.site | MedicationRequest.dosageInstruction.site",
         "code": "dosage-site",
         "base": [
@@ -853,11 +1347,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-medikation-dosage-route",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-medication-dosage-route",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-medikation-dosage-route",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-Route",
+        "id": "mii-sp-meta-medication-dosage-route",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-route",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -869,11 +1368,25 @@
             ]
           }
         ],
-        "version": "2024.0.0",
-        "name": "MII_SP_Medikation_Dosage_Route",
+        "version": "2025.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Medication_Dosage_Route",
         "status": "active",
         "experimental": false,
-        "date": "2024-06-28",
+        "date": "2024-10-08",
         "description": "Suchparameter für (MedicationAdministration|MedicationStatement).dosage.route | MedicationRequest.dosageInstruction.route",
         "code": "dosage-route",
         "base": [
@@ -893,11 +1406,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-medikation-dosage-doserange-low",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-medication-dosage-doserange-low",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-medikation-dosage-doserange-low",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-DoseRangeLow",
+        "id": "mii-sp-meta-medication-dosage-doserange-low",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange-low",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -909,11 +1427,25 @@
             ]
           }
         ],
-        "version": "2024.0.0",
-        "name": "MII_SP_Medikation_Dosage_DoseRangeLow",
+        "version": "2025.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Medication_Dosage_DoseRangeLow",
         "status": "active",
         "experimental": false,
-        "date": "2024-06-28",
+        "date": "2024-10-08",
         "description": "Suchparameter für MedicationStatement.dosage.doseAndRate.doseRange.low | MedicationRequest.dosageInstruction.doseAndRate.doseRange.low",
         "code": "doserange-low",
         "base": [
@@ -932,11 +1464,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-medikation-dosage-doserange-high",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-medication-dosage-doserange-high",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-medikation-dosage-doserange-high",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-DoseRangeHigh",
+        "id": "mii-sp-meta-medication-dosage-doserange-high",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange-high",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -948,11 +1485,25 @@
             ]
           }
         ],
-        "version": "2024.0.0",
-        "name": "MII_SP_Medikation_Dosage_DoseRangeHigh",
+        "version": "2025.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Medication_Dosage_DoseRangeHigh",
         "status": "active",
         "experimental": false,
-        "date": "2024-06-28",
+        "date": "2024-10-08",
         "description": "Suchparameter für MedicationStatement.dosage.doseAndRate.doseRange.high | MedicationRequest.dosageInstruction.doseAndRate.doseRange.high",
         "code": "doserange-high",
         "base": [
@@ -971,11 +1522,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-medikation-dosage-doserange",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-medication-dosage-doserange",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-medikation-dosage-doserange",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-DoseRange",
+        "id": "mii-sp-meta-medication-dosage-doserange",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -987,11 +1543,25 @@
             ]
           }
         ],
-        "version": "2024.0.0",
-        "name": "MII_SP_Medikation_Dosage_DoseRange",
+        "version": "2025.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Medication_Dosage_DoseRange",
         "status": "active",
         "experimental": false,
-        "date": "2024-06-28",
+        "date": "2024-10-08",
         "description": "Suchparameter für MedicationStatement.dosage.doseAndRate.doseRange | MedicationRequest.dosageInstruction.doseAndRate.doseRange",
         "code": "doserange",
         "base": [
@@ -1002,22 +1572,27 @@
         "expression": "MedicationStatement.dosage.doseAndRate.dose.ofType(Range) | MedicationRequest.dosageInstruction.doseAndRate.dose.ofType(Range)",
         "component": [
           {
-            "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-DoseRangeLow",
+            "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange-low",
             "expression": "low"
           },
           {
-            "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-DoseRangeHigh",
+            "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange-high",
             "expression": "high"
           }
         ]
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-medikation-dosage-dosequantity",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-medication-dosage-dosequantity",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-medikation-dosage-dosequantity",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-DoseQuantity",
+        "id": "mii-sp-meta-medication-dosage-dosequantity",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-dosequantity",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -1029,11 +1604,25 @@
             ]
           }
         ],
-        "version": "2024.0.0",
-        "name": "MII_SP_Medikation_Dosage_DoseQuantity",
+        "version": "2025.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Medication_Dosage_DoseQuantity",
         "status": "active",
         "experimental": false,
-        "date": "2024-06-28",
+        "date": "2024-10-08",
         "description": "Suchparameter für MedicationStatement.dosage.doseAndRate.doseQuantity | MedicationRequest.dosageInstruction.doseAndRate.doseQuantity | MedicationAdministration.dosage.dose",
         "code": "dose-quantity",
         "base": [
@@ -1053,11 +1642,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-medikation-dosage-rateratio-numerator",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-medication-dosage-rateratio-numerator",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-medikation-dosage-rateratio-numerator",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-RateRatioNumerator",
+        "id": "mii-sp-meta-medication-dosage-rateratio-numerator",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-numerator",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -1069,11 +1663,25 @@
             ]
           }
         ],
-        "version": "2024.0.0",
-        "name": "MII_SP_Medikation_Dosage_RateRatioNumerator",
+        "version": "2025.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Medication_Dosage_RateRatioNumerator",
         "status": "active",
         "experimental": false,
-        "date": "2024-06-27",
+        "date": "2024-10-08",
         "description": "Suchparameter für MedicationStatement.dosage.doseAndRate.rateRatio.numerator | MedicationAdministration.dosage.rate.ofType(Ratio).numerator | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio).numerator",
         "code": "rateratio-numerator",
         "base": [
@@ -1093,11 +1701,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-medikation-dosage-rateratio-denominator",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-medication-dosage-rateratio-denominator",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-medikation-dosage-rateratio-denominator",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-RateRatioDenominator",
+        "id": "mii-sp-meta-medication-dosage-rateratio-denominator",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-denominator",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -1109,11 +1722,25 @@
             ]
           }
         ],
-        "version": "2024.0.0",
-        "name": "MII_SP_Medikation_Dosage_RateRatioDenominator",
+        "version": "2025.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Medication_Dosage_RateRatioDenominator",
         "status": "active",
         "experimental": false,
-        "date": "2024-06-27",
+        "date": "2024-10-08",
         "description": "Suchparameter für MedicationStatement.dosage.doseAndRate.rateRatio.denominator | MedicationAdministration.dosage.rate.ofType(Ratio).denominator | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio).denominator",
         "code": "rateratio-denominator",
         "base": [
@@ -1133,11 +1760,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-medikation-dosage-rateratio",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-medication-dosage-rateratio",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-medikation-dosage-rateratio",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-RateRatio",
+        "id": "mii-sp-meta-medication-dosage-rateratio",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -1149,11 +1781,25 @@
             ]
           }
         ],
-        "version": "2024.0.0",
-        "name": "MII_SP_Medikation_Dosage_RateRatio",
+        "version": "2025.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Medication_Dosage_RateRatio",
         "status": "active",
         "experimental": false,
-        "date": "2024-06-27",
+        "date": "2024-10-08",
         "description": "MedicationStatement.dosage.doseAndRate.rate.ofType(Ratio) | MedicationAdministration.dosage.rate.ofType(Ratio) | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio)",
         "code": "rateratio",
         "base": [
@@ -1165,22 +1811,27 @@
         "expression": "MedicationStatement.dosage.doseAndRate.rate.ofType(Ratio) | MedicationAdministration.dosage.rate.ofType(Ratio) | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio)",
         "component": [
           {
-            "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-RateRatioNumerator",
+            "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-numerator",
             "expression": "numerator"
           },
           {
-            "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-RateRatioDenominator",
+            "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-denominator",
             "expression": "denominator"
           }
         ]
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-medikation-dosage-raterange-low",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-medication-dosage-raterange-low",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-medikation-dosage-raterange-low",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-RateRangeLow",
+        "id": "mii-sp-meta-medication-dosage-raterange-low",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange-low",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -1192,11 +1843,25 @@
             ]
           }
         ],
-        "version": "2024.0.0",
-        "name": "MII_SP_Medikation_Dosage_RateRangeLow",
+        "version": "2025.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Medication_Dosage_RateRangeLow",
         "status": "active",
         "experimental": false,
-        "date": "2024-06-28",
+        "date": "2024-10-08",
         "description": "Suchparameter für MedicationStatement.dosage.doseAndRate.rateRange.low | MedicationRequest.dosageInstruction.doseAndRate.rateRange.low",
         "code": "raterange-low",
         "base": [
@@ -1215,11 +1880,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-medikation-dosage-raterange-high",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-medication-dosage-raterange-high",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-medikation-dosage-raterange-high",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-RateRangeHigh",
+        "id": "mii-sp-meta-medication-dosage-raterange-high",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange-high",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -1231,11 +1901,25 @@
             ]
           }
         ],
-        "version": "2024.0.0",
-        "name": "MII_SP_Medikation_Dosage_RateRangeHigh",
+        "version": "2025.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Medication_Dosage_RateRangeHigh",
         "status": "active",
         "experimental": false,
-        "date": "2024-06-28",
+        "date": "2024-10-08",
         "description": "Suchparameter für MedicationStatement.dosage.doseAndRate.rateRange.high | MedicationRequest.dosageInstruction.doseAndRate.rateRange.high",
         "code": "raterange-high",
         "base": [
@@ -1254,10 +1938,15 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-medikation-dosage-raterange",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-medication-dosage-raterange",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-medikation-dosage-raterange",
+        "id": "mii-sp-meta-medication-dosage-raterange",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
         "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-RateRange",
         "publisher": "Medizininformatik Initiative",
         "contact": [
@@ -1270,8 +1959,22 @@
             ]
           }
         ],
-        "version": "2024.0.0",
-        "name": "MII_SP_Medikation_Dosage_RateRange",
+        "version": "2025.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Medication_Dosage_RateRange",
         "status": "active",
         "experimental": false,
         "date": "2024-06-28",
@@ -1285,22 +1988,27 @@
         "expression": "MedicationStatement.dosage.doseAndRate.rate.ofType(Range) | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Range)",
         "component": [
           {
-            "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-RateRangeLow",
+            "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange-low",
             "expression": "low"
           },
           {
-            "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-RateRangeHigh",
+            "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange-high",
             "expression": "high"
           }
         ]
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-medikation-dosage-ratequantity",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-medication-dosage-ratequantity",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-medikation-dosage-ratequantity",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-RateQuantity",
+        "id": "mii-sp-meta-medication-dosage-ratequantity",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-ratequantity",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -1312,11 +2020,25 @@
             ]
           }
         ],
-        "version": "2024.0.0",
-        "name": "MII_SP_Medikation_Dosage_RateQuantity",
+        "version": "2025.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Medication_Dosage_RateQuantity",
         "status": "active",
         "experimental": false,
-        "date": "2024-06-28",
+        "date": "2024-10-08",
         "description": "Suchparameter für MedicationStatement.dosage.doseAndRate.rateQuantity | MedicationAdministration.dosage.rateQuantity | MedicationRequest.dosageInstruction.doseAndRate.rateQuantity",
         "code": "ratequantity",
         "base": [
@@ -1336,11 +2058,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-medikation-list-mode",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-medication-list-mode",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-medikation-list-mode",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/List-Mode",
+        "id": "mii-sp-meta-medication-list-mode",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-list-mode",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -1352,8 +2079,22 @@
             ]
           }
         ],
-        "version": "2024.0.0",
-        "name": "MII_SP_Medikation_List_Mode",
+        "version": "2025.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Medication_List_Mode",
         "status": "active",
         "experimental": false,
         "date": "2022-06-28",
@@ -1367,15 +2108,45 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-consent-policyuri",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-consent-policyuri",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-consent-policyuri",
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-policyuri",
-        "version": "1.0.7",
-        "name": "MII_SP_Consent_PolicyUri",
+        "id": "mii-sp-meta-consent-policyuri",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-policyuri",
+        "version": "2025.0.0",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Consent_PolicyUri",
         "status": "active",
-        "date": "2023-05-09",
+        "date": "2024-10-07",
         "description": "Suche in der Policy URI (versionsspezifische Policy / Broad Consent)",
         "code": "mii-policy-uri",
         "base": [
@@ -1388,15 +2159,45 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-consent-provisioncode",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-consent-provisioncode",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-consent-provisioncode",
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisioncode",
-        "version": "1.0.7",
-        "name": "MII_SP_Consent_ProvisionCode",
+        "id": "mii-sp-meta-consent-provisioncode",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-provisioncode",
+        "version": "2025.0.0",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Consent_ProvisionCode",
         "status": "active",
-        "date": "2023-05-09",
+        "date": "2024-10-07",
         "description": "Suche im Code der Provison",
         "code": "mii-provision-provision-code",
         "base": [
@@ -1409,15 +2210,45 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-consent-provisioncodeperiod",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-consent-provisioncodeperiod",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-consent-provisioncodeperiod",
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisioncodeperiod",
-        "version": "1.0.7",
-        "name": "MII_SP_Consent_ProvisionCodePeriod",
+        "id": "mii-sp-meta-consent-provisioncodeperiod",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-provisioncodeperiod",
+        "version": "2025.0.0",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Consent_ProvisionCodePeriod",
         "status": "active",
-        "date": "2023-05-09",
+        "date": "2024-10-07",
         "description": "Composite-Suche nach Zeitraum (period) einer bestimmten, durch einen Code definierten, Provision.",
         "code": "mii-provision-provision-code-period",
         "base": [
@@ -1427,26 +2258,56 @@
         "expression": "Consent.provision.provision",
         "component": [
           {
-            "definition": "https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisioncode",
+            "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-provisioncode",
             "expression": "code"
           },
           {
-            "definition": "https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisionperiod",
+            "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-provisionperiod",
             "expression": "period"
           }
         ]
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-consent-provisioncodetype",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-consent-provisioncodetype",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-consent-provisioncodetype",
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisioncodetype",
-        "version": "1.0.7",
-        "name": "MII_SP_Consent_ProvisionCodeType",
+        "id": "mii-sp-meta-consent-provisioncodetype",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-provisioncodetype",
+        "version": "2025.0.0",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Consent_ProvisionCodeType",
         "status": "active",
-        "date": "2023-05-09",
+        "date": "2024-10-07",
         "description": "Composite-Suche nach Typ (type) einer bestimmten, durch einen Code definierten, Provision.",
         "code": "mii-provision-provision-code-type",
         "base": [
@@ -1456,26 +2317,56 @@
         "expression": "Consent.provision.provision",
         "component": [
           {
-            "definition": "https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisioncode",
+            "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-provisioncode",
             "expression": "code"
           },
           {
-            "definition": "https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisiontype",
+            "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-provisiontype",
             "expression": "type"
           }
         ]
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-consent-provisionperiod",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-consent-provisionperiod",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-consent-provisionperiod",
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisionperiod",
-        "version": "1.0.7",
-        "name": "MII_SP_Consent_ProvisionPeriod",
+        "id": "mii-sp-meta-consent-provisionperiod",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-provisionperiod",
+        "version": "2025.0.0",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Consent_ProvisionPeriod",
         "status": "active",
-        "date": "2023-05-09",
+        "date": "2024-10-07",
         "description": "Suche im Zeitraum der Provision. Dieser Suchparameter bezieht sich explizit auf die zweite Verschachtelungsebene von provison.",
         "code": "mii-provision-provision-period",
         "base": [
@@ -1488,15 +2379,45 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-consent-provisiontype",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-consent-provisiontype",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-consent-provisiontype",
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisiontype",
-        "version": "1.0.7",
-        "name": "MII_SP_Consent_ProvisionType",
+        "id": "mii-sp-meta-consent-provisiontype",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-provisiontype",
+        "version": "2025.0.0",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Consent_ProvisionType",
         "status": "active",
-        "date": "2023-05-09",
+        "date": "2024-10-07",
         "description": "Suche im Typ der Provison (permit, deny).",
         "code": "mii-provision-provision-type",
         "base": [
@@ -1509,12 +2430,44 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-biobank-diagnose",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-specimen-diagnose",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-biobank-diagnose",
-        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/SearchParameter/diagnose",
-        "name": "diagnose",
+        "id": "mii-sp-meta-specimen-diagnose",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-diagnose",
+        "version": "2025.0.0",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Specimen_Diagnose",
+        "date": "2024-10-08",
         "status": "active",
         "experimental": true,
         "description": "Suchparameter für die Extension Diagnose am Profil Bioprobe",
@@ -1533,12 +2486,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-mikrobio-interpretation",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-observation-interpretation",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-mikrobio-interpretation",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-mikrobio/SearchParameter/Observation-interpretation",
-        "version": "2024.0.0",
+        "id": "mii-sp-meta-observation-interpretation",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-interpretation",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -1550,10 +2507,25 @@
             ]
           }
         ],
-        "name": "MII_SP_Mikrobio_Interpretation",
+        "version": "2025.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Observation_Interpretation",
         "status": "active",
         "experimental": false,
-        "date": "2022-02-21",
+        "date": "2024-10-08",
         "description": "Suchparameter für Observation.interpretation",
         "code": "interpretation",
         "base": [
@@ -1564,11 +2536,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-molgen-servicerequest-reasoncode",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-servicerequest-reasoncode",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-molgen-servicerequest-reasoncode",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-molgen/SearchParameter/ServiceRequest-ReasonCode",
+        "id": "mii-sp-meta-servicerequest-reasoncode",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-servicerequest-reasoncode",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -1580,10 +2557,25 @@
             ]
           }
         ],
-        "name": "SP_MII_MolGen_ServiceRequest_ReasonCode",
+        "version": "2025.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_ServiceRequest_ReasonCode",
         "status": "active",
         "experimental": false,
-        "date": "2022-07-07",
+        "date": "2024-10-08",
         "description": "Suchparameter für ServiceRequest.reasonCode",
         "code": "reason-code",
         "base": [
@@ -1594,11 +2586,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-molgen-servicerequest-reasonreference",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-servicerequest-reasonreference",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-molgen-servicerequest-reasonreference",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-molgen/SearchParameter/ServiceRequest-ReasonReference",
+        "id": "mii-sp-meta-servicerequest-reasonreference",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-servicerequest-reasonreference",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -1610,10 +2607,25 @@
             ]
           }
         ],
-        "name": "SP_MII_MolGen_ServiceRequest_ReasonReference",
+        "version": "2025.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_ServiceRequest_ReasonReference",
         "status": "active",
         "experimental": false,
-        "date": "2022-07-07",
+        "date": "2024-10-08",
         "description": "Suchparameter für ServiceRequest.reasonReference",
         "code": "reason-reference",
         "base": [
@@ -1630,11 +2642,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-molgen-task-reasoncode",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-task-reasoncode",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-molgen-task-reasoncode",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-molgen/SearchParameter/Task-ReasonCode",
+        "id": "mii-sp-meta-task-reasoncode",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-task-reasoncode",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -1646,10 +2663,25 @@
             ]
           }
         ],
-        "name": "SP_MII_MolGen_Task_ReasonCode",
+        "version": "2025.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Task_ReasonCode",
         "status": "active",
         "experimental": false,
-        "date": "2022-07-07",
+        "date": "2024-10-08",
         "description": "Suchparameter für Task.reasonCode",
         "code": "reason-code",
         "base": [
@@ -1660,11 +2692,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-molgen-task-reasonreference",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-task-reasonreference",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-molgen-task-reasonreference",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-molgen/SearchParameter/Task-ReasonReference",
+        "id": "mii-sp-meta-task-reasonreference",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-task-reasonreference",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -1676,10 +2713,25 @@
             ]
           }
         ],
-        "name": "SP_MII_MolGen_Task_ReasonReference",
+        "version": "2025.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Task_ReasonReference",
         "status": "active",
         "experimental": false,
-        "date": "2022-07-07",
+        "date": "2024-10-08",
         "description": "Suchparameter für Task.reasonReference",
         "code": "reason-reference",
         "base": [
@@ -1693,11 +2745,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-molgen-task-for",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-task-for",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-molgen-task-for",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-molgen/SearchParameter/Task-For",
+        "id": "mii-sp-meta-task-for",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-task-for",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -1709,10 +2766,25 @@
             ]
           }
         ],
-        "name": "SP_MII_MolGen_Task_For",
+        "version": "2025.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_Meta_Task_For",
         "status": "active",
         "experimental": false,
-        "date": "2022-07-07",
+        "date": "2024-10-08",
         "description": "Suchparameter für Task.for",
         "code": "for",
         "base": [
@@ -1726,11 +2798,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-molgen-familymemberhistory-reasoncode",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-familymemberhistory-reasoncode",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-molgen-familymemberhistory-reasoncode",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-molgen/SearchParameter/FamilyMemberHistory-ReasonCode",
+        "id": "mii-sp-meta-familymemberhistory-reasoncode",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-familymemberhistory-reasoncode",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -1742,10 +2819,25 @@
             ]
           }
         ],
-        "name": "SP_MII_MolGen_FamilyMemberHistory_ReasonCode",
+        "version": "2025.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_FamilyMemberHistory_ReasonCode",
         "status": "active",
         "experimental": false,
-        "date": "2022-07-07",
+        "date": "2024-10-08",
         "description": "Suchparameter für FamilyMemberHistory.reasonCode",
         "code": "reason-code",
         "base": [
@@ -1756,11 +2848,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-molgen-familymemberhistory-reasonreference",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-familymemberhistory-reasonreference",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-molgen-familymemberhistory-reasonreference",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-molgen/SearchParameter/FamilyMemberHistory-ReasonReference",
+        "id": "mii-sp-meta-familymemberhistory-reasonreference",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-familymemberhistory-reasonreference",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -1772,10 +2869,25 @@
             ]
           }
         ],
-        "name": "SP_MII_MolGen_FamilyMemberHistory_ReasonReference",
+        "version": "2025.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_FamilyMemberHistory_ReasonReference",
         "status": "active",
         "experimental": false,
-        "date": "2022-07-07",
+        "date": "2024-10-08",
         "description": "Suchparameter für FamilyMemberHistory.reasonReference",
         "code": "reason-reference",
         "base": [
@@ -1794,11 +2906,17 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-patho-request",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-specimen-request",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-patho-request",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core//SearchParameter/mii-sp-patho-request",
+        "id": "mii-sp-meta-specimen-request",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-request",
+        "version": "2025.0.0",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -1810,8 +2928,22 @@
             ]
           }
         ],
-        "version": "2024.0.0",
-        "name": "MII_SP_Patho_Request",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "date": "2024-10-08",
+        "name": "MII_SP_Meta_Specimen_Request",
         "description": "SearchParameter for Specimen.request",
         "status": "active",
         "code": "request",
@@ -1823,11 +2955,17 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-patho-collection-method",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-specimen-collection-method",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-patho-collection-method",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core//SearchParameter/mii-sp-patho-collection-method",
+        "id": "mii-sp-meta-specimen-collection-method",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-collection-method",
+        "version": "2025.0.0",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -1839,8 +2977,22 @@
             ]
           }
         ],
-        "version": "2024.0.0",
-        "name": "MII_SP_Patho_Collection_Method",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "date": "2024-10-08",
+        "name": "MII_SP_Meta_Specimen_Collection_Method",
         "description": "SearchParameter for Specimen.collection.method",
         "status": "active",
         "code": "collection-method",
@@ -1852,11 +3004,17 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-patho-collection-body-site",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-specimen-collection-body-site",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-patho-collection-body-site",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core//SearchParameter/mii-sp-patho-collection-body-site",
+        "id": "mii-sp-meta-specimen-collection-body-site",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-collection-body-site",
+        "version": "2025.0.0",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -1868,8 +3026,22 @@
             ]
           }
         ],
-        "version": "2024.0.0",
-        "name": "MII_SP_Patho_Collection_Body_Site",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "date": "2024-10-08",
+        "name": "MII_SP_Meta_Specimen_Collection_Body_Site",
         "description": "SearchParameter for Specimen.collection.bodySite",
         "status": "active",
         "code": "collection-body-site",
@@ -1881,11 +3053,17 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-patho-processing-procedure",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-specimen-processing-procedure",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-patho-processing-procedure",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core//SearchParameter/mii-sp-patho-processing-procedure",
+        "id": "mii-sp-meta-specimen-processing-procedure",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-processing-procedure",
+        "version": "2025.0.0",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -1897,8 +3075,22 @@
             ]
           }
         ],
-        "version": "2024.0.0",
-        "name": "MII_SP_Patho_Processing_Procedure",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "date": "2024-10-08",
+        "name": "MII_SP_Meta_Specimen_Processing_Procedure",
         "description": "SearchParameter for Specimen.processing.procedure",
         "status": "active",
         "code": "processing-procedure",
@@ -1910,11 +3102,17 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-patho-processing-additive",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-specimen-processing-additive",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-patho-processing-additive",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core//SearchParameter/mii-sp-patho-processing-additive",
+        "id": "mii-sp-meta-specimen-processing-additive",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-processing-additive",
+        "version": "2025.0.0",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -1926,8 +3124,22 @@
             ]
           }
         ],
-        "version": "2024.0.0",
-        "name": "MII_SP_Patho_Processing_Additive",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "date": "2024-10-08",
+        "name": "MII_SP_Meta_Specimen_Processing_Additive",
         "description": "SearchParameter for Specimen.processing.additive",
         "status": "active",
         "code": "processing-additive",
@@ -1939,11 +3151,17 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-patho-processing-date",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-specimen-processing-date",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-patho-processing-date",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core//SearchParameter/mii-sp-patho-processing-date",
+        "id": "mii-sp-meta-specimen-processing-date",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-processing-date",
+        "version": "2025.0.0",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -1955,8 +3173,22 @@
             ]
           }
         ],
-        "version": "2024.0.0",
-        "name": "MII_SP_Patho_Processing_Date",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "date": "2024-10-08",
+        "name": "MII_SP_Meta_Specimen_Processing_Date",
         "description": "SearchParameter for Specimen.processing.time",
         "status": "active",
         "code": "processing-date",
@@ -1968,11 +3200,17 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-patho-container-additive",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-specimen-container-additive",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-patho-container-additive",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core//SearchParameter/mii-sp-patho-container-additive",
+        "id": "mii-sp-meta-specimen-container-additive",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-container-additive",
+        "version": "2025.0.0",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -1984,8 +3222,22 @@
             ]
           }
         ],
-        "version": "2024.0.0",
-        "name": "MII_SP_Patho_Container_Additive",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "date": "2024-10-08",
+        "name": "MII_SP_Meta_Specimen_Container_Additive",
         "description": "SearchParameter for Specimen.container.additive",
         "status": "active",
         "code": "container-additive",
@@ -1997,11 +3249,17 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-patho-body-site",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-observation-value-ratio",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-patho-body-site",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core//SearchParameter/mii-sp-patho-body-site",
+        "id": "mii-sp-meta-observation-value-ratio",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-value-ratio",
+        "version": "2025.0.0",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -2013,37 +3271,22 @@
             ]
           }
         ],
-        "version": "2024.0.0",
-        "name": "MII_SP_Patho_Body_Site",
-        "description": "SearchParameter for Observation.bodySite",
-        "status": "active",
-        "code": "body-site",
-        "base": [
-          "Observation"
-        ],
-        "type": "token",
-        "expression": "Observation.bodySite"
-      }
-    },
-    {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-patho-value-ratio",
-      "resource": {
-        "resourceType": "SearchParameter",
-        "id": "mii-sp-patho-value-ratio",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core//SearchParameter/mii-sp-patho-value-ratio",
-        "publisher": "Medizininformatik Initiative",
-        "contact": [
+        "extension": [
           {
-            "telecom": [
-              {
-                "system": "url",
-                "value": "https://www.medizininformatik-initiative.de"
-              }
-            ]
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
           }
         ],
-        "version": "2024.0.0",
-        "name": "MII_SP_Patho_Value_Ratio",
+        "date": "2024-10-08",
+        "name": "MII_SP_Meta_Observation_Value_Ratio",
         "description": "SearchParameter for Observation.valueRatio",
         "status": "active",
         "code": "value-ratio",
@@ -2054,22 +3297,28 @@
         "expression": "Observation.value.ofType(Ratio)",
         "component": [
           {
-            "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/SearchParameter/mii-sp-patho-value-ratio-numerator",
+            "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-value-ratio-numerator",
             "expression": "numerator"
           },
           {
-            "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/SearchParameter/mii-sp-patho-value-ratio-denominator",
+            "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-value-ratio-denominator",
             "expression": "denominator"
           }
         ]
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-patho-value-ratio-numerator",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-observation-value-ratio-numerator",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-patho-value-ratio-numerator",
-        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/SearchParameter/mii-sp-patho-value-ratio-numerator",
+        "id": "mii-sp-meta-observation-value-ratio-numerator",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-value-ratio-numerator",
+        "version": "2025.0.0",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -2081,7 +3330,21 @@
             ]
           }
         ],
-        "version": "2024.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "date": "2024-10-08",
         "name": "MII_SP_Patho_Value_Ratio_Numerator",
         "status": "active",
         "experimental": false,
@@ -2095,11 +3358,17 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-patho-value-ratio-denominator",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-observation-value-ratio-denominator",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-patho-value-ratio-denominator",
-        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/SearchParameter/mii-sp-patho-value-ratio-denominator",
+        "id": "mii-sp-meta-observation-value-ratio-denominator",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-value-ratio-denominator",
+        "version": "2025.0.0",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -2111,8 +3380,22 @@
             ]
           }
         ],
-        "version": "2024.0.0",
-        "name": "MII_SP_Patho_Value_Ratio_Denominator",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "date": "2024-10-08",
+        "name": "MII_SP_Meta_Observation_Value_Ratio_Denominator",
         "status": "active",
         "experimental": false,
         "description": "SearchParameter for Observation.valueRatio.denominator",
@@ -2125,11 +3408,17 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-patho-reason-code",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-servicerequest-supportinginfo",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-patho-reason-code",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core//SearchParameter/mii-sp-patho-reason-code",
+        "id": "mii-sp-meta-servicerequest-supportinginfo",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-servicerequest-supportinginfo",
+        "version": "2025.0.0",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -2141,37 +3430,22 @@
             ]
           }
         ],
-        "version": "2024.0.0",
-        "name": "MII_SP_Patho_Reason_Code",
-        "description": "SearchParameter for ServiceRequest.reasonCode",
-        "status": "active",
-        "code": "reason-code",
-        "base": [
-          "ServiceRequest"
-        ],
-        "type": "token",
-        "expression": "ServiceRequest.reasonCode"
-      }
-    },
-    {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-patho-supporting-info",
-      "resource": {
-        "resourceType": "SearchParameter",
-        "id": "mii-sp-patho-supporting-info",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core//SearchParameter/mii-sp-patho-supporting-info",
-        "publisher": "Medizininformatik Initiative",
-        "contact": [
+        "extension": [
           {
-            "telecom": [
-              {
-                "system": "url",
-                "value": "https://www.medizininformatik-initiative.de"
-              }
-            ]
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
           }
         ],
-        "version": "2024.0.0",
-        "name": "MII_SP_Patho_Reason_Code",
+        "date": "2024-10-08",
+        "name": "MII_SP_Meta_ServiceRequest_SupportingInfo",
         "description": "SearchParameter for ServiceRequest.supportingInfo",
         "status": "active",
         "code": "supporting-info",
@@ -2183,11 +3457,17 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-patho-imaging-study",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-diagnosticreport-imagingstudy",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-patho-imaging-study",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core//SearchParameter/mii-sp-patho-imaging-study",
+        "id": "mii-sp-meta-diagnosticreport-imagingstudy",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-diagnosticreport-imagingstudy",
+        "version": "2025.0.0",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -2199,8 +3479,22 @@
             ]
           }
         ],
-        "version": "2024.0.0",
-        "name": "MII_SP_Patho_Imaging_Study",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "date": "2024-10-08",
+        "name": "MII_SP_Meta_DiagnosticReport_ImagingStudy",
         "description": "SearchParameter for DiagnosticReport.imagingStudy",
         "status": "active",
         "code": "imaging-study",
@@ -2212,11 +3506,17 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-patho-attester-mode",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-composition-attester-mode",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-patho-attester-mode",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core//SearchParameter/mii-sp-patho-attester-mode",
+        "id": "mii-sp-meta-composition-attester-mode",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-composition-attester-mode",
+        "version": "2025.0.0",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -2228,8 +3528,22 @@
             ]
           }
         ],
-        "version": "2024.0.0",
-        "name": "MII_SP_Patho_Attester_Mode",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "date": "2024-10-08",
+        "name": "MII_SP_Meta_Composition_Attester_Mode",
         "code": "attester-mode",
         "description": "SearchParameter for Composition.attester.mode",
         "status": "active",
@@ -2241,11 +3555,17 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-patho-custodian",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-composition-custodian",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-patho-custodian",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core//SearchParameter/mii-sp-patho-custodian",
+        "id": "mii-sp-meta-composition-custodian",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-composition-custodian",
+        "version": "2025.0.0",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -2257,8 +3577,22 @@
             ]
           }
         ],
-        "version": "2024.0.0",
-        "name": "MII_SP_Patho_Custodian",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "date": "2024-10-08",
+        "name": "MII_SP_Meta_Composition_Custodian",
         "description": "SearchParameter for Composition.custodian",
         "status": "active",
         "code": "custodian",
@@ -2270,11 +3604,17 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-patho-relates-to-code",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-composition-relatesto-code",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-patho-relates-to-code",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core//SearchParameter/mii-sp-patho-relates-to-code",
+        "id": "mii-sp-meta-composition-relatesto-code",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-composition-relatesto-code",
+        "version": "2025.0.0",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -2286,8 +3626,22 @@
             ]
           }
         ],
-        "version": "2024.0.0",
-        "name": "MII_SP_Patho_Relates_To_Code",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "date": "2024-10-08",
+        "name": "MII_SP_Meta_Composition_RelatesTo_Code",
         "description": "SearchParameter for Composition.relatesTo.code",
         "status": "active",
         "code": "relates-to-code",
@@ -2299,11 +3653,17 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-patho-part-of",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-media-partof",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-patho-part-of",
-        "url": "https://www.medizininformatik-initiative.de/fhir/core//SearchParameter/mii-sp-patho-part-of",
+        "id": "mii-sp-meta-media-partof",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-media-partof",
+        "version": "2025.0.0",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -2315,8 +3675,22 @@
             ]
           }
         ],
-        "version": "2024.0.0",
-        "name": "MII_SP_Patho_Part_Of",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "date": "2024-10-08",
+        "name": "MII_SP_Meta_Media_PartOf",
         "code": "part-of",
         "description": "SearchParameter for Media.partOf",
         "status": "active",
@@ -2328,12 +3702,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/sp-mii-icu-device-property-type",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-device-property-type",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "sp-mii-icu-device-property-type",
-        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/device-property-type",
-        "version": "2024.0.0-ballot",
+        "id": "mii-sp-meta-device-property-type",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-device-property-type",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -2345,10 +3723,25 @@
             ]
           }
         ],
-        "name": "SP_MII_ICU_Device_Property_Type",
+        "version": "2025.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Device_Property_Type",
         "status": "active",
         "experimental": false,
-        "date": "2024-01-02",
+        "date": "2024-10-08",
         "description": "Suchparameter für Device.property.type",
         "code": "property-type",
         "base": [
@@ -2359,12 +3752,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-icu-devicemetric-source",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-devicemetric-source",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-icu-devicemetric-source",
-        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/devicemetric-source",
-        "version": "2024.0.0-ballot",
+        "id": "mii-sp-meta-devicemetric-source",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-devicemetric-source",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -2376,10 +3773,25 @@
             ]
           }
         ],
-        "name": "SP_MII_ICU_DeviceMetric_Source",
+        "version": "2025.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_DeviceMetric_Source",
         "status": "active",
         "experimental": false,
-        "date": "2024-01-02",
+        "date": "2024-10-08",
         "description": "Suchparameter für DeviceMetric.source",
         "code": "source",
         "base": [
@@ -2390,12 +3802,17 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-icu-observation-bodysite",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-observation-bodysite",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-icu-observation-bodysite",
-        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/observation-bodysite",
-        "version": "2024.0.0-ballot",
+        "id": "mii-sp-meta-observation-bodysite",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-bodysite",
+        "version": "2025.0.0",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -2407,12 +3824,25 @@
             ]
           }
         ],
-        "name": "SP_MII_ICU_Observation_BodySite",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "date": "2024-10-08",
+        "name": "MII_SP_Meta_Observation_BodySite",
+        "description": "SearchParameter for Observation.bodySite",
         "status": "active",
-        "experimental": false,
-        "date": "2024-01-02",
-        "description": "Suchparameter für Observation.bodySite",
-        "code": "bodySite",
+        "code": "body-site",
         "base": [
           "Observation"
         ],
@@ -2421,12 +3851,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-icu-observation-component-interpretation",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-observation-referencerange",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-icu-observation-component-interpretation",
-        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/observation-component-interpretation",
-        "version": "2024.0.0-ballot",
+        "id": "mii-sp-meta-observation-referencerange",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-referencerange",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -2438,10 +3872,185 @@
             ]
           }
         ],
-        "name": "SP_MII_ICU_Observation_Component_Interpretation",
+        "version": "2025.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Observation_ReferenceRange",
         "status": "active",
         "experimental": false,
-        "date": "2024-01-02",
+        "date": "2024-10-08",
+        "description": "Suchparameter für Observation.referenceRange",
+        "code": "reference-range",
+        "base": [
+          "Observation"
+        ],
+        "type": "composite",
+        "expression": "Observation.referenceRange | Observation.component.referenceRange",
+        "component": [
+          {
+            "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-referencerange-high",
+            "expression": "high"
+          },
+          {
+            "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-referencerange-low",
+            "expression": "low"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-observation-referencerange-low",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-observation-referencerange-low",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-referencerange-low",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "version": "2025.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Observation_ReferenceRange_Low",
+        "status": "active",
+        "experimental": false,
+        "date": "2024-10-08",
+        "description": "Suchparameter für Observation.referenceRange.low",
+        "code": "reference-range-low",
+        "base": [
+          "Observation"
+        ],
+        "type": "quantity",
+        "expression": "Observation.referenceRange.low | Observation.component.referenceRange.low"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-observation-referencerange-high",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-observation-referencerange-high",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-referencerange-high",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "version": "2025.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Observation_ReferenceRange_High",
+        "status": "active",
+        "experimental": false,
+        "date": "2024-10-08",
+        "description": "Suchparameter für Observation.referenceRange.high",
+        "code": "reference-range-high",
+        "base": [
+          "Observation"
+        ],
+        "type": "quantity",
+        "expression": "Observation.referenceRange.high | Observation.component.referenceRange.high"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-observation-component-interpretation",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-observation-component-interpretation",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-component-interpretation",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "version": "2025.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Observation_Component_Interpretation",
+        "status": "active",
+        "experimental": false,
+        "date": "2024-10-08",
         "description": "Suchparameter für Observation.component.interpretation",
         "code": "component-interpretation",
         "base": [
@@ -2452,12 +4061,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-icu-observation-component-referencerange",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-observation-issued",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-icu-observation-component-referencerange",
-        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/observation-referencerange",
-        "version": "2024.0.0-ballot",
+        "id": "mii-sp-meta-observation-issued",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-issued",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -2469,82 +4082,25 @@
             ]
           }
         ],
-        "name": "SP_MII_ICU_Observation_ReferenceRange",
-        "status": "active",
-        "experimental": false,
-        "date": "2024-01-02",
-        "description": "Suchparameter für Observation.referenceRange",
-        "code": "reference-range",
-        "base": [
-          "Observation"
-        ],
-        "type": "composite",
-        "expression": "Observation.referenceRange | Observation.component.referenceRange",
-        "component": [
+        "version": "2025.0.0",
+        "extension": [
           {
-            "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/observation-referencerange-high",
-            "expression": "high"
-          },
-          {
-            "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/observation-referencerange-low",
-            "expression": "low"
-          }
-        ]
-      }
-    },
-    {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-icu-observation-interpretation",
-      "resource": {
-        "resourceType": "SearchParameter",
-        "id": "mii-sp-icu-observation-interpretation",
-        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/observation-interpretation",
-        "version": "2024.0.0-ballot",
-        "publisher": "Medizininformatik Initiative",
-        "contact": [
-          {
-            "telecom": [
-              {
-                "system": "url",
-                "value": "https://www.medizininformatik-initiative.de"
-              }
-            ]
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
           }
         ],
-        "name": "SP_MII_ICU_Observation_Interpretation",
+        "name": "MII_SP_Meta_Observation_Issued",
         "status": "active",
         "experimental": false,
-        "date": "2024-01-02",
-        "description": "Suchparameter für Observation.interpretation",
-        "code": "interpretation",
-        "base": [
-          "Observation"
-        ],
-        "type": "token",
-        "expression": "Observation.interpretation"
-      }
-    },
-    {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-icu-observation-issued",
-      "resource": {
-        "resourceType": "SearchParameter",
-        "id": "mii-sp-icu-observation-issued",
-        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/observation-issued",
-        "version": "2024.0.0-ballot",
-        "publisher": "Medizininformatik Initiative",
-        "contact": [
-          {
-            "telecom": [
-              {
-                "system": "url",
-                "value": "https://www.medizininformatik-initiative.de"
-              }
-            ]
-          }
-        ],
-        "name": "SP_MII_ICU_Observation_Issued",
-        "status": "active",
-        "experimental": false,
-        "date": "2024-01-02",
+        "date": "2024-10-08",
         "description": "Suchparameter für Observation.issued",
         "code": "issued",
         "base": [
@@ -2555,12 +4111,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-icu-procedure-recorder",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-procedure-recorder",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-icu-procedure-recorder",
-        "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/SearchParameter/procedure-recorder",
-        "version": "2024.0.0-ballot",
+        "id": "mii-sp-meta-procedure-recorder",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-recorder",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -2572,10 +4132,25 @@
             ]
           }
         ],
-        "name": "SP_MII_ICU_Procedure_Recorder",
+        "version": "2025.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Procedure_Recorder",
         "status": "active",
         "experimental": false,
-        "date": "2024-01-02",
+        "date": "2024-10-08",
         "description": "Suchparameter für Procedure.recorder",
         "code": "recorder",
         "base": [
@@ -2586,13 +4161,43 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/DocumentReference-title",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-documentreference-attachment-title",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "DocumentReference-title",
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/SearchParameter/DocumentReference-title",
-        "version": "1.0.0-ballot",
-        "name": "SP_MII_Studie_Title",
+        "id": "mii-sp-meta-documentreference-attachment-title",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-documentreference-attachment-title",
+        "version": "2025.0.0",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_DocumentReference_Attachment_Title",
         "status": "active",
         "description": "Suchparameter für DocumentReference.content.attachment.title",
         "experimental": false,
@@ -2605,13 +4210,43 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/DocumentReference-size",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-documentreference-attachment-size",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "DocumentReference-size",
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/SearchParameter/DocumentReference-size",
-        "version": "1.0.0-ballot",
-        "name": "SP_MII_Studie_Size",
+        "id": "mii-sp-meta-documentreference-attachment-size",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-documentreference-attachment-size",
+        "version": "2025.0.0",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_DocumentReference_Attachment_Size",
         "status": "active",
         "description": "Suchparameter für DocumentReference.content.attachment.size",
         "experimental": false,
@@ -2624,13 +4259,43 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/EvidenceVariable-characteristic-description",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-evidencevariable-characteristic-description",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "EvidenceVariable-characteristic-description",
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/SearchParameter/ResearchStudy-characteristic-description",
-        "version": "1.0.0-ballot",
-        "name": "SP_MII_Studie_CharacteristicDescription",
+        "id": "mii-sp-meta-evidencevariable-characteristic-description",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-evidencevariable-characteristic-description",
+        "version": "2025.0.0",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_EvidenceVariable_Characteristic_Description",
         "status": "active",
         "description": "Suchparameter für EvidenceVariable.characteristic.description",
         "experimental": false,
@@ -2643,13 +4308,43 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/Library-quellregister",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-library-quellregister",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "Library-quellregister",
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/SearchParameter/Library-quellregister",
-        "version": "1.0.0-ballot",
-        "name": "SP_MII_Studie_Quellregister",
+        "id": "mii-sp-meta-library-quellregister",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-library-quellregister",
+        "version": "2025.0.0",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Library_Quellregister",
         "status": "active",
         "description": "Suchparameter für Library.extension:QuellRegister",
         "experimental": false,
@@ -2662,13 +4357,43 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/Library-relatedArtifactUrl",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-library-relatedartifact-url",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "Library-relatedArtifactUrl",
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/SearchParameter/Library-relatedArtifactUrl",
-        "version": "1.0.0-ballot",
-        "name": "SP_MII_Studie_RelatedArtifactUrl",
+        "id": "mii-sp-meta-library-relatedartifact-url",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-library-relatedartifact-url",
+        "version": "2025.0.0",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Library_RelatedArtifact_Url",
         "status": "active",
         "description": "Suchparameter für Library.relatedArtifact.document.url",
         "experimental": false,
@@ -2681,13 +4406,43 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/ResearchStudy-armName",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-researchstudy-arm-name",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "ResearchStudy-armName",
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/SearchParameter/ResearchStudy-armName",
-        "version": "1.0.0-ballot",
-        "name": "SP_MII_Studie_ArmName",
+        "id": "mii-sp-meta-researchstudy-arm-name",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-arm-name",
+        "version": "2025.0.0",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_ResearchStudy_Arm_Name",
         "status": "active",
         "description": "Suchparameter für ResearchStudy.arm.name",
         "experimental": false,
@@ -2700,13 +4455,43 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/ResearchStudy-label",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-researchstudy-label",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "ResearchStudy-label",
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/SearchParameter/ResearchStudy-label",
-        "version": "1.0.0-ballot",
-        "name": "SP_MII_Studie_Label",
+        "id": "mii-sp-meta-researchstudy-label",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-label",
+        "version": "2025.0.0",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_ResearchStudy_Label",
         "status": "active",
         "description": "Suchparameter für ResearchStudy.extension:label",
         "experimental": false,
@@ -2719,13 +4504,43 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/ResearchStudy-akronym",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-researchstudy-akronym",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "ResearchStudy-akronym",
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/SearchParameter/ResearchStudy-akronym",
-        "version": "1.0.0-ballot",
-        "name": "SP_MII_Studie_Akronym",
+        "id": "mii-sp-meta-researchstudy-akronym",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-akronym",
+        "version": "2025.0.0",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_ResearchStudy_Akronym",
         "status": "active",
         "description": "Suchparameter für ResearchStudy.extension:Akronym",
         "experimental": false,
@@ -2738,13 +4553,43 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/ResearchStudy-finanzierung",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-researchstudy-finanzierung",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "ResearchStudy-finanzierung",
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/SearchParameter/ResearchStudy-finanzierung",
-        "version": "1.0.0-ballot",
-        "name": "SP_MII_Studie_Finanzierung",
+        "id": "mii-sp-meta-researchstudy-finanzierung",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-finanzierung",
+        "version": "2025.0.0",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_ResearchStudy_Finanzierung",
         "status": "active",
         "description": "Suchparameter für ResearchStudy.extension:Finanzierung",
         "experimental": false,
@@ -2757,13 +4602,43 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/ResearchStudy-studienregister",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-researchstudy-studienregister",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "ResearchStudy-studienregister",
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/SearchParameter/ResearchStudy-studienregister",
-        "version": "1.0.0-ballot",
-        "name": "SP_MII_Studie_Studienregister",
+        "id": "mii-sp-meta-researchstudy-studienregister",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-studienregister",
+        "version": "2025.0.0",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_ResearchStudy_Studienregister",
         "status": "active",
         "description": "Suchparameter für ResearchStudy.extension:Studienregister",
         "experimental": false,
@@ -2776,13 +4651,43 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/ResearchStudy-rekrutierungsstand-datum",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-researchstudy-rekrutierungsstand-datum",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "ResearchStudy-rekrutierungsstand-datum",
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/SearchParameter/ResearchStudy-rekrutierungsstand-datum",
-        "version": "1.0.0-ballot",
-        "name": "SP_MII_Studie_RekrutierungsstandDatum",
+        "id": "mii-sp-meta-researchstudy-rekrutierungsstand-datum",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-rekrutierungsstand-datum",
+        "version": "2025.0.0",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_ResearchStudy_RekrutierungsstandDatum",
         "status": "active",
         "description": "Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstand-datum",
         "experimental": false,
@@ -2795,13 +4700,43 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/ResearchStudy-rekrutierungsstand-genauigkeit",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-researchstudy-rekrutierungsstand-genauigkeit",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "ResearchStudy-rekrutierungsstand-genauigkeit",
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/SearchParameter/ResearchStudy-rekrutierungsstand-genauigkeit",
-        "version": "1.0.0-ballot",
-        "name": "SP_MII_Studie_RekrutierungsstandGenauigkeit",
+        "id": "mii-sp-meta-researchstudy-rekrutierungsstand-genauigkeit",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-rekrutierungsstand-genauigkeit",
+        "version": "2025.0.0",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_ResearchStudy_RekrutierungsstandGenauigkeit",
         "status": "active",
         "description": "Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstand-genauigkeit",
         "experimental": false,
@@ -2814,13 +4749,43 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/ResearchStudy-rekrutierungsstand",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-researchstudy-rekrutierungsstand",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "ResearchStudy-rekrutierungsstand",
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/SearchParameter/ResearchStudy-rekrutierungsstand",
-        "version": "1.0.0-ballot",
-        "name": "SP_MII_Studie_Rekrutierungsstand",
+        "id": "mii-sp-meta-researchstudy-rekrutierungsstand",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-rekrutierungsstand",
+        "version": "2025.0.0",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_ResearchStudy_Rekrutierungsstand",
         "status": "active",
         "description": "Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstand",
         "experimental": false,
@@ -2833,13 +4798,43 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/ResearchStudy-rekrutierungsziel",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-researchstudy-rekrutierungsziel",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "ResearchStudy-rekrutierungsziel",
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/SearchParameter/ResearchStudy-rekrutierungsziel",
-        "version": "1.0.0-ballot",
-        "name": "SP_MII_Studie_Rekrutierungsziel",
+        "id": "mii-sp-meta-researchstudy-rekrutierungsziel",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-rekrutierungsziel",
+        "version": "2025.0.0",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_ResearchStudy_Rekrutierungsziel",
         "status": "active",
         "description": "Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsziel",
         "experimental": false,
@@ -2852,13 +4847,43 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/ResearchStudy-rekrutierungsstart",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-researchstudy-rekrutierungsstart",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "ResearchStudy-rekrutierungsstart",
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-studie/SearchParameter/ResearchStudy-rekrutierungsstart",
-        "version": "1.0.0-ballot",
-        "name": "SP_MII_Studie_Rekrutierungsstart",
+        "id": "mii-sp-meta-researchstudy-rekrutierungsstart",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-rekrutierungsstart",
+        "version": "2025.0.0",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_ResearchStudy_Rekrutierungsstart",
         "status": "active",
         "description": "Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstart",
         "experimental": false,
