@@ -1,0 +1,46 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "mii-sp-meta-servicerequest-supportinginfo",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+    ]
+  },
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-servicerequest-supportinginfo",
+  "version": "2025.0.0",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
+  "date": "2024-10-08",
+  "name": "MII_SP_Meta_ServiceRequest_SupportingInfo",
+  "description": "SearchParameter for ServiceRequest.supportingInfo",
+  "status": "active",
+  "code": "supporting-info",
+  "base": [
+    "ServiceRequest"
+  ],
+  "type": "reference",
+  "expression": "ServiceRequest.supportingInfo"
+}
