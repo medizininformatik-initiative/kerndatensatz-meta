@@ -1,8 +1,22 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mii-pr-meta-searchparameter",
-  "url": "https://www.medizininformatik-initiative.de/fhir/core//StructureDefinition/mii-pr-meta-searchparameter",
-  "version": "2024.0.0",
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter",
+  "version": "2025.0.0",
   "name": "MII_PR_Meta_SearchParameter",
   "title": "MII PR Meta SearchParameter",
   "status": "draft",
@@ -62,7 +76,7 @@
             "severity": "error",
             "human": "In SearchParameter.code DÜRFEN NICHT folgende Zeichen enthalten sein: Leerzeichen, `.`, `$`, `|`.",
             "expression": "matches('[^\\s.$|]+')",
-            "source": "https://www.medizininformatik-initiative.de/fhir/core//StructureDefinition/mii-pr-meta-searchparameter"
+            "source": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           }
         ]
       }
