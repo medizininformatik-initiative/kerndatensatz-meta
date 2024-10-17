@@ -2,7 +2,7 @@
   "resourceType": "Bundle",
   "id": "mii-meta-searchparam-transaction-bundle",
   "type": "transaction",
-  "timestamp": "2024-07-10T18:37:00+01:00",
+  "timestamp": "2024-10-17T16:08:00+01:00",
   "entry": [
     {
       "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-patient-adresszusatz",
