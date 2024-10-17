@@ -37,6 +37,7 @@
   "status": "active",
   "description": "Suchparameter für EvidenceVariable.characteristic.description",
   "experimental": false,
+  "date": "2024-10-17",
   "code": "characteristicDescription",
   "base": [
     "EvidenceVariable"

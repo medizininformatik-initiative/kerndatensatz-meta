@@ -2146,7 +2146,8 @@
         ],
         "name": "MII_SP_Meta_Consent_PolicyUri",
         "status": "active",
-        "date": "2024-10-07",
+        "experimental": false,
+        "date": "2024-10-17",
         "description": "Suche in der Policy URI (versionsspezifische Policy / Broad Consent)",
         "code": "mii-policy-uri",
         "base": [
@@ -2197,7 +2198,8 @@
         ],
         "name": "MII_SP_Meta_Consent_ProvisionCode",
         "status": "active",
-        "date": "2024-10-07",
+        "experimental": false,
+        "date": "2024-10-17",
         "description": "Suche im Code der Provison",
         "code": "mii-provision-provision-code",
         "base": [
@@ -2248,7 +2250,8 @@
         ],
         "name": "MII_SP_Meta_Consent_ProvisionCodePeriod",
         "status": "active",
-        "date": "2024-10-07",
+        "experimental": false,
+        "date": "2024-10-17",
         "description": "Composite-Suche nach Zeitraum (period) einer bestimmten, durch einen Code definierten, Provision.",
         "code": "mii-provision-provision-code-period",
         "base": [
@@ -2307,7 +2310,8 @@
         ],
         "name": "MII_SP_Meta_Consent_ProvisionCodeType",
         "status": "active",
-        "date": "2024-10-07",
+        "experimental": false,
+        "date": "2024-10-17",
         "description": "Composite-Suche nach Typ (type) einer bestimmten, durch einen Code definierten, Provision.",
         "code": "mii-provision-provision-code-type",
         "base": [
@@ -2366,7 +2370,8 @@
         ],
         "name": "MII_SP_Meta_Consent_ProvisionPeriod",
         "status": "active",
-        "date": "2024-10-07",
+        "experimental": false,
+        "date": "2024-10-17",
         "description": "Suche im Zeitraum der Provision. Dieser Suchparameter bezieht sich explizit auf die zweite Verschachtelungsebene von provison.",
         "code": "mii-provision-provision-period",
         "base": [
@@ -2417,7 +2422,8 @@
         ],
         "name": "MII_SP_Meta_Consent_ProvisionType",
         "status": "active",
-        "date": "2024-10-07",
+        "experimental": false,
+        "date": "2024-10-17",
         "description": "Suche im Typ der Provison (permit, deny).",
         "code": "mii-provision-provision-type",
         "base": [
@@ -2945,6 +2951,7 @@
         "date": "2024-10-08",
         "name": "MII_SP_Meta_Specimen_Request",
         "description": "SearchParameter for Specimen.request",
+        "experimental": false,
         "status": "active",
         "code": "request",
         "base": [
@@ -2994,6 +3001,7 @@
         "date": "2024-10-08",
         "name": "MII_SP_Meta_Specimen_Collection_Method",
         "description": "SearchParameter for Specimen.collection.method",
+        "experimental": false,
         "status": "active",
         "code": "collection-method",
         "base": [
@@ -3043,6 +3051,7 @@
         "date": "2024-10-08",
         "name": "MII_SP_Meta_Specimen_Collection_Body_Site",
         "description": "SearchParameter for Specimen.collection.bodySite",
+        "experimental": false,
         "status": "active",
         "code": "collection-body-site",
         "base": [
@@ -3092,6 +3101,7 @@
         "date": "2024-10-08",
         "name": "MII_SP_Meta_Specimen_Processing_Procedure",
         "description": "SearchParameter for Specimen.processing.procedure",
+        "experimental": false,
         "status": "active",
         "code": "processing-procedure",
         "base": [
@@ -3141,6 +3151,7 @@
         "date": "2024-10-08",
         "name": "MII_SP_Meta_Specimen_Processing_Additive",
         "description": "SearchParameter for Specimen.processing.additive",
+        "experimental": false,
         "status": "active",
         "code": "processing-additive",
         "base": [
@@ -3190,6 +3201,7 @@
         "date": "2024-10-08",
         "name": "MII_SP_Meta_Specimen_Processing_Date",
         "description": "SearchParameter for Specimen.processing.time",
+        "experimental": false,
         "status": "active",
         "code": "processing-date",
         "base": [
@@ -3239,6 +3251,7 @@
         "date": "2024-10-08",
         "name": "MII_SP_Meta_Specimen_Container_Additive",
         "description": "SearchParameter for Specimen.container.additive",
+        "experimental": false,
         "status": "active",
         "code": "container-additive",
         "base": [
@@ -3288,6 +3301,7 @@
         "date": "2024-10-08",
         "name": "MII_SP_Meta_Observation_Value_Ratio",
         "description": "SearchParameter for Observation.valueRatio",
+        "experimental": false,
         "status": "active",
         "code": "value-ratio",
         "base": [
@@ -3447,6 +3461,7 @@
         "date": "2024-10-08",
         "name": "MII_SP_Meta_ServiceRequest_SupportingInfo",
         "description": "SearchParameter for ServiceRequest.supportingInfo",
+        "experimental": false,
         "status": "active",
         "code": "supporting-info",
         "base": [
@@ -3496,6 +3511,7 @@
         "date": "2024-10-08",
         "name": "MII_SP_Meta_DiagnosticReport_ImagingStudy",
         "description": "SearchParameter for DiagnosticReport.imagingStudy",
+        "experimental": false,
         "status": "active",
         "code": "imaging-study",
         "base": [
@@ -3546,6 +3562,7 @@
         "name": "MII_SP_Meta_Composition_Attester_Mode",
         "code": "attester-mode",
         "description": "SearchParameter for Composition.attester.mode",
+        "experimental": false,
         "status": "active",
         "base": [
           "Composition"
@@ -3594,6 +3611,7 @@
         "date": "2024-10-08",
         "name": "MII_SP_Meta_Composition_Custodian",
         "description": "SearchParameter for Composition.custodian",
+        "experimental": false,
         "status": "active",
         "code": "custodian",
         "base": [
@@ -3643,6 +3661,7 @@
         "date": "2024-10-08",
         "name": "MII_SP_Meta_Composition_RelatesTo_Code",
         "description": "SearchParameter for Composition.relatesTo.code",
+        "experimental": false,
         "status": "active",
         "code": "relates-to-code",
         "base": [
@@ -3693,6 +3712,7 @@
         "name": "MII_SP_Meta_Media_PartOf",
         "code": "part-of",
         "description": "SearchParameter for Media.partOf",
+        "experimental": false,
         "status": "active",
         "base": [
           "Media"
@@ -3841,6 +3861,7 @@
         "date": "2024-10-08",
         "name": "MII_SP_Meta_Observation_BodySite",
         "description": "SearchParameter for Observation.bodySite",
+        "experimental": false,
         "status": "active",
         "code": "body-site",
         "base": [
@@ -4201,6 +4222,7 @@
         "status": "active",
         "description": "Suchparameter für DocumentReference.content.attachment.title",
         "experimental": false,
+        "date": "2024-10-17",
         "code": "title",
         "base": [
           "DocumentReference"
@@ -4250,6 +4272,7 @@
         "status": "active",
         "description": "Suchparameter für DocumentReference.content.attachment.size",
         "experimental": false,
+        "date": "2024-10-17",
         "code": "size",
         "base": [
           "DocumentReference"
@@ -4299,6 +4322,7 @@
         "status": "active",
         "description": "Suchparameter für EvidenceVariable.characteristic.description",
         "experimental": false,
+        "date": "2024-10-17",
         "code": "characteristicDescription",
         "base": [
           "EvidenceVariable"
@@ -4348,6 +4372,7 @@
         "status": "active",
         "description": "Suchparameter für Library.extension:QuellRegister",
         "experimental": false,
+        "date": "2024-10-17",
         "code": "quellregister",
         "base": [
           "Library"
@@ -4397,6 +4422,7 @@
         "status": "active",
         "description": "Suchparameter für Library.relatedArtifact.document.url",
         "experimental": false,
+        "date": "2024-10-17",
         "code": "relatedArtifactUrl",
         "base": [
           "Library"
@@ -4446,6 +4472,7 @@
         "status": "active",
         "description": "Suchparameter für ResearchStudy.arm.name",
         "experimental": false,
+        "date": "2024-10-17",
         "code": "armName",
         "base": [
           "ResearchStudy"
@@ -4495,6 +4522,7 @@
         "status": "active",
         "description": "Suchparameter für ResearchStudy.extension:label",
         "experimental": false,
+        "date": "2024-10-17",
         "code": "label",
         "base": [
           "ResearchStudy"
@@ -4544,6 +4572,7 @@
         "status": "active",
         "description": "Suchparameter für ResearchStudy.extension:Akronym",
         "experimental": false,
+        "date": "2024-10-17",
         "code": "akronym",
         "base": [
           "ResearchStudy"
@@ -4593,6 +4622,7 @@
         "status": "active",
         "description": "Suchparameter für ResearchStudy.extension:Finanzierung",
         "experimental": false,
+        "date": "2024-10-17",
         "code": "finanzierung",
         "base": [
           "ResearchStudy"
@@ -4642,6 +4672,7 @@
         "status": "active",
         "description": "Suchparameter für ResearchStudy.extension:Studienregister",
         "experimental": false,
+        "date": "2024-10-17",
         "code": "studienregister",
         "base": [
           "ResearchStudy"
@@ -4691,6 +4722,7 @@
         "status": "active",
         "description": "Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstand-datum",
         "experimental": false,
+        "date": "2024-10-17",
         "code": "rekrutierungsstand-datum",
         "base": [
           "ResearchStudy"
@@ -4740,6 +4772,7 @@
         "status": "active",
         "description": "Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstand-genauigkeit",
         "experimental": false,
+        "date": "2024-10-17",
         "code": "rekrutierungsstand-genauigkeit",
         "base": [
           "ResearchStudy"
@@ -4789,6 +4822,7 @@
         "status": "active",
         "description": "Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstand",
         "experimental": false,
+        "date": "2024-10-17",
         "code": "rekrutierungsstand",
         "base": [
           "ResearchStudy"
@@ -4838,6 +4872,7 @@
         "status": "active",
         "description": "Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsziel",
         "experimental": false,
+        "date": "2024-10-17",
         "code": "rekrutierungsziel",
         "base": [
           "ResearchStudy"
@@ -4887,6 +4922,7 @@
         "status": "active",
         "description": "Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstart",
         "experimental": false,
+        "date": "2024-10-17",
         "code": "rekrutierungsstart",
         "base": [
           "ResearchStudy"

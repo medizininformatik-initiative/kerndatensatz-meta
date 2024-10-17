@@ -37,6 +37,7 @@
   "name": "MII_SP_Meta_Media_PartOf",
   "code": "part-of",
   "description": "SearchParameter for Media.partOf",
+  "experimental": false,
   "status": "active",
   "base": [
     "Media"

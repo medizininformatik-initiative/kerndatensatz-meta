@@ -37,6 +37,7 @@
   "name": "MII_SP_Meta_Composition_Attester_Mode",
   "code": "attester-mode",
   "description": "SearchParameter for Composition.attester.mode",
+  "experimental": false,
   "status": "active",
   "base": [
     "Composition"
