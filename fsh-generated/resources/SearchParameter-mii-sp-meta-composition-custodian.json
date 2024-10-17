@@ -36,6 +36,7 @@
   "date": "2024-10-08",
   "name": "MII_SP_Meta_Composition_Custodian",
   "description": "SearchParameter for Composition.custodian",
+  "experimental": false,
   "status": "active",
   "code": "custodian",
   "base": [

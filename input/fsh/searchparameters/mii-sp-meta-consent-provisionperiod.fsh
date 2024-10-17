@@ -9,7 +9,8 @@ Usage: #definition
 * insert SP_Profile
 * name = "MII_SP_Meta_Consent_ProvisionPeriod"
 * status = #active
-* date = "2024-10-07"
+* experimental = false
+* date = "2024-10-17"
 * description = "Suche im Zeitraum der Provision. Dieser Suchparameter bezieht sich explizit auf die zweite Verschachtelungsebene von provison."
 * code = #mii-provision-provision-period
 * base = #Consent

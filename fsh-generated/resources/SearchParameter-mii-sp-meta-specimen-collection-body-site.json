@@ -36,6 +36,7 @@
   "date": "2024-10-08",
   "name": "MII_SP_Meta_Specimen_Collection_Body_Site",
   "description": "SearchParameter for Specimen.collection.bodySite",
+  "experimental": false,
   "status": "active",
   "code": "collection-body-site",
   "base": [

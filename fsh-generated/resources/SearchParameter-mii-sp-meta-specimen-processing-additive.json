@@ -36,6 +36,7 @@
   "date": "2024-10-08",
   "name": "MII_SP_Meta_Specimen_Processing_Additive",
   "description": "SearchParameter for Specimen.processing.additive",
+  "experimental": false,
   "status": "active",
   "code": "processing-additive",
   "base": [

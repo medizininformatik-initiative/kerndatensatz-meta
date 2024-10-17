@@ -36,6 +36,7 @@
   "date": "2024-10-08",
   "name": "MII_SP_Meta_Specimen_Processing_Date",
   "description": "SearchParameter for Specimen.processing.time",
+  "experimental": false,
   "status": "active",
   "code": "processing-date",
   "base": [

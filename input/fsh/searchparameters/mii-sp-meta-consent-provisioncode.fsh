@@ -9,7 +9,8 @@ Usage: #definition
 * insert SP_Profile
 * name = "MII_SP_Meta_Consent_ProvisionCode"
 * status = #active
-* date = "2024-10-07"
+* experimental = false
+* date = "2024-10-17"
 * description = "Suche im Code der Provison"
 * code = #mii-provision-provision-code
 * base = #Consent

@@ -36,6 +36,7 @@
   "date": "2024-10-08",
   "name": "MII_SP_Meta_Specimen_Collection_Method",
   "description": "SearchParameter for Specimen.collection.method",
+  "experimental": false,
   "status": "active",
   "code": "collection-method",
   "base": [

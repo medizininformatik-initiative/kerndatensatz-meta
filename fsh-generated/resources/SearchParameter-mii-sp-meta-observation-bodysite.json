@@ -36,6 +36,7 @@
   "date": "2024-10-08",
   "name": "MII_SP_Meta_Observation_BodySite",
   "description": "SearchParameter for Observation.bodySite",
+  "experimental": false,
   "status": "active",
   "code": "body-site",
   "base": [

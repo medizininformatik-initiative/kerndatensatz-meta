@@ -1,11 +1,26 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mii-ex-meta-license-codeable",
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
   "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
   "version": "2025.0.0",
   "name": "MII_EX_Meta_License_Codeable",
   "title": "MII EX Meta License Codeable",
   "status": "active",
+  "date": "2024-10-17",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {

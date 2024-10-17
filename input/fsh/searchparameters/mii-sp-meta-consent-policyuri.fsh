@@ -9,7 +9,8 @@ Usage: #definition
 * insert LicenseCodeableCCBY40Instance
 * name = "MII_SP_Meta_Consent_PolicyUri"
 * status = #active
-* date = "2024-10-07"
+* experimental = false
+* date = "2024-10-17"
 * description = "Suche in der Policy URI (versionsspezifische Policy / Broad Consent)"
 * code = #mii-policy-uri
 * base = #Consent

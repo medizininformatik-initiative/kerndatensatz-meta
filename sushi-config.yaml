@@ -3,9 +3,12 @@ fhirVersion: 4.0.1
 FSHOnly: false
 applyExtensionMetadataToRoot: false
 status: active
+license: CC-BY-4.0
 version: 2025.0.0
-id: mii-ig-meta-de
-name: MII_IG_Meta_DE
+id: mii-ig-meta
+name: MII_IG_Meta
+title: "MII IG Meta"
+description: Das Modul Meta enthält Basisartefakte für alle weiteren MII-IGs.
 packageId: de.medizininformatikinitiative.kerndatensatz.meta
 copyrightYear: 2019+
 releaseLabel: ci-build

@@ -36,6 +36,7 @@
   "date": "2024-10-08",
   "name": "MII_SP_Meta_Specimen_Processing_Procedure",
   "description": "SearchParameter for Specimen.processing.procedure",
+  "experimental": false,
   "status": "active",
   "code": "processing-procedure",
   "base": [

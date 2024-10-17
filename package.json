@@ -11,7 +11,7 @@
     "KDS",
     "Meta"
   ],
-  "license": "CC0-1.0",
+  "license": "CC-BY-4.0",
   "homepage": "https://www.medizininformatik-initiative.de/",
   "directories" : {
     "lib" : "package",
@@ -24,7 +24,7 @@
       "url" : "https://www.medizininformatik-initiative.de/"
     }
   ],
-  "canonicals": "https://www.medizininformatik-initiative.de/fhir/core/ImplementationGuide/mii-ig-meta-de",
+  "canonicals": "https://www.medizininformatik-initiative.de/fhir/modul-meta/ImplementationGuide/mii-ig-meta-de",
   "jurisdiction": "http://unstats.un.org/unsd/methods/m49/m49.htm#276",
   "dependencies": {
     "hl7.fhir.r4.core": "4.0.1"

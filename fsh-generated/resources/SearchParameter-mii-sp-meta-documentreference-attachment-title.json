@@ -37,6 +37,7 @@
   "status": "active",
   "description": "Suchparameter für DocumentReference.content.attachment.title",
   "experimental": false,
+  "date": "2024-10-17",
   "code": "title",
   "base": [
     "DocumentReference"

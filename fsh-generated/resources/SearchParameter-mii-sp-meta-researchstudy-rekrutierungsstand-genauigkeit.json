@@ -37,6 +37,7 @@
   "status": "active",
   "description": "Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstand-genauigkeit",
   "experimental": false,
+  "date": "2024-10-17",
   "code": "rekrutierungsstand-genauigkeit",
   "base": [
     "ResearchStudy"
