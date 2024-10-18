@@ -11,6 +11,7 @@ Usage: #definition
 * date = "2024-10-08"
 * name = "MII_SP_Meta_Specimen_Request"
 * description = "SearchParameter for Specimen.request"
+* experimental = false
 * status = #active
 * code = #request
 * base = #Specimen
@@ -27,6 +28,7 @@ Usage: #definition
 * date = "2024-10-08"
 * name = "MII_SP_Meta_Specimen_Collection_Method"
 * description = "SearchParameter for Specimen.collection.method"
+* experimental = false
 * status = #active 
 * code = #collection-method
 * base = #Specimen 
@@ -43,6 +45,7 @@ Usage: #definition
 * date = "2024-10-08"
 * name = "MII_SP_Meta_Specimen_Collection_Body_Site"
 * description = "SearchParameter for Specimen.collection.bodySite"
+* experimental = false
 * status = #active
 * code = #collection-body-site
 * base = #Specimen
@@ -59,6 +62,7 @@ Usage: #definition
 * date = "2024-10-08"
 * name = "MII_SP_Meta_Specimen_Processing_Procedure"
 * description = "SearchParameter for Specimen.processing.procedure"
+* experimental = false
 * status = #active
 * code = #processing-procedure
 * base = #Specimen
@@ -75,6 +79,7 @@ Usage: #definition
 * date = "2024-10-08"
 * name = "MII_SP_Meta_Specimen_Processing_Additive"
 * description = "SearchParameter for Specimen.processing.additive"
+* experimental = false
 * status = #active
 * code = #processing-additive
 * base = #Specimen
@@ -91,6 +96,7 @@ Usage: #definition
 * date = "2024-10-08"
 * name = "MII_SP_Meta_Specimen_Processing_Date"
 * description = "SearchParameter for Specimen.processing.time"
+* experimental = false
 * status = #active
 * code = #processing-date
 * base = #Specimen
@@ -107,6 +113,7 @@ Usage: #definition
 * date = "2024-10-08"
 * name = "MII_SP_Meta_Specimen_Container_Additive"
 * description = "SearchParameter for Specimen.container.additive"
+* experimental = false
 * status = #active
 * code = #container-additive
 * base = #Specimen
@@ -126,6 +133,7 @@ Usage: #definition
 * date = "2024-10-08"
 * name = "MII_SP_Meta_Observation_BodySite"
 * description = "SearchParameter for Observation.bodySite"
+* experimental = false
 * status = #active
 * code = #body-site
 * base = #Observation
@@ -142,6 +150,7 @@ Usage: #definition
 * date = "2024-10-08"
 * name = "MII_SP_Meta_Observation_Value_Ratio"
 * description = "SearchParameter for Observation.valueRatio"
+* experimental = false
 * status = #active
 * code = #value-ratio
 * base = #Observation
@@ -216,6 +225,7 @@ Usage: #definition
 * date = "2024-10-08"
 * name = "MII_SP_Meta_ServiceRequest_SupportingInfo"
 * description = "SearchParameter for ServiceRequest.supportingInfo"
+* experimental = false
 * status = #active
 * code = #supporting-info
 * base = #ServiceRequest
@@ -235,6 +245,7 @@ Usage: #definition
 * date = "2024-10-08"
 * name = "MII_SP_Meta_DiagnosticReport_ImagingStudy"
 * description = "SearchParameter for DiagnosticReport.imagingStudy"
+* experimental = false
 * status = #active
 * code = #imaging-study
 * base = #DiagnosticReport
@@ -255,6 +266,7 @@ Usage: #definition
 * name = "MII_SP_Meta_Composition_Attester_Mode"
 * code = #attester-mode
 * description = "SearchParameter for Composition.attester.mode"
+* experimental = false
 * status = #active
 * base = #Composition
 * type = #token
@@ -270,6 +282,7 @@ Usage: #definition
 * date = "2024-10-08"
 * name = "MII_SP_Meta_Composition_Custodian"
 * description = "SearchParameter for Composition.custodian"
+* experimental = false
 * status = #active
 * code = #custodian
 * base = #Composition
@@ -286,6 +299,7 @@ Usage: #definition
 * date = "2024-10-08"
 * name = "MII_SP_Meta_Composition_RelatesTo_Code"
 * description = "SearchParameter for Composition.relatesTo.code"
+* experimental = false
 * status = #active
 * code = #relates-to-code
 * base = #Composition
@@ -306,6 +320,7 @@ Usage: #definition
 * name = "MII_SP_Meta_Media_PartOf"
 * code = #part-of
 * description = "SearchParameter for Media.partOf"
+* experimental = false
 * status = #active
 * base = #Media
 * type = #reference

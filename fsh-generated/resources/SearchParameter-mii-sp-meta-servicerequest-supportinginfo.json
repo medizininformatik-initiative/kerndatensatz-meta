@@ -36,6 +36,7 @@
   "date": "2024-10-08",
   "name": "MII_SP_Meta_ServiceRequest_SupportingInfo",
   "description": "SearchParameter for ServiceRequest.supportingInfo",
+  "experimental": false,
   "status": "active",
   "code": "supporting-info",
   "base": [

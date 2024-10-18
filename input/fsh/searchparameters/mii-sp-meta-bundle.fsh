@@ -11,7 +11,7 @@ RuleSet: AddCollectionEntry(resource)
 Instance: mii-meta-searchparam-transaction-bundle
 InstanceOf: Bundle
 * type = #transaction
-* timestamp = "2024-07-10T18:37:00+01:00"
+* timestamp = "2024-10-17T16:08:00+01:00"
 // Person
 * insert AddTransactionEntry(mii-sp-meta-patient-adresszusatz)
 * insert AddTransactionEntry(mii-sp-meta-patient-assignerpid)
@@ -122,7 +122,7 @@ InstanceOf: Bundle
 Instance: mii-meta-searchparam-collection-bundle
 InstanceOf: Bundle
 * type = #collection
-* timestamp = "2024-07-10T18:48:00+01:00"
+* timestamp = "2024-10-17T16:08:00+01:00"
 // Person
 * insert AddCollectionEntry(mii-sp-meta-patient-adresszusatz)
 * insert AddCollectionEntry(mii-sp-meta-patient-assignerpid)

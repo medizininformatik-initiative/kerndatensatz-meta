@@ -7,7 +7,6 @@ Description: "Das Profil legt die Mindestanforderungen fest, die SearchParameter
 * insert Publisher
 * insert LicenseCodeableCCBY40
 * ^date = "2024-07-01"
-* ^status = #draft 
 * ^experimental = true
 * code obeys search-param-code-regex
 * version 1..

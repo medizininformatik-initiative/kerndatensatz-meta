@@ -19,7 +19,7 @@
   "version": "2025.0.0",
   "name": "MII_PR_Meta_SearchParameter",
   "title": "MII PR Meta SearchParameter",
-  "status": "draft",
+  "status": "active",
   "experimental": true,
   "date": "2024-07-01",
   "publisher": "Medizininformatik Initiative",
@@ -75,7 +75,7 @@
             "key": "search-param-code-regex",
             "severity": "error",
             "human": "In SearchParameter.code DÜRFEN NICHT folgende Zeichen enthalten sein: Leerzeichen, `.`, `$`, `|`.",
-            "expression": "matches('[^\\s.$|]+')",
+            "expression": "matches('[^\\\\s.$|]+')",
             "source": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           }
         ]

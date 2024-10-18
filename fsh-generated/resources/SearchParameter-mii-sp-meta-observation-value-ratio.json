@@ -36,6 +36,7 @@
   "date": "2024-10-08",
   "name": "MII_SP_Meta_Observation_Value_Ratio",
   "description": "SearchParameter for Observation.valueRatio",
+  "experimental": false,
   "status": "active",
   "code": "value-ratio",
   "base": [
