@@ -1,12 +1,12 @@
 {
   "resourceType": "SearchParameter",
-  "id": "mii-sp-onko-nebenwirkung-encounter",
+  "id": "mii-sp-meta-tnm-klassifikation-has-member",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
     ]
   },
-  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-onko-nebenwirkung-encounter",
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-tnm-klassifikation-has-member",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -33,13 +33,13 @@
     }
   ],
   "version": "2025.0.0",
-  "name": "MII_SP_Nebenwirkung_Encounter",
-  "description": "SearchParameter for AdverseEvent.encounter",
+  "name": "MII_SP_Meta_TNM_Klassifikationen_Has_Member",
+  "description": "SearchParameter for Observation.hasMember",
   "status": "active",
-  "code": "encounter",
+  "code": "has-member",
   "base": [
-    "AdverseEvent"
+    "Observation"
   ],
   "type": "reference",
-  "expression": "AdverseEvent.encounter"
+  "expression": "Observation.hasMember"
 }

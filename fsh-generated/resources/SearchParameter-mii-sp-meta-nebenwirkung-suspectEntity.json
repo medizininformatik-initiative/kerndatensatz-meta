@@ -1,12 +1,12 @@
 {
   "resourceType": "SearchParameter",
-  "id": "mii-sp-onko-tumorkonferenz-contributor",
+  "id": "mii-sp-meta-nebenwirkung-suspectEntity",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
     ]
   },
-  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-onko-tumorkonferenz-contributor",
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-nebenwirkung-suspectEntity",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -33,13 +33,13 @@
     }
   ],
   "version": "2025.0.0",
-  "name": "MII_SP_Tumorkonferenz_Contributor",
-  "description": "SearchParameter for CarePlan.contributor",
+  "name": "MII_SP_Meta_Nebenwirkung_SuspectEntity_Instance",
+  "description": "SearchParameter for AdverseEvent.suspectEntity.instance",
   "status": "active",
-  "code": "contributor",
+  "code": "instance",
   "base": [
-    "CarePlan"
+    "AdverseEvent"
   ],
   "type": "reference",
-  "expression": "CarePlan.contributor"
+  "expression": "AdverseEvent.suspectEntity.instance"
 }

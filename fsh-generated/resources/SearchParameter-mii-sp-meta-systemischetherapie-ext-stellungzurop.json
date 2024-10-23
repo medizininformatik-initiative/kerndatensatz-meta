@@ -1,12 +1,12 @@
 {
   "resourceType": "SearchParameter",
-  "id": "mii-sp-onko-strahlentherapie-ext-bestrahlung-boost",
+  "id": "mii-sp-meta-systemischetherapie-ext-stellungzurop",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
     ]
   },
-  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-onko-strahlentherapie-ext-bestrahlung-boost",
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-systemischetherapie-ext-stellungzurop",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -33,13 +33,13 @@
     }
   ],
   "version": "2025.0.0",
-  "name": "MII_SP_Strahlentherapie_Extension_Bestrahlung_Boost",
-  "description": "SearchParameter for Procedure.extension:bestrahlung.extension:boost",
+  "name": "MII_SP_Meta_SystemischeTherapie_Extension_StellungZurOp",
+  "description": "SearchParameter for Procedure.extension.stellung",
   "status": "active",
-  "code": "bestrahlung-boost",
+  "code": "extension-stellung",
   "base": [
     "Procedure"
   ],
   "type": "token",
-  "expression": "Procedure.extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-bestrahlung').extension.where(url='Boost').value"
+  "expression": "Procedure.extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-stellung').value"
 }

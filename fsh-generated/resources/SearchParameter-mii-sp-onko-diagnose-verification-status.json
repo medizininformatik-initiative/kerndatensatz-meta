@@ -33,7 +33,7 @@
     }
   ],
   "version": "2025.0.0",
-  "name": "MII_SP_Diagnose_verification_status",
+  "name": "MII_SP_Meta_Diagnose_Verification_Status",
   "description": "SearchParameter for Condition.verificationStatus",
   "status": "active",
   "code": "verification-status",
