@@ -1,12 +1,12 @@
 {
   "resourceType": "SearchParameter",
-  "id": "mii-sp-onko-strahlentherapie-extension-bestrahlung-zielgebiet",
+  "id": "mii-sp-meta-tumorkonferenz-created",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
     ]
   },
-  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-onko-strahlentherapie-extension-bestrahlung-zielgebiet",
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-tumorkonferenz-created",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -33,13 +33,13 @@
     }
   ],
   "version": "2025.0.0",
-  "name": "MII_SP_Strahlentherapie_Extension_Bestrahlung_Zielgebiet",
-  "description": "SearchParameter for Procedure.extension:bestrahlung.extension:zielgebiet",
+  "name": "MII_SP_Meta_Tumorkonferenz_Created",
+  "description": "SearchParameter for CarePlan.created",
   "status": "active",
-  "code": "bestrahlung-zielgebiet",
+  "code": "created",
   "base": [
-    "Procedure"
+    "CarePlan"
   ],
-  "type": "token",
-  "expression": "Procedure.extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-bestrahlung').extension.where(url='Zielgebiet').value"
+  "type": "date",
+  "expression": "CarePlan.created"
 }

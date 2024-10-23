@@ -1,12 +1,12 @@
 {
   "resourceType": "SearchParameter",
-  "id": "mii-sp-onko-strahlentherapie-ext-bestrahlung-einzeldosis",
+  "id": "mii-sp-meta-diagnose-ext-morphology-behavior-icdo3",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
     ]
   },
-  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-onko-strahlentherapie-ext-bestrahlung-einzeldosis",
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-diagnose-ext-morphology-behavior-icdo3",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -33,13 +33,13 @@
     }
   ],
   "version": "2025.0.0",
-  "name": "MII_SP_Strahlentherapie_Extension_Bestrahlung_Einzeldosis",
-  "description": "SearchParameter for Procedure.extension:bestrahlung.extension:einzeldosis",
+  "name": "MII_SP_Meta_Diagnose_Extension_Morphology_Behaviour_ICD-O-3",
+  "description": "SearchParameter for Diagnosis.extension[morphology-behaviour-icdo3]",
   "status": "active",
-  "code": "bestrahlung-einzeldosis",
+  "code": "morphology-behavior-icdo3",
   "base": [
-    "Procedure"
+    "Diagnosis"
   ],
-  "type": "quantity",
-  "expression": "Procedure.extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-bestrahlung').extension.where(url='Einzeldosis').value"
+  "type": "token",
+  "expression": "Diagnosis.extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-meta/StructureDefinition/mii-ex-onko-histology-morphology-behavior-icdo3').value"
 }

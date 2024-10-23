@@ -1,12 +1,12 @@
 {
   "resourceType": "SearchParameter",
-  "id": "mii-sp-onko-tumorkonferenz-addresses",
+  "id": "mii-sp-meta-operation-complication",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
     ]
   },
-  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-onko-tumorkonferenz-addresses",
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-operation-complication",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -33,13 +33,13 @@
     }
   ],
   "version": "2025.0.0",
-  "name": "MII_SP_Tumorkonferenz_Addresses",
-  "description": "SearchParameter for CarePlan.addresses",
+  "name": "MII_SP_Meta_Operation_Complication",
+  "description": "SearchParameter for Procedure.complication",
   "status": "active",
-  "code": "addresses",
+  "code": "complication",
   "base": [
-    "CarePlan"
+    "Procedure"
   ],
-  "type": "reference",
-  "expression": "CarePlan.addresses"
+  "type": "token",
+  "expression": "Procedure.complication"
 }

@@ -1,12 +1,12 @@
 {
   "resourceType": "SearchParameter",
-  "id": "mii-sp-onko-strahlentherapie-ext-bestrahlung-gesamtdosis",
+  "id": "mii-sp-meta-strahlentherapie-outcome",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
     ]
   },
-  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-onko-strahlentherapie-ext-bestrahlung-gesamtdosis",
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-strahlentherapie-outcome",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -33,13 +33,13 @@
     }
   ],
   "version": "2025.0.0",
-  "name": "MII_SP_Strahlentherapie_Extension_Bestrahlung_Gesamtdosis",
-  "description": "SearchParameter for Procedure.extension:bestrahlung.extension:gesamtdosis",
+  "name": "MII_SP_Meta_Strahlentherapie_Outcome",
+  "description": "SearchParameter for Procedure.outcome",
   "status": "active",
-  "code": "bestrahlung-gesamtdosis",
+  "code": "outcome",
   "base": [
     "Procedure"
   ],
-  "type": "quantity",
-  "expression": "Procedure.extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-bestrahlung').extension.where(url='Gesamtdosis').value"
+  "type": "token",
+  "expression": "Procedure.outcome"
 }

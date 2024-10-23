@@ -1,12 +1,12 @@
 {
   "resourceType": "SearchParameter",
-  "id": "mii-sp-onko-tnm-klassifikation-has-member",
+  "id": "mii-sp-meta-evidence",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
     ]
   },
-  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-onko-tnm-klassifikation-has-member",
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-evidence",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -33,13 +33,13 @@
     }
   ],
   "version": "2025.0.0",
-  "name": "MII_SP_TNM_Klassifikationen_Has_Member",
-  "description": "SearchParameter for Observation.hasMember",
+  "name": "MII_SP_Meta_Diagnose_Evidence",
+  "description": "SearchParameter for Condition.evidence",
   "status": "active",
-  "code": "has-member",
+  "code": "evidence-detail",
   "base": [
-    "Observation"
+    "Condition"
   ],
   "type": "reference",
-  "expression": "Observation.hasMember"
+  "expression": "Condition.evidence"
 }
