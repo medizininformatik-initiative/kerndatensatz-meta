@@ -189,7 +189,7 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UOL "Carl von Ossietzky Universität Oldenburg" "Oldenburg"
 * #UOL insert AddKonsortium(HiGHmed)
 * #UOL insert AddStatus(deprecated)
-* #UOL insert insert AddDeprecationDate(2024-10-23)
+* #UOL insert AddDeprecationDate(2024-10-23)
 * #UKR "Universitätsklinikum Regensburg" "Regensburg"
 * #UKR insert AddKonsortium(DIFUTURE)
 * #UKR insert AddUri(ukr.de)
