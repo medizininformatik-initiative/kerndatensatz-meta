@@ -637,9 +637,13 @@
     },
     {
       "code": "UMO",
-      "display": "Universitätsmedizin Oldenburg",
+      "display": "Carl von Ossietzky Universität Oldenburg",
       "definition": "Oldenburg",
       "property": [
+        {
+          "code": "Konsortium",
+          "valueString": "HiGHmed"
+        },
         {
           "code": "uri",
           "valueString": "uol.de"
@@ -661,7 +665,11 @@
         },
         {
           "code": "status",
-          "valueCode": "active"
+          "valueCode": "deprecated"
+        },
+        {
+          "code": "deprecationDate",
+          "valueDateTime": "2024-10-23"
         }
       ]
     },
@@ -943,7 +951,7 @@
       }
     }
   ],
-  "date": "2024-07-18",
+  "date": "2024-10-23",
   "caseSensitive": true,
   "compositional": false,
   "copyright": "Medizininformatik-Initiative",
