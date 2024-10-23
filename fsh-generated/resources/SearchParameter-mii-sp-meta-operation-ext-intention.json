@@ -1,12 +1,12 @@
 {
   "resourceType": "SearchParameter",
-  "id": "mii-sp-onko-diagnose-ext-morphology-behavior-icdo3",
+  "id": "mii-sp-meta-operation-ext-intention",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
     ]
   },
-  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-onko-diagnose-ext-morphology-behavior-icdo3",
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-operation-ext-intention",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -33,13 +33,13 @@
     }
   ],
   "version": "2025.0.0",
-  "name": "MII_SP_Diagnose_Extension_Morphology_Behaviour_ICD-O-3",
-  "description": "SearchParameter for Diagnosis.extension[morphology-behaviour-icdo3]",
+  "name": "MII_SP_Meta_Operation_Extension_Intention",
+  "description": "SearchParameter for Procedure.extension.intention",
   "status": "active",
-  "code": "morphology-behavior-icdo3",
+  "code": "intention",
   "base": [
-    "Diagnosis"
+    "Procedure"
   ],
   "type": "token",
-  "expression": "Diagnosis.extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-histology-morphology-behavior-icdo3').value"
+  "expression": "Procedure.extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-operation-intention').value"
 }

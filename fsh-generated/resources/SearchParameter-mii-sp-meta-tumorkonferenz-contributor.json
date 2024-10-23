@@ -1,12 +1,12 @@
 {
   "resourceType": "SearchParameter",
-  "id": "mii-sp-onko-strahlentherapie-ext-bestrahlung-applikationsart",
+  "id": "mii-sp-meta-tumorkonferenz-contributor",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
     ]
   },
-  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-onko-strahlentherapie-ext-bestrahlung-applikationsart",
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-tumorkonferenz-contributor",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -33,13 +33,13 @@
     }
   ],
   "version": "2025.0.0",
-  "name": "MII_SP_Strahlentherapie_Extension_Bestrahlung_Applikationsart",
-  "description": "SearchParameter for Procedure.extension:bestrahlung.extension:applikationsart",
+  "name": "MII_SP_Meta_Tumorkonferenz_Contributor",
+  "description": "SearchParameter for CarePlan.contributor",
   "status": "active",
-  "code": "bestrahlung-applikationsart",
+  "code": "contributor",
   "base": [
-    "Procedure"
+    "CarePlan"
   ],
-  "type": "token",
-  "expression": "Procedure.extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-bestrahlung').extension.where(url='Applikationsart').value"
+  "type": "reference",
+  "expression": "CarePlan.contributor"
 }
