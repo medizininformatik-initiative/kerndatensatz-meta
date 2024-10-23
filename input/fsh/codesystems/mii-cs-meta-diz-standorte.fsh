@@ -29,7 +29,7 @@ Description: "Medizininformatik-Initiative Standorte"
 * insert Publisher
 * insert PR_CS_VS_Version
 * insert LicenseCodeableCCBY40
-* ^date = "2024-07-18"
+* ^date = "2024-10-23"
 * ^status = #active
 * ^caseSensitive = true
 * ^compositional = false
@@ -182,12 +182,14 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UKM insert AddKonsortium(HiGHmed)
 * #UKM insert AddUri(ukm.de)
 * #UKM insert AddStatus(active)
-* #UMO "Universitätsmedizin Oldenburg" "Oldenburg"
+* #UMO "Carl von Ossietzky Universität Oldenburg" "Oldenburg"
+* #UMO insert AddKonsortium(HiGHmed)
 * #UMO insert AddUri(uol.de)
 * #UMO insert AddStatus(active)
 * #UOL "Carl von Ossietzky Universität Oldenburg" "Oldenburg"
 * #UOL insert AddKonsortium(HiGHmed)
-* #UOL insert AddStatus(active)
+* #UOL insert AddStatus(deprecated)
+* #UOL insert AddDeprecationDate(2024-10-23)
 * #UKR "Universitätsklinikum Regensburg" "Regensburg"
 * #UKR insert AddKonsortium(DIFUTURE)
 * #UKR insert AddUri(ukr.de)
