@@ -726,6 +726,29 @@
         },
         {
           "code": "status",
+          "valueCode": "deprecated"
+        },
+        {
+          "code": "deprecationDate",
+          "valueDateTime": "2024-10-15"
+        }
+      ]
+    },
+    {
+      "code": "UdS",
+      "display": "Universität des Saarlandes, Medizinische Fakultät",
+      "definition": "Saarbrücken / Homburg",
+      "property": [
+        {
+          "code": "Konsortium",
+          "valueString": "DIFUTURE"
+        },
+        {
+          "code": "uri",
+          "valueString": "uks.eu"
+        },
+        {
+          "code": "status",
           "valueCode": "active"
         }
       ]
@@ -982,5 +1005,5 @@
       "type": "dateTime"
     }
   ],
-  "count": 48
+  "count": 49
 }

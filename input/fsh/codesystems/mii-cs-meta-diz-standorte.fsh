@@ -201,7 +201,12 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UKS "Universitätsklinikum des Saarlandes" "Saarbrücken / Homburg"
 * #UKS insert AddKonsortium(DIFUTURE)
 * #UKS insert AddUri(uks.eu)
-* #UKS insert AddStatus(active)
+* #UKS insert AddStatus(deprecated)
+* #UKS insert AddDeprecationDate(2024-10-15)
+* #UdS "Universität des Saarlandes, Medizinische Fakultät" "Saarbrücken / Homburg"
+* #UdS insert AddKonsortium(DIFUTURE)
+* #UdS insert AddUri(uks.eu)
+* #UdS insert AddStatus(active)
 * #UKSH "Universitätsklinikum Schleswig-Holstein" "Schleswig-Holstein"
 * #UKSH insert AddKonsortium(HiGHmed)
 * #UKSH insert AddUri(uksh.de)
