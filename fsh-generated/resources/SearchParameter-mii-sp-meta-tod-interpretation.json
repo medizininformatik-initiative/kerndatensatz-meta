@@ -1,12 +1,12 @@
 {
   "resourceType": "SearchParameter",
-  "id": "mii-sp-onko-tod-encounter",
+  "id": "mii-sp-meta-tod-interpretation",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
     ]
   },
-  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-onko-tod-encounter",
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-tod-interpretation",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -33,13 +33,13 @@
     }
   ],
   "version": "2025.0.0",
-  "name": "MII_SP_Onko_Tod_Encounter",
-  "description": "SearchParameter for Observation.encounter",
+  "name": "MII_SP_Meta_Tod_Interpreation",
+  "description": "SearchParameter for Observation.interpretation",
   "status": "active",
-  "code": "encounter",
+  "code": "interpretation",
   "base": [
     "Observation"
   ],
-  "type": "reference",
-  "expression": "Observation.encounter"
+  "type": "token",
+  "expression": "Observation.interpretation"
 }

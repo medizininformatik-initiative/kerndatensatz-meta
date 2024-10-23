@@ -1,12 +1,12 @@
 {
   "resourceType": "SearchParameter",
-  "id": "mii-sp-onko-diagnose-evidence",
+  "id": "mii-sp-meta-strahlentherapie-ext-bestrahlung-boost",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
     ]
   },
-  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-onko-diagnose-evidence",
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-strahlentherapie-ext-bestrahlung-boost",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -33,13 +33,13 @@
     }
   ],
   "version": "2025.0.0",
-  "name": "MII_SP_Diagnose_evidence",
-  "description": "SearchParameter for Condition.evidence",
+  "name": "MII_SP_Meta_Strahlentherapie_Extension_Bestrahlung_Boost",
+  "description": "SearchParameter for Procedure.extension:bestrahlung.extension:boost",
   "status": "active",
-  "code": "evidence-detail",
+  "code": "bestrahlung-boost",
   "base": [
-    "Condition"
+    "Procedure"
   ],
-  "type": "reference",
-  "expression": "Condition.evidence"
+  "type": "token",
+  "expression": "Procedure.extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-bestrahlung').extension.where(url='Boost').value"
 }

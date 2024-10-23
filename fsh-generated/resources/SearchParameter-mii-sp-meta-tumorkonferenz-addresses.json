@@ -1,12 +1,12 @@
 {
   "resourceType": "SearchParameter",
-  "id": "mii-sp-onko-tod-interpretation",
+  "id": "mii-sp-meta-tumorkonferenz-addresses",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
     ]
   },
-  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-onko-tod-interpretation",
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-tumorkonferenz-addresses",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -33,13 +33,13 @@
     }
   ],
   "version": "2025.0.0",
-  "name": "MII_SP_Onko_Tod_Interpreation",
-  "description": "SearchParameter for Observation.interpretation",
+  "name": "MII_SP_Meta_Tumorkonferenz_Addresses",
+  "description": "SearchParameter for CarePlan.addresses",
   "status": "active",
-  "code": "interpretation",
+  "code": "addresses",
   "base": [
-    "Observation"
+    "CarePlan"
   ],
-  "type": "token",
-  "expression": "Observation.interpretation"
+  "type": "reference",
+  "expression": "CarePlan.addresses"
 }

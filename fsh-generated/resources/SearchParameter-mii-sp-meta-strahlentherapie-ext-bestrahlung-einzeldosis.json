@@ -1,12 +1,12 @@
 {
   "resourceType": "SearchParameter",
-  "id": "mii-sp-onko-tod-focus",
+  "id": "mii-sp-meta-strahlentherapie-ext-bestrahlung-einzeldosis",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
     ]
   },
-  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-onko-tod-focus",
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-strahlentherapie-ext-bestrahlung-einzeldosis",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -33,13 +33,13 @@
     }
   ],
   "version": "2025.0.0",
-  "name": "MII_SP_Onko_Tod_Focus",
-  "description": "SearchParameter for Observation.focus",
+  "name": "MII_SP_Meta_Strahlentherapie_Extension_Bestrahlung_Einzeldosis",
+  "description": "SearchParameter for Procedure.extension:bestrahlung.extension:einzeldosis",
   "status": "active",
-  "code": "focus",
+  "code": "bestrahlung-einzeldosis",
   "base": [
-    "Observation"
+    "Procedure"
   ],
-  "type": "reference",
-  "expression": "Observation.focus"
+  "type": "quantity",
+  "expression": "Procedure.extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-bestrahlung').extension.where(url='Einzeldosis').value"
 }

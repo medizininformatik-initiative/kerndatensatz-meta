@@ -1,12 +1,12 @@
 {
   "resourceType": "SearchParameter",
-  "id": "mii-sp-onko-systemischetherapie-ext-stellungzurop",
+  "id": "mii-sp-meta-strahlentherapie-extension-bestrahlung-zielgebiet",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
     ]
   },
-  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-onko-systemischetherapie-ext-stellungzurop",
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-strahlentherapie-extension-bestrahlung-zielgebiet",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -33,13 +33,13 @@
     }
   ],
   "version": "2025.0.0",
-  "name": "MII_SP_Extension_StellungZurOp",
-  "description": "SearchParameter for Procedure.extension.stellung",
+  "name": "MII_SP_Meta_Strahlentherapie_Extension_Bestrahlung_Zielgebiet",
+  "description": "SearchParameter for Procedure.extension:bestrahlung.extension:zielgebiet",
   "status": "active",
-  "code": "extension-stellung",
+  "code": "bestrahlung-zielgebiet",
   "base": [
     "Procedure"
   ],
   "type": "token",
-  "expression": "Procedure.extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-stellung').value"
+  "expression": "Procedure.extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-bestrahlung').extension.where(url='Zielgebiet').value"
 }

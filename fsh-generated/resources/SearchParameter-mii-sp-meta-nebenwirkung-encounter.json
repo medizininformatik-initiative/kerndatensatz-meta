@@ -1,12 +1,12 @@
 {
   "resourceType": "SearchParameter",
-  "id": "mii-sp-onko-ext-strahlentherapie-stellungzurop",
+  "id": "mii-sp-meta-nebenwirkung-encounter",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
     ]
   },
-  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-onko-ext-strahlentherapie-stellungzurop",
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-nebenwirkung-encounter",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -33,13 +33,13 @@
     }
   ],
   "version": "2025.0.0",
-  "name": "MII_SP_Extension_StellungZurOp",
-  "description": "SearchParameter for Procedure.extension.stellung",
+  "name": "MII_SP_Meta_Nebenwirkung_Encounter",
+  "description": "SearchParameter for AdverseEvent.encounter",
   "status": "active",
-  "code": "stellung",
+  "code": "encounter",
   "base": [
-    "Procedure"
+    "AdverseEvent"
   ],
-  "type": "token",
-  "expression": "Procedure.extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-stellung').value"
+  "type": "reference",
+  "expression": "AdverseEvent.encounter"
 }

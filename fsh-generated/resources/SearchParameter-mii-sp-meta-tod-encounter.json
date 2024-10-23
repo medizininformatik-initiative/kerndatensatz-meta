@@ -1,12 +1,12 @@
 {
   "resourceType": "SearchParameter",
-  "id": "mii-sp-onko-operation-complication",
+  "id": "mii-sp-meta-tod-encounter",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
     ]
   },
-  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-onko-operation-complication",
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-tod-encounter",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -33,13 +33,13 @@
     }
   ],
   "version": "2025.0.0",
-  "name": "MII_SP_Operation_Complication",
-  "description": "SearchParameter for Procedure.complication",
+  "name": "MII_SP_Meta_Tod_Encounter",
+  "description": "SearchParameter for Observation.encounter",
   "status": "active",
-  "code": "complication",
+  "code": "encounter",
   "base": [
-    "Procedure"
+    "Observation"
   ],
-  "type": "token",
-  "expression": "Procedure.complication"
+  "type": "reference",
+  "expression": "Observation.encounter"
 }

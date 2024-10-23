@@ -1,12 +1,12 @@
 {
   "resourceType": "SearchParameter",
-  "id": "mii-sp-onko-strahlentherapie-outcome",
+  "id": "mii-sp-meta-strahlentherapie-ext-zielgebiet-lateralitaet",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
     ]
   },
-  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-onko-strahlentherapie-outcome",
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-strahlentherapie-ext-zielgebiet-lateralitaet",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -33,13 +33,13 @@
     }
   ],
   "version": "2025.0.0",
-  "name": "MII_SP_Strahlentherapie_Outcome",
-  "description": "SearchParameter for Procedure.outcome",
+  "name": "MII_SP_Meta_Strahlentherapie_Extension_Bestrahlung_Zielgebiet_Lateralitaet",
+  "description": "SearchParameter for Procedure.extension:bestrahlung.extension:zielgebiet_Lateralitaet",
   "status": "active",
-  "code": "outcome",
+  "code": "bestrahlung-zielgebiet-Lateralitaet",
   "base": [
     "Procedure"
   ],
   "type": "token",
-  "expression": "Procedure.outcome"
+  "expression": "Procedure.extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-bestrahlung').extension.where(url='Zielgebiet_Lateralitaet').value"
 }
