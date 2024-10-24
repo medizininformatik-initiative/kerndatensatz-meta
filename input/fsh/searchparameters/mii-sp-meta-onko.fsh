@@ -36,6 +36,44 @@ Usage: #definition
 * expression = "Condition.evidence"
 
 //----------------------------------------
+// SearchParameters for Evidence List
+//----------------------------------------
+
+Instance: mii-sp-meta-list-mode
+InstanceOf: SearchParameter
+Usage: #definition
+* insert SP_Publisher
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
+* insert Version
+* experimental = false
+* date = "2024-10-24"
+* name = "MII_SP_Meta_List_Mode"
+* description = "SearchParameter for List.mode"
+* status = #active 
+* code = #mode
+* base = #List 
+* type = #token
+* expression = "List.mode"
+
+Instance: mii-sp-meta-list-flag
+InstanceOf: SearchParameter
+Usage: #definition
+* insert SP_Publisher
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
+* insert Version
+* experimental = false
+* date = "2024-10-24"
+* name = "MII_SP_Meta_List_Flag"
+* description = "SearchParameter for List.flag"
+* status = #active 
+* code = #flag
+* base = #List 
+* type = #token
+* expression = "List.flag"
+
+//----------------------------------------
 // SearchParameters for Histologie
 //----------------------------------------
 
