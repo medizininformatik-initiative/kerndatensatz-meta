@@ -219,4 +219,19 @@ Usage: #definition
 // SearchParameters for Genetische Variante
 //----------------------------------------
 
-// No search parameters to cover
+Instance: mii-sp-meta-observation-note
+InstanceOf: SearchParameter
+Usage: #definition
+* insert SP_Publisher
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
+* insert Version
+* experimental = false
+* date = "2024-10-24"
+* name = "MII_SP_Meta_Observation_Note"
+* description = "SearchParameter for observation.note"
+* status = #active 
+* code = #note
+* base = #Observation 
+* type = #string
+* expression = "Observation.note" 
