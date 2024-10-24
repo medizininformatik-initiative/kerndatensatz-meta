@@ -1,12 +1,12 @@
 {
   "resourceType": "SearchParameter",
-  "id": "mii-sp-meta-tod-interpretation",
+  "id": "mii-sp-meta-careplan-created",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
     ]
   },
-  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-tod-interpretation",
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-careplan-created",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -33,13 +33,13 @@
     }
   ],
   "version": "2025.0.0",
-  "name": "MII_SP_Meta_Tod_Interpreation",
-  "description": "SearchParameter for Observation.interpretation",
+  "name": "MII_SP_Meta_CarePlan_Created",
+  "description": "SearchParameter for CarePlan.created",
   "status": "active",
-  "code": "interpretation",
+  "code": "created",
   "base": [
-    "Observation"
+    "CarePlan"
   ],
-  "type": "token",
-  "expression": "Observation.interpretation"
+  "type": "date",
+  "expression": "CarePlan.created"
 }

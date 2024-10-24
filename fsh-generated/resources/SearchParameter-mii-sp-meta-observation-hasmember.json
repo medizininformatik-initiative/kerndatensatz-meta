@@ -1,12 +1,12 @@
 {
   "resourceType": "SearchParameter",
-  "id": "mii-sp-meta-strahlentherapie-outcome",
+  "id": "mii-sp-meta-observation-hasmember",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
     ]
   },
-  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-strahlentherapie-outcome",
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-hasmember",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -33,13 +33,13 @@
     }
   ],
   "version": "2025.0.0",
-  "name": "MII_SP_Meta_Strahlentherapie_Outcome",
-  "description": "SearchParameter for Procedure.outcome",
+  "name": "MII_SP_Meta_Observation_hasMember",
+  "description": "SearchParameter for Observation.hasMember",
   "status": "active",
-  "code": "outcome",
+  "code": "has-member",
   "base": [
-    "Procedure"
+    "Observation"
   ],
-  "type": "token",
-  "expression": "Procedure.outcome"
+  "type": "reference",
+  "expression": "Observation.hasMember"
 }

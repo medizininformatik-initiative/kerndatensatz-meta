@@ -1,12 +1,12 @@
 {
   "resourceType": "SearchParameter",
-  "id": "mii-sp-meta-strahlentherapie-ext-stellungzurop",
+  "id": "mii-sp-meta-procedure-outcome",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
     ]
   },
-  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-strahlentherapie-ext-stellungzurop",
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-outcome",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -33,13 +33,13 @@
     }
   ],
   "version": "2025.0.0",
-  "name": "MII_SP_Meta_Strahlentherapie-Extension_StellungZurOp",
-  "description": "SearchParameter for Procedure.extension.stellung",
+  "name": "MII_SP_Meta_Procedure_Outcome",
+  "description": "SearchParameter for Procedure.outcome",
   "status": "active",
-  "code": "stellung",
+  "code": "outcome",
   "base": [
     "Procedure"
   ],
   "type": "token",
-  "expression": "Procedure.extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-stellung').value"
+  "expression": "Procedure.outcome"
 }
