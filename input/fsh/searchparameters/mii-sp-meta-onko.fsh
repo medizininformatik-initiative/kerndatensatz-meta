@@ -8,6 +8,8 @@ Usage: #definition
 * insert LicenseCodeableCCBY40Instance
 * insert SP_Profile
 * insert Version
+* experimental = false
+* date = "2024-10-24"
 * name = "MII_SP_Meta_Condition_Verification_Status"
 * description = "SearchParameter for Condition.verificationStatus"
 * status = #active 
@@ -23,6 +25,8 @@ Usage: #definition
 * insert LicenseCodeableCCBY40Instance
 * insert SP_Profile
 * insert Version
+* experimental = false
+* date = "2024-10-24"
 * name = "MII_SP_Meta_Condition_Evidence"
 * description = "SearchParameter for Condition.evidence"
 * status = #active 
@@ -62,6 +66,8 @@ Usage: #definition
 * insert LicenseCodeableCCBY40Instance
 * insert SP_Profile
 * insert Version
+* experimental = false
+* date = "2024-10-24"
 * name = "MII_SP_Meta_Observation_hasMember"
 * description = "SearchParameter for Observation.hasMember"
 * status = #active 
@@ -120,6 +126,8 @@ Usage: #definition
 * insert LicenseCodeableCCBY40Instance
 * insert SP_Profile
 * insert Version
+* experimental = false
+* date = "2024-10-24"
 * name = "MII_SP_Meta_Procedure_Complication"
 * description = "SearchParameter for Procedure.complication"
 * status = #active 
@@ -276,6 +284,8 @@ Usage: #definition
 * insert LicenseCodeableCCBY40Instance
 * insert SP_Profile
 * insert Version
+* experimental = false
+* date = "2024-10-24"
 * name = "MII_SP_Meta_AdverseEvent_SuspectEntity_Instance"
 * description = "SearchParameter for AdverseEvent.suspectEntity.instance"
 * status = #active 
@@ -291,6 +301,8 @@ Usage: #definition
 * insert LicenseCodeableCCBY40Instance
 * insert SP_Profile
 * insert Version
+* experimental = false
+* date = "2024-10-24"
 * name = "MII_SP_Meta_AdverseEvent_Encounter"
 * description = "SearchParameter for AdverseEvent.encounter"
 * status = #active 
@@ -336,6 +348,8 @@ Usage: #definition
 * insert LicenseCodeableCCBY40Instance
 * insert SP_Profile
 * insert Version
+* experimental = false
+* date = "2024-10-24"
 * name = "MII_SP_Meta_CarePlan_Created"
 * description = "SearchParameter for CarePlan.created"
 * status = #active 
@@ -351,6 +365,8 @@ Usage: #definition
 * insert LicenseCodeableCCBY40Instance
 * insert SP_Profile
 * insert Version
+* experimental = false
+* date = "2024-10-24"
 * name = "MII_SP_Meta_CarePlan_Contributor"
 * description = "SearchParameter for CarePlan.contributor"
 * status = #active 
@@ -366,6 +382,8 @@ Usage: #definition
 * insert LicenseCodeableCCBY40Instance
 * insert SP_Profile
 * insert Version
+* experimental = false
+* date = "2024-10-24"
 * name = "MII_SP_Meta_CarePlan_Addresses"
 * description = "SearchParameter for CarePlan.addresses"
 * status = #active 
@@ -399,6 +417,8 @@ Usage: #definition
 * insert LicenseCodeableCCBY40Instance
 * insert SP_Profile
 * insert Version
+* experimental = false
+* date = "2024-10-24"
 * name = "MII_SP_Meta_Observation_Focus"
 * description = "SearchParameter for Observation.focus"
 * status = #active
@@ -414,6 +434,8 @@ Usage: #definition
 * insert LicenseCodeableCCBY40Instance
 * insert SP_Profile
 * insert Version
+* experimental = false
+* date = "2024-10-24"
 * name = "MII_SP_Meta_Observation_Encounter"
 * description = "SearchParameter for Observation.encounter"
 * status = #active
