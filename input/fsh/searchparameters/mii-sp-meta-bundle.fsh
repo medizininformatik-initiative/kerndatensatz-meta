@@ -11,7 +11,7 @@ RuleSet: AddCollectionEntry(resource)
 Instance: mii-meta-searchparam-transaction-bundle
 InstanceOf: Bundle
 * type = #transaction
-* timestamp = "2024-10-17T16:08:00+01:00"
+* timestamp = "2024-10-24T11:35:00+01:00"
 // Person
 * insert AddTransactionEntry(mii-sp-meta-patient-adresszusatz)
 * insert AddTransactionEntry(mii-sp-meta-patient-assignerpid)
@@ -118,11 +118,24 @@ InstanceOf: Bundle
 * insert AddTransactionEntry(mii-sp-meta-researchstudy-rekrutierungsstand)
 * insert AddTransactionEntry(mii-sp-meta-researchstudy-rekrutierungsziel)
 * insert AddTransactionEntry(mii-sp-meta-researchstudy-rekrutierungsstart)
+// Onko
+* insert AddTransactionEntry(mii-sp-meta-condition-verification-status)
+* insert AddTransactionEntry(mii-sp-meta-condition-evidence)
+* insert AddTransactionEntry(mii-sp-meta-observation-hasmember)
+* insert AddTransactionEntry(mii-sp-meta-procedure-complication)
+* insert AddTransactionEntry(mii-sp-meta-procedure-outcome)
+* insert AddTransactionEntry(mii-sp-meta-adverseevent-suspectentity-instance)
+* insert AddTransactionEntry(mii-sp-meta-adverseevent-encounter)
+* insert AddTransactionEntry(mii-sp-meta-careplan-created)
+* insert AddTransactionEntry(mii-sp-meta-careplan-contributor)
+* insert AddTransactionEntry(mii-sp-meta-careplan-addresses)
+* insert AddTransactionEntry(mii-sp-meta-observation-focus)
+* insert AddTransactionEntry(mii-sp-meta-observation-encounter)
 
 Instance: mii-meta-searchparam-collection-bundle
 InstanceOf: Bundle
 * type = #collection
-* timestamp = "2024-10-17T16:08:00+01:00"
+* timestamp = "2024-10-24T11:35:00+01:00"
 // Person
 * insert AddCollectionEntry(mii-sp-meta-patient-adresszusatz)
 * insert AddCollectionEntry(mii-sp-meta-patient-assignerpid)
@@ -230,3 +243,16 @@ InstanceOf: Bundle
 * insert AddCollectionEntry(mii-sp-meta-researchstudy-rekrutierungsstand)
 * insert AddCollectionEntry(mii-sp-meta-researchstudy-rekrutierungsziel)
 * insert AddCollectionEntry(mii-sp-meta-researchstudy-rekrutierungsstart)
+// Onko
+* insert AddCollectionEntry(mii-sp-meta-condition-verification-status)
+* insert AddCollectionEntry(mii-sp-meta-condition-evidence)
+* insert AddCollectionEntry(mii-sp-meta-observation-hasmember)
+* insert AddCollectionEntry(mii-sp-meta-procedure-complication)
+* insert AddCollectionEntry(mii-sp-meta-procedure-outcome)
+* insert AddCollectionEntry(mii-sp-meta-adverseevent-suspectentity-instance)
+* insert AddCollectionEntry(mii-sp-meta-adverseevent-encounter)
+* insert AddCollectionEntry(mii-sp-meta-careplan-created)
+* insert AddCollectionEntry(mii-sp-meta-careplan-contributor)
+* insert AddCollectionEntry(mii-sp-meta-careplan-addresses)
+* insert AddCollectionEntry(mii-sp-meta-observation-focus)
+* insert AddCollectionEntry(mii-sp-meta-observation-encounter)
