@@ -1,12 +1,12 @@
 {
   "resourceType": "SearchParameter",
-  "id": "mii-sp-meta-tumorkonferenz-created",
+  "id": "mii-sp-meta-condition-evidence",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
     ]
   },
-  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-tumorkonferenz-created",
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-evidence",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -33,13 +33,13 @@
     }
   ],
   "version": "2025.0.0",
-  "name": "MII_SP_Meta_Tumorkonferenz_Created",
-  "description": "SearchParameter for CarePlan.created",
+  "name": "MII_SP_Meta_Condition_Evidence",
+  "description": "SearchParameter for Condition.evidence",
   "status": "active",
-  "code": "created",
+  "code": "evidence-detail",
   "base": [
-    "CarePlan"
+    "Condition"
   ],
-  "type": "date",
-  "expression": "CarePlan.created"
+  "type": "reference",
+  "expression": "Condition.evidence"
 }

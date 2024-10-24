@@ -1,12 +1,12 @@
 {
   "resourceType": "SearchParameter",
-  "id": "mii-sp-meta-tod-focus",
+  "id": "mii-sp-meta-careplan-addresses",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
     ]
   },
-  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-tod-focus",
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-careplan-addresses",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -33,13 +33,13 @@
     }
   ],
   "version": "2025.0.0",
-  "name": "MII_SP_Meta_Tod_Focus",
-  "description": "SearchParameter for Observation.focus",
+  "name": "MII_SP_Meta_CarePlan_Addresses",
+  "description": "SearchParameter for CarePlan.addresses",
   "status": "active",
-  "code": "focus",
+  "code": "addresses",
   "base": [
-    "Observation"
+    "CarePlan"
   ],
   "type": "reference",
-  "expression": "Observation.focus"
+  "expression": "CarePlan.addresses"
 }

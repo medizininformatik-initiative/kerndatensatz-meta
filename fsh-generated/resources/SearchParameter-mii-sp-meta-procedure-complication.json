@@ -1,12 +1,12 @@
 {
   "resourceType": "SearchParameter",
-  "id": "mii-sp-meta-strahlentherapie-ext-bestrahlung-strahlenart",
+  "id": "mii-sp-meta-procedure-complication",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
     ]
   },
-  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-strahlentherapie-ext-bestrahlung-strahlenart",
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-complication",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -33,13 +33,13 @@
     }
   ],
   "version": "2025.0.0",
-  "name": "MII_SP_Meta_Strahlentherapie_Extension_Bestrahlung_Strahlenart",
-  "description": "SearchParameter for Procedure.extension:bestrahlung.extension:strahlenart",
+  "name": "MII_SP_Meta_Procedure_Complication",
+  "description": "SearchParameter for Procedure.complication",
   "status": "active",
-  "code": "bestrahlung-strahlenart",
+  "code": "complication",
   "base": [
     "Procedure"
   ],
   "type": "token",
-  "expression": "Procedure.extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-bestrahlung').extension.where(url='Strahlenart').value"
+  "expression": "Procedure.complication"
 }
