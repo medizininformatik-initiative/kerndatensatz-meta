@@ -133,6 +133,8 @@ InstanceOf: Bundle
 * insert AddTransactionEntry(mii-sp-onko-careplan-supporting-info)
 * insert AddTransactionEntry(mii-sp-meta-careplan-addresses)
 * insert AddTransactionEntry(mii-sp-meta-observation-note)
+* insert AddTransactionEntry(mii-sp-meta-careplan-activity-status)
+* insert AddTransactionEntry(mii-sp-meta-careplan-activity-status-reason)
 
 Instance: mii-meta-searchparam-collection-bundle
 InstanceOf: Bundle
@@ -259,4 +261,6 @@ InstanceOf: Bundle
 * insert AddCollectionEntry(mii-sp-meta-careplan-created)
 * insert AddCollectionEntry(mii-sp-onko-careplan-supporting-info)
 * insert AddCollectionEntry(mii-sp-meta-careplan-addresses)
+* insert AddCollectionEntry(mii-sp-meta-careplan-activity-status)
+* insert AddCollectionEntry(mii-sp-meta-careplan-activity-status-reason)
 * insert AddCollectionEntry(mii-sp-meta-observation-note)

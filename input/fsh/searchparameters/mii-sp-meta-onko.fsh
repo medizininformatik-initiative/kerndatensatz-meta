@@ -283,6 +283,40 @@ Usage: #definition
 * type = #reference
 * expression = "CarePlan.addresses" 
 
+Instance: mii-sp-meta-careplan-activity-status
+InstanceOf: SearchParameter
+Usage: #definition
+* insert SP_Publisher
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
+* insert Version
+* experimental = false
+* date = "2024-10-24"
+* name = "MII_SP_Meta_CarePlan_Activity_Status"
+* description = "SearchParameter for CarePlan.activity.status"
+* status = #active 
+* code = #activity-status
+* base = #CarePlan 
+* type = #token
+* expression = "CarePlan.activity.status" 
+
+Instance: mii-sp-meta-careplan-activity-status-reason
+InstanceOf: SearchParameter
+Usage: #definition
+* insert SP_Publisher
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
+* insert Version
+* experimental = false
+* date = "2024-10-24"
+* name = "MII_SP_Meta_CarePlan_Activity_Status_Reason"
+* description = "SearchParameter for CarePlan.activity.statusReason"
+* status = #active 
+* code = #activity-status-reason
+* base = #CarePlan 
+* type = #token
+* expression = "CarePlan.activity.statusReason" 
+
 //----------------------------------------
 // SearchParameters for Tod
 //----------------------------------------
