@@ -35,6 +35,23 @@ Usage: #definition
 * type = #reference
 * expression = "Condition.evidence"
 
+Instance: mii-sp-meta-asserted-date
+InstanceOf: SearchParameter
+Usage: #definition
+* insert SP_Publisher
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
+* insert Version
+* experimental = false
+* date = "2024-10-24"
+* name = "MII_SP_Meta_Condition_Asserted_Date"
+* description = "SearchParameter for Condition.assertedDate"
+* status = #active 
+* code = #assered-date
+* base = #Condition 
+* type = #date
+* expression = "Condition.assertedDate"
+
 //----------------------------------------
 // SearchParameters for Evidence List
 //----------------------------------------

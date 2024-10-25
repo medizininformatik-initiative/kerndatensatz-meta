@@ -122,6 +122,7 @@ InstanceOf: Bundle
 // Onko
 * insert AddTransactionEntry(mii-sp-meta-condition-verification-status)
 * insert AddTransactionEntry(mii-sp-meta-condition-evidence)
+* insert AddTransactionEntry(mii-sp-meta-condition-asserted-date)
 * insert AddTransactionEntry(mii-sp-meta-list-mode)
 * insert AddTransactionEntry(mii-sp-meta-list-flag)
 * insert AddTransactionEntry(mii-sp-meta-procedure-complication)
@@ -252,6 +253,7 @@ InstanceOf: Bundle
 // Onko
 * insert AddCollectionEntry(mii-sp-meta-condition-verification-status)
 * insert AddCollectionEntry(mii-sp-meta-condition-evidence)
+* insert AddCollectionEntry(mii-sp-meta-condition-asserted-date)
 * insert AddCollectionEntry(mii-sp-meta-list-mode)
 * insert AddCollectionEntry(mii-sp-meta-list-flag)
 * insert AddCollectionEntry(mii-sp-meta-procedure-complication)
