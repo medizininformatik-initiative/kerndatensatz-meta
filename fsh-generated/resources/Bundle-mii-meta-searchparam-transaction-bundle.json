@@ -6058,6 +6058,114 @@
         "method": "PUT",
         "url": "SearchParameter/mii-sp-meta-observation-note"
       }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-careplan-activity-status",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-careplan-activity-status",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-careplan-activity-status",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "version": "2025.0.0",
+        "experimental": false,
+        "date": "2024-10-24",
+        "name": "MII_SP_Meta_CarePlan_Activity_Status",
+        "description": "SearchParameter for CarePlan.activity.status",
+        "status": "active",
+        "code": "activity-status",
+        "base": [
+          "CarePlan"
+        ],
+        "type": "token",
+        "expression": "CarePlan.activity.status"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "SearchParameter/mii-sp-meta-careplan-activity-status"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-careplan-activity-status-reason",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-careplan-activity-status-reason",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-careplan-activity-status-reason",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "version": "2025.0.0",
+        "experimental": false,
+        "date": "2024-10-24",
+        "name": "MII_SP_Meta_CarePlan_Activity_Status_Reason",
+        "description": "SearchParameter for CarePlan.activity.statusReason",
+        "status": "active",
+        "code": "activity-status-reason",
+        "base": [
+          "CarePlan"
+        ],
+        "type": "token",
+        "expression": "CarePlan.activity.statusReason"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "SearchParameter/mii-sp-meta-careplan-activity-status-reason"
+      }
     }
   ]
 }
