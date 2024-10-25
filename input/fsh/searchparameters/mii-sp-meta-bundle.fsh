@@ -32,6 +32,7 @@ InstanceOf: Bundle
 * insert AddTransactionEntry(mii-sp-meta-procedure-bodysite)
 * insert AddTransactionEntry(mii-sp-meta-procedure-dokumentationsdatum)
 * insert AddTransactionEntry(mii-sp-meta-procedure-durchfuehrungsabsicht)
+* insert AddTransactionEntry(mii-sp-meta-procedure-category)
 // Fall
 * insert AddTransactionEntry(mii-sp-meta-encounter-diagnosis-use)
 * insert AddTransactionEntry(mii-sp-meta-encounter-hospitalization-admitsource)
@@ -160,6 +161,7 @@ InstanceOf: Bundle
 * insert AddCollectionEntry(mii-sp-meta-procedure-bodysite)
 * insert AddCollectionEntry(mii-sp-meta-procedure-dokumentationsdatum)
 * insert AddCollectionEntry(mii-sp-meta-procedure-durchfuehrungsabsicht)
+* insert AddCollectionEntry(mii-sp-meta-procedure-category)
 // Fall
 * insert AddCollectionEntry(mii-sp-meta-encounter-diagnosis-use)
 * insert AddCollectionEntry(mii-sp-meta-encounter-hospitalization-admitsource)
