@@ -1,12 +1,12 @@
 {
   "resourceType": "SearchParameter",
-  "id": "mii-sp-meta-observation-encounter",
+  "id": "mii-sp-meta-list-flag",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
     ]
   },
-  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-encounter",
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-list-flag",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -35,13 +35,13 @@
   "version": "2025.0.0",
   "experimental": false,
   "date": "2024-10-24",
-  "name": "MII_SP_Meta_Observation_Encounter",
-  "description": "SearchParameter for Observation.encounter",
+  "name": "MII_SP_Meta_List_Flag",
+  "description": "SearchParameter for List.flag",
   "status": "active",
-  "code": "encounter",
+  "code": "flag",
   "base": [
-    "Observation"
+    "List"
   ],
-  "type": "reference",
-  "expression": "Observation.encounter"
+  "type": "token",
+  "expression": "List.flag"
 }

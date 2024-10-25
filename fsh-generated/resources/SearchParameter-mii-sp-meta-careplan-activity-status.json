@@ -1,12 +1,12 @@
 {
   "resourceType": "SearchParameter",
-  "id": "mii-sp-meta-careplan-contributor",
+  "id": "mii-sp-meta-careplan-activity-status",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
     ]
   },
-  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-careplan-contributor",
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-careplan-activity-status",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -35,13 +35,13 @@
   "version": "2025.0.0",
   "experimental": false,
   "date": "2024-10-24",
-  "name": "MII_SP_Meta_CarePlan_Contributor",
-  "description": "SearchParameter for CarePlan.contributor",
+  "name": "MII_SP_Meta_CarePlan_Activity_Status",
+  "description": "SearchParameter for CarePlan.activity.status",
   "status": "active",
-  "code": "contributor",
+  "code": "activity-status",
   "base": [
     "CarePlan"
   ],
-  "type": "reference",
-  "expression": "CarePlan.contributor"
+  "type": "token",
+  "expression": "CarePlan.activity.status"
 }

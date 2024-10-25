@@ -35,20 +35,60 @@ Usage: #definition
 * type = #reference
 * expression = "Condition.evidence"
 
-// Instance: mii-sp-meta-condition-ext-morphology-behavior-icdo3
-// InstanceOf: SearchParameter
-// Usage: #definition
-// * insert SP_Publisher
-// * insert LicenseCodeableCCBY40Instance
-// * insert SP_Profile
-// * insert Version
-// * name = "MII_SP_Meta_Condition_Extension_Morphology_Behaviour_ICDO3"
-// * description = "SearchParameter for Condition.extension[morphology-behaviour-icdo3]"
-// * status = #active 
-// * code = #morphology-behavior-icdo3
-// * base = #Diagnosis
-// * type = #token
-// * expression = "Condition.extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-histology-morphology-behavior-icdo3').value"
+Instance: mii-sp-meta-asserted-date
+InstanceOf: SearchParameter
+Usage: #definition
+* insert SP_Publisher
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
+* insert Version
+* experimental = false
+* date = "2024-10-24"
+* name = "MII_SP_Meta_Condition_Asserted_Date"
+* description = "SearchParameter for Condition.assertedDate"
+* status = #active 
+* code = #assered-date
+* base = #Condition 
+* type = #date
+* expression = "Condition.assertedDate"
+
+//----------------------------------------
+// SearchParameters for Evidence List
+//----------------------------------------
+
+Instance: mii-sp-meta-list-mode
+InstanceOf: SearchParameter
+Usage: #definition
+* insert SP_Publisher
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
+* insert Version
+* experimental = false
+* date = "2024-10-24"
+* name = "MII_SP_Meta_List_Mode"
+* description = "SearchParameter for List.mode"
+* status = #active 
+* code = #mode
+* base = #List 
+* type = #token
+* expression = "List.mode"
+
+Instance: mii-sp-meta-list-flag
+InstanceOf: SearchParameter
+Usage: #definition
+* insert SP_Publisher
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
+* insert Version
+* experimental = false
+* date = "2024-10-24"
+* name = "MII_SP_Meta_List_Flag"
+* description = "SearchParameter for List.flag"
+* status = #active 
+* code = #flag
+* base = #List 
+* type = #token
+* expression = "List.flag"
 
 //----------------------------------------
 // SearchParameters for Histologie
@@ -59,22 +99,9 @@ Usage: #definition
 //----------------------------------------
 // SearchParameters for TNM Klassifikationen
 //----------------------------------------
-Instance: mii-sp-meta-observation-hasmember
-InstanceOf: SearchParameter
-Usage: #definition
-* insert SP_Publisher
-* insert LicenseCodeableCCBY40Instance
-* insert SP_Profile
-* insert Version
-* experimental = false
-* date = "2024-10-24"
-* name = "MII_SP_Meta_Observation_hasMember"
-* description = "SearchParameter for Observation.hasMember"
-* status = #active 
-* code = #has-member
-* base = #Observation 
-* type = #reference
-* expression = "Observation.hasMember"
+
+// No search parameters to cover
+
 
 //----------------------------------------
 // SearchParameters for Weitere Klassifikationen
@@ -104,20 +131,6 @@ Usage: #definition
 //----------------------------------------
 // SearchParameters for Operation
 //----------------------------------------
-//Instance: mii-sp-meta-procedure-ext-operation-intention // im IG sollte kleingeschrieben werden im profil + Dokumentationsdatum auch
-//InstanceOf: SearchParameter
-//Usage: #definition
-//* insert SP_Publisher
-//* insert LicenseCodeableCCBY40Instance
-//* insert SP_Profile
-//* insert Version
-//* name = "MII_SP_Meta_Procedure_Operation_Extension_Intention"
-//* description = "SearchParameter for Procedure.extension.intention"
-//* status = #active 
-//* code = #intention
-//* base = #Procedure
-//* type = #token
-//* expression = "Procedure.extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-operation-intention').value"
 
 Instance: mii-sp-meta-procedure-complication
 InstanceOf: SearchParameter
@@ -139,126 +152,6 @@ Usage: #definition
 //----------------------------------------
 // SearchParameters for Strahlentherapie
 //----------------------------------------
-// Instance: mii-sp-meta-procedure-strahlentherapie-ext-stellungzurop
-// InstanceOf: SearchParameter
-// Usage: #definition
-// * insert SP_Publisher
-// * insert LicenseCodeableCCBY40Instance
-// * insert SP_Profile
-// * insert Version
-// * name = "MII_SP_Meta_Procedure_Strahlentherapie_Extension_StellungZurOp"
-// * description = "SearchParameter for Procedure.extension.stellung"
-// * status = #active 
-// * code = #stellung
-// * base = #Procedure
-// * type = #token
-// * expression = "Procedure.extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-stellung-zur-op').value"
-
-// Instance: mii-sp-meta-procedure-strahlentherapie-ext-applikationsart
-// InstanceOf: SearchParameter
-// Usage: #definition
-// * insert SP_Publisher
-// * insert LicenseCodeableCCBY40Instance
-// * insert SP_Profile
-// * insert Version
-// * name = "MII_SP_Meta_Strahlentherapie_Extension_Applikationsart"
-// * description = "SearchParameter for Procedure.extension:bestrahlung.extension:applikationsart"
-// * status = #active 
-// * code = #bestrahlung-applikationsart
-// * base = #Procedure
-// * type = #token
-// * expression = "Procedure.extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-bestrahlung').extension.where(url='Applikationsart').value"
-
-// Instance: mii-sp-meta-procedure-strahlentherapie-ext-strahlenart
-// InstanceOf: SearchParameter
-// Usage: #definition
-// * insert SP_Publisher
-// * insert LicenseCodeableCCBY40Instance
-// * insert SP_Profile
-// * insert Version
-// * name = "MII_SP_Meta_Procedure_Strahlentherapie_Extension_Strahlenart"
-// * description = "SearchParameter for Procedure.extension:bestrahlung.extension:strahlenart"
-// * status = #active 
-// * code = #bestrahlung-strahlenart
-// * base = #Procedure
-// * type = #token
-// * expression = "Procedure.extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-bestrahlung').extension.where(url='Strahlenart').value"
-
-// Instance: mii-sp-meta-procedure-strahlentherapie-extension-zielgebiet
-// InstanceOf: SearchParameter
-// Usage: #definition
-// * insert SP_Publisher
-// * insert LicenseCodeableCCBY40Instance
-// * insert SP_Profile
-// * insert Version
-// * name = "MII_SP_Meta_Procedure_Strahlentherapie_Extension_Zielgebiet"
-// * description = "SearchParameter for Procedure.extension:bestrahlung.extension:zielgebiet"
-// * status = #active 
-// * code = #bestrahlung-zielgebiet
-// * base = #Procedure
-// * type = #token
-// * expression = "Procedure.extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-bestrahlung').extension.where(url='Zielgebiet').value"
-
-// Instance: mii-sp-meta-procedure-strahlentherapie-ext-ziel-lateralitaet
-// InstanceOf: SearchParameter
-// Usage: #definition
-// * insert SP_Publisher
-// * insert LicenseCodeableCCBY40Instance
-// * insert SP_Profile
-// * insert Version
-// * name = "MII_SP_Meta_Procedure_Strahlentherapie_Extension_Bestrahlung_Ziel_Lateralitaet"
-// * description = "SearchParameter for Procedure.extension:bestrahlung.extension:zielgebiet_Lateralitaet"
-// * status = #active 
-// * code = #bestrahlung-zielgebiet-Lateralitaet
-// * base = #Procedure
-// * type = #token
-// * expression = "Procedure.extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-bestrahlung').extension.where(url='Zielgebiet_Lateralitaet').value"
-
-// Instance: mii-sp-meta-procedure-strahlentherapie-ext-gesamtdosis
-// InstanceOf: SearchParameter
-// Usage: #definition
-// * insert SP_Publisher
-// * insert LicenseCodeableCCBY40Instance
-// * insert SP_Profile
-// * insert Version
-// * name = "MII_SP_Meta_Strahlentherapie_Extension_Gesamtdosis"
-// * description = "SearchParameter for Procedure.extension:bestrahlung.extension:gesamtdosis"
-// * status = #active 
-// * code = #bestrahlung-gesamtdosis
-// * base = #Procedure
-// * type = #quantity
-// * expression = "Procedure.extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-bestrahlung').extension.where(url='Gesamtdosis').value"
-
-// Instance: mii-sp-meta-procedure-strahlentherapie-ext-einzeldosis
-// InstanceOf: SearchParameter
-// Usage: #definition
-// * insert SP_Publisher
-// * insert LicenseCodeableCCBY40Instance
-// * insert SP_Profile
-// * insert Version
-// * name = "MII_SP_Meta_Strahlentherapie_Extension_Einzeldosis"
-// * description = "SearchParameter for Procedure.extension:bestrahlung.extension:einzeldosis"
-// * status = #active 
-// * code = #bestrahlung-einzeldosis
-// * base = #Procedure
-// * type = #quantity
-// * expression = "Procedure.extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-bestrahlung').extension.where(url='Einzeldosis').value"
-
-// Instance: mii-sp-meta-procedure-strahlentherapie-ext-boost
-// InstanceOf: SearchParameter
-// Usage: #definition
-// * insert SP_Publisher
-// * insert LicenseCodeableCCBY40Instance
-// * insert SP_Profile
-// * insert Version
-// * name = "MII_SP_Meta_Strahlentherapie_Extension_Boost"
-// * description = "SearchParameter for Procedure.extension:bestrahlung.extension:boost"
-// * status = #active 
-// * code = #bestrahlung-boost
-// * base = #Procedure
-// * type = #token
-// * expression = "Procedure.extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-bestrahlung').extension.where(url='Boost').value"
-
 Instance: mii-sp-meta-procedure-outcome
 InstanceOf: SearchParameter
 Usage: #definition
@@ -315,28 +208,45 @@ Usage: #definition
 // SearchParameters for Systemische Therapie
 //----------------------------------------
 
-// Instance: mii-sp-meta-systemischetherapie-ext-stellungzurop
-// InstanceOf: SearchParameter
-// Usage: #definition
-// * insert SP_Publisher
-// * insert LicenseCodeableCCBY40Instance
-// * insert SP_Profile
-// * insert Version
-// * name = "MII_SP_Meta_SystemischeTherapie_Extension_StellungZurOp"
-// * description = "SearchParameter for Procedure.extension.stellung"
-// * status = #active 
-// * code = #extension-stellung
-// * base = #Procedure
-// * type = #token
-// * expression = "Procedure.extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-stellung').value"
+Instance: mii-sp-meta-medicationstatement-based-on
+InstanceOf: SearchParameter
+Usage: #definition
+* insert SP_Publisher
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
+* insert Version
+* experimental = false
+* date = "2024-10-24"
+* name = "MII_SP_Meta_MedicationStatement_Based_On"
+* description = "SearchParameter for MedicationStatement.basedOn"
+* status = #active 
+* code = #note
+* base = #MedicationStatement 
+* type = #reference
+* expression = "MedicationStatement.basedOn" 
 
+Instance: mii-sp-meta-medicationstatement-note
+InstanceOf: SearchParameter
+Usage: #definition
+* insert SP_Publisher
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
+* insert Version
+* experimental = false
+* date = "2024-10-24"
+* name = "MII_SP_Meta_MedicationStatement_Note"
+* description = "SearchParameter for MedicationStatement.note"
+* status = #active 
+* code = #note
+* base = #MedicationStatement 
+* type = #string
+* expression = "MedicationStatement.note" 
 
 //----------------------------------------
 // SearchParameters for Verlauf
 //----------------------------------------
 
 // No search parameters to cover
-
 
 //----------------------------------------
 // SearchParameters for Tumorkonferenz
@@ -358,22 +268,20 @@ Usage: #definition
 * type = #date
 * expression = "CarePlan.created" 
 
-Instance: mii-sp-meta-careplan-contributor
+Instance: mii-sp-onko-careplan-supporting-info
 InstanceOf: SearchParameter
 Usage: #definition
 * insert SP_Publisher
 * insert LicenseCodeableCCBY40Instance
 * insert SP_Profile
 * insert Version
-* experimental = false
-* date = "2024-10-24"
-* name = "MII_SP_Meta_CarePlan_Contributor"
-* description = "SearchParameter for CarePlan.contributor"
+* name = "MII_SP_Care_Plan_Supporting_Info"
+* description = "SearchParameter for CarePlan.SupportingInfo"
 * status = #active 
-* code = #contributor
+* code = #supporting-info
 * base = #CarePlan 
 * type = #reference
-* expression = "CarePlan.contributor" 
+* expression = "CarePlan.SupportingInfo" 
 
 Instance: mii-sp-meta-careplan-addresses
 InstanceOf: SearchParameter
@@ -392,61 +300,63 @@ Usage: #definition
 * type = #reference
 * expression = "CarePlan.addresses" 
 
+Instance: mii-sp-meta-careplan-activity-status
+InstanceOf: SearchParameter
+Usage: #definition
+* insert SP_Publisher
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
+* insert Version
+* experimental = false
+* date = "2024-10-24"
+* name = "MII_SP_Meta_CarePlan_Activity_Status"
+* description = "SearchParameter for CarePlan.activity.status"
+* status = #active 
+* code = #activity-status
+* base = #CarePlan 
+* type = #token
+* expression = "CarePlan.activity.status" 
+
+Instance: mii-sp-meta-careplan-activity-status-reason
+InstanceOf: SearchParameter
+Usage: #definition
+* insert SP_Publisher
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
+* insert Version
+* experimental = false
+* date = "2024-10-24"
+* name = "MII_SP_Meta_CarePlan_Activity_Status_Reason"
+* description = "SearchParameter for CarePlan.activity.statusReason"
+* status = #active 
+* code = #activity-status-reason
+* base = #CarePlan 
+* type = #token
+* expression = "CarePlan.activity.statusReason" 
+
 //----------------------------------------
 // SearchParameters for Tod
 //----------------------------------------
-// Instance: mii-sp-meta-tod-interpretation
-// InstanceOf: SearchParameter
-// Usage: #definition
-// * insert SP_Publisher
-// * insert LicenseCodeableCCBY40Instance
-// * insert SP_Profile
-// * insert Version
-// * name = "MII_SP_Meta_Tod_Interpreation"
-// * description = "SearchParameter for Observation.interpretation"
-// * status = #active
-// * code = #interpretation
-// * base = #Observation
-// * type = #token
-// * expression = "Observation.interpretation"
 
-Instance: mii-sp-meta-observation-focus
-InstanceOf: SearchParameter
-Usage: #definition
-* insert SP_Publisher
-* insert LicenseCodeableCCBY40Instance
-* insert SP_Profile
-* insert Version
-* experimental = false
-* date = "2024-10-24"
-* name = "MII_SP_Meta_Observation_Focus"
-* description = "SearchParameter for Observation.focus"
-* status = #active
-* code = #focus
-* base = #Observation
-* type = #reference
-* expression = "Observation.focus"
-
-Instance: mii-sp-meta-observation-encounter
-InstanceOf: SearchParameter
-Usage: #definition
-* insert SP_Publisher
-* insert LicenseCodeableCCBY40Instance
-* insert SP_Profile
-* insert Version
-* experimental = false
-* date = "2024-10-24"
-* name = "MII_SP_Meta_Observation_Encounter"
-* description = "SearchParameter for Observation.encounter"
-* status = #active
-* code = #encounter
-* base = #Observation
-* type = #reference
-* expression = "Observation.encounter"
-
+// No search parameters to cover
 
 //----------------------------------------
 // SearchParameters for Genetische Variante
 //----------------------------------------
 
-// No search parameters to cover
+Instance: mii-sp-meta-observation-note
+InstanceOf: SearchParameter
+Usage: #definition
+* insert SP_Publisher
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
+* insert Version
+* experimental = false
+* date = "2024-10-24"
+* name = "MII_SP_Meta_Observation_Note"
+* description = "SearchParameter for Observation.note"
+* status = #active 
+* code = #note
+* base = #Observation 
+* type = #string
+* expression = "Observation.note" 

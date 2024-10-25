@@ -1,12 +1,12 @@
 {
   "resourceType": "SearchParameter",
-  "id": "mii-sp-meta-observation-focus",
+  "id": "mii-sp-meta-observation-note",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
     ]
   },
-  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-focus",
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-note",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -35,13 +35,13 @@
   "version": "2025.0.0",
   "experimental": false,
   "date": "2024-10-24",
-  "name": "MII_SP_Meta_Observation_Focus",
-  "description": "SearchParameter for Observation.focus",
+  "name": "MII_SP_Meta_Observation_Note",
+  "description": "SearchParameter for Observation.note",
   "status": "active",
-  "code": "focus",
+  "code": "note",
   "base": [
     "Observation"
   ],
-  "type": "reference",
-  "expression": "Observation.focus"
+  "type": "string",
+  "expression": "Observation.note"
 }
