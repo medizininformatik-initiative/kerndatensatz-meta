@@ -191,9 +191,45 @@ Usage: #definition
 // SearchParameters for Systemische Therapie
 //----------------------------------------
 
+Instance: mii-sp-meta-medicationstatement-based-on
+InstanceOf: SearchParameter
+Usage: #definition
+* insert SP_Publisher
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
+* insert Version
+* experimental = false
+* date = "2024-10-24"
+* name = "MII_SP_Meta_MedicationStatement_Based_On"
+* description = "SearchParameter for MedicationStatement.basedOn"
+* status = #active 
+* code = #note
+* base = #MedicationStatement 
+* type = #reference
+* expression = "MedicationStatement.basedOn" 
+
+Instance: mii-sp-meta-medicationstatement-note
+InstanceOf: SearchParameter
+Usage: #definition
+* insert SP_Publisher
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
+* insert Version
+* experimental = false
+* date = "2024-10-24"
+* name = "MII_SP_Meta_MedicationStatement_Note"
+* description = "SearchParameter for MedicationStatement.note"
+* status = #active 
+* code = #note
+* base = #MedicationStatement 
+* type = #string
+* expression = "MedicationStatement.note" 
+
 //----------------------------------------
 // SearchParameters for Verlauf
 //----------------------------------------
+
+// No search parameters to cover
 
 //----------------------------------------
 // SearchParameters for Tumorkonferenz
@@ -267,7 +303,7 @@ Usage: #definition
 * experimental = false
 * date = "2024-10-24"
 * name = "MII_SP_Meta_Observation_Note"
-* description = "SearchParameter for observation.note"
+* description = "SearchParameter for Observation.note"
 * status = #active 
 * code = #note
 * base = #Observation 
