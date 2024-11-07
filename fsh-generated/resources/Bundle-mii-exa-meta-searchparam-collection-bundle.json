@@ -1,6 +1,6 @@
 {
   "resourceType": "Bundle",
-  "id": "mii-meta-searchparam-collection-bundle",
+  "id": "mii-exa-meta-searchparam-collection-bundle",
   "type": "collection",
   "timestamp": "2024-10-24T11:35:00+01:00",
   "entry": [
@@ -544,7 +544,7 @@
             }
           }
         ],
-        "name": "MII_SP_Person_Strasse",
+        "name": "MII_SP_Meta_Patient_Strasse",
         "status": "active",
         "experimental": false,
         "date": "2024-10-07",
@@ -917,7 +917,7 @@
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/SearchParameter/Encounter-hospitalization-admitSource",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-hospitalization-admitsource",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -1947,7 +1947,7 @@
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-RateRange",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -2787,10 +2787,10 @@
             }
           }
         ],
-        "name": "MII_Meta_Task_For",
+        "name": "MII_SP_Meta_Task_For",
         "status": "active",
         "experimental": false,
-        "date": "2024-10-08",
+        "date": "2024-11-07",
         "description": "Suchparameter für Task.for",
         "code": "for",
         "base": [
@@ -3358,8 +3358,8 @@
             }
           }
         ],
-        "date": "2024-10-08",
-        "name": "MII_SP_Patho_Value_Ratio_Numerator",
+        "date": "2024-11-07",
+        "name": "MII_SP_Meta_Observation_Value_Ratio_Numerator",
         "status": "active",
         "experimental": false,
         "description": "SearchParameter for Observation.valueRatio.numerator",
@@ -5168,6 +5168,8 @@
           }
         ],
         "version": "2025.0.0",
+        "date": "2024-11-07",
+        "experimental": false,
         "name": "MII_SP_Meta_Procedure_Outcome",
         "description": "SearchParameter for Procedure.outcome",
         "status": "active",

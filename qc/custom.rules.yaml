@@ -76,6 +76,7 @@
     - "!fsh-index.json"
     - "!menu.xml"
     - "!/**/MII-Reference.StructureDefinition.xml"
+    - "!/**/CodeSystem-mii-cs-meta-diz-standorte.json"
 
 - name: naming-convention-name
   filter: (StructureDefinition or ValueSet or CodeSystem or ConceptMap or StructureMap or NamingSystem or SearchParameter or CapabilityStatement or OperationDefinition or ImplementationGuide).exists()
@@ -89,6 +90,7 @@
     - "!fsh-index.json"
     - "!menu.xml"
     - "!/**/MII-Reference.StructureDefinition.xml"
+    - "!/**/CodeSystem-mii-cs-meta-diz-standorte.json"
 
 - name: naming-convention-title
   filter: (StructureDefinition or ValueSet or CodeSystem or ConceptMap or StructureMap or NamingSystem or SearchParameter or CapabilityStatement or OperationDefinition or ImplementationGuide).exists()
@@ -102,6 +104,7 @@
     - "!fsh-index.json"
     - "!menu.xml"
     - "!/**/MII-Reference.StructureDefinition.xml"
+    - "!/**/CodeSystem-mii-cs-meta-diz-standorte.json"
 
 - name: naming-convention-url
   filter: (StructureDefinition or ValueSet or CodeSystem or ConceptMap or StructureMap or NamingSystem or SearchParameter or CapabilityStatement or OperationDefinition or ImplementationGuide).exists()
@@ -115,3 +118,4 @@
     - "!fsh-index.json"
     - "!menu.xml"
     - "!/**/MII-Reference.StructureDefinition.xml"
+    - "!/**/CodeSystem-mii-cs-meta-diz-standorte.json"
