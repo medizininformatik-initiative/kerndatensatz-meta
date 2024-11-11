@@ -18,22 +18,23 @@ Usage: #definition
 * type = #token
 * expression = "Condition.verificationStatus"
 
-Instance: mii-sp-meta-condition-evidence
-InstanceOf: SearchParameter
-Usage: #definition
-* insert SP_Publisher
-* insert LicenseCodeableCCBY40Instance
-* insert SP_Profile
-* insert Version
-* experimental = false
-* date = "2024-10-24"
-* name = "MII_SP_Meta_Condition_Evidence"
-* description = "SearchParameter for Condition.evidence"
-* status = #active 
-* code = #evidence-detail
-* base = #Condition 
-* type = #reference
-* expression = "Condition.evidence"
+// Error: search type 'reference' is not allowed for this path
+// Instance: mii-sp-meta-condition-evidence
+// InstanceOf: SearchParameter
+// Usage: #definition
+// * insert SP_Publisher
+// * insert LicenseCodeableCCBY40Instance
+// * insert SP_Profile
+// * insert Version
+// * experimental = false
+// * date = "2024-10-24"
+// * name = "MII_SP_Meta_Condition_Evidence"
+// * description = "SearchParameter for Condition.evidence"
+// * status = #active 
+// * code = #evidence-detail
+// * base = #Condition 
+// * type = #reference
+// * expression = "Condition.evidence"
 
 // Instance: mii-sp-meta-condition-ext-morphology-behavior-icdo3
 // InstanceOf: SearchParameter

@@ -120,7 +120,7 @@ InstanceOf: Bundle
 * insert AddTransactionEntry(mii-sp-meta-researchstudy-rekrutierungsstart)
 // Onko
 * insert AddTransactionEntry(mii-sp-meta-condition-verification-status)
-* insert AddTransactionEntry(mii-sp-meta-condition-evidence)
+//* insert AddTransactionEntry(mii-sp-meta-condition-evidence) // not working
 * insert AddTransactionEntry(mii-sp-meta-observation-hasmember)
 * insert AddTransactionEntry(mii-sp-meta-procedure-complication)
 * insert AddTransactionEntry(mii-sp-meta-procedure-outcome)
@@ -245,7 +245,7 @@ InstanceOf: Bundle
 * insert AddCollectionEntry(mii-sp-meta-researchstudy-rekrutierungsstart)
 // Onko
 * insert AddCollectionEntry(mii-sp-meta-condition-verification-status)
-* insert AddCollectionEntry(mii-sp-meta-condition-evidence)
+// * insert AddCollectionEntry(mii-sp-meta-condition-evidence) // not working
 * insert AddCollectionEntry(mii-sp-meta-observation-hasmember)
 * insert AddCollectionEntry(mii-sp-meta-procedure-complication)
 * insert AddCollectionEntry(mii-sp-meta-procedure-outcome)
