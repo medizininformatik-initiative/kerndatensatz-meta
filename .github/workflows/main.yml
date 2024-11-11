@@ -54,3 +54,28 @@ jobs:
           committer_email: ActionBot@github.com
           add: 'fsh-generated/resources/'
           message: auto-generated FHIR files by GitHub Actions (CI FSH to FHIR Validation)
+
+  CI_SEARCH_PARAM_TEST:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Create Search Param Bundle
+      run: .github/workflows/search-param-test/create-search-param-bundle.sh
+
+    - name: Run Blaze
+      run: docker-compose -f .github/workflows/search-param-test/blaze.yml up -d
+
+    - name: Wait for Blaze
+      run: .github/workflows/search-param-test/wait-for-url.sh http://localhost:8080/health
+
+    - name: Load Data
+      run: .github/workflows/search-param-test/load-data.sh
+
+    - name: Test Search
+      run: .github/workflows/search-param-test/test-search.sh
