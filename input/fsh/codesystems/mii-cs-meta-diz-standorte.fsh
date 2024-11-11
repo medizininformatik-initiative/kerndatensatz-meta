@@ -18,6 +18,18 @@ RuleSet: AddRetirementDate(retirementDate)
 * ^property[+].code = #retirementDate
 * ^property[=].valueDateTime = "{retirementDate}"
 
+RuleSet: AddDatenmanagementstelle(Datenmanagementstelle)
+* ^property[+].code = #Datenmanagementstelle
+* ^property[=].valueString = "{Datenmanagementstelle}"
+
+RuleSet: AddTRV614(TRV 6.14)
+* ^property[+].code = #trv614
+* ^property[=].valueString = "{trv614}"
+
+RuleSet: AddTRV615(TRV 6.15)
+* ^property[+].code = #trv615
+* ^property[=].valueString = "{trv615}"
+
 CodeSystem: MII_CS_Meta_DIZ_Standorte
 Id: mii-cs-meta-diz-standorte
 Title: "MII CS Meta DIZ Standorte"
@@ -118,6 +130,7 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UMG insert AddKonsortium(HiGHmed)
 * #UMG insert AddUri(umg.eu)
 * #UMG insert AddStatus(active)
+* #UMG insert AddDatenmanagementstelle(✓)
 * #UKG "Universitätsmedizin Greifswald" "Greifswald"
 * #UKG insert AddKonsortium(MIRACUM)
 * #UKG insert AddUri(www.medizin.uni-greifswald.de)
