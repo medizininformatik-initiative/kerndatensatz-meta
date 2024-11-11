@@ -22,12 +22,12 @@ RuleSet: AddDatenmanagementstelle(Datenmanagementstelle)
 * ^property[+].code = #Datenmanagementstelle
 * ^property[=].valueString = "{Datenmanagementstelle}"
 
-RuleSet: AddTRV614(TRV 6.14)
-* ^property[+].code = #trv614
+RuleSet: AddTRV614(trv614)
+* ^property[+].code = #TRV_6.14
 * ^property[=].valueString = "{trv614}"
 
-RuleSet: AddTRV615(TRV 6.15)
-* ^property[+].code = #trv615
+RuleSet: AddTRV615(trv615)
+* ^property[+].code = #TRV_6.15
 * ^property[=].valueString = "{trv615}"
 
 CodeSystem: MII_CS_Meta_DIZ_Standorte
