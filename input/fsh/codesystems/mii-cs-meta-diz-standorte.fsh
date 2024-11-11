@@ -74,6 +74,7 @@ Description: "Medizininformatik-Initiative Standorte"
 * #Charité insert AddKonsortium(HiGHmed)
 * #Charité insert AddUri(charite.de)
 * #Charité insert AddStatus(active)
+* #Charité insert AddDatenmanagementstelle(✓)
 * #UKOWL "Universitätsklinikum OWL" "Bielefeld"
 * #UKOWL insert AddKonsortium(HiGHmed)
 * #UKOWL insert AddUri(ukowl.de)
@@ -139,6 +140,7 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UKH insert AddKonsortium(SMITH)
 * #UKH insert AddUri(uk-halle.de)
 * #UKH insert AddStatus(active)
+* #UKH insert AddDatenmanagementstelle(✓)
 * #UKE "Universitätsklinikum Hamburg-Eppendorf" "Hamburg"
 * #UKE insert AddKonsortium(SMITH)
 * #UKE insert AddUri(uke.de)
@@ -151,6 +153,7 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UKHD insert AddKonsortium(HiGHmed)
 * #UKHD insert AddUri(ukhd.de)
 * #UKHD insert AddStatus(active)
+* #UKHD insert AddDatenmanagementstelle(✓)
 * #UKJ "Universitätsklinikum Jena" "Jena"
 * #UKJ insert AddKonsortium(SMITH)
 * #UKJ insert AddUri(uniklinikum-jena.de)
@@ -159,6 +162,7 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UKK insert AddKonsortium(HiGHmed)
 * #UKK insert AddUri(uk-koeln.de)
 * #UKK insert AddStatus(active)
+* #UKK insert AddDatenmanagementstelle(✓)
 * #UKL "Universitätsklinikum Leipzig" "Leipzig"
 * #UKL insert AddKonsortium(SMITH)
 * #UKL insert AddUri(uniklinikum-leipzig.de)
@@ -236,6 +240,7 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UKW insert AddKonsortium(HiGHmed)
 * #UKW insert AddUri(ukw.de)
 * #UKW insert AddStatus(active)
+* #UKW insert AddDatenmanagementstelle(✓)
 * #HUKW "Universität Witten/Herdecke" "Witten / Herdecke"
 * #HUKW insert AddKonsortium(NA)
 * #HUKW insert AddStatus(deprecated)
