@@ -115,3 +115,4 @@
     - "!fsh-index.json"
     - "!menu.xml"
     - "!/**/MII-Reference.StructureDefinition.xml"
+    - "!/**/CodeSystem-mii-cs-meta-diz-standorte.json"
