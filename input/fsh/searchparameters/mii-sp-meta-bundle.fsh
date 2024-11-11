@@ -8,7 +8,7 @@ RuleSet: AddCollectionEntry(resource)
 * entry[+].fullUrl = "https://www.medizininformatik-initiative.de/SearchParameter/{resource}"
 * entry[=].resource = {resource}
 
-Instance: mii-meta-searchparam-transaction-bundle
+Instance: mii-exa-meta-searchparam-transaction-bundle
 InstanceOf: Bundle
 * type = #transaction
 * timestamp = "2024-10-24T11:35:00+01:00"
@@ -132,7 +132,7 @@ InstanceOf: Bundle
 * insert AddTransactionEntry(mii-sp-meta-observation-focus)
 * insert AddTransactionEntry(mii-sp-meta-observation-encounter)
 
-Instance: mii-meta-searchparam-collection-bundle
+Instance: mii-exa-meta-searchparam-collection-bundle
 InstanceOf: Bundle
 * type = #collection
 * timestamp = "2024-10-24T11:35:00+01:00"

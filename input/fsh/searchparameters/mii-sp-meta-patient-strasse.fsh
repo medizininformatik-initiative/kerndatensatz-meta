@@ -6,7 +6,7 @@ Usage: #definition
 * insert SP_Publisher
 * insert LicenseCodeableCCBY40Instance
 * insert SP_Profile
-* name = "MII_SP_Person_Strasse"
+* name = "MII_SP_Meta_Patient_Strasse"
 * status = #active
 * experimental = false
 * date = "2024-10-07"

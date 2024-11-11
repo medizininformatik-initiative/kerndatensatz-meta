@@ -285,7 +285,7 @@ Usage: #definition
 Instance: mii-sp-meta-medication-dosage-raterange
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-RateRange"
+//* url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-RateRange"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance

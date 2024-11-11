@@ -83,10 +83,10 @@ Usage: #definition
 * insert LicenseCodeableCCBY40Instance
 * insert SP_Profile
 //* url = "https://www.medizininformatik-initiative.de/fhir/core/modul-molgen/SearchParameter/Task-For"
-* name = "MII_Meta_Task_For"
+* name = "MII_SP_Meta_Task_For"
 * status = #active
 * experimental = false
-* date = "2024-10-08"
+* date = "2024-11-07"
 * description = "Suchparameter für Task.for"
 * code = #for
 * base = #Task

@@ -266,6 +266,8 @@ Usage: #definition
 * insert LicenseCodeableCCBY40Instance
 * insert SP_Profile
 * insert Version
+* date = "2024-11-07"
+* experimental = false
 * name = "MII_SP_Meta_Procedure_Outcome"
 * description = "SearchParameter for Procedure.outcome"
 * status = #active 
