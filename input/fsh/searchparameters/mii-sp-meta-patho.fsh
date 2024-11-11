@@ -169,8 +169,8 @@ Usage: #definition
 * insert SP_Publisher
 * insert LicenseCodeableCCBY40Instance
 * insert SP_Profile
-* date = "2024-10-08"
-* name = "MII_SP_Patho_Value_Ratio_Numerator"
+* date = "2024-11-07"
+* name = "MII_SP_Meta_Observation_Value_Ratio_Numerator"
 * status = #active
 * experimental = false
 * description = "SearchParameter for Observation.valueRatio.numerator"

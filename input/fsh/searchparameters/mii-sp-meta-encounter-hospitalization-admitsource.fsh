@@ -1,7 +1,7 @@
 Instance: mii-sp-meta-encounter-hospitalization-admitsource
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/SearchParameter/Encounter-hospitalization-admitSource"
+//* url = "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/SearchParameter/Encounter-hospitalization-admitSource"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
