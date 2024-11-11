@@ -62,6 +62,10 @@
         {
           "code": "status",
           "valueCode": "active"
+        },
+        {
+          "code": "Datenmanagementstelle",
+          "valueString": "✓"
         }
       ]
     },
@@ -328,6 +332,10 @@
         {
           "code": "status",
           "valueCode": "active"
+        },
+        {
+          "code": "Datenmanagementstelle",
+          "valueString": "✓"
         }
       ]
     },
@@ -366,6 +374,10 @@
         {
           "code": "status",
           "valueCode": "active"
+        },
+        {
+          "code": "Datenmanagementstelle",
+          "valueString": "✓"
         }
       ]
     },
@@ -423,6 +435,10 @@
         {
           "code": "status",
           "valueCode": "active"
+        },
+        {
+          "code": "Datenmanagementstelle",
+          "valueString": "✓"
         }
       ]
     },
@@ -461,6 +477,10 @@
         {
           "code": "status",
           "valueCode": "active"
+        },
+        {
+          "code": "Datenmanagementstelle",
+          "valueString": "✓"
         }
       ]
     },
@@ -480,6 +500,10 @@
         {
           "code": "status",
           "valueCode": "active"
+        },
+        {
+          "code": "Datenmanagementstelle",
+          "valueString": "✓"
         }
       ]
     },
@@ -826,6 +850,10 @@
         {
           "code": "status",
           "valueCode": "active"
+        },
+        {
+          "code": "Datenmanagementstelle",
+          "valueString": "✓"
         }
       ]
     },
