@@ -167,6 +167,7 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UKL insert AddKonsortium(SMITH)
 * #UKL insert AddUri(uniklinikum-leipzig.de)
 * #UKL insert AddStatus(active)
+* #UKL insert AddDatenmanagementstelle(✓)
 * #UL "Universität Leipzig" "Leipzig"
 * #UL insert AddKonsortium(SMITH)
 * #UL insert AddUri(uniklinikum-leipzig.de)
