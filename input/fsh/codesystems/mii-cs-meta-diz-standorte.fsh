@@ -20,15 +20,11 @@ RuleSet: AddRetirementDate(retirementDate)
 
 RuleSet: AddDatenmanagementstelle(Datenmanagementstelle)
 * ^property[+].code = #Datenmanagementstelle
-* ^property[=].valueString = "{Datenmanagementstelle}"
+* ^property[=].valueBoolean = {Datenmanagementstelle}
 
-RuleSet: AddTRV614(trv614)
-* ^property[+].code = #TRV_6.14
-* ^property[=].valueString = "{trv614}"
-
-RuleSet: AddTRV615(trv615)
-* ^property[+].code = #TRV_6.15
-* ^property[=].valueString = "{trv615}"
+RuleSet: AddTRV(trv)
+* ^property[+].code = #TRV
+* ^property[=].valueString = "{trv}"
 
 CodeSystem: MII_CS_Meta_DIZ_Standorte
 Id: mii-cs-meta-diz-standorte
@@ -41,7 +37,7 @@ Description: "Medizininformatik-Initiative Standorte"
 * insert Publisher
 * insert PR_CS_VS_Version
 * insert LicenseCodeableCCBY40
-* ^date = "2024-10-23"
+* ^date = "2024-11-11"
 * ^status = #active
 * ^caseSensitive = true
 * ^compositional = false
@@ -62,6 +58,12 @@ Description: "Medizininformatik-Initiative Standorte"
 * ^property[4].code = #retirementDate
 * ^property[4].uri = "http://hl7.org/fhir/concept-properties#retirementDate"
 * ^property[4].type = #dateTime
+* ^property[5].code = #Datenmanagementstelle
+* ^property[5].type = #boolean
+* ^property[5].description = "Datenmanagementstelle (true / false)"
+* ^property[6].code = #TRV
+* ^property[6].type = #string
+* ^property[6].description = "Teilnahmerahmenvertrag (Version)"
 * #UKA "Uniklinik RWTH Aachen" "Aachen"
 * #UKA insert AddKonsortium(SMITH)
 * #UKA insert AddUri(ukaachen.de)
@@ -74,7 +76,7 @@ Description: "Medizininformatik-Initiative Standorte"
 * #Charité insert AddKonsortium(HiGHmed)
 * #Charité insert AddUri(charite.de)
 * #Charité insert AddStatus(active)
-* #Charité insert AddDatenmanagementstelle(✓)
+* #Charité insert AddDatenmanagementstelle(true)
 * #UKOWL "Universitätsklinikum OWL" "Bielefeld"
 * #UKOWL insert AddKonsortium(HiGHmed)
 * #UKOWL insert AddUri(ukowl.de)
@@ -131,7 +133,7 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UMG insert AddKonsortium(HiGHmed)
 * #UMG insert AddUri(umg.eu)
 * #UMG insert AddStatus(active)
-* #UMG insert AddDatenmanagementstelle(✓)
+* #UMG insert AddDatenmanagementstelle(true)
 * #UKG "Universitätsmedizin Greifswald" "Greifswald"
 * #UKG insert AddKonsortium(MIRACUM)
 * #UKG insert AddUri(www.medizin.uni-greifswald.de)
@@ -140,7 +142,7 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UKH insert AddKonsortium(SMITH)
 * #UKH insert AddUri(uk-halle.de)
 * #UKH insert AddStatus(active)
-* #UKH insert AddDatenmanagementstelle(✓)
+* #UKH insert AddDatenmanagementstelle(true)
 * #UKE "Universitätsklinikum Hamburg-Eppendorf" "Hamburg"
 * #UKE insert AddKonsortium(SMITH)
 * #UKE insert AddUri(uke.de)
@@ -153,7 +155,7 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UKHD insert AddKonsortium(HiGHmed)
 * #UKHD insert AddUri(ukhd.de)
 * #UKHD insert AddStatus(active)
-* #UKHD insert AddDatenmanagementstelle(✓)
+* #UKHD insert AddDatenmanagementstelle(true)
 * #UKJ "Universitätsklinikum Jena" "Jena"
 * #UKJ insert AddKonsortium(SMITH)
 * #UKJ insert AddUri(uniklinikum-jena.de)
@@ -162,12 +164,12 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UKK insert AddKonsortium(HiGHmed)
 * #UKK insert AddUri(uk-koeln.de)
 * #UKK insert AddStatus(active)
-* #UKK insert AddDatenmanagementstelle(✓)
+* #UKK insert AddDatenmanagementstelle(true)
 * #UKL "Universitätsklinikum Leipzig" "Leipzig"
 * #UKL insert AddKonsortium(SMITH)
 * #UKL insert AddUri(uniklinikum-leipzig.de)
 * #UKL insert AddStatus(active)
-* #UKL insert AddDatenmanagementstelle(✓)
+* #UKL insert AddDatenmanagementstelle(true)
 * #UL "Universität Leipzig" "Leipzig"
 * #UL insert AddKonsortium(SMITH)
 * #UL insert AddUri(uniklinikum-leipzig.de)
@@ -241,7 +243,7 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UKW insert AddKonsortium(HiGHmed)
 * #UKW insert AddUri(ukw.de)
 * #UKW insert AddStatus(active)
-* #UKW insert AddDatenmanagementstelle(✓)
+* #UKW insert AddDatenmanagementstelle(true)
 * #HUKW "Universität Witten/Herdecke" "Witten / Herdecke"
 * #HUKW insert AddKonsortium(NA)
 * #HUKW insert AddStatus(deprecated)
