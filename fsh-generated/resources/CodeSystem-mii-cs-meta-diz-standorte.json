@@ -65,7 +65,7 @@
         },
         {
           "code": "Datenmanagementstelle",
-          "valueString": "✓"
+          "valueBoolean": true
         }
       ]
     },
@@ -335,7 +335,7 @@
         },
         {
           "code": "Datenmanagementstelle",
-          "valueString": "✓"
+          "valueBoolean": true
         }
       ]
     },
@@ -377,7 +377,7 @@
         },
         {
           "code": "Datenmanagementstelle",
-          "valueString": "✓"
+          "valueBoolean": true
         }
       ]
     },
@@ -438,7 +438,7 @@
         },
         {
           "code": "Datenmanagementstelle",
-          "valueString": "✓"
+          "valueBoolean": true
         }
       ]
     },
@@ -480,7 +480,7 @@
         },
         {
           "code": "Datenmanagementstelle",
-          "valueString": "✓"
+          "valueBoolean": true
         }
       ]
     },
@@ -503,7 +503,7 @@
         },
         {
           "code": "Datenmanagementstelle",
-          "valueString": "✓"
+          "valueBoolean": true
         }
       ]
     },
@@ -853,7 +853,7 @@
         },
         {
           "code": "Datenmanagementstelle",
-          "valueString": "✓"
+          "valueBoolean": true
         }
       ]
     },
@@ -1002,7 +1002,7 @@
       }
     }
   ],
-  "date": "2024-10-23",
+  "date": "2024-11-11",
   "caseSensitive": true,
   "compositional": false,
   "copyright": "Medizininformatik-Initiative",
@@ -1031,6 +1031,16 @@
       "code": "retirementDate",
       "uri": "http://hl7.org/fhir/concept-properties#retirementDate",
       "type": "dateTime"
+    },
+    {
+      "code": "Datenmanagementstelle",
+      "type": "boolean",
+      "description": "Datenmanagementstelle (true / false)"
+    },
+    {
+      "code": "TRV",
+      "type": "string",
+      "description": "Teilnahmerahmenvertrag (Version)"
     }
   ],
   "count": 49
