@@ -421,3 +421,26 @@ Usage: #definition
 * component[=].expression = "numerator"
 * component[+].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-denominator"
 * component[=].expression = "denominator"
+
+Instance: mii-sp-meta-medication-partof
+InstanceOf: SearchParameter
+Usage: #definition
+* insert SP_Publisher
+* insert Version
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
+* name = "MII_SP_Meta_Medication_PartOf"
+* status = #active
+* experimental = false
+* date = "2024-11-14"
+* description = "Suchparameter für (MedicationAdministration|MedicationStatement).partOf"
+* code = #part-of
+* base[+] = #MedicationStatement
+* base[+] = #MedicationAdministration 
+* type = #reference
+* expression = "MedicationAdministration.partOf | MedicationStatement.partOf"
+* target[+] = #MedicationAdministration
+* target[+] = #Procedure
+* target[+] = #MedicationDispense
+* target[+] = #MedicationStatement
+* target[+] = #Observation
