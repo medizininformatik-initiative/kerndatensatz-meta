@@ -2108,6 +2108,64 @@
       }
     },
     {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-medication-partof",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-medication-partof",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-partof",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "version": "2025.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Medication_PartOf",
+        "status": "active",
+        "experimental": false,
+        "date": "2024-11-14",
+        "description": "Suchparameter für (MedicationAdministration|MedicationStatement).partOf",
+        "code": "part-of",
+        "base": [
+          "MedicationStatement",
+          "MedicationAdministration"
+        ],
+        "type": "reference",
+        "expression": "MedicationAdministration.partOf | MedicationStatement.partOf",
+        "target": [
+          "MedicationAdministration",
+          "Procedure",
+          "MedicationDispense",
+          "MedicationStatement",
+          "Observation"
+        ]
+      }
+    },
+    {
       "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-consent-policyuri",
       "resource": {
         "resourceType": "SearchParameter",

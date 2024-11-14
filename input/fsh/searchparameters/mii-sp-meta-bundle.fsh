@@ -56,6 +56,7 @@ InstanceOf: Bundle
 * insert AddTransactionEntry(mii-sp-meta-medication-dosage-raterange)
 * insert AddTransactionEntry(mii-sp-meta-medication-dosage-ratequantity)
 * insert AddTransactionEntry(mii-sp-meta-medication-list-mode)
+* insert AddTransactionEntry(mii-sp-meta-medication-partof)
 // Consent
 * insert AddTransactionEntry(mii-sp-meta-consent-policyuri)
 * insert AddTransactionEntry(mii-sp-meta-consent-provisioncode)
@@ -180,6 +181,7 @@ InstanceOf: Bundle
 * insert AddCollectionEntry(mii-sp-meta-medication-dosage-raterange)
 * insert AddCollectionEntry(mii-sp-meta-medication-dosage-ratequantity)
 * insert AddCollectionEntry(mii-sp-meta-medication-list-mode)
+* insert AddCollectionEntry(mii-sp-meta-medication-partof)
 // Consent
 * insert AddCollectionEntry(mii-sp-meta-consent-policyuri)
 * insert AddCollectionEntry(mii-sp-meta-consent-provisioncode)
