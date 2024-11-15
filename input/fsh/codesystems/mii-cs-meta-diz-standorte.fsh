@@ -217,12 +217,12 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UKMR insert AddUri(uni-marburg.de)
 * #UKMR insert AddStatus(active)
 * #UKMR insert AddTRV(V6.14)
-* #KUM "Klinikum der Universität München" "München / LMU"
+* #KUM "Klinikum der Universität München (LMU)" "München"
 * #KUM insert AddKonsortium(DIFUTURE)
 * #KUM insert AddUri(lmu-klinikum.de)
 * #KUM insert AddStatus(active)
 * #KUM insert AddTRV(V6.14)
-* #MRI "Klinikum rechts der Isar" "München / TUM"
+* #MRI "Klinikum rechts der Isar (TUM)" "München"
 * #MRI insert AddKonsortium(DIFUTURE)
 * #MRI insert AddUri(mri.tum.de)
 * #MRI insert AddStatus(active)
