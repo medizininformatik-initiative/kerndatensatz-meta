@@ -37,7 +37,7 @@ Description: "Medizininformatik-Initiative Standorte"
 * insert Publisher
 * insert PR_CS_VS_Version
 * insert LicenseCodeableCCBY40
-* ^date = "2024-11-11"
+* ^date = "2024-11-14"
 * ^status = #active
 * ^caseSensitive = true
 * ^compositional = false
@@ -266,7 +266,7 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UKSH insert AddUri(uksh.de)
 * #UKSH insert AddStatus(active)
 * #UKSH insert AddTRV(V6.14)
-* #UKT "Universitätsklinikum Tübingen" "DIFUTURE"
+* #UKT "Universitätsklinikum Tübingen" "Tübingen"
 * #UKT insert AddKonsortium(DIFUTURE)
 * #UKT insert AddUri(medizin.uni-tuebingen.de)
 * #UKT insert AddStatus(active)
@@ -290,7 +290,7 @@ Description: "Medizininformatik-Initiative Standorte"
 * #RBK insert AddKonsortium(HiGHmed)
 * #RBK insert AddUri(rbk.de)
 * #RBK insert AddStatus(active)
-* #FDPG "Forschungsdatenplattform"
+* #FDPG "Forschungsdatenportal für Gesundheit"
 * #FDPG insert AddKonsortium(MII)
 * #FDPG insert AddUri(forschen-fuer-gesundheit.de)
 * #FDPG insert AddStatus(active)

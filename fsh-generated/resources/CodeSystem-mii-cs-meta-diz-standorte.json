@@ -939,7 +939,7 @@
     {
       "code": "UKT",
       "display": "Universitätsklinikum Tübingen",
-      "definition": "DIFUTURE",
+      "definition": "Tübingen",
       "property": [
         {
           "code": "Konsortium",
@@ -1049,7 +1049,7 @@
     },
     {
       "code": "FDPG",
-      "display": "Forschungsdatenplattform",
+      "display": "Forschungsdatenportal für Gesundheit",
       "property": [
         {
           "code": "Konsortium",
@@ -1166,7 +1166,7 @@
       }
     }
   ],
-  "date": "2024-11-11",
+  "date": "2024-11-14",
   "caseSensitive": true,
   "compositional": false,
   "copyright": "Medizininformatik-Initiative",
