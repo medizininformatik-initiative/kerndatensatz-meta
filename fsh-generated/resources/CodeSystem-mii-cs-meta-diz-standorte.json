@@ -712,8 +712,8 @@
     },
     {
       "code": "KUM",
-      "display": "Klinikum der Universität München",
-      "definition": "München / LMU",
+      "display": "Klinikum der Universität München (LMU)",
+      "definition": "München",
       "property": [
         {
           "code": "Konsortium",
@@ -735,8 +735,8 @@
     },
     {
       "code": "MRI",
-      "display": "Klinikum rechts der Isar",
-      "definition": "München / TUM",
+      "display": "Klinikum rechts der Isar (TUM)",
+      "definition": "München",
       "property": [
         {
           "code": "Konsortium",
