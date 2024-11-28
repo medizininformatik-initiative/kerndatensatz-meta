@@ -1,0 +1,13 @@
+services:
+  blaze:
+    image: "samply/blaze:0.25"
+    environment:
+      DB_SEARCH_PARAM_BUNDLE: "/app/search-params.json"
+      ENFORCE_REFERENTIAL_INTEGRITY: "false"
+    ports:
+    - "8080:8080"
+    volumes:
+    - "./search-params.json:/app/search-params.json:ro"
+    - "blaze-data:/app/data"
+volumes:
+  blaze-data:
