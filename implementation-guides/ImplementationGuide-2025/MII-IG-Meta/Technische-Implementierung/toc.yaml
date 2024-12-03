@@ -1,0 +1,8 @@
+- name: Index
+  filename: Index.page.md
+- name: 'Extension: Lizenzbedingungen'
+  filename: Extension-Lizenzbedingungen.page.md
+- name: 'Profil: SearchParameter '
+  filename: Profil-SearchParameter.page.md
+- name: Liste Kerndatensatz Suchparameter
+  filename: Liste-Kerndatensatz-Suchparameter

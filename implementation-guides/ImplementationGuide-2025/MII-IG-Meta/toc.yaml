@@ -1,0 +1,6 @@
+- name: Index
+  filename: Index.page.md
+- name: Release Notes
+  filename: Release-notes.page.md
+- name: Technische Implementierung
+  filename: Technische-Implementierung

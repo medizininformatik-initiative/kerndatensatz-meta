@@ -1,0 +1,115 @@
+html, body {
+  padding: 0;
+  margin: 0; }
+
+#ig-viewer {
+  position: relative;
+  height: 100%; }
+  #ig-viewer .ig-view-content {
+    overflow: hidden;
+    min-height: 100%;
+    position: relative;
+    height: auto !important;
+    margin-bottom: -155px;
+    padding-bottom: 155px; }
+    #ig-viewer .ig-view-content #ig-view-treetable {
+      min-height: 100%;
+      width: 70%;
+      margin: 0 auto; }
+      #ig-viewer .ig-view-content #ig-view-treetable .segment-default-header {
+        margin-bottom: 0;
+        padding-left: 10px; }
+      #ig-viewer .ig-view-content #ig-view-treetable .container-fluid {
+        padding: 0;
+        width: 100%; }
+        #ig-viewer .ig-view-content #ig-view-treetable .container-fluid #guide-panel {
+          width: 100%;
+          height: 100%;
+          position: relative;
+          display: table;
+          border-top: 1px solid #e6e6e6; }
+          #ig-viewer .ig-view-content #ig-view-treetable .container-fluid #guide-panel .tree-panel {
+            width: 300px;
+            height: 100%;
+            float: left;
+            padding: 10px;
+            overflow: hidden;
+            position: relative; }
+            #ig-viewer .ig-view-content #ig-view-treetable .container-fluid #guide-panel .tree-panel .treenode a {
+              color: black;
+              cursor: pointer;
+              text-decoration: none;
+              text-overflow: ellipsis;
+              overflow: hidden; }
+            #ig-viewer .ig-view-content #ig-view-treetable .container-fluid #guide-panel .tree-panel .ui-resizable-handle {
+              right: 0; }
+            #ig-viewer .ig-view-content #ig-view-treetable .container-fluid #guide-panel .tree-panel table {
+              width: 100%; }
+              #ig-viewer .ig-view-content #ig-view-treetable .container-fluid #guide-panel .tree-panel table td:first-child {
+                min-width: 170px;
+                max-width: 300px;
+                text-overflow: ellipsis;
+                overflow: hidden; }
+          #ig-viewer .ig-view-content #ig-view-treetable .container-fluid #guide-panel .preview-panel {
+            width: 40%;
+            height: 100%;
+            float: right;
+            padding: 30px 45px;
+            position: relative;
+            border-left: 1px solid #e6e6e6; }
+            #ig-viewer .ig-view-content #ig-view-treetable .container-fluid #guide-panel .preview-panel table {
+              width: 100%;
+              overflow: auto;
+              display: block; }
+            #ig-viewer .ig-view-content #ig-view-treetable .container-fluid #guide-panel .preview-panel .preview-bar {
+              overflow: auto; }
+            #ig-viewer .ig-view-content #ig-view-treetable .container-fluid #guide-panel .preview-panel.full-width {
+              width: auto;
+              overflow: hidden;
+              float: none; }
+  #ig-viewer .ig-view-footer {
+    background-color: #808080;
+    color: #eee;
+    height: 155px;
+    position: relative;
+    padding-top: 40px; }
+
+.notice-border{
+    height:auto;
+    border-style: solid;
+    border-color: rgb(127, 3, 7);
+}
+
+.notice-background{
+    background-color: rgb(255, 250, 246);
+}
+
+.notice{
+  display: inline-table;
+}
+
+.notice img{
+    height:200px;
+    width:200px;
+    float:left;
+}
+
+.notice p{
+    margin-top: 5px;
+}
+
+.col-md-12{
+  width: 100%;
+}
+
+.col-md-12 img{
+  width: auto;
+}
+
+.col-md-12{
+  width: 100%;
+}
+
+.col-md-12 img{
+  width: auto;
+}
