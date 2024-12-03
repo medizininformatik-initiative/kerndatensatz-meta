@@ -14,3 +14,10 @@ Profile mit dem Status 'Draft' wurden noch nicht ballotiert und können noch div
 * Danny Ammon
 * Julian Saß
 * Karoline Buckow
+
+### Mit Unterstützung von:
+* [@ThomasSmallert](https://github.com/ThomasSmallert)
+* [@Gauxi](https://github.com/Gauxi)
+* [@ThomasDeBe](https://github.com/ThomasDeBe)
+* [@alexanderkiel](https://github.com/alexanderkiel)
+* [@beanformer](https://github.com/beanformer)
