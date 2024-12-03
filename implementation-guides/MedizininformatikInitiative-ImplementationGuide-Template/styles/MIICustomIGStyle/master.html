@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="utf-8" />
+        <title>{{ guide-title }}</title>
+
+        <link rel="icon" href="{{content}}/styles/common/favicon.ico" />
+
+        <script src="{{content}}/styles/common/jquery/jquery.min.js"></script>
+        <script src="{{content}}/styles/common/bootstrap/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="{{content}}/styles/common/main.min.css" />
+        <link rel="stylesheet" href="{{content}}/styles/common/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="{{content}}/styles/common/rendering/rendering.min.css" />
+
+        <script src="{{content}}/styles/common/rendering/stu3TreeTable.min.js"></script>
+        <script src="{{content}}/styles/common/rendering/baseTreetable.min.js"></script>
+
+        <link rel="stylesheet" href="{{content}}/{{style-folder}}/style.css?v={{version}}" />
+
+    </head>
+
+    <body>
+
+        <div id="ig-viewer">
+
+            <div class="ig-view-content">
+
+                <div id="ig-view-treetable">
+
+                    <div class="segment-default-header">
+                        <div class="row">
+                            <header class="col-md-12">
+                                <a href="https://www.medizininformatik-initiative.de/"><img src="https://www.medizininformatik-initiative.de/themes/custom/mii/assets/img/Logo_MII_270px_Hoehe_de.png" height="71" width="138" alt="MII-Initiative" border="40" align="right" hspace="24" vspace="25"></a>
+                                <h1 class="title">
+                                    <b>{{ guide-title }}</b>
+                                </h1>
+                            </header>
+                    </div>
+
+                    <div class="container-fluid">
+                        <div id="guide-panel">
+                            <div class="tree-panel">
+                                {{ tree-navigation }}
+                            </div>
+                            <div id="preview-content" class="preview-panel full-width">
+                                {{ page }}
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="ig-view-footer">
+                {{ footer }}
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
