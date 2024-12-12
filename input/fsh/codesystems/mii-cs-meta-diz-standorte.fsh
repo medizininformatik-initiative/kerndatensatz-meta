@@ -37,7 +37,7 @@ Description: "Medizininformatik-Initiative Standorte"
 * insert Publisher
 * insert PR_CS_VS_Version
 * insert LicenseCodeableCCBY40
-* ^date = "2024-11-14"
+* ^date = "2024-12-12"
 * ^status = #active
 * ^caseSensitive = true
 * ^compositional = false
