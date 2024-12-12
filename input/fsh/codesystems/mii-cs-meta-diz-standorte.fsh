@@ -112,6 +112,7 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UKDD insert AddKonsortium(MIRACUM)
 * #UKDD insert AddUri(ukdd.de)
 * #UKDD insert AddStatus(active)
+* #UKDD insert AddDatenmanagementstelle(true)
 * #UKDD insert AddTRV(V6.14)
 * #UKD "Universitätsklinikum Düsseldorf" "Düsseldorf"
 * #UKD insert AddKonsortium(SMITH)
