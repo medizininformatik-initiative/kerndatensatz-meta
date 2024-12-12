@@ -229,6 +229,10 @@
           "valueCode": "active"
         },
         {
+          "code": "Datenmanagementstelle",
+          "valueBoolean": true
+        },
+        {
           "code": "TRV",
           "valueString": "V6.14"
         }
