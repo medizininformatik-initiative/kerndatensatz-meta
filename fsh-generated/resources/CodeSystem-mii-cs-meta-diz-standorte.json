@@ -905,7 +905,7 @@
         },
         {
           "code": "uri",
-          "valueString": "uks.eu"
+          "valueString": "med.uni-saarland.de"
         },
         {
           "code": "status",
@@ -1170,7 +1170,7 @@
       }
     }
   ],
-  "date": "2024-12-12",
+  "date": "2025-01-13",
   "caseSensitive": true,
   "compositional": false,
   "copyright": "Medizininformatik-Initiative",

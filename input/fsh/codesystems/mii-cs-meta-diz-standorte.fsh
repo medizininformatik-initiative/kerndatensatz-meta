@@ -37,7 +37,7 @@ Description: "Medizininformatik-Initiative Standorte"
 * insert Publisher
 * insert PR_CS_VS_Version
 * insert LicenseCodeableCCBY40
-* ^date = "2024-12-12"
+* ^date = "2025-01-13"
 * ^status = #active
 * ^caseSensitive = true
 * ^compositional = false
@@ -259,7 +259,7 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UKS insert AddDeprecationDate(2024-10-15)
 * #UdS "Universität des Saarlandes, Medizinische Fakultät" "Saarbrücken / Homburg"
 * #UdS insert AddKonsortium(DIFUTURE)
-* #UdS insert AddUri(uks.eu)
+* #UdS insert AddUri(med.uni-saarland.de)
 * #UdS insert AddStatus(active)
 * #UdS insert AddTRV(V6.14)
 * #UKSH "Universitätsklinikum Schleswig-Holstein" "Schleswig-Holstein"
