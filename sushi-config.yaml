@@ -19,3 +19,4 @@ publisher:
 #  hl7.fhir.uv.fhir-for-fair: 1.0.0
 menu:
   Home: index.html
+  Artifacts: artifacts.html
