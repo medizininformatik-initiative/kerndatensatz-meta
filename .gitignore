@@ -13,3 +13,9 @@ fsh-index.json
 fsh-index.txt
 terminologie/CodeSystem/core-location-identifier.CodeSystem.json
 index.html
+_gencontinuous.bat
+_gencontinuous.sh
+_genonce.bat
+_genonce.sh
+_updatePublisher.bat
+_updatePublisher.sh
