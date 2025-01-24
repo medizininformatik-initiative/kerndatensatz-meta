@@ -35,6 +35,7 @@ jobs:
           SUSHI_VERSION: 3.14.0
           JAVA_VALIDATOR_VERSION: 6.5.6
           EXPECTED_FAILS: VALIDATION_CONFORMANCE_DOTNET
+          JAVA_SNAPSHOT_ENABLED: true
       - name: Add & Commit
         uses: EndBug/add-and-commit@v9
         with:
