@@ -6,6 +6,11 @@ on:
       ref:
         required: true
         type: string
+    secrets:
+      SIMPLIFIER_USERNAME:
+        required: true
+      SIMPLIFIER_PASSWORD:
+        required: true
 
 jobs:
   validate:
