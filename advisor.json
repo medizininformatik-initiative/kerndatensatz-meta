@@ -1,0 +1,7 @@
+{ 
+  "suppress" : [
+    "Terminology_TX_NoValid_16@ImplementationGuide.definition.parameter.code",
+    "MSG_DRAFT@SearchParameter.extension[0].value.ofType(CodeableConcept)",
+    "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"
+  ]
+}
