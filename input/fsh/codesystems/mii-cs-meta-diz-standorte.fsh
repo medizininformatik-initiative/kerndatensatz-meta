@@ -295,6 +295,7 @@ Description: "Medizininformatik-Initiative Standorte"
 * #FDPG insert AddKonsortium(MII)
 * #FDPG insert AddUri(forschen-fuer-gesundheit.de)
 * #FDPG insert AddStatus(active)
+* #FDPG insert AddDatenmanagementstelle(true)
 * #FDPG insert AddTRV(V6.14)
 * #HiGHmed "Konsortium"
 * #HiGHmed insert AddKonsortium(MII)
