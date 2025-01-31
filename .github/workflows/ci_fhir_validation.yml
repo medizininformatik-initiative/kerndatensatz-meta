@@ -21,7 +21,7 @@ jobs:
         with:
           ref: ${{ inputs.ref }}
       - name: Firely.Terminal (GitHub Actions)
-        uses: FirelyTeam/firely-terminal-pipeline@v0.6.6
+        uses: FirelyTeam/firely-terminal-pipeline@v0.6.7
         with:
           PATH_TO_CONFORMANCE_RESOURCES: fsh-generated/resources
           PATH_TO_EXAMPLES: fsh-generated/resources
@@ -33,7 +33,7 @@ jobs:
           SIMPLIFIER_PASSWORD: ${{ secrets.SIMPLIFIER_PASSWORD }}
           SUSHI_ENABLED: true 
           SUSHI_VERSION: 3.14.0
-          JAVA_VALIDATOR_VERSION: 6.5.6
+          JAVA_VALIDATOR_VERSION: 6.5.7
           EXPECTED_FAILS: VALIDATION_CONFORMANCE_DOTNET
           JAVA_SNAPSHOT_ENABLED: true
       - name: Add & Commit
