@@ -37,7 +37,7 @@ Description: "Medizininformatik-Initiative Standorte"
 * insert Publisher
 * insert PR_CS_VS_Version
 * insert LicenseCodeableCCBY40
-* ^date = "2025-01-13"
+* ^date = "2025-02-12"
 * ^status = #active
 * ^caseSensitive = true
 * ^compositional = false
@@ -68,18 +68,18 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UKA insert AddKonsortium(SMITH)
 * #UKA insert AddUri(ukaachen.de)
 * #UKA insert AddStatus(active)
-* #UKA insert AddTRV(V6.14)
+* #UKA insert AddTRV(V6.15)
 * #UKAU "Universitätsklinikum Augsburg" "Augsburg"
 * #UKAU insert AddKonsortium(DIFUTURE)
 * #UKAU insert AddUri(uk-augsburg.de)
 * #UKAU insert AddStatus(active)
-* #UKAU insert AddTRV(V6.14)
+* #UKAU insert AddTRV(V6.15)
 * #Charité "Charité - Universitätsmedizin Berlin" "Berlin"
 * #Charité insert AddKonsortium(HiGHmed)
 * #Charité insert AddUri(charite.de)
 * #Charité insert AddStatus(active)
 * #Charité insert AddDatenmanagementstelle(true)
-* #Charité insert AddTRV(V6.14)
+* #Charité insert AddTRV(V6.15)
 * #UKOWL "Universitätsklinikum OWL" "Bielefeld"
 * #UKOWL insert AddKonsortium(HiGHmed)
 * #UKOWL insert AddUri(ukowl.de)
@@ -88,11 +88,12 @@ Description: "Medizininformatik-Initiative Standorte"
 * #"UK RUB" "Universitätsklinikum der Ruhr-Universität Bochum" "Bochum"
 * #"UK RUB" insert AddKonsortium(SMITH)
 * #"UK RUB" insert AddStatus(active)
+* #"UK RUB" insert AddTRV(V6.15)
 * #UKB "Universitätsklinikum Bonn" "Bonn"
 * #UKB insert AddKonsortium(SMITH)
 * #UKB insert AddUri(ukbonn.de)
 * #UKB insert AddStatus(active)
-* #UKB insert AddTRV(V6.14)
+* #UKB insert AddTRV(V6.15)
 * #KCH "Klinikum Chemnitz" "Chemnitz"
 * #KCH insert AddKonsortium(MIRACUM)
 * #KCH insert AddUri(klinikumchemnitz.de)
@@ -107,27 +108,28 @@ Description: "Medizininformatik-Initiative Standorte"
 * #MUL-CT insert AddKonsortium(HiGHmed)
 * #MUL-CT insert AddUri(mul-ct.de)
 * #MUL-CT insert AddStatus(active)
-* #MUL-CT insert AddTRV(V6.14)
+* #MUL-CT insert AddTRV(V6.15)
 * #UKDD "Universitätsklinikum Carl Gustav Carus Dresden" "Dresden"
 * #UKDD insert AddKonsortium(MIRACUM)
 * #UKDD insert AddUri(ukdd.de)
 * #UKDD insert AddStatus(active)
 * #UKDD insert AddDatenmanagementstelle(true)
-* #UKDD insert AddTRV(V6.14)
+* #UKDD insert AddTRV(V6.15)
 * #UKD "Universitätsklinikum Düsseldorf" "Düsseldorf"
 * #UKD insert AddKonsortium(SMITH)
 * #UKD insert AddUri(uniklinik-duesseldorf.de)
 * #UKD insert AddStatus(active)
+* #UKD insert AddTRV(V6.15)
 * #UKEr "Universitätsklinikum Erlangen" "Erlangen"
 * #UKEr insert AddKonsortium(MIRACUM)
 * #UKEr insert AddUri(www.uk-erlangen.de)
 * #UKEr insert AddStatus(active)
-* #UKEr insert AddTRV(V6.14)
+* #UKEr insert AddTRV(V6.15)
 * #UME "Universitätsklinikum Essen" "Essen"
 * #UME insert AddKonsortium(SMITH)
 * #UME insert AddUri(uk-essen.de)
 * #UME insert AddStatus(active)
-* #UME insert AddTRV(V6.14)
+* #UME insert AddTRV(V6.15)
 * #UKF "Universitätsklinikum Frankfurt" "Frankfurt"
 * #UKF insert AddKonsortium(MIRACUM)
 * #UKF insert AddUri(kgu.de)
@@ -142,13 +144,13 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UKGI insert AddKonsortium(MIRACUM)
 * #UKGI insert AddUri(uni-giessen.de)
 * #UKGI insert AddStatus(active)
-* #UKGI insert AddTRV(V6.14)
+* #UKGI insert AddTRV(V6.15)
 * #UMG "Universitätsmedizin Göttingen" "Göttingen"
 * #UMG insert AddKonsortium(HiGHmed)
 * #UMG insert AddUri(umg.eu)
 * #UMG insert AddStatus(active)
 * #UMG insert AddDatenmanagementstelle(true)
-* #UMG insert AddTRV(V6.14)
+* #UMG insert AddTRV(V6.15)
 * #UKG "Universitätsmedizin Greifswald" "Greifswald"
 * #UKG insert AddKonsortium(MIRACUM)
 * #UKG insert AddUri(www.medizin.uni-greifswald.de)
@@ -159,23 +161,23 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UKH insert AddUri(uk-halle.de)
 * #UKH insert AddStatus(active)
 * #UKH insert AddDatenmanagementstelle(true)
-* #UKH insert AddTRV(V6.14)
+* #UKH insert AddTRV(V6.15)
 * #UKE "Universitätsklinikum Hamburg-Eppendorf" "Hamburg"
 * #UKE insert AddKonsortium(SMITH)
 * #UKE insert AddUri(uke.de)
 * #UKE insert AddStatus(active)
-* #UKE insert AddTRV(V6.14)
+* #UKE insert AddTRV(V6.15)
 * #MHH "Medizinische Hochschule Hannover" "Hannover"
 * #MHH insert AddKonsortium(HiGHmed)
 * #MHH insert AddUri(mh-hannover.de)
 * #MHH insert AddStatus(active)
-* #MHH insert AddTRV(V6.14)
+* #MHH insert AddTRV(V6.15)
 * #UKHD "Universitätsklinikum Heidelberg" "Heidelberg"
 * #UKHD insert AddKonsortium(HiGHmed)
 * #UKHD insert AddUri(ukhd.de)
 * #UKHD insert AddStatus(active)
 * #UKHD insert AddDatenmanagementstelle(true)
-* #UKHD insert AddTRV(V6.14)
+* #UKHD insert AddTRV(V6.15)
 * #UKJ "Universitätsklinikum Jena" "Jena"
 * #UKJ insert AddKonsortium(SMITH)
 * #UKJ insert AddUri(uniklinikum-jena.de)
@@ -186,13 +188,13 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UKK insert AddUri(uk-koeln.de)
 * #UKK insert AddStatus(active)
 * #UKK insert AddDatenmanagementstelle(true)
-* #UKK insert AddTRV(V6.14)
+* #UKK insert AddTRV(V6.15)
 * #UKL "Universitätsklinikum Leipzig" "Leipzig"
 * #UKL insert AddKonsortium(SMITH)
 * #UKL insert AddUri(uniklinikum-leipzig.de)
 * #UKL insert AddStatus(active)
 * #UKL insert AddDatenmanagementstelle(true)
-* #UKL insert AddTRV(V6.14)
+* #UKL insert AddTRV(V6.15)
 * #UL "Universität Leipzig" "Leipzig"
 * #UL insert AddKonsortium(SMITH)
 * #UL insert AddUri(uniklinikum-leipzig.de)
@@ -212,27 +214,27 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UMM insert AddKonsortium(MIRACUM)
 * #UMM insert AddUri(umm.de)
 * #UMM insert AddStatus(active)
-* #UMM insert AddTRV(V6.14)
+* #UMM insert AddTRV(V6.15)
 * #UKMR "Universitätsklinikum Marburg" "Marburg"
 * #UKMR insert AddKonsortium(MIRACUM)
 * #UKMR insert AddUri(uni-marburg.de)
 * #UKMR insert AddStatus(active)
-* #UKMR insert AddTRV(V6.14)
+* #UKMR insert AddTRV(V6.15)
 * #KUM "Klinikum der Universität München (LMU)" "München"
 * #KUM insert AddKonsortium(DIFUTURE)
 * #KUM insert AddUri(lmu-klinikum.de)
 * #KUM insert AddStatus(active)
-* #KUM insert AddTRV(V6.14)
+* #KUM insert AddTRV(V6.15)
 * #MRI "Klinikum rechts der Isar (TUM)" "München"
 * #MRI insert AddKonsortium(DIFUTURE)
 * #MRI insert AddUri(mri.tum.de)
 * #MRI insert AddStatus(active)
-* #MRI insert AddTRV(V6.14)
+* #MRI insert AddTRV(V6.15)
 * #UKM "Universitätsklinikum Münster" "Münster"
 * #UKM insert AddKonsortium(HiGHmed)
 * #UKM insert AddUri(ukm.de)
 * #UKM insert AddStatus(active)
-* #UKM insert AddTRV(V6.14)
+* #UKM insert AddTRV(V6.15)
 * #UMO "Carl von Ossietzky Universität Oldenburg" "Oldenburg"
 * #UMO insert AddKonsortium(HiGHmed)
 * #UMO insert AddUri(uol.de)
@@ -246,12 +248,12 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UKR insert AddKonsortium(DIFUTURE)
 * #UKR insert AddUri(ukr.de)
 * #UKR insert AddStatus(active)
-* #UKR insert AddTRV(V6.14)
+* #UKR insert AddTRV(V6.15)
 * #UMR "Universitätsmedizin Rostock" "Rostock"
 * #UMR insert AddKonsortium(SMITH)
 * #UMR insert AddUri(med.uni-rostock.de)
 * #UMR insert AddStatus(active)
-* #UMR insert AddTRV(V6.14)
+* #UMR insert AddTRV(V6.15)
 * #UKS "Universitätsklinikum des Saarlandes" "Saarbrücken / Homburg"
 * #UKS insert AddKonsortium(DIFUTURE)
 * #UKS insert AddUri(uks.eu)
@@ -266,23 +268,23 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UKSH insert AddKonsortium(HiGHmed)
 * #UKSH insert AddUri(uksh.de)
 * #UKSH insert AddStatus(active)
-* #UKSH insert AddTRV(V6.14)
+* #UKSH insert AddTRV(V6.15)
 * #UKT "Universitätsklinikum Tübingen" "Tübingen"
 * #UKT insert AddKonsortium(DIFUTURE)
 * #UKT insert AddUri(medizin.uni-tuebingen.de)
 * #UKT insert AddStatus(active)
-* #UKT insert AddTRV(V6.14)
+* #UKT insert AddTRV(V6.15)
 * #UKU "Universitätsklinikum Ulm" "Ulm"
 * #UKU insert AddKonsortium(DIFUTURE)
 * #UKU insert AddUri(uniklinik-ulm.de)
 * #UKU insert AddStatus(active)
-* #UKU insert AddTRV(V6.14)
+* #UKU insert AddTRV(V6.15)
 * #UKW "Universitätsklinikum Würzburg" "Würzburg"
 * #UKW insert AddKonsortium(HiGHmed)
 * #UKW insert AddUri(ukw.de)
 * #UKW insert AddStatus(active)
 * #UKW insert AddDatenmanagementstelle(true)
-* #UKW insert AddTRV(V6.14)
+* #UKW insert AddTRV(V6.15)
 * #HUKW "Universität Witten/Herdecke" "Witten / Herdecke"
 * #HUKW insert AddKonsortium(NA)
 * #HUKW insert AddStatus(deprecated)
@@ -291,6 +293,7 @@ Description: "Medizininformatik-Initiative Standorte"
 * #RBK insert AddKonsortium(HiGHmed)
 * #RBK insert AddUri(rbk.de)
 * #RBK insert AddStatus(active)
+* #RBK insert AddTRV(V6.15)
 * #FDPG "Forschungsdatenportal für Gesundheit"
 * #FDPG insert AddKonsortium(MII)
 * #FDPG insert AddUri(forschen-fuer-gesundheit.de)
