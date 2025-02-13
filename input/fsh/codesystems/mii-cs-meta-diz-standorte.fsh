@@ -199,7 +199,7 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UL insert AddKonsortium(SMITH)
 * #UL insert AddUri(uniklinikum-leipzig.de)
 * #UL insert AddStatus(active)
-* #UL insert AddTRV(V6.14)
+* #UL insert AddTRV(V6.15)
 * #UMMD "Universitätsklinikum Magdeburg" "Magdeburg"
 * #UMMD insert AddKonsortium(MIRACUM)
 * #UMMD insert AddUri(www.med.uni-magdeburg.de)
