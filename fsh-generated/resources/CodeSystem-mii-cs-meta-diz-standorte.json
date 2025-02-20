@@ -27,7 +27,7 @@
         },
         {
           "code": "TRV",
-          "valueString": "V6.14"
+          "valueString": "V6.15"
         }
       ]
     },
@@ -50,7 +50,7 @@
         },
         {
           "code": "TRV",
-          "valueString": "V6.14"
+          "valueString": "V6.15"
         }
       ]
     },
@@ -77,7 +77,7 @@
         },
         {
           "code": "TRV",
-          "valueString": "V6.14"
+          "valueString": "V6.15"
         }
       ]
     },
@@ -116,6 +116,10 @@
         {
           "code": "status",
           "valueCode": "active"
+        },
+        {
+          "code": "TRV",
+          "valueString": "V6.15"
         }
       ]
     },
@@ -138,7 +142,7 @@
         },
         {
           "code": "TRV",
-          "valueString": "V6.14"
+          "valueString": "V6.15"
         }
       ]
     },
@@ -207,7 +211,7 @@
         },
         {
           "code": "TRV",
-          "valueString": "V6.14"
+          "valueString": "V6.15"
         }
       ]
     },
@@ -234,7 +238,7 @@
         },
         {
           "code": "TRV",
-          "valueString": "V6.14"
+          "valueString": "V6.15"
         }
       ]
     },
@@ -254,6 +258,10 @@
         {
           "code": "status",
           "valueCode": "active"
+        },
+        {
+          "code": "TRV",
+          "valueString": "V6.15"
         }
       ]
     },
@@ -276,7 +284,7 @@
         },
         {
           "code": "TRV",
-          "valueString": "V6.14"
+          "valueString": "V6.15"
         }
       ]
     },
@@ -299,7 +307,7 @@
         },
         {
           "code": "TRV",
-          "valueString": "V6.14"
+          "valueString": "V6.15"
         }
       ]
     },
@@ -368,7 +376,7 @@
         },
         {
           "code": "TRV",
-          "valueString": "V6.14"
+          "valueString": "V6.15"
         }
       ]
     },
@@ -395,7 +403,7 @@
         },
         {
           "code": "TRV",
-          "valueString": "V6.14"
+          "valueString": "V6.15"
         }
       ]
     },
@@ -445,7 +453,7 @@
         },
         {
           "code": "TRV",
-          "valueString": "V6.14"
+          "valueString": "V6.15"
         }
       ]
     },
@@ -468,7 +476,7 @@
         },
         {
           "code": "TRV",
-          "valueString": "V6.14"
+          "valueString": "V6.15"
         }
       ]
     },
@@ -491,7 +499,7 @@
         },
         {
           "code": "TRV",
-          "valueString": "V6.14"
+          "valueString": "V6.15"
         }
       ]
     },
@@ -518,7 +526,7 @@
         },
         {
           "code": "TRV",
-          "valueString": "V6.14"
+          "valueString": "V6.15"
         }
       ]
     },
@@ -568,7 +576,7 @@
         },
         {
           "code": "TRV",
-          "valueString": "V6.14"
+          "valueString": "V6.15"
         }
       ]
     },
@@ -595,7 +603,7 @@
         },
         {
           "code": "TRV",
-          "valueString": "V6.14"
+          "valueString": "V6.15"
         }
       ]
     },
@@ -618,7 +626,7 @@
         },
         {
           "code": "TRV",
-          "valueString": "V6.14"
+          "valueString": "V6.15"
         }
       ]
     },
@@ -687,7 +695,7 @@
         },
         {
           "code": "TRV",
-          "valueString": "V6.14"
+          "valueString": "V6.15"
         }
       ]
     },
@@ -710,7 +718,7 @@
         },
         {
           "code": "TRV",
-          "valueString": "V6.14"
+          "valueString": "V6.15"
         }
       ]
     },
@@ -733,7 +741,7 @@
         },
         {
           "code": "TRV",
-          "valueString": "V6.14"
+          "valueString": "V6.15"
         }
       ]
     },
@@ -756,7 +764,7 @@
         },
         {
           "code": "TRV",
-          "valueString": "V6.14"
+          "valueString": "V6.15"
         }
       ]
     },
@@ -779,7 +787,7 @@
         },
         {
           "code": "TRV",
-          "valueString": "V6.14"
+          "valueString": "V6.15"
         }
       ]
     },
@@ -844,7 +852,7 @@
         },
         {
           "code": "TRV",
-          "valueString": "V6.14"
+          "valueString": "V6.15"
         }
       ]
     },
@@ -867,7 +875,7 @@
         },
         {
           "code": "TRV",
-          "valueString": "V6.14"
+          "valueString": "V6.15"
         }
       ]
     },
@@ -936,7 +944,7 @@
         },
         {
           "code": "TRV",
-          "valueString": "V6.14"
+          "valueString": "V6.15"
         }
       ]
     },
@@ -959,7 +967,7 @@
         },
         {
           "code": "TRV",
-          "valueString": "V6.14"
+          "valueString": "V6.15"
         }
       ]
     },
@@ -982,7 +990,7 @@
         },
         {
           "code": "TRV",
-          "valueString": "V6.14"
+          "valueString": "V6.15"
         }
       ]
     },
@@ -1009,7 +1017,7 @@
         },
         {
           "code": "TRV",
-          "valueString": "V6.14"
+          "valueString": "V6.15"
         }
       ]
     },
@@ -1048,6 +1056,10 @@
         {
           "code": "status",
           "valueCode": "active"
+        },
+        {
+          "code": "TRV",
+          "valueString": "V6.15"
         }
       ]
     },
@@ -1174,7 +1186,7 @@
       }
     }
   ],
-  "date": "2025-01-13",
+  "date": "2025-02-12",
   "caseSensitive": true,
   "compositional": false,
   "copyright": "Medizininformatik-Initiative",
