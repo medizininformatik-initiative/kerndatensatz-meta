@@ -90,10 +90,10 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UKOWL insert AddUri(ukowl.de)
 * #UKOWL insert AddStatus(active)
 * #UKOWL insert AddTRV(V6.14)
-* #"UK RUB" "Universitätsklinikum der Ruhr-Universität Bochum" "Bochum"
-* #"UK RUB" insert AddKonsortium(SMITH)
-* #"UK RUB" insert AddStatus(active)
-* #"UK RUB" insert AddTRV(V6.15)
+* #UKRUB "Universitätsklinikum der Ruhr-Universität Bochum" "Bochum"
+* #UKRUB insert AddKonsortium(SMITH)
+* #UKRUB insert AddStatus(active)
+* #UKRUB insert AddTRV(V6.15)
 * #UKB "Universitätsklinikum Bonn" "Bonn"
 * #UKB insert AddKonsortium(SMITH)
 * #UKB insert AddUri(ukbonn.de)
