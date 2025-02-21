@@ -105,7 +105,7 @@
       ]
     },
     {
-      "code": "UK RUB",
+      "code": "UKRUB",
       "display": "Universitätsklinikum der Ruhr-Universität Bochum",
       "definition": "Bochum",
       "property": [
@@ -1186,7 +1186,7 @@
       }
     }
   ],
-  "date": "2025-02-12",
+  "date": "2025-02-21",
   "caseSensitive": true,
   "compositional": false,
   "copyright": "Medizininformatik-Initiative",
