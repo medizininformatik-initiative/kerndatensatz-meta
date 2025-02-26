@@ -294,11 +294,11 @@ Description: "Medizininformatik-Initiative Standorte"
 * #HUKW insert AddKonsortium(NA)
 * #HUKW insert AddStatus(deprecated)
 * #HUKW insert AddDeprecationDate(2024-07-09)
-* #RBK "Robert-Bosch-Krankenhaus" "Stuttgart"
-* #RBK insert AddKonsortium(HiGHmed)
-* #RBK insert AddUri(rbk.de)
-* #RBK insert AddStatus(active)
-* #RBK insert AddTRV(V6.15)
+* #BHC "Bosch Health Campus" "Stuttgart"
+* #BHC insert AddKonsortium(HiGHmed)
+* #BHC insert AddUri(rbk.de)
+* #BHC insert AddStatus(active)
+* #BHC insert AddTRV(V6.15)
 * #FDPG "Forschungsdatenportal für Gesundheit"
 * #FDPG insert AddKonsortium(MII)
 * #FDPG insert AddUri(forschen-fuer-gesundheit.de)
