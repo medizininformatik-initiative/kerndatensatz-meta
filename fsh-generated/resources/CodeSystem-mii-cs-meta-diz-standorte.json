@@ -1174,6 +1174,29 @@
           "valueCode": "active"
         }
       ]
+    },
+    {
+      "code": "VIV",
+      "display": "Vivantes Netzwerk für Gesundheit GmbH",
+      "definition": "Berlin",
+      "property": [
+        {
+          "code": "Konsortium",
+          "valueString": "HiGHmed"
+        },
+        {
+          "code": "uri",
+          "valueString": "vivantes.de"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "TRV",
+          "valueString": "V6.15"
+        }
+      ]
     }
   ],
   "meta": {
