@@ -319,3 +319,8 @@ Description: "Medizininformatik-Initiative Standorte"
 * #CRR insert AddKonsortium(NUM)
 * #CRR insert AddUri(num-codex.de)
 * #CRR insert AddStatus(active)
+* #VIV "Vivantes Netzwerk für Gesundheit GmbH" "Berlin"
+* #VIV insert AddKonsortium(HiGHmed)
+* #VIV insert AddUri(vivantes.de)
+* #VIV insert AddStatus(active)
+* #VIV insert AddTRV(V6.15)
