@@ -972,6 +972,29 @@
       ]
     },
     {
+      "code": "BHC",
+      "display": "Bosch Health Campus",
+      "definition": "Stuttgart",
+      "property": [
+        {
+          "code": "Konsortium",
+          "valueString": "HiGHmed"
+        },
+        {
+          "code": "uri",
+          "valueString": "rbk.de"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "TRV",
+          "valueString": "V6.15"
+        }
+      ]
+    },
+    {
       "code": "UKT",
       "display": "Universitätsklinikum Tübingen",
       "definition": "Tübingen",
@@ -1060,29 +1083,6 @@
         {
           "code": "deprecationDate",
           "valueDateTime": "2024-07-09"
-        }
-      ]
-    },
-    {
-      "code": "BHC",
-      "display": "Bosch Health Campus",
-      "definition": "Stuttgart",
-      "property": [
-        {
-          "code": "Konsortium",
-          "valueString": "HiGHmed"
-        },
-        {
-          "code": "uri",
-          "valueString": "rbk.de"
-        },
-        {
-          "code": "status",
-          "valueCode": "active"
-        },
-        {
-          "code": "TRV",
-          "valueString": "V6.15"
         }
       ]
     },
