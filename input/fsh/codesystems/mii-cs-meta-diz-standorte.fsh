@@ -90,10 +90,10 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UKOWL insert AddUri(ukowl.de)
 * #UKOWL insert AddStatus(active)
 * #UKOWL insert AddTRV(V6.14)
-* #"UK RUB" "Universitätsklinikum der Ruhr-Universität Bochum" "Bochum"
-* #"UK RUB" insert AddKonsortium(SMITH)
-* #"UK RUB" insert AddStatus(active)
-* #"UK RUB" insert AddTRV(V6.15)
+* #UKRUB "Universitätsklinikum der Ruhr-Universität Bochum" "Bochum"
+* #UKRUB insert AddKonsortium(SMITH)
+* #UKRUB insert AddStatus(active)
+* #UKRUB insert AddTRV(V6.15)
 * #UKB "Universitätsklinikum Bonn" "Bonn"
 * #UKB insert AddKonsortium(SMITH)
 * #UKB insert AddUri(ukbonn.de)
@@ -274,6 +274,11 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UKSH insert AddUri(uksh.de)
 * #UKSH insert AddStatus(active)
 * #UKSH insert AddTRV(V6.15)
+* #BHC "Bosch Health Campus" "Stuttgart"
+* #BHC insert AddKonsortium(HiGHmed)
+* #BHC insert AddUri(rbk.de)
+* #BHC insert AddStatus(active)
+* #BHC insert AddTRV(V6.15)
 * #UKT "Universitätsklinikum Tübingen" "Tübingen"
 * #UKT insert AddKonsortium(DIFUTURE)
 * #UKT insert AddUri(medizin.uni-tuebingen.de)
@@ -294,11 +299,6 @@ Description: "Medizininformatik-Initiative Standorte"
 * #HUKW insert AddKonsortium(NA)
 * #HUKW insert AddStatus(deprecated)
 * #HUKW insert AddDeprecationDate(2024-07-09)
-* #RBK "Robert-Bosch-Krankenhaus" "Stuttgart"
-* #RBK insert AddKonsortium(HiGHmed)
-* #RBK insert AddUri(rbk.de)
-* #RBK insert AddStatus(active)
-* #RBK insert AddTRV(V6.15)
 * #FDPG "Forschungsdatenportal für Gesundheit"
 * #FDPG insert AddKonsortium(MII)
 * #FDPG insert AddUri(forschen-fuer-gesundheit.de)
