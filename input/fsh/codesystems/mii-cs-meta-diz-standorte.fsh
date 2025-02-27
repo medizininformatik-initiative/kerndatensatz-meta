@@ -80,6 +80,11 @@ Description: "Medizininformatik-Initiative Standorte"
 * #Charité insert AddStatus(active)
 * #Charité insert AddDatenmanagementstelle(true)
 * #Charité insert AddTRV(V6.15)
+* #VIV "Vivantes Netzwerk für Gesundheit GmbH" "Berlin"
+* #VIV insert AddKonsortium(HiGHmed)
+* #VIV insert AddUri(vivantes.de)
+* #VIV insert AddStatus(active)
+* #VIV insert AddTRV(V6.15)
 * #UKOWL "Universitätsklinikum OWL" "Bielefeld"
 * #UKOWL insert AddKonsortium(HiGHmed)
 * #UKOWL insert AddUri(ukowl.de)
@@ -314,8 +319,3 @@ Description: "Medizininformatik-Initiative Standorte"
 * #CRR insert AddKonsortium(NUM)
 * #CRR insert AddUri(num-codex.de)
 * #CRR insert AddStatus(active)
-* #VIV "Vivantes Netzwerk für Gesundheit GmbH" "Berlin"
-* #VIV insert AddKonsortium(HiGHmed)
-* #VIV insert AddUri(vivantes.de)
-* #VIV insert AddStatus(active)
-* #VIV insert AddTRV(V6.15)
