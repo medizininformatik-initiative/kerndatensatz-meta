@@ -37,7 +37,7 @@ Description: "Medizininformatik-Initiative Standorte"
 * insert Publisher
 * insert PR_CS_VS_Version
 * insert LicenseCodeableCCBY40
-* ^date = "2025-02-21"
+* ^date = "2025-02-26"
 * ^status = #active
 * ^caseSensitive = true
 * ^compositional = false
@@ -80,6 +80,11 @@ Description: "Medizininformatik-Initiative Standorte"
 * #Charité insert AddStatus(active)
 * #Charité insert AddDatenmanagementstelle(true)
 * #Charité insert AddTRV(V6.15)
+* #VIV "Vivantes Netzwerk für Gesundheit GmbH" "Berlin"
+* #VIV insert AddKonsortium(HiGHmed)
+* #VIV insert AddUri(vivantes.de)
+* #VIV insert AddStatus(active)
+* #VIV insert AddTRV(V6.15)
 * #UKOWL "Universitätsklinikum OWL" "Bielefeld"
 * #UKOWL insert AddKonsortium(HiGHmed)
 * #UKOWL insert AddUri(ukowl.de)

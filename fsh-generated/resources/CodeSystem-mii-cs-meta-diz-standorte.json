@@ -82,6 +82,29 @@
       ]
     },
     {
+      "code": "VIV",
+      "display": "Vivantes Netzwerk für Gesundheit GmbH",
+      "definition": "Berlin",
+      "property": [
+        {
+          "code": "Konsortium",
+          "valueString": "HiGHmed"
+        },
+        {
+          "code": "uri",
+          "valueString": "vivantes.de"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "TRV",
+          "valueString": "V6.15"
+        }
+      ]
+    },
+    {
       "code": "UKOWL",
       "display": "Universitätsklinikum OWL",
       "definition": "Bielefeld",
@@ -1186,7 +1209,7 @@
       }
     }
   ],
-  "date": "2025-02-21",
+  "date": "2025-02-26",
   "caseSensitive": true,
   "compositional": false,
   "copyright": "Medizininformatik-Initiative",
@@ -1227,5 +1250,5 @@
       "description": "Teilnahmerahmenvertrag (Version)"
     }
   ],
-  "count": 49
+  "count": 50
 }
