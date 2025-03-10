@@ -1,0 +1,203 @@
+# Modified from: https://github.com/FirelyTeam/firely-terminal-pipeline
+# Copyright (c) 2021 Firely
+# Licensed under the MIT License. See the LICENSE file in the project for more information: https://github.com/FirelyTeam/firely-terminal-pipeline/blob/main/LICENSE
+
+name: CI Java FHIR Validator
+on:
+  workflow_call:
+    inputs:
+      ref:
+        required: true
+        type: string
+      PATH_TO_CONFORMANCE_RESOURCES:
+        description: 'Relative paths of the folder(s) containing FHIR Conformance resources (StructureDefinition, ValueSet, CodeSystem)'
+        required: true
+        type: string
+      PATH_TO_EXAMPLES:
+        description: 'Relative paths of the folder(s) containing examples for the FHIR Conformance resources defined by the project'
+        required: false
+        type: string
+      JAVA_VALIDATION_ENABLED:
+        description: 'Boolean flag to run the offical HL7 Java validator to validate conformance resources and examples'
+        required: true
+        default: true
+        type: boolean
+      JAVA_VALIDATION_OPTIONS:
+        description: 'Custom options passed to the Java validator. See https://confluence.hl7.org/display/FHIR/Using+the+FHIR+Validator'
+        default: '-output-style compact'
+        required: false
+        type: string
+      JAVA_VALIDATOR_VERSION:
+        description: 'Version of org.hl7.fhir.core library used for Java-based validation'
+        default: '6.5.7'
+        required: true
+        type: string
+      JAVA_VALIDATOR_DOWNLOAD_LOCATION:
+        description: 'URL from which to download the Java validator JAR'
+        default: 'https://github.com/hapifhir/org.hl7.fhir.core/releases/download/$JAVA_VALIDATOR_VERSION/validator_cli.jar'
+        type: string
+      JAVA_SNAPSHOT_ENABLED:
+        description: 'Enables creating snapshots for the package dependencies using the Java validator.'
+        default: false
+        required: false
+        type: boolean
+    secrets:
+      CLIENT_CERT:
+        required: true
+      CLIENT_KEY:
+        required: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.ref }}
+
+      - name: Create NGINX config and certificates
+        shell: bash
+        env:
+          CLIENT_CERT: ${{ secrets.CLIENT_CERT }}
+          CLIENT_KEY: ${{ secrets.CLIENT_KEY }}
+        run: |
+
+          mkdir -p nginx/certs  
+
+          # Copy the NGINX config
+          cp .github/workflows/nginx.conf nginx/nginx.conf
+
+          # Decode and save the client certificate and key
+          echo "$CLIENT_CERT" | base64 -d > nginx/certs/client-cert.pem
+          echo "$CLIENT_KEY" | base64 -d > nginx/certs/client-key.pem
+  
+      - name: Start NGINX Proxy
+        run: |
+          docker run -d --name nginx-proxy \
+            -v $PWD/nginx/nginx.conf:/etc/nginx/nginx.conf:ro \
+            -v $PWD/nginx/certs:/etc/nginx/certs:ro \
+            -p 8090:80 nginx:alpine
+  
+            sleep 5  # Give NGINX some time to start
+
+            for i in {1..5}; do
+            if curl --head --silent --fail http://localhost:8090; then
+              echo "NGINX is responding."
+              break
+            else
+              echo "NGINX not responding. Attempt $i"
+              sleep 2
+              if [ $i -eq 5 ]; then
+              echo "NGINX is still not responding after $i attempts."
+              exit 1
+              fi
+            fi
+            done
+    
+      - name: Remove package cache to enable the Java  validator to create snapshots
+        run: |
+          if $INPUT_JAVA_SNAPSHOT_ENABLED; then
+            fhirCacheLocation=$(fhir cache location --path)
+            rm -rf $fhirCacheLocation
+          fi
+        shell: bash
+        env:
+          INPUT_JAVA_SNAPSHOT_ENABLED: ${{ inputs.JAVA_SNAPSHOT_ENABLED }}
+      
+      - name: Check if Java is installed
+        run: |
+          if $INPUT_JAVA_VALIDATION_ENABLED; then
+            if ! command -v java &> /dev/null
+            then
+                echo "java could not be found. Please see actions/setup-java to set it up before running this action."
+                exit 1
+            fi
+          fi
+        shell: bash
+        env:
+          INPUT_JAVA_VALIDATION_ENABLED: ${{ inputs.JAVA_VALIDATION_ENABLED }}
+      
+      - name: Download Java Validator
+        run: |
+          if $INPUT_JAVA_VALIDATION_ENABLED; then
+            CHECK_JAVA_VERSION=$(java -version 2>&1 | head -1 | cut -d'"' -f2)
+            echo "JAVA_VERSION: $CHECK_JAVA_VERSION"
+            echo "JAVA_VALIDATOR_VERSION: $JAVA_VALIDATOR_VERSION"
+            JAVA_VALIDATOR_DOWNLOAD_LOCATION=$(eval echo "$JAVA_VALIDATOR_DOWNLOAD_LOCATION")
+            echo "JAVA_VALIDATOR_DOWNLOAD_LOCATION: $JAVA_VALIDATOR_DOWNLOAD_LOCATION"
+            
+            wget -q $JAVA_VALIDATOR_DOWNLOAD_LOCATION -O validator_cli.jar
+          fi
+        shell: bash
+        env:
+         JAVA_VALIDATOR_VERSION: ${{ inputs.JAVA_VALIDATOR_VERSION }}
+         JAVA_VALIDATOR_DOWNLOAD_LOCATION: ${{ inputs.JAVA_VALIDATOR_DOWNLOAD_LOCATION }}
+         INPUT_JAVA_VALIDATION_ENABLED: ${{ inputs.JAVA_VALIDATION_ENABLED }}
+        
+      - name: Install jq
+        run: |
+          if $INPUT_JAVA_VALIDATION_ENABLED; then 
+            sudo apt-get update > /dev/null
+            sudo apt-get install --no-install-recommends -y jq findutils curl ca-certificates > /dev/null
+          fi
+        shell: bash
+        env:
+         INPUT_JAVA_VALIDATION_ENABLED: ${{ inputs.JAVA_VALIDATION_ENABLED }}
+            
+      - name: Validate all resources in scope of the repository
+        run: |
+  
+          # Define color codes
+          ERROR=$'\033[0;31m'
+          WARN=$'\033[0;33m'
+          INFO=$'\033[0;34m'
+          OK=$'\033[0;32m'
+          NC=$'\033[0m'
+                
+          if $INPUT_JAVA_VALIDATION_ENABLED; then
+            echo "Starting validation using Java validator ..."
+            IG_DEPENDENCIES=$(jq -r '(.dependencies) | to_entries | map("-ig " + .key + "#" + .value) | join(" ")' package.json)
+            echo "IG_DEPENDENCIES: $IG_DEPENDENCIES"
+            
+            for p in $INPUT_PATH_TO_CONFORMANCE_RESOURCES; # Get combined path to conformance resources, we want to provide all other directories as context for the current validation
+            do  
+              LOCAL_IG_PARAMETERS+="-ig $GITHUB_WORKSPACE/$p "
+            done
+            
+            for p in $INPUT_PATH_TO_CONFORMANCE_RESOURCES; 
+            do
+            
+              # Ensure directory ends with "/"
+              if [[ ! "$p" =~ .*/$ ]]; then
+                p="$p/"
+              fi
+              
+              UNESCPAED_IG_DEPENDENCIES=$(echo $IG_DEPENDENCIES | tr -d '"')
+              
+              javaValidatorOutput=$(java -jar validator_cli.jar $GITHUB_WORKSPACE/$p*.xml $GITHUB_WORKSPACE/$p*.json -version $FHIR_VERSION $INPUT_JAVA_VALIDATION_OPTIONS $UNESCPAED_IG_DEPENDENCIES $LOCAL_IG_PARAMETERS -tx http://127.0.0.1:8090/fhir || true)
+  
+              javaValidatorOutput=$(echo "$javaValidatorOutput" | sed -E "
+                s/(:[[:space:]]*)Error([[:space:]]+-)/\1${ERROR}Error${NC}\2/g;
+                s/(:[[:space:]]*)Warning([[:space:]]+-)/\1${WARN}Warning${NC}\2/g;
+                s/(:[[:space:]]*)Information([[:space:]]+-)/\1${INFO}Information${NC}\2/g;
+                s/(-[[:space:]]+)All OK/\1${OK}All OK${NC}/g
+              ")
+  
+              echo -e "$javaValidatorOutput"
+
+              if echo "$javaValidatorOutput" | grep -q "\*FAILURE\*"; then
+                echo "Validation failed with errors"
+                exit 1
+              fi
+              
+            done
+          fi
+          echo "Finished validation using Java validator ..."
+        shell: bash
+        env:
+          FHIR_VERSION: "4.0"
+          INPUT_PATH_TO_CONFORMANCE_RESOURCES: ${{ inputs.PATH_TO_CONFORMANCE_RESOURCES }}
+          INPUT_JAVA_VALIDATION_ENABLED: ${{ inputs.JAVA_VALIDATION_ENABLED }}
+          INPUT_JAVA_VALIDATION_OPTIONS: ${{ inputs.JAVA_VALIDATION_OPTIONS }}
+    
