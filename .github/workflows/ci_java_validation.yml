@@ -42,9 +42,11 @@ on:
         required: false
         type: boolean
     secrets:
-      CLIENT_CERT:
+      CDS_DEV_CLIENT_CERT:
         required: true
-      CLIENT_KEY:
+      CDS_DEV_CLIENT_KEY:
+        required: true
+      CDS_DEV_CLIENT_CERT_PASSWORD:
         required: true
 
 jobs:
@@ -59,8 +61,9 @@ jobs:
       - name: Create NGINX config and certificates
         shell: bash
         env:
-          CLIENT_CERT: ${{ secrets.CLIENT_CERT }}
-          CLIENT_KEY: ${{ secrets.CLIENT_KEY }}
+          CDS_DEV_CLIENT_CERT: ${{ secrets.CDS_DEV_CLIENT_CERT }}
+          CDS_DEV_CLIENT_KEY: ${{ secrets.CDS_DEV_CLIENT_KEY }}
+          CDS_DEV_CLIENT_CERT_PASSWORD: ${{ secrets.CDS_DEV_CLIENT_CERT_PASSWORD }}
         run: |
 
           mkdir -p nginx/certs  
@@ -69,8 +72,11 @@ jobs:
           cp .github/workflows/nginx.conf nginx/nginx.conf
 
           # Decode and save the client certificate and key
-          echo "$CLIENT_CERT" | base64 -d > nginx/certs/client-cert.pem
-          echo "$CLIENT_KEY" | base64 -d > nginx/certs/client-key.pem
+          echo "$CDS_DEV_CLIENT_CERT" | base64 -d > nginx/certs/client-cert.pem
+          echo "$CDS_DEV_CLIENT_KEY" | base64 -d > nginx/certs/client-key-encrypted.key
+
+          # Decrypt the private key using OpenSSL
+          openssl rsa -in nginx/certs/client-key-encrypted.key -out nginx/certs/client-key.key -passin env:CDS_DEV_CLIENT_CERT_PASSWORD
   
       - name: Start NGINX Proxy
         run: |
