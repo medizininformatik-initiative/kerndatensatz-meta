@@ -8,10 +8,21 @@ on:
   workflow_dispatch:
 
 jobs:
-  CI_FHIR_VALIDATION:
-    uses: ./.github/workflows/ci_fhir_validation.yml
+  DOTNET_FHIR_VALIDATION:
+    uses: ./.github/workflows/ci_dotnet_validation.yml
     with:
       ref: ${{ github.event.pull_request.head.ref }}
+    secrets: inherit
+
+  JAVA_FHIR_VALIDATION:
+    uses: ./.github/workflows/ci_java_validation.yml
+    with:
+      ref: ${{ github.event.pull_request.head.ref }}
+      PATH_TO_CONFORMANCE_RESOURCES: fsh-generated/resources
+      PATH_TO_EXAMPLES: fsh-generated/resources
+      JAVA_VALIDATION_ENABLED: true
+      JAVA_VALIDATION_OPTIONS: -advisor-file advisor.json -resolution-context file:fsh-generated/resources/ -show-message-ids
+      JAVA_VALIDATOR_VERSION: 6.5.15
     secrets: inherit
 
   CI_SEARCH_PARAM_TEST:
