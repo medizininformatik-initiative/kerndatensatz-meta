@@ -192,7 +192,7 @@ jobs:
   
               echo -e "$javaValidatorOutput"
 
-              if echo "$javaValidatorOutput" | grep -q "\*FAILURE\*"; then
+              if echo "$javaValidatorOutput" | grep -F "*FAILURE*"; then
                 echo "Validation failed with errors"
                 exit 1
               fi
