@@ -69,7 +69,10 @@ jobs:
           mkdir -p nginx/certs  
 
           # Copy the NGINX config
-          cp .github/workflows/nginx.conf nginx/nginx.conf
+          # cp .github/workflows/nginx.conf nginx/nginx.conf
+
+          # Download the NGINX config
+          curl -sSL -o nginx/nginx.conf https://raw.githubusercontent.com/medizininformatik-initiative/kerndatensatz-meta/refs/heads/master/.github/workflows/nginx.conf
 
           # Decode and save the client certificate and key
           echo "$CDS_DEV_CLIENT_CERT" | base64 -d > nginx/certs/client-cert.pem
