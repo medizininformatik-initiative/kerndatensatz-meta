@@ -22,7 +22,7 @@ jobs:
       PATH_TO_EXAMPLES: fsh-generated/resources
       JAVA_VALIDATION_ENABLED: true
       JAVA_VALIDATION_OPTIONS: -advisor-file advisor.json -resolution-context file:fsh-generated/resources/ -show-message-ids
-      JAVA_VALIDATOR_VERSION: 6.5.15
+      JAVA_VALIDATOR_VERSION: ${{ vars.JAVA_VALIDATOR_VERSION }}
     secrets: inherit
 
   CI_SEARCH_PARAM_TEST:
