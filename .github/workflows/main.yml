@@ -12,6 +12,7 @@ jobs:
     uses: ./.github/workflows/ci_dotnet_validation.yml
     with:
       ref: ${{ github.event.pull_request.head.ref }}
+      SUSHI_VERSION: ${{ vars.SUSHI_VERSION }}
     secrets: inherit
 
   JAVA_FHIR_VALIDATION:
