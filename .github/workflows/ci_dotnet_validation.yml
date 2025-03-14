@@ -6,6 +6,9 @@ on:
       ref:
         required: true
         type: string
+      SUSHI_VERSION:
+        required: true
+        type: string
     secrets:
       SIMPLIFIER_USERNAME:
         required: true
@@ -33,7 +36,7 @@ jobs:
           SIMPLIFIER_USERNAME: ${{ secrets.SIMPLIFIER_USERNAME }}
           SIMPLIFIER_PASSWORD: ${{ secrets.SIMPLIFIER_PASSWORD }}
           SUSHI_ENABLED: true 
-          SUSHI_VERSION: 3.14.0
+          SUSHI_VERSION: ${{ inputs.SUSHI_VERSION }}
           #JAVA_VALIDATOR_VERSION: 6.5.7
           EXPECTED_FAILS: VALIDATION_CONFORMANCE_DOTNET #VALIDATION_CONFORMANCE_JAVA VALIDATION_EXAMPLES_JAVA
           #JAVA_SNAPSHOT_ENABLED: true
