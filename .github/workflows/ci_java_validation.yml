@@ -192,6 +192,12 @@ jobs:
                 s/(:[[:space:]]*)Information([[:space:]]+-)/\1${INFO}Information${NC}\2/g;
                 s/(-[[:space:]]+)All OK/\1${OK}All OK${NC}/g
               ")
+
+              if [ -f txlog.txt ]; then
+                echo "------ Terminology queries log (txlog.txt) ------"
+                cat txlog.txt
+                echo "---------------------------------------"
+              fi
   
               echo -e "$javaValidatorOutput"
 
