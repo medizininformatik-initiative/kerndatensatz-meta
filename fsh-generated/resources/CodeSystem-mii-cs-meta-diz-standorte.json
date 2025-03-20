@@ -137,6 +137,10 @@
           "valueString": "SMITH"
         },
         {
+          "code": "uri",
+          "valueString": "rub.de"
+        },
+        {
           "code": "status",
           "valueCode": "active"
         },
@@ -1209,7 +1213,7 @@
       }
     }
   ],
-  "date": "2025-02-26",
+  "date": "2025-03-20",
   "caseSensitive": true,
   "compositional": false,
   "copyright": "Medizininformatik-Initiative",
