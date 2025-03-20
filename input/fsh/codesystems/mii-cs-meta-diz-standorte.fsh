@@ -37,7 +37,7 @@ Description: "Medizininformatik-Initiative Standorte"
 * insert Publisher
 * insert PR_CS_VS_Version
 * insert LicenseCodeableCCBY40
-* ^date = "2025-02-26"
+* ^date = "2025-03-20"
 * ^status = #active
 * ^caseSensitive = true
 * ^compositional = false
@@ -92,6 +92,7 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UKOWL insert AddTRV(V6.14)
 * #UKRUB "Universitätsklinikum der Ruhr-Universität Bochum" "Bochum"
 * #UKRUB insert AddKonsortium(SMITH)
+* #UKRUB insert AddUri(rub.de)
 * #UKRUB insert AddStatus(active)
 * #UKRUB insert AddTRV(V6.15)
 * #UKB "Universitätsklinikum Bonn" "Bonn"
