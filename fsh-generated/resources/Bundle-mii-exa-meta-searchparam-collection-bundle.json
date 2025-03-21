@@ -2147,21 +2147,17 @@
         "name": "MII_SP_Meta_Medication_PartOf",
         "status": "active",
         "experimental": false,
-        "date": "2024-11-14",
-        "description": "Suchparameter für (MedicationAdministration|MedicationStatement).partOf",
+        "date": "2025-03-21",
+        "description": "Suchparameter für MedicationAdministration.partOf",
         "code": "part-of",
         "base": [
-          "MedicationStatement",
           "MedicationAdministration"
         ],
         "type": "reference",
-        "expression": "MedicationAdministration.partOf | MedicationStatement.partOf",
+        "expression": "MedicationAdministration.partOf",
         "target": [
           "MedicationAdministration",
-          "Procedure",
-          "MedicationDispense",
-          "MedicationStatement",
-          "Observation"
+          "Procedure"
         ]
       }
     },
