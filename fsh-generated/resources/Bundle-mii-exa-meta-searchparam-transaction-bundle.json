@@ -15,7 +15,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-adresszusatz",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -69,7 +69,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-assignerpid",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -123,7 +123,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchsubject-consent",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -180,7 +180,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-gemeindeschluessel",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -234,7 +234,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-hausnummer",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -288,7 +288,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-otheramtlich",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -342,7 +342,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-postfach",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -396,7 +396,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-prefix",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -450,7 +450,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-prefixqualifier",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -504,7 +504,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-stadtteil",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -558,7 +558,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-strasse",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -612,7 +612,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-icd10gm-diagnosesicherheit",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -666,7 +666,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-icd10gm-mehrfachcodierung",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -720,7 +720,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-icd10gm-seitenlokalisation",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -774,7 +774,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-bodysite",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -828,7 +828,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-dokumentationsdatum",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -882,7 +882,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-durchfuehrungsabsicht",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -947,7 +947,7 @@
             ]
           }
         ],
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "extension": [
           {
             "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -1001,7 +1001,7 @@
             ]
           }
         ],
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "extension": [
           {
             "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -1055,7 +1055,7 @@
             ]
           }
         ],
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "extension": [
           {
             "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -1109,7 +1109,7 @@
             ]
           }
         ],
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "extension": [
           {
             "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -1163,7 +1163,7 @@
             ]
           }
         ],
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "extension": [
           {
             "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -1224,7 +1224,7 @@
             ]
           }
         ],
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "extension": [
           {
             "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -1285,7 +1285,7 @@
             ]
           }
         ],
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "extension": [
           {
             "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -1349,7 +1349,7 @@
             ]
           }
         ],
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "extension": [
           {
             "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -1409,7 +1409,7 @@
             ]
           }
         ],
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "extension": [
           {
             "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -1472,7 +1472,7 @@
             ]
           }
         ],
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "extension": [
           {
             "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -1535,7 +1535,7 @@
             ]
           }
         ],
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "extension": [
           {
             "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -1597,7 +1597,7 @@
             ]
           }
         ],
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "extension": [
           {
             "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -1659,7 +1659,7 @@
             ]
           }
         ],
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "extension": [
           {
             "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -1724,7 +1724,7 @@
             ]
           }
         ],
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "extension": [
           {
             "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -1787,7 +1787,7 @@
             ]
           }
         ],
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "extension": [
           {
             "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -1850,7 +1850,7 @@
             ]
           }
         ],
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "extension": [
           {
             "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -1913,7 +1913,7 @@
             ]
           }
         ],
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "extension": [
           {
             "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -1979,7 +1979,7 @@
             ]
           }
         ],
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "extension": [
           {
             "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -2041,7 +2041,7 @@
             ]
           }
         ],
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "extension": [
           {
             "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -2103,7 +2103,7 @@
             ]
           }
         ],
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "extension": [
           {
             "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -2168,7 +2168,7 @@
             ]
           }
         ],
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "extension": [
           {
             "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -2231,7 +2231,7 @@
             ]
           }
         ],
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "extension": [
           {
             "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -2285,7 +2285,7 @@
             ]
           }
         ],
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "extension": [
           {
             "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -2332,7 +2332,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-policyuri",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -2388,7 +2388,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-provisioncode",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -2444,7 +2444,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-provisioncodeperiod",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -2508,7 +2508,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-provisioncodetype",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -2572,7 +2572,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-provisionperiod",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -2628,7 +2628,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-provisiontype",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -2684,7 +2684,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-diagnose",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -2755,7 +2755,7 @@
             ]
           }
         ],
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "extension": [
           {
             "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -2809,7 +2809,7 @@
             ]
           }
         ],
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "extension": [
           {
             "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -2863,7 +2863,7 @@
             ]
           }
         ],
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "extension": [
           {
             "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -2923,7 +2923,7 @@
             ]
           }
         ],
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "extension": [
           {
             "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -2977,7 +2977,7 @@
             ]
           }
         ],
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "extension": [
           {
             "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -3034,7 +3034,7 @@
             ]
           }
         ],
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "extension": [
           {
             "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -3091,7 +3091,7 @@
             ]
           }
         ],
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "extension": [
           {
             "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -3145,7 +3145,7 @@
             ]
           }
         ],
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "extension": [
           {
             "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -3196,7 +3196,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-request",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -3250,7 +3250,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-collection-method",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -3304,7 +3304,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-collection-body-site",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -3358,7 +3358,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-processing-procedure",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -3412,7 +3412,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-processing-additive",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -3466,7 +3466,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-processing-date",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -3520,7 +3520,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-container-additive",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -3574,7 +3574,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-value-ratio",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -3638,7 +3638,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-value-ratio-numerator",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -3692,7 +3692,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-value-ratio-denominator",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -3746,7 +3746,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-servicerequest-supportinginfo",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -3800,7 +3800,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-diagnosticreport-imagingstudy",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -3854,7 +3854,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-composition-attester-mode",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -3908,7 +3908,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-composition-custodian",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -3962,7 +3962,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-composition-relatesto-code",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -4016,7 +4016,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-media-partof",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -4081,7 +4081,7 @@
             ]
           }
         ],
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "extension": [
           {
             "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -4135,7 +4135,7 @@
             ]
           }
         ],
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "extension": [
           {
             "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -4178,7 +4178,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-bodysite",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -4243,7 +4243,7 @@
             ]
           }
         ],
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "extension": [
           {
             "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -4297,7 +4297,7 @@
             ]
           }
         ],
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "extension": [
           {
             "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -4361,7 +4361,7 @@
             ]
           }
         ],
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "extension": [
           {
             "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -4415,7 +4415,7 @@
             ]
           }
         ],
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "extension": [
           {
             "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -4469,7 +4469,7 @@
             ]
           }
         ],
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "extension": [
           {
             "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -4523,7 +4523,7 @@
             ]
           }
         ],
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "extension": [
           {
             "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -4566,7 +4566,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-documentreference-attachment-title",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -4620,7 +4620,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-documentreference-attachment-size",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -4674,7 +4674,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-evidencevariable-characteristic-description",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -4728,7 +4728,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-library-quellregister",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -4782,7 +4782,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-library-relatedartifact-url",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -4836,7 +4836,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-arm-name",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -4890,7 +4890,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-label",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -4944,7 +4944,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-akronym",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -4998,7 +4998,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-finanzierung",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -5052,7 +5052,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-studienregister",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -5106,7 +5106,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-rekrutierungsstand-datum",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -5160,7 +5160,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-rekrutierungsstand-genauigkeit",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -5214,7 +5214,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-rekrutierungsstand",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -5268,7 +5268,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-rekrutierungsziel",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -5322,7 +5322,7 @@
           ]
         },
         "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-rekrutierungsstart",
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -5401,7 +5401,7 @@
             }
           }
         ],
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "experimental": false,
         "date": "2024-10-24",
         "name": "MII_SP_Meta_Condition_Verification_Status",
@@ -5455,7 +5455,7 @@
             }
           }
         ],
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "experimental": false,
         "date": "2024-10-24",
         "name": "MII_SP_Meta_Observation_hasMember",
@@ -5509,7 +5509,7 @@
             }
           }
         ],
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "experimental": false,
         "date": "2024-10-24",
         "name": "MII_SP_Meta_Procedure_Complication",
@@ -5563,7 +5563,7 @@
             }
           }
         ],
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "date": "2024-11-07",
         "experimental": false,
         "name": "MII_SP_Meta_Procedure_Outcome",
@@ -5617,7 +5617,7 @@
             }
           }
         ],
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "experimental": false,
         "date": "2024-10-24",
         "name": "MII_SP_Meta_AdverseEvent_SuspectEntity_Instance",
@@ -5671,7 +5671,7 @@
             }
           }
         ],
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "experimental": false,
         "date": "2024-10-24",
         "name": "MII_SP_Meta_AdverseEvent_Encounter",
@@ -5725,7 +5725,7 @@
             }
           }
         ],
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "experimental": false,
         "date": "2024-10-24",
         "name": "MII_SP_Meta_CarePlan_Created",
@@ -5779,7 +5779,7 @@
             }
           }
         ],
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "experimental": false,
         "date": "2024-10-24",
         "name": "MII_SP_Meta_CarePlan_Contributor",
@@ -5833,7 +5833,7 @@
             }
           }
         ],
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "experimental": false,
         "date": "2024-10-24",
         "name": "MII_SP_Meta_CarePlan_Addresses",
@@ -5887,7 +5887,7 @@
             }
           }
         ],
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "experimental": false,
         "date": "2024-10-24",
         "name": "MII_SP_Meta_Observation_Focus",
@@ -5941,7 +5941,7 @@
             }
           }
         ],
-        "version": "2025.0.0",
+        "version": "2025.0.1",
         "experimental": false,
         "date": "2024-10-24",
         "name": "MII_SP_Meta_Observation_Encounter",
