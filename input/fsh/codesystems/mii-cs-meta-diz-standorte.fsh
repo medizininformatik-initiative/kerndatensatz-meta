@@ -37,7 +37,7 @@ Description: "Medizininformatik-Initiative Standorte"
 * insert Publisher
 * insert PR_CS_VS_Version
 * insert LicenseCodeableCCBY40
-* ^date = "2025-03-20"
+* ^date = "2025-03-28"
 * ^status = #active
 * ^caseSensitive = true
 * ^compositional = false
@@ -85,7 +85,7 @@ Description: "Medizininformatik-Initiative Standorte"
 * #VIV insert AddUri(vivantes.de)
 * #VIV insert AddStatus(active)
 * #VIV insert AddTRV(V6.15)
-* #UKOWL "Universitätsklinikum OWL" "Bielefeld"
+* #UKOWL "Universität Bielefeld / Universitätsklinikum OWL" "Bielefeld"
 * #UKOWL insert AddKonsortium(HiGHmed)
 * #UKOWL insert AddUri(ukowl.de)
 * #UKOWL insert AddStatus(active)
