@@ -193,10 +193,10 @@ jobs:
                 s/(-[[:space:]]+)All OK/\1${OK}All OK${NC}/g
               ")
 
-              if [ -f txlog.txt ]; then
-                echo "------ Terminology queries log (txlog.txt) ------"
-                cat txlog.txt
-                echo "---------------------------------------"
+              if [ -f txlog.html ]; then
+                echo "------ Terminology queries log (txlog.html, rendered) ------"
+                html2text txlog.html | sed 's/^[ \t]*//'
+                echo "-----------------------------------------------------------"
               fi
   
               echo -e "$javaValidatorOutput"
@@ -215,4 +215,13 @@ jobs:
           INPUT_PATH_TO_CONFORMANCE_RESOURCES: ${{ inputs.PATH_TO_CONFORMANCE_RESOURCES }}
           INPUT_JAVA_VALIDATION_ENABLED: ${{ inputs.JAVA_VALIDATION_ENABLED }}
           INPUT_JAVA_VALIDATION_OPTIONS: ${{ inputs.JAVA_VALIDATION_OPTIONS }}
+
+      - name: Upload txlog and validation output
+        uses: actions/upload-artifact@v4
+        with:
+          name: validation-output
+          path: |
+            txlog.html
+            validation.txt
+            validation.html
     
