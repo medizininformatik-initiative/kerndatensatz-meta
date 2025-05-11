@@ -222,6 +222,7 @@ jobs:
           INPUT_JAVA_VALIDATION_OPTIONS: ${{ inputs.JAVA_VALIDATION_OPTIONS }}
 
       - name: Upload txlog and validation output
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: validation-output
