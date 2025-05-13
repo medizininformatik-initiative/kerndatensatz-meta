@@ -124,7 +124,7 @@ Usage: #definition
 * type = #number
 * expression = "RequestGroup.extension[Prioritaet]"
 
-Instance: mii-sp-meta-mtb-extension-evidenzgraduierung
+Instance: mii-sp-meta-mtb-extension-requestgroup-evidenzgraduierung
 InstanceOf: MII_PR_Meta_SearchParameter
 Usage: #definition
 //* url = "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/SearchParameter/Encounter-location-physicalType"
@@ -137,11 +137,27 @@ Usage: #definition
 * experimental = false
 * date = "2025-05-26"
 * description = "Suchparameter für *.extension[Evidenzgraduierung]"
-* code = #evidenzgraduierung
+* code = #rg-evidenzgraduierung
 * base[+] = #RequestGroup 
-* base[+] = #MedicationRequest
 * type = #token
 * expression[+] = "RequestGroup.extension[Evidenzgraduierung]"
+
+Instance: mii-sp-meta-mtb-extension-medicationrequest-evidenzgraduierung
+InstanceOf: MII_PR_Meta_SearchParameter
+Usage: #definition
+//* url = "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/SearchParameter/Encounter-location-physicalType"
+* insert SP_Publisher
+* insert Version
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
+* name = "MII_SP_Meta_Extension_Evidenzgraduierung"
+* status = #draft
+* experimental = false
+* date = "2025-05-26"
+* description = "Suchparameter für *.extension[Evidenzgraduierung]"
+* code = #mr-evidenzgraduierung
+* base[+] = #MedicationRequest
+* type = #token
 * expression[+] = "MedicationRequest.extension[Evidenzgraduierung]"
 
 Instance: mii-sp-meta-mtb-request-group-extension-publikation
