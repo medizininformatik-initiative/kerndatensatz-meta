@@ -37,7 +37,7 @@
   "status": "draft",
   "experimental": false,
   "date": "2025-05-26",
-  "description": "Suchparameter für Observation.component[LOH].valueInteger im MTB HRD-Score.",
+  "description": "Suchparameter für Observation.component[LOH].valueInteger (Loss of Heterozygosity) im MTB HRD-Score.",
   "code": "hrd-component-loh",
   "base": [
     "Observation"
