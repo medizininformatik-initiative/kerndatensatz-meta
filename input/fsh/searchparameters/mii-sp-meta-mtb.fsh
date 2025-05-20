@@ -501,3 +501,57 @@ Usage: #definition
 * base = #Observation
 * type = #quantity
 * expression = "Observation.valueRange.low"
+
+Instance: mii-sp-meta-mtb-hrd-score-lst
+InstanceOf: MII_PR_Meta_SearchParameter
+Usage: #definition
+//* url = "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/SearchParameter/Encounter-location-physicalType"
+* insert SP_Publisher
+* insert Version
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
+* name = "MII_SP_Meta_Observation_HRD_Score_LST"
+* status = #draft
+* experimental = false
+* date = "2025-05-26"
+* description = "Suchparameter für Observation.component[LST].valueInteger (Large-Scale State Transition) im MTB HRD-Score."
+* code = #hrd-component-lst
+* base = #Observation
+* type = #number
+* expression = "Observation.component.where(code.coding.where(system = 'https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem-ncit.html' and code = 'C120466').exists()).value"
+
+Instance: mii-sp-meta-mtb-hrd-score-tai
+InstanceOf: MII_PR_Meta_SearchParameter
+Usage: #definition
+//* url = "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/SearchParameter/Encounter-location-physicalType"
+* insert SP_Publisher
+* insert Version
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
+* name = "MII_SP_Meta_Observation_HRD_Score_TAI"
+* status = #draft
+* experimental = false
+* date = "2025-05-26"
+* description = "Suchparameter für Observation.component[TAI].valueInteger (Telomeric Allelic Imbalance) im MTB HRD-Score."
+* code = #hrd-component-tai
+* base = #Observation
+* type = #number
+* expression = "Observation.component.where(code.coding.where(system = 'https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem-ncit.html' and code = 'C129774').exists()).value"
+
+Instance: mii-sp-meta-mtb-hrd-score-loh
+InstanceOf: MII_PR_Meta_SearchParameter
+Usage: #definition
+//* url = "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/SearchParameter/Encounter-location-physicalType"
+* insert SP_Publisher
+* insert Version
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
+* name = "MII_SP_Meta_Observation_HRD_Score_LOH"
+* status = #draft
+* experimental = false
+* date = "2025-05-26"
+* description = "Suchparameter für Observation.component[LOH].valueInteger (Loss of Heterozygosity) im MTB HRD-Score."
+* code = #hrd-component-loh
+* base = #Observation
+* type = #number
+* expression = "Observation.component.where(code.coding.where(system = 'https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem-ncit.html' and code = 'C18016').exists()).value"
