@@ -1,12 +1,12 @@
 {
   "resourceType": "SearchParameter",
-  "id": "mii-sp-meta-mtb-medicationrequest-supporting-info",
+  "id": "mii-sp-meta-mtb-requestgroup-action-resource",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
     ]
   },
-  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-mtb-medicationrequest-supporting-info",
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-mtb-requestgroup-action-resource",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -33,15 +33,15 @@
       }
     }
   ],
-  "name": "MII_SP_Meta_MedicationRequest_SupportingInfo",
+  "name": "MII_SP_Meta_RequestGroup_Resource",
   "status": "draft",
   "experimental": false,
   "date": "2025-05-26",
-  "description": "Suchparameter für MedicationRequest.supportingInfo in der MTB Therapieempfehlung.",
-  "code": "supporting-info",
+  "description": "Suchparameter für RequestGroup.action.resource in der MTB Therapieempfehlung.",
+  "code": "action-resource",
   "base": [
-    "MedicationRequest"
+    "RequestGroup"
   ],
   "type": "reference",
-  "expression": "MedicationRequest.supportingInformation"
+  "expression": "RequestGroup.action.resource"
 }
