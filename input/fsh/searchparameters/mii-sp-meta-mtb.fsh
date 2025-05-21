@@ -555,3 +555,22 @@ Usage: #definition
 * base = #Observation
 * type = #number
 * expression = "Observation.component.where(code.coding.where(system = 'https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem-ncit.html' and code = 'C18016').exists()).value"
+
+
+Instance: mii-sp-meta-mtb-medicationrequest-supporting-info
+InstanceOf: MII_PR_Meta_SearchParameter
+Usage: #definition
+//* url = "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/SearchParameter/Encounter-location-physicalType"
+* insert SP_Publisher
+* insert Version
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
+* name = "MII_SP_Meta_MedicationRequest_SupportingInfo"
+* status = #draft
+* experimental = false
+* date = "2025-05-26"
+* description = "Suchparameter für MedicationRequest.supportingInfo in der MTB Therapieempfehlung."
+* code = #hrd-component-loh
+* base = #Observation
+* type = #number
+* expression = "MedicationRequest.supportingInformation"
