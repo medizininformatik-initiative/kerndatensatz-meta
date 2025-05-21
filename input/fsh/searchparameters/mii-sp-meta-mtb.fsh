@@ -571,6 +571,6 @@ Usage: #definition
 * date = "2025-05-26"
 * description = "Suchparameter für MedicationRequest.supportingInfo in der MTB Therapieempfehlung."
 * code = #medicationrequest-supporting-info
-* base = #MedicationRequestn
+* base = #MedicationRequest
 * type = #reference
 * expression = "MedicationRequest.supportingInformation"
