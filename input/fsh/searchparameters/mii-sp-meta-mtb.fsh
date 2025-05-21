@@ -518,7 +518,9 @@ Usage: #definition
 * code = #hrd-component-lst
 * base = #Observation
 * type = #number
-* expression = "Observation.component.where(code.coding.where(system = 'https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem-ncit.html' and code = 'C120466').exists()).value"
+* expression = "Observation.component[LST].valueInteger"
+
+// * expression = "Observation.component.where(code.coding.where(system = 'https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem-ncit.html' and code = 'C120466').exists()).value"
 
 Instance: mii-sp-meta-mtb-hrd-score-tai
 InstanceOf: MII_PR_Meta_SearchParameter
@@ -536,7 +538,8 @@ Usage: #definition
 * code = #hrd-component-tai
 * base = #Observation
 * type = #number
-* expression = "Observation.component.where(code.coding.where(system = 'https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem-ncit.html' and code = 'C129774').exists()).value"
+* expression = "Observation.component[TAI].valueInteger"
+// * expression = "Observation.component.where(code.coding.where(system = 'https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem-ncit.html' and code = 'C129774').exists()).value"
 
 Instance: mii-sp-meta-mtb-hrd-score-loh
 InstanceOf: MII_PR_Meta_SearchParameter
@@ -554,7 +557,8 @@ Usage: #definition
 * code = #hrd-component-loh
 * base = #Observation
 * type = #number
-* expression = "Observation.component.where(code.coding.where(system = 'https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem-ncit.html' and code = 'C18016').exists()).value"
+* expression = "Observation.component[LOH].valueInteger"
+// * expression = "Observation.component.where(code.coding.where(system = 'https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem-ncit.html' and code = 'C18016').exists()).value"
 
 Instance: mii-sp-meta-mtb-medicationrequest-supporting-info
 InstanceOf: MII_PR_Meta_SearchParameter
