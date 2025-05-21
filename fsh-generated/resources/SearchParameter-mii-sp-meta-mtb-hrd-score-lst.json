@@ -43,5 +43,5 @@
     "Observation"
   ],
   "type": "number",
-  "expression": "Observation.component.where(code.coding.where(system = 'https://nih-ncpi.github.io/ncpi-fhir-ig/CodeSystem-ncit.html' and code = 'C120466').exists()).value"
+  "expression": "Observation.component[LST].valueInteger"
 }
