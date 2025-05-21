@@ -570,7 +570,7 @@ Usage: #definition
 * experimental = false
 * date = "2025-05-26"
 * description = "Suchparameter für MedicationRequest.supportingInfo in der MTB Therapieempfehlung."
-* code = #hrd-component-loh
-* base = #Observation
-* type = #number
+* code = #medicationrequest-supporting-info
+* base = #MedicationRequestn
+* type = #reference
 * expression = "MedicationRequest.supportingInformation"
