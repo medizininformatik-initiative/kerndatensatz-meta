@@ -37,11 +37,11 @@
   "status": "draft",
   "experimental": false,
   "date": "2025-05-26",
-  "description": "Suchparameter für Condition.extension[LeitlinenbehandlungStatus].extension[Therapielinie].valueUnsignedInt",
+  "description": "Suchparameter für ClinicalImpression.supportingInfo[Vortherapie].extension[LeitlinieDokumentation].extension[Therapielinie].valueUnsignedInt",
   "code": "leitlinie",
   "base": [
-    "Condition"
+    "ClinicalImpression"
   ],
   "type": "number",
-  "expression": "Condition.extension[LeitlinenbehandlungStatus].extension[Therapielinie].valueUnsignedInt"
+  "expression": "ClinicalImpression.supportingInfo.where.typeOf(Reference(MII_PR_MTB_Systemische_Vortherapie or MII_PR_Onko_Strahlentherapie or MII_PR_Onko_Operation or MII_PR_Prozedur_Procedure)).extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-leitlinie-dokumentation').extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-therapielinie').value"
 }

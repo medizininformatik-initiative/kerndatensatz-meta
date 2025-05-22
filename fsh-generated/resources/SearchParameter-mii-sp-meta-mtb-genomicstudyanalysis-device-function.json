@@ -43,5 +43,5 @@
     "Procedure"
   ],
   "type": "token",
-  "expression": "Procedure.extension.where(url='http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-device').extension.where(url='function').valueReference"
+  "expression": "Procedure.extension.where(url='http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-device').extension.where(url='function').value"
 }

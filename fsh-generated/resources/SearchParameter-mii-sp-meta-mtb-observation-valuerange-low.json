@@ -43,5 +43,5 @@
     "Observation"
   ],
   "type": "quantity",
-  "expression": "Observation.valueRange.low"
+  "expression": "Observation.value.typeOf(Range).low"
 }

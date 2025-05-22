@@ -43,5 +43,5 @@
     "Observation"
   ],
   "type": "quantity",
-  "expression": "Observation.valueRange.high"
+  "expression": "Observation.value.typeOf(range).high"
 }
