@@ -68,7 +68,7 @@ Usage: #definition
 * code = #leitlinie
 * base = #ClinicalImpression 
 * type = #number
-* expression = "ClinicalImpression.supportingInfo.where.typeOf(Reference(MII_PR_MTB_Systemische_Vortherapie or MII_PR_Onko_Strahlentherapie or MII_PR_Onko_Operation or MII_PR_Prozedur_Procedure)).extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-leitlinie-dokumentation').extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-therapielinie').value"
+* expression = "ClinicalImpression.supportingInfo.where.ofType(Reference(MII_PR_MTB_Systemische_Vortherapie or MII_PR_Onko_Strahlentherapie or MII_PR_Onko_Operation or MII_PR_Prozedur_Procedure)).extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-leitlinie-dokumentation').extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-therapielinie').value"
 
 Instance: mii-sp-meta-mtb-condition-leitlinie-zulassungsstatus
 InstanceOf: MII_PR_Meta_SearchParameter
@@ -86,7 +86,7 @@ Usage: #definition
 * code = #therapielinie
 * base = #Condition 
 * type = #token
-* expression = "ClinicalImpression.supportingInfo.where.typeOf(Reference(MII_PR_MTB_Systemische_Vortherapie or MII_PR_Onko_Strahlentherapie or MII_PR_Onko_Operation or MII_PR_Prozedur_Procedure)).extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-leitlinie-dokumentation').extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-zulassungsstatus').value"
+* expression = "ClinicalImpression.supportingInfo.where.ofType(Reference(MII_PR_MTB_Systemische_Vortherapie or MII_PR_Onko_Strahlentherapie or MII_PR_Onko_Operation or MII_PR_Prozedur_Procedure)).extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-leitlinie-dokumentation').extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-zulassungsstatus').value"
 
 Instance: mii-sp-meta-mtb-request-group-action-resource
 InstanceOf: MII_PR_Meta_SearchParameter
@@ -482,7 +482,7 @@ Usage: #definition
 * code = #component-value-range-high
 * base = #Observation
 * type = #quantity
-* expression = "Observation.value.typeOf(range).high"
+* expression = "Observation.value.ofType(range).high"
 
 Instance: mii-sp-meta-mtb-observation-valuerange-low
 InstanceOf: MII_PR_Meta_SearchParameter
@@ -500,7 +500,7 @@ Usage: #definition
 * code = #component-value-range-low
 * base = #Observation
 * type = #quantity
-* expression = "Observation.value.typeOf(Range).low"
+* expression = "Observation.value.ofType(Range).low"
 
 Instance: mii-sp-meta-mtb-hrd-score-lst
 InstanceOf: MII_PR_Meta_SearchParameter
