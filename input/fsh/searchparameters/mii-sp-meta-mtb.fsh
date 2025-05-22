@@ -68,7 +68,7 @@ Usage: #definition
 * code = #leitlinie
 * base = #ClinicalImpression 
 * type = #number
-* expression = "ClinicalImpression.supportingInfo.ofType(Reference(MII_PR_MTB_Systemische_Vortherapie) or Reference(MII_PR_Onko_Strahlentherapie) or Reference(MII_PR_Onko_Operation) or Reference(MII_PR_Prozedur_Procedure)).extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-leitlinie-dokumentation').extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-therapielinie').value"
+* expression = "ClinicalImpression.supportingInfo.ofType(MII_PR_MTB_Systemische_Vortherapie or MII_PR_Onko_Strahlentherapie or MII_PR_Onko_Operation or MII_PR_Prozedur_Procedure).extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-leitlinie-dokumentation').extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-therapielinie').value"
 
 Instance: mii-sp-meta-mtb-condition-leitlinie-zulassungsstatus
 InstanceOf: MII_PR_Meta_SearchParameter
@@ -82,9 +82,9 @@ Usage: #definition
 * status = #draft
 * experimental = false
 * date = "2025-05-26"
-* description = "Suchparameter für Condition.extension[LeitlinenbehandlungStatus].extension[Zulassungsstatus].valueCodeableConcept"
+* description = "Suchparameter für ClinicalImpression.extension[LeitlinenbehandlungStatus].extension[Zulassungsstatus].valueCodeableConcept"
 * code = #therapielinie
-* base = #Condition 
+* base = #ClinicalImpression 
 * type = #token
 * expression = "ClinicalImpression.supportingInfo.ofType(MII_PR_MTB_Systemische_Vortherapie or MII_PR_Onko_Strahlentherapie or MII_PR_Onko_Operation or MII_PR_Prozedur_Procedure).extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-leitlinie-dokumentation').extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-zulassungsstatus').value"
 
