@@ -14,7 +14,7 @@ Usage: #definition
 * code = #period-start
 * base = #ClinicalImpression 
 * type = #date
-* expression = "ClinicalImpression.effectivePeriod.start"
+* expression = "ClinicalImpression.effective.where(ofType(Period)).start"
 
 Instance: mii-sp-meta-mtb-clinicalimpression-effectiveperiod-end
 InstanceOf: MII_PR_Meta_SearchParameter
@@ -32,7 +32,7 @@ Usage: #definition
 * code = #period-end
 * base = #ClinicalImpression 
 * type = #date
-* expression = "ClinicalImpression.effectivePeriod.end"
+* expression = "ClinicalImpression.effective.where(ofType(Period)).end"
 
 Instance: mii-sp-meta-mtb-condition-stage-assessment
 InstanceOf: MII_PR_Meta_SearchParameter
