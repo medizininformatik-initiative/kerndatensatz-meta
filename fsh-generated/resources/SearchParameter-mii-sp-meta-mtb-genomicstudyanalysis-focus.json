@@ -43,5 +43,5 @@
     "Procedure"
   ],
   "type": "reference",
-  "expression": "GenomicStudyAnalysis.extension.where(http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-focus).reference"
+  "expression": "Procedure.extension.where(url=http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-focus).reference"
 }

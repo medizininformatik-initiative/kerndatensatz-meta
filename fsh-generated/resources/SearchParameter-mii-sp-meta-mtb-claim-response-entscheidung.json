@@ -43,5 +43,5 @@
     "ClaimResponse"
   ],
   "type": "token",
-  "expression": "ClaimResponse.extension.where(https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-antwort-kostenuebernahme-entscheidung).valueCodeableConcept"
+  "expression": "ClaimResponse.extension.where(url=https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-antwort-kostenuebernahme-entscheidung).valueCodeableConcept"
 }

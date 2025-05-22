@@ -43,5 +43,5 @@
     "ClinicalImpression"
   ],
   "type": "date",
-  "expression": "ClinicalImpression.effective.where(ofType(Period)).end"
+  "expression": "ClinicalImpression.effective.ofType(Period).end"
 }
