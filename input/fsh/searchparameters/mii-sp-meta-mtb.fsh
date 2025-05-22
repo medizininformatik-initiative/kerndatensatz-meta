@@ -14,7 +14,7 @@ Usage: #definition
 * code = #period-start
 * base = #ClinicalImpression 
 * type = #date
-* expression = "ClinicalImpression.effective.where(ofType(Period)).start"
+* expression = "ClinicalImpression.effective.ofType(Period).start"
 
 Instance: mii-sp-meta-mtb-clinicalimpression-effectiveperiod-end
 InstanceOf: MII_PR_Meta_SearchParameter
@@ -32,7 +32,7 @@ Usage: #definition
 * code = #period-end
 * base = #ClinicalImpression 
 * type = #date
-* expression = "ClinicalImpression.effective.where(ofType(Period)).end"
+* expression = "ClinicalImpression.effective.ofType(Period).end"
 
 Instance: mii-sp-meta-mtb-condition-stage-assessment
 InstanceOf: MII_PR_Meta_SearchParameter
@@ -176,7 +176,7 @@ Usage: #definition
 * code = #publikation
 * base = #RequestGroup 
 * type = #token // Nicht ganz klar, ob eventuell auch string möglich
-* expression = "RequestGroup.extension.where(https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-empfehlung-publikation)"
+* expression = "RequestGroup.extension.where(url=https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-empfehlung-publikation)"
 
 Instance: mii-sp-meta-mtb-careplan-activity-outcomereference
 InstanceOf: MII_PR_Meta_SearchParameter
@@ -266,7 +266,7 @@ Usage: #definition
 * code = #claimresponse-entscheidung
 * base = #ClaimResponse
 * type = #token
-* expression = "ClaimResponse.extension.where(https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-antwort-kostenuebernahme-entscheidung).valueCodeableConcept"
+* expression = "ClaimResponse.extension.where(url=https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-antwort-kostenuebernahme-entscheidung).valueCodeableConcept"
 
 Instance: mii-sp-meta-mtb-claim-response-ablehnungsgrund
 InstanceOf: MII_PR_Meta_SearchParameter
@@ -284,7 +284,7 @@ Usage: #definition
 * code = #claimresponse-ablehnungsgrund
 * base = #ClaimResponse
 * type = #token
-* expression = "ClaimResponse.extension.where(mii-ex-mtb-antwort-kostenuebernahme-ablehnungsgrund).valueCodeableConcept"
+* expression = "ClaimResponse.extension.where(url=mii-ex-mtb-antwort-kostenuebernahme-ablehnungsgrund).valueCodeableConcept"
 
 Instance: mii-sp-meta-mtb-medicationstatement-dosage
 InstanceOf: MII_PR_Meta_SearchParameter
@@ -338,7 +338,7 @@ Usage: #definition
 * code = #caused-by
 * base = #Procedure
 * type = #reference
-* expression = "Procedure.extension.where(http://hl7.org/fhir/StructureDefinition/procedure-causedBy).valueReference"
+* expression = "Procedure.extension.where(url=http://hl7.org/fhir/StructureDefinition/procedure-causedBy).valueReference"
 
 Instance: mii-sp-meta-mtb-procedure-note
 InstanceOf: MII_PR_Meta_SearchParameter
@@ -374,7 +374,7 @@ Usage: #definition
 * code = #method-type
 * base = #Procedure
 * type = #token
-* expression = "GenomicStudyAnalysis.extension.where(http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-method-type).valueCodeableConcept"
+* expression = "Procedure.extension.where(url=http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-method-type).valueCodeableConcept"
 
 Instance: mii-sp-meta-mtb-genomicstudyanalysis-genome-build
 InstanceOf: MII_PR_Meta_SearchParameter
@@ -392,7 +392,7 @@ Usage: #definition
 * code = #genome-build
 * base = #Procedure
 * type = #token
-* expression = "GenomicStudyAnalysis.extension.where(http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-genome-build).valueCodeableConcept"
+* expression = "Procedure.extension.where(url=http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-genome-build).valueCodeableConcept"
 
 Instance: mii-sp-meta-mtb-genomicstudyanalysis-focus
 InstanceOf: MII_PR_Meta_SearchParameter
@@ -410,7 +410,7 @@ Usage: #definition
 * code = #focus
 * base = #Procedure
 * type = #reference
-* expression = "GenomicStudyAnalysis.extension.where(http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-focus).reference"
+* expression = "Procedure.extension.where(url=http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-focus).reference"
 
 Instance: mii-sp-meta-mtb-genomicstudyanalysis-specimen
 InstanceOf: MII_PR_Meta_SearchParameter
@@ -428,7 +428,7 @@ Usage: #definition
 * code = #specimen
 * base = #Procedure
 * type = #reference
-* expression = "GenomicStudyAnalysis.extension.where(http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-specimen).reference"
+* expression = "Procedure.extension.where(url=http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-specimen).reference"
 
 Instance: mii-sp-meta-mtb-genomicstudyanalysis-device-device
 InstanceOf: MII_PR_Meta_SearchParameter
@@ -446,7 +446,7 @@ Usage: #definition
 * code = #device
 * base = #Procedure
 * type = #reference
-* expression = "GenomicStudyAnalysis.extension[specimen].extension[specimen].valueReference"
+* expression = "Procedure.extension.where(url=http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-device).extension.where(url=device).valueReference"
 
 Instance: mii-sp-meta-mtb-genomicstudyanalysis-device-function
 InstanceOf: MII_PR_Meta_SearchParameter
@@ -464,7 +464,7 @@ Usage: #definition
 * code = #device-function
 * base = #Procedure
 * type = #token
-* expression = "GenomicStudyAnalysis.extension[device].extension[function].valueCodeableConcept"
+* expression = "Procedure.extension.where(url=http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-device).extension.where(url=function).valueReference"
 
 Instance: mii-sp-meta-mtb-observation-valuerange-high
 InstanceOf: MII_PR_Meta_SearchParameter
