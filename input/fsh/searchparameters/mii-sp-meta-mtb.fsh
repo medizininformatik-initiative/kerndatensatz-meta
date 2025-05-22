@@ -122,7 +122,7 @@ Usage: #definition
 * code = #prioritaet
 * base = #RequestGroup 
 * type = #number
-* expression = "RequestGroup.extension[Prioritaet]"
+* expression = "RequestGroup.extension.where(url=https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-empfehlung-prioritaet)"
 
 Instance: mii-sp-meta-mtb-extension-requestgroup-evidenzgraduierung
 InstanceOf: MII_PR_Meta_SearchParameter
@@ -140,7 +140,7 @@ Usage: #definition
 * code = #rg-evidenzgraduierung
 * base[+] = #RequestGroup 
 * type = #token
-* expression[+] = "RequestGroup.extension[Evidenzgraduierung]"
+* expression[+] = "RequestGroup.extension.where(url=https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-empfehlung-evidenzgraduierung)"
 
 Instance: mii-sp-meta-mtb-extension-medicationrequest-evidenzgraduierung
 InstanceOf: MII_PR_Meta_SearchParameter
@@ -158,7 +158,7 @@ Usage: #definition
 * code = #mr-evidenzgraduierung
 * base[+] = #MedicationRequest
 * type = #token
-* expression[+] = "MedicationRequest.extension[Evidenzgraduierung]"
+* expression[+] = "MedicationRequest.extension.where(url=https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-empfehlung-evidenzgraduierung)"
 
 Instance: mii-sp-meta-mtb-request-group-extension-publikation
 InstanceOf: MII_PR_Meta_SearchParameter
@@ -176,7 +176,7 @@ Usage: #definition
 * code = #publikation
 * base = #RequestGroup 
 * type = #token // Nicht ganz klar, ob eventuell auch string möglich
-* expression = "RequestGroup.extension[Publikation]"
+* expression = "RequestGroup.extension.where(https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-empfehlung-publikation)"
 
 Instance: mii-sp-meta-mtb-careplan-activity-outcomereference
 InstanceOf: MII_PR_Meta_SearchParameter
@@ -266,7 +266,7 @@ Usage: #definition
 * code = #claimresponse-entscheidung
 * base = #ClaimResponse
 * type = #token
-* expression = "ClaimResponse.extension[Entscheidung].valueCodeableConcept"
+* expression = "ClaimResponse.extension.where(https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-antwort-kostenuebernahme-entscheidung).valueCodeableConcept"
 
 Instance: mii-sp-meta-mtb-claim-response-ablehnungsgrund
 InstanceOf: MII_PR_Meta_SearchParameter
@@ -284,7 +284,7 @@ Usage: #definition
 * code = #claimresponse-ablehnungsgrund
 * base = #ClaimResponse
 * type = #token
-* expression = "ClaimResponse.extension[Ablehnungsgrund].valueCodeableConcept"
+* expression = "ClaimResponse.extension.where(mii-ex-mtb-antwort-kostenuebernahme-ablehnungsgrund).valueCodeableConcept"
 
 Instance: mii-sp-meta-mtb-medicationstatement-dosage
 InstanceOf: MII_PR_Meta_SearchParameter
@@ -320,7 +320,7 @@ Usage: #definition
 * code = #status-reason
 * base = #Procedure
 * type = #token
-* expression = "procedure.statusReason"
+* expression = "Procedure.statusReason"
 
 Instance: mii-sp-meta-mtb-procedure-extension-causedby
 InstanceOf: MII_PR_Meta_SearchParameter
@@ -338,7 +338,7 @@ Usage: #definition
 * code = #caused-by
 * base = #Procedure
 * type = #reference
-* expression = "procedure.extension[causedBy].valueReference"
+* expression = "Procedure.extension.where(http://hl7.org/fhir/StructureDefinition/procedure-causedBy).valueReference"
 
 Instance: mii-sp-meta-mtb-procedure-note
 InstanceOf: MII_PR_Meta_SearchParameter
@@ -356,7 +356,7 @@ Usage: #definition
 * code = #note
 * base = #Procedure
 * type = #string
-* expression = "procedure.note.text"
+* expression = "Procedure.note.text"
 
 Instance: mii-sp-meta-mtb-genomicstudyanalysis-method-type
 InstanceOf: MII_PR_Meta_SearchParameter
@@ -374,7 +374,7 @@ Usage: #definition
 * code = #method-type
 * base = #Procedure
 * type = #token
-* expression = "GenomicStudyAnalysis.extension[method-type].valueCodeableConcept"
+* expression = "GenomicStudyAnalysis.extension.where(http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-method-type).valueCodeableConcept"
 
 Instance: mii-sp-meta-mtb-genomicstudyanalysis-genome-build
 InstanceOf: MII_PR_Meta_SearchParameter
@@ -392,7 +392,7 @@ Usage: #definition
 * code = #genome-build
 * base = #Procedure
 * type = #token
-* expression = "GenomicStudyAnalysis.extension[genome-build].valueCodeableConcept"
+* expression = "GenomicStudyAnalysis.extension.where(http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-genome-build).valueCodeableConcept"
 
 Instance: mii-sp-meta-mtb-genomicstudyanalysis-focus
 InstanceOf: MII_PR_Meta_SearchParameter
@@ -410,7 +410,7 @@ Usage: #definition
 * code = #focus
 * base = #Procedure
 * type = #reference
-* expression = "GenomicStudyAnalysis.extension[focus].reference"
+* expression = "GenomicStudyAnalysis.extension.where(http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-focus).reference"
 
 Instance: mii-sp-meta-mtb-genomicstudyanalysis-specimen
 InstanceOf: MII_PR_Meta_SearchParameter
@@ -428,7 +428,7 @@ Usage: #definition
 * code = #specimen
 * base = #Procedure
 * type = #reference
-* expression = "GenomicStudyAnalysis.extension[specimen].reference"
+* expression = "GenomicStudyAnalysis.extension.where(http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-specimen).reference"
 
 Instance: mii-sp-meta-mtb-genomicstudyanalysis-device-device
 InstanceOf: MII_PR_Meta_SearchParameter
