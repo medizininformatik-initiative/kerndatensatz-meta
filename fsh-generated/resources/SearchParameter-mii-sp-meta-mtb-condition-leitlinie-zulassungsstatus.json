@@ -43,5 +43,5 @@
     "Condition"
   ],
   "type": "token",
-  "expression": "ClinicalImpression.supportingInfo.where.ofType(Reference(MII_PR_MTB_Systemische_Vortherapie or MII_PR_Onko_Strahlentherapie or MII_PR_Onko_Operation or MII_PR_Prozedur_Procedure)).extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-leitlinie-dokumentation').extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-zulassungsstatus').value"
+  "expression": "ClinicalImpression.supportingInfo.ofType(MII_PR_MTB_Systemische_Vortherapie or MII_PR_Onko_Strahlentherapie or MII_PR_Onko_Operation or MII_PR_Prozedur_Procedure).extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-leitlinie-dokumentation').extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-zulassungsstatus').value"
 }
