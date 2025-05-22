@@ -43,5 +43,5 @@
     "RequestGroup"
   ],
   "type": "number",
-  "expression": "RequestGroup.extension[Prioritaet]"
+  "expression": "RequestGroup.extension.where(url=https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-empfehlung-prioritaet)"
 }

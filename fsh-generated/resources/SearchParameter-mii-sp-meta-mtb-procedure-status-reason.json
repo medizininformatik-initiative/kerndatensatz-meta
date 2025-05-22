@@ -43,5 +43,5 @@
     "Procedure"
   ],
   "type": "token",
-  "expression": "procedure.statusReason"
+  "expression": "Procedure.statusReason"
 }

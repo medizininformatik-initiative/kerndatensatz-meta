@@ -43,5 +43,5 @@
     "Procedure"
   ],
   "type": "string",
-  "expression": "procedure.note.text"
+  "expression": "Procedure.note.text"
 }

@@ -43,5 +43,5 @@
     "Procedure"
   ],
   "type": "reference",
-  "expression": "procedure.extension[causedBy].valueReference"
+  "expression": "Procedure.extension.where(http://hl7.org/fhir/StructureDefinition/procedure-causedBy).valueReference"
 }

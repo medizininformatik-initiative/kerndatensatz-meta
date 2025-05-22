@@ -43,5 +43,5 @@
     "Procedure"
   ],
   "type": "token",
-  "expression": "GenomicStudyAnalysis.extension[method-type].valueCodeableConcept"
+  "expression": "GenomicStudyAnalysis.extension.where(http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-method-type).valueCodeableConcept"
 }

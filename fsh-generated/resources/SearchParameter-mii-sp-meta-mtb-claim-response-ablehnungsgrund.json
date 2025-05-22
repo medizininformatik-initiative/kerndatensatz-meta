@@ -43,5 +43,5 @@
     "ClaimResponse"
   ],
   "type": "token",
-  "expression": "ClaimResponse.extension[Ablehnungsgrund].valueCodeableConcept"
+  "expression": "ClaimResponse.extension.where(mii-ex-mtb-antwort-kostenuebernahme-ablehnungsgrund).valueCodeableConcept"
 }
