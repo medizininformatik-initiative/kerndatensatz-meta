@@ -306,11 +306,12 @@ Description: "Medizininformatik-Initiative Standorte"
 * #FDPG insert AddStatus(active)
 * #FDPG insert AddDatenmanagementstelle(true)
 * #FDPG insert AddTRV(V6.14)
-* #HiGHmed "Konsortium"
+* #HiGHmed "HiGHmed e.V." "Heidelberg"
 * #HiGHmed insert AddKonsortium(MII)
 * #HiGHmed insert AddUri(highmed.org)
 * #HiGHmed insert AddStatus(active)
-* #HiGHmed insert AddTRV(V6.14)
+* #HiGHmed insert AddDatenmanagementstelle(true)
+* #HiGHmed insert AddTRV(V6.15)
 * #HHN "Hochschule Heilbronn" "Heilbronn"
 * #HHN insert AddKonsortium(MII)
 * #HHN insert AddUri(hs-heilbronn.de)
