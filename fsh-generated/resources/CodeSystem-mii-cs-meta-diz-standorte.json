@@ -1118,7 +1118,8 @@
     },
     {
       "code": "HiGHmed",
-      "display": "Konsortium",
+      "display": "HiGHmed e.V.",
+      "definition": "Heidelberg",
       "property": [
         {
           "code": "Konsortium",
@@ -1133,8 +1134,12 @@
           "valueCode": "active"
         },
         {
+          "code": "Datenmanagementstelle",
+          "valueBoolean": true
+        },
+        {
           "code": "TRV",
-          "valueString": "V6.14"
+          "valueString": "V6.15"
         }
       ]
     },
