@@ -41,6 +41,12 @@ on:
         default: false
         required: false
         type: boolean
+      working-directory:
+        description: 'Optional working directory for validation steps'
+        required: false
+        default: '.'
+        type: string
+
     secrets:
       CDS_DEV_CLIENT_CERT:
         required: true
@@ -52,6 +58,9 @@ on:
 jobs:
   validate:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ inputs.working-directory }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
