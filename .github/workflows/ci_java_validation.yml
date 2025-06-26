@@ -236,6 +236,7 @@ jobs:
         with:
           name: validation-output
           path: |
-            txlog.html
-            validation.html
+            ${{ inputs.working-directory }}/txlog.html
+            ${{ inputs.working-directory }}/validation.html
+
     
