@@ -1,0 +1,47 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "mii-sp-meta-dokument-documentreference-attachment-creation",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+    ]
+  },
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-dokument-documentreference-attachment-creation",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "version": "2025.0.0",
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
+  "name": "MII_SP_Meta_DocumentReference_Attachment_Creation",
+  "status": "active",
+  "description": "Suchparameter für DocumentReference.content.attachment.creation",
+  "experimental": false,
+  "date": "2025-06-23",
+  "code": "creation",
+  "base": [
+    "DocumentReference"
+  ],
+  "type": "date",
+  "expression": "DocumentReference.content.attachment.creation"
+}
