@@ -138,7 +138,7 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UME insert AddTRV(V6.15)
 * #UKF "Universitätsklinikum Frankfurt" "Frankfurt"
 * #UKF insert AddKonsortium(MIRACUM)
-* #UKF insert AddUri(kgu.de)
+* #UKF insert AddUri(unimedizin-ffm.de)
 * #UKF insert AddStatus(active)
 * #UKF insert AddTRV(V6.14)
 * #UKFR "Universitätsklinikum Freiburg" "Freiburg"
