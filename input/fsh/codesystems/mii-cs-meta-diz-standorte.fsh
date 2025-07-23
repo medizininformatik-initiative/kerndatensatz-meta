@@ -1,3 +1,7 @@
+RuleSet: AddAbbreviation(abbreviation)
+* ^property[+].code = #abbreviation
+* ^property[=].valueString = "{abbreviation}"
+
 RuleSet: AddKonsortium(Konsortium)
 * ^property[+].code = #Konsortium
 * ^property[=].valueString = "{Konsortium}"
@@ -22,6 +26,18 @@ RuleSet: AddDatenmanagementstelle(Datenmanagementstelle)
 * ^property[+].code = #Datenmanagementstelle
 * ^property[=].valueBoolean = {Datenmanagementstelle}
 
+RuleSet: AddDiz(Diz)
+* ^property[+].code = #Diz
+* ^property[=].valueBoolean = {Diz}
+
+RuleSet: AddReplaces(replaces)
+* ^property[+].code = #replaces
+* ^property[=].valueString = {replaces}
+
+RuleSet: AddReplacedBy(replacedBy)
+* ^property[+].code = #replacedBy
+* ^property[=].valueString = {replacedBy}
+
 RuleSet: AddTRV(trv)
 * ^property[+].code = #TRV
 * ^property[=].valueString = "{trv}"
@@ -37,7 +53,7 @@ Description: "Medizininformatik-Initiative Standorte"
 * insert Publisher
 * insert PR_CS_VS_Version
 * insert LicenseCodeableCCBY40
-* ^date = "2025-03-28"
+* ^date = "2025-07-23"
 * ^status = #active
 * ^caseSensitive = true
 * ^compositional = false
@@ -64,6 +80,19 @@ Description: "Medizininformatik-Initiative Standorte"
 * ^property[6].code = #TRV
 * ^property[6].type = #string
 * ^property[6].description = "Teilnahmerahmenvertrag (Version)"
+* ^property[7].code = #Diz
+* ^property[7].type = #boolean
+* ^property[7].description = "Datenintegrationszentrum (true / false)"
+* ^property[8].code = #abbreviation
+* ^property[8].type = #string
+* ^property[8].description = "Abkürzung (Kürzel)"
+* ^property[9].code = #replaces
+* ^property[9].type = #string
+* ^property[9].description = "ersetzt (alter Code)"
+* ^property[10].code = #replacedBy
+* ^property[10].type = #string
+* ^property[10].description = "ersetzt durch (neuer Code)"
+
 * #UKA "Uniklinik RWTH Aachen" "Aachen"
 * #UKA insert AddKonsortium(SMITH)
 * #UKA insert AddUri(ukaachen.de)
