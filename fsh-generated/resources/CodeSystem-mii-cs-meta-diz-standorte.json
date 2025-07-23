@@ -1218,7 +1218,7 @@
       }
     }
   ],
-  "date": "2025-03-28",
+  "date": "2025-07-23",
   "caseSensitive": true,
   "compositional": false,
   "copyright": "Medizininformatik-Initiative",
@@ -1257,6 +1257,26 @@
       "code": "TRV",
       "type": "string",
       "description": "Teilnahmerahmenvertrag (Version)"
+    },
+    {
+      "code": "Diz",
+      "type": "boolean",
+      "description": "Datenintegrationszentrum (true / false)"
+    },
+    {
+      "code": "abbreviation",
+      "type": "string",
+      "description": "Abkürzung (Kürzel)"
+    },
+    {
+      "code": "replaces",
+      "type": "string",
+      "description": "ersetzt (alter Code)"
+    },
+    {
+      "code": "replacedBy",
+      "type": "string",
+      "description": "ersetzt durch (neuer Code)"
     }
   ],
   "count": 50
