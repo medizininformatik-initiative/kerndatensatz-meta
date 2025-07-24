@@ -188,6 +188,14 @@ test_at_least_one "Encounter with location-physical-type=http://terminology.hl7.
 test_at_least_one "Encounter with service-type=http://fhir.de/CodeSystem/dkgev/Fachabteilungsschluessel|0100 count" \
                   "$(search "Encounter" "service-type=http://fhir.de/CodeSystem/dkgev/Fachabteilungsschluessel%7C0100")"
 
+# Encounter.extension:Aufnahmegrund
+test_at_least_one "Encounter with Aufnahmegrund=0101 count" \
+                  "$(search "Encounter" "aufnahmegrund-ersteundzweitestelle=http://fhir.de/CodeSystem/dkgev/AufnahmegrundErsteUndZweiteStelle%7C01&aufnahmegrund-drittestelle=http://fhir.de/CodeSystem/dkgev/AufnahmegrundDritteStelle%7C0&aufnahmegrund-viertestelle=http://fhir.de/CodeSystem/dkgev/AufnahmegrundVierteStelle%7C1")"
+
+# Encounter.hospitalization.dischargeDisposition.extension:Entlassungsgrund
+test_at_least_one "Encounter with Entlassungsgrund=079 count" \
+                  "$(search "Encounter" "entlassungsgrund-ersteundzweitestelle=http://fhir.de/CodeSystem/dkgev/EntlassungsgrundErsteUndZweiteStelle%7C07&entlassungsgrund-drittestelle=http://fhir.de/CodeSystem/dkgev/EntlassungsgrundDritteStelle%7C9")"
+
 # =========================================================
 # EvidenceVariable
 # =========================================================
