@@ -162,6 +162,11 @@ InstanceOf: Bundle
 * insert AddCollectionEntry(mii-sp-meta-encounter-hospitalization-admitsource)
 * insert AddCollectionEntry(mii-sp-meta-encounter-location-physical-type)
 * insert AddCollectionEntry(mii-sp-meta-encounter-servicetype)
+* insert AddCollectionEntry(mii-sp-meta-encounter-aufnahmegrund-ersteundzweitestelle)
+* insert AddCollectionEntry(mii-sp-meta-encounter-aufnahmegrund-drittestelle)
+* insert AddCollectionEntry(mii-sp-meta-encounter-aufnahmegrund-viertestelle)
+* insert AddCollectionEntry(mii-sp-meta-encounter-entlassungsgrund-ersteundzweitestelle)
+* insert AddCollectionEntry(mii-sp-meta-encounter-entlassungsgrund-drittestelle)
 // Medikation
 * insert AddCollectionEntry(mii-sp-meta-medication-ingredient-strength-numerator)
 * insert AddCollectionEntry(mii-sp-meta-medication-ingredient-strength-denominator)
