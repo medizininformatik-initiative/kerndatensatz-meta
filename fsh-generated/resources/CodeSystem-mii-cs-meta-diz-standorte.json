@@ -31,7 +31,7 @@
         },
         {
           "code": "replacedBy",
-          "valueString": "bb622e3a"
+          "valueCode": "bb622e3a"
         },
         {
           "code": "deprecationDate",
@@ -70,7 +70,7 @@
         },
         {
           "code": "replaces",
-          "valueString": "UKA"
+          "valueCode": "UKA"
         }
       ]
     },
@@ -1313,12 +1313,12 @@
     },
     {
       "code": "replaces",
-      "type": "string",
+      "type": "code",
       "description": "ersetzt (alter Code)"
     },
     {
       "code": "replacedBy",
-      "type": "string",
+      "type": "code",
       "description": "ersetzt durch (neuer Code)"
     }
   ],
