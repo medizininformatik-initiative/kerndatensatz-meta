@@ -32,11 +32,11 @@ RuleSet: AddDiz(Diz)
 
 RuleSet: AddReplaces(replaces)
 * ^property[+].code = #replaces
-* ^property[=].valueString = {replaces}
+* ^property[=].valueString = "{replaces}"
 
 RuleSet: AddReplacedBy(replacedBy)
 * ^property[+].code = #replacedBy
-* ^property[=].valueString = {replacedBy}
+* ^property[=].valueString = "{replacedBy}"
 
 RuleSet: AddTRV(trv)
 * ^property[+].code = #TRV
