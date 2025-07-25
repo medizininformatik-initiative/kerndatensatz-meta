@@ -92,7 +92,6 @@ Description: "Medizininformatik-Initiative Standorte"
 * ^property[10].code = #replacedBy
 * ^property[10].type = #string
 * ^property[10].description = "ersetzt durch (neuer Code)"
-
 * #UKA "Uniklinik RWTH Aachen" "Aachen"
 * #UKA insert AddKonsortium(SMITH)
 * #UKA insert AddUri(ukaachen.de)
@@ -108,7 +107,6 @@ Description: "Medizininformatik-Initiative Standorte"
 * #bb622e3a insert AddAbbreviation(UKA)
 * #bb622e3a insert AddDiz(true)
 * #bb622e3a insert AddReplaces(UKA)
-
 * #UKAU "Universitätsklinikum Augsburg" "Augsburg"
 * #UKAU insert AddKonsortium(DIFUTURE)
 * #UKAU insert AddUri(uk-augsburg.de)
