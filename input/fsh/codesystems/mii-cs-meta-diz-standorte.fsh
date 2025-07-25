@@ -53,7 +53,7 @@ Description: "Medizininformatik-Initiative Standorte"
 * insert Publisher
 * insert PR_CS_VS_Version
 * insert LicenseCodeableCCBY40
-* ^date = "2025-07-23"
+* ^date = "2025-07-25"
 * ^status = #active
 * ^caseSensitive = true
 * ^compositional = false
@@ -99,7 +99,7 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UKA insert AddStatus(deprecated)
 * #UKA insert AddTRV(V6.15)
 * #UKA insert AddReplacedBy(bb622e3a)
-* #UKA insert AddDeprecationDate(2024-07-03)
+* #UKA insert AddDeprecationDate(2024-07-25)
 * #bb622e3a "Uniklinik RWTH Aachen" "Aachen"
 * #bb622e3a insert AddKonsortium(SMITH)
 * #bb622e3a insert AddUri(ukaachen.de)
