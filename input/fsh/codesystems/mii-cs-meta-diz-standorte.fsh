@@ -96,8 +96,19 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UKA "Uniklinik RWTH Aachen" "Aachen"
 * #UKA insert AddKonsortium(SMITH)
 * #UKA insert AddUri(ukaachen.de)
-* #UKA insert AddStatus(active)
+* #UKA insert AddStatus(deprecated)
 * #UKA insert AddTRV(V6.15)
+* #UKA insert AddReplacedBy(bb622e3a)
+* #UKA insert AddDeprecationDate(2024-07-03)
+* #bb622e3a "Uniklinik RWTH Aachen" "Aachen"
+* #bb622e3a insert AddKonsortium(SMITH)
+* #bb622e3a insert AddUri(ukaachen.de)
+* #bb622e3a insert AddStatus(active)
+* #bb622e3a insert AddTRV(V6.15)
+* #bb622e3a insert AddAbbreviation(UKA)
+* #bb622e3a insert AddDiz(true)
+* #bb622e3a insert AddReplaces(UKA)
+
 * #UKAU "Universitätsklinikum Augsburg" "Augsburg"
 * #UKAU insert AddKonsortium(DIFUTURE)
 * #UKAU insert AddUri(uk-augsburg.de)
