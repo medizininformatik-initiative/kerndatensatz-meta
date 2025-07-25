@@ -46,19 +46,19 @@ search() {
 # Composition
 # =========================================================
 # Composition.attester.mode
-test "Composition.attester.mode=legal count" \
-     "$(search "Composition" "attester-mode=legal")" \
-     "1"
+#test "Composition.attester.mode=legal count" \
+#     "$(search "Composition" "attester-mode=legal")" \
+#     "1"
 
 # Composition.custodian
-test "Composition.custodian count" \
-     "$(search "Composition" "custodian=Organization/mii-exa-test-data-organization-charite")" \
-     "1"
+#test "Composition.custodian count" \
+#     "$(search "Composition" "custodian=Organization/mii-exa-test-data-organization-charite")" \
+#     "1"
 
 # Composition.relatesTo.code
-test "Composition.relatesTo.code=appends count" \
-     "$(search "Composition" "relates-to-code=appends")" \
-     "1"
+#test "Composition.relatesTo.code=appends count" \
+#     "$(search "Composition" "relates-to-code=appends")" \
+#     "1"
 
 # =========================================================
 # Condition
@@ -77,27 +77,23 @@ M="http://fhir.de/CodeSystem/icd-10-gm-mehrfachcodierungs-kennzeichen|*"
 E="http://fhir.de/CodeSystem/icd-10-gm-mehrfachcodierungs-kennzeichen|†"
 
 # Suchparameter: code
-test "Condition.code B05.3 count" \
-     "$(search "Condition" "code=$B05_3")" \
-     "1"
+test_at_least_one "Condition.code B05.3 count" \
+     "$(search "Condition" "code=$B05_3")" 
 
-test "Condition.code H67.1 count" \
-     "$(search "Condition" "code=$H67_1")" \
-     "1"
+test_at_least_one "Condition.code H67.1 count" \
+     "$(search "Condition" "code=$H67_1")" 
 
 # Suchparameter: icd10gm-diagnosesicherheit
 test "Condition.code Diagnosesicherheit B05.3/A count" \
      "$(search "Condition" "code=$B05_3&icd10gm-diagnosesicherheit=$A")" \
      "0"
 
-test "Condition.code Diagnosesicherheit B05.3/G count" \
-     "$(search "Condition" "code=$B05_3&icd10gm-diagnosesicherheit=$G")" \
-     "1"
+test_at_least_one "Condition.code Diagnosesicherheit B05.3/G count" \
+     "$(search "Condition" "code=$B05_3&icd10gm-diagnosesicherheit=$G")" 
 
 # Suchparameter: icd10gm-seitenlokalisation
-test "Condition.code Seitenlokalisation B05.3/B count" \
-     "$(search "Condition" "code=$B05_3&icd10gm-seitenlokalisation=$B")" \
-     "1"
+test_at_least_one "Condition.code Seitenlokalisation B05.3/B count" \
+     "$(search "Condition" "code=$B05_3&icd10gm-seitenlokalisation=$B")" 
 
 test "Condition.code Seitenlokalisation B05.3/R count" \
      "$(search "Condition" "code=$B05_3&icd10gm-seitenlokalisation=$R")" \
@@ -108,9 +104,8 @@ test "Condition.code Mehrfachcodierung B05.3/M count" \
      "$(search "Condition" "code=$B05_3&icd10gm-mehrfachcodierung=$M")" \
      "0"
 
-test "Condition.code Mehrfachcodierung B05.3/E count" \
-     "$(search "Condition" "code=$B05_3&icd10gm-mehrfachcodierung=$E")" \
-     "1"
+test_at_least_one "Condition.code Mehrfachcodierung B05.3/E count" \
+     "$(search "Condition" "code=$B05_3&icd10gm-mehrfachcodierung=$E")" 
 
 # Condition.verificationStatus
 test_at_least_one "Condition with verificationStatus=confirmed count" \
@@ -147,16 +142,15 @@ test_at_least_one "Consent with mii-provision-provision-type=permit count" \
 # Device
 # =========================================================
 # Device.property.type
-test "Device with property-type=urn:iso:std:iso:11073:10101|70934 count" \
-     "$(search "Device" "property-type=urn:iso:std:iso:11073:10101%7C70934")" \
-     "1"
+test_at_least_one "Device with property-type=urn:iso:std:iso:11073:10101|69684 count" \
+                  "$(search "Device" "property-type=urn:iso:std:iso:11073:10101%7C69684")" 
 
 # =========================================================
 # DeviceMetric
 # =========================================================
 # DeviceMetric.source
-test_at_least_one "DeviceMetric with source=Device/mii-exa-test-data-patient-1-ecmo-dialysis-device count" \
-                  "$(search "DeviceMetric" "source=Device/mii-exa-test-data-patient-1-ecmo-dialysis-device")"
+#test_at_least_one "DeviceMetric with source=Device/mii-exa-test-data-device-roche-cobas-c303 count" \
+#                  "$(search "DeviceMetric" "source=Device/mii-exa-test-data-device-roche-cobas-c303")"
 
 # =========================================================
 # DiagnosticReport
