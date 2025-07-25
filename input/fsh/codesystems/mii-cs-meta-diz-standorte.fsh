@@ -32,11 +32,11 @@ RuleSet: AddDiz(Diz)
 
 RuleSet: AddReplaces(replaces)
 * ^property[+].code = #replaces
-* ^property[=].valueString = "{replaces}"
+* ^property[=].valueCode = #{replaces}
 
 RuleSet: AddReplacedBy(replacedBy)
 * ^property[+].code = #replacedBy
-* ^property[=].valueString = "{replacedBy}"
+* ^property[=].valueCode = #{replacedBy}
 
 RuleSet: AddTRV(trv)
 * ^property[+].code = #TRV
@@ -87,10 +87,10 @@ Description: "Medizininformatik-Initiative Standorte"
 * ^property[8].type = #string
 * ^property[8].description = "Abkürzung (Kürzel)"
 * ^property[9].code = #replaces
-* ^property[9].type = #string
+* ^property[9].type = #code
 * ^property[9].description = "ersetzt (alter Code)"
 * ^property[10].code = #replacedBy
-* ^property[10].type = #string
+* ^property[10].type = #code
 * ^property[10].description = "ersetzt durch (neuer Code)"
 * #UKA "Uniklinik RWTH Aachen" "Aachen"
 * #UKA insert AddKonsortium(SMITH)
