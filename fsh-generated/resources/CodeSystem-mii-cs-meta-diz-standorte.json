@@ -23,11 +23,54 @@
         },
         {
           "code": "status",
+          "valueCode": "deprecated"
+        },
+        {
+          "code": "TRV",
+          "valueString": "V6.15"
+        },
+        {
+          "code": "replacedBy",
+          "valueString": "bb622e3a"
+        },
+        {
+          "code": "deprecationDate",
+          "valueDateTime": "2024-07-25"
+        }
+      ]
+    },
+    {
+      "code": "bb622e3a",
+      "display": "Uniklinik RWTH Aachen",
+      "definition": "Aachen",
+      "property": [
+        {
+          "code": "Konsortium",
+          "valueString": "SMITH"
+        },
+        {
+          "code": "uri",
+          "valueString": "ukaachen.de"
+        },
+        {
+          "code": "status",
           "valueCode": "active"
         },
         {
           "code": "TRV",
           "valueString": "V6.15"
+        },
+        {
+          "code": "abbreviation",
+          "valueString": "UKA"
+        },
+        {
+          "code": "Diz",
+          "valueBoolean": true
+        },
+        {
+          "code": "replaces",
+          "valueString": "UKA"
         }
       ]
     },
@@ -1218,7 +1261,7 @@
       }
     }
   ],
-  "date": "2025-07-23",
+  "date": "2025-07-25",
   "caseSensitive": true,
   "compositional": false,
   "copyright": "Medizininformatik-Initiative",
@@ -1279,5 +1322,5 @@
       "description": "ersetzt durch (neuer Code)"
     }
   ],
-  "count": 50
+  "count": 51
 }
