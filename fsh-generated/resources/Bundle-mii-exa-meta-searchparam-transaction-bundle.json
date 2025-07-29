@@ -1142,6 +1142,276 @@
       }
     },
     {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-encounter-aufnahmegrund-ersteundzweitestelle",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-encounter-aufnahmegrund-ersteundzweitestelle",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-aufnahmegrund-ersteundzweitestelle",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "version": "2025.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Encounter_Aufnahmegrund_ErsteUndZweiteStelle",
+        "status": "active",
+        "experimental": false,
+        "date": "2025-07-14",
+        "description": "Suchparameter für Encounter.extension:Aufnahmegrund.extension:ErsteUndZweiteStelle",
+        "code": "aufnahmegrund-ersteundzweitestelle",
+        "base": [
+          "Encounter"
+        ],
+        "type": "token",
+        "expression": "Encounter.extension.where(url = 'http://fhir.de/StructureDefinition/Aufnahmegrund').extension.where(url = 'ErsteUndZweiteStelle').value"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "SearchParameter/mii-sp-meta-encounter-aufnahmegrund-ersteundzweitestelle"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-encounter-aufnahmegrund-drittestelle",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-encounter-aufnahmegrund-drittestelle",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-aufnahmegrund-drittestelle",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "version": "2025.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Encounter_Aufnahmegrund_DritteStelle",
+        "status": "active",
+        "experimental": false,
+        "date": "2025-07-14",
+        "description": "Suchparameter für Encounter.extension:Aufnahmegrund.extension:DritteStelle",
+        "code": "aufnahmegrund-drittestelle",
+        "base": [
+          "Encounter"
+        ],
+        "type": "token",
+        "expression": "Encounter.extension.where(url = 'http://fhir.de/StructureDefinition/Aufnahmegrund').extension.where(url = 'DritteStelle').value"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "SearchParameter/mii-sp-meta-encounter-aufnahmegrund-drittestelle"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-encounter-aufnahmegrund-viertestelle",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-encounter-aufnahmegrund-viertestelle",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-aufnahmegrund-viertestelle",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "version": "2025.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Encounter_Aufnahmegrund_VierteStelle",
+        "status": "active",
+        "experimental": false,
+        "date": "2025-07-14",
+        "description": "Suchparameter für Encounter.extension:Aufnahmegrund.extension:VierteStelle",
+        "code": "aufnahmegrund-viertestelle",
+        "base": [
+          "Encounter"
+        ],
+        "type": "token",
+        "expression": "Encounter.extension.where(url = 'http://fhir.de/StructureDefinition/Aufnahmegrund').extension.where(url = 'VierteStelle').value"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "SearchParameter/mii-sp-meta-encounter-aufnahmegrund-viertestelle"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-encounter-entlassungsgrund-ersteundzweitestelle",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-encounter-entlassungsgrund-ersteundzweitestelle",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-entlassungsgrund-ersteundzweitestelle",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "version": "2025.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Encounter_Entlassungsgrund_ErsteUndZweiteStelle",
+        "status": "active",
+        "experimental": false,
+        "date": "2025-07-21",
+        "description": "Suchparameter für Encounter.hospitalization.dischargeDisposition.extension:Entlassungsgrund.extension:ErsteUndZweiteStelle",
+        "code": "entlassungsgrund-ersteundzweitestelle",
+        "base": [
+          "Encounter"
+        ],
+        "type": "token",
+        "expression": "Encounter.hospitalization.dischargeDisposition.extension.where(url = 'http://fhir.de/StructureDefinition/Entlassungsgrund').extension.where(url = 'ErsteUndZweiteStelle').value"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "SearchParameter/mii-sp-meta-encounter-entlassungsgrund-ersteundzweitestelle"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-encounter-entlassungsgrund-drittestelle",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-encounter-entlassungsgrund-drittestelle",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-entlassungsgrund-drittestelle",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "version": "2025.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Encounter_Entlassungsgrund_DritteStelle",
+        "status": "active",
+        "experimental": false,
+        "date": "2025-07-21",
+        "description": "Suchparameter für Encounter.hospitalization.dischargeDisposition.extension:Entlassungsgrund.extension:DritteStelle",
+        "code": "entlassungsgrund-drittestelle",
+        "base": [
+          "Encounter"
+        ],
+        "type": "token",
+        "expression": "Encounter.hospitalization.dischargeDisposition.extension.where(url = 'http://fhir.de/StructureDefinition/Entlassungsgrund').extension.where(url = 'DritteStelle').value"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "SearchParameter/mii-sp-meta-encounter-entlassungsgrund-drittestelle"
+      }
+    },
+    {
       "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-medication-ingredient-strength-numerator",
       "resource": {
         "resourceType": "SearchParameter",
