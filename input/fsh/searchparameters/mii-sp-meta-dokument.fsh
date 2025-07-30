@@ -46,8 +46,8 @@ Usage: #definition
 * status = #active
 * description = "Suchparameter für DocumentReference.extension[nlp-processing-status].valueCodeableConcept"
 * experimental = false
-* date = "2025-06-23"
+* date = "2025-07-30"
 * code = #nlp-processing-status
 * base = #DocumentReference
 * type = #token
-* expression = "DocumentReference.extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-dokument/StructureDefinition/mii-ex-dokument-nlp-processing-status').valueCodeableConcept"
+* expression = "DocumentReference.extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-dokument/StructureDefinition/mii-ex-dokument-nlp-processing-status').value"
