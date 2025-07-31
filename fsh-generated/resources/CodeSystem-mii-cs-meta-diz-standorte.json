@@ -14,7 +14,38 @@
       "definition": "Aachen",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
+          "valueString": "SMITH"
+        },
+        {
+          "code": "uri",
+          "valueString": "ukaachen.de"
+        },
+        {
+          "code": "status",
+          "valueCode": "deprecated"
+        },
+        {
+          "code": "contract",
+          "valueString": "V6.15"
+        },
+        {
+          "code": "replacedBy",
+          "valueCode": "bb622e3a"
+        },
+        {
+          "code": "deprecationDate",
+          "valueDateTime": "2024-07-25"
+        }
+      ]
+    },
+    {
+      "code": "UKA00001",
+      "display": "Uniklinik RWTH Aachen",
+      "definition": "Aachen",
+      "property": [
+        {
+          "code": "consortium",
           "valueString": "SMITH"
         },
         {
@@ -26,8 +57,20 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
+        },
+        {
+          "code": "abbreviation",
+          "valueString": "UKA"
+        },
+        {
+          "code": "dic",
+          "valueBoolean": true
+        },
+        {
+          "code": "replaces",
+          "valueCode": "UKA"
         }
       ]
     },
@@ -37,7 +80,7 @@
       "definition": "Augsburg",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "DIFUTURE"
         },
         {
@@ -49,7 +92,7 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
         }
       ]
@@ -60,7 +103,7 @@
       "definition": "Berlin",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "HiGHmed"
         },
         {
@@ -72,11 +115,11 @@
           "valueCode": "active"
         },
         {
-          "code": "Datenmanagementstelle",
+          "code": "dataManagement",
           "valueBoolean": true
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
         }
       ]
@@ -87,7 +130,7 @@
       "definition": "Berlin",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "HiGHmed"
         },
         {
@@ -99,7 +142,7 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
         }
       ]
@@ -110,7 +153,7 @@
       "definition": "Bielefeld",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "HiGHmed"
         },
         {
@@ -122,7 +165,7 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.14"
         }
       ]
@@ -133,7 +176,7 @@
       "definition": "Bochum",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "SMITH"
         },
         {
@@ -145,7 +188,7 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
         }
       ]
@@ -156,7 +199,7 @@
       "definition": "Bonn",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "SMITH"
         },
         {
@@ -168,7 +211,7 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
         }
       ]
@@ -179,7 +222,7 @@
       "definition": "Chemnitz",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "MIRACUM"
         },
         {
@@ -191,7 +234,7 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.14"
         }
       ]
@@ -202,7 +245,7 @@
       "definition": "Cottbus",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "HiGHmed"
         },
         {
@@ -225,7 +268,7 @@
       "definition": "Cottbus",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "HiGHmed"
         },
         {
@@ -237,7 +280,7 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
         }
       ]
@@ -248,7 +291,7 @@
       "definition": "Dresden",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "MIRACUM"
         },
         {
@@ -260,11 +303,11 @@
           "valueCode": "active"
         },
         {
-          "code": "Datenmanagementstelle",
+          "code": "dataManagement",
           "valueBoolean": true
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
         }
       ]
@@ -275,7 +318,7 @@
       "definition": "Düsseldorf",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "SMITH"
         },
         {
@@ -287,7 +330,7 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
         }
       ]
@@ -298,7 +341,7 @@
       "definition": "Erlangen",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "MIRACUM"
         },
         {
@@ -310,7 +353,7 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
         }
       ]
@@ -321,7 +364,7 @@
       "definition": "Essen",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "SMITH"
         },
         {
@@ -333,7 +376,7 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
         }
       ]
@@ -344,7 +387,7 @@
       "definition": "Frankfurt",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "MIRACUM"
         },
         {
@@ -356,7 +399,7 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.14"
         }
       ]
@@ -367,7 +410,7 @@
       "definition": "Freiburg",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "MIRACUM"
         },
         {
@@ -379,7 +422,7 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.14"
         }
       ]
@@ -390,7 +433,7 @@
       "definition": "Gießen",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "MIRACUM"
         },
         {
@@ -402,7 +445,7 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
         }
       ]
@@ -413,7 +456,7 @@
       "definition": "Göttingen",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "HiGHmed"
         },
         {
@@ -425,11 +468,11 @@
           "valueCode": "active"
         },
         {
-          "code": "Datenmanagementstelle",
+          "code": "dataManagement",
           "valueBoolean": true
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
         }
       ]
@@ -440,7 +483,7 @@
       "definition": "Greifswald",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "MIRACUM"
         },
         {
@@ -452,7 +495,7 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.14"
         }
       ]
@@ -463,7 +506,7 @@
       "definition": "Halle (Saale)",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "SMITH"
         },
         {
@@ -475,11 +518,11 @@
           "valueCode": "active"
         },
         {
-          "code": "Datenmanagementstelle",
+          "code": "dataManagement",
           "valueBoolean": true
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
         }
       ]
@@ -490,7 +533,7 @@
       "definition": "Hamburg",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "SMITH"
         },
         {
@@ -502,7 +545,7 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
         }
       ]
@@ -513,7 +556,7 @@
       "definition": "Hannover",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "HiGHmed"
         },
         {
@@ -525,7 +568,7 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
         }
       ]
@@ -536,7 +579,7 @@
       "definition": "Heidelberg",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "HiGHmed"
         },
         {
@@ -548,11 +591,11 @@
           "valueCode": "active"
         },
         {
-          "code": "Datenmanagementstelle",
+          "code": "dataManagement",
           "valueBoolean": true
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
         }
       ]
@@ -563,7 +606,7 @@
       "definition": "Jena",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "SMITH"
         },
         {
@@ -575,7 +618,7 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.14"
         }
       ]
@@ -586,7 +629,7 @@
       "definition": "Köln",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "HiGHmed"
         },
         {
@@ -598,11 +641,11 @@
           "valueCode": "active"
         },
         {
-          "code": "Datenmanagementstelle",
+          "code": "dataManagement",
           "valueBoolean": true
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
         }
       ]
@@ -613,7 +656,7 @@
       "definition": "Leipzig",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "SMITH"
         },
         {
@@ -625,11 +668,11 @@
           "valueCode": "active"
         },
         {
-          "code": "Datenmanagementstelle",
+          "code": "dataManagement",
           "valueBoolean": true
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
         }
       ]
@@ -640,7 +683,7 @@
       "definition": "Leipzig",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "SMITH"
         },
         {
@@ -652,7 +695,7 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
         }
       ]
@@ -663,7 +706,7 @@
       "definition": "Magdeburg",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "MIRACUM"
         },
         {
@@ -675,7 +718,7 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.14"
         }
       ]
@@ -686,7 +729,7 @@
       "definition": "Mainz",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "MIRACUM"
         },
         {
@@ -698,7 +741,7 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.14"
         }
       ]
@@ -709,7 +752,7 @@
       "definition": "Mannheim",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "MIRACUM"
         },
         {
@@ -721,7 +764,7 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
         }
       ]
@@ -732,7 +775,7 @@
       "definition": "Marburg",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "MIRACUM"
         },
         {
@@ -744,7 +787,7 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
         }
       ]
@@ -755,7 +798,7 @@
       "definition": "München",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "DIFUTURE"
         },
         {
@@ -767,7 +810,7 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
         }
       ]
@@ -778,7 +821,7 @@
       "definition": "München",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "DIFUTURE"
         },
         {
@@ -790,7 +833,7 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
         }
       ]
@@ -801,7 +844,7 @@
       "definition": "Münster",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "HiGHmed"
         },
         {
@@ -813,7 +856,7 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
         }
       ]
@@ -824,7 +867,7 @@
       "definition": "Oldenburg",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "HiGHmed"
         },
         {
@@ -836,7 +879,7 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.14"
         }
       ]
@@ -847,7 +890,7 @@
       "definition": "Oldenburg",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "HiGHmed"
         },
         {
@@ -866,7 +909,7 @@
       "definition": "Regensburg",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "DIFUTURE"
         },
         {
@@ -878,7 +921,7 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
         }
       ]
@@ -889,7 +932,7 @@
       "definition": "Rostock",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "SMITH"
         },
         {
@@ -901,7 +944,7 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
         }
       ]
@@ -912,7 +955,7 @@
       "definition": "Saarbrücken / Homburg",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "DIFUTURE"
         },
         {
@@ -935,7 +978,7 @@
       "definition": "Saarbrücken / Homburg",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "DIFUTURE"
         },
         {
@@ -947,7 +990,7 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.14"
         }
       ]
@@ -958,7 +1001,7 @@
       "definition": "Schleswig-Holstein",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "HiGHmed"
         },
         {
@@ -970,7 +1013,7 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
         }
       ]
@@ -981,7 +1024,7 @@
       "definition": "Stuttgart",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "HiGHmed"
         },
         {
@@ -993,7 +1036,7 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
         }
       ]
@@ -1004,7 +1047,7 @@
       "definition": "Tübingen",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "DIFUTURE"
         },
         {
@@ -1016,7 +1059,7 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
         }
       ]
@@ -1027,7 +1070,7 @@
       "definition": "Ulm",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "DIFUTURE"
         },
         {
@@ -1039,7 +1082,7 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
         }
       ]
@@ -1050,7 +1093,7 @@
       "definition": "Würzburg",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "HiGHmed"
         },
         {
@@ -1062,11 +1105,11 @@
           "valueCode": "active"
         },
         {
-          "code": "Datenmanagementstelle",
+          "code": "dataManagement",
           "valueBoolean": true
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
         }
       ]
@@ -1077,7 +1120,7 @@
       "definition": "Witten / Herdecke",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "NA"
         },
         {
@@ -1095,7 +1138,7 @@
       "display": "Forschungsdatenportal für Gesundheit",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "MII"
         },
         {
@@ -1107,11 +1150,11 @@
           "valueCode": "active"
         },
         {
-          "code": "Datenmanagementstelle",
+          "code": "dataManagement",
           "valueBoolean": true
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.14"
         }
       ]
@@ -1122,7 +1165,7 @@
       "definition": "Heidelberg",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "MII"
         },
         {
@@ -1134,11 +1177,11 @@
           "valueCode": "active"
         },
         {
-          "code": "Datenmanagementstelle",
+          "code": "dataManagement",
           "valueBoolean": true
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
         }
       ]
@@ -1149,7 +1192,7 @@
       "definition": "Heilbronn",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "MII"
         },
         {
@@ -1161,7 +1204,7 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.14"
         }
       ]
@@ -1171,7 +1214,7 @@
       "display": "Zentrale Plattform NUM",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "NUM"
         },
         {
@@ -1218,13 +1261,13 @@
       }
     }
   ],
-  "date": "2025-03-28",
+  "date": "2025-07-25",
   "caseSensitive": true,
   "compositional": false,
   "copyright": "Medizininformatik-Initiative",
   "property": [
     {
-      "code": "Konsortium",
+      "code": "consortium",
       "uri": "https://www.medizininformatik-initiative.de/de/konsortien",
       "type": "string"
     },
@@ -1249,15 +1292,35 @@
       "type": "dateTime"
     },
     {
-      "code": "Datenmanagementstelle",
+      "code": "dataManagement",
       "type": "boolean",
       "description": "Datenmanagementstelle (true / false)"
     },
     {
-      "code": "TRV",
+      "code": "contract",
       "type": "string",
       "description": "Teilnahmerahmenvertrag (Version)"
+    },
+    {
+      "code": "dic",
+      "type": "boolean",
+      "description": "Datenintegrationszentrum (true / false)"
+    },
+    {
+      "code": "abbreviation",
+      "type": "string",
+      "description": "Abkürzung (Kürzel)"
+    },
+    {
+      "code": "replaces",
+      "type": "code",
+      "description": "ersetzt (alter Code)"
+    },
+    {
+      "code": "replacedBy",
+      "type": "code",
+      "description": "ersetzt durch (neuer Code)"
     }
   ],
-  "count": 50
+  "count": 51
 }
