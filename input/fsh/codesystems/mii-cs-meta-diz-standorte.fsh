@@ -2,9 +2,9 @@ RuleSet: AddAbbreviation(abbreviation)
 * ^property[+].code = #abbreviation
 * ^property[=].valueString = "{abbreviation}"
 
-RuleSet: AddKonsortium(Konsortium)
-* ^property[+].code = #Konsortium
-* ^property[=].valueString = "{Konsortium}"
+RuleSet: AddKonsortium(consortium)
+* ^property[+].code = #consortium
+* ^property[=].valueString = "{consortium}"
 
 RuleSet: AddUri(uri)
 * ^property[+].code = #uri
@@ -22,13 +22,13 @@ RuleSet: AddRetirementDate(retirementDate)
 * ^property[+].code = #retirementDate
 * ^property[=].valueDateTime = "{retirementDate}"
 
-RuleSet: AddDatenmanagementstelle(Datenmanagementstelle)
-* ^property[+].code = #Datenmanagementstelle
-* ^property[=].valueBoolean = {Datenmanagementstelle}
+RuleSet: AddDatenmanagementstelle(dataManagement)
+* ^property[+].code = #dataManagement
+* ^property[=].valueBoolean = {dataManagement}
 
-RuleSet: AddDiz(Diz)
-* ^property[+].code = #Diz
-* ^property[=].valueBoolean = {Diz}
+RuleSet: AddDiz(dic)
+* ^property[+].code = #dic
+* ^property[=].valueBoolean = {dic}
 
 RuleSet: AddReplaces(replaces)
 * ^property[+].code = #replaces
@@ -38,9 +38,9 @@ RuleSet: AddReplacedBy(replacedBy)
 * ^property[+].code = #replacedBy
 * ^property[=].valueCode = #{replacedBy}
 
-RuleSet: AddTRV(trv)
-* ^property[+].code = #TRV
-* ^property[=].valueString = "{trv}"
+RuleSet: AddTRV(contract)
+* ^property[+].code = #contract
+* ^property[=].valueString = "{contract}"
 
 CodeSystem: MII_CS_Meta_DIZ_Standorte
 Id: mii-cs-meta-diz-standorte
@@ -59,7 +59,7 @@ Description: "Medizininformatik-Initiative Standorte"
 * ^compositional = false
 * ^content = #complete
 * ^copyright = "Medizininformatik-Initiative"
-* ^property[0].code = #Konsortium
+* ^property[0].code = #consortium
 * ^property[0].uri = "https://www.medizininformatik-initiative.de/de/konsortien"
 * ^property[0].type = #string
 * ^property[1].code = #uri
@@ -74,13 +74,13 @@ Description: "Medizininformatik-Initiative Standorte"
 * ^property[4].code = #retirementDate
 * ^property[4].uri = "http://hl7.org/fhir/concept-properties#retirementDate"
 * ^property[4].type = #dateTime
-* ^property[5].code = #Datenmanagementstelle
+* ^property[5].code = #dataManagement
 * ^property[5].type = #boolean
 * ^property[5].description = "Datenmanagementstelle (true / false)"
-* ^property[6].code = #TRV
+* ^property[6].code = #contract
 * ^property[6].type = #string
 * ^property[6].description = "Teilnahmerahmenvertrag (Version)"
-* ^property[7].code = #Diz
+* ^property[7].code = #dic
 * ^property[7].type = #boolean
 * ^property[7].description = "Datenintegrationszentrum (true / false)"
 * ^property[8].code = #abbreviation
@@ -99,14 +99,14 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UKA insert AddTRV(V6.15)
 * #UKA insert AddReplacedBy(bb622e3a)
 * #UKA insert AddDeprecationDate(2024-07-25)
-* #bb622e3a "Uniklinik RWTH Aachen" "Aachen"
-* #bb622e3a insert AddKonsortium(SMITH)
-* #bb622e3a insert AddUri(ukaachen.de)
-* #bb622e3a insert AddStatus(active)
-* #bb622e3a insert AddTRV(V6.15)
-* #bb622e3a insert AddAbbreviation(UKA)
-* #bb622e3a insert AddDiz(true)
-* #bb622e3a insert AddReplaces(UKA)
+* #UKA00001 "Uniklinik RWTH Aachen" "Aachen"
+* #UKA00001 insert AddKonsortium(SMITH)
+* #UKA00001 insert AddUri(ukaachen.de)
+* #UKA00001 insert AddStatus(active)
+* #UKA00001 insert AddTRV(V6.15)
+* #UKA00001 insert AddAbbreviation(UKA)
+* #UKA00001 insert AddDiz(true)
+* #UKA00001 insert AddReplaces(UKA)
 * #UKAU "Universitätsklinikum Augsburg" "Augsburg"
 * #UKAU insert AddKonsortium(DIFUTURE)
 * #UKAU insert AddUri(uk-augsburg.de)
