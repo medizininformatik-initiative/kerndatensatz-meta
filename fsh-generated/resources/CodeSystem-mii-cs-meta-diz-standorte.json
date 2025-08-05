@@ -31,7 +31,7 @@
         },
         {
           "code": "replacedBy",
-          "valueCode": "bb622e3a"
+          "valueCode": "bb62-2e3a"
         },
         {
           "code": "deprecationDate",
@@ -40,7 +40,7 @@
       ]
     },
     {
-      "code": "UKA00001",
+      "code": "bb62-2e3a",
       "display": "Uniklinik RWTH Aachen",
       "definition": "Aachen",
       "property": [
