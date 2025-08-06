@@ -23,37 +23,6 @@
         },
         {
           "code": "status",
-          "valueCode": "deprecated"
-        },
-        {
-          "code": "contract",
-          "valueString": "V6.15"
-        },
-        {
-          "code": "replacedBy",
-          "valueCode": "bb62-2e3a"
-        },
-        {
-          "code": "deprecationDate",
-          "valueDateTime": "2025-07-31"
-        }
-      ]
-    },
-    {
-      "code": "bb62-2e3a",
-      "display": "Uniklinik RWTH Aachen",
-      "definition": "Aachen",
-      "property": [
-        {
-          "code": "consortium",
-          "valueString": "SMITH"
-        },
-        {
-          "code": "uri",
-          "valueString": "ukaachen.de"
-        },
-        {
-          "code": "status",
           "valueCode": "active"
         },
         {
@@ -67,46 +36,11 @@
         {
           "code": "dic",
           "valueBoolean": true
-        },
-        {
-          "code": "replaces",
-          "valueCode": "UKA"
         }
       ]
     },
     {
       "code": "UKAU",
-      "display": "Universitätsklinikum Augsburg",
-      "definition": "Augsburg",
-      "property": [
-        {
-          "code": "consortium",
-          "valueString": "DIFUTURE"
-        },
-        {
-          "code": "uri",
-          "valueString": "uk-augsburg.de"
-        },
-        {
-          "code": "status",
-          "valueCode": "deprecated"
-        },
-        {
-          "code": "contract",
-          "valueString": "V6.15"
-        },
-        {
-          "code": "replacedBy",
-          "valueCode": "81c7-7b5d"
-        },
-        {
-          "code": "deprecationDate",
-          "valueDateTime": "2025-07-31"
-        }
-      ]
-    },
-    {
-      "code": "81c7-7b5d",
       "display": "Universitätsklinikum Augsburg",
       "definition": "Augsburg",
       "property": [
@@ -133,50 +67,11 @@
         {
           "code": "dic",
           "valueBoolean": true
-        },
-        {
-          "code": "replaces",
-          "valueCode": "UKAU"
         }
       ]
     },
     {
       "code": "Charité",
-      "display": "Charité - Universitätsmedizin Berlin",
-      "definition": "Berlin",
-      "property": [
-        {
-          "code": "consortium",
-          "valueString": "HiGHmed"
-        },
-        {
-          "code": "uri",
-          "valueString": "charite.de"
-        },
-        {
-          "code": "status",
-          "valueCode": "deprecated"
-        },
-        {
-          "code": "dataManagement",
-          "valueBoolean": true
-        },
-        {
-          "code": "contract",
-          "valueString": "V6.15"
-        },
-        {
-          "code": "replacedBy",
-          "valueCode": "90e6-38f4"
-        },
-        {
-          "code": "deprecationDate",
-          "valueDateTime": "2025-07-31"
-        }
-      ]
-    },
-    {
-      "code": "90e6-38f4",
       "display": "Charité - Universitätsmedizin Berlin",
       "definition": "Berlin",
       "property": [
@@ -207,46 +102,11 @@
         {
           "code": "dic",
           "valueBoolean": true
-        },
-        {
-          "code": "replaces",
-          "valueCode": "Charité"
         }
       ]
     },
     {
       "code": "VIV",
-      "display": "Vivantes Netzwerk für Gesundheit GmbH",
-      "definition": "Berlin",
-      "property": [
-        {
-          "code": "consortium",
-          "valueString": "HiGHmed"
-        },
-        {
-          "code": "uri",
-          "valueString": "vivantes.de"
-        },
-        {
-          "code": "status",
-          "valueCode": "deprecated"
-        },
-        {
-          "code": "contract",
-          "valueString": "V6.15"
-        },
-        {
-          "code": "replacedBy",
-          "valueCode": "f0bf-65e8"
-        },
-        {
-          "code": "deprecationDate",
-          "valueDateTime": "2025-07-31"
-        }
-      ]
-    },
-    {
-      "code": "f0bf-65e8",
       "display": "Vivantes Netzwerk für Gesundheit GmbH",
       "definition": "Berlin",
       "property": [
@@ -273,46 +133,11 @@
         {
           "code": "dic",
           "valueBoolean": true
-        },
-        {
-          "code": "replaces",
-          "valueCode": "VIV"
         }
       ]
     },
     {
       "code": "UKOWL",
-      "display": "Universität Bielefeld / Universitätsklinikum OWL",
-      "definition": "Bielefeld",
-      "property": [
-        {
-          "code": "consortium",
-          "valueString": "HiGHmed"
-        },
-        {
-          "code": "uri",
-          "valueString": "ukowl.de"
-        },
-        {
-          "code": "status",
-          "valueCode": "deprecated"
-        },
-        {
-          "code": "contract",
-          "valueString": "V6.14"
-        },
-        {
-          "code": "replacedBy",
-          "valueCode": "780a-265a"
-        },
-        {
-          "code": "deprecationDate",
-          "valueDateTime": "2025-07-31"
-        }
-      ]
-    },
-    {
-      "code": "780a-265a",
       "display": "Universität Bielefeld / Universitätsklinikum OWL",
       "definition": "Bielefeld",
       "property": [
@@ -339,46 +164,11 @@
         {
           "code": "dic",
           "valueBoolean": true
-        },
-        {
-          "code": "replaces",
-          "valueCode": "UKOWL"
         }
       ]
     },
     {
       "code": "UKRUB",
-      "display": "Universitätsklinikum der Ruhr-Universität Bochum",
-      "definition": "Bochum",
-      "property": [
-        {
-          "code": "consortium",
-          "valueString": "SMITH"
-        },
-        {
-          "code": "uri",
-          "valueString": "rub.de"
-        },
-        {
-          "code": "status",
-          "valueCode": "deprecated"
-        },
-        {
-          "code": "contract",
-          "valueString": "V6.15"
-        },
-        {
-          "code": "replacedBy",
-          "valueCode": "c7f6-8e10"
-        },
-        {
-          "code": "deprecationDate",
-          "valueDateTime": "2025-07-31"
-        }
-      ]
-    },
-    {
-      "code": "c7f6-8e10",
       "display": "Universitätsklinikum der Ruhr-Universität Bochum",
       "definition": "Bochum",
       "property": [
@@ -405,46 +195,11 @@
         {
           "code": "dic",
           "valueBoolean": true
-        },
-        {
-          "code": "replaces",
-          "valueCode": "UKRUB"
         }
       ]
     },
     {
       "code": "UKB",
-      "display": "Universitätsklinikum Bonn",
-      "definition": "Bonn",
-      "property": [
-        {
-          "code": "consortium",
-          "valueString": "SMITH"
-        },
-        {
-          "code": "uri",
-          "valueString": "ukbonn.de"
-        },
-        {
-          "code": "status",
-          "valueCode": "deprecated"
-        },
-        {
-          "code": "contract",
-          "valueString": "V6.15"
-        },
-        {
-          "code": "replacedBy",
-          "valueCode": "6ef6-1948"
-        },
-        {
-          "code": "deprecationDate",
-          "valueDateTime": "2025-07-31"
-        }
-      ]
-    },
-    {
-      "code": "6ef6-1948",
       "display": "Universitätsklinikum Bonn",
       "definition": "Bonn",
       "property": [
@@ -471,46 +226,11 @@
         {
           "code": "dic",
           "valueBoolean": true
-        },
-        {
-          "code": "replaces",
-          "valueCode": "UKB"
         }
       ]
     },
     {
       "code": "KCH",
-      "display": "Klinikum Chemnitz",
-      "definition": "Chemnitz",
-      "property": [
-        {
-          "code": "consortium",
-          "valueString": "MIRACUM"
-        },
-        {
-          "code": "uri",
-          "valueString": "klinikumchemnitz.de"
-        },
-        {
-          "code": "status",
-          "valueCode": "deprecated"
-        },
-        {
-          "code": "contract",
-          "valueString": "V6.14"
-        },
-        {
-          "code": "replacedBy",
-          "valueCode": "4756-3ac4"
-        },
-        {
-          "code": "deprecationDate",
-          "valueDateTime": "2025-07-31"
-        }
-      ]
-    },
-    {
-      "code": "4756-3ac4",
       "display": "Klinikum Chemnitz",
       "definition": "Chemnitz",
       "property": [
@@ -537,10 +257,6 @@
         {
           "code": "dic",
           "valueBoolean": true
-        },
-        {
-          "code": "replaces",
-          "valueCode": "KCH"
         }
       ]
     },
@@ -586,7 +302,7 @@
         },
         {
           "code": "status",
-          "valueCode": "deprecated"
+          "valueCode": "active"
         },
         {
           "code": "contract",
@@ -597,87 +313,17 @@
           "valueCode": "CTK"
         },
         {
-          "code": "replacedBy",
-          "valueCode": "1ace-5987"
-        },
-        {
-          "code": "deprecationDate",
-          "valueDateTime": "2025-07-31"
-        }
-      ]
-    },
-    {
-      "code": "1ace-5987",
-      "display": "Medizinische Universität Lausitz - Carl Thiem",
-      "definition": "Cottbus",
-      "property": [
-        {
-          "code": "consortium",
-          "valueString": "HiGHmed"
-        },
-        {
-          "code": "uri",
-          "valueString": "mul-ct.de"
-        },
-        {
-          "code": "status",
-          "valueCode": "active"
-        },
-        {
-          "code": "contract",
-          "valueString": "V6.15"
-        },
-        {
           "code": "abbreviation",
           "valueString": "MUL-CT"
         },
         {
           "code": "dic",
           "valueBoolean": true
-        },
-        {
-          "code": "replaces",
-          "valueCode": "MUL-CT"
         }
       ]
     },
     {
       "code": "UKDD",
-      "display": "Universitätsklinikum Carl Gustav Carus Dresden",
-      "definition": "Dresden",
-      "property": [
-        {
-          "code": "consortium",
-          "valueString": "MIRACUM"
-        },
-        {
-          "code": "uri",
-          "valueString": "ukdd.de"
-        },
-        {
-          "code": "status",
-          "valueCode": "deprecated"
-        },
-        {
-          "code": "dataManagement",
-          "valueBoolean": true
-        },
-        {
-          "code": "contract",
-          "valueString": "V6.15"
-        },
-        {
-          "code": "replacedBy",
-          "valueCode": "d37d-5e6f"
-        },
-        {
-          "code": "deprecationDate",
-          "valueDateTime": "2025-07-31"
-        }
-      ]
-    },
-    {
-      "code": "d37d-5e6f",
       "display": "Universitätsklinikum Carl Gustav Carus Dresden",
       "definition": "Dresden",
       "property": [
@@ -708,46 +354,11 @@
         {
           "code": "dic",
           "valueBoolean": true
-        },
-        {
-          "code": "replaces",
-          "valueCode": "UKDD"
         }
       ]
     },
     {
       "code": "UKD",
-      "display": "Universitätsklinikum Düsseldorf",
-      "definition": "Düsseldorf",
-      "property": [
-        {
-          "code": "consortium",
-          "valueString": "SMITH"
-        },
-        {
-          "code": "uri",
-          "valueString": "uniklinik-duesseldorf.de"
-        },
-        {
-          "code": "status",
-          "valueCode": "deprecated"
-        },
-        {
-          "code": "contract",
-          "valueString": "V6.15"
-        },
-        {
-          "code": "replacedBy",
-          "valueCode": "e5b7-1562"
-        },
-        {
-          "code": "deprecationDate",
-          "valueDateTime": "2025-07-31"
-        }
-      ]
-    },
-    {
-      "code": "e5b7-1562",
       "display": "Universitätsklinikum Düsseldorf",
       "definition": "Düsseldorf",
       "property": [
@@ -774,46 +385,11 @@
         {
           "code": "dic",
           "valueBoolean": true
-        },
-        {
-          "code": "replaces",
-          "valueCode": "UKD"
         }
       ]
     },
     {
       "code": "UKEr",
-      "display": "Universitätsklinikum Erlangen",
-      "definition": "Erlangen",
-      "property": [
-        {
-          "code": "consortium",
-          "valueString": "MIRACUM"
-        },
-        {
-          "code": "uri",
-          "valueString": "www.uk-erlangen.de"
-        },
-        {
-          "code": "status",
-          "valueCode": "deprecated"
-        },
-        {
-          "code": "contract",
-          "valueString": "V6.15"
-        },
-        {
-          "code": "replacedBy",
-          "valueCode": "c1b2-db4a"
-        },
-        {
-          "code": "deprecationDate",
-          "valueDateTime": "2025-07-31"
-        }
-      ]
-    },
-    {
-      "code": "c1b2-db4a",
       "display": "Universitätsklinikum Erlangen",
       "definition": "Erlangen",
       "property": [
@@ -840,46 +416,11 @@
         {
           "code": "dic",
           "valueBoolean": true
-        },
-        {
-          "code": "replaces",
-          "valueCode": "UKEr"
         }
       ]
     },
     {
       "code": "UME",
-      "display": "Universitätsklinikum Essen",
-      "definition": "Essen",
-      "property": [
-        {
-          "code": "consortium",
-          "valueString": "SMITH"
-        },
-        {
-          "code": "uri",
-          "valueString": "uk-essen.de"
-        },
-        {
-          "code": "status",
-          "valueCode": "deprecated"
-        },
-        {
-          "code": "contract",
-          "valueString": "V6.15"
-        },
-        {
-          "code": "replacedBy",
-          "valueCode": "26e4-c833"
-        },
-        {
-          "code": "deprecationDate",
-          "valueDateTime": "2025-07-31"
-        }
-      ]
-    },
-    {
-      "code": "26e4-c833",
       "display": "Universitätsklinikum Essen",
       "definition": "Essen",
       "property": [
@@ -906,46 +447,11 @@
         {
           "code": "dic",
           "valueBoolean": true
-        },
-        {
-          "code": "replaces",
-          "valueCode": "UME"
         }
       ]
     },
     {
       "code": "UKF",
-      "display": "Universitätsklinikum Frankfurt",
-      "definition": "Frankfurt",
-      "property": [
-        {
-          "code": "consortium",
-          "valueString": "MIRACUM"
-        },
-        {
-          "code": "uri",
-          "valueString": "unimedizin-ffm.de"
-        },
-        {
-          "code": "status",
-          "valueCode": "deprecated"
-        },
-        {
-          "code": "contract",
-          "valueString": "V6.14"
-        },
-        {
-          "code": "replacedBy",
-          "valueCode": "995c-987c"
-        },
-        {
-          "code": "deprecationDate",
-          "valueDateTime": "2025-07-31"
-        }
-      ]
-    },
-    {
-      "code": "995c-987c",
       "display": "Universitätsklinikum Frankfurt",
       "definition": "Frankfurt",
       "property": [
@@ -972,46 +478,11 @@
         {
           "code": "dic",
           "valueBoolean": true
-        },
-        {
-          "code": "replaces",
-          "valueCode": "UKF"
         }
       ]
     },
     {
       "code": "UKFR",
-      "display": "Universitätsklinikum Freiburg",
-      "definition": "Freiburg",
-      "property": [
-        {
-          "code": "consortium",
-          "valueString": "MIRACUM"
-        },
-        {
-          "code": "uri",
-          "valueString": "uniklinik-freiburg.de"
-        },
-        {
-          "code": "status",
-          "valueCode": "deprecated"
-        },
-        {
-          "code": "contract",
-          "valueString": "V6.14"
-        },
-        {
-          "code": "replacedBy",
-          "valueCode": "9ced-f8c1"
-        },
-        {
-          "code": "deprecationDate",
-          "valueDateTime": "2025-07-31"
-        }
-      ]
-    },
-    {
-      "code": "9ced-f8c1",
       "display": "Universitätsklinikum Freiburg",
       "definition": "Freiburg",
       "property": [
@@ -1038,46 +509,11 @@
         {
           "code": "dic",
           "valueBoolean": true
-        },
-        {
-          "code": "replaces",
-          "valueCode": "UKFR"
         }
       ]
     },
     {
       "code": "UKGI",
-      "display": "Universitätsklinikum Gießen",
-      "definition": "Gießen",
-      "property": [
-        {
-          "code": "consortium",
-          "valueString": "MIRACUM"
-        },
-        {
-          "code": "uri",
-          "valueString": "uni-giessen.de"
-        },
-        {
-          "code": "status",
-          "valueCode": "deprecated"
-        },
-        {
-          "code": "contract",
-          "valueString": "V6.15"
-        },
-        {
-          "code": "replacedBy",
-          "valueCode": "fd89-ff99"
-        },
-        {
-          "code": "deprecationDate",
-          "valueDateTime": "2025-07-31"
-        }
-      ]
-    },
-    {
-      "code": "fd89-ff99",
       "display": "Universitätsklinikum Gießen",
       "definition": "Gießen",
       "property": [
@@ -1104,50 +540,11 @@
         {
           "code": "dic",
           "valueBoolean": true
-        },
-        {
-          "code": "replaces",
-          "valueCode": "UKGI"
         }
       ]
     },
     {
       "code": "UMG",
-      "display": "Universitätsmedizin Göttingen",
-      "definition": "Göttingen",
-      "property": [
-        {
-          "code": "consortium",
-          "valueString": "HiGHmed"
-        },
-        {
-          "code": "uri",
-          "valueString": "umg.eu"
-        },
-        {
-          "code": "status",
-          "valueCode": "deprecated"
-        },
-        {
-          "code": "dataManagement",
-          "valueBoolean": true
-        },
-        {
-          "code": "contract",
-          "valueString": "V6.15"
-        },
-        {
-          "code": "replacedBy",
-          "valueCode": "0635-f7c4"
-        },
-        {
-          "code": "deprecationDate",
-          "valueDateTime": "2025-07-31"
-        }
-      ]
-    },
-    {
-      "code": "0635-f7c4",
       "display": "Universitätsmedizin Göttingen",
       "definition": "Göttingen",
       "property": [
@@ -1178,46 +575,11 @@
         {
           "code": "dic",
           "valueBoolean": true
-        },
-        {
-          "code": "replaces",
-          "valueCode": "UMG"
         }
       ]
     },
     {
       "code": "UKG",
-      "display": "Universitätsmedizin Greifswald",
-      "definition": "Greifswald",
-      "property": [
-        {
-          "code": "consortium",
-          "valueString": "MIRACUM"
-        },
-        {
-          "code": "uri",
-          "valueString": "www.medizin.uni-greifswald.de"
-        },
-        {
-          "code": "status",
-          "valueCode": "deprecated"
-        },
-        {
-          "code": "contract",
-          "valueString": "V6.14"
-        },
-        {
-          "code": "replacedBy",
-          "valueCode": "abb0-e8e9"
-        },
-        {
-          "code": "deprecationDate",
-          "valueDateTime": "2025-07-31"
-        }
-      ]
-    },
-    {
-      "code": "abb0-e8e9",
       "display": "Universitätsmedizin Greifswald",
       "definition": "Greifswald",
       "property": [
@@ -1244,50 +606,11 @@
         {
           "code": "dic",
           "valueBoolean": true
-        },
-        {
-          "code": "replaces",
-          "valueCode": "UKG"
         }
       ]
     },
     {
       "code": "UKH",
-      "display": "Universitätsklinikum Halle (Saale)",
-      "definition": "Halle (Saale)",
-      "property": [
-        {
-          "code": "consortium",
-          "valueString": "SMITH"
-        },
-        {
-          "code": "uri",
-          "valueString": "uk-halle.de"
-        },
-        {
-          "code": "status",
-          "valueCode": "deprecated"
-        },
-        {
-          "code": "dataManagement",
-          "valueBoolean": true
-        },
-        {
-          "code": "contract",
-          "valueString": "V6.15"
-        },
-        {
-          "code": "replacedBy",
-          "valueCode": "915e-05a2"
-        },
-        {
-          "code": "deprecationDate",
-          "valueDateTime": "2025-07-31"
-        }
-      ]
-    },
-    {
-      "code": "915e-05a2",
       "display": "Universitätsklinikum Halle (Saale)",
       "definition": "Halle (Saale)",
       "property": [
@@ -1318,46 +641,11 @@
         {
           "code": "dic",
           "valueBoolean": true
-        },
-        {
-          "code": "replaces",
-          "valueCode": "UKH"
         }
       ]
     },
     {
       "code": "UKE",
-      "display": "Universitätsklinikum Hamburg-Eppendorf",
-      "definition": "Hamburg",
-      "property": [
-        {
-          "code": "consortium",
-          "valueString": "SMITH"
-        },
-        {
-          "code": "uri",
-          "valueString": "uke.de"
-        },
-        {
-          "code": "status",
-          "valueCode": "deprecated"
-        },
-        {
-          "code": "contract",
-          "valueString": "V6.15"
-        },
-        {
-          "code": "replacedBy",
-          "valueCode": "720b-e698"
-        },
-        {
-          "code": "deprecationDate",
-          "valueDateTime": "2025-07-31"
-        }
-      ]
-    },
-    {
-      "code": "720b-e698",
       "display": "Universitätsklinikum Hamburg-Eppendorf",
       "definition": "Hamburg",
       "property": [
@@ -1384,46 +672,11 @@
         {
           "code": "dic",
           "valueBoolean": true
-        },
-        {
-          "code": "replaces",
-          "valueCode": "UKE"
         }
       ]
     },
     {
       "code": "MHH",
-      "display": "Medizinische Hochschule Hannover",
-      "definition": "Hannover",
-      "property": [
-        {
-          "code": "consortium",
-          "valueString": "HiGHmed"
-        },
-        {
-          "code": "uri",
-          "valueString": "mh-hannover.de"
-        },
-        {
-          "code": "status",
-          "valueCode": "deprecated"
-        },
-        {
-          "code": "contract",
-          "valueString": "V6.15"
-        },
-        {
-          "code": "replacedBy",
-          "valueCode": "0d7e-b6f3"
-        },
-        {
-          "code": "deprecationDate",
-          "valueDateTime": "2025-07-31"
-        }
-      ]
-    },
-    {
-      "code": "0d7e-b6f3",
       "display": "Medizinische Hochschule Hannover",
       "definition": "Hannover",
       "property": [
@@ -1450,50 +703,11 @@
         {
           "code": "dic",
           "valueBoolean": true
-        },
-        {
-          "code": "replaces",
-          "valueCode": "MHH"
         }
       ]
     },
     {
       "code": "UKHD",
-      "display": "Universitätsklinikum Heidelberg",
-      "definition": "Heidelberg",
-      "property": [
-        {
-          "code": "consortium",
-          "valueString": "HiGHmed"
-        },
-        {
-          "code": "uri",
-          "valueString": "ukhd.de"
-        },
-        {
-          "code": "status",
-          "valueCode": "deprecated"
-        },
-        {
-          "code": "dataManagement",
-          "valueBoolean": true
-        },
-        {
-          "code": "contract",
-          "valueString": "V6.15"
-        },
-        {
-          "code": "replacedBy",
-          "valueCode": "396b-a5c5"
-        },
-        {
-          "code": "deprecationDate",
-          "valueDateTime": "2025-07-31"
-        }
-      ]
-    },
-    {
-      "code": "396b-a5c5",
       "display": "Universitätsklinikum Heidelberg",
       "definition": "Heidelberg",
       "property": [
@@ -1524,46 +738,11 @@
         {
           "code": "dic",
           "valueBoolean": true
-        },
-        {
-          "code": "replaces",
-          "valueCode": "UKHD"
         }
       ]
     },
     {
       "code": "UKJ",
-      "display": "Universitätsklinikum Jena",
-      "definition": "Jena",
-      "property": [
-        {
-          "code": "consortium",
-          "valueString": "SMITH"
-        },
-        {
-          "code": "uri",
-          "valueString": "uniklinikum-jena.de"
-        },
-        {
-          "code": "status",
-          "valueCode": "deprecated"
-        },
-        {
-          "code": "contract",
-          "valueString": "V6.14"
-        },
-        {
-          "code": "replacedBy",
-          "valueCode": "6172-e156"
-        },
-        {
-          "code": "deprecationDate",
-          "valueDateTime": "2025-07-31"
-        }
-      ]
-    },
-    {
-      "code": "6172-e156",
       "display": "Universitätsklinikum Jena",
       "definition": "Jena",
       "property": [
@@ -1590,50 +769,11 @@
         {
           "code": "dic",
           "valueBoolean": true
-        },
-        {
-          "code": "replaces",
-          "valueCode": "UKJ"
         }
       ]
     },
     {
       "code": "UKK",
-      "display": "Universitätsklinikum Köln",
-      "definition": "Köln",
-      "property": [
-        {
-          "code": "consortium",
-          "valueString": "HiGHmed"
-        },
-        {
-          "code": "uri",
-          "valueString": "uk-koeln.de"
-        },
-        {
-          "code": "status",
-          "valueCode": "deprecated"
-        },
-        {
-          "code": "dataManagement",
-          "valueBoolean": true
-        },
-        {
-          "code": "contract",
-          "valueString": "V6.15"
-        },
-        {
-          "code": "replacedBy",
-          "valueCode": "be8e-5d04"
-        },
-        {
-          "code": "deprecationDate",
-          "valueDateTime": "2025-07-31"
-        }
-      ]
-    },
-    {
-      "code": "be8e-5d04",
       "display": "Universitätsklinikum Köln",
       "definition": "Köln",
       "property": [
@@ -1664,50 +804,11 @@
         {
           "code": "dic",
           "valueBoolean": true
-        },
-        {
-          "code": "replaces",
-          "valueCode": "UKK"
         }
       ]
     },
     {
       "code": "UKL",
-      "display": "Universitätsklinikum Leipzig",
-      "definition": "Leipzig",
-      "property": [
-        {
-          "code": "consortium",
-          "valueString": "SMITH"
-        },
-        {
-          "code": "uri",
-          "valueString": "uniklinikum-leipzig.de"
-        },
-        {
-          "code": "status",
-          "valueCode": "deprecated"
-        },
-        {
-          "code": "dataManagement",
-          "valueBoolean": true
-        },
-        {
-          "code": "contract",
-          "valueString": "V6.15"
-        },
-        {
-          "code": "replacedBy",
-          "valueCode": "60c6-880a"
-        },
-        {
-          "code": "deprecationDate",
-          "valueDateTime": "2025-07-31"
-        }
-      ]
-    },
-    {
-      "code": "60c6-880a",
       "display": "Universitätsklinikum Leipzig",
       "definition": "Leipzig",
       "property": [
@@ -1738,46 +839,11 @@
         {
           "code": "dic",
           "valueBoolean": true
-        },
-        {
-          "code": "replaces",
-          "valueCode": "UKL"
         }
       ]
     },
     {
       "code": "UL",
-      "display": "Universität Leipzig",
-      "definition": "Leipzig",
-      "property": [
-        {
-          "code": "consortium",
-          "valueString": "SMITH"
-        },
-        {
-          "code": "uri",
-          "valueString": "uniklinikum-leipzig.de"
-        },
-        {
-          "code": "status",
-          "valueCode": "deprecated"
-        },
-        {
-          "code": "contract",
-          "valueString": "V6.15"
-        },
-        {
-          "code": "replacedBy",
-          "valueCode": "cf8e-ae01"
-        },
-        {
-          "code": "deprecationDate",
-          "valueDateTime": "2025-07-31"
-        }
-      ]
-    },
-    {
-      "code": "cf8e-ae01",
       "display": "Universität Leipzig",
       "definition": "Leipzig",
       "property": [
@@ -1804,46 +870,11 @@
         {
           "code": "dic",
           "valueBoolean": true
-        },
-        {
-          "code": "replaces",
-          "valueCode": "UL"
         }
       ]
     },
     {
       "code": "UMMD",
-      "display": "Universitätsklinikum Magdeburg",
-      "definition": "Magdeburg",
-      "property": [
-        {
-          "code": "consortium",
-          "valueString": "MIRACUM"
-        },
-        {
-          "code": "uri",
-          "valueString": "www.med.uni-magdeburg.de"
-        },
-        {
-          "code": "status",
-          "valueCode": "deprecated"
-        },
-        {
-          "code": "contract",
-          "valueString": "V6.14"
-        },
-        {
-          "code": "replacedBy",
-          "valueCode": "7714-8cf2"
-        },
-        {
-          "code": "deprecationDate",
-          "valueDateTime": "2025-07-31"
-        }
-      ]
-    },
-    {
-      "code": "7714-8cf2",
       "display": "Universitätsklinikum Magdeburg",
       "definition": "Magdeburg",
       "property": [
@@ -1870,46 +901,11 @@
         {
           "code": "dic",
           "valueBoolean": true
-        },
-        {
-          "code": "replaces",
-          "valueCode": "UMMD"
         }
       ]
     },
     {
       "code": "UM",
-      "display": "Universitätsmedizin der Johannes Gutenberg-Universität Mainz",
-      "definition": "Mainz",
-      "property": [
-        {
-          "code": "consortium",
-          "valueString": "MIRACUM"
-        },
-        {
-          "code": "uri",
-          "valueString": "unimedizin-mainz.de"
-        },
-        {
-          "code": "status",
-          "valueCode": "deprecated"
-        },
-        {
-          "code": "contract",
-          "valueString": "V6.14"
-        },
-        {
-          "code": "replacedBy",
-          "valueCode": "61ae-15d9"
-        },
-        {
-          "code": "deprecationDate",
-          "valueDateTime": "2025-07-31"
-        }
-      ]
-    },
-    {
-      "code": "61ae-15d9",
       "display": "Universitätsmedizin der Johannes Gutenberg-Universität Mainz",
       "definition": "Mainz",
       "property": [
@@ -1936,46 +932,11 @@
         {
           "code": "dic",
           "valueBoolean": true
-        },
-        {
-          "code": "replaces",
-          "valueCode": "UM"
         }
       ]
     },
     {
       "code": "UMM",
-      "display": "Universitätsklinikum Mannheim",
-      "definition": "Mannheim",
-      "property": [
-        {
-          "code": "consortium",
-          "valueString": "MIRACUM"
-        },
-        {
-          "code": "uri",
-          "valueString": "umm.de"
-        },
-        {
-          "code": "status",
-          "valueCode": "deprecated"
-        },
-        {
-          "code": "contract",
-          "valueString": "V6.15"
-        },
-        {
-          "code": "replacedBy",
-          "valueCode": "7b53-7320"
-        },
-        {
-          "code": "deprecationDate",
-          "valueDateTime": "2025-07-31"
-        }
-      ]
-    },
-    {
-      "code": "7b53-7320",
       "display": "Universitätsklinikum Mannheim",
       "definition": "Mannheim",
       "property": [
@@ -2002,46 +963,11 @@
         {
           "code": "dic",
           "valueBoolean": true
-        },
-        {
-          "code": "replaces",
-          "valueCode": "UMM"
         }
       ]
     },
     {
       "code": "UKMR",
-      "display": "Universitätsklinikum Marburg",
-      "definition": "Marburg",
-      "property": [
-        {
-          "code": "consortium",
-          "valueString": "MIRACUM"
-        },
-        {
-          "code": "uri",
-          "valueString": "uni-marburg.de"
-        },
-        {
-          "code": "status",
-          "valueCode": "deprecated"
-        },
-        {
-          "code": "contract",
-          "valueString": "V6.15"
-        },
-        {
-          "code": "replacedBy",
-          "valueCode": "ed03-02f0"
-        },
-        {
-          "code": "deprecationDate",
-          "valueDateTime": "2025-07-31"
-        }
-      ]
-    },
-    {
-      "code": "ed03-02f0",
       "display": "Universitätsklinikum Marburg",
       "definition": "Marburg",
       "property": [
@@ -2068,46 +994,11 @@
         {
           "code": "dic",
           "valueBoolean": true
-        },
-        {
-          "code": "replaces",
-          "valueCode": "UKMR"
         }
       ]
     },
     {
       "code": "KUM",
-      "display": "Klinikum der Universität München (LMU)",
-      "definition": "München",
-      "property": [
-        {
-          "code": "consortium",
-          "valueString": "DIFUTURE"
-        },
-        {
-          "code": "uri",
-          "valueString": "lmu-klinikum.de"
-        },
-        {
-          "code": "status",
-          "valueCode": "deprecated"
-        },
-        {
-          "code": "contract",
-          "valueString": "V6.15"
-        },
-        {
-          "code": "replacedBy",
-          "valueCode": "45f5-d5d1"
-        },
-        {
-          "code": "deprecationDate",
-          "valueDateTime": "2025-07-31"
-        }
-      ]
-    },
-    {
-      "code": "45f5-d5d1",
       "display": "Klinikum der Universität München (LMU)",
       "definition": "München",
       "property": [
@@ -2134,46 +1025,11 @@
         {
           "code": "dic",
           "valueBoolean": true
-        },
-        {
-          "code": "replaces",
-          "valueCode": "KUM"
         }
       ]
     },
     {
       "code": "MRI",
-      "display": "Klinikum rechts der Isar (TUM)",
-      "definition": "München",
-      "property": [
-        {
-          "code": "consortium",
-          "valueString": "DIFUTURE"
-        },
-        {
-          "code": "uri",
-          "valueString": "mri.tum.de"
-        },
-        {
-          "code": "status",
-          "valueCode": "deprecated"
-        },
-        {
-          "code": "contract",
-          "valueString": "V6.15"
-        },
-        {
-          "code": "replacedBy",
-          "valueCode": "47c9-3a8d"
-        },
-        {
-          "code": "deprecationDate",
-          "valueDateTime": "2025-07-31"
-        }
-      ]
-    },
-    {
-      "code": "47c9-3a8d",
       "display": "Klinikum rechts der Isar (TUM)",
       "definition": "München",
       "property": [
@@ -2200,46 +1056,11 @@
         {
           "code": "dic",
           "valueBoolean": true
-        },
-        {
-          "code": "replaces",
-          "valueCode": "MRI"
         }
       ]
     },
     {
       "code": "UKM",
-      "display": "Universitätsklinikum Münster",
-      "definition": "Münster",
-      "property": [
-        {
-          "code": "consortium",
-          "valueString": "HiGHmed"
-        },
-        {
-          "code": "uri",
-          "valueString": "ukm.de"
-        },
-        {
-          "code": "status",
-          "valueCode": "deprecated"
-        },
-        {
-          "code": "contract",
-          "valueString": "V6.15"
-        },
-        {
-          "code": "replacedBy",
-          "valueCode": "de0c-101c"
-        },
-        {
-          "code": "deprecationDate",
-          "valueDateTime": "2025-07-31"
-        }
-      ]
-    },
-    {
-      "code": "de0c-101c",
       "display": "Universitätsklinikum Münster",
       "definition": "Münster",
       "property": [
@@ -2266,10 +1087,6 @@
         {
           "code": "dic",
           "valueBoolean": true
-        },
-        {
-          "code": "replaces",
-          "valueCode": "UKM"
         }
       ]
     },
@@ -2311,7 +1128,7 @@
         },
         {
           "code": "status",
-          "valueCode": "deprecated"
+          "valueCode": "active"
         },
         {
           "code": "contract",
@@ -2322,83 +1139,17 @@
           "valueCode": "UOL"
         },
         {
-          "code": "replacedBy",
-          "valueCode": "4b1d-1441"
-        },
-        {
-          "code": "deprecationDate",
-          "valueDateTime": "2025-07-31"
-        }
-      ]
-    },
-    {
-      "code": "4b1d-1441",
-      "display": "Carl von Ossietzky Universität Oldenburg",
-      "definition": "Oldenburg",
-      "property": [
-        {
-          "code": "consortium",
-          "valueString": "HiGHmed"
-        },
-        {
-          "code": "uri",
-          "valueString": "uol.de"
-        },
-        {
-          "code": "status",
-          "valueCode": "active"
-        },
-        {
-          "code": "contract",
-          "valueString": "V6.14"
-        },
-        {
           "code": "abbreviation",
           "valueString": "UMO"
         },
         {
           "code": "dic",
           "valueBoolean": true
-        },
-        {
-          "code": "replaces",
-          "valueCode": "UMO"
         }
       ]
     },
     {
       "code": "UKR",
-      "display": "Universitätsklinikum Regensburg",
-      "definition": "Regensburg",
-      "property": [
-        {
-          "code": "consortium",
-          "valueString": "DIFUTURE"
-        },
-        {
-          "code": "uri",
-          "valueString": "ukr.de"
-        },
-        {
-          "code": "status",
-          "valueCode": "deprecated"
-        },
-        {
-          "code": "contract",
-          "valueString": "V6.15"
-        },
-        {
-          "code": "replacedBy",
-          "valueCode": "b809-1db5"
-        },
-        {
-          "code": "deprecationDate",
-          "valueDateTime": "2025-07-31"
-        }
-      ]
-    },
-    {
-      "code": "b809-1db5",
       "display": "Universitätsklinikum Regensburg",
       "definition": "Regensburg",
       "property": [
@@ -2425,46 +1176,11 @@
         {
           "code": "dic",
           "valueBoolean": true
-        },
-        {
-          "code": "replaces",
-          "valueCode": "UKR"
         }
       ]
     },
     {
       "code": "UMR",
-      "display": "Universitätsmedizin Rostock",
-      "definition": "Rostock",
-      "property": [
-        {
-          "code": "consortium",
-          "valueString": "SMITH"
-        },
-        {
-          "code": "uri",
-          "valueString": "med.uni-rostock.de"
-        },
-        {
-          "code": "status",
-          "valueCode": "deprecated"
-        },
-        {
-          "code": "contract",
-          "valueString": "V6.15"
-        },
-        {
-          "code": "replacedBy",
-          "valueCode": "d6de-77c1"
-        },
-        {
-          "code": "deprecationDate",
-          "valueDateTime": "2025-07-31"
-        }
-      ]
-    },
-    {
-      "code": "d6de-77c1",
       "display": "Universitätsmedizin Rostock",
       "definition": "Rostock",
       "property": [
@@ -2491,10 +1207,6 @@
         {
           "code": "dic",
           "valueBoolean": true
-        },
-        {
-          "code": "replaces",
-          "valueCode": "UMR"
         }
       ]
     },
@@ -2540,7 +1252,7 @@
         },
         {
           "code": "status",
-          "valueCode": "deprecated"
+          "valueCode": "active"
         },
         {
           "code": "contract",
@@ -2551,83 +1263,17 @@
           "valueCode": "UKS"
         },
         {
-          "code": "replacedBy",
-          "valueCode": "9363-c68f"
-        },
-        {
-          "code": "deprecationDate",
-          "valueDateTime": "2025-07-31"
-        }
-      ]
-    },
-    {
-      "code": "9363-c68f",
-      "display": "Universität des Saarlandes, Medizinische Fakultät",
-      "definition": "Saarbrücken / Homburg",
-      "property": [
-        {
-          "code": "consortium",
-          "valueString": "DIFUTURE"
-        },
-        {
-          "code": "uri",
-          "valueString": "med.uni-saarland.de"
-        },
-        {
-          "code": "status",
-          "valueCode": "active"
-        },
-        {
-          "code": "contract",
-          "valueString": "V6.14"
-        },
-        {
           "code": "abbreviation",
           "valueString": "UdS"
         },
         {
           "code": "dic",
           "valueBoolean": true
-        },
-        {
-          "code": "replaces",
-          "valueCode": "UdS"
         }
       ]
     },
     {
       "code": "UKSH",
-      "display": "Universitätsklinikum Schleswig-Holstein",
-      "definition": "Schleswig-Holstein",
-      "property": [
-        {
-          "code": "consortium",
-          "valueString": "HiGHmed"
-        },
-        {
-          "code": "uri",
-          "valueString": "uksh.de"
-        },
-        {
-          "code": "status",
-          "valueCode": "deprecated"
-        },
-        {
-          "code": "contract",
-          "valueString": "V6.15"
-        },
-        {
-          "code": "replacedBy",
-          "valueCode": "aa48-9639"
-        },
-        {
-          "code": "deprecationDate",
-          "valueDateTime": "2025-07-31"
-        }
-      ]
-    },
-    {
-      "code": "aa48-9639",
       "display": "Universitätsklinikum Schleswig-Holstein",
       "definition": "Schleswig-Holstein",
       "property": [
@@ -2654,46 +1300,11 @@
         {
           "code": "dic",
           "valueBoolean": true
-        },
-        {
-          "code": "replaces",
-          "valueCode": "UKSH"
         }
       ]
     },
     {
       "code": "BHC",
-      "display": "Bosch Health Campus",
-      "definition": "Stuttgart",
-      "property": [
-        {
-          "code": "consortium",
-          "valueString": "HiGHmed"
-        },
-        {
-          "code": "uri",
-          "valueString": "rbk.de"
-        },
-        {
-          "code": "status",
-          "valueCode": "deprecated"
-        },
-        {
-          "code": "contract",
-          "valueString": "V6.15"
-        },
-        {
-          "code": "replacedBy",
-          "valueCode": "0b92-9a71"
-        },
-        {
-          "code": "deprecationDate",
-          "valueDateTime": "2025-07-31"
-        }
-      ]
-    },
-    {
-      "code": "0b92-9a71",
       "display": "Bosch Health Campus",
       "definition": "Stuttgart",
       "property": [
@@ -2720,46 +1331,11 @@
         {
           "code": "dic",
           "valueBoolean": true
-        },
-        {
-          "code": "replaces",
-          "valueCode": "BHC"
         }
       ]
     },
     {
       "code": "UKT",
-      "display": "Universitätsklinikum Tübingen",
-      "definition": "Tübingen",
-      "property": [
-        {
-          "code": "consortium",
-          "valueString": "DIFUTURE"
-        },
-        {
-          "code": "uri",
-          "valueString": "medizin.uni-tuebingen.de"
-        },
-        {
-          "code": "status",
-          "valueCode": "deprecated"
-        },
-        {
-          "code": "contract",
-          "valueString": "V6.15"
-        },
-        {
-          "code": "replacedBy",
-          "valueCode": "ccb1-2f84"
-        },
-        {
-          "code": "deprecationDate",
-          "valueDateTime": "2025-07-31"
-        }
-      ]
-    },
-    {
-      "code": "ccb1-2f84",
       "display": "Universitätsklinikum Tübingen",
       "definition": "Tübingen",
       "property": [
@@ -2786,46 +1362,11 @@
         {
           "code": "dic",
           "valueBoolean": true
-        },
-        {
-          "code": "replaces",
-          "valueCode": "UKT"
         }
       ]
     },
     {
       "code": "UKU",
-      "display": "Universitätsklinikum Ulm",
-      "definition": "Ulm",
-      "property": [
-        {
-          "code": "consortium",
-          "valueString": "DIFUTURE"
-        },
-        {
-          "code": "uri",
-          "valueString": "uniklinik-ulm.de"
-        },
-        {
-          "code": "status",
-          "valueCode": "deprecated"
-        },
-        {
-          "code": "contract",
-          "valueString": "V6.15"
-        },
-        {
-          "code": "replacedBy",
-          "valueCode": "9d08-a31d"
-        },
-        {
-          "code": "deprecationDate",
-          "valueDateTime": "2025-07-31"
-        }
-      ]
-    },
-    {
-      "code": "9d08-a31d",
       "display": "Universitätsklinikum Ulm",
       "definition": "Ulm",
       "property": [
@@ -2852,50 +1393,11 @@
         {
           "code": "dic",
           "valueBoolean": true
-        },
-        {
-          "code": "replaces",
-          "valueCode": "UKU"
         }
       ]
     },
     {
       "code": "UKW",
-      "display": "Universitätsklinikum Würzburg",
-      "definition": "Würzburg",
-      "property": [
-        {
-          "code": "consortium",
-          "valueString": "HiGHmed"
-        },
-        {
-          "code": "uri",
-          "valueString": "ukw.de"
-        },
-        {
-          "code": "status",
-          "valueCode": "deprecated"
-        },
-        {
-          "code": "dataManagement",
-          "valueBoolean": true
-        },
-        {
-          "code": "contract",
-          "valueString": "V6.15"
-        },
-        {
-          "code": "replacedBy",
-          "valueCode": "2d10-fc36"
-        },
-        {
-          "code": "deprecationDate",
-          "valueDateTime": "2025-07-31"
-        }
-      ]
-    },
-    {
-      "code": "2d10-fc36",
       "display": "Universitätsklinikum Würzburg",
       "definition": "Würzburg",
       "property": [
@@ -2926,10 +1428,6 @@
         {
           "code": "dic",
           "valueBoolean": true
-        },
-        {
-          "code": "replaces",
-          "valueCode": "UKW"
         }
       ]
     },
@@ -2966,40 +1464,6 @@
         },
         {
           "code": "status",
-          "valueCode": "deprecated"
-        },
-        {
-          "code": "dataManagement",
-          "valueBoolean": true
-        },
-        {
-          "code": "contract",
-          "valueString": "V6.14"
-        },
-        {
-          "code": "replacedBy",
-          "valueCode": "d98f-27fd"
-        },
-        {
-          "code": "deprecationDate",
-          "valueDateTime": "2025-07-31"
-        }
-      ]
-    },
-    {
-      "code": "d98f-27fd",
-      "display": "Forschungsdatenportal für Gesundheit",
-      "property": [
-        {
-          "code": "consortium",
-          "valueString": "MII"
-        },
-        {
-          "code": "uri",
-          "valueString": "forschen-fuer-gesundheit.de"
-        },
-        {
-          "code": "status",
           "valueCode": "active"
         },
         {
@@ -3013,50 +1477,11 @@
         {
           "code": "abbreviation",
           "valueString": "FDPG"
-        },
-        {
-          "code": "replaces",
-          "valueCode": "FDPG"
         }
       ]
     },
     {
       "code": "HiGHmed",
-      "display": "HiGHmed e.V.",
-      "definition": "Heidelberg",
-      "property": [
-        {
-          "code": "consortium",
-          "valueString": "MII"
-        },
-        {
-          "code": "uri",
-          "valueString": "highmed.org"
-        },
-        {
-          "code": "status",
-          "valueCode": "deprecated"
-        },
-        {
-          "code": "dataManagement",
-          "valueBoolean": true
-        },
-        {
-          "code": "contract",
-          "valueString": "V6.15"
-        },
-        {
-          "code": "replacedBy",
-          "valueCode": "3970-4f51"
-        },
-        {
-          "code": "deprecationDate",
-          "valueDateTime": "2025-07-31"
-        }
-      ]
-    },
-    {
-      "code": "3970-4f51",
       "display": "HiGHmed e.V.",
       "definition": "Heidelberg",
       "property": [
@@ -3083,46 +1508,11 @@
         {
           "code": "abbreviation",
           "valueString": "HiGHmed"
-        },
-        {
-          "code": "replaces",
-          "valueCode": "HiGHmed"
         }
       ]
     },
     {
       "code": "HHN",
-      "display": "Hochschule Heilbronn",
-      "definition": "Heilbronn",
-      "property": [
-        {
-          "code": "consortium",
-          "valueString": "MII"
-        },
-        {
-          "code": "uri",
-          "valueString": "hs-heilbronn.de"
-        },
-        {
-          "code": "status",
-          "valueCode": "deprecated"
-        },
-        {
-          "code": "contract",
-          "valueString": "V6.14"
-        },
-        {
-          "code": "replacedBy",
-          "valueCode": "de7a-319c"
-        },
-        {
-          "code": "deprecationDate",
-          "valueDateTime": "2025-07-31"
-        }
-      ]
-    },
-    {
-      "code": "de7a-319c",
       "display": "Hochschule Heilbronn",
       "definition": "Heilbronn",
       "property": [
@@ -3145,10 +1535,6 @@
         {
           "code": "abbreviation",
           "valueString": "HHN"
-        },
-        {
-          "code": "replaces",
-          "valueCode": "HHN"
         }
       ]
     },
@@ -3166,41 +1552,11 @@
         },
         {
           "code": "status",
-          "valueCode": "deprecated"
-        },
-        {
-          "code": "replacedBy",
-          "valueCode": "a67c-8a6f"
-        },
-        {
-          "code": "deprecationDate",
-          "valueDateTime": "2025-07-31"
-        }
-      ]
-    },
-    {
-      "code": "a67c-8a6f",
-      "display": "Zentrale Plattform NUM",
-      "property": [
-        {
-          "code": "consortium",
-          "valueString": "NUM"
-        },
-        {
-          "code": "uri",
-          "valueString": "num-codex.de"
-        },
-        {
-          "code": "status",
           "valueCode": "active"
         },
         {
           "code": "abbreviation",
           "valueString": "CRR"
-        },
-        {
-          "code": "replaces",
-          "valueCode": "CRR"
         }
       ]
     }
@@ -3299,5 +1655,5 @@
       "description": "ersetzt durch (neuer Code)"
     }
   ],
-  "count": 96
+  "count": 50
 }
