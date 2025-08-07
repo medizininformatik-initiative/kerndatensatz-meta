@@ -2,7 +2,7 @@
   "resourceType": "Bundle",
   "id": "mii-exa-meta-searchparam-collection-bundle",
   "type": "collection",
-  "timestamp": "2024-10-24T11:35:00+01:00",
+  "timestamp": "2025-08-07T11:35:00+01:00",
   "entry": [
     {
       "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-patient-adresszusatz",
@@ -5790,16 +5790,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-supporting-info",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-supporting-info",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-supporting-info",
+        "id": "mii-sp-meta-supporting-info",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-supporting-info",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-supporting-info",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -5843,16 +5843,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-description",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-description",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-description",
+        "id": "mii-sp-meta-description",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-description",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-description",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -5898,16 +5898,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-body-structure-location-qualifier",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-body-structure-location-qualifier",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-body-structure-location-qualifier",
+        "id": "mii-sp-meta-body-structure-location-qualifier",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-body-structure-location-qualifier",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-body-structure-location-qualifier",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -5956,16 +5956,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-composition-section-title",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-composition-section-title",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-composition-section-title",
+        "id": "mii-sp-meta-composition-section-title",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-composition-section-title",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-composition-section-title",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -6010,16 +6010,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-composition-section-author",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-composition-section-author",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-composition-section-author",
+        "id": "mii-sp-meta-composition-section-author",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-composition-section-author",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-composition-section-author",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -6062,16 +6062,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-diagnostic-report-conclusion",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-diagnostic-report-conclusion",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-diagnostic-report-conclusion",
+        "id": "mii-sp-meta-diagnostic-report-conclusion",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-diagnostic-report-conclusion",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-diagnostic-report-conclusion",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -6116,16 +6116,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-imaging-study-modality-body-site",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-modality-body-site",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-imaging-study-modality-body-site",
+        "id": "mii-sp-meta-imaging-study-modality-body-site",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-imaging-study-modality-body-site",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-modality-body-site",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -6175,16 +6175,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-imaging-study-bildgebungsgrund",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-bildgebungsgrund",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-imaging-study-bildgebungsgrund",
+        "id": "mii-sp-meta-imaging-study-bildgebungsgrund",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-imaging-study-bildgebungsgrund",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-bildgebungsgrund",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -6229,16 +6229,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-imaging-study-modality",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-modality",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-imaging-study-modality",
+        "id": "mii-sp-meta-imaging-study-modality",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-imaging-study-modality",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-modality",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -6287,16 +6287,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-reason-reference",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-reason-reference",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-reason-reference",
+        "id": "mii-sp-meta-reason-reference",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-reason-reference",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-reason-reference",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -6342,16 +6342,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-imaging-study-number-series",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-number-series",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-imaging-study-number-series",
+        "id": "mii-sp-meta-imaging-study-number-series",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-imaging-study-number-series",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-number-series",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -6398,16 +6398,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-imaging-study-number-instances",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-number-instances",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-imaging-study-number-instances",
+        "id": "mii-sp-meta-imaging-study-number-instances",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-imaging-study-number-instances",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-number-instances",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -6454,16 +6454,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-imaging-study-procedure-reference",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-procedure-reference",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-imaging-study-procedure-reference",
+        "id": "mii-sp-meta-imaging-study-procedure-reference",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-imaging-study-procedure-reference",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-procedure-reference",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -6506,16 +6506,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-imaging-study-series-ctdi-volume",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-ctdi-volume",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-imaging-study-series-ctdi-volume",
+        "id": "mii-sp-meta-imaging-study-series-ctdi-volume",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-imaging-study-series-ctdi-volume",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-ctdi-volume",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -6562,16 +6562,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-imaging-study-series-exposure-time",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-exposure-time",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-imaging-study-series-exposure-time",
+        "id": "mii-sp-meta-imaging-study-series-exposure-time",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-imaging-study-series-exposure-time",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-exposure-time",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -6618,16 +6618,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-imaging-study-series-exposure",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-exposure",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-imaging-study-series-exposure",
+        "id": "mii-sp-meta-imaging-study-series-exposure",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-imaging-study-series-exposure",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-exposure",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -6674,16 +6674,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-imaging-study-series-xray-tube-current",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-xray-tube-current",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-imaging-study-series-xray-tube-current",
+        "id": "mii-sp-meta-imaging-study-series-xray-tube-current",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-imaging-study-series-xray-tube-current",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-xray-tube-current",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -6730,16 +6730,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-imaging-study-series-kvp",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-kvp",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-imaging-study-series-kvp",
+        "id": "mii-sp-meta-imaging-study-series-kvp",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-imaging-study-series-kvp",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-kvp",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -6786,16 +6786,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-imaging-study-series-view-position",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-view-position",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-imaging-study-series-view-position",
+        "id": "mii-sp-meta-imaging-study-series-view-position",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-imaging-study-series-view-position",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-view-position",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -6844,16 +6844,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-imaging-study-series-magnetic-field-strength",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-magnetic-field-strength",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-imaging-study-series-magnetic-field-strength",
+        "id": "mii-sp-meta-imaging-study-series-magnetic-field-strength",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-imaging-study-series-magnetic-field-strength",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-magnetic-field-strength",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -6900,16 +6900,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-imaging-study-series-scanning-sequence",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-scanning-sequence",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-imaging-study-series-scanning-sequence",
+        "id": "mii-sp-meta-imaging-study-series-scanning-sequence",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-imaging-study-series-scanning-sequence",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-scanning-sequence",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -6958,16 +6958,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-imaging-study-series-scanning-sequence-variant",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-scanning-sequence-variant",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-imaging-study-series-scanning-sequence-variant",
+        "id": "mii-sp-meta-imaging-study-series-scanning-sequence-variant",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-imaging-study-series-scanning-sequence-variant",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-scanning-sequence-variant",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -7016,16 +7016,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-imaging-study-series-echo-time",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-echo-time",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-imaging-study-series-echo-time",
+        "id": "mii-sp-meta-imaging-study-series-echo-time",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-imaging-study-series-echo-time",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-echo-time",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -7072,16 +7072,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-imaging-study-series-repetition-time",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-repetition-time",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-imaging-study-series-repetition-time",
+        "id": "mii-sp-meta-imaging-study-series-repetition-time",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-imaging-study-series-repetition-time",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-repetition-time",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -7128,16 +7128,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-imaging-study-series-inversion-time",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-inversion-time",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-imaging-study-series-inversion-time",
+        "id": "mii-sp-meta-imaging-study-series-inversion-time",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-imaging-study-series-inversion-time",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-inversion-time",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -7184,16 +7184,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-imaging-study-series-flip-angle",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-flip-angle",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-imaging-study-series-flip-angle",
+        "id": "mii-sp-meta-imaging-study-series-flip-angle",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-imaging-study-series-flip-angle",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-flip-angle",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -7240,16 +7240,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-imaging-study-series-radiopharmaceutical",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-radiopharmaceutical",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-imaging-study-series-radiopharmaceutical",
+        "id": "mii-sp-meta-imaging-study-series-radiopharmaceutical",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-imaging-study-series-radiopharmaceutical",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-radiopharmaceutical",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -7298,16 +7298,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-imaging-study-series-radionuclide",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-radionuclide",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-imaging-study-series-radionuclide",
+        "id": "mii-sp-meta-imaging-study-series-radionuclide",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-imaging-study-series-radionuclide",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-radionuclide",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -7356,16 +7356,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-imaging-study-series-tracer-exposure-time",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-tracer-exposure-time",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-imaging-study-series-tracer-exposure-time",
+        "id": "mii-sp-meta-imaging-study-series-tracer-exposure-time",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-imaging-study-series-tracer-exposure-time",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-tracer-exposure-time",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -7412,16 +7412,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-imaging-study-series-units",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-units",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-imaging-study-series-units",
+        "id": "mii-sp-meta-imaging-study-series-units",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-imaging-study-series-units",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-units",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -7470,16 +7470,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-imaging-study-series-radionuclide-total-dose",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-radionuclide-total-dose",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-imaging-study-series-radionuclide-total-dose",
+        "id": "mii-sp-meta-imaging-study-series-radionuclide-total-dose",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-imaging-study-series-radionuclide-total-dose",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-radionuclide-total-dose",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -7526,16 +7526,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-imaging-study-series-radionuclide-half-life",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-radionuclide-half-life",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-imaging-study-series-radionuclide-half-life",
+        "id": "mii-sp-meta-imaging-study-series-radionuclide-half-life",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-imaging-study-series-radionuclide-half-life",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-radionuclide-half-life",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -7582,16 +7582,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-imaging-study-series-series-type",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-series-type",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-imaging-study-series-series-type",
+        "id": "mii-sp-meta-imaging-study-series-series-type",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-imaging-study-series-series-type",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-series-type",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -7640,16 +7640,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-imaging-study-series-transducer-type",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-transducer-type",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-imaging-study-series-transducer-type",
+        "id": "mii-sp-meta-imaging-study-series-transducer-type",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-imaging-study-series-transducer-type",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-transducer-type",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -7698,16 +7698,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-imaging-study-series-transducer-frequency",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-transducer-frequency",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-imaging-study-series-transducer-frequency",
+        "id": "mii-sp-meta-imaging-study-series-transducer-frequency",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-imaging-study-series-transducer-frequency",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-transducer-frequency",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -7754,16 +7754,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-imaging-study-series-pulse-frequency",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-pulse-frequency",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-imaging-study-series-pulse-frequency",
+        "id": "mii-sp-meta-imaging-study-series-pulse-frequency",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-imaging-study-series-pulse-frequency",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-pulse-frequency",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -7810,16 +7810,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-imaging-study-series-ultrasound-color",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-ultrasound-color",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-imaging-study-series-ultrasound-color",
+        "id": "mii-sp-meta-imaging-study-series-ultrasound-color",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-imaging-study-series-ultrasound-color",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-ultrasound-color",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -7868,16 +7868,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-imaging-study-series-contrast-bolus",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-contrast-bolus",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-imaging-study-series-contrast-bolus",
+        "id": "mii-sp-meta-imaging-study-series-contrast-bolus",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-imaging-study-series-contrast-bolus",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-contrast-bolus",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -7926,16 +7926,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-imaging-study-series-contrast-bolus-details",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-contrast-bolus-details",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-imaging-study-series-contrast-bolus-details",
+        "id": "mii-sp-meta-imaging-study-series-contrast-bolus-details",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-imaging-study-series-contrast-bolus-details",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-contrast-bolus-details",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -7979,16 +7979,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-imaging-study-series-number",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-number",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-imaging-study-series-number",
+        "id": "mii-sp-meta-imaging-study-series-number",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-imaging-study-series-number",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-number",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -8035,16 +8035,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-imaging-study-series-laterality",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-laterality",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-imaging-study-series-laterality",
+        "id": "mii-sp-meta-imaging-study-series-laterality",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-imaging-study-series-laterality",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-laterality",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -8093,16 +8093,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-imaging-study-series-started",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-started",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-imaging-study-series-started",
+        "id": "mii-sp-meta-imaging-study-series-started",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-imaging-study-series-started",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-started",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -8142,16 +8142,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-imaging-study-instance-pixel-x",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-instance-pixel-x",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-imaging-study-instance-pixel-x",
+        "id": "mii-sp-meta-imaging-study-instance-pixel-x",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-imaging-study-instance-pixel-x",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-instance-pixel-x",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -8198,16 +8198,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-imaging-study-instance-pixel-y",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-instance-pixel-y",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-imaging-study-instance-pixel-y",
+        "id": "mii-sp-meta-imaging-study-instance-pixel-y",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-imaging-study-instance-pixel-y",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-instance-pixel-y",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -8254,16 +8254,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-imaging-study-instance-slice-thickness",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-instance-slice-thickness",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-imaging-study-instance-slice-thickness",
+        "id": "mii-sp-meta-imaging-study-instance-slice-thickness",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-imaging-study-instance-slice-thickness",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-instance-slice-thickness",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -8310,16 +8310,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-imaging-study-instance-image-type",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-instance-image-type",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-imaging-study-instance-image-type",
+        "id": "mii-sp-meta-imaging-study-instance-image-type",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-imaging-study-instance-image-type",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-instance-image-type",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -8368,16 +8368,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-imaging-study-instance-burned-in-annotation",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-instance-burned-in-annotation",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-imaging-study-instance-burned-in-annotation",
+        "id": "mii-sp-meta-imaging-study-instance-burned-in-annotation",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-imaging-study-instance-burned-in-annotation",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-instance-burned-in-annotation",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -8426,16 +8426,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-imaging-study-instance-number",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-instance-number",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-imaging-study-instance-number",
+        "id": "mii-sp-meta-imaging-study-instance-number",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-imaging-study-instance-number",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-instance-number",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -8482,16 +8482,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-observation-series-uid",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-observation-series-uid",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-observation-series-uid",
+        "id": "mii-sp-meta-observation-series-uid",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-observation-series-uid",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-series-uid",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -8540,16 +8540,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-observation-sop-instance-uid",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-observation-sop-instance-uid",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-observation-sop-instance-uid",
+        "id": "mii-sp-meta-observation-sop-instance-uid",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-observation-sop-instance-uid",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-sop-instance-uid",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -8598,16 +8598,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-observation-body-structure",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-observation-body-structure",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-observation-body-structure",
+        "id": "mii-sp-meta-observation-body-structure",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-observation-body-structure",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-body-structure",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {
@@ -8650,16 +8650,16 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-bildgebung-read-proc-report",
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-read-proc-report",
       "resource": {
         "resourceType": "SearchParameter",
-        "id": "mii-sp-bildgebung-read-proc-report",
+        "id": "mii-sp-meta-read-proc-report",
         "meta": {
           "profile": [
             "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
           ]
         },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-bildgebung-read-proc-report",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-read-proc-report",
         "publisher": "Medizininformatik Initiative",
         "contact": [
           {

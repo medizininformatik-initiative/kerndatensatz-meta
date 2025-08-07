@@ -1,7 +1,7 @@
-Instance: mii-sp-bildgebung-supporting-info
+Instance: mii-sp-meta-supporting-info
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-supporting-info"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-supporting-info"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
@@ -17,10 +17,10 @@ Usage: #definition
 * expression = "CarePlan.supportingInfo | DiagnosticReport.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo').extension('reference').value"
 * target[+] = #DiagnosticReport
 
-Instance: mii-sp-bildgebung-description
+Instance: mii-sp-meta-description
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-description"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-description"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
@@ -39,10 +39,10 @@ Usage: #definition
 * modifier[+] = #missing
 
 // BodyStructure
-Instance: mii-sp-bildgebung-body-structure-location-qualifier
+Instance: mii-sp-meta-body-structure-location-qualifier
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-body-structure-location-qualifier"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-body-structure-location-qualifier"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
@@ -64,10 +64,10 @@ Usage: #definition
 * modifier[+] = #missing
 
 //Composition
-Instance: mii-sp-bildgebung-composition-section-title
+Instance: mii-sp-meta-composition-section-title
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-composition-section-title"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-composition-section-title"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
@@ -84,10 +84,10 @@ Usage: #definition
 * modifier[+] = #exact
 * modifier[+] = #missing
 
-Instance: mii-sp-bildgebung-composition-section-author
+Instance: mii-sp-meta-composition-section-author
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-composition-section-author"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-composition-section-author"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
@@ -103,10 +103,10 @@ Usage: #definition
 * target = #Practitioner
 
 //DiagnosticReport
-Instance: mii-sp-bildgebung-diagnostic-report-conclusion
+Instance: mii-sp-meta-diagnostic-report-conclusion
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-diagnostic-report-conclusion"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-diagnostic-report-conclusion"
 * insert SP_Publisher
 * insert LicenseCodeableCCBY40Instance
 * insert Version
@@ -124,10 +124,10 @@ Usage: #definition
 * modifier[+] = #missing
 
 //ImagingStudy
-Instance: mii-sp-bildgebung-imaging-study-modality-body-site
+Instance: mii-sp-meta-imaging-study-modality-body-site
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-modality-body-site"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-imaging-study-modality-body-site"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
@@ -145,10 +145,10 @@ Usage: #definition
 * component[+].definition = "http://hl7.org/fhir/SearchParameter/ImagingStudy-bodysite"
 * component[=].expression = "bodysite" 
 
-Instance: mii-sp-bildgebung-imaging-study-bildgebungsgrund
+Instance: mii-sp-meta-imaging-study-bildgebungsgrund
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-bildgebungsgrund"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-imaging-study-bildgebungsgrund"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
@@ -165,10 +165,10 @@ Usage: #definition
 * modifier[+] = #exact
 * modifier[+] = #missing
 
-Instance: mii-sp-bildgebung-imaging-study-modality
+Instance: mii-sp-meta-imaging-study-modality
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-modality"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-imaging-study-modality"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
@@ -189,10 +189,10 @@ Usage: #definition
 * modifier[+] = #not-in
 * modifier[+] = #missing
 
-Instance: mii-sp-bildgebung-reason-reference
+Instance: mii-sp-meta-reason-reference
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-reason-reference"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-reason-reference"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
@@ -210,10 +210,10 @@ Usage: #definition
 * target[+] = #DiagnosticReport
 * target[+] = #DocumentReference
 
-Instance: mii-sp-bildgebung-imaging-study-number-series
+Instance: mii-sp-meta-imaging-study-number-series
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-number-series"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-imaging-study-number-series"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
@@ -232,10 +232,10 @@ Usage: #definition
 * comparator[+] = #ge 
 * comparator[+] = #le
 
-Instance: mii-sp-bildgebung-imaging-study-number-instances
+Instance: mii-sp-meta-imaging-study-number-instances
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-number-instances"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-imaging-study-number-instances"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
@@ -254,10 +254,10 @@ Usage: #definition
 * comparator[+] = #ge 
 * comparator[+] = #le
 
-Instance: mii-sp-bildgebung-imaging-study-procedure-reference
+Instance: mii-sp-meta-imaging-study-procedure-reference
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-procedure-reference"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-imaging-study-procedure-reference"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
@@ -272,10 +272,10 @@ Usage: #definition
 * expression = "ImagingStudy.procedureReference"
 * target = #Procedure
 
-Instance: mii-sp-bildgebung-imaging-study-series-ctdi-volume
+Instance: mii-sp-meta-imaging-study-series-ctdi-volume
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-ctdi-volume"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-imaging-study-series-ctdi-volume"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
@@ -294,10 +294,10 @@ Usage: #definition
 * comparator[+] = #ge 
 * comparator[+] = #le  
 
-Instance: mii-sp-bildgebung-imaging-study-series-exposure-time
+Instance: mii-sp-meta-imaging-study-series-exposure-time
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-exposure-time"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-imaging-study-series-exposure-time"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
@@ -316,10 +316,10 @@ Usage: #definition
 * comparator[+] = #ge 
 * comparator[+] = #le 
 
-Instance: mii-sp-bildgebung-imaging-study-series-exposure
+Instance: mii-sp-meta-imaging-study-series-exposure
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-exposure"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-imaging-study-series-exposure"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
@@ -338,10 +338,10 @@ Usage: #definition
 * comparator[+] = #ge 
 * comparator[+] = #le 
 
-Instance: mii-sp-bildgebung-imaging-study-series-xray-tube-current
+Instance: mii-sp-meta-imaging-study-series-xray-tube-current
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-xray-tube-current"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-imaging-study-series-xray-tube-current"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
@@ -360,10 +360,10 @@ Usage: #definition
 * comparator[+] = #ge 
 * comparator[+] = #le 
 
-Instance: mii-sp-bildgebung-imaging-study-series-kvp
+Instance: mii-sp-meta-imaging-study-series-kvp
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-kvp"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-imaging-study-series-kvp"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
@@ -382,10 +382,10 @@ Usage: #definition
 * comparator[+] = #ge 
 * comparator[+] = #le
 
-Instance: mii-sp-bildgebung-imaging-study-series-view-position
+Instance: mii-sp-meta-imaging-study-series-view-position
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-view-position"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-imaging-study-series-view-position"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
@@ -406,10 +406,10 @@ Usage: #definition
 * modifier[+] = #not-in
 * modifier[+] = #missing 
 
-Instance: mii-sp-bildgebung-imaging-study-series-magnetic-field-strength
+Instance: mii-sp-meta-imaging-study-series-magnetic-field-strength
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-magnetic-field-strength"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-imaging-study-series-magnetic-field-strength"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
@@ -428,10 +428,10 @@ Usage: #definition
 * comparator[+] = #ge 
 * comparator[+] = #le
 
-Instance: mii-sp-bildgebung-imaging-study-series-scanning-sequence
+Instance: mii-sp-meta-imaging-study-series-scanning-sequence
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-scanning-sequence"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-imaging-study-series-scanning-sequence"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
@@ -452,10 +452,10 @@ Usage: #definition
 * modifier[+] = #not-in
 * modifier[+] = #missing 
 
-Instance: mii-sp-bildgebung-imaging-study-series-scanning-sequence-variant
+Instance: mii-sp-meta-imaging-study-series-scanning-sequence-variant
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-scanning-sequence-variant"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-imaging-study-series-scanning-sequence-variant"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
@@ -476,10 +476,10 @@ Usage: #definition
 * modifier[+] = #not-in
 * modifier[+] = #missing 
 
-Instance: mii-sp-bildgebung-imaging-study-series-echo-time
+Instance: mii-sp-meta-imaging-study-series-echo-time
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-echo-time"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-imaging-study-series-echo-time"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
@@ -498,10 +498,10 @@ Usage: #definition
 * comparator[+] = #ge 
 * comparator[+] = #le
 
-Instance: mii-sp-bildgebung-imaging-study-series-repetition-time
+Instance: mii-sp-meta-imaging-study-series-repetition-time
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-repetition-time"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-imaging-study-series-repetition-time"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
@@ -520,10 +520,10 @@ Usage: #definition
 * comparator[+] = #ge 
 * comparator[+] = #le
 
-Instance: mii-sp-bildgebung-imaging-study-series-inversion-time
+Instance: mii-sp-meta-imaging-study-series-inversion-time
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-inversion-time"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-imaging-study-series-inversion-time"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
@@ -542,10 +542,10 @@ Usage: #definition
 * comparator[+] = #ge 
 * comparator[+] = #le
 
-Instance: mii-sp-bildgebung-imaging-study-series-flip-angle
+Instance: mii-sp-meta-imaging-study-series-flip-angle
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-flip-angle"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-imaging-study-series-flip-angle"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
@@ -564,10 +564,10 @@ Usage: #definition
 * comparator[+] = #ge 
 * comparator[+] = #le
 
-Instance: mii-sp-bildgebung-imaging-study-series-radiopharmaceutical
+Instance: mii-sp-meta-imaging-study-series-radiopharmaceutical
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-radiopharmaceutical"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-imaging-study-series-radiopharmaceutical"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
@@ -588,10 +588,10 @@ Usage: #definition
 * modifier[+] = #not-in
 * modifier[+] = #missing
 
-Instance: mii-sp-bildgebung-imaging-study-series-radionuclide
+Instance: mii-sp-meta-imaging-study-series-radionuclide
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-radionuclide"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-imaging-study-series-radionuclide"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
@@ -612,10 +612,10 @@ Usage: #definition
 * modifier[+] = #not-in
 * modifier[+] = #missing
 
-Instance: mii-sp-bildgebung-imaging-study-series-tracer-exposure-time
+Instance: mii-sp-meta-imaging-study-series-tracer-exposure-time
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-tracer-exposure-time"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-imaging-study-series-tracer-exposure-time"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
@@ -634,10 +634,10 @@ Usage: #definition
 * comparator[+] = #ge 
 * comparator[+] = #le
 
-Instance: mii-sp-bildgebung-imaging-study-series-units
+Instance: mii-sp-meta-imaging-study-series-units
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-units"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-imaging-study-series-units"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
@@ -658,10 +658,10 @@ Usage: #definition
 * modifier[+] = #not-in
 * modifier[+] = #missing
 
-Instance: mii-sp-bildgebung-imaging-study-series-radionuclide-total-dose
+Instance: mii-sp-meta-imaging-study-series-radionuclide-total-dose
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-radionuclide-total-dose"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-imaging-study-series-radionuclide-total-dose"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
@@ -680,10 +680,10 @@ Usage: #definition
 * comparator[+] = #ge 
 * comparator[+] = #le
 
-Instance: mii-sp-bildgebung-imaging-study-series-radionuclide-half-life
+Instance: mii-sp-meta-imaging-study-series-radionuclide-half-life
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-radionuclide-half-life"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-imaging-study-series-radionuclide-half-life"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
@@ -702,10 +702,10 @@ Usage: #definition
 * comparator[+] = #ge 
 * comparator[+] = #le
 
-Instance: mii-sp-bildgebung-imaging-study-series-series-type
+Instance: mii-sp-meta-imaging-study-series-series-type
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-series-type"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-imaging-study-series-series-type"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
@@ -726,10 +726,10 @@ Usage: #definition
 * modifier[+] = #not-in
 * modifier[+] = #missing
 
-Instance: mii-sp-bildgebung-imaging-study-series-transducer-type
+Instance: mii-sp-meta-imaging-study-series-transducer-type
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-transducer-type"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-imaging-study-series-transducer-type"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
@@ -750,10 +750,10 @@ Usage: #definition
 * modifier[+] = #not-in
 * modifier[+] = #missing
 
-Instance: mii-sp-bildgebung-imaging-study-series-transducer-frequency
+Instance: mii-sp-meta-imaging-study-series-transducer-frequency
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-transducer-frequency"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-imaging-study-series-transducer-frequency"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
@@ -772,10 +772,10 @@ Usage: #definition
 * comparator[+] = #ge 
 * comparator[+] = #le
 
-Instance: mii-sp-bildgebung-imaging-study-series-pulse-frequency
+Instance: mii-sp-meta-imaging-study-series-pulse-frequency
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-pulse-frequency"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-imaging-study-series-pulse-frequency"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
@@ -794,10 +794,10 @@ Usage: #definition
 * comparator[+] = #ge 
 * comparator[+] = #le
 
-Instance: mii-sp-bildgebung-imaging-study-series-ultrasound-color
+Instance: mii-sp-meta-imaging-study-series-ultrasound-color
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-ultrasound-color"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-imaging-study-series-ultrasound-color"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
@@ -818,10 +818,10 @@ Usage: #definition
 * modifier[+] = #not-in
 * modifier[+] = #missing
 
-Instance: mii-sp-bildgebung-imaging-study-series-contrast-bolus
+Instance: mii-sp-meta-imaging-study-series-contrast-bolus
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-contrast-bolus"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-imaging-study-series-contrast-bolus"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
@@ -842,10 +842,10 @@ Usage: #definition
 * modifier[+] = #not-in
 * modifier[+] = #missing
 
-Instance: mii-sp-bildgebung-imaging-study-series-contrast-bolus-details
+Instance: mii-sp-meta-imaging-study-series-contrast-bolus-details
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-contrast-bolus-details"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-imaging-study-series-contrast-bolus-details"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
@@ -861,10 +861,10 @@ Usage: #definition
 * target[+] = #MedicationStatement
 * target[+] = #MedicationAdministration
 
-Instance: mii-sp-bildgebung-imaging-study-series-number
+Instance: mii-sp-meta-imaging-study-series-number
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-number"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-imaging-study-series-number"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
@@ -883,10 +883,10 @@ Usage: #definition
 * comparator[+] = #ge 
 * comparator[+] = #le
 
-Instance: mii-sp-bildgebung-imaging-study-series-laterality
+Instance: mii-sp-meta-imaging-study-series-laterality
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-laterality"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-imaging-study-series-laterality"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
@@ -907,10 +907,10 @@ Usage: #definition
 * modifier[+] = #not-in
 * modifier[+] = #missing
 
-Instance: mii-sp-bildgebung-imaging-study-series-started
+Instance: mii-sp-meta-imaging-study-series-started
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-started"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-imaging-study-series-started"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
@@ -924,10 +924,10 @@ Usage: #definition
 * type = #date
 * expression = "ImagingStudy.series.started"
 
-Instance: mii-sp-bildgebung-imaging-study-instance-pixel-x
+Instance: mii-sp-meta-imaging-study-instance-pixel-x
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-instance-pixel-spacing-x"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-imaging-study-instance-pixel-spacing-x"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
@@ -946,10 +946,10 @@ Usage: #definition
 * comparator[+] = #ge 
 * comparator[+] = #le
 
-Instance: mii-sp-bildgebung-imaging-study-instance-pixel-y
+Instance: mii-sp-meta-imaging-study-instance-pixel-y
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-instance-pixel-spacing-y"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-imaging-study-instance-pixel-spacing-y"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
@@ -968,10 +968,10 @@ Usage: #definition
 * comparator[+] = #ge 
 * comparator[+] = #le
 
-Instance: mii-sp-bildgebung-imaging-study-instance-slice-thickness
+Instance: mii-sp-meta-imaging-study-instance-slice-thickness
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-instance-slice-thickness"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-imaging-study-instance-slice-thickness"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
@@ -990,10 +990,10 @@ Usage: #definition
 * comparator[+] = #ge 
 * comparator[+] = #le
 
-Instance: mii-sp-bildgebung-imaging-study-instance-image-type
+Instance: mii-sp-meta-imaging-study-instance-image-type
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-instance-image-type"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-imaging-study-instance-image-type"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
@@ -1014,10 +1014,10 @@ Usage: #definition
 * modifier[+] = #not-in
 * modifier[+] = #missing
 
-Instance: mii-sp-bildgebung-imaging-study-instance-burned-in-annotation
+Instance: mii-sp-meta-imaging-study-instance-burned-in-annotation
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-instance-burned-in-annotation"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-imaging-study-instance-burned-in-annotation"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
@@ -1038,10 +1038,10 @@ Usage: #definition
 * modifier[+] = #not-in
 * modifier[+] = #missing
 
-Instance: mii-sp-bildgebung-imaging-study-instance-number
+Instance: mii-sp-meta-imaging-study-instance-number
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-instance-number"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-imaging-study-instance-number"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
@@ -1061,10 +1061,10 @@ Usage: #definition
 * comparator[+] = #le
 
 //Observation
-Instance: mii-sp-bildgebung-observation-series-uid
+Instance: mii-sp-meta-observation-series-uid
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-observation-series-uid"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-observation-series-uid"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
@@ -1085,10 +1085,10 @@ Usage: #definition
 * modifier[+] = #not-in
 * modifier[+] = #missing
 
-Instance: mii-sp-bildgebung-observation-sop-instance-uid
+Instance: mii-sp-meta-observation-sop-instance-uid
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-observation-sop-instance-uid"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-observation-sop-instance-uid"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
@@ -1109,10 +1109,10 @@ Usage: #definition
 * modifier[+] = #not-in
 * modifier[+] = #missing
 
-Instance: mii-sp-bildgebung-observation-body-structure
+Instance: mii-sp-meta-observation-body-structure
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-observation-body-structure"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-observation-body-structure"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance
@@ -1128,10 +1128,10 @@ Usage: #definition
 * target = #BodyStructure
 
 //ReadProcedure
-Instance: mii-sp-bildgebung-read-proc-report
+Instance: mii-sp-meta-read-proc-report
 InstanceOf: SearchParameter
 Usage: #definition
-// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-read-proc-report"
+// * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-meta-read-proc-report"
 * insert SP_Publisher
 * insert Version
 * insert LicenseCodeableCCBY40Instance

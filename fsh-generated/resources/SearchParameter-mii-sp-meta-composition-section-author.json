@@ -1,0 +1,49 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "mii-sp-meta-composition-section-author",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+    ]
+  },
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-composition-section-author",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "version": "2025.0.0",
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
+  "name": "MII_SP_Bildgebung_Composition_Section_Author",
+  "status": "active",
+  "experimental": false,
+  "description": "Suchparameter für Composition.section.author",
+  "code": "section-author",
+  "base": [
+    "Composition"
+  ],
+  "type": "reference",
+  "expression": "Composition.section.author",
+  "target": [
+    "Practitioner"
+  ]
+}
