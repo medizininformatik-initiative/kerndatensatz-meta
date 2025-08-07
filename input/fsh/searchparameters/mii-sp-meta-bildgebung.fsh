@@ -4,10 +4,11 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-supporting-info"
 * insert SP_Publisher
 * insert Version
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Supporting_Info"
 * status = #active
 * experimental = false
-* insert Date
 * description = "Suchparameter für CarePlan.supportingInfo | DiagnosticReport.extension.supportingInfo"
 * code = #supporting-info
 * base[+] = #CarePlan
@@ -22,7 +23,8 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-description"
 * insert SP_Publisher
 * insert Version
-* insert Date
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Description"
 * status = #active
 * experimental = false
@@ -43,7 +45,8 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-body-structure-location-qualifier"
 * insert SP_Publisher
 * insert Version
-* insert Date
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Koerperstruktur_Location_Qualifier"
 * status = #active
 * experimental = false
@@ -67,7 +70,8 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-composition-section-title"
 * insert SP_Publisher
 * insert Version
-* insert Date
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Composition_Section_Title"
 * status = #active
 * experimental = false
@@ -86,7 +90,8 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-composition-section-author"
 * insert SP_Publisher
 * insert Version
-* insert Date
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Composition_Section_Author"
 * status = #active
 * experimental = false
@@ -105,7 +110,7 @@ Usage: #definition
 * insert SP_Publisher
 * insert LicenseCodeableCCBY40Instance
 * insert Version
-* insert Date
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Diagnostic_Report_Conclusion"
 * status = #active
 * experimental = false
@@ -125,7 +130,8 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-modality-body-site"
 * insert SP_Publisher
 * insert Version
-* insert Date
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Imaging_Study_Modality_Body_Site"
 * status = #active
 * experimental = false
@@ -145,7 +151,8 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-bildgebungsgrund"
 * insert SP_Publisher
 * insert Version
-* insert Date
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Imaging_Study_Bildgebungsgrund"
 * status = #active
 * experimental = false
@@ -164,7 +171,8 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-modality"
 * insert SP_Publisher
 * insert Version
-* insert Date
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Imaging_Study_Modality"
 * status = #active
 * experimental = false
@@ -187,7 +195,8 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-reason-reference"
 * insert SP_Publisher
 * insert Version
-* insert Date
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Reason_Reference"
 * status = #active
 * experimental = false
@@ -207,7 +216,8 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-number-series"
 * insert SP_Publisher
 * insert Version
-* insert Date
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Imaging_Study_Number_Series"
 * status = #active
 * experimental = false
@@ -228,7 +238,8 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-number-instances"
 * insert SP_Publisher
 * insert Version
-* insert Date
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Imaging_Study_Number_Instances"
 * status = #active
 * experimental = false
@@ -249,7 +260,8 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-procedure-reference"
 * insert SP_Publisher
 * insert Version
-* insert Date
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Imaging_Study_Procedure_Reference"
 * status = #active
 * experimental = false
@@ -266,7 +278,8 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-ctdi-volume"
 * insert SP_Publisher
 * insert Version
-* insert Date
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Imaging_Study_Series_CTDI_Volume"
 * status = #active
 * experimental = false
@@ -287,7 +300,8 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-exposure-time"
 * insert SP_Publisher
 * insert Version
-* insert Date
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Imaging_Study_Series_Exposure_Time"
 * status = #active
 * experimental = false
@@ -308,7 +322,8 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-exposure"
 * insert SP_Publisher
 * insert Version
-* insert Date
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Imaging_Study_Series_Exposure"
 * status = #active
 * experimental = false
@@ -329,7 +344,8 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-xray-tube-current"
 * insert SP_Publisher
 * insert Version
-* insert Date
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Imaging_Study_Series_xRay_Tube_Current"
 * status = #active
 * experimental = false
@@ -350,7 +366,8 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-kvp"
 * insert SP_Publisher
 * insert Version
-* insert Date
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Imaging_Study_Series_KVP"
 * status = #active
 * experimental = false
@@ -371,7 +388,8 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-view-position"
 * insert SP_Publisher
 * insert Version
-* insert Date
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Imaging_Study_Series_View_Position"
 * status = #active
 * experimental = false
@@ -394,7 +412,8 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-magnetic-field-strength"
 * insert SP_Publisher
 * insert Version
-* insert Date
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Imaging_Study_Series_Magnetic_Field_Strength"
 * status = #active
 * experimental = false
@@ -415,7 +434,8 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-scanning-sequence"
 * insert SP_Publisher
 * insert Version
-* insert Date
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Imaging_Study_Series_Scanning_Sequence"
 * status = #active
 * experimental = false
@@ -438,7 +458,8 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-scanning-sequence-variant"
 * insert SP_Publisher
 * insert Version
-* insert Date
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Imaging_Study_Series_Scanning_Sequence_Variant"
 * status = #active
 * experimental = false
@@ -461,7 +482,8 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-echo-time"
 * insert SP_Publisher
 * insert Version
-* insert Date
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Imaging_Study_Series_Echo_Time"
 * status = #active
 * experimental = false
@@ -482,7 +504,8 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-repetition-time"
 * insert SP_Publisher
 * insert Version
-* insert Date
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Imaging_Study_Series_Repetition_Time"
 * status = #active
 * experimental = false
@@ -503,7 +526,8 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-inversion-time"
 * insert SP_Publisher
 * insert Version
-* insert Date
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Imaging_Study_Series_Inversion_Time"
 * status = #active
 * experimental = false
@@ -524,7 +548,8 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-flip-angle"
 * insert SP_Publisher
 * insert Version
-* insert Date
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Imaging_Study_Series_Flip_Angle"
 * status = #active
 * experimental = false
@@ -545,7 +570,8 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-radiopharmaceutical"
 * insert SP_Publisher
 * insert Version
-* insert Date
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Imaging_Study_Radiopharmaceutical"
 * status = #active
 * experimental = false
@@ -568,7 +594,8 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-radionuclide"
 * insert SP_Publisher
 * insert Version
-* insert Date
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Imaging_Study_Radionuclide"
 * status = #active
 * experimental = false
@@ -591,7 +618,8 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-tracer-exposure-time"
 * insert SP_Publisher
 * insert Version
-* insert Date
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Imaging_Study_Series_Tracer_Exposure_Time"
 * status = #active
 * experimental = false
@@ -612,7 +640,8 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-units"
 * insert SP_Publisher
 * insert Version
-* insert Date
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Imaging_Study_Series_Units"
 * status = #active
 * experimental = false
@@ -635,7 +664,8 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-radionuclide-total-dose"
 * insert SP_Publisher
 * insert Version
-* insert Date
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Imaging_Study_Series_Radionuclide_Total_Dose"
 * status = #active
 * experimental = false
@@ -656,7 +686,8 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-radionuclide-half-life"
 * insert SP_Publisher
 * insert Version
-* insert Date
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Imaging_Study_Series_Radionuclide_Half_Life"
 * status = #active
 * experimental = false
@@ -677,7 +708,8 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-series-type"
 * insert SP_Publisher
 * insert Version
-* insert Date
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Imaging_Study_Series_Series_Type"
 * status = #active
 * experimental = false
@@ -700,7 +732,8 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-transducer-type"
 * insert SP_Publisher
 * insert Version
-* insert Date
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Imaging_Study_Series_Transducer_Type"
 * status = #active
 * experimental = false
@@ -723,7 +756,8 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-transducer-frequency"
 * insert SP_Publisher
 * insert Version
-* insert Date
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Imaging_Study_Series_Transducer_Frequency"
 * status = #active
 * experimental = false
@@ -744,7 +778,8 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-pulse-frequency"
 * insert SP_Publisher
 * insert Version
-* insert Date
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Imaging_Study_Series_Pulse_Frequency"
 * status = #active
 * experimental = false
@@ -765,7 +800,8 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-ultrasound-color"
 * insert SP_Publisher
 * insert Version
-* insert Date
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Imaging_Study_Series_Ultrasound_Color"
 * status = #active
 * experimental = false
@@ -788,7 +824,8 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-contrast-bolus"
 * insert SP_Publisher
 * insert Version
-* insert Date
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Imaging_Study_Series_Contrast_Bolus"
 * status = #active
 * experimental = false
@@ -811,7 +848,8 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-contrast-bolus-details"
 * insert SP_Publisher
 * insert Version
-* insert Date
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Imaging_Study_Contrast_Bolus_Details"
 * status = #active
 * experimental = false
@@ -829,7 +867,8 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-number"
 * insert SP_Publisher
 * insert Version
-* insert Date
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Imaging_Study_Series_Number"
 * status = #active
 * experimental = false
@@ -850,7 +889,8 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-laterality"
 * insert SP_Publisher
 * insert Version
-* insert Date
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Imaging_Study_Series_Laterality"
 * status = #active
 * experimental = false
@@ -873,7 +913,8 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-series-started"
 * insert SP_Publisher
 * insert Version
-* insert Date
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Imaging_Study_Series_Started"
 * status = #active
 * experimental = false
@@ -889,7 +930,8 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-instance-pixel-spacing-x"
 * insert SP_Publisher
 * insert Version
-* insert Date
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Imaging_Study_Instance_Pixel_Spacing_X"
 * status = #active
 * experimental = false
@@ -910,7 +952,8 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-instance-pixel-spacing-y"
 * insert SP_Publisher
 * insert Version
-* insert Date
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Imaging_Study_Instance_Pixel_Spacing_Y"
 * status = #active
 * experimental = false
@@ -931,7 +974,8 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-instance-slice-thickness"
 * insert SP_Publisher
 * insert Version
-* insert Date
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Imaging_Study_Instance_Slice_Thickness"
 * status = #active
 * experimental = false
@@ -952,7 +996,8 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-instance-image-type"
 * insert SP_Publisher
 * insert Version
-* insert Date
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Imaging_Study_Instance_Image_Type"
 * status = #active
 * experimental = false
@@ -975,7 +1020,8 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-instance-burned-in-annotation"
 * insert SP_Publisher
 * insert Version
-* insert Date
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Imaging_Study_Instance_Burned_In_Annotation"
 * status = #active
 * experimental = false
@@ -998,7 +1044,8 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-imaging-study-instance-number"
 * insert SP_Publisher
 * insert Version
-* insert Date
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Imaging_Study_Instance_Number"
 * status = #active
 * experimental = false
@@ -1020,7 +1067,8 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-observation-series-uid"
 * insert SP_Publisher
 * insert Version
-* insert Date
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Observation_Series_UID"
 * status = #active
 * experimental = false
@@ -1043,7 +1091,8 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-observation-sop-instance-uid"
 * insert SP_Publisher
 * insert Version
-* insert Date
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Observation_SOP_Instance_UID"
 * status = #active
 * experimental = false
@@ -1066,7 +1115,8 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-observation-body-structure"
 * insert SP_Publisher
 * insert Version
-* insert Date
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Observation_Body_Structure"
 * status = #active
 * experimental = false
@@ -1084,7 +1134,8 @@ Usage: #definition
 // * url = "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/SearchParameter/mii-sp-bildgebung-read-proc-report"
 * insert SP_Publisher
 * insert Version
-* insert Date
+* insert LicenseCodeableCCBY40Instance
+* insert SP_Profile
 * name = "MII_SP_Bildgebung_Read_Procedure_Report"
 * status = #active
 * experimental = false
