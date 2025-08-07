@@ -36,6 +36,7 @@
   "name": "MII_SP_Bildgebung_Imaging_Study_Series_Pulse_Frequency",
   "status": "active",
   "experimental": false,
+  "date": "2025-08-07",
   "description": "Suchparameter für ImagingStudy.series.extension.pulseRepetitionFrequency",
   "code": "pulse-frequency",
   "base": [

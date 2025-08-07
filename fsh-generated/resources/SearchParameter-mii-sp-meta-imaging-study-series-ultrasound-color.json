@@ -36,6 +36,7 @@
   "name": "MII_SP_Bildgebung_Imaging_Study_Series_Ultrasound_Color",
   "status": "active",
   "experimental": false,
+  "date": "2025-08-07",
   "description": "ImagingStudy.series.extension.ultrasoundPresent",
   "code": "ultrasound-color",
   "base": [

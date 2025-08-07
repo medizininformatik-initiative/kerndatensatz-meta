@@ -36,6 +36,7 @@
   "name": "MII_SP_Bildgebung_Imaging_Study_Modality",
   "status": "active",
   "experimental": false,
+  "date": "2025-08-07",
   "description": "Suchparameter für ImagingStudy.modality",
   "code": "study-modality",
   "base": [

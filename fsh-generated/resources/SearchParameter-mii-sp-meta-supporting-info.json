@@ -36,6 +36,7 @@
   "name": "MII_SP_Bildgebung_Supporting_Info",
   "status": "active",
   "experimental": false,
+  "date": "2025-08-07",
   "description": "Suchparameter für CarePlan.supportingInfo | DiagnosticReport.extension.supportingInfo",
   "code": "supporting-info",
   "base": [

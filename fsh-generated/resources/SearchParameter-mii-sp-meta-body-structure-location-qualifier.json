@@ -36,6 +36,7 @@
   "name": "MII_SP_Bildgebung_Koerperstruktur_Location_Qualifier",
   "status": "active",
   "experimental": false,
+  "date": "2025-08-07",
   "description": "Suchparameter für BodyStructure.locationQualifier",
   "code": "location-qualifier",
   "base": [

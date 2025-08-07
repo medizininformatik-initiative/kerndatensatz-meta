@@ -36,6 +36,7 @@
   "name": "MII_SP_Bildgebung_Imaging_Study_Series_xRay_Tube_Current",
   "status": "active",
   "experimental": false,
+  "date": "2025-08-07",
   "description": "Suchparameter für ImagingStudy.series.extension.xRayTubeCurrent",
   "code": "xray-tube-current",
   "base": [

@@ -36,6 +36,7 @@
   "name": "MII_SP_Bildgebung_Observation_Body_Structure",
   "status": "active",
   "experimental": false,
+  "date": "2025-08-07",
   "description": "Suchparameter für Observation.bodyStructure",
   "code": "body-structure",
   "base": [
