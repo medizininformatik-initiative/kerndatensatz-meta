@@ -1,0 +1,52 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "mii-sp-meta-composition-section-title",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+    ]
+  },
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-composition-section-title",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "version": "2025.0.0",
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
+  "name": "MII_SP_Bildgebung_Composition_Section_Title",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-07",
+  "description": "Suchparameter für Composition.section.title",
+  "code": "section-title",
+  "base": [
+    "Composition"
+  ],
+  "type": "string",
+  "expression": "Composition.section.title",
+  "modifier": [
+    "contains",
+    "exact",
+    "missing"
+  ]
+}

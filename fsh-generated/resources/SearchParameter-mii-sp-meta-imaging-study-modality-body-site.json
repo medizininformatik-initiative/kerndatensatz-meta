@@ -1,0 +1,57 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "mii-sp-meta-imaging-study-modality-body-site",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+    ]
+  },
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-modality-body-site",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "version": "2025.0.0",
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
+  "name": "MII_SP_Bildgebung_Imaging_Study_Modality_Body_Site",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-08-07",
+  "description": "Suchparameter für ImagingStudy.series.modality and ImagingStudy.series.bodySite",
+  "code": "modality-body-site",
+  "base": [
+    "ImagingStudy"
+  ],
+  "type": "composite",
+  "expression": "ImagingStudy.series",
+  "component": [
+    {
+      "definition": "http://hl7.org/fhir/SearchParameter/ImagingStudy-modality",
+      "expression": "modality"
+    },
+    {
+      "definition": "http://hl7.org/fhir/SearchParameter/ImagingStudy-bodysite",
+      "expression": "bodysite"
+    }
+  ]
+}
