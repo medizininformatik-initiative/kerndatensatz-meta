@@ -14,7 +14,7 @@
       "definition": "Aachen",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "SMITH"
         },
         {
@@ -26,8 +26,16 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
+        },
+        {
+          "code": "abbreviation",
+          "valueString": "UKA"
+        },
+        {
+          "code": "dic",
+          "valueBoolean": true
         }
       ]
     },
@@ -37,7 +45,7 @@
       "definition": "Augsburg",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "DIFUTURE"
         },
         {
@@ -49,8 +57,16 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
+        },
+        {
+          "code": "abbreviation",
+          "valueString": "UKAU"
+        },
+        {
+          "code": "dic",
+          "valueBoolean": true
         }
       ]
     },
@@ -60,7 +76,7 @@
       "definition": "Berlin",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "HiGHmed"
         },
         {
@@ -72,12 +88,20 @@
           "valueCode": "active"
         },
         {
-          "code": "Datenmanagementstelle",
+          "code": "dataManagement",
           "valueBoolean": true
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
+        },
+        {
+          "code": "abbreviation",
+          "valueString": "Charité"
+        },
+        {
+          "code": "dic",
+          "valueBoolean": true
         }
       ]
     },
@@ -87,7 +111,7 @@
       "definition": "Berlin",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "HiGHmed"
         },
         {
@@ -99,8 +123,16 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
+        },
+        {
+          "code": "abbreviation",
+          "valueString": "VIV"
+        },
+        {
+          "code": "dic",
+          "valueBoolean": true
         }
       ]
     },
@@ -110,7 +142,7 @@
       "definition": "Bielefeld",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "HiGHmed"
         },
         {
@@ -122,8 +154,16 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.14"
+        },
+        {
+          "code": "abbreviation",
+          "valueString": "UKOWL"
+        },
+        {
+          "code": "dic",
+          "valueBoolean": true
         }
       ]
     },
@@ -133,7 +173,7 @@
       "definition": "Bochum",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "SMITH"
         },
         {
@@ -145,8 +185,16 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
+        },
+        {
+          "code": "abbreviation",
+          "valueString": "UKRUB"
+        },
+        {
+          "code": "dic",
+          "valueBoolean": true
         }
       ]
     },
@@ -156,7 +204,7 @@
       "definition": "Bonn",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "SMITH"
         },
         {
@@ -168,8 +216,16 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
+        },
+        {
+          "code": "abbreviation",
+          "valueString": "UKB"
+        },
+        {
+          "code": "dic",
+          "valueBoolean": true
         }
       ]
     },
@@ -179,7 +235,7 @@
       "definition": "Chemnitz",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "MIRACUM"
         },
         {
@@ -191,8 +247,16 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.14"
+        },
+        {
+          "code": "abbreviation",
+          "valueString": "KCH"
+        },
+        {
+          "code": "dic",
+          "valueBoolean": true
         }
       ]
     },
@@ -202,7 +266,7 @@
       "definition": "Cottbus",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "HiGHmed"
         },
         {
@@ -212,6 +276,10 @@
         {
           "code": "status",
           "valueCode": "deprecated"
+        },
+        {
+          "code": "replacedBy",
+          "valueCode": "MUL-CT"
         },
         {
           "code": "deprecationDate",
@@ -225,7 +293,7 @@
       "definition": "Cottbus",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "HiGHmed"
         },
         {
@@ -237,8 +305,20 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
+        },
+        {
+          "code": "replaces",
+          "valueCode": "CTK"
+        },
+        {
+          "code": "abbreviation",
+          "valueString": "MUL-CT"
+        },
+        {
+          "code": "dic",
+          "valueBoolean": true
         }
       ]
     },
@@ -248,7 +328,7 @@
       "definition": "Dresden",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "MIRACUM"
         },
         {
@@ -260,12 +340,20 @@
           "valueCode": "active"
         },
         {
-          "code": "Datenmanagementstelle",
+          "code": "dataManagement",
           "valueBoolean": true
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
+        },
+        {
+          "code": "abbreviation",
+          "valueString": "UKDD"
+        },
+        {
+          "code": "dic",
+          "valueBoolean": true
         }
       ]
     },
@@ -275,7 +363,7 @@
       "definition": "Düsseldorf",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "SMITH"
         },
         {
@@ -287,8 +375,16 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
+        },
+        {
+          "code": "abbreviation",
+          "valueString": "UKD"
+        },
+        {
+          "code": "dic",
+          "valueBoolean": true
         }
       ]
     },
@@ -298,7 +394,7 @@
       "definition": "Erlangen",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "MIRACUM"
         },
         {
@@ -310,8 +406,16 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
+        },
+        {
+          "code": "abbreviation",
+          "valueString": "UKEr"
+        },
+        {
+          "code": "dic",
+          "valueBoolean": true
         }
       ]
     },
@@ -321,7 +425,7 @@
       "definition": "Essen",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "SMITH"
         },
         {
@@ -333,8 +437,16 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
+        },
+        {
+          "code": "abbreviation",
+          "valueString": "UME"
+        },
+        {
+          "code": "dic",
+          "valueBoolean": true
         }
       ]
     },
@@ -344,7 +456,7 @@
       "definition": "Frankfurt",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "MIRACUM"
         },
         {
@@ -356,8 +468,16 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.14"
+        },
+        {
+          "code": "abbreviation",
+          "valueString": "UKF"
+        },
+        {
+          "code": "dic",
+          "valueBoolean": true
         }
       ]
     },
@@ -367,7 +487,7 @@
       "definition": "Freiburg",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "MIRACUM"
         },
         {
@@ -379,8 +499,16 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.14"
+        },
+        {
+          "code": "abbreviation",
+          "valueString": "UKFR"
+        },
+        {
+          "code": "dic",
+          "valueBoolean": true
         }
       ]
     },
@@ -390,7 +518,7 @@
       "definition": "Gießen",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "MIRACUM"
         },
         {
@@ -402,8 +530,16 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
+        },
+        {
+          "code": "abbreviation",
+          "valueString": "UKGI"
+        },
+        {
+          "code": "dic",
+          "valueBoolean": true
         }
       ]
     },
@@ -413,7 +549,7 @@
       "definition": "Göttingen",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "HiGHmed"
         },
         {
@@ -425,12 +561,20 @@
           "valueCode": "active"
         },
         {
-          "code": "Datenmanagementstelle",
+          "code": "dataManagement",
           "valueBoolean": true
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
+        },
+        {
+          "code": "abbreviation",
+          "valueString": "UMG"
+        },
+        {
+          "code": "dic",
+          "valueBoolean": true
         }
       ]
     },
@@ -440,7 +584,7 @@
       "definition": "Greifswald",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "MIRACUM"
         },
         {
@@ -452,8 +596,16 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.14"
+        },
+        {
+          "code": "abbreviation",
+          "valueString": "UKG"
+        },
+        {
+          "code": "dic",
+          "valueBoolean": true
         }
       ]
     },
@@ -463,7 +615,7 @@
       "definition": "Halle (Saale)",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "SMITH"
         },
         {
@@ -475,12 +627,20 @@
           "valueCode": "active"
         },
         {
-          "code": "Datenmanagementstelle",
+          "code": "dataManagement",
           "valueBoolean": true
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
+        },
+        {
+          "code": "abbreviation",
+          "valueString": "UKH"
+        },
+        {
+          "code": "dic",
+          "valueBoolean": true
         }
       ]
     },
@@ -490,7 +650,7 @@
       "definition": "Hamburg",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "SMITH"
         },
         {
@@ -502,8 +662,16 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
+        },
+        {
+          "code": "abbreviation",
+          "valueString": "UKE"
+        },
+        {
+          "code": "dic",
+          "valueBoolean": true
         }
       ]
     },
@@ -513,7 +681,7 @@
       "definition": "Hannover",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "HiGHmed"
         },
         {
@@ -525,8 +693,16 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
+        },
+        {
+          "code": "abbreviation",
+          "valueString": "MHH"
+        },
+        {
+          "code": "dic",
+          "valueBoolean": true
         }
       ]
     },
@@ -536,7 +712,7 @@
       "definition": "Heidelberg",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "HiGHmed"
         },
         {
@@ -548,12 +724,20 @@
           "valueCode": "active"
         },
         {
-          "code": "Datenmanagementstelle",
+          "code": "dataManagement",
           "valueBoolean": true
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
+        },
+        {
+          "code": "abbreviation",
+          "valueString": "UKHD"
+        },
+        {
+          "code": "dic",
+          "valueBoolean": true
         }
       ]
     },
@@ -563,7 +747,7 @@
       "definition": "Jena",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "SMITH"
         },
         {
@@ -575,8 +759,16 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.14"
+        },
+        {
+          "code": "abbreviation",
+          "valueString": "UKJ"
+        },
+        {
+          "code": "dic",
+          "valueBoolean": true
         }
       ]
     },
@@ -586,7 +778,7 @@
       "definition": "Köln",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "HiGHmed"
         },
         {
@@ -598,12 +790,20 @@
           "valueCode": "active"
         },
         {
-          "code": "Datenmanagementstelle",
+          "code": "dataManagement",
           "valueBoolean": true
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
+        },
+        {
+          "code": "abbreviation",
+          "valueString": "UKK"
+        },
+        {
+          "code": "dic",
+          "valueBoolean": true
         }
       ]
     },
@@ -613,7 +813,7 @@
       "definition": "Leipzig",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "SMITH"
         },
         {
@@ -625,12 +825,20 @@
           "valueCode": "active"
         },
         {
-          "code": "Datenmanagementstelle",
+          "code": "dataManagement",
           "valueBoolean": true
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
+        },
+        {
+          "code": "abbreviation",
+          "valueString": "UKL"
+        },
+        {
+          "code": "dic",
+          "valueBoolean": true
         }
       ]
     },
@@ -640,7 +848,7 @@
       "definition": "Leipzig",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "SMITH"
         },
         {
@@ -652,8 +860,16 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
+        },
+        {
+          "code": "abbreviation",
+          "valueString": "UL"
+        },
+        {
+          "code": "dic",
+          "valueBoolean": true
         }
       ]
     },
@@ -663,7 +879,7 @@
       "definition": "Magdeburg",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "MIRACUM"
         },
         {
@@ -675,8 +891,16 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.14"
+        },
+        {
+          "code": "abbreviation",
+          "valueString": "UMMD"
+        },
+        {
+          "code": "dic",
+          "valueBoolean": true
         }
       ]
     },
@@ -686,7 +910,7 @@
       "definition": "Mainz",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "MIRACUM"
         },
         {
@@ -698,8 +922,16 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.14"
+        },
+        {
+          "code": "abbreviation",
+          "valueString": "UM"
+        },
+        {
+          "code": "dic",
+          "valueBoolean": true
         }
       ]
     },
@@ -709,7 +941,7 @@
       "definition": "Mannheim",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "MIRACUM"
         },
         {
@@ -721,8 +953,16 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
+        },
+        {
+          "code": "abbreviation",
+          "valueString": "UMM"
+        },
+        {
+          "code": "dic",
+          "valueBoolean": true
         }
       ]
     },
@@ -732,7 +972,7 @@
       "definition": "Marburg",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "MIRACUM"
         },
         {
@@ -744,8 +984,16 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
+        },
+        {
+          "code": "abbreviation",
+          "valueString": "UKMR"
+        },
+        {
+          "code": "dic",
+          "valueBoolean": true
         }
       ]
     },
@@ -755,7 +1003,7 @@
       "definition": "München",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "DIFUTURE"
         },
         {
@@ -767,8 +1015,16 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
+        },
+        {
+          "code": "abbreviation",
+          "valueString": "KUM"
+        },
+        {
+          "code": "dic",
+          "valueBoolean": true
         }
       ]
     },
@@ -778,7 +1034,7 @@
       "definition": "München",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "DIFUTURE"
         },
         {
@@ -790,8 +1046,16 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
+        },
+        {
+          "code": "abbreviation",
+          "valueString": "MRI"
+        },
+        {
+          "code": "dic",
+          "valueBoolean": true
         }
       ]
     },
@@ -801,7 +1065,7 @@
       "definition": "Münster",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "HiGHmed"
         },
         {
@@ -813,8 +1077,39 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
+        },
+        {
+          "code": "abbreviation",
+          "valueString": "UKM"
+        },
+        {
+          "code": "dic",
+          "valueBoolean": true
+        }
+      ]
+    },
+    {
+      "code": "UOL",
+      "display": "Carl von Ossietzky Universität Oldenburg",
+      "definition": "Oldenburg",
+      "property": [
+        {
+          "code": "consortium",
+          "valueString": "HiGHmed"
+        },
+        {
+          "code": "status",
+          "valueCode": "deprecated"
+        },
+        {
+          "code": "replacedBy",
+          "valueCode": "UMO"
+        },
+        {
+          "code": "deprecationDate",
+          "valueDateTime": "2024-10-23"
         }
       ]
     },
@@ -824,7 +1119,7 @@
       "definition": "Oldenburg",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "HiGHmed"
         },
         {
@@ -836,27 +1131,20 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.14"
-        }
-      ]
-    },
-    {
-      "code": "UOL",
-      "display": "Carl von Ossietzky Universität Oldenburg",
-      "definition": "Oldenburg",
-      "property": [
-        {
-          "code": "Konsortium",
-          "valueString": "HiGHmed"
         },
         {
-          "code": "status",
-          "valueCode": "deprecated"
+          "code": "replaces",
+          "valueCode": "UOL"
         },
         {
-          "code": "deprecationDate",
-          "valueDateTime": "2024-10-23"
+          "code": "abbreviation",
+          "valueString": "UMO"
+        },
+        {
+          "code": "dic",
+          "valueBoolean": true
         }
       ]
     },
@@ -866,7 +1154,7 @@
       "definition": "Regensburg",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "DIFUTURE"
         },
         {
@@ -878,8 +1166,16 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
+        },
+        {
+          "code": "abbreviation",
+          "valueString": "UKR"
+        },
+        {
+          "code": "dic",
+          "valueBoolean": true
         }
       ]
     },
@@ -889,7 +1185,7 @@
       "definition": "Rostock",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "SMITH"
         },
         {
@@ -901,8 +1197,16 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
+        },
+        {
+          "code": "abbreviation",
+          "valueString": "UMR"
+        },
+        {
+          "code": "dic",
+          "valueBoolean": true
         }
       ]
     },
@@ -912,7 +1216,7 @@
       "definition": "Saarbrücken / Homburg",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "DIFUTURE"
         },
         {
@@ -922,6 +1226,10 @@
         {
           "code": "status",
           "valueCode": "deprecated"
+        },
+        {
+          "code": "replacedBy",
+          "valueCode": "UdS"
         },
         {
           "code": "deprecationDate",
@@ -935,7 +1243,7 @@
       "definition": "Saarbrücken / Homburg",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "DIFUTURE"
         },
         {
@@ -947,8 +1255,20 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.14"
+        },
+        {
+          "code": "replaces",
+          "valueCode": "UKS"
+        },
+        {
+          "code": "abbreviation",
+          "valueString": "UdS"
+        },
+        {
+          "code": "dic",
+          "valueBoolean": true
         }
       ]
     },
@@ -958,7 +1278,7 @@
       "definition": "Schleswig-Holstein",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "HiGHmed"
         },
         {
@@ -970,8 +1290,16 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
+        },
+        {
+          "code": "abbreviation",
+          "valueString": "UKSH"
+        },
+        {
+          "code": "dic",
+          "valueBoolean": true
         }
       ]
     },
@@ -981,7 +1309,7 @@
       "definition": "Stuttgart",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "HiGHmed"
         },
         {
@@ -993,8 +1321,16 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
+        },
+        {
+          "code": "abbreviation",
+          "valueString": "BHC"
+        },
+        {
+          "code": "dic",
+          "valueBoolean": true
         }
       ]
     },
@@ -1004,7 +1340,7 @@
       "definition": "Tübingen",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "DIFUTURE"
         },
         {
@@ -1016,8 +1352,16 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
+        },
+        {
+          "code": "abbreviation",
+          "valueString": "UKT"
+        },
+        {
+          "code": "dic",
+          "valueBoolean": true
         }
       ]
     },
@@ -1027,7 +1371,7 @@
       "definition": "Ulm",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "DIFUTURE"
         },
         {
@@ -1039,8 +1383,16 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
+        },
+        {
+          "code": "abbreviation",
+          "valueString": "UKU"
+        },
+        {
+          "code": "dic",
+          "valueBoolean": true
         }
       ]
     },
@@ -1050,7 +1402,7 @@
       "definition": "Würzburg",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "HiGHmed"
         },
         {
@@ -1062,12 +1414,20 @@
           "valueCode": "active"
         },
         {
-          "code": "Datenmanagementstelle",
+          "code": "dataManagement",
           "valueBoolean": true
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
+        },
+        {
+          "code": "abbreviation",
+          "valueString": "UKW"
+        },
+        {
+          "code": "dic",
+          "valueBoolean": true
         }
       ]
     },
@@ -1077,7 +1437,7 @@
       "definition": "Witten / Herdecke",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "NA"
         },
         {
@@ -1095,7 +1455,7 @@
       "display": "Forschungsdatenportal für Gesundheit",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "MII"
         },
         {
@@ -1107,12 +1467,16 @@
           "valueCode": "active"
         },
         {
-          "code": "Datenmanagementstelle",
+          "code": "dataManagement",
           "valueBoolean": true
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.14"
+        },
+        {
+          "code": "abbreviation",
+          "valueString": "FDPG"
         }
       ]
     },
@@ -1122,7 +1486,7 @@
       "definition": "Heidelberg",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "MII"
         },
         {
@@ -1134,12 +1498,16 @@
           "valueCode": "active"
         },
         {
-          "code": "Datenmanagementstelle",
+          "code": "dataManagement",
           "valueBoolean": true
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.15"
+        },
+        {
+          "code": "abbreviation",
+          "valueString": "HiGHmed"
         }
       ]
     },
@@ -1149,7 +1517,7 @@
       "definition": "Heilbronn",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "MII"
         },
         {
@@ -1161,8 +1529,12 @@
           "valueCode": "active"
         },
         {
-          "code": "TRV",
+          "code": "contract",
           "valueString": "V6.14"
+        },
+        {
+          "code": "abbreviation",
+          "valueString": "HHN"
         }
       ]
     },
@@ -1171,7 +1543,7 @@
       "display": "Zentrale Plattform NUM",
       "property": [
         {
-          "code": "Konsortium",
+          "code": "consortium",
           "valueString": "NUM"
         },
         {
@@ -1181,6 +1553,10 @@
         {
           "code": "status",
           "valueCode": "active"
+        },
+        {
+          "code": "abbreviation",
+          "valueString": "CRR"
         }
       ]
     }
@@ -1218,13 +1594,13 @@
       }
     }
   ],
-  "date": "2025-03-28",
+  "date": "2025-08-01",
   "caseSensitive": true,
   "compositional": false,
   "copyright": "Medizininformatik-Initiative",
   "property": [
     {
-      "code": "Konsortium",
+      "code": "consortium",
       "uri": "https://www.medizininformatik-initiative.de/de/konsortien",
       "type": "string"
     },
@@ -1249,14 +1625,34 @@
       "type": "dateTime"
     },
     {
-      "code": "Datenmanagementstelle",
+      "code": "dataManagement",
       "type": "boolean",
       "description": "Datenmanagementstelle (true / false)"
     },
     {
-      "code": "TRV",
+      "code": "contract",
       "type": "string",
       "description": "Teilnahmerahmenvertrag (Version)"
+    },
+    {
+      "code": "dic",
+      "type": "boolean",
+      "description": "Datenintegrationszentrum (true / false)"
+    },
+    {
+      "code": "abbreviation",
+      "type": "string",
+      "description": "Abkürzung (Kürzel)"
+    },
+    {
+      "code": "replaces",
+      "type": "code",
+      "description": "ersetzt (alter Code)"
+    },
+    {
+      "code": "replacedBy",
+      "type": "code",
+      "description": "ersetzt durch (neuer Code)"
     }
   ],
   "count": 50
