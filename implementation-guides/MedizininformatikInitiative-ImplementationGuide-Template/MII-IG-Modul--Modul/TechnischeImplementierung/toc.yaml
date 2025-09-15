@@ -1,5 +1,7 @@
 - name: Index
   filename: Index.page.md
+- name: Conformance
+  filename: Conformance.page.md
 - name: FHIR Profile
   filename: FHIRProfile
 - name: CapabilityStatement
