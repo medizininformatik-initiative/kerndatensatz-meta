@@ -7,6 +7,8 @@ Einleitung FHIR Profile
 
 ## Namenskonventionen für die Erstellung von FHIR-Ressourcen in der Medizininformatik-Initiative
 
+Bitte die [Seite der Namenskonventionen](https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Namenskonventionen-f%C3%BCr-FHIR%E2%80%90Ressourcen-in-der-MII) im Kerndatensatz Wiki auf aktuellere Versionen prüfen.
+
 ### Allgemeines
 * Möglichst eindeutige und prägnante Beschreibung des Inhalts 
 * Für CodeSystems und ValueSets: Konformität mit http://hl7.org/fhir/shareablecodesystem bzw. http://hl7.org/fhir/shareablevalueset wird empfohlen 
