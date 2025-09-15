@@ -3,7 +3,7 @@ parent:
 ---
 # Conformance
 
-Diese Seite beschreibt, wie Konformitätsanforderungen dokumentiert werden.
+Diese Seite beschreibt, wie Konformitätsanforderungen dokumentiert werden. Eine ggf. aktuellere Version ist im [Kerndatensatz-Wiki](https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance) dokumentiert.
 
 ---
 
