@@ -230,6 +230,33 @@
       ]
     },
     {
+      "code": "KC",
+      "display": "Klinikum Chemnitz",
+      "definition": "Chemnitz",
+      "property": [
+        {
+          "code": "consortium",
+          "valueString": "MIRACUM"
+        },
+        {
+          "code": "uri",
+          "valueString": "klinikumchemnitz.de"
+        },
+        {
+          "code": "status",
+          "valueCode": "deprecated"
+        },
+        {
+          "code": "replacedBy",
+          "valueCode": "KCH"
+        },
+        {
+          "code": "deprecationDate",
+          "valueDateTime": "2024-03-01"
+        }
+      ]
+    },
+    {
       "code": "KCH",
       "display": "Klinikum Chemnitz",
       "definition": "Chemnitz",
@@ -249,6 +276,10 @@
         {
           "code": "contract",
           "valueString": "V6.14"
+        },
+        {
+          "code": "replaces",
+          "valueCode": "KC"
         },
         {
           "code": "abbreviation",
@@ -1594,7 +1625,7 @@
       }
     }
   ],
-  "date": "2025-08-01",
+  "date": "2025-10-01",
   "caseSensitive": true,
   "compositional": false,
   "copyright": "Medizininformatik-Initiative",
@@ -1655,5 +1686,5 @@
       "description": "ersetzt durch (neuer Code)"
     }
   ],
-  "count": 50
+  "count": 51
 }
