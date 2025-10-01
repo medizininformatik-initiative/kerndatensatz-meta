@@ -146,8 +146,8 @@ Description: "Medizininformatik-Initiative Standorte"
 * #KC insert AddKonsortium(MIRACUM)
 * #KC insert AddUri(klinikumchemnitz.de)
 * #KC insert AddStatus(deprecated)
-* #CTK insert AddReplacedBy(KCH)
-* #CTK insert AddDeprecationDate(2024-03-01)
+* #KC insert AddReplacedBy(KCH)
+* #KC insert AddDeprecationDate(2024-03-01)
 * #KCH "Klinikum Chemnitz" "Chemnitz"
 * #KCH insert AddKonsortium(MIRACUM)
 * #KCH insert AddUri(klinikumchemnitz.de)
