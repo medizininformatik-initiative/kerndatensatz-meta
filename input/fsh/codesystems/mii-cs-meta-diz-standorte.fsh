@@ -142,11 +142,18 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UKB insert AddTRV(V6.15)
 * #UKB insert AddAbbreviation(UKB)
 * #UKB insert AddDiz(true)
+* #KC "Klinikum Chemnitz" "Chemnitz"
+* #KC insert AddKonsortium(MIRACUM)
+* #KC insert AddUri(klinikumchemnitz.de)
+* #KC insert AddStatus(deprecated)
+* #CTK insert AddReplacedBy(KCH)
+* #CTK insert AddDeprecationDate(2024-03-01)
 * #KCH "Klinikum Chemnitz" "Chemnitz"
 * #KCH insert AddKonsortium(MIRACUM)
 * #KCH insert AddUri(klinikumchemnitz.de)
 * #KCH insert AddStatus(active)
 * #KCH insert AddTRV(V6.14)
+* #KCH insert AddReplaces(KC)
 * #KCH insert AddAbbreviation(KCH)
 * #KCH insert AddDiz(true)
 * #CTK "Carl-Thiem-Klinikum Cottbus" "Cottbus"
