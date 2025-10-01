@@ -1,6 +1,15 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:recommended"
+  "extends": ["config:recommended"],
+  "enabledManagers": ["github-actions"],
+  "regexManagers": [
+    {
+      "fileMatch": ["^\\.github/workflows/[^/]+\\.ya?ml$"],
+      "matchStrings": [
+        "uses:\\s*FirelyTeam/firely-terminal-pipeline@v(?<currentValue>[0-9.]+)"
+      ],
+      "depNameTemplate": "FirelyTeam/firely-terminal-pipeline",
+      "datasourceTemplate": "github-releases"
+    }
   ]
 }
