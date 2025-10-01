@@ -11,7 +11,7 @@ RuleSet: AddCollectionEntry(resource)
 Instance: mii-exa-meta-searchparam-transaction-bundle
 InstanceOf: Bundle
 * type = #transaction
-* timestamp = "2024-10-24T11:35:00+01:00"
+* timestamp = "2025-10-01T14:19:00+02:00"
 // Person
 * insert AddTransactionEntry(mii-sp-meta-patient-adresszusatz)
 * insert AddTransactionEntry(mii-sp-meta-patient-assignerpid)
@@ -137,11 +137,64 @@ InstanceOf: Bundle
 * insert AddTransactionEntry(mii-sp-meta-careplan-addresses)
 * insert AddTransactionEntry(mii-sp-meta-observation-focus)
 * insert AddTransactionEntry(mii-sp-meta-observation-encounter)
+// Bildgebung
+* insert AddTransactionEntry(mii-sp-meta-supporting-info)
+* insert AddTransactionEntry(mii-sp-meta-description)
+* insert AddTransactionEntry(mii-sp-meta-body-structure-location-qualifier)
+* insert AddTransactionEntry(mii-sp-meta-composition-section-title)
+* insert AddTransactionEntry(mii-sp-meta-composition-section-author)
+* insert AddTransactionEntry(mii-sp-meta-diagnostic-report-conclusion)
+* insert AddTransactionEntry(mii-sp-meta-imaging-study-modality-body-site)
+* insert AddTransactionEntry(mii-sp-meta-imaging-study-bildgebungsgrund)
+* insert AddTransactionEntry(mii-sp-meta-imaging-study-modality)
+* insert AddTransactionEntry(mii-sp-meta-reason-reference)
+* insert AddTransactionEntry(mii-sp-meta-imaging-study-number-series)
+* insert AddTransactionEntry(mii-sp-meta-imaging-study-number-instances)
+* insert AddTransactionEntry(mii-sp-meta-imaging-study-procedure-reference)
+* insert AddTransactionEntry(mii-sp-meta-imaging-study-series-ctdi-volume)
+* insert AddTransactionEntry(mii-sp-meta-imaging-study-series-exposure-time)
+* insert AddTransactionEntry(mii-sp-meta-imaging-study-series-exposure)
+* insert AddTransactionEntry(mii-sp-meta-imaging-study-series-xray-tube-current)
+* insert AddTransactionEntry(mii-sp-meta-imaging-study-series-kvp)
+* insert AddTransactionEntry(mii-sp-meta-imaging-study-series-view-position)
+* insert AddTransactionEntry(mii-sp-meta-imaging-study-series-magnetic-field-strength)
+* insert AddTransactionEntry(mii-sp-meta-imaging-study-series-scanning-sequence)
+* insert AddTransactionEntry(mii-sp-meta-imaging-study-series-scanning-sequence-variant)
+* insert AddTransactionEntry(mii-sp-meta-imaging-study-series-echo-time)
+* insert AddTransactionEntry(mii-sp-meta-imaging-study-series-repetition-time)
+* insert AddTransactionEntry(mii-sp-meta-imaging-study-series-inversion-time)
+* insert AddTransactionEntry(mii-sp-meta-imaging-study-series-flip-angle)
+* insert AddTransactionEntry(mii-sp-meta-imaging-study-series-radiopharmaceutical)
+* insert AddTransactionEntry(mii-sp-meta-imaging-study-series-radionuclide)
+* insert AddTransactionEntry(mii-sp-meta-imaging-study-series-tracer-exposure-time)
+* insert AddTransactionEntry(mii-sp-meta-imaging-study-series-units)
+* insert AddTransactionEntry(mii-sp-meta-imaging-study-series-radionuclide-total-dose)
+* insert AddTransactionEntry(mii-sp-meta-imaging-study-series-radionuclide-half-life)
+* insert AddTransactionEntry(mii-sp-meta-imaging-study-series-series-type)
+* insert AddTransactionEntry(mii-sp-meta-imaging-study-series-transducer-type)
+* insert AddTransactionEntry(mii-sp-meta-imaging-study-series-transducer-frequency)
+* insert AddTransactionEntry(mii-sp-meta-imaging-study-series-pulse-frequency)
+* insert AddTransactionEntry(mii-sp-meta-imaging-study-series-ultrasound-color)
+* insert AddTransactionEntry(mii-sp-meta-imaging-study-series-contrast-bolus)
+* insert AddTransactionEntry(mii-sp-meta-imaging-study-series-contrast-bolus-details)
+* insert AddTransactionEntry(mii-sp-meta-imaging-study-series-number)
+* insert AddTransactionEntry(mii-sp-meta-imaging-study-series-laterality)
+* insert AddTransactionEntry(mii-sp-meta-imaging-study-series-started)
+* insert AddTransactionEntry(mii-sp-meta-imaging-study-instance-pixel-x)
+* insert AddTransactionEntry(mii-sp-meta-imaging-study-instance-pixel-y)
+* insert AddTransactionEntry(mii-sp-meta-imaging-study-instance-slice-thickness)
+* insert AddTransactionEntry(mii-sp-meta-imaging-study-instance-image-type)
+* insert AddTransactionEntry(mii-sp-meta-imaging-study-instance-burned-in-annotation)
+* insert AddTransactionEntry(mii-sp-meta-imaging-study-instance-number)
+* insert AddTransactionEntry(mii-sp-meta-observation-series-uid)
+* insert AddTransactionEntry(mii-sp-meta-observation-sop-instance-uid)
+* insert AddTransactionEntry(mii-sp-meta-observation-body-structure)
+* insert AddTransactionEntry(mii-sp-meta-read-proc-report)
 
 Instance: mii-exa-meta-searchparam-collection-bundle
 InstanceOf: Bundle
 * type = #collection
-* timestamp = "2025-08-07T11:35:00+01:00"
+* timestamp = "2025-10-01T14:19:00+02:00"
 // Person
 * insert AddCollectionEntry(mii-sp-meta-patient-adresszusatz)
 * insert AddCollectionEntry(mii-sp-meta-patient-assignerpid)

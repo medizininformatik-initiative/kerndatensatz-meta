@@ -2,7 +2,7 @@
   "resourceType": "Bundle",
   "id": "mii-exa-meta-searchparam-collection-bundle",
   "type": "collection",
-  "timestamp": "2025-08-07T11:35:00+01:00",
+  "timestamp": "2025-10-01T14:19:00+02:00",
   "entry": [
     {
       "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-patient-adresszusatz",
