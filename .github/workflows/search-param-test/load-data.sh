@@ -2,9 +2,21 @@
 
 SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
 BASE="http://localhost:8080/fhir"
-ZIP_URL="https://github.com/medizininformatik-initiative/mii-testdata/releases/download/v2025.0.0-dev.3/testdata-bundles-ndjson-20250729-142729.zip"
-BLAZECTL_VERSION="1.0.0"
+MII_TESTDATA_VERSION="v2025.0.0-dev.6"
+BLAZECTL_VERSION="1.1.0"
 BLAZECTL_URL="https://github.com/samply/blazectl/releases/download/v${BLAZECTL_VERSION}/blazectl-${BLAZECTL_VERSION}-linux-amd64.tar.gz"
+
+echo "Finding testdata bundle URL..."
+# Get the download URL for the testdata-bundles-ndjson file
+ZIP_URL=$(curl -s "https://api.github.com/repos/medizininformatik-initiative/mii-testdata/releases/tags/${MII_TESTDATA_VERSION}" | \
+  jq -r '.assets[] | select(.name | startswith("testdata-bundles-ndjson-")) | .browser_download_url')
+
+if [ -z "$ZIP_URL" ]; then
+  echo "Error: Could not find testdata-bundles-ndjson asset for version ${MII_TESTDATA_VERSION}"
+  exit 1
+fi
+
+echo "Using ZIP_URL: $ZIP_URL"
 
 echo "Installing blazectl..."
 # Download blazectl

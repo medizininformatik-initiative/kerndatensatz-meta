@@ -10,6 +10,22 @@
       ],
       "depNameTemplate": "FirelyTeam/firely-terminal-pipeline",
       "datasourceTemplate": "github-releases"
+    },
+    {
+      "fileMatch": ["\\.sh$"],
+      "matchStrings": [
+        "BLAZECTL_VERSION=\"(?<currentValue>[0-9.]+)\""
+      ],
+      "depNameTemplate": "samply/blazectl",
+      "datasourceTemplate": "github-releases"
+    },
+    {
+      "fileMatch": ["\\.sh$"],
+      "matchStrings": [
+        "MII_TESTDATA_VERSION=\"(?<currentValue>[^\"]+)\""
+      ],
+      "depNameTemplate": "medizininformatik-initiative/mii-testdata",
+      "datasourceTemplate": "github-releases"
     }
   ]
 }
