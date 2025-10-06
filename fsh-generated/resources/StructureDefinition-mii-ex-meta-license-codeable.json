@@ -16,7 +16,7 @@
     }
   ],
   "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
-  "version": "2025.0.0",
+  "version": "2025.0.1-rc.1",
   "name": "MII_EX_Meta_License_Codeable",
   "title": "MII EX Meta License Codeable",
   "status": "active",

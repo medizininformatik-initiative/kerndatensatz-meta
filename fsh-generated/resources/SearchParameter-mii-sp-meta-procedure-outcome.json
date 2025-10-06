@@ -32,7 +32,7 @@
       }
     }
   ],
-  "version": "2025.0.0",
+  "version": "2025.0.1-rc.1",
   "date": "2024-11-07",
   "experimental": false,
   "name": "MII_SP_Meta_Procedure_Outcome",
