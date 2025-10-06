@@ -242,7 +242,7 @@ Usage: #definition
 * insert SP_Publisher
 * insert LicenseCodeableCCBY40Instance
 * insert SP_Profile
-* date = "2024-10-08"
+* date = "2025-10-06"
 * name = "MII_SP_Meta_DiagnosticReport_ImagingStudy"
 * description = "SearchParameter for DiagnosticReport.imagingStudy"
 * experimental = false
@@ -251,6 +251,7 @@ Usage: #definition
 * base = #DiagnosticReport
 * type = #reference
 * expression = "DiagnosticReport.imagingStudy"
+* target = #ImagingStudy
 
 //-----------------------------------------
 // SearchParameters for Composition

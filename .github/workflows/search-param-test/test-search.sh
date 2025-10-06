@@ -91,6 +91,14 @@ search() {
 #     "$(search "Composition" "relates-to-code=appends")" \
 #     "1"
 
+# Composition.section.author
+test_includes_resource_type "Composition with _include=Composition:section-author" \
+                  "Composition" "_include=Composition:section-author" "Practitioner"
+
+# Composition.section.title
+test_at_least_one "Composition with section-title:contains=Left" \
+                  "$(search "Composition" "section-title:contains=Left")"
+
 # =========================================================
 # Condition
 # =========================================================
@@ -180,13 +188,15 @@ test_at_least_one "Device with property-type=urn:iso:std:iso:11073:10101|69684 c
 # DeviceMetric
 # =========================================================
 # DeviceMetric.source
-#test_at_least_one "DeviceMetric with source=Device/mii-exa-test-data-device-roche-cobas-c303 count" \
-#                  "$(search "DeviceMetric" "source=Device/mii-exa-test-data-device-roche-cobas-c303")"
+test_includes_resource_type "DeviceMetric with _include=DeviceMetric:source" \
+                  "DeviceMetric" "_include=DeviceMetric:source" "Device"
 
 # =========================================================
 # DiagnosticReport
 # =========================================================
-# TODO: DiagnosticReport.imagingStudy
+# DiagnosticReport.imagingStudy
+test_includes_resource_type "DiagnosticReport with _include=DiagnosticReport:imaging-study" \
+                  "DiagnosticReport" "_include=DiagnosticReport:imaging-study" "ImagingStudy"
 
 # Test if DiagnosticReport search includes related Patient resources
 # test_includes_resource_type "DiagnosticReport with _include=DiagnosticReport:patient" \
@@ -347,8 +357,8 @@ test_includes_resource_type "MedicationStatement with _include=MedicationStateme
 # TODO: focus
 
 # has-member
-# test_at_least_one "Observation with has-member=Observation/mii-exa-test-data-patient-1-patho-diagnostic-conclusion-1 count" \
-#                   "$(search "Observation" "has-member=Observation/mii-exa-test-data-patient-1-patho-diagnostic-conclusion-1")"
+test_includes_resource_type "Observation with _include=Observation:has-member" \
+                           "Observation" "_include=Observation:has-member" "Observation"
 
 # interpretation
 test_at_least_one "Observation with interpretation=http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation|H count" \
@@ -455,7 +465,9 @@ test_at_least_one "Procedure with durchfuehrungsabsicht=http://snomed.info/sct|2
 
 # TODO: outcome
 
-# TODO: recorder
+# recorder
+test_includes_resource_type "Procedure with _include=Procedure:recorder" \
+                  "Procedure" "_include=Procedure:recorder" "PractitionerRole"
 
 # =========================================================
 # ResearchStudy
@@ -483,7 +495,9 @@ test_at_least_one "ServiceRequest with reason-code=http://snomed.info/sct|447886
 test_includes_resource_type "ServiceRequest with _include=ServiceRequest:reason-reference" \
                    "ServiceRequest" "_include=ServiceRequest:reason-reference" "Condition"
 
-# TODO: supporting-info
+# supporting-info
+test_includes_resource_type "ServiceRequest with _include=ServiceRequest:supporting-info" \
+                  "ServiceRequest" "_include=ServiceRequest:supporting-info" "ImagingStudy"
 
 # =========================================================
 # Specimen
