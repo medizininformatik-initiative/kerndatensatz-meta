@@ -4818,14 +4818,20 @@
         "name": "MII_SP_Meta_Procedure_Recorder",
         "status": "active",
         "experimental": false,
-        "date": "2024-10-08",
+        "date": "2025-10-06",
         "description": "Suchparameter für Procedure.recorder",
         "code": "recorder",
         "base": [
           "Procedure"
         ],
         "type": "reference",
-        "expression": "Procedure.recorder"
+        "expression": "Procedure.recorder",
+        "target": [
+          "PractitionerRole",
+          "Practitioner",
+          "RelatedPerson",
+          "Patient"
+        ]
       },
       "request": {
         "method": "PUT",
