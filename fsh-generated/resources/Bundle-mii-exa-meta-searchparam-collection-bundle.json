@@ -3816,7 +3816,7 @@
             }
           }
         ],
-        "date": "2024-10-08",
+        "date": "2025-10-06",
         "name": "MII_SP_Meta_DiagnosticReport_ImagingStudy",
         "description": "SearchParameter for DiagnosticReport.imagingStudy",
         "experimental": false,
@@ -3826,7 +3826,10 @@
           "DiagnosticReport"
         ],
         "type": "reference",
-        "expression": "DiagnosticReport.imagingStudy"
+        "expression": "DiagnosticReport.imagingStudy",
+        "target": [
+          "ImagingStudy"
+        ]
       }
     },
     {
