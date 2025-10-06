@@ -1,5 +1,7 @@
 - name: Index
   filename: Index.page.md
+- name: 'CodeSystem: MII Standorte' 
+  filename: CodeSystem-MII-Standorte.page.md
 - name: 'Extension: Lizenzbedingungen'
   filename: Extension-Lizenzbedingungen.page.md
 - name: 'Profil: SearchParameter '
