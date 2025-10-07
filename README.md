@@ -21,3 +21,6 @@ Profile mit dem Status 'Draft' wurden noch nicht ballotiert und können noch div
 * [@ThomasDeBe](https://github.com/ThomasDeBe)
 * [@alexanderkiel](https://github.com/alexanderkiel)
 * [@beanformer](https://github.com/beanformer)
+* [@alexa-ian](https://github.com/alexa-ian)
+* [@holger-stenzhorn](https://github.com/holger-stenzhorn)
+* [@msusky](https://github.com/msusky)
