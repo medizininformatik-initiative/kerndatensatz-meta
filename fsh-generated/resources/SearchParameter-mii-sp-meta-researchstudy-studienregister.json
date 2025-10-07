@@ -7,7 +7,7 @@
     ]
   },
   "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-studienregister",
-  "version": "2025.0.1-rc.1",
+  "version": "2025.0.1",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
