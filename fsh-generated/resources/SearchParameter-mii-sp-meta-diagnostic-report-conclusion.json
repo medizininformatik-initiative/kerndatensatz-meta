@@ -32,7 +32,7 @@
       }
     }
   ],
-  "version": "2025.0.1-rc.1",
+  "version": "2025.0.1",
   "name": "MII_SP_Bildgebung_Diagnostic_Report_Conclusion",
   "status": "active",
   "experimental": false,

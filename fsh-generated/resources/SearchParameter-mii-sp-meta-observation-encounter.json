@@ -32,7 +32,7 @@
       }
     }
   ],
-  "version": "2025.0.1-rc.1",
+  "version": "2025.0.1",
   "experimental": false,
   "date": "2024-10-24",
   "name": "MII_SP_Meta_Observation_Encounter",

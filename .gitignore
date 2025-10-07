@@ -19,3 +19,5 @@ _genonce.bat
 _genonce.sh
 _updatePublisher.bat
 _updatePublisher.sh
+_build.bat
+_build.sh
