@@ -48,14 +48,21 @@ jobs:
       - name: Release
         uses: softprops/action-gh-release@v2
         with:
-          name: "MII IG Meta - ${{ steps.prep-version.outputs.version }}"
+          name: "${{ steps.prep-version.outputs.version }}"
           draft: true
           prerelease: ${{ contains(steps.prep-version.outputs.version, '-') }}
           generate_release_notes: true
           body: |
             ## MII IG Meta Release ${{ steps.prep-version.outputs.version }}
             
+            <!-- DELETE START -->
             Download the FHIR package from Simplifier and manually attach it to this release.
+            <!-- DELETE END -->
             
             ### Changes
+
+            <!-- DELETE START -->
+            Add your own release notes here.
+            <!-- DELETE END -->
+
             See the auto-generated release notes below.
