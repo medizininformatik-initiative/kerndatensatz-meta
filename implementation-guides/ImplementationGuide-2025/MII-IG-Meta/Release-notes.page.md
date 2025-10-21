@@ -1,5 +1,11 @@
 ## {{page-title}}
 
+**Version: 2025.0.2**
+
+Datum 21.10.2025
+
+* Added: `SearchParameter`-Ressource für Procedure OPS-Seitenlokalisation. Siehe: {{pagelink: SearchParameter, text: Kerndatensatz Suchparameter, hint: CDS-SearchParameter}}
+
 **Version: 2025.0.1**
 
 Datum 07.10.2025
