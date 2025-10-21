@@ -858,6 +858,56 @@
       }
     },
     {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-procedure-ops-seitenlokalisation",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-procedure-ops-seitenlokalisation",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-ops-seitenlokalisation",
+        "version": "2025.0.1",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_Procedure_OPS_Seitenlokalisation",
+        "status": "active",
+        "experimental": false,
+        "date": "2025-10-21",
+        "description": "Suchparameter für Procedure.code.coding:ops.extension:Seitenlokalisation",
+        "code": "ops-seitenlokalisation",
+        "base": [
+          "Procedure"
+        ],
+        "type": "token",
+        "expression": "Procedure.code.coding.extension.where(url = 'http://fhir.de/StructureDefinition/seitenlokalisation').value"
+      }
+    },
+    {
       "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-encounter-diagnosis-use",
       "resource": {
         "resourceType": "SearchParameter",
