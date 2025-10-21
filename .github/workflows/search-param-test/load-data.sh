@@ -2,7 +2,7 @@
 
 SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
 BASE="http://localhost:8080/fhir"
-MII_TESTDATA_VERSION="v2025.0.0-dev.6"
+MII_TESTDATA_VERSION="v2025.0.0-dev.7"
 BLAZECTL_VERSION="1.1.0"
 BLAZECTL_URL="https://github.com/samply/blazectl/releases/download/v${BLAZECTL_VERSION}/blazectl-${BLAZECTL_VERSION}-linux-amd64.tar.gz"
 

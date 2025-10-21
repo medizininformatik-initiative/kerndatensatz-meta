@@ -469,6 +469,10 @@ test_at_least_one "Procedure with durchfuehrungsabsicht=http://snomed.info/sct|2
 test_includes_resource_type "Procedure with _include=Procedure:recorder" \
                   "Procedure" "_include=Procedure:recorder" "PractitionerRole"
 
+# Suchparameter: ops-seitenlokalisation
+test_at_least_one "Procedure.code Seitenlokalisation 5-322.d1/R count" \
+     "$(search "Procedure" "code=http://fhir.de/CodeSystem/bfarm/ops%7C5-322.d1&ops-seitenlokalisation=$R")"
+
 # =========================================================
 # ResearchStudy
 # =========================================================
