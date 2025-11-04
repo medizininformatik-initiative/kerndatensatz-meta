@@ -8,7 +8,7 @@ Auf dieser Seite sind alle im Kerndatensatz definierten Suchparameter aufgeführ
 
 @```
 from
-	SearchParameter
+	SearchParameter where status = 'active'
 select
 	ResourceType: base, Parameter: code, Type: type, Description: description, Paths: expression, Id: id
 order by
