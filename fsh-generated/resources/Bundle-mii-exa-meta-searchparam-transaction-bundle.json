@@ -3622,60 +3622,6 @@
       }
     },
     {
-      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-specimen-collection-body-site",
-      "resource": {
-        "resourceType": "SearchParameter",
-        "id": "mii-sp-meta-specimen-collection-body-site",
-        "meta": {
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
-          ]
-        },
-        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-collection-body-site",
-        "version": "2025.0.2",
-        "publisher": "Medizininformatik Initiative",
-        "contact": [
-          {
-            "telecom": [
-              {
-                "system": "url",
-                "value": "https://www.medizininformatik-initiative.de"
-              }
-            ]
-          }
-        ],
-        "extension": [
-          {
-            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "CC-BY-4.0",
-                  "system": "http://hl7.org/fhir/spdx-license",
-                  "display": "Creative Commons Attribution 4.0 International"
-                }
-              ]
-            }
-          }
-        ],
-        "date": "2024-10-08",
-        "name": "MII_SP_Meta_Specimen_Collection_Body_Site",
-        "description": "SearchParameter for Specimen.collection.bodySite",
-        "experimental": false,
-        "status": "active",
-        "code": "collection-body-site",
-        "base": [
-          "Specimen"
-        ],
-        "type": "token",
-        "expression": "Specimen.collection.bodySite"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "SearchParameter/mii-sp-meta-specimen-collection-body-site"
-      }
-    },
-    {
       "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-specimen-processing-procedure",
       "resource": {
         "resourceType": "SearchParameter",

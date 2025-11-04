@@ -85,7 +85,7 @@ InstanceOf: Bundle
 // Patho
 * insert AddTransactionEntry(mii-sp-meta-specimen-request)
 * insert AddTransactionEntry(mii-sp-meta-specimen-collection-method)
-* insert AddTransactionEntry(mii-sp-meta-specimen-collection-body-site)
+//* insert AddTransactionEntry(mii-sp-meta-specimen-collection-body-site)
 * insert AddTransactionEntry(mii-sp-meta-specimen-processing-procedure)
 * insert AddTransactionEntry(mii-sp-meta-specimen-processing-additive)
 * insert AddTransactionEntry(mii-sp-meta-specimen-processing-date)
@@ -269,7 +269,7 @@ InstanceOf: Bundle
 // Patho
 * insert AddCollectionEntry(mii-sp-meta-specimen-request)
 * insert AddCollectionEntry(mii-sp-meta-specimen-collection-method)
-* insert AddCollectionEntry(mii-sp-meta-specimen-collection-body-site)
+//* insert AddCollectionEntry(mii-sp-meta-specimen-collection-body-site)
 * insert AddCollectionEntry(mii-sp-meta-specimen-processing-procedure)
 * insert AddCollectionEntry(mii-sp-meta-specimen-processing-additive)
 * insert AddCollectionEntry(mii-sp-meta-specimen-processing-date)

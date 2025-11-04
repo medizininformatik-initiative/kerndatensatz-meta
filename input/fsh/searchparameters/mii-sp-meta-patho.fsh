@@ -42,11 +42,11 @@ Usage: #definition
 * insert SP_Publisher
 * insert LicenseCodeableCCBY40Instance
 * insert SP_Profile
-* date = "2024-10-08"
+* date = "2025-11-04"
 * name = "MII_SP_Meta_Specimen_Collection_Body_Site"
 * description = "SearchParameter for Specimen.collection.bodySite"
 * experimental = false
-* status = #active
+* status = #retired
 * code = #collection-body-site
 * base = #Specimen
 * type = #token
