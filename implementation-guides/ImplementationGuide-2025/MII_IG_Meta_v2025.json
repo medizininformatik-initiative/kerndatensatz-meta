@@ -1,0 +1,1466 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "mii-ig-meta",
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://spdx.org/licenses/",
+            "code": "CC-BY-4.0",
+            "display": "Creative Commons Attribution 4.0 International License"
+          }
+        ]
+      }
+    }
+  ],
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/ImplementationGuide/mii-ig-meta",
+  "version": "2025.0.3",
+  "name": "MII_IG_Meta",
+  "title": "MII IG Meta",
+  "status": "active",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "name": "Medizininformatik Initiative",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de/"
+        }
+      ]
+    }
+  ],
+  "description": "Das Modul Meta enthält Basisartefakte für alle weiteren MII-IGs.",
+  "packageId": "de.medizininformatikinitiative.kerndatensatz.meta",
+  "license": "CC-BY-4.0",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "CodeSystem/mii-cs-meta-diz-standorte"
+        },
+        "name": "MII CS Meta DIZ Standorte",
+        "description": "Medizininformatik-Initiative Standorte",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-ex-meta-license-codeable"
+        },
+        "name": "MII EX Meta License Codeable",
+        "description": "This extension may be used to provide machine-processable license information about the set of data described by this resource.\nThe extension is a R4-compatible version of the FHIR for FAIR R4B IG Licence Terms as CodeableConcept extension.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-meta-searchparameter"
+        },
+        "name": "MII PR Meta SearchParameter",
+        "description": "Das Profil legt die Mindestanforderungen fest, die SearchParameter-Ressourcen im Kerndatensatz erfüllen müssen.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Bundle/mii-exa-meta-searchparam-collection-bundle"
+        },
+        "name": "mii-exa-meta-searchparam-collection-bundle",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Bundle/mii-exa-meta-searchparam-transaction-bundle"
+        },
+        "name": "mii-exa-meta-searchparam-transaction-bundle",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-adverseevent-encounter"
+        },
+        "name": "mii-sp-meta-adverseevent-encounter",
+        "description": "SearchParameter for AdverseEvent.encounter",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-adverseevent-suspectentity-instance"
+        },
+        "name": "mii-sp-meta-adverseevent-suspectentity-instance",
+        "description": "SearchParameter for AdverseEvent.suspectEntity.instance",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-body-structure-location-qualifier"
+        },
+        "name": "mii-sp-meta-body-structure-location-qualifier",
+        "description": "Suchparameter für BodyStructure.locationQualifier",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-careplan-addresses"
+        },
+        "name": "mii-sp-meta-careplan-addresses",
+        "description": "SearchParameter for CarePlan.addresses",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-careplan-contributor"
+        },
+        "name": "mii-sp-meta-careplan-contributor",
+        "description": "SearchParameter for CarePlan.contributor",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-careplan-created"
+        },
+        "name": "mii-sp-meta-careplan-created",
+        "description": "SearchParameter for CarePlan.created",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-composition-attester-mode"
+        },
+        "name": "mii-sp-meta-composition-attester-mode",
+        "description": "SearchParameter for Composition.attester.mode",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-composition-custodian"
+        },
+        "name": "mii-sp-meta-composition-custodian",
+        "description": "SearchParameter for Composition.custodian",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-composition-relatesto-code"
+        },
+        "name": "mii-sp-meta-composition-relatesto-code",
+        "description": "SearchParameter for Composition.relatesTo.code",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-composition-section-author"
+        },
+        "name": "mii-sp-meta-composition-section-author",
+        "description": "Suchparameter für Composition.section.author",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-composition-section-title"
+        },
+        "name": "mii-sp-meta-composition-section-title",
+        "description": "Suchparameter für Composition.section.title",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-condition-evidence-detail"
+        },
+        "name": "mii-sp-meta-condition-evidence-detail",
+        "description": "SearchParameter for Condition.evidence.detail",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-condition-icd10gm-diagnosesicherheit"
+        },
+        "name": "mii-sp-meta-condition-icd10gm-diagnosesicherheit",
+        "description": "Suchparameter für Condition.code.coding:icd10-gm.extension:Diagnosesicherheit",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-condition-icd10gm-mehrfachcodierung"
+        },
+        "name": "mii-sp-meta-condition-icd10gm-mehrfachcodierung",
+        "description": "Suchparameter für Condition.code.coding:icd10-gm.extension:Mehrfachcodierungs-Kennzeichen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-condition-icd10gm-seitenlokalisation"
+        },
+        "name": "mii-sp-meta-condition-icd10gm-seitenlokalisation",
+        "description": "Suchparameter für Condition.code.coding:icd10-gm.extension:Seitenlokalisation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-condition-verification-status"
+        },
+        "name": "mii-sp-meta-condition-verification-status",
+        "description": "SearchParameter for Condition.verificationStatus",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-consent-policyuri"
+        },
+        "name": "mii-sp-meta-consent-policyuri",
+        "description": "Suche in der Policy URI (versionsspezifische Policy / Broad Consent)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-consent-provisioncode"
+        },
+        "name": "mii-sp-meta-consent-provisioncode",
+        "description": "Suche im Code der Provison",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-consent-provisioncodeperiod"
+        },
+        "name": "mii-sp-meta-consent-provisioncodeperiod",
+        "description": "Composite-Suche nach Zeitraum (period) einer bestimmten, durch einen Code definierten, Provision.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-consent-provisioncodetype"
+        },
+        "name": "mii-sp-meta-consent-provisioncodetype",
+        "description": "Composite-Suche nach Typ (type) einer bestimmten, durch einen Code definierten, Provision.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-consent-provisionperiod"
+        },
+        "name": "mii-sp-meta-consent-provisionperiod",
+        "description": "Suche im Zeitraum der Provision. Dieser Suchparameter bezieht sich explizit auf die zweite Verschachtelungsebene von provison.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-consent-provisiontype"
+        },
+        "name": "mii-sp-meta-consent-provisiontype",
+        "description": "Suche im Typ der Provison (permit, deny).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-description"
+        },
+        "name": "mii-sp-meta-description",
+        "description": "Suchparameter für CarePlan.description | ImagingStudy.description | ImagingStudy.series.description",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-device-property-type"
+        },
+        "name": "mii-sp-meta-device-property-type",
+        "description": "Suchparameter für Device.property.type",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-devicemetric-source"
+        },
+        "name": "mii-sp-meta-devicemetric-source",
+        "description": "Suchparameter für DeviceMetric.source",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-diagnostic-report-conclusion"
+        },
+        "name": "mii-sp-meta-diagnostic-report-conclusion",
+        "description": "Suchparameter für DiagnosticReport.conclusion",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-diagnosticreport-imagingstudy"
+        },
+        "name": "mii-sp-meta-diagnosticreport-imagingstudy",
+        "description": "SearchParameter for DiagnosticReport.imagingStudy",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-documentreference-attachment-size"
+        },
+        "name": "mii-sp-meta-documentreference-attachment-size",
+        "description": "Suchparameter für DocumentReference.content.attachment.size",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-documentreference-attachment-title"
+        },
+        "name": "mii-sp-meta-documentreference-attachment-title",
+        "description": "Suchparameter für DocumentReference.content.attachment.title",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-dokument-documentreference-attachment-creation"
+        },
+        "name": "mii-sp-meta-dokument-documentreference-attachment-creation",
+        "description": "Suchparameter für DocumentReference.content.attachment.creation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-dokument-documentreference-doc-status"
+        },
+        "name": "mii-sp-meta-dokument-documentreference-doc-status",
+        "description": "Suchparameter für DocumentReference.docStatus",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-dokument-documentreference-nlp-processing-status"
+        },
+        "name": "mii-sp-meta-dokument-documentreference-nlp-processing-status",
+        "description": "Suchparameter für DocumentReference.extension[nlp-processing-status].valueCodeableConcept",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-encounter-aufnahmegrund-drittestelle"
+        },
+        "name": "mii-sp-meta-encounter-aufnahmegrund-drittestelle",
+        "description": "Suchparameter für Encounter.extension:Aufnahmegrund.extension:DritteStelle",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-encounter-aufnahmegrund-ersteundzweitestelle"
+        },
+        "name": "mii-sp-meta-encounter-aufnahmegrund-ersteundzweitestelle",
+        "description": "Suchparameter für Encounter.extension:Aufnahmegrund.extension:ErsteUndZweiteStelle",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-encounter-aufnahmegrund-viertestelle"
+        },
+        "name": "mii-sp-meta-encounter-aufnahmegrund-viertestelle",
+        "description": "Suchparameter für Encounter.extension:Aufnahmegrund.extension:VierteStelle",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-encounter-diagnosis-use"
+        },
+        "name": "mii-sp-meta-encounter-diagnosis-use",
+        "description": "Suchparameter für Encounter.diagnosis.use",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-encounter-entlassungsgrund-drittestelle"
+        },
+        "name": "mii-sp-meta-encounter-entlassungsgrund-drittestelle",
+        "description": "Suchparameter für Encounter.hospitalization.dischargeDisposition.extension:Entlassungsgrund.extension:DritteStelle",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-encounter-entlassungsgrund-ersteundzweitestelle"
+        },
+        "name": "mii-sp-meta-encounter-entlassungsgrund-ersteundzweitestelle",
+        "description": "Suchparameter für Encounter.hospitalization.dischargeDisposition.extension:Entlassungsgrund.extension:ErsteUndZweiteStelle",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-encounter-hospitalization-admitsource"
+        },
+        "name": "mii-sp-meta-encounter-hospitalization-admitsource",
+        "description": "Suchparameter für Encounter.hospitalization.admitSource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-encounter-location-physical-type"
+        },
+        "name": "mii-sp-meta-encounter-location-physical-type",
+        "description": "Suchparameter für Encounter.location.physicalType",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-encounter-servicetype"
+        },
+        "name": "mii-sp-meta-encounter-servicetype",
+        "description": "Suchparameter für Encounter.serviceType",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-evidencevariable-characteristic-description"
+        },
+        "name": "mii-sp-meta-evidencevariable-characteristic-description",
+        "description": "Suchparameter für EvidenceVariable.characteristic.description",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-familymemberhistory-reasoncode"
+        },
+        "name": "mii-sp-meta-familymemberhistory-reasoncode",
+        "description": "Suchparameter für FamilyMemberHistory.reasonCode",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-familymemberhistory-reasonreference"
+        },
+        "name": "mii-sp-meta-familymemberhistory-reasonreference",
+        "description": "Suchparameter für FamilyMemberHistory.reasonReference",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-imaging-study-bildgebungsgrund"
+        },
+        "name": "mii-sp-meta-imaging-study-bildgebungsgrund",
+        "description": "Suchparameter für ImagingStudy.Extension.Bildgebungsgrund",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-imaging-study-instance-burned-in-annotation"
+        },
+        "name": "mii-sp-meta-imaging-study-instance-burned-in-annotation",
+        "description": "Suchparameter für ImagingStudy.series.instance.extension.burnedInAnnotation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-imaging-study-instance-image-type"
+        },
+        "name": "mii-sp-meta-imaging-study-instance-image-type",
+        "description": "Suchparameter für ImagingStudy.series.instance.extension.imageType",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-imaging-study-instance-number"
+        },
+        "name": "mii-sp-meta-imaging-study-instance-number",
+        "description": "Suchparameter für ImagingStudy.series.instance.number",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-imaging-study-instance-pixel-x"
+        },
+        "name": "mii-sp-meta-imaging-study-instance-pixel-x",
+        "description": "Suchparameter für ImagingStudy.series.instance.extension.pixelSpacingX",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-imaging-study-instance-pixel-y"
+        },
+        "name": "mii-sp-meta-imaging-study-instance-pixel-y",
+        "description": "Suchparameter für ImagingStudy.series.instance.extension.pixelSpacingY",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-imaging-study-instance-slice-thickness"
+        },
+        "name": "mii-sp-meta-imaging-study-instance-slice-thickness",
+        "description": "Suchparameter für ImagingStudy.series.instance.extension.sliceThickness",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-imaging-study-modality"
+        },
+        "name": "mii-sp-meta-imaging-study-modality",
+        "description": "Suchparameter für ImagingStudy.modality",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-imaging-study-modality-body-site"
+        },
+        "name": "mii-sp-meta-imaging-study-modality-body-site",
+        "description": "Suchparameter für ImagingStudy.series.modality and ImagingStudy.series.bodySite",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-imaging-study-number-instances"
+        },
+        "name": "mii-sp-meta-imaging-study-number-instances",
+        "description": "Suchparameter für ImagingStudy.numberOfSeries",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-imaging-study-number-series"
+        },
+        "name": "mii-sp-meta-imaging-study-number-series",
+        "description": "Suchparameter für ImagingStudy.numberOfSeries",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-imaging-study-procedure-reference"
+        },
+        "name": "mii-sp-meta-imaging-study-procedure-reference",
+        "description": "Suchparameter für ImagingStudy.procedureReference",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-imaging-study-series-contrast-bolus"
+        },
+        "name": "mii-sp-meta-imaging-study-series-contrast-bolus",
+        "description": "Suchparameter für ImagingStudy.series.extension.contrastBolus",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-imaging-study-series-contrast-bolus-details"
+        },
+        "name": "mii-sp-meta-imaging-study-series-contrast-bolus-details",
+        "description": "Suchparameter für ImagingStudy.series.extension.contrastBolusDetails",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-imaging-study-series-ctdi-volume"
+        },
+        "name": "mii-sp-meta-imaging-study-series-ctdi-volume",
+        "description": "Suchparameter für ImagingStudy.series.extension.CTDIvolume",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-imaging-study-series-echo-time"
+        },
+        "name": "mii-sp-meta-imaging-study-series-echo-time",
+        "description": "Suchparameter für ImagingStudy.series.extension.echoTime",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-imaging-study-series-exposure"
+        },
+        "name": "mii-sp-meta-imaging-study-series-exposure",
+        "description": "Suchparameter für ImagingStudy.series.extension.exposure",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-imaging-study-series-exposure-time"
+        },
+        "name": "mii-sp-meta-imaging-study-series-exposure-time",
+        "description": "Suchparameter für ImagingStudy.series.extension.exposureTime",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-imaging-study-series-flip-angle"
+        },
+        "name": "mii-sp-meta-imaging-study-series-flip-angle",
+        "description": "Suchparameter für ImagingStudy.series.extension.flipAngle",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-imaging-study-series-inversion-time"
+        },
+        "name": "mii-sp-meta-imaging-study-series-inversion-time",
+        "description": "Suchparameter für ImagingStudy.series.extension.inversionTime",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-imaging-study-series-kvp"
+        },
+        "name": "mii-sp-meta-imaging-study-series-kvp",
+        "description": "Suchparameter für ImagingStudy.series.extension.kvp",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-imaging-study-series-laterality"
+        },
+        "name": "mii-sp-meta-imaging-study-series-laterality",
+        "description": "Suchparameter für ImagingStudy.series.laterality",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-imaging-study-series-magnetic-field-strength"
+        },
+        "name": "mii-sp-meta-imaging-study-series-magnetic-field-strength",
+        "description": "Suchparameter für ImagingStudy.series.extension.magneticFieldStrength",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-imaging-study-series-number"
+        },
+        "name": "mii-sp-meta-imaging-study-series-number",
+        "description": "Suchparameter für ImagingStudy.series.number",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-imaging-study-series-pulse-frequency"
+        },
+        "name": "mii-sp-meta-imaging-study-series-pulse-frequency",
+        "description": "Suchparameter für ImagingStudy.series.extension.pulseRepetitionFrequency",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-imaging-study-series-radionuclide"
+        },
+        "name": "mii-sp-meta-imaging-study-series-radionuclide",
+        "description": "Suchparameter für ImagingStudy.series.extension.radionuclide",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-imaging-study-series-radionuclide-half-life"
+        },
+        "name": "mii-sp-meta-imaging-study-series-radionuclide-half-life",
+        "description": "Suchparameter für ImagingStudy.series.extension.radionuclideHalfLife",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-imaging-study-series-radionuclide-total-dose"
+        },
+        "name": "mii-sp-meta-imaging-study-series-radionuclide-total-dose",
+        "description": "Suchparameter für ImagingStudy.series.extension.radionuclideTotalDose",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-imaging-study-series-radiopharmaceutical"
+        },
+        "name": "mii-sp-meta-imaging-study-series-radiopharmaceutical",
+        "description": "Suchparameter für ImagingStudy.series.extension.radiopharmaceutical",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-imaging-study-series-repetition-time"
+        },
+        "name": "mii-sp-meta-imaging-study-series-repetition-time",
+        "description": "Suchparameter für ImagingStudy.series.extension.repetitionTime",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-imaging-study-series-scanning-sequence"
+        },
+        "name": "mii-sp-meta-imaging-study-series-scanning-sequence",
+        "description": "Suchparameter für ImagingStudy.series.extension.scanningSequence",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-imaging-study-series-scanning-sequence-variant"
+        },
+        "name": "mii-sp-meta-imaging-study-series-scanning-sequence-variant",
+        "description": "Suchparameter für ImagingStudy.series.extension.scanningSequenceVariant",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-imaging-study-series-series-type"
+        },
+        "name": "mii-sp-meta-imaging-study-series-series-type",
+        "description": "ImagingStudy.series.extension.seriesType",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-imaging-study-series-started"
+        },
+        "name": "mii-sp-meta-imaging-study-series-started",
+        "description": "Suchparameter für ImagingStudy.series.started",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-imaging-study-series-tracer-exposure-time"
+        },
+        "name": "mii-sp-meta-imaging-study-series-tracer-exposure-time",
+        "description": "Suchparameter für ImagingStudy.series.tracerExposureTime",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-imaging-study-series-transducer-frequency"
+        },
+        "name": "mii-sp-meta-imaging-study-series-transducer-frequency",
+        "description": "Suchparameter für ImagingStudy.series.extension.transducerFrequency",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-imaging-study-series-transducer-type"
+        },
+        "name": "mii-sp-meta-imaging-study-series-transducer-type",
+        "description": "ImagingStudy.series.extension.transducerType",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-imaging-study-series-ultrasound-color"
+        },
+        "name": "mii-sp-meta-imaging-study-series-ultrasound-color",
+        "description": "ImagingStudy.series.extension.ultrasoundPresent",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-imaging-study-series-units"
+        },
+        "name": "mii-sp-meta-imaging-study-series-units",
+        "description": "Suchparameter für ImagingStudy.series.extension.units",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-imaging-study-series-view-position"
+        },
+        "name": "mii-sp-meta-imaging-study-series-view-position",
+        "description": "Suchparameter für ImagingStudy.series.extension.viewPosition",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-imaging-study-series-xray-tube-current"
+        },
+        "name": "mii-sp-meta-imaging-study-series-xray-tube-current",
+        "description": "Suchparameter für ImagingStudy.series.extension.xRayTubeCurrent",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-library-quellregister"
+        },
+        "name": "mii-sp-meta-library-quellregister",
+        "description": "Suchparameter für Library.extension:QuellRegister",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-library-relatedartifact-url"
+        },
+        "name": "mii-sp-meta-library-relatedartifact-url",
+        "description": "Suchparameter für Library.relatedArtifact.document.url",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-media-partof"
+        },
+        "name": "mii-sp-meta-media-partof",
+        "description": "SearchParameter for Media.partOf",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-medication-dosage-dosequantity"
+        },
+        "name": "mii-sp-meta-medication-dosage-dosequantity",
+        "description": "Suchparameter für MedicationStatement.dosage.doseAndRate.doseQuantity | MedicationRequest.dosageInstruction.doseAndRate.doseQuantity | MedicationAdministration.dosage.dose",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-medication-dosage-doserange"
+        },
+        "name": "mii-sp-meta-medication-dosage-doserange",
+        "description": "Suchparameter für MedicationStatement.dosage.doseAndRate.doseRange | MedicationRequest.dosageInstruction.doseAndRate.doseRange",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-medication-dosage-doserange-high"
+        },
+        "name": "mii-sp-meta-medication-dosage-doserange-high",
+        "description": "Suchparameter für MedicationStatement.dosage.doseAndRate.doseRange.high | MedicationRequest.dosageInstruction.doseAndRate.doseRange.high",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-medication-dosage-doserange-low"
+        },
+        "name": "mii-sp-meta-medication-dosage-doserange-low",
+        "description": "Suchparameter für MedicationStatement.dosage.doseAndRate.doseRange.low | MedicationRequest.dosageInstruction.doseAndRate.doseRange.low",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-medication-dosage-ratequantity"
+        },
+        "name": "mii-sp-meta-medication-dosage-ratequantity",
+        "description": "Suchparameter für MedicationStatement.dosage.doseAndRate.rateQuantity | MedicationAdministration.dosage.rateQuantity | MedicationRequest.dosageInstruction.doseAndRate.rateQuantity",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-medication-dosage-raterange"
+        },
+        "name": "mii-sp-meta-medication-dosage-raterange",
+        "description": "Suchparameter für MedicationStatement.dosage.doseAndRate.rateRange | MedicationRequest.dosageInstruction.doseAndRate.rateRange",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-medication-dosage-raterange-high"
+        },
+        "name": "mii-sp-meta-medication-dosage-raterange-high",
+        "description": "Suchparameter für MedicationStatement.dosage.doseAndRate.rateRange.high | MedicationRequest.dosageInstruction.doseAndRate.rateRange.high",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-medication-dosage-raterange-low"
+        },
+        "name": "mii-sp-meta-medication-dosage-raterange-low",
+        "description": "Suchparameter für MedicationStatement.dosage.doseAndRate.rateRange.low | MedicationRequest.dosageInstruction.doseAndRate.rateRange.low",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-medication-dosage-rateratio"
+        },
+        "name": "mii-sp-meta-medication-dosage-rateratio",
+        "description": "MedicationStatement.dosage.doseAndRate.rate.ofType(Ratio) | MedicationAdministration.dosage.rate.ofType(Ratio) | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-medication-dosage-rateratio-denominator"
+        },
+        "name": "mii-sp-meta-medication-dosage-rateratio-denominator",
+        "description": "Suchparameter für MedicationStatement.dosage.doseAndRate.rateRatio.denominator | MedicationAdministration.dosage.rate.ofType(Ratio).denominator | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio).denominator",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-medication-dosage-rateratio-numerator"
+        },
+        "name": "mii-sp-meta-medication-dosage-rateratio-numerator",
+        "description": "Suchparameter für MedicationStatement.dosage.doseAndRate.rateRatio.numerator | MedicationAdministration.dosage.rate.ofType(Ratio).numerator | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio).numerator",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-medication-dosage-route"
+        },
+        "name": "mii-sp-meta-medication-dosage-route",
+        "description": "Suchparameter für (MedicationAdministration|MedicationStatement).dosage.route | MedicationRequest.dosageInstruction.route",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-medication-dosage-site"
+        },
+        "name": "mii-sp-meta-medication-dosage-site",
+        "description": "Suchparameter für (MedicationAdministration|MedicationStatement).dosage.site | MedicationRequest.dosageInstruction.site",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-medication-ingredient-strength"
+        },
+        "name": "mii-sp-meta-medication-ingredient-strength",
+        "description": "Suchparameter für Medication.ingredient.strength",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-medication-ingredient-strength-denominator"
+        },
+        "name": "mii-sp-meta-medication-ingredient-strength-denominator",
+        "description": "Suchparameter für Medication.ingredient.strength.denominator",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-medication-ingredient-strength-numerator"
+        },
+        "name": "mii-sp-meta-medication-ingredient-strength-numerator",
+        "description": "Suchparameter für Medication.ingredient.strength.numerator",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-medication-list-mode"
+        },
+        "name": "mii-sp-meta-medication-list-mode",
+        "description": "Suchparameter für List.mode",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-medication-partof"
+        },
+        "name": "mii-sp-meta-medication-partof",
+        "description": "Suchparameter für (MedicationAdministration|MedicationStatement).partOf",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-medication-reasonreference"
+        },
+        "name": "mii-sp-meta-medication-reasonreference",
+        "description": "Suchparameter für (MedicationAdministration|MedicationStatement).reasonReference",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-observation-body-structure"
+        },
+        "name": "mii-sp-meta-observation-body-structure",
+        "description": "Suchparameter für Observation.bodyStructure",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-observation-bodysite"
+        },
+        "name": "mii-sp-meta-observation-bodysite",
+        "description": "SearchParameter for Observation.bodySite",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-observation-component-interpretation"
+        },
+        "name": "mii-sp-meta-observation-component-interpretation",
+        "description": "Suchparameter für Observation.component.interpretation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-observation-encounter"
+        },
+        "name": "mii-sp-meta-observation-encounter",
+        "description": "SearchParameter for Observation.encounter",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-observation-focus"
+        },
+        "name": "mii-sp-meta-observation-focus",
+        "description": "SearchParameter for Observation.focus",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-observation-hasmember"
+        },
+        "name": "mii-sp-meta-observation-hasmember",
+        "description": "SearchParameter for Observation.hasMember",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-observation-interpretation"
+        },
+        "name": "mii-sp-meta-observation-interpretation",
+        "description": "Suchparameter für Observation.interpretation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-observation-issued"
+        },
+        "name": "mii-sp-meta-observation-issued",
+        "description": "Suchparameter für Observation.issued",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-observation-referencerange"
+        },
+        "name": "mii-sp-meta-observation-referencerange",
+        "description": "Suchparameter für Observation.referenceRange",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-observation-referencerange-high"
+        },
+        "name": "mii-sp-meta-observation-referencerange-high",
+        "description": "Suchparameter für Observation.referenceRange.high",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-observation-referencerange-low"
+        },
+        "name": "mii-sp-meta-observation-referencerange-low",
+        "description": "Suchparameter für Observation.referenceRange.low",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-observation-series-uid"
+        },
+        "name": "mii-sp-meta-observation-series-uid",
+        "description": "Suchparameter für Observation.extension.seriesUID",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-observation-sop-instance-uid"
+        },
+        "name": "mii-sp-meta-observation-sop-instance-uid",
+        "description": "Suchparameter für Observation.sopInstanceUID",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-observation-value-ratio"
+        },
+        "name": "mii-sp-meta-observation-value-ratio",
+        "description": "SearchParameter for Observation.valueRatio",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-observation-value-ratio-denominator"
+        },
+        "name": "mii-sp-meta-observation-value-ratio-denominator",
+        "description": "SearchParameter for Observation.valueRatio.denominator",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-observation-value-ratio-numerator"
+        },
+        "name": "mii-sp-meta-observation-value-ratio-numerator",
+        "description": "SearchParameter for Observation.valueRatio.numerator",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-patient-adresszusatz"
+        },
+        "name": "mii-sp-meta-patient-adresszusatz",
+        "description": "Suchparameter für Patient.address.line.extension:Adresszusatz",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-patient-assignerpid"
+        },
+        "name": "mii-sp-meta-patient-assignerpid",
+        "description": "Suchparameter für Patient.identifier.assigner.identifier",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-patient-gemeindeschluessel"
+        },
+        "name": "mii-sp-meta-patient-gemeindeschluessel",
+        "description": "Suchparameter für Patient.address.city.extension:gemeindeschluessel",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-patient-hausnummer"
+        },
+        "name": "mii-sp-meta-patient-hausnummer",
+        "description": "Suchparameter für Patient.address.line.extension:Hausnummer",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-patient-otheramtlich"
+        },
+        "name": "mii-sp-meta-patient-otheramtlich",
+        "description": "Suchparameter für Patient.gender.extension:other-amtlich",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-patient-postfach"
+        },
+        "name": "mii-sp-meta-patient-postfach",
+        "description": "Suchparameter für Patient.address.line.extension:Postfach",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-patient-prefix"
+        },
+        "name": "mii-sp-meta-patient-prefix",
+        "description": "Suchparameter für Patient.name.prefix",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-patient-prefixqualifier"
+        },
+        "name": "mii-sp-meta-patient-prefixqualifier",
+        "description": "Suchparameter für Patient.name.prefix.extension:prefix-qualifier",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-patient-stadtteil"
+        },
+        "name": "mii-sp-meta-patient-stadtteil",
+        "description": "Suchparameter für Patient.address.extension:Stadtteil",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-patient-strasse"
+        },
+        "name": "mii-sp-meta-patient-strasse",
+        "description": "Suchparameter für Patient.address.line.extension:Strasse",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-procedure-bodysite"
+        },
+        "name": "mii-sp-meta-procedure-bodysite",
+        "description": "Suchparameter für Procedure.bodySite",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-procedure-complication"
+        },
+        "name": "mii-sp-meta-procedure-complication",
+        "description": "SearchParameter for Procedure.complication",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-procedure-dokumentationsdatum"
+        },
+        "name": "mii-sp-meta-procedure-dokumentationsdatum",
+        "description": "Suchparameter für Procedure.extension:Dokumentationsdatum",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-procedure-durchfuehrungsabsicht"
+        },
+        "name": "mii-sp-meta-procedure-durchfuehrungsabsicht",
+        "description": "Suchparameter für Procedure.extension:Durchfuehrungsabsicht",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-procedure-ops-seitenlokalisation"
+        },
+        "name": "mii-sp-meta-procedure-ops-seitenlokalisation",
+        "description": "Suchparameter für Procedure.code.coding:ops.extension:Seitenlokalisation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-procedure-outcome"
+        },
+        "name": "mii-sp-meta-procedure-outcome",
+        "description": "SearchParameter for Procedure.outcome",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-procedure-recorder"
+        },
+        "name": "mii-sp-meta-procedure-recorder",
+        "description": "Suchparameter für Procedure.recorder",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-read-proc-report"
+        },
+        "name": "mii-sp-meta-read-proc-report",
+        "description": "Suchparameter für ReadProcedure.report",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-reason-reference"
+        },
+        "name": "mii-sp-meta-reason-reference",
+        "description": "Suchparameter für ImagingStudy.reasonReference",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-researchstudy-akronym"
+        },
+        "name": "mii-sp-meta-researchstudy-akronym",
+        "description": "Suchparameter für ResearchStudy.extension:Akronym",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-researchstudy-arm-name"
+        },
+        "name": "mii-sp-meta-researchstudy-arm-name",
+        "description": "Suchparameter für ResearchStudy.arm.name",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-researchstudy-finanzierung"
+        },
+        "name": "mii-sp-meta-researchstudy-finanzierung",
+        "description": "Suchparameter für ResearchStudy.extension:Finanzierung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-researchstudy-label"
+        },
+        "name": "mii-sp-meta-researchstudy-label",
+        "description": "Suchparameter für ResearchStudy.extension:label",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-researchstudy-rekrutierungsstand"
+        },
+        "name": "mii-sp-meta-researchstudy-rekrutierungsstand",
+        "description": "Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstand",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-researchstudy-rekrutierungsstand-datum"
+        },
+        "name": "mii-sp-meta-researchstudy-rekrutierungsstand-datum",
+        "description": "Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstand-datum",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-researchstudy-rekrutierungsstand-genauigkeit"
+        },
+        "name": "mii-sp-meta-researchstudy-rekrutierungsstand-genauigkeit",
+        "description": "Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstand-genauigkeit",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-researchstudy-rekrutierungsstart"
+        },
+        "name": "mii-sp-meta-researchstudy-rekrutierungsstart",
+        "description": "Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstart",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-researchstudy-rekrutierungsziel"
+        },
+        "name": "mii-sp-meta-researchstudy-rekrutierungsziel",
+        "description": "Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsziel",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-researchstudy-studienregister"
+        },
+        "name": "mii-sp-meta-researchstudy-studienregister",
+        "description": "Suchparameter für ResearchStudy.extension:Studienregister",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-researchsubject-consent"
+        },
+        "name": "mii-sp-meta-researchsubject-consent",
+        "description": "Suchparameter für ResearchSubject.consent",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-servicerequest-reasoncode"
+        },
+        "name": "mii-sp-meta-servicerequest-reasoncode",
+        "description": "Suchparameter für ServiceRequest.reasonCode",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-servicerequest-reasonreference"
+        },
+        "name": "mii-sp-meta-servicerequest-reasonreference",
+        "description": "Suchparameter für ServiceRequest.reasonReference",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-servicerequest-supportinginfo"
+        },
+        "name": "mii-sp-meta-servicerequest-supportinginfo",
+        "description": "SearchParameter for ServiceRequest.supportingInfo",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-specimen-collection-body-site"
+        },
+        "name": "mii-sp-meta-specimen-collection-body-site",
+        "description": "SearchParameter for Specimen.collection.bodySite",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-specimen-collection-method"
+        },
+        "name": "mii-sp-meta-specimen-collection-method",
+        "description": "SearchParameter for Specimen.collection.method",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-specimen-container-additive"
+        },
+        "name": "mii-sp-meta-specimen-container-additive",
+        "description": "SearchParameter for Specimen.container.additive",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-specimen-diagnose"
+        },
+        "name": "mii-sp-meta-specimen-diagnose",
+        "description": "Suchparameter für die Extension Diagnose am Profil Bioprobe",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-specimen-processing-additive"
+        },
+        "name": "mii-sp-meta-specimen-processing-additive",
+        "description": "SearchParameter for Specimen.processing.additive",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-specimen-processing-date"
+        },
+        "name": "mii-sp-meta-specimen-processing-date",
+        "description": "SearchParameter for Specimen.processing.time",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-specimen-processing-procedure"
+        },
+        "name": "mii-sp-meta-specimen-processing-procedure",
+        "description": "SearchParameter for Specimen.processing.procedure",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-specimen-request"
+        },
+        "name": "mii-sp-meta-specimen-request",
+        "description": "SearchParameter for Specimen.request",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-supporting-info"
+        },
+        "name": "mii-sp-meta-supporting-info",
+        "description": "Suchparameter für CarePlan.supportingInfo | DiagnosticReport.extension.supportingInfo",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-task-for"
+        },
+        "name": "mii-sp-meta-task-for",
+        "description": "Suchparameter für Task.for",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-task-reasoncode"
+        },
+        "name": "mii-sp-meta-task-reasoncode",
+        "description": "Suchparameter für Task.reasonCode",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-meta-task-reasonreference"
+        },
+        "name": "mii-sp-meta-task-reasonreference",
+        "description": "Suchparameter für Task.reasonReference",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "MII-IG-Meta",
+      "title": "MII IG Meta",
+      "generation": "generated",
+      "page": [
+        {
+          "nameUrl": "MII-IG-Meta/Release-notes.page.md",
+          "title": "Release Notes",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "MII-IG-Meta/Technische-Implementierung",
+          "title": "Technische Implementierung",
+          "generation": "generated",
+          "page": [
+            {
+              "nameUrl": "MII-IG-Meta/Technische-Implementierung/CodeSystem-MII-Standorte.page.md",
+              "title": "CodeSystem: MII Standorte",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "MII-IG-Meta/Technische-Implementierung/Extension-Lizenzbedingungen.page.md",
+              "title": "Extension: Lizenzbedingungen",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "MII-IG-Meta/Technische-Implementierung/Profil-SearchParameter.page.md",
+              "title": "Profil: SearchParameter",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "MII-IG-Meta/Technische-Implementierung/Liste-Kerndatensatz-Suchparameter",
+              "title": "Liste Kerndatensatz Suchparameter",
+              "generation": "generated"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

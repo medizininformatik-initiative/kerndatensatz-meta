@@ -1,17 +1,23 @@
 ## {{page-title}}
 
+**Version: 2025.0.3**
+
+Datum 04.11.2025
+
+* `Removed`: Die `SearchParameter`-Ressource für `Specimen.collection.bodysite` wurde `retired`, da der Suchparameter bereits Bestandteil des FHIR-Core-Standards ist.
+
 **Version: 2025.0.2**
 
 Datum 21.10.2025
 
-* Added: `SearchParameter`-Ressource für Procedure OPS-Seitenlokalisation. Siehe: {{pagelink: SearchParameter, text: Kerndatensatz Suchparameter, hint: CDS-SearchParameter}}
+* `Added`: `SearchParameter`-Ressource für Procedure OPS-Seitenlokalisation. Siehe: {{pagelink: SearchParameter, text: Kerndatensatz Suchparameter, hint: CDS-SearchParameter}}
 
 **Version: 2025.0.1**
 
 Datum 07.10.2025
 
-* Changed: `CodeSystem`-Ressource `MII_CS_Meta_DIZ_Standorte` der Medizininformatik-Initiative Standorte aktualisiert. Siehe: {{pagelink: CodeSystemMIIStandorte, text: Medizininformatik-Initiative Standorte, hint: MII_CS_Meta_DIZ_Standorte}}
-* Added: `SearchParameter`-Ressourcen der Erweiterungsmodule Bildgebung und Dokument. Siehe: Siehe: {{pagelink: SearchParameter, text: Kerndatensatz Suchparameter, hint: CDS-SearchParameter}}
+* `Changed`: `CodeSystem`-Ressource `MII_CS_Meta_DIZ_Standorte` der Medizininformatik-Initiative Standorte aktualisiert. Siehe: {{pagelink: CodeSystemMIIStandorte, text: Medizininformatik-Initiative Standorte, hint: MII_CS_Meta_DIZ_Standorte}}
+* `Added`: `SearchParameter`-Ressourcen der Erweiterungsmodule Bildgebung und Dokument. Siehe: Siehe: {{pagelink: SearchParameter, text: Kerndatensatz Suchparameter, hint: CDS-SearchParameter}}
 
 **Version: 2025.0.0**
 
