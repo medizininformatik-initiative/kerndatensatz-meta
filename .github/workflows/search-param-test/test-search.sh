@@ -506,9 +506,9 @@ test_includes_resource_type "ServiceRequest with _include=ServiceRequest:support
 # =========================================================
 # Specimen
 # =========================================================
-# collection-body-site
-test_at_least_one "Specimen with collection-body-site=http://snomed.info/sct|789218009 count" \
-                  "$(search "Specimen" "collection-body-site=http://snomed.info/sct%7C789218009")"
+# collection-body-site - SearchParameter is retired now
+# test_at_least_one "Specimen with collection-body-site=http://snomed.info/sct|789218009 count" \
+#                   "$(search "Specimen" "collection-body-site=http://snomed.info/sct%7C789218009")"
 
 # collection-method
 test_at_least_one "Specimen with collection-method=http://snomed.info/sct|129300006 count" \
