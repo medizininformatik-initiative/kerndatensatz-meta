@@ -170,7 +170,7 @@ jobs:
             
       - name: Validate all resources in scope of the repository
         run: |
-        
+
           # Define color codes
           ERROR=$'\033[0;31m'
           WARN=$'\033[0;33m'
@@ -239,13 +239,13 @@ jobs:
             ${{ inputs.working-directory }}/txlog.html
             ${{ inputs.working-directory }}/validation.html
             ${{ inputs.working-directory }}/validation.json
-
+          retention-days: 7
 
       - name: Convert Validation Report
         uses: patrick-werner/validation-outcome-markdown-renderer@v1
         with:
           bundle-file: validation.json
-          include: warnings
+          include: errors
           filters: |
             # Struktur: fileName|messageId|detailsWildcard|location
 
