@@ -170,7 +170,7 @@ jobs:
             
       - name: Validate all resources in scope of the repository
         run: |
-  
+          {
           # Define color codes
           ERROR=$'\033[0;31m'
           WARN=$'\033[0;33m'
@@ -227,7 +227,9 @@ jobs:
               
             done
           fi
-          echo "Finished validation using Java validator ..." | tee -a validation-stdout.log
+          echo "Finished validation using Java validator ..."
+          } 2>&1 | tee validation_output.log
+        
         shell: bash
         env:
           FHIR_VERSION: "4.0"
@@ -245,4 +247,5 @@ jobs:
             ${{ inputs.working-directory }}/validation.html
             ${{ inputs.working-directory }}/validation.json
             ${{ inputs.working-directory }}/validation-stdout.log
+
 
