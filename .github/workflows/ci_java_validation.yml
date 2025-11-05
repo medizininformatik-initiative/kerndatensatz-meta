@@ -200,11 +200,8 @@ jobs:
 
               UNESCPAED_IG_DEPENDENCIES=$(echo $IG_DEPENDENCIES | tr -d '"')
               
-              javaValidatorOutput=$(java -jar validator_cli.jar $GITHUB_WORKSPACE/$p*.xml $GITHUB_WORKSPACE/$p*.json -version $FHIR_VERSION $INPUT_JAVA_VALIDATION_OPTIONS $UNESCPAED_IG_DEPENDENCIES $LOCAL_IG_PARAMETERS -tx http://127.0.0.1:8090/fhir 2>&1 || true)
-
-              # Save raw output to file
-              echo "$javaValidatorOutput" >> validation-stdout.log
-
+              javaValidatorOutput=$(java -jar validator_cli.jar $GITHUB_WORKSPACE/$p*.xml $GITHUB_WORKSPACE/$p*.json -version $FHIR_VERSION $INPUT_JAVA_VALIDATION_OPTIONS $UNESCPAED_IG_DEPENDENCIES $LOCAL_IG_PARAMETERS -tx http://127.0.0.1:8090/fhir)
+  
               javaValidatorOutput=$(echo "$javaValidatorOutput" | sed -E "
                 s/(:[[:space:]]*)Error([[:space:]]+-)/\1${ERROR}Error${NC}\2/g;
                 s/(:[[:space:]]*)Warning([[:space:]]+-)/\1${WARN}Warning${NC}\2/g;
@@ -220,16 +217,14 @@ jobs:
   
               echo -e "$javaValidatorOutput"
 
-              if echo "$javaValidatorOutput" | grep -F "*FAILURE*" > /dev/null; then
-                echo "Validation failed with errors. Check the logs for more details." | tee -a validation-stdout.log
-                exit 1
-              fi
+              # if echo "$javaValidatorOutput" | grep -F "*FAILURE*" > /dev/null; then
+              #   echo "Validation failed with errors. Check the logs for more details."
+              #   exit 1
+              # fi
               
             done
           fi
-          echo "Finished validation using Java validator ..."
-          } 2>&1 | tee validation_output.log
-        
+          echo "Finished validation using Java validator ..." 
         shell: bash
         env:
           FHIR_VERSION: "4.0"
@@ -247,5 +242,14 @@ jobs:
             ${{ inputs.working-directory }}/validation.html
             ${{ inputs.working-directory }}/validation.json
             ${{ inputs.working-directory }}/validation-stdout.log
+
+
+      - name: Convert Validation Report
+        uses: patrick-werner/validation-outcome-markdown-renderer@v1
+        with:
+          bundle-file: validation.json
+          include: warnings
+          filters: |
+            # Struktur: fileName|messageId|detailsWildcard|location
 
 
