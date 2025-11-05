@@ -170,7 +170,7 @@ jobs:
             
       - name: Validate all resources in scope of the repository
         run: |
-  
+
           # Define color codes
           ERROR=$'\033[0;31m'
           WARN=$'\033[0;33m'
@@ -179,9 +179,9 @@ jobs:
           NC=$'\033[0m'
                 
           if $INPUT_JAVA_VALIDATION_ENABLED; then
-            echo "Starting validation using Java validator ..."
+            echo "Starting validation using Java validator ..." 
             IG_DEPENDENCIES=$(jq -r '(.dependencies) | to_entries | map("-ig " + .key + "#" + .value) | join(" ")' package.json)
-            echo "IG_DEPENDENCIES: $IG_DEPENDENCIES"
+            echo "IG_DEPENDENCIES: $IG_DEPENDENCIES" 
             
             for p in $INPUT_PATH_TO_CONFORMANCE_RESOURCES; # Get combined path to conformance resources, we want to provide all other directories as context for the current validation
             do  
@@ -195,10 +195,10 @@ jobs:
               if [[ ! "$p" =~ .*/$ ]]; then
                 p="$p/"
               fi
-              
+
               UNESCPAED_IG_DEPENDENCIES=$(echo $IG_DEPENDENCIES | tr -d '"')
               
-              javaValidatorOutput=$(java -jar validator_cli.jar $GITHUB_WORKSPACE/$p*.xml $GITHUB_WORKSPACE/$p*.json -version $FHIR_VERSION $INPUT_JAVA_VALIDATION_OPTIONS $UNESCPAED_IG_DEPENDENCIES $LOCAL_IG_PARAMETERS -tx http://127.0.0.1:8090/fhir || true)
+              javaValidatorOutput=$(java -jar validator_cli.jar $GITHUB_WORKSPACE/$p*.xml $GITHUB_WORKSPACE/$p*.json -version $FHIR_VERSION $INPUT_JAVA_VALIDATION_OPTIONS $UNESCPAED_IG_DEPENDENCIES $LOCAL_IG_PARAMETERS -tx http://127.0.0.1:8090/fhir)
   
               javaValidatorOutput=$(echo "$javaValidatorOutput" | sed -E "
                 s/(:[[:space:]]*)Error([[:space:]]+-)/\1${ERROR}Error${NC}\2/g;
@@ -215,14 +215,14 @@ jobs:
   
               echo -e "$javaValidatorOutput"
 
-              if echo "$javaValidatorOutput" | grep -F "*FAILURE*" > /dev/null; then
-                echo "Validation failed with errors. Check the logs for more details."
-                exit 1
-              fi
+              # if echo "$javaValidatorOutput" | grep -F "*FAILURE*" > /dev/null; then
+              #   echo "Validation failed with errors. Check the logs for more details."
+              #   exit 1
+              # fi
               
             done
           fi
-          echo "Finished validation using Java validator ..."
+          echo "Finished validation using Java validator ..." 
         shell: bash
         env:
           FHIR_VERSION: "4.0"
@@ -238,5 +238,15 @@ jobs:
           path: |
             ${{ inputs.working-directory }}/txlog.html
             ${{ inputs.working-directory }}/validation.html
+            ${{ inputs.working-directory }}/validation.json
+          retention-days: 7
 
-    
+      - name: Convert Validation Report
+        uses: patrick-werner/validation-outcome-markdown-renderer@v1
+        with:
+          bundle-file: validation.json
+          include: errors
+          filters: |
+            # Struktur: fileName|messageId|detailsWildcard|location
+
+
