@@ -170,7 +170,7 @@ jobs:
             
       - name: Validate all resources in scope of the repository
         run: |
-          {
+        
           # Define color codes
           ERROR=$'\033[0;31m'
           WARN=$'\033[0;33m'
@@ -179,9 +179,9 @@ jobs:
           NC=$'\033[0m'
                 
           if $INPUT_JAVA_VALIDATION_ENABLED; then
-            echo "Starting validation using Java validator ..." | tee validation-stdout.log
+            echo "Starting validation using Java validator ..." 
             IG_DEPENDENCIES=$(jq -r '(.dependencies) | to_entries | map("-ig " + .key + "#" + .value) | join(" ")' package.json)
-            echo "IG_DEPENDENCIES: $IG_DEPENDENCIES" | tee -a validation-stdout.log
+            echo "IG_DEPENDENCIES: $IG_DEPENDENCIES" 
             
             for p in $INPUT_PATH_TO_CONFORMANCE_RESOURCES; # Get combined path to conformance resources, we want to provide all other directories as context for the current validation
             do  
@@ -195,8 +195,6 @@ jobs:
               if [[ ! "$p" =~ .*/$ ]]; then
                 p="$p/"
               fi
-              
-              echo "Validating path: $p" | tee -a validation-stdout.log
 
               UNESCPAED_IG_DEPENDENCIES=$(echo $IG_DEPENDENCIES | tr -d '"')
               
@@ -241,7 +239,6 @@ jobs:
             ${{ inputs.working-directory }}/txlog.html
             ${{ inputs.working-directory }}/validation.html
             ${{ inputs.working-directory }}/validation.json
-            ${{ inputs.working-directory }}/validation-stdout.log
 
 
       - name: Convert Validation Report
