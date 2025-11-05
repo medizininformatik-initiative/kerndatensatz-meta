@@ -238,5 +238,6 @@ jobs:
           path: |
             ${{ inputs.working-directory }}/txlog.html
             ${{ inputs.working-directory }}/validation.html
+            ${{ inputs.working-directory }}/validation.json
 
     
