@@ -36,7 +36,7 @@
   "name": "MII_SP_Bildgebung_Imaging_Study_Series_Repetition_Time",
   "status": "active",
   "experimental": false,
-  "date": "2025-08-07",
+  "date": "2025-11-06",
   "description": "Suchparameter für ImagingStudy.series.extension.repetitionTime",
   "code": "repetition-time",
   "base": [

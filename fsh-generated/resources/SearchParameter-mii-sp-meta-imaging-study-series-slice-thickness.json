@@ -1,12 +1,12 @@
 {
   "resourceType": "SearchParameter",
-  "id": "mii-sp-meta-imaging-study-series-echo-time",
+  "id": "mii-sp-meta-imaging-study-series-slice-thickness",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
     ]
   },
-  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-echo-time",
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-slice-thickness",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -33,17 +33,17 @@
       }
     }
   ],
-  "name": "MII_SP_Bildgebung_Imaging_Study_Series_Echo_Time",
+  "name": "MII_SP_Bildgebung_Imaging_Study_Series_Slice_Thickness",
   "status": "active",
   "experimental": false,
   "date": "2025-11-06",
-  "description": "Suchparameter für ImagingStudy.series.extension.echoTime",
-  "code": "echo-time",
+  "description": "Suchparameter für ImagingStudy.series.extension.sliceThickness",
+  "code": "slice-thickness",
   "base": [
     "ImagingStudy"
   ],
   "type": "quantity",
-  "expression": "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr').extension('echoTime').value",
+  "expression": "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-serie-schichtdicke').value",
   "comparator": [
     "eq",
     "gt",
