@@ -53,7 +53,7 @@ Description: "Medizininformatik-Initiative Standorte"
 * insert Publisher
 * insert PR_CS_VS_Version
 * insert LicenseCodeableCCBY40
-* ^date = "2025-10-01"
+* ^date = "2025-11-14"
 * ^status = #active
 * ^caseSensitive = true
 * ^compositional = false
@@ -217,6 +217,7 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UKGI insert AddKonsortium(MIRACUM)
 * #UKGI insert AddUri(uni-giessen.de)
 * #UKGI insert AddStatus(active)
+* #UKGI insert AddDatenmanagementstelle(true)
 * #UKGI insert AddTRV(V6.15)
 * #UKGI insert AddAbbreviation(UKGI)
 * #UKGI insert AddDiz(true)
