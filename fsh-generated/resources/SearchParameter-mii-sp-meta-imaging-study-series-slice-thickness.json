@@ -1,12 +1,12 @@
 {
   "resourceType": "SearchParameter",
-  "id": "mii-sp-meta-imaging-study-bildgebungsgrund",
+  "id": "mii-sp-meta-imaging-study-series-slice-thickness",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
     ]
   },
-  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-bildgebungsgrund",
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-slice-thickness",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -18,7 +18,7 @@
       ]
     }
   ],
-  "version": "2025.0.3",
+  "version": "2025.0.0",
   "extension": [
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -33,20 +33,22 @@
       }
     }
   ],
-  "name": "MII_SP_Bildgebung_Imaging_Study_Bildgebungsgrund",
+  "name": "MII_SP_Bildgebung_Imaging_Study_Series_Slice_Thickness",
   "status": "active",
   "experimental": false,
   "date": "2025-11-06",
-  "description": "Suchparameter für ImagingStudy.Extension.Bildgebungsgrund",
-  "code": "bildgebungsgrund",
+  "description": "Suchparameter für ImagingStudy.series.extension.sliceThickness",
+  "code": "slice-thickness",
   "base": [
     "ImagingStudy"
   ],
-  "type": "string",
-  "expression": "ImagingStudy.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildgebungsgrund').value",
-  "modifier": [
-    "contains",
-    "exact",
-    "missing"
+  "type": "quantity",
+  "expression": "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-serie-schichtdicke').value",
+  "comparator": [
+    "eq",
+    "gt",
+    "lt",
+    "ge",
+    "le"
   ]
 }
