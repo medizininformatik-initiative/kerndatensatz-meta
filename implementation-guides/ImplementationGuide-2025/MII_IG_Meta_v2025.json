@@ -16,7 +16,7 @@
     }
   ],
   "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/ImplementationGuide/mii-ig-meta",
-  "version": "2025.0.3",
+  "version": "2026.0.0",
   "name": "MII_IG_Meta",
   "title": "MII IG Meta",
   "status": "active",

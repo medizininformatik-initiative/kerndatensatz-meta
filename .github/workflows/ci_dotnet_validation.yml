@@ -42,6 +42,7 @@ jobs:
           #JAVA_SNAPSHOT_ENABLED: true
 
       - name: Add & Commit
+        if: github.event_name == 'pull_request'
         uses: EndBug/add-and-commit@v9
         with:
           committer_name: GitHub Actions Bot

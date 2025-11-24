@@ -50,7 +50,7 @@
   filter: (StructureDefinition or ValueSet or CodeSystem or ConceptMap or StructureMap or NamingSystem or SearchParameter or CapabilityStatement or OperationDefinition or ImplementationGuide).exists()
   # Excluding NamingSystem as they have no version
   status: "Checking if all resources have version filled"
-  predicate: version.exists() and version.exists() and (version in ('2025.0.3'))
+  predicate: version.exists() and version.exists() and (version in ('2026.0.0'))
   error-message: "version not filled (correctly)"
   files:
     - /**/*.xml
