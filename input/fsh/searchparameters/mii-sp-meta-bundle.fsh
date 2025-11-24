@@ -11,7 +11,7 @@ RuleSet: AddCollectionEntry(resource)
 Instance: mii-exa-meta-searchparam-transaction-bundle
 InstanceOf: Bundle
 * type = #transaction
-* timestamp = "2025-10-01T14:19:00+02:00"
+* timestamp = "2025-11-24T10:51:00+01:00"
 // Person
 * insert AddTransactionEntry(mii-sp-meta-patient-adresszusatz)
 * insert AddTransactionEntry(mii-sp-meta-patient-assignerpid)
@@ -191,11 +191,17 @@ InstanceOf: Bundle
 * insert AddTransactionEntry(mii-sp-meta-observation-sop-instance-uid)
 * insert AddTransactionEntry(mii-sp-meta-observation-body-structure)
 * insert AddTransactionEntry(mii-sp-meta-read-proc-report)
+* insert AddTransactionEntry(mii-sp-meta-imaging-study-series-convolutional-kernel)
+* insert AddTransactionEntry(mii-sp-meta-imaging-study-series-slice-thickness)
+// Dokument
+* insert AddTransactionEntry(mii-sp-meta-dokument-documentreference-attachment-creation)
+* insert AddTransactionEntry(mii-sp-meta-dokument-documentreference-doc-status)
+* insert AddTransactionEntry(mii-sp-meta-dokument-documentreference-nlp-processing-status)
 
 Instance: mii-exa-meta-searchparam-collection-bundle
 InstanceOf: Bundle
 * type = #collection
-* timestamp = "2025-10-01T14:19:00+02:00"
+* timestamp = "2025-11-24T10:51:00+01:00"
 // Person
 * insert AddCollectionEntry(mii-sp-meta-patient-adresszusatz)
 * insert AddCollectionEntry(mii-sp-meta-patient-assignerpid)
@@ -376,3 +382,9 @@ InstanceOf: Bundle
 * insert AddCollectionEntry(mii-sp-meta-observation-sop-instance-uid)
 * insert AddCollectionEntry(mii-sp-meta-observation-body-structure)
 * insert AddCollectionEntry(mii-sp-meta-read-proc-report)
+* insert AddCollectionEntry(mii-sp-meta-imaging-study-series-convolutional-kernel)
+* insert AddCollectionEntry(mii-sp-meta-imaging-study-series-slice-thickness)
+// Dokument
+* insert AddCollectionEntry(mii-sp-meta-dokument-documentreference-attachment-creation)
+* insert AddCollectionEntry(mii-sp-meta-dokument-documentreference-doc-status)
+* insert AddCollectionEntry(mii-sp-meta-dokument-documentreference-nlp-processing-status)

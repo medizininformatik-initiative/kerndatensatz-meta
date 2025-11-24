@@ -2,7 +2,7 @@
   "resourceType": "Bundle",
   "id": "mii-exa-meta-searchparam-transaction-bundle",
   "type": "transaction",
-  "timestamp": "2025-10-01T14:19:00+02:00",
+  "timestamp": "2025-11-24T10:51:00+01:00",
   "entry": [
     {
       "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-patient-adresszusatz",
@@ -9414,6 +9414,288 @@
       "request": {
         "method": "PUT",
         "url": "SearchParameter/mii-sp-meta-read-proc-report"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-convolutional-kernel",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-imaging-study-series-convolutional-kernel",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-convolutional-kernel",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "version": "2026.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Bildgebung_Imaging_Study_Series_ConvolutionalKernel",
+        "status": "active",
+        "experimental": false,
+        "date": "2025-11-06",
+        "description": "Suchparameter für ImagingStudy.series.extension.convolutionalKernel",
+        "code": "convolutional-kernel",
+        "base": [
+          "ImagingStudy"
+        ],
+        "expression": "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct').extension('convolutionalKernel').value",
+        "type": "string",
+        "modifier": [
+          "contains",
+          "exact",
+          "missing"
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "SearchParameter/mii-sp-meta-imaging-study-series-convolutional-kernel"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-slice-thickness",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-imaging-study-series-slice-thickness",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-slice-thickness",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "version": "2026.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Bildgebung_Imaging_Study_Series_Slice_Thickness",
+        "status": "active",
+        "experimental": false,
+        "date": "2025-11-06",
+        "description": "Suchparameter für ImagingStudy.series.extension.sliceThickness",
+        "code": "slice-thickness",
+        "base": [
+          "ImagingStudy"
+        ],
+        "type": "quantity",
+        "expression": "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-serie-schichtdicke').value",
+        "comparator": [
+          "eq",
+          "gt",
+          "lt",
+          "ge",
+          "le"
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "SearchParameter/mii-sp-meta-imaging-study-series-slice-thickness"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-dokument-documentreference-attachment-creation",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-dokument-documentreference-attachment-creation",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-dokument-documentreference-attachment-creation",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "version": "2026.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_DocumentReference_Attachment_Creation",
+        "status": "active",
+        "description": "Suchparameter für DocumentReference.content.attachment.creation",
+        "experimental": false,
+        "date": "2025-06-23",
+        "code": "creation",
+        "base": [
+          "DocumentReference"
+        ],
+        "type": "date",
+        "expression": "DocumentReference.content.attachment.creation"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "SearchParameter/mii-sp-meta-dokument-documentreference-attachment-creation"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-dokument-documentreference-doc-status",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-dokument-documentreference-doc-status",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-dokument-documentreference-doc-status",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "version": "2026.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_DocumentReference_Document_Status",
+        "status": "active",
+        "description": "Suchparameter für DocumentReference.docStatus",
+        "experimental": false,
+        "date": "2025-06-23",
+        "code": "doc-status",
+        "base": [
+          "DocumentReference"
+        ],
+        "type": "token",
+        "expression": "DocumentReference.docStatus"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "SearchParameter/mii-sp-meta-dokument-documentreference-doc-status"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-dokument-documentreference-nlp-processing-status",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-dokument-documentreference-nlp-processing-status",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-dokument-documentreference-nlp-processing-status",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "version": "2026.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Meta_DocumentReference_NLP_Processing_Status",
+        "status": "active",
+        "description": "Suchparameter für DocumentReference.extension[nlp-processing-status].valueCodeableConcept",
+        "experimental": false,
+        "date": "2025-07-30",
+        "code": "nlp-processing-status",
+        "base": [
+          "DocumentReference"
+        ],
+        "type": "token",
+        "expression": "DocumentReference.extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-dokument/StructureDefinition/mii-ex-dokument-nlp-processing-status').value"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "SearchParameter/mii-sp-meta-dokument-documentreference-nlp-processing-status"
       }
     }
   ]
