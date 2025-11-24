@@ -1,5 +1,11 @@
 ## {{page-title}}
 
+**Version: 2026.0.0**
+
+Datum 24.11.2025
+
+* `Added`: Weitere `SearchParameter`-Ressourcen für `ImagingStudy`
+
 **Version: 2025.0.3**
 
 Datum 04.11.2025

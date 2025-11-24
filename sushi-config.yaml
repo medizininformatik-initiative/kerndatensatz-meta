@@ -4,7 +4,7 @@ FSHOnly: false
 applyExtensionMetadataToRoot: false
 status: active
 license: CC-BY-4.0
-version: 2025.0.3
+version: 2026.0.0
 id: mii-ig-meta
 name: MII_IG_Meta
 title: "MII IG Meta"
