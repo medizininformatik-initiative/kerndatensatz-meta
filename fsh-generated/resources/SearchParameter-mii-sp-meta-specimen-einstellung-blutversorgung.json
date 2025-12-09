@@ -35,6 +35,8 @@
   ],
   "name": "MII_SP_Biobank_Specimen_Einstellung_Blutversorgung",
   "status": "active",
+  "experimental": false,
+  "date": "2025-12-09",
   "description": "Search specimens by the EinstellungBlutversorgung extension (dateTime)",
   "code": "einstellung-blutversorgung",
   "base": [

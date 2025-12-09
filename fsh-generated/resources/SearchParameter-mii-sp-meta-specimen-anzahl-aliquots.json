@@ -35,6 +35,8 @@
   ],
   "name": "MII_SP_Biobank_Specimen_Anzahl_Aliquots",
   "status": "active",
+  "experimental": false,
+  "date": "2025-12-09",
   "description": "Search specimens by the mii-ex-biobank-anzahl-aliquots extension (integer)",
   "code": "anzahl-aliquots",
   "base": [

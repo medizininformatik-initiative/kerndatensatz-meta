@@ -35,6 +35,8 @@
   ],
   "name": "MII_SP_Biobank_Specimen_Gehoert_Zu",
   "status": "active",
+  "experimental": false,
+  "date": "2025-12-09",
   "description": "Search specimens by the VerwaltendeOrganisation extension (Reference)",
   "code": "gehoert-zu",
   "base": [

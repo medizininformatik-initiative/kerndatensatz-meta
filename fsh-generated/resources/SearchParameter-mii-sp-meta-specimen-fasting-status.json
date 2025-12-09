@@ -35,6 +35,8 @@
   ],
   "name": "MII_SP_Biobank_Specimen_Fasting_Status",
   "status": "active",
+  "experimental": false,
+  "date": "2025-12-09",
   "description": "Search specimens by fasting status (CodeableConcept only)",
   "code": "fasting-status",
   "base": [

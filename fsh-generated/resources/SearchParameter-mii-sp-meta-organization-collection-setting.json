@@ -35,6 +35,8 @@
   ],
   "name": "MII_SP_Biobank_Organization_CollectionSetting",
   "status": "active",
+  "experimental": false,
+  "date": "2025-12-09",
   "description": "Search Organization by the collectionSetting extension (CodeableConcept)",
   "code": "collection-setting",
   "base": [

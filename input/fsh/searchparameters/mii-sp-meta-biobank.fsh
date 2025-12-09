@@ -8,6 +8,8 @@ Usage: #definition
 
 * name = "MII_SP_Biobank_Organization_Beschreibung"
 * status = #active
+* experimental = false
+* date = "2025-12-09"
 * description = "Search Organization by the beschreibung extension (string)"
 * code = #beschreibung
 * base = #Organization
@@ -24,6 +26,8 @@ Usage: #definition
 
 * name = "MII_SP_Biobank_Specimen_Anzahl_Aliquots"
 * status = #active
+* experimental = false
+* date = "2025-12-09"
 * description = "Search specimens by the mii-ex-biobank-anzahl-aliquots extension (integer)"
 * code = #anzahl-aliquots
 * base = #Specimen
@@ -40,6 +44,8 @@ Usage: #definition
 
 * name = "MII_SP_Biobank_Specimen_Anzahl_Passagen"
 * status = #active
+* experimental = false
+* date = "2025-12-09"
 * description = "Search specimens by the mii-ex-biobank-anzahl-passagen extension (integer)"
 * code = #anzahl-passagen
 * base = #Specimen
@@ -56,6 +62,8 @@ Usage: #definition
 
 * name = "MII_SP_Biobank_Specimen_Container_Capacity"
 * status = #active
+* experimental = false
+* date = "2025-12-09"
 * description = "Search specimens by container capacity"
 * code = #container-capacity
 * base = #Specimen
@@ -72,6 +80,8 @@ Usage: #definition
 
 * name = "MII_SP_Biobank_Specimen_Container_Specimen_Quantity"
 * status = #active
+* experimental = false
+* date = "2025-12-09"
 * description = "Search specimens by container specimenQuantity"
 * code = #container-specimen-quantity
 * base = #Specimen
@@ -88,6 +98,8 @@ Usage: #definition
 
 * name = "MII_SP_Biobank_Organization_CollectionDesign"
 * status = #active
+* experimental = false
+* date = "2025-12-09"
 * description = "Search Organization by the collectionDesign extension (CodeableConcept)"
 * code = #collection-design
 * base = #Organization
@@ -104,6 +116,8 @@ Usage: #definition
 
 * name = "MII_SP_Biobank_Specimen_Einstellung_Blutversorgung"
 * status = #active
+* experimental = false
+* date = "2025-12-09"
 * description = "Search specimens by the EinstellungBlutversorgung extension (dateTime)"
 * code = #einstellung-blutversorgung
 * base = #Specimen
@@ -120,6 +134,8 @@ Usage: #definition
 
 * name = "MII_SP_Biobank_Specimen_Fasting_Status"
 * status = #active
+* experimental = false
+* date = "2025-12-09"
 * description = "Search specimens by fasting status (CodeableConcept only)"
 * code = #fasting-status
 * base = #Specimen
@@ -136,6 +152,8 @@ Usage: #definition
 
 * name = "MII_SP_Biobank_Specimen_Gehoert_Zu"
 * status = #active
+* experimental = false
+* date = "2025-12-09"
 * description = "Search specimens by the VerwaltendeOrganisation extension (Reference)"
 * code = #gehoert-zu
 * base = #Specimen
@@ -152,6 +170,8 @@ Usage: #definition
 
 * name = "MII_SP_Biobank_Specimen_Kulturprotokoll"
 * status = #active
+* experimental = false
+* date = "2025-12-09"
 * description = "Search specimens by the mii-ex-biobank-kulturprotokoll extension (Reference)"
 * code = #kulturprotokoll
 * base = #Specimen
@@ -168,6 +188,8 @@ Usage: #definition
 
 * name = "MII_SP_Biobank_Specimen_Art_Der_Modifikation"
 * status = #active
+* experimental = false
+* date = "2025-12-09"
 * description = "Search specimens by artDerModifikation in the mii_ex_biobank_modifikationen extension (Coding)"
 * code = #art-der-modifikation
 * base = #Specimen
@@ -184,6 +206,8 @@ Usage: #definition
 
 * name = "MII_SP_Biobank_Specimen_Zielgen"
 * status = #active
+* experimental = false
+* date = "2025-12-09"
 * description = "Search specimens by zielgen in the mii_ex_biobank_modifikationen extension (string)"
 * code = #zielgen
 * base = #Specimen
@@ -200,6 +224,8 @@ Usage: #definition
 
 * name = "MII_SP_Biobank_Specimen_Modifikationen"
 * status = #active
+* experimental = false
+* date = "2025-12-09"
 * description = "Composite search parameter for specimens based on artDerModifikation and zielgen in mii_ex_biobank_modifikationen extension"
 * code = #modifikationen
 * base = #Specimen
@@ -220,6 +246,8 @@ Usage: #definition
 
 * name = "MII_SP_Biobank_Specimen_Note"
 * status = #active
+* experimental = false
+* date = "2025-12-09"
 * description = "Search specimens by note text"
 * code = #note
 * base = #Specimen
@@ -236,6 +264,8 @@ Usage: #definition
 
 * name = "MII_SP_Biobank_Specimen_bene"
 * status = #active
+* experimental = false
+* date = "2025-12-09"
 * description = "Search specimens by the mii-ex-biobank-ebene extension (Coding)"
 * code = #probenebene
 * base = #Specimen
@@ -252,6 +282,8 @@ Usage: #definition
 
 * name = "MII_SP_Biobank_Specimen_Processing-Temp"
 * status = #active
+* experimental = false
+* date = "2025-12-09"
 * description = "Search specimens by the Temperaturbedingungen extension (Range)"
 * code = #processing-temp
 * base = #Specimen
@@ -268,6 +300,8 @@ Usage: #definition
 
 * name = "MII_SP_Biobank_Organization_CollectionSetting"
 * status = #active
+* experimental = false
+* date = "2025-12-09"
 * description = "Search Organization by the collectionSetting extension (CodeableConcept)"
 * code = #collection-setting
 * base = #Organization
@@ -284,6 +318,8 @@ Usage: #definition
 
 * name = "MII_SP_Biobank_Organization_Contact_Rolle"
 * status = #active
+* experimental = false
+* date = "2025-12-09"
 * description = "Search Organization contacts by the rolle extension (CodeableConcept)"
 * code = #contact-rolle
 * base = #Organization

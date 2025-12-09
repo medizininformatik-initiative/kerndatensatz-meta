@@ -35,6 +35,8 @@
   ],
   "name": "MII_SP_Biobank_Specimen_Container_Capacity",
   "status": "active",
+  "experimental": false,
+  "date": "2025-12-09",
   "description": "Search specimens by container capacity",
   "code": "container-capacity",
   "base": [
