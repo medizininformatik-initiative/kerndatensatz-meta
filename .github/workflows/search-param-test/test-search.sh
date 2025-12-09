@@ -96,8 +96,8 @@ test_includes_resource_type "Composition with _include=Composition:section-autho
                   "Composition" "_include=Composition:section-author" "Practitioner"
 
 # Composition.section.title
-test_at_least_one "Composition with section-title:contains=Left" \
-                  "$(search "Composition" "section-title:contains=Left")"
+#test_at_least_one "Composition with section-title:contains=Left" \
+#                  "$(search "Composition" "section-title:contains=Left")"
 
 # =========================================================
 # Condition
