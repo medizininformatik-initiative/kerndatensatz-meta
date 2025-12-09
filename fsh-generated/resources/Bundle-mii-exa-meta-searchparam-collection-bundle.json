@@ -9025,6 +9025,880 @@
         "type": "token",
         "expression": "DocumentReference.extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-dokument/StructureDefinition/mii-ex-dokument-nlp-processing-status').value"
       }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-organization-beschreibung",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-organization-beschreibung",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-organization-beschreibung",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "version": "2026.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Biobank_Organization_Beschreibung",
+        "status": "active",
+        "description": "Search Organization by the beschreibung extension (string)",
+        "code": "beschreibung",
+        "base": [
+          "Organization"
+        ],
+        "type": "string",
+        "expression": "Organization.extension.where(url='https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-organization-description-extension').value.as(string)"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-specimen-anzahl-aliquots",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-specimen-anzahl-aliquots",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-anzahl-aliquots",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "version": "2026.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Biobank_Specimen_Anzahl_Aliquots",
+        "status": "active",
+        "description": "Search specimens by the mii-ex-biobank-anzahl-aliquots extension (integer)",
+        "code": "anzahl-aliquots",
+        "base": [
+          "Specimen"
+        ],
+        "type": "number",
+        "expression": "Specimen.extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-anzahl-aliquots').value.as(integer)"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-specimen-anzahl-passagen",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-specimen-anzahl-passagen",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-anzahl-passagen",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "version": "2026.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Biobank_Specimen_Anzahl_Passagen",
+        "status": "active",
+        "description": "Search specimens by the mii-ex-biobank-anzahl-passagen extension (integer)",
+        "code": "anzahl-passagen",
+        "base": [
+          "Specimen"
+        ],
+        "type": "number",
+        "expression": "Specimen.extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-anzahl-passagen').value.as(integer)"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-specimen-container-capacity",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-specimen-container-capacity",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-container-capacity",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "version": "2026.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Biobank_Specimen_Container_Capacity",
+        "status": "active",
+        "description": "Search specimens by container capacity",
+        "code": "container-capacity",
+        "base": [
+          "Specimen"
+        ],
+        "type": "quantity",
+        "expression": "Specimen.container.capacity"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-specimen-container-specimen-quantity",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-specimen-container-specimen-quantity",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-container-specimen-quantity",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "version": "2026.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Biobank_Specimen_Container_Specimen_Quantity",
+        "status": "active",
+        "description": "Search specimens by container specimenQuantity",
+        "code": "container-specimen-quantity",
+        "base": [
+          "Specimen"
+        ],
+        "type": "quantity",
+        "expression": "Specimen.container.specimenQuantity"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-organization-collection-design",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-organization-collection-design",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-organization-collection-design",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "version": "2026.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Biobank_Organization_CollectionDesign",
+        "status": "active",
+        "description": "Search Organization by the collectionDesign extension (CodeableConcept)",
+        "code": "collection-design",
+        "base": [
+          "Organization"
+        ],
+        "type": "token",
+        "expression": "Organization.extension.where(url='https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-collection-design-extension').value.as(CodeableConcept)"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-specimen-einstellung-blutversorgung",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-specimen-einstellung-blutversorgung",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-einstellung-blutversorgung",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "version": "2026.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Biobank_Specimen_Einstellung_Blutversorgung",
+        "status": "active",
+        "description": "Search specimens by the EinstellungBlutversorgung extension (dateTime)",
+        "code": "einstellung-blutversorgung",
+        "base": [
+          "Specimen"
+        ],
+        "type": "date",
+        "expression": "Specimen.collection.extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/EinstellungBlutversorgung').value.as(dateTime)"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-specimen-fasting-status",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-specimen-fasting-status",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-fasting-status",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "version": "2026.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Biobank_Specimen_Fasting_Status",
+        "status": "active",
+        "description": "Search specimens by fasting status (CodeableConcept only)",
+        "code": "fasting-status",
+        "base": [
+          "Specimen"
+        ],
+        "type": "token",
+        "expression": "Specimen.collection.fastingStatus.as(CodeableConcept)"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-specimen-gehoert-zu",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-specimen-gehoert-zu",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-gehoert-zu",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "version": "2026.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Biobank_Specimen_Gehoert_Zu",
+        "status": "active",
+        "description": "Search specimens by the VerwaltendeOrganisation extension (Reference)",
+        "code": "gehoert-zu",
+        "base": [
+          "Specimen"
+        ],
+        "type": "reference",
+        "expression": "Specimen.extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation').value.as(Reference)"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-specimen-kulturprotokoll",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-specimen-kulturprotokoll",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-kulturprotokoll",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "version": "2026.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Biobank_Specimen_Kulturprotokoll",
+        "status": "active",
+        "description": "Search specimens by the mii-ex-biobank-kulturprotokoll extension (Reference)",
+        "code": "kulturprotokoll",
+        "base": [
+          "Specimen"
+        ],
+        "type": "reference",
+        "expression": "Specimen.extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-kulturprotokoll').value.as(Reference)"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-specimen-art-der-modifikation",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-specimen-art-der-modifikation",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-art-der-modifikation",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "version": "2026.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Biobank_Specimen_Art_Der_Modifikation",
+        "status": "active",
+        "description": "Search specimens by artDerModifikation in the mii_ex_biobank_modifikationen extension (Coding)",
+        "code": "art-der-modifikation",
+        "base": [
+          "Specimen"
+        ],
+        "type": "token",
+        "expression": "Specimen.extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii_ex_biobank_modifikationen').extension.where(url='artDerModifikation').value.as(Coding)"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-specimen-zielgen",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-specimen-zielgen",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-zielgen",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "version": "2026.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Biobank_Specimen_Zielgen",
+        "status": "active",
+        "description": "Search specimens by zielgen in the mii_ex_biobank_modifikationen extension (string)",
+        "code": "zielgen",
+        "base": [
+          "Specimen"
+        ],
+        "type": "string",
+        "expression": "Specimen.extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii_ex_biobank_modifikationen').extension.where(url='zielgen').value"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-specimen-modifikationen",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-specimen-modifikationen",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-modifikationen",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "version": "2026.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Biobank_Specimen_Modifikationen",
+        "status": "active",
+        "description": "Composite search parameter for specimens based on artDerModifikation and zielgen in mii_ex_biobank_modifikationen extension",
+        "code": "modifikationen",
+        "base": [
+          "Specimen"
+        ],
+        "type": "composite",
+        "expression": "extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii_ex_biobank_modifikationen')",
+        "component": [
+          {
+            "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/SearchParameter/mii-sp-meta-specimen-art-der-modifikation",
+            "expression": "extension.where(url='artDerModifikation').value"
+          },
+          {
+            "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/SearchParameter/mii-sp-meta-specimen-zielgen",
+            "expression": "extension.where(url='zielgen').value"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-specimen-note",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-specimen-note",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-note",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "version": "2026.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Biobank_Specimen_Note",
+        "status": "active",
+        "description": "Search specimens by note text",
+        "code": "note",
+        "base": [
+          "Specimen"
+        ],
+        "type": "string",
+        "expression": "Specimen.note.text"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-specimen-probenebene",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-specimen-probenebene",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-probenebene",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "version": "2026.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Biobank_Specimen_bene",
+        "status": "active",
+        "description": "Search specimens by the mii-ex-biobank-ebene extension (Coding)",
+        "code": "probenebene",
+        "base": [
+          "Specimen"
+        ],
+        "type": "token",
+        "expression": "Specimen.extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-ebene').value.as(Coding)"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-specimen-processing-temp",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-specimen-processing-temp",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-processing-temp",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "version": "2026.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Biobank_Specimen_Processing-Temp",
+        "status": "active",
+        "description": "Search specimens by the Temperaturbedingungen extension (Range)",
+        "code": "processing-temp",
+        "base": [
+          "Specimen"
+        ],
+        "type": "quantity",
+        "expression": "Specimen.processing.extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen').value.as(Range)"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-organization-collection-setting",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-organization-collection-setting",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-organization-collection-setting",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "version": "2026.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Biobank_Organization_CollectionSetting",
+        "status": "active",
+        "description": "Search Organization by the collectionSetting extension (CodeableConcept)",
+        "code": "collection-setting",
+        "base": [
+          "Organization"
+        ],
+        "type": "token",
+        "expression": "Organization.extension.where(url='https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-sample-collection-setting-extension').value.as(CodeableConcept)"
+      }
+    },
+    {
+      "fullUrl": "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-organization-contact-rolle",
+      "resource": {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-organization-contact-rolle",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-organization-contact-rolle",
+        "publisher": "Medizininformatik Initiative",
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "url",
+                "value": "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "version": "2026.0.0",
+        "extension": [
+          {
+            "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "CC-BY-4.0",
+                  "system": "http://hl7.org/fhir/spdx-license",
+                  "display": "Creative Commons Attribution 4.0 International"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "MII_SP_Biobank_Organization_Contact_Rolle",
+        "status": "active",
+        "description": "Search Organization contacts by the rolle extension (CodeableConcept)",
+        "code": "contact-rolle",
+        "base": [
+          "Organization"
+        ],
+        "type": "token",
+        "expression": "Organization.contact.extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/KontaktRolle').value.as(CodeableConcept)"
+      }
     }
   ]
 }

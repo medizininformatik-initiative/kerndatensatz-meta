@@ -1,0 +1,55 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "mii-sp-meta-specimen-modifikationen",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+    ]
+  },
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-modifikationen",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "version": "2026.0.0",
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
+  "name": "MII_SP_Biobank_Specimen_Modifikationen",
+  "status": "active",
+  "description": "Composite search parameter for specimens based on artDerModifikation and zielgen in mii_ex_biobank_modifikationen extension",
+  "code": "modifikationen",
+  "base": [
+    "Specimen"
+  ],
+  "type": "composite",
+  "expression": "extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii_ex_biobank_modifikationen')",
+  "component": [
+    {
+      "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/SearchParameter/mii-sp-meta-specimen-art-der-modifikation",
+      "expression": "extension.where(url='artDerModifikation').value"
+    },
+    {
+      "definition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/SearchParameter/mii-sp-meta-specimen-zielgen",
+      "expression": "extension.where(url='zielgen').value"
+    }
+  ]
+}
