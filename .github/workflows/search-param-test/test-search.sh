@@ -392,19 +392,19 @@ test_at_least_one "Observation with issued=2024-02-15 count" \
 
 # beschreibung
 test_at_least_one "Organization with beschreibung:contains=Biobank count" \
-                  "$(search Organization" "beschreibung:contains=Biobank")"
+                  "$(search "Organization" "beschreibung:contains=Biobank")"
 
 # collection-design
 test_at_least_one "Organization with collection-design=https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-collection-design-cs|LongitudinalCohort count" \
-                  "$(search Organization" "collection-design=https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-collection-design-cs|LongitudinalCohort")"
+                  "$(search "Organization" "collection-design=https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-collection-design-cs|LongitudinalCohort")"
 
 # collection-setting
 test_at_least_one "Organization with collection-setting=https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-sample-collection-setting-cs|RoutineHealthCare count" \
-                  "$(search Organization" "collection-setting=https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-sample-collection-setting-cs|RoutineHealthCare")"
+                  "$(search "Organization" "collection-setting=https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-sample-collection-setting-cs|RoutineHealthCare")"
 
 # contact-rolle
 test_at_least_one "Organization with contact-rolle=https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/CodeSystem/ContactType|RESEARCH count" \
-                  "$(search Organization" "contact-rolle=https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/CodeSystem/ContactType|RESEARCH")"
+                  "$(search "Organization" "contact-rolle=https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/CodeSystem/ContactType|RESEARCH")"
 
 # =========================================================
 # Patient
