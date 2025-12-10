@@ -1,0 +1,47 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "mii-sp-meta-specimen-gehoert-zu",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+    ]
+  },
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-gehoert-zu",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "version": "2026.0.0",
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
+  "name": "MII_SP_Biobank_Specimen_Gehoert_Zu",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-12-09",
+  "description": "Search specimens by the VerwaltendeOrganisation extension (Reference)",
+  "code": "gehoert-zu",
+  "base": [
+    "Specimen"
+  ],
+  "type": "reference",
+  "expression": "Specimen.extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation').value.as(Reference)"
+}

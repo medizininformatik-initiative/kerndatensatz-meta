@@ -1,0 +1,47 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "mii-sp-meta-organization-contact-rolle",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+    ]
+  },
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-organization-contact-rolle",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "version": "2026.0.0",
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
+  "name": "MII_SP_Biobank_Organization_Contact_Rolle",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-12-09",
+  "description": "Search Organization contacts by the rolle extension (CodeableConcept)",
+  "code": "contact-rolle",
+  "base": [
+    "Organization"
+  ],
+  "type": "token",
+  "expression": "Organization.contact.extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/KontaktRolle').value.as(CodeableConcept)"
+}

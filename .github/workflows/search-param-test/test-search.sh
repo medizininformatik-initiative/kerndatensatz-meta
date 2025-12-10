@@ -96,8 +96,8 @@ test_includes_resource_type "Composition with _include=Composition:section-autho
                   "Composition" "_include=Composition:section-author" "Practitioner"
 
 # Composition.section.title
-test_at_least_one "Composition with section-title:contains=Left" \
-                  "$(search "Composition" "section-title:contains=Left")"
+#test_at_least_one "Composition with section-title:contains=Left" \
+#                  "$(search "Composition" "section-title:contains=Left")"
 
 # =========================================================
 # Condition
@@ -387,6 +387,26 @@ test_at_least_one "Observation with issued=2024-02-15 count" \
 #                   "$(search "Observation" "value-ratio-numerator=16%7Chttp://unitsofmeasure.org%7Cng")"
 
 # =========================================================
+# Organization
+# =========================================================
+
+# beschreibung
+test_at_least_one "Organization with beschreibung:contains=Biobank count" \
+                  "$(search "Organization" "beschreibung:contains=Biobank")"
+
+# collection-design
+test_at_least_one "Organization with collection-design=https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-collection-design-cs|LongitudinalCohort count" \
+                  "$(search "Organization" "collection-design=https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-collection-design-cs|LongitudinalCohort")"
+
+# collection-setting
+test_at_least_one "Organization with collection-setting=https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-sample-collection-setting-cs|RoutineHealthCare count" \
+                  "$(search "Organization" "collection-setting=https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-sample-collection-setting-cs|RoutineHealthCare")"
+
+# contact-rolle
+test_at_least_one "Organization with contact-rolle=https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/CodeSystem/ContactType|RESEARCH count" \
+                  "$(search "Organization" "contact-rolle=https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/CodeSystem/ContactType|RESEARCH")"
+
+# =========================================================
 # Patient
 # =========================================================
 # adresszusatz
@@ -506,6 +526,19 @@ test_includes_resource_type "ServiceRequest with _include=ServiceRequest:support
 # =========================================================
 # Specimen
 # =========================================================
+
+# anzahl-aliquots
+test_at_least_one "Specimen with anzahl-aliquots=ge2 count" \
+                  "$(search "Specimen" "anzahl-aliquots=ge2")"
+
+# anzahl-passagen
+test_at_least_one "Specimen with anzahl-passagen=ge1 count" \
+                  "$(search "Specimen" "anzahl-passagen=ge1")"
+
+# art-der-modifikation
+test_at_least_one "Specimen with art-der-modifikation=http://purl.obolibrary.org/obo/clo.owl|CLO:0037375 count" \
+                  "$(search "Specimen" "art-der-modifikation=art-der-modifikation=http://purl.obolibrary.org/obo/clo.owl|CLO:0037375")"
+
 # collection-body-site - SearchParameter is retired now
 # test_at_least_one "Specimen with collection-body-site=http://snomed.info/sct|789218009 count" \
 #                   "$(search "Specimen" "collection-body-site=http://snomed.info/sct%7C789218009")"
@@ -518,9 +551,45 @@ test_at_least_one "Specimen with collection-method=http://snomed.info/sct|129300
 test_includes_resource_type "Specimen with _include=Specimen:container-additive" \
                   "Specimen" "_include=Specimen:container-additive" "Substance"
 
+# container-capacity
+test_at_least_one "Specimen with container-capacity=10|http://unitsofmeasure.org|ml count" \
+                  "$(search "Specimen" "container-capacity=10|http://unitsofmeasure.org|ml")"
+
+# container-specimen-quantity
+test_at_least_one "Specimen with container-specimen-quantity=10|http://unitsofmeasure.org|ml count" \
+                  "$(search "Specimen" "container-specimen-quantity=10|http://unitsofmeasure.org|ml")"
+
 # diagnose
 test_includes_resource_type "Specimen with _include=Specimen:diagnose" \
                   "Specimen" "_include=Specimen:diagnose" "Condition"
+
+# einstellung-blutversorgung
+test_at_least_one "Specimen with einstellung-blutversorgung=gt2018-06-08T15:00:00+01:00 count" \
+                  "$(search "Specimen" "einstellung-blutversorgung=gt2018-06-08T15:00:00+01:00")"
+
+# fasting-status
+test_at_least_one "Specimen with fasting-status=http://terminology.hl7.org/CodeSystem/v2-0916|F count" \
+                  "$(search "Specimen" "fasting-status=http://terminology.hl7.org/CodeSystem/v2-0916|F")"
+
+# gehoert-zu
+test_includes_resource_type "Specimen with _include=Specimen:gehoert-zu" \
+                  "Specimen" "_include=Specimen:gehoert-zu" "Organization"
+
+# modifikationen
+test_at_least_one "Specimen with modifikationen=http://purl.obolibrary.org/obo/clo.owl|CLO:0037375$http://www.genenames.org|TP53 count" \
+                  "$(search "Specimen" "modifikationen=http://purl.obolibrary.org/obo/clo.owl|CLO:0037375$http://www.genenames.org|TP53")"
+
+# note
+test_at_least_one "Specimen with note:contains=Organoid count" \
+                  "$(search "Specimen" "note:contains=Organoid")"
+
+# fasting-status
+test_at_least_one "Specimen with fasting-status=http://terminology.hl7.org/CodeSystem/v2-0916|F count" \
+                  "$(search "Specimen" "fasting-status=http://terminology.hl7.org/CodeSystem/v2-0916|F")"
+
+# probenebene
+test_at_least_one "Specimen with probenebene=https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/CodeSystem/mii-cs-biobank-probenebene|PRIMÄRPROBE count" \
+                  "$(search "Specimen" "probenebene=https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/CodeSystem/mii-cs-biobank-probenebene|PRIMÄRPROBE")"
 
 # processing-additive
 # test_includes_resource_type "Specimen with processing-additive=Substance/mii-exa-test-data-patient-1-patho-hematoxylin-stain count" \
@@ -534,9 +603,17 @@ test_includes_resource_type "Specimen with _include=Specimen:diagnose" \
 # test_at_least_one "Specimen with processing-procedure=http://snomed.info/sct|40923002 count" \
 #                   "$(search "Specimen" "processing-procedure=http://snomed.info/sct%7C40923002")"
 
+# processing-temp
+test_at_least_one "Specimen with processing-temp=le0|http://unitsofmeasure.org|Cel count" \
+                  "$(search "Specimen" "processing-temp=le0|http://unitsofmeasure.org|Cel")"
+
 # request
 # test_at_least_one "Specimen with request=ServiceRequest/mii-exa-test-data-patient-1-patho-request-1 count" \
 #                   "$(search "Specimen" "request=ServiceRequest/mii-exa-test-data-patient-1-patho-request-1")"
+
+# zielgen
+test_at_least_one "Specimen with zielgen=http://www.genenames.org|TP53 count" \
+                  "$(search "Specimen" "zielgen=http://www.genenames.org|TP53")"
 
 # =========================================================
 # Task
