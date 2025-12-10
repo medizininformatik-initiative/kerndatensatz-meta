@@ -190,7 +190,7 @@ Usage: #definition
 * status = #active
 * experimental = false
 * date = "2025-12-09"
-* description = "Search specimens by artDerModifikation in the mii_ex_biobank_modifikationen extension (Coding)"
+* description = "Search specimens by artDerModifikation in the mii_ex_biobank_modifikationen extension"
 * code = #art-der-modifikation
 * base = #Specimen
 * type = #token
@@ -208,10 +208,10 @@ Usage: #definition
 * status = #active
 * experimental = false
 * date = "2025-12-09"
-* description = "Search specimens by zielgen in the mii_ex_biobank_modifikationen extension (string)"
+* description = "Search specimens by zielgen in the mii_ex_biobank_modifikationen extension"
 * code = #zielgen
 * base = #Specimen
-* type = #string
+* type = #token
 * expression = "Specimen.extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii_ex_biobank_modifikationen').extension.where(url='zielgen').value"
 
 Instance: mii-sp-meta-specimen-modifikationen
@@ -262,7 +262,7 @@ Usage: #definition
 * insert LicenseCodeableCCBY40Instance
 * insert SP_Profile
 
-* name = "MII_SP_Biobank_Specimen_bene"
+* name = "MII_SP_Biobank_Specimen_Probenebene"
 * status = #active
 * experimental = false
 * date = "2025-12-09"

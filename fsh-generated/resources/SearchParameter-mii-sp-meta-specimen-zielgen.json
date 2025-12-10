@@ -37,11 +37,11 @@
   "status": "active",
   "experimental": false,
   "date": "2025-12-09",
-  "description": "Search specimens by zielgen in the mii_ex_biobank_modifikationen extension (string)",
+  "description": "Search specimens by zielgen in the mii_ex_biobank_modifikationen extension",
   "code": "zielgen",
   "base": [
     "Specimen"
   ],
-  "type": "string",
+  "type": "token",
   "expression": "Specimen.extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii_ex_biobank_modifikationen').extension.where(url='zielgen').value"
 }
