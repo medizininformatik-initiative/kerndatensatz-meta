@@ -46,6 +46,16 @@ on:
         required: false
         default: '.'
         type: string
+      VALIDATION_REPORT_INCLUDE:
+        description: 'Validation report severity level to include (errors, warnings, information)'
+        required: false
+        default: 'errors'
+        type: string
+      VALIDATION_REPORT_FILTERS:
+        description: 'Custom filters for validation report (fileName|messageId|detailsWildcard|location)'
+        required: false
+        default: ''
+        type: string
 
     secrets:
       CDS_DEV_CLIENT_CERT:
@@ -242,11 +252,11 @@ jobs:
           retention-days: 7
 
       - name: Convert Validation Report
+        if: always()
         uses: patrick-werner/validation-outcome-markdown-renderer@v1
         with:
           bundle-file: validation.json
-          include: errors
-          filters: |
-            # Struktur: fileName|messageId|detailsWildcard|location
+          include: ${{ inputs.VALIDATION_REPORT_INCLUDE }}
+          filters: ${{ inputs.VALIDATION_REPORT_FILTERS }}
 
 
