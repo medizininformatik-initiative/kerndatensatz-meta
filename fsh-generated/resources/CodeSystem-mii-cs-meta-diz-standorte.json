@@ -901,10 +901,6 @@
         {
           "code": "abbreviation",
           "valueString": "UL"
-        },
-        {
-          "code": "dic",
-          "valueBoolean": true
         }
       ]
     },
