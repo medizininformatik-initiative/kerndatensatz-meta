@@ -36,6 +36,10 @@ Für bestehende Module sind folgende Bezeichnungen abgestimmt:
 | Modul Molekulargenetischer Befund      | modul-molgen          | MolGen          |
 | Modul Bioprobendaten                   | modul-biobank         | Biobank         |
 | Modul Strukturdaten                    | modul-struktur        | Struktur        |
+| Modul Seltene Erkrankungen             | modul-seltene         | Seltene         |
+| Modul Molekulares Tumorboard           | modul-mtb             | MTB             |
+| Modul PROs, PROMs und abgeleitete Metriken | modul-pro         | PRO             |
+| Modul Dokument                         | modul-dokument        | Dokument        |
 
 Für zukünftig neu hinzukommende Module wird eine deutschsprachige Benennung im Singular bevorzugt. 
 
@@ -52,7 +56,9 @@ Für zukünftig neu hinzukommende Module wird eine deutschsprachige Benennung im
 * CPS: CapabilityStatement 
 * OD: OperationDefinition 
 * IG: ImplementationGuide 
-* EXA: Example 
+* EXA: Example
+* QST: Questionnaire
+* OBSDEF: ObservationDefinition
 
 ### Sprache
 Die bevorzugte Sprache für die Beschreibung, den Titel, sowie den Namen einer Conformance-Ressource ist Deutsch. Als Alternative kann Englisch verwendet werden, falls dies von dem jeweiligen Kümmererteam bevorzugt wird. Falls Deutsch als Sprache zur Dokumentation einer Ressource verwendet wird, muss auf den Elementen “description”, “name” und “title” eine Translation-Extension (siehe http://hl7.org/fhir/extensions/StructureDefinition-translation.html) vorhanden sein. Der Inhalt der Extension ist im englischsprachigen Implementierungsleitfaden anzuzeigen. 
