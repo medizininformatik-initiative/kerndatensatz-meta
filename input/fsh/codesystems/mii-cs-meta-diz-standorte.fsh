@@ -295,7 +295,6 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UL insert AddStatus(active)
 * #UL insert AddTRV(V6.15)
 * #UL insert AddAbbreviation(UL)
-* #UL insert AddDiz(true)
 * #UMMD "Universitätsklinikum Magdeburg" "Magdeburg"
 * #UMMD insert AddKonsortium(MIRACUM)
 * #UMMD insert AddUri(www.med.uni-magdeburg.de)
