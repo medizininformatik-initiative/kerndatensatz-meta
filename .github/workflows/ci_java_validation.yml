@@ -110,7 +110,7 @@ jobs:
             sleep 5  # Give NGINX some time to start
 
             for i in {1..5}; do
-            if curl --head --silent --fail http://localhost:8090; then
+            if curl --silent --fail http://localhost:8090/fhir/metadata; then
               echo "NGINX is responding."
               break
             else
