@@ -23,7 +23,7 @@ html, body {
         padding: 0;
         width: 100%; }
         #ig-viewer .ig-view-content #ig-view-treetable .container-fluid #guide-panel {
-          width: 100%;
+          width: 1100px;
           height: 100%;
           position: relative;
           display: table;
@@ -36,7 +36,7 @@ html, body {
             overflow: hidden;
             position: relative; }
             #ig-viewer .ig-view-content #ig-view-treetable .container-fluid #guide-panel .tree-panel .treenode a {
-              color: black;
+              color: #646F84;
               cursor: pointer;
               text-decoration: none;
               text-overflow: ellipsis;
@@ -74,30 +74,6 @@ html, body {
     position: relative;
     padding-top: 40px; }
 
-.notice-border{
-    height:auto;
-    border-style: solid;
-    border-color: rgb(127, 3, 7);
-}
-
-.notice-background{
-    background-color: rgb(255, 250, 246);
-}
-
-.notice{
-  display: inline-table;
-}
-
-.notice img{
-    height:200px;
-    width:200px;
-    float:left;
-}
-
-.notice p{
-    margin-top: 5px;
-}
-
 .col-md-12{
   width: 100%;
 }
@@ -112,4 +88,66 @@ html, body {
 
 .col-md-12 img{
   width: auto;
+}
+
+/* Custom layout improvements for better preview panel spacing */
+
+/* 1) Let the IG content use the full viewport width with some breathing room */
+#ig-viewer .ig-view-content #ig-view-treetable{
+  width: 100% !important;
+  max-width: 1500px !important;  /* Compromise: wider than publisher (1100px) but not extreme */
+  margin: 0 auto !important;
+  padding: 0 20px !important;    /* Slightly more padding than publisher (15px) */
+  box-sizing: border-box;
+}
+
+/* 2) Remove the fixed 1100px bottleneck and stop using table layout */
+#ig-viewer .ig-view-content #ig-view-treetable .container-fluid #guide-panel{
+  width: 100% !important;
+  max-width: none !important;
+  display: flex !important;
+  flex-direction: row;
+  align-items: stretch;
+  height: 100%;
+}
+
+/* 3) Tree: fixed-ish, resizable-friendly */
+#ig-viewer .ig-view-content #ig-view-treetable .container-fluid #guide-panel .tree-panel{
+  float: none !important;
+  flex: 0 0 320px;          /* base width */
+  min-width: 260px;
+  max-width: 420px;
+  overflow: auto !important; /* allow scrolling */
+}
+
+/* 4) Preview: take all remaining space + reduce padding */
+#ig-viewer .ig-view-content #ig-view-treetable .container-fluid #guide-panel .preview-panel{
+  float: none !important;
+  width: auto !important;     /* stop 40% */
+  flex: 1 1 auto;             /* fill remainder */
+  min-width: 360px;
+  padding: 16px 20px !important;
+  overflow: auto;
+}
+
+/* 5) Make tables behave better inside the preview */
+#ig-viewer .ig-view-content #ig-view-treetable .container-fluid #guide-panel .preview-panel table{
+  display: table !important;  /* undo display:block squeeze */
+  width: 100% !important;
+}
+
+/* 6) Responsive: stack on smaller screens */
+@media (max-width: 900px){
+  #ig-viewer .ig-view-content #ig-view-treetable .container-fluid #guide-panel{
+    flex-direction: column;
+  }
+  #ig-viewer .ig-view-content #ig-view-treetable .container-fluid #guide-panel .tree-panel{
+    flex: 0 0 auto;
+    width: 100% !important;
+    max-width: none;
+  }
+  #ig-viewer .ig-view-content #ig-view-treetable .container-fluid #guide-panel .preview-panel{
+    min-width: 0;
+    width: 100% !important;
+  }
 }
