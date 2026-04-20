@@ -167,7 +167,8 @@ test_at_least_one "Consent with provision.code=urn:oid:2.16.840.1.113883.3.1937.
 #                   "$(search "Consent" "mii-provision-provision-code-period=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3|2.16.840.1.113883.3.1937.777.24.5.3.9$ge2024-02-23")"
 
 # Consent.provision.provision mii-provision-provision-code-type
-# TODO 
+test_at_least_one "Consent with Consent.provision.provision.type=permit and Consent.provision.provision.code=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3%7C2.16.840.1.113883.3.1937.777.24.5.3.7 count" \
+                    "$(search "Consent" "mii-provision-provision-code-type=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3%7C2.16.840.1.113883.3.1937.777.24.5.3.7%24permit")"
 
 # Consent.provision.provision.period
 test_at_least_one "Consent with mii-provision-provision-period=ge2024 count" \
