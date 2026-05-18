@@ -596,6 +596,37 @@
           "valueCode": "active"
         },
         {
+          "code": "contract",
+          "valueString": "V6.15"
+        },
+        {
+          "code": "abbreviation",
+          "valueString": "UMG"
+        },
+        {
+          "code": "dic",
+          "valueBoolean": true
+        }
+      ]
+    },
+    {
+      "code": "UMG-DMS",
+      "display": "Universitätsmedizin Göttingen - DMS",
+      "definition": "Göttingen",
+      "property": [
+        {
+          "code": "consortium",
+          "valueString": "HiGHmed"
+        },
+        {
+          "code": "uri",
+          "valueString": "dms.umg.eu"
+        },
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
           "code": "dataManagement",
           "valueBoolean": true
         },
@@ -605,7 +636,7 @@
         },
         {
           "code": "abbreviation",
-          "valueString": "UMG"
+          "valueString": "UMG-DMS"
         },
         {
           "code": "dic",
@@ -1686,5 +1717,5 @@
       "description": "ersetzt durch (neuer Code)"
     }
   ],
-  "count": 51
+  "count": 52
 }
