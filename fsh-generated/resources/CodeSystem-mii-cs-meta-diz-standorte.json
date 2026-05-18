@@ -637,10 +637,6 @@
         {
           "code": "abbreviation",
           "valueString": "UMG-DMS"
-        },
-        {
-          "code": "dic",
-          "valueBoolean": true
         }
       ]
     },
