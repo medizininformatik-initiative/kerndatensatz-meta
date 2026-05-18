@@ -225,10 +225,17 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UMG insert AddKonsortium(HiGHmed)
 * #UMG insert AddUri(umg.eu)
 * #UMG insert AddStatus(active)
-* #UMG insert AddDatenmanagementstelle(true)
 * #UMG insert AddTRV(V6.15)
 * #UMG insert AddAbbreviation(UMG)
 * #UMG insert AddDiz(true)
+* #UMG-DMS "Universitätsmedizin Göttingen - DMS" "Göttingen"
+* #UMG-DMS insert AddKonsortium(HiGHmed)
+* #UMG-DMS insert AddUri(dms.umg.eu)
+* #UMG-DMS insert AddStatus(active)
+* #UMG-DMS insert AddDatenmanagementstelle(true)
+* #UMG-DMS insert AddTRV(V6.15)
+* #UMG-DMS insert AddAbbreviation(UMG-DMS)
+* #UMG-DMS insert AddDiz(true)
 * #UKG "Universitätsmedizin Greifswald" "Greifswald"
 * #UKG insert AddKonsortium(MIRACUM)
 * #UKG insert AddUri(www.medizin.uni-greifswald.de)
