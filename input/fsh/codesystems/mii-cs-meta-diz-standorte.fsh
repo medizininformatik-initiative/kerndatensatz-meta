@@ -235,7 +235,6 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UMG-DMS insert AddDatenmanagementstelle(true)
 * #UMG-DMS insert AddTRV(V6.15)
 * #UMG-DMS insert AddAbbreviation(UMG-DMS)
-* #UMG-DMS insert AddDiz(true)
 * #UKG "Universitätsmedizin Greifswald" "Greifswald"
 * #UKG insert AddKonsortium(MIRACUM)
 * #UKG insert AddUri(www.medizin.uni-greifswald.de)
