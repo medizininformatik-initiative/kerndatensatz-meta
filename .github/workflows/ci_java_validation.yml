@@ -241,6 +241,7 @@ jobs:
           INPUT_JAVA_VALIDATION_OPTIONS: ${{ inputs.JAVA_VALIDATION_OPTIONS }}
 
       - name: Upload txlog and validation output
+        id: upload_validation_output
         if: always()
         uses: actions/upload-artifact@v4
         with:
@@ -251,6 +252,42 @@ jobs:
             ${{ inputs.working-directory }}/validation.json
           retention-days: 7
 
+      # upload-artifact prints its URL to the log, where GitHub may replace a
+      # repository-name substring that matches a secret with "***". Encode the
+      # repository path so the job summary contains a working link instead.
+      - name: Add validation artifact link to job summary
+        if: always() && steps.upload_validation_output.outputs.artifact-id != ''
+        shell: bash
+        env:
+          ARTIFACT_ID: ${{ steps.upload_validation_output.outputs.artifact-id }}
+          REPOSITORY: ${{ github.repository }}
+          RUN_ID: ${{ github.run_id }}
+          SERVER_URL: ${{ github.server_url }}
+        run: |
+          percent_encode() {
+            local input="$1"
+            local encoded=""
+            local character
+            local hex
+            local i
+
+            for ((i = 0; i < ${#input}; i++)); do
+              character="${input:i:1}"
+              printf -v hex '%%%02X' "'$character"
+              encoded+="$hex"
+            done
+
+            printf '%s' "$encoded"
+          }
+
+          repository_owner="${REPOSITORY%%/*}"
+          repository_name="${REPOSITORY#*/}"
+          encoded_owner="$(percent_encode "$repository_owner")"
+          encoded_repository="$(percent_encode "$repository_name")"
+          artifact_url="${SERVER_URL}/${encoded_owner}/${encoded_repository}/actions/runs/${RUN_ID}/artifacts/${ARTIFACT_ID}"
+
+          printf '### Validation output\n\n[Download the validation-output artifact](%s)\n' "$artifact_url" >> "$GITHUB_STEP_SUMMARY"
+
       - name: Convert Validation Report
         if: always()
         uses: patrick-werner/validation-outcome-markdown-renderer@v1
@@ -258,5 +295,3 @@ jobs:
           bundle-file: ${{ inputs.working-directory }}/validation.json
           include: ${{ inputs.VALIDATION_REPORT_INCLUDE }}
           filters: ${{ inputs.VALIDATION_REPORT_FILTERS }}
-
-
