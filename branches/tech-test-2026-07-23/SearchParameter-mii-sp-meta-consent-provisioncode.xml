@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="mii-sp-meta-consent-provisioncode"/>
+  <meta>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: SearchParameter mii-sp-meta-consent-provisioncode</b></p><a name="mii-sp-meta-consent-provisioncode"> </a><a name="hcmii-sp-meta-consent-provisioncode"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-meta-searchparameter.html">MII PR Meta SearchParameter</a></p></div><h2>MII_SP_Meta_Consent_ProvisionCode</h2><p>Parameter <code>mii-provision-provision-code</code>:<code>token</code></p><div><p>Suche im Code der Provison</p>
+</div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R4/consent.html">Consent</a></td></tr><tr><td>Expression</td><td><code>Consent.provision.provision.code</code></td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: The parameter may repeat in order to specify multiple values that must all be true</li><li>multipleOr: The parameter may have multiple values (separated by comma) where at least one must be true</li></ul></td></tr></table></div>
+  </text>
+  <extension url="https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://hl7.org/fhir/spdx-license"/>
+        <code value="CC-BY-4.0"/>
+        <display value="Creative Commons Attribution 4.0 International"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <url value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-provisioncode"/>
+  <version value="2026.0.0"/>
+  <name value="MII_SP_Meta_Consent_ProvisionCode"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-10-17"/>
+  <publisher value="Medizininformatik Initiative"/>
+  <contact>
+    <name value="Medizininformatik Initiative"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.medizininformatik-initiative.de/"/>
+    </telecom>
+  </contact>
+  <description value="Suche im Code der Provison"/>
+  <code value="mii-provision-provision-code"/>
+  <base value="Consent"/>
+  <type value="token"/>
+  <expression value="Consent.provision.provision.code"/>
+  <multipleOr value="true"/>
+  <multipleAnd value="true"/>
+</SearchParameter>

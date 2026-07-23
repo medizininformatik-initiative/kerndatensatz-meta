@@ -1,0 +1,42 @@
+{
+  "resourceType" : "SearchParameter",
+  "id" : "mii-sp-meta-consent-policyuri",
+  "meta" : {
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-consent-policyuri</b></p><a name=\"mii-sp-meta-consent-policyuri\"> </a><a name=\"hcmii-sp-meta-consent-policyuri\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><h2>MII_SP_Meta_Consent_PolicyUri</h2><p>Parameter <code>mii-policy-uri</code>:<code>uri</code></p><div><p>Suche in der Policy URI (versionsspezifische Policy / Broad Consent)</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/consent.html\">Consent</a></td></tr><tr><td>Expression</td><td><code>Consent.policy.uri</code></td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: The parameter may repeat in order to specify multiple values that must all be true</li><li>multipleOr: The parameter may have multiple values (separated by comma) where at least one must be true</li></ul></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/spdx-license",
+        "code" : "CC-BY-4.0",
+        "display" : "Creative Commons Attribution 4.0 International"
+      }]
+    }
+  }],
+  "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-policyuri",
+  "version" : "2026.0.0",
+  "name" : "MII_SP_Meta_Consent_PolicyUri",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-10-17",
+  "publisher" : "Medizininformatik Initiative",
+  "contact" : [{
+    "name" : "Medizininformatik Initiative",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.medizininformatik-initiative.de/"
+    }]
+  }],
+  "description" : "Suche in der Policy URI (versionsspezifische Policy / Broad Consent)",
+  "code" : "mii-policy-uri",
+  "base" : ["Consent"],
+  "type" : "uri",
+  "expression" : "Consent.policy.uri",
+  "multipleOr" : true,
+  "multipleAnd" : true
+}

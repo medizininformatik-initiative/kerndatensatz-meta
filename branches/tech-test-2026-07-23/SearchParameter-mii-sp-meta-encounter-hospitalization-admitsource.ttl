@@ -1,0 +1,65 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-hospitalization-admitsource> a fhir:SearchParameter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "mii-sp-meta-encounter-hospitalization-admitsource"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter" ;
+       fhir:index 0 ;
+       fhir:link <https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-encounter-hospitalization-admitsource</b></p><a name=\"mii-sp-meta-encounter-hospitalization-admitsource\"> </a><a name=\"hcmii-sp-meta-encounter-hospitalization-admitsource\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><h2>MII_SP_Meta_Encounter_Hospitalization_AdmitSource</h2><p>Parameter <code>hospitalization-admitsource</code>:<code>token</code></p><div><p>Suchparameter für Encounter.hospitalization.admitSource</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/encounter.html\">Encounter</a></td></tr><tr><td>Expression</td><td><code>Encounter.hospitalization.admitSource</code></td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: It's up to the server whether the parameter may repeat in order to specify multiple values that must all be true</li><li>multipleOr: It's up to the server whether the parameter can have multiple values (separated by comma) where at least one must be true</li></ul></td></tr></table></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable" ] ;
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/spdx-license" ] ;
+         fhir:Coding.code [ fhir:value "CC-BY-4.0" ] ;
+         fhir:Coding.display [ fhir:value "Creative Commons Attribution 4.0 International" ]
+       ]
+     ]
+  ] ;
+  fhir:SearchParameter.url [ fhir:value "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-hospitalization-admitsource"] ;
+  fhir:SearchParameter.version [ fhir:value "2026.0.0"] ;
+  fhir:SearchParameter.name [ fhir:value "MII_SP_Meta_Encounter_Hospitalization_AdmitSource"] ;
+  fhir:SearchParameter.status [ fhir:value "active"] ;
+  fhir:SearchParameter.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:SearchParameter.date [ fhir:value "2024-10-08"^^xsd:date] ;
+  fhir:SearchParameter.publisher [ fhir:value "Medizininformatik Initiative"] ;
+  fhir:SearchParameter.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Medizininformatik Initiative" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://www.medizininformatik-initiative.de/" ]
+     ]
+  ] ;
+  fhir:SearchParameter.description [ fhir:value "Suchparameter für Encounter.hospitalization.admitSource"] ;
+  fhir:SearchParameter.code [ fhir:value "hospitalization-admitsource"] ;
+  fhir:SearchParameter.base [
+     fhir:value "Encounter" ;
+     fhir:index 0
+  ] ;
+  fhir:SearchParameter.type [ fhir:value "token"] ;
+  fhir:SearchParameter.expression [ fhir:value "Encounter.hospitalization.admitSource"] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-hospitalization-admitsource.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="mii-sp-meta-medication-dosage-rateratio"/>
+  <meta>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: SearchParameter mii-sp-meta-medication-dosage-rateratio</b></p><a name="mii-sp-meta-medication-dosage-rateratio"> </a><a name="hcmii-sp-meta-medication-dosage-rateratio"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-meta-searchparameter.html">MII PR Meta SearchParameter</a></p></div><h2>MII_SP_Meta_Medication_Dosage_RateRatio</h2><p>Parameter <code>rateratio</code>:<code>composite</code></p><div><p>MedicationStatement.dosage.doseAndRate.rate.ofType(Ratio) | MedicationAdministration.dosage.rate.ofType(Ratio) | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio)</p>
+</div><table class="grid"><tr><td>Resources</td><td><a href="http://hl7.org/fhir/R4/medicationstatement.html">MedicationStatement</a>, <a href="http://hl7.org/fhir/R4/medicationadministration.html">MedicationAdministration</a>, <a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a></td></tr><tr><td>Expression</td><td><code>MedicationStatement.dosage.doseAndRate.rate.ofType(Ratio) | MedicationAdministration.dosage.rate.ofType(Ratio) | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio)</code></td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: It's up to the server whether the parameter may repeat in order to specify multiple values that must all be true</li><li>multipleOr: It's up to the server whether the parameter can have multiple values (separated by comma) where at least one must be true</li></ul></td></tr></table><p><b>Component</b></p><table class="grid"><tr><td><a href="SearchParameter-mii-sp-meta-medication-dosage-rateratio-numerator.html">MII_SP_Meta_Medication_Dosage_RateRatioNumerator</a></td><td><code>numerator</code></td><td><code>quantity</code></td></tr><tr><td><a href="SearchParameter-mii-sp-meta-medication-dosage-rateratio-denominator.html">MII_SP_Meta_Medication_Dosage_RateRatioDenominator</a></td><td><code>denominator</code></td><td><code>quantity</code></td></tr></table></div>
+  </text>
+  <extension url="https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://hl7.org/fhir/spdx-license"/>
+        <code value="CC-BY-4.0"/>
+        <display value="Creative Commons Attribution 4.0 International"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <url value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio"/>
+  <version value="2026.0.0"/>
+  <name value="MII_SP_Meta_Medication_Dosage_RateRatio"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-10-08"/>
+  <publisher value="Medizininformatik Initiative"/>
+  <contact>
+    <name value="Medizininformatik Initiative"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.medizininformatik-initiative.de/"/>
+    </telecom>
+  </contact>
+  <description value="MedicationStatement.dosage.doseAndRate.rate.ofType(Ratio) | MedicationAdministration.dosage.rate.ofType(Ratio) | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio)"/>
+  <code value="rateratio"/>
+  <base value="MedicationStatement"/>
+  <base value="MedicationAdministration"/>
+  <base value="MedicationRequest"/>
+  <type value="composite"/>
+  <expression value="MedicationStatement.dosage.doseAndRate.rate.ofType(Ratio) | MedicationAdministration.dosage.rate.ofType(Ratio) | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio)"/>
+  <component>
+    <definition value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-numerator"/>
+    <expression value="numerator"/>
+  </component>
+  <component>
+    <definition value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-denominator"/>
+    <expression value="denominator"/>
+  </component>
+</SearchParameter>

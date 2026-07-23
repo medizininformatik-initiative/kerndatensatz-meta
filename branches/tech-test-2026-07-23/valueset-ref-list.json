@@ -1,0 +1,16 @@
+{
+  "codeSystems" : [{
+    "url" : "http://hl7.org/fhir/ValueSet/spdx-license",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "SPDXLicense",
+    "title" : "SPDXLicense",
+    "description" : "The license that applies to an Implementation Guide (using an SPDX license Identifiers, or 'not-open-source'). The binding is required but new SPDX license Identifiers are allowed to be used (https://spdx.org/licenses/).",
+    "systems" : ["http://hl7.org/fhir/spdx-license"],
+    "oids" : ["2.16.840.1.113883.4.642.3.1026"],
+    "sources" : ["2.16.840.1.113883.4.642.3.1026"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-ex-meta-license-codeable.html" : "MII EX Meta License Codeable"
+  }]
+}

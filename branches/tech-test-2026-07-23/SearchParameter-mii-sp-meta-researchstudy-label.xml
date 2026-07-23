@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="mii-sp-meta-researchstudy-label"/>
+  <meta>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: SearchParameter mii-sp-meta-researchstudy-label</b></p><a name="mii-sp-meta-researchstudy-label"> </a><a name="hcmii-sp-meta-researchstudy-label"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-meta-searchparameter.html">MII PR Meta SearchParameter</a></p></div><h2>MII_SP_Meta_ResearchStudy_Label</h2><p>Parameter <code>label</code>:<code>string</code></p><div><p>Suchparameter für ResearchStudy.extension:label</p>
+</div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R4/researchstudy.html">ResearchStudy</a></td></tr><tr><td>Expression</td><td><code>ResearchStudy.extension.where(url='http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.label').extension.where(url='value').value</code></td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: It's up to the server whether the parameter may repeat in order to specify multiple values that must all be true</li><li>multipleOr: It's up to the server whether the parameter can have multiple values (separated by comma) where at least one must be true</li></ul></td></tr></table></div>
+  </text>
+  <extension url="https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://hl7.org/fhir/spdx-license"/>
+        <code value="CC-BY-4.0"/>
+        <display value="Creative Commons Attribution 4.0 International"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <url value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-label"/>
+  <version value="2026.0.0"/>
+  <name value="MII_SP_Meta_ResearchStudy_Label"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-10-17"/>
+  <publisher value="Medizininformatik Initiative"/>
+  <contact>
+    <name value="Medizininformatik Initiative"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.medizininformatik-initiative.de/"/>
+    </telecom>
+  </contact>
+  <description value="Suchparameter für ResearchStudy.extension:label"/>
+  <code value="label"/>
+  <base value="ResearchStudy"/>
+  <type value="string"/>
+  <expression value="ResearchStudy.extension.where(url='http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.label').extension.where(url='value').value"/>
+</SearchParameter>
