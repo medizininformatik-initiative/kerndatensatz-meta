@@ -257,7 +257,17 @@ jobs:
             exit 0
           fi
           git commit -m "chore: update ${GITHUB_REF_NAME} pages"
-          git push origin gh-pages
+          # Robust against concurrent gh-pages writers (e.g. a legacy per-repo IG
+          # workflow running on the same push): rebase onto the remote and retry.
+          for attempt in 1 2 3 4 5; do
+            if git push origin gh-pages; then
+              echo "Pushed gh-pages (attempt ${attempt})."
+              break
+            fi
+            echo "Push rejected (attempt ${attempt}); rebasing onto remote gh-pages and retrying."
+            git pull --rebase origin gh-pages || { echo "::error::rebase onto gh-pages failed"; exit 1; }
+            [ "${attempt}" = "5" ] && { echo "::error::could not push gh-pages after 5 attempts"; exit 1; }
+          done
 
       - name: Configure GitHub Pages
         if: github.event_name == 'push' && startsWith(github.ref, 'refs/heads/') && github.ref_name != inputs.default_branch && vars.PAGES_ACTIONS_ENABLED == 'true'
