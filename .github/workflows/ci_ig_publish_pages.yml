@@ -118,22 +118,71 @@ jobs:
             fi
           done
 
+      # SUSHI is allowed to fail: it still exports the generated resources, and we
+      # want the IG Publisher to run so a qa.json is produced for QA farming even
+      # for modules with (pre-existing) FSH errors. The error stays visible in the
+      # step outcome, the job summary, and qa.json.
       - name: Run SUSHI
+        id: sushi
+        continue-on-error: true
         run: docker run --rm --network host -v $PWD:/workspace -v /usr/bin/dot:/usr/local/bin/dot:ro -v /usr/lib/x86_64-linux-gnu:/usr/host/lib:ro -e LD_LIBRARY_PATH=/usr/host/lib -w /workspace ghcr.io/gefyra/ig-publisher-with-snapshot-support:latest sushi .
 
+      - name: Note SUSHI result
+        if: steps.sushi.outcome == 'failure'
+        run: echo "::warning::SUSHI reported errors (non-zero exit). Continuing to IG Publisher so qa.json is still produced for QA farming. Inspect qa.json / the SUSHI log for details."
+
+      # IG Publisher is allowed to fail too: it normally exits 0 and writes qa.json
+      # even with validation errors, but for QA farming we never want a hard stop
+      # to swallow the qa report. Real failures remain visible via the step outcome.
       - name: Build IG
+        id: igbuild
+        continue-on-error: true
         run: |
-          set -euo pipefail
           docker run --rm --network host -v $PWD:/workspace -v /usr/bin/dot:/usr/local/bin/dot:ro -v /usr/lib/x86_64-linux-gnu:/usr/host/lib:ro -e LD_LIBRARY_PATH=/usr/host/lib -w /workspace ghcr.io/gefyra/ig-publisher-with-snapshot-support:latest sh -c "igpublisher -ig ${{ inputs.ig_ini }} -tx ${{ inputs.tx_server }}"
-          test -s output/index.html
-          test -s output/qa.json
-          jq empty output/qa.json
 
       - name: Cleanup NGINX
         if: always()
         run: |
           docker stop nginx-proxy || true
           docker rm nginx-proxy || true
+
+      # --- QA farming: always harvest the qa report, timestamped, even on failure ---
+      - name: Fix output permissions (for QA read)
+        if: always()
+        run: sudo chown -R $USER:$USER output || true
+
+      - name: Summarize + upload QA report (timestamped)
+        if: always()
+        shell: bash
+        run: |
+          set +e
+          repo_name="${GITHUB_REPOSITORY#*/}"
+          ts="$(date -u +%Y-%m-%dT%H-%M-%SZ)"
+          echo "QA_TIMESTAMP=${ts}" >> "$GITHUB_ENV"
+          echo "QA_REPO=${repo_name}" >> "$GITHUB_ENV"
+          echo "QA_REF_SAFE=${GITHUB_REF_NAME//\//-}" >> "$GITHUB_ENV"
+          if [ -f output/qa.json ]; then
+            errs=$(jq -r '.errs // .errors // "?"' output/qa.json 2>/dev/null)
+            warns=$(jq -r '.warnings // .warn // "?"' output/qa.json 2>/dev/null)
+            hints=$(jq -r '.hints // .hint // "?"' output/qa.json 2>/dev/null)
+            printf '### QA — %s @ %s (%s)\n\n- Errors: **%s**\n- Warnings: %s\n- Hints: %s\n- SUSHI step: %s · IG Publisher step: %s\n' \
+              "${repo_name}" "${GITHUB_REF_NAME}" "${ts}" "${errs}" "${warns}" "${hints}" \
+              "${{ steps.sushi.outcome }}" "${{ steps.igbuild.outcome }}" >> "${GITHUB_STEP_SUMMARY}"
+          else
+            printf '### QA — %s @ %s (%s)\n\n:warning: no output/qa.json produced (build did not reach QA). SUSHI: %s · IG Publisher: %s\n' \
+              "${repo_name}" "${GITHUB_REF_NAME}" "${ts}" "${{ steps.sushi.outcome }}" "${{ steps.igbuild.outcome }}" >> "${GITHUB_STEP_SUMMARY}"
+          fi
+
+      - name: Upload QA artifact (timestamped)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: qa-${{ env.QA_REPO }}-${{ env.QA_REF_SAFE }}-${{ env.QA_TIMESTAMP }}
+          path: |
+            output/qa.json
+            output/qa.txt
+            output/qa.html
+          if-no-files-found: warn
 
       - name: Fix output directory permissions
         run: sudo chown -R $USER:$USER output
