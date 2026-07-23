@@ -1,0 +1,11 @@
+name: Tech-test — Publish IG (reusable)
+
+on:
+  push:
+    branches: [ "tech-test-2026-07-23" ]
+  workflow_dispatch:
+
+jobs:
+  publish-ig:
+    uses: medizininformatik-initiative/kerndatensatz-meta/.github/workflows/ci_ig_publish_pages.yml@feat/reusable-ig-publish-pages-2026-07-23
+    secrets: inherit
