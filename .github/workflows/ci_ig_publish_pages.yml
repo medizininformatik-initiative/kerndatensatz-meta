@@ -1,0 +1,291 @@
+# Reusable workflow: Build the HL7 FHIR IG Publisher output and publish it to
+# GitHub Pages under a collision-free, per-branch namespace (branches/<ref>/).
+#
+# Central MII pattern — call it from a module like the validation reusables:
+#
+#   jobs:
+#     publish-ig:
+#       uses: medizininformatik-initiative/kerndatensatz-meta/.github/workflows/ci_ig_publish_pages.yml@master
+#       secrets: inherit          # provides CDS_DEV_CLIENT_* (org/repo secrets)
+#
+# Prerequisite (Admin, once per repo): Settings -> Pages -> Source. Either
+#   - "Deploy from a branch" = gh-pages (legacy; matches Onkologie), or
+#   - "GitHub Actions" together with repo/org variable PAGES_ACTIONS_ENABLED=true.
+# In both cases the per-branch preview lives at
+#   https://<owner>.github.io/<repo>/branches/<branch>/
+name: Reusable — Build & Publish IG to GitHub Pages
+
+on:
+  workflow_call:
+    inputs:
+      ref:
+        description: Git ref to build. Defaults to the ref that triggered the caller.
+        required: false
+        type: string
+        default: ''
+      ig_ini:
+        description: Path to the IG Publisher ig.ini.
+        required: false
+        type: string
+        default: ig.ini
+      tx_server:
+        description: Terminology server URL passed to the IG Publisher (-tx).
+        required: false
+        type: string
+        default: http://127.0.0.1:8090/fhir
+      default_branch:
+        description: Branch treated as default (root reserved for formal publish; never published as a preview subdir).
+        required: false
+        type: string
+        default: main
+    secrets:
+      CDS_DEV_CLIENT_CERT:
+        description: Base64 client certificate for the CDS dev terminology server (mTLS).
+        required: false
+      CDS_DEV_CLIENT_KEY:
+        description: Base64 encrypted client key for the CDS dev terminology server (mTLS).
+        required: false
+      CDS_DEV_CLIENT_CERT_PASSWORD:
+        description: Password for the encrypted client key.
+        required: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+  pull-requests: write
+  issues: write
+
+concurrency:
+  # One gh-pages writer per repository; queue rather than cancel to avoid
+  # publishing a partially-written gh-pages tree.
+  group: gh-pages-writes-${{ github.repository }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.ref }}
+
+      - name: Install Graphviz
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y graphviz
+
+      - name: Create NGINX config and certificates (CDS terminology proxy)
+        shell: bash
+        env:
+          CDS_DEV_CLIENT_CERT: ${{ secrets.CDS_DEV_CLIENT_CERT }}
+          CDS_DEV_CLIENT_KEY: ${{ secrets.CDS_DEV_CLIENT_KEY }}
+          CDS_DEV_CLIENT_CERT_PASSWORD: ${{ secrets.CDS_DEV_CLIENT_CERT_PASSWORD }}
+        run: |
+          set -euo pipefail
+          if [ -z "${CDS_DEV_CLIENT_CERT}" ]; then
+            echo "::error::CDS_DEV_CLIENT_CERT is empty. Pass 'secrets: inherit' from the calling workflow so the org/repo CDS_DEV_CLIENT_* secrets are available."
+            exit 1
+          fi
+          mkdir -p nginx/certs
+          # Shared NGINX config lives in this repo (kerndatensatz-meta).
+          curl -sSL -o nginx/nginx.conf https://raw.githubusercontent.com/medizininformatik-initiative/kerndatensatz-meta/refs/heads/master/.github/workflows/nginx.conf
+          echo "$CDS_DEV_CLIENT_CERT" | base64 -d > nginx/certs/client-cert.pem
+          echo "$CDS_DEV_CLIENT_KEY" | base64 -d > nginx/certs/client-key-encrypted.key
+          openssl rsa -in nginx/certs/client-key-encrypted.key -out nginx/certs/client-key.key -passin env:CDS_DEV_CLIENT_CERT_PASSWORD
+
+      - name: Start NGINX Proxy
+        run: |
+          docker run -d --name nginx-proxy \
+            -v $PWD/nginx/nginx.conf:/etc/nginx/nginx.conf:ro \
+            -v $PWD/nginx/certs:/etc/nginx/certs:ro \
+            -p 8090:80 \
+            nginx:alpine
+          sleep 5
+          for i in {1..10}; do
+            if curl --head --silent --fail http://localhost:8090; then
+              echo "NGINX is responding."
+              break
+            else
+              echo "NGINX not responding. Attempt $i"
+              sleep 2
+              if [ $i -eq 10 ]; then
+                echo "NGINX is still not responding after $i attempts."
+                docker logs nginx-proxy
+                exit 1
+              fi
+            fi
+          done
+
+      - name: Run SUSHI
+        run: docker run --rm --network host -v $PWD:/workspace -v /usr/bin/dot:/usr/local/bin/dot:ro -v /usr/lib/x86_64-linux-gnu:/usr/host/lib:ro -e LD_LIBRARY_PATH=/usr/host/lib -w /workspace ghcr.io/gefyra/ig-publisher-with-snapshot-support:latest sushi .
+
+      - name: Build IG
+        run: |
+          set -euo pipefail
+          docker run --rm --network host -v $PWD:/workspace -v /usr/bin/dot:/usr/local/bin/dot:ro -v /usr/lib/x86_64-linux-gnu:/usr/host/lib:ro -e LD_LIBRARY_PATH=/usr/host/lib -w /workspace ghcr.io/gefyra/ig-publisher-with-snapshot-support:latest sh -c "igpublisher -ig ${{ inputs.ig_ini }} -tx ${{ inputs.tx_server }}"
+          test -s output/index.html
+          test -s output/qa.json
+          jq empty output/qa.json
+
+      - name: Cleanup NGINX
+        if: always()
+        run: |
+          docker stop nginx-proxy || true
+          docker rm nginx-proxy || true
+
+      - name: Fix output directory permissions
+        run: sudo chown -R $USER:$USER output
+
+      # Optional, module-local post-processing helpers. Skipped when the module
+      # does not ship them (keeps the reusable workflow module-agnostic).
+      - name: Restore localized table backgrounds (optional)
+        shell: bash
+        run: |
+          if [ -f scripts/copy-localized-table-backgrounds.sh ]; then
+            bash scripts/copy-localized-table-backgrounds.sh output
+          else
+            echo "scripts/copy-localized-table-backgrounds.sh not present — skipping."
+          fi
+
+      - name: Point publication history links to GitHub Pages (optional)
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ -f scripts/fix-publication-history-links.mjs ]; then
+            canonical="$(jq -er '.canonical' package.json)"
+            publication_base="https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}"
+            node scripts/fix-publication-history-links.mjs --headers-only output "${canonical}" "${publication_base}"
+          else
+            echo "scripts/fix-publication-history-links.mjs not present — skipping."
+          fi
+
+      - name: Upload Build Results
+        uses: actions/upload-artifact@v4
+        with:
+          name: fhir-ig
+          path: output
+
+      - name: Publish to GitHub Pages (gh-pages branch, per-branch subdir)
+        if: github.event_name == 'push' && startsWith(github.ref, 'refs/heads/') && github.ref_name != inputs.default_branch
+        shell: bash
+        env:
+          REPO: ${{ github.repository }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GIT_AUTHOR_NAME: github-actions[bot]
+          GIT_AUTHOR_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+          PAGES_ACTIONS_ENABLED: ${{ vars.PAGES_ACTIONS_ENABLED }}
+        run: |
+          set -euo pipefail
+          remote_url="https://x-access-token:${GITHUB_TOKEN}@github.com/${REPO}.git"
+          rm -rf gh-pages
+          if git ls-remote --heads "${remote_url}" gh-pages | grep -q "."; then
+            git clone --depth 1 --branch gh-pages "${remote_url}" gh-pages
+          else
+            git clone "${remote_url}" gh-pages
+            cd gh-pages
+            git config user.name "${GIT_AUTHOR_NAME}"
+            git config user.email "${GIT_AUTHOR_EMAIL}"
+            git checkout --orphan gh-pages
+            git rm -rf . >/dev/null 2>&1 || true
+            touch .nojekyll
+            git add .nojekyll
+            git commit -m "chore: initialize gh-pages"
+            git push --set-upstream origin gh-pages
+            cd ..
+          fi
+          # Root and version-like paths are reserved for formal publication.
+          # All CI previews live below a collision-free namespace.
+          branch_dir="gh-pages/branches/${GITHUB_REF_NAME}"
+          rm -rf "${branch_dir}"
+          mkdir -p "${branch_dir}"
+          cp -R "output/." "${branch_dir}/"
+          echo "Published ${GITHUB_REF_NAME} to branches/${GITHUB_REF_NAME}/"
+          cd gh-pages
+          git config user.name "${GIT_AUTHOR_NAME}"
+          git config user.email "${GIT_AUTHOR_EMAIL}"
+          git add --all
+          if git diff --cached --quiet; then
+            echo "No updates to publish."
+            exit 0
+          fi
+          git commit -m "chore: update ${GITHUB_REF_NAME} pages"
+          git push origin gh-pages
+
+      - name: Configure GitHub Pages
+        if: github.event_name == 'push' && startsWith(github.ref, 'refs/heads/') && github.ref_name != inputs.default_branch && vars.PAGES_ACTIONS_ENABLED == 'true'
+        uses: actions/configure-pages@v5
+
+      - name: Upload GitHub Pages artifact
+        if: github.event_name == 'push' && startsWith(github.ref, 'refs/heads/') && github.ref_name != inputs.default_branch && vars.PAGES_ACTIONS_ENABLED == 'true'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: gh-pages
+
+  deploy:
+    name: Deploy GitHub Pages
+    if: github.event_name == 'push' && startsWith(github.ref, 'refs/heads/') && github.ref_name != inputs.default_branch && vars.PAGES_ACTIONS_ENABLED == 'true'
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      contents: read
+      id-token: write
+      pages: write
+    steps:
+      - name: Deploy Pages artifact
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  announce:
+    name: Report preview deployment
+    if: github.event_name == 'push' && startsWith(github.ref, 'refs/heads/') && github.ref_name != inputs.default_branch
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+      pull-requests: write
+    steps:
+      - name: Announce published URL
+        shell: bash
+        run: |
+          set -euo pipefail
+          url="https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}/branches/${GITHUB_REF_NAME}/"
+          echo "Published to ${url}"
+          printf '### Deployment\n[Open published IG for branch `%s`](%s)\n' "${GITHUB_REF_NAME}" "${url}" >> "${GITHUB_STEP_SUMMARY}"
+
+      - name: Upsert PR comment with published URL
+        id: preview_comment
+        continue-on-error: true
+        uses: actions/github-script@v7
+        env:
+          BRANCH_NAME: ${{ github.ref_name }}
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const branch = process.env.BRANCH_NAME;
+            const marker = '<!-- ig-publish-url -->';
+            const url = `https://${owner}.github.io/${repo}/branches/${branch}/`;
+            const body = `${marker}\n### Deployment\n[Open published IG for branch \`${branch}\`](${url})`;
+            const { data: prs } = await github.rest.pulls.list({ owner, repo, state: 'open', per_page: 100 });
+            const pr = prs.find(p => p.head && p.head.ref === branch);
+            if (!pr) { core.info(`No open PR found for branch ${branch}; skipping PR comment.`); return; }
+            const { data: comments } = await github.rest.issues.listComments({ owner, repo, issue_number: pr.number, per_page: 100 });
+            const existing = comments.find(c => typeof c.body === 'string' && c.body.includes(marker));
+            if (existing) {
+              await github.rest.issues.updateComment({ owner, repo, comment_id: existing.id, body });
+              core.info(`Updated IG publish URL comment on PR #${pr.number}`);
+            } else {
+              await github.rest.issues.createComment({ owner, repo, issue_number: pr.number, body });
+              core.info(`Created IG publish URL comment on PR #${pr.number}`);
+            }
+
+      - name: Warn when the PR comment could not be updated
+        if: steps.preview_comment.outcome == 'failure'
+        shell: bash
+        run: |
+          echo "::warning::The preview was deployed successfully, but the workflow could not update the PR comment. The deployment URL remains available in this job's summary."
