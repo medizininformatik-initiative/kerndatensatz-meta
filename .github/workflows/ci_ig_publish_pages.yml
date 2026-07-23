@@ -184,9 +184,6 @@ jobs:
             output/qa.html
           if-no-files-found: warn
 
-      - name: Fix output directory permissions
-        run: sudo chown -R $USER:$USER output
-
       # Optional, module-local post-processing helpers. Skipped when the module
       # does not ship them (keeps the reusable workflow module-agnostic).
       - name: Restore localized table backgrounds (optional)
