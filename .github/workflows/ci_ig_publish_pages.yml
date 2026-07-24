@@ -125,7 +125,7 @@ jobs:
       - name: Run SUSHI
         id: sushi
         continue-on-error: true
-        run: docker run --rm --network host -v $PWD:/workspace -v /usr/bin/dot:/usr/local/bin/dot:ro -v /usr/lib/x86_64-linux-gnu:/usr/host/lib:ro -e LD_LIBRARY_PATH=/usr/host/lib -w /workspace ghcr.io/gefyra/ig-publisher-with-snapshot-support:latest sushi .
+        run: docker run --rm --network host -v $PWD:/workspace -v /usr/bin/dot:/usr/local/bin/dot:ro -v /usr/lib/x86_64-linux-gnu:/usr/host/lib:ro -e LD_LIBRARY_PATH="/usr/host/lib:$LD_LIBRARY_PATH" -w /workspace ghcr.io/gefyra/ig-publisher-with-snapshot-support:latest sushi .
 
       - name: Note SUSHI result
         if: steps.sushi.outcome == 'failure'
@@ -138,7 +138,7 @@ jobs:
         id: igbuild
         continue-on-error: true
         run: |
-          docker run --rm --network host -v $PWD:/workspace -v /usr/bin/dot:/usr/local/bin/dot:ro -v /usr/lib/x86_64-linux-gnu:/usr/host/lib:ro -e LD_LIBRARY_PATH=/usr/host/lib -w /workspace ghcr.io/gefyra/ig-publisher-with-snapshot-support:latest sh -c "igpublisher -ig ${{ inputs.ig_ini }} -tx ${{ inputs.tx_server }}"
+          docker run --rm --network host -v $PWD:/workspace -v /usr/bin/dot:/usr/local/bin/dot:ro -v /usr/lib/x86_64-linux-gnu:/usr/host/lib:ro -e LD_LIBRARY_PATH="/usr/host/lib:$LD_LIBRARY_PATH" -w /workspace ghcr.io/gefyra/ig-publisher-with-snapshot-support:latest sh -c "igpublisher -ig ${{ inputs.ig_ini }} -tx ${{ inputs.tx_server }}"
 
       - name: Cleanup NGINX
         if: always()
