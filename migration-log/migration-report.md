@@ -126,7 +126,7 @@ The exact generated row set, including line numbers and excerpts, is `migration-
 
 **REV-2 — English translation quality** · severity high · Gate C
 
-- **What it is:** German is authoritative and the English default pages were machine translated. Filename parity is complete, but semantic/editorial quality is human-only.
+- **What it is:** The authoritative migration source was the German narrative. The English default pages were machine translated from it. Filename parity is complete, but semantic/editorial quality is human-only.
 - **Where:** `input/pagecontent`, `input/translations/de/pagecontent`, and both intro-note trees.
 - **If nobody acts:** unreviewed English prose and resource descriptions ship as the default language.
 - **Next action:** review all Gate-C markers, correct both language mirrors as needed, and remove review boxes.
