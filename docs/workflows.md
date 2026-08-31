@@ -10,10 +10,9 @@ This repo has **two lives**, and keeping them apart is essential:
 Read both. A reader must never confuse "how this template repo releases itself" with
 "how a module I create releases itself." Details live in the linked docs.
 
-The two tables below cover **every** file in `.github/workflows/` — 12 workflows:
-three that belong to the template repository only (Layer 1) and nine that a created
-module inherits (Layer 2). If you add a workflow, add a row; a workflow that is
-not in one of these tables is undocumented, and that is a defect.
+The two tables below describe the active workflow model. Legacy validation
+workflows retained under `.github/disabled-workflows/` are provenance only and
+are not loaded by GitHub Actions.
 
 ## Branching (both layers)
 
@@ -68,7 +67,8 @@ Everything below **propagates** to a module (the bootstrap keeps it). This is ho
 | --- | --- | --- | --- | --- | --- |
 | `ig-publisher.yml` | push to any branch except `main`/`gh-pages`/`fsh-generated`; `workflow_dispatch` | Builds the IG (SUSHI + IG Publisher) and deploys a preview. **On this template repo only**, the self-check build also demonstrates a version comparison at `comparison-demo/` in the preview, rendered with the FHIR validator's `-compare` (the publisher's own `version-comparison` needs a formal publication history at the canonical, which the scaffold never has): the last dev preview's package is relabelled `2027.0.0-draft.0` and compared to the build — on `dev` a self-comparison (what a no-changes report looks like), on a feature branch the real delta against `dev`. A created module enables `version-comparison` from its second formal publication. **On this template repo only**, every preview deploy also regenerates the `gh-pages` root index (`scripts/gen-pages-index.mjs`) | `gh-pages/branches/<branch>/` + PR comment | `ENABLE_PREVIEW` (ON) · `ENABLE_VERSION_COMPARISON` (ON; `false` disables the whole feature — the publisher's `version-comparison` in every build workflow, including `release-demo.yml`, *and* the template repo's demo report) | no |
 | `cleanup-gh-pages.yml` | schedule (Sun 00:00 UTC); `workflow_dispatch` (input `dry_run`: list stale previews without deleting) | Prunes previews of deleted branches; keeps root + version paths | pruned `gh-pages` | `ENABLE_PREVIEW` (ON) | no |
-| `validation.yml` | push to `dev`/`main`; any pull request; `workflow_dispatch` | Runs the **MII reusable validation** workflows | validation report | `ENABLE_VALIDATION` (ON) | no (skips on the template repo itself) |
+| `main.yml` | push/PR to `dev`/`main`; `workflow_dispatch` | Runs the module-specific SearchParameter integration tests | test result | — | no |
+| `ci_search_param_tests.yml` | called by `main.yml` | Exercises the SearchParameters against Blaze | test result | — | no |
 | `convention-check.yml` | push/PR to `dev`/`main`/`release/**`; `workflow_dispatch` (input `strict`: force release mode) | The **single** convention checker: metadata-contract patterns (hard on release branches) + the optional-page decision gate (M9, `docs/optional-pages.md`) + the language-model guard (`scripts/language-model-check.sh`) + the offline test suites (`scripts/*.test.mjs`, and on the template repo `scripts/*.template-test.mjs`); the advisory repo ↔ MII-wiki drift review is a manual review, not part of this workflow | check result | `ENABLE_CONVENTION_CHECK` (ON) | no |
 | `module-release.yml` | push of a CalVer tag `vYYYY.n.n`; `release: published` (the announcement); `workflow_dispatch` (dry run) | Builds, creates the GitHub Release, announces to the MII Zulip (topic *Releases*), hands off to `go-publish` | release | `ENABLE_MODULE_RELEASE` (ON) · `ENABLE_ZULIP_ANNOUNCE` (ON) | production publish is gated |
 | `go-publish.yml` | `workflow_dispatch` **only** | Production `-go-publish`; `publish:false` = full dry run by default | published IG | — | **always human-triggered** |
@@ -77,13 +77,9 @@ Everything below **propagates** to a module (the bootstrap keeps it). This is ho
 | `sync-ig-template.yml` | schedule (Mon 05:00 UTC); `workflow_dispatch`; PR to `dev` (check only) | Keeps the vendored `ig-template/` (the offline/reproducibility fallback behind the URL default in `ig.ini`) in step with `ig-template-mii-kds@dev`; opens a PR on drift, fails a PR whose mirror is stale | sync PR | `ENABLE_TEMPLATE_SYNC` (ON) | never auto-merges |
 
 Notes:
-- **The reusable validation needs two files in the repo root**, at fixed paths the
-  MII workflows read: `qc/custom.rules.yaml` (the Simplifier quality-control rule
-  set — MII naming conventions) and `advisor.json` (the errors the HL7 Java
-  validator may ignore). Both ship with the template; `qc/custom.rules.yaml`
-  carries `{{MODULE_SLUG}}`/`{{MODULE_NAME}}`/`{{CALVER_VERSION}}` placeholders
-  like the rest of the scaffold. The .NET job is configured upstream to always
-  pass, so a naming violation appears in its log, not as a red check.
+- **FHIR validation is performed by the IG Publisher builds.** The former
+  Simplifier .NET and standalone Java-validator workflows are retained under
+  `.github/disabled-workflows/` for provenance and are not active.
 - **Terminology** is auto-selected, not a toggle: builds use **SU-TermServ** when the
   client-cert secrets are present, else fall back to HL7 `tx.fhir.org` with a notice.
 - **Pages mode** (`vars.PAGES_ACTIONS_ENABLED`) chooses the gh-pages push vs the
@@ -111,7 +107,6 @@ covers the *secrets* that enable the gated features.
 | --- | --- | --- |
 | IG build + preview | `ENABLE_PREVIEW` | ON |
 | Preview deploy path | `PAGES_ACTIONS_ENABLED` | unset (gh-pages push mode) |
-| Reusable validation | `ENABLE_VALIDATION` | ON |
 | Convention check | `ENABLE_CONVENTION_CHECK` | ON |
 | Dependency check | `ENABLE_DEPENDENCY_CHECK` | ON |
 | Security scan | `ENABLE_SECURITY_SCAN` | ON |
@@ -130,10 +125,8 @@ The rows marked **template only** have no effect in a module: the bootstrap
 deletes `release-please.yml`, `notify-zulip.yml` and `release-demo.yml`, so a
 module's announcement is governed by `ZULIP_API_KEY` and `ENABLE_ZULIP_ANNOUNCE`
 alone.
-`IG_TEMPLATE_REPO_URL`, `SUSHI_VERSION` and `JAVA_VALIDATOR_VERSION` are plain
-variables, not toggles — the last two override the versions `validation.yml`
-passes to the MII reusable workflows, and unset means the pinned defaults there
-(see [maintenance.md](maintenance.md#where-each-pin-lives-single-source-of-truth)).
+`IG_TEMPLATE_REPO_URL` is a plain variable, not a toggle (see
+[maintenance.md](maintenance.md#where-each-pin-lives-single-source-of-truth)).
 
 ---
 
@@ -243,10 +236,6 @@ trigger; dispatch it manually if you want one rendered.
 ## Secrets & enabling the gated features
 
 A module builds and previews without secrets. To enable the optional gated
-features — SU-TermServ terminology (for both the build and the reusable
-validation) and the Zulip release announcement — see
-[docs/secrets.md](secrets.md) for the exact `gh secret set` commands (including
-why one secret set suffices: `validation.yml` passes the `CDS_DEV_CLIENT_CERT`,
-`CDS_DEV_CLIENT_KEY`, and `CDS_DEV_CLIENT_CERT_PASSWORD` secrets through to
-the reusable workflow's `CDS_DEV_CLIENT_*` inputs at the call site). The
-workflows are already wired.
+features — SU-TermServ terminology for Publisher builds and the Zulip release
+announcement — see [docs/secrets.md](secrets.md) for the exact `gh secret set`
+commands. The workflows are already wired.

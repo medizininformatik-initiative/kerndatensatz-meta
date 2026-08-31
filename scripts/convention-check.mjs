@@ -191,7 +191,12 @@ export function evaluate({ sushiConfig = null, igIni = null, packageJson = null,
 
     field("M6 version", readTopLevel(sushiConfig, "version"), (v) => {
       if (isPlaceholder(v)) return { ok: true, parameterized: true };
-      return { ok: /^\d{4}\.\d+\.\d+$/.test(v), parameterized: false, reason: "version must be CalVer YYYY.n.n (modules never use SemVer)" };
+      const calverWithOptionalPrerelease = /^\d{4}\.\d+\.\d+(?:-(?:0|[1-9]\d*|[0-9A-Za-z-]*[A-Za-z-][0-9A-Za-z-]*)(?:\.(?:0|[1-9]\d*|[0-9A-Za-z-]*[A-Za-z-][0-9A-Za-z-]*))*)?$/;
+      return {
+        ok: calverWithOptionalPrerelease.test(v),
+        parameterized: false,
+        reason: "version must have a CalVer YYYY.n.n core with an optional SemVer-style prerelease suffix",
+      };
     });
 
     // M7 — no floating label anywhere (always hard, both branches).

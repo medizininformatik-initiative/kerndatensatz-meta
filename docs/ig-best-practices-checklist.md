@@ -122,8 +122,8 @@ None of this is an MII release gate. What the MII publishes for a KDS module is
 the [KDS governance, v4.0 (7 May 2026)](https://www.medizininformatik-initiative.de/sites/default/files/2026-07/KDS-Governance-v4.pdf)
 and the [Module Release Workflow](https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Module-Release-Workflow)
 in the meta wiki; neither makes an item below a condition of releasing. The gates
-that really stop a release here are the MII reusable validation workflow and, on
-a release branch, `convention-check` (see [release.md](release.md)). The rest is
+that really stop a release here are the IG Publisher build and, on a release
+branch, `convention-check` (see [release.md](release.md)). The rest is
 what this scaffold recommends:
 
 1. Every `[TODO]` prompt is resolved in **both** page trees —
@@ -136,7 +136,7 @@ what this scaffold recommends:
    security-and-privacy section and this scaffold ships the page pre-structured;
    whether an unfilled section blocks your release is your project's decision.
 3. Read `output/qa.html` and `input/ignoreWarnings.txt`. This scaffold aims for 0
-   QA errors and no unreviewed ignore entries; the authoritative error gate
-   remains the reusable validation workflow.
+   QA errors and no unreviewed ignore entries; the Publisher QA report is the
+   authoritative validation result.
 4. `convention-check` passes on the release branch.
 5. Both languages render: menu, footer and pages (see the translation recipe).

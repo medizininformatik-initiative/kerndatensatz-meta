@@ -57,7 +57,7 @@ prerelease, and the preview build labels itself `2027.0.0-draft.1` this way).
 | Release step | Who | Where |
 | --- | --- | --- |
 | Prepare the release branch, bump the version, open the PR, merge | **Human** | your machine + GitHub |
-| Reusable FHIR validation on the release PR (error gate) | Automated | `validation.yml` |
+| IG Publisher build on the release branch | Automated | `ig-publisher.yml` |
 | Push the CalVer tag | **Human** | `git push origin v2026.0.1` |
 | Build the IG from the tagged commit (buildability gate) | Automated | `module-release.yml` → `build` |
 | Create the **draft** GitHub Release with generated notes | Automated | `module-release.yml` → `release` |
@@ -70,12 +70,8 @@ prerelease, and the preview build labels itself `2027.0.0-draft.1` this way).
 > public. Publishing is the deliberate human act that fires the announcement.
 
 > **Why the build gate:** a tag that does not build never becomes a release, and
-> the build captures `package.tgz` as a workflow artifact. QA *counts* are
-> reported but not required to be zero — the intended error gate is the
-> reusable validation workflow, which runs on every PR. **Known gap:** its
-> Java job reads a repo-root `package.json` this scaffold does not ship, so on
-> a created module that job currently fails until the `package.json` decision
-> in [issue #141](../../../issues/141) is made; the .NET QC job is unaffected.
+> the build captures `package.tgz` and the Publisher QA report as workflow
+> artifacts. Review that report before publishing the draft release.
 
 ---
 
@@ -190,9 +186,9 @@ git push origin release/v2026.0.1
 ```
 
 Open a PR from `release/v2026.0.1` into `dev` (then promote `dev` → `main` per
-`CONTRIBUTING.md`). The **reusable FHIR validation workflow** (`validation.yml`) runs on the
-PR and is the authoritative error gate (the wiki's `DOTNET_FHIR_VALIDATION` /
-`JAVA_FHIR_VALIDATION`). Wait for it to pass before merging.
+`CONTRIBUTING.md`). Pushing the release branch runs the **IG Publisher build and
+preview** (`ig-publisher.yml`). Review its QA report and wait for the workflow to
+pass before merging.
 
 > **Why validate before tagging:** the tag is the point of no return — it drives
 > release creation. Catch FHIR errors on the PR, not after the tag is public.

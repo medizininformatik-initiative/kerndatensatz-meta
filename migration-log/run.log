@@ -674,3 +674,6 @@ Text the migration WROTE, not carried. Each row renders as a highlighted box on 
 2026-08-31T18:22:47Z  INFO   5.6  sushi-build  done  cmd=`env npm_config_cache=/tmp/mii-meta-npm-cache npx --offline --yes fsh-sushi@3.20.0 .`  exit=0 raw_log=migration-log/sushi-approved.log raw_log_lines=46
 2026-08-31T18:26:21Z  INFO   8  migration-report  state=gates-A-B-C-approved derived_markers=0 fql_findings=0 page_parity=18/18 title_units=19/19 verifier=71/11/16 next_gate=D publication=false
 2026-08-31T18:26:21Z  INFO   D  gate-pending  requirements=green-CI-SU-TermServ,M6-policy,upstream-searchform,governance,legacy-cleanup publication=false
+2026-08-31T20:07:03Z  INFO   D  legacy-validation-disabled  decision=user-approved dotnet=.github/disabled-workflows/ci_dotnet_validation.yml java=.github/disabled-workflows/ci_java_validation.yml caller=.github/disabled-workflows/validation.yml publisher=.github/workflows/ig-publisher.yml searchparam=.github/workflows/main.yml publication=false
+2026-08-31T20:17:20Z  INFO   5.6  convention-check  start  cmd=`node scripts/convention-check.mjs --release`  raw_log=migration-log/convention-check.log prev_raw_log=migration-log/convention-check.prev.log
+2026-08-31T20:17:20Z  INFO   5.6  convention-check  done  cmd=`node scripts/convention-check.mjs --release`  exit=0 raw_log=migration-log/convention-check.log raw_log_lines=19

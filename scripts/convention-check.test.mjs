@@ -41,6 +41,12 @@ function m5(canonical, release = true) {
   return findings.find((f) => f.id === "M5 canonical");
 }
 
+function m6(version, release = true) {
+  const sushi = CONCRETE.replace('version: "2026.0.1"', `version: "${version}"`);
+  const { findings } = evaluate({ sushiConfig: sushi, igIni: CONCRETE_IGINI, release });
+  return findings.find((f) => f.id === "M6 version");
+}
+
 test("M5 accepts all three MII canonical spaces (ext/core/bare are published reality)", () => {
   // Measured 2026-08-27 across the medizininformatik-initiative repos:
   // ext ×14, core ×7, bare ×5 — and a canonical is immutable, so the check
@@ -71,6 +77,34 @@ test("M5 still rejects what is genuinely outside the canonical universe", () => 
 test("M5 keeps placeholder handling in the ext/core spaces", () => {
   const finding = m5("https://www.medizininformatik-initiative.de/fhir/ext/modul-{{MODULE_SLUG}}", false);
   assert.equal(finding.status, "parameterized");
+});
+
+test("M6 accepts a CalVer core with an optional SemVer-style prerelease", () => {
+  for (const version of [
+    "2027.0.0",
+    "2027.0.0-ballot",
+    "2027.0.0-ballot.rc1",
+    "2027.0.0-rc.1",
+    "2027.0.0-draft.1",
+    "2027.0.0-0",
+  ]) {
+    assert.equal(m6(version).status, "pass", `${version} must pass M6`);
+  }
+});
+
+test("M6 rejects malformed cores and prerelease identifiers", () => {
+  for (const version of [
+    "1.2.3-rc.1",
+    "2027.0.0-",
+    "2027.0.0-.rc1",
+    "2027.0.0-rc..1",
+    "2027.0.0-01",
+    "2027.0.0-rc_1",
+    "2027.0.0+build.1",
+    "2027.0.0-rc.1+build.1",
+  ]) {
+    assert.equal(m6(version).status, "fail", `${version} must fail M6`);
+  }
 });
 
 test("extractors read values, strip quotes and comments", () => {

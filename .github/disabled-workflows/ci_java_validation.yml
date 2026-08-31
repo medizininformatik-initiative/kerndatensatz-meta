@@ -1,3 +1,5 @@
+# Disabled after migration to the IG Publisher. Retained for provenance only;
+# GitHub Actions loads workflows only from .github/workflows/.
 # Modified from: https://github.com/FirelyTeam/firely-terminal-pipeline
 # Copyright (c) 2021 Firely
 # Licensed under the MIT License. See the LICENSE file in the project for more information: https://github.com/FirelyTeam/firely-terminal-pipeline/blob/main/LICENSE

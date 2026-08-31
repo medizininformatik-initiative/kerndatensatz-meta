@@ -1,3 +1,5 @@
+# Disabled after migration to the IG Publisher. Retained for provenance only;
+# GitHub Actions loads workflows only from .github/workflows/.
 name: CI DOTNET FHIR Validation
 
 on:

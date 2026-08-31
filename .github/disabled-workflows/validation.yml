@@ -1,3 +1,5 @@
+# Disabled after migration to the IG Publisher. Retained for provenance only;
+# GitHub Actions loads workflows only from .github/workflows/.
 # FHIR validation via the MII reusable validation workflows.
 #
 # Purpose:   Validate the module's FHIR conformance resources and examples by

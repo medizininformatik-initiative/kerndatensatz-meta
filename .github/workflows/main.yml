@@ -1,94 +1,12 @@
-name: CI (FHIR Validation & SearchParameter Testing & Release)
+name: CI SearchParameter Testing
 
 on:
   push:
-    branches: [ master, main ]
-    tags:
-    - 'v[0-9]+.[0-9]+.[0-9]+*'
+    branches: [dev, main]
   pull_request:
-    branches: [ master, main ]
+    branches: [dev, main]
   workflow_dispatch:
-  release:
-    types: [published]
 
 jobs:
-  DOTNET_FHIR_VALIDATION:
-    if: github.event_name != 'release'
-    uses: ./.github/workflows/ci_dotnet_validation.yml
-    with:
-      ref: ${{ github.event.pull_request.head.ref || github.ref }}
-      SUSHI_VERSION: ${{ vars.SUSHI_VERSION }}
-    secrets: inherit
-
-  JAVA_FHIR_VALIDATION:
-    if: github.event_name != 'release'
-    uses: ./.github/workflows/ci_java_validation.yml
-    with:
-      ref: ${{ github.event.pull_request.head.ref || github.ref }}
-      PATH_TO_CONFORMANCE_RESOURCES: fsh-generated/resources
-      PATH_TO_EXAMPLES: fsh-generated/resources
-      JAVA_VALIDATION_ENABLED: true
-      JAVA_VALIDATION_OPTIONS: ${{ vars.JAVA_VALIDATION_OPTIONS }}
-      JAVA_VALIDATOR_VERSION: ${{ vars.JAVA_VALIDATOR_VERSION }}
-    secrets: inherit
-
   CI_SEARCH_PARAM_TEST:
-    if: github.event_name != 'release'
     uses: ./.github/workflows/ci_search_param_tests.yml
-
-  RELEASE:
-    if: startsWith(github.ref, 'refs/tags/v') && github.event_name != 'release'
-    needs: [DOTNET_FHIR_VALIDATION, JAVA_FHIR_VALIDATION, CI_SEARCH_PARAM_TEST]
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-        
-      - name: Prepare version
-        id: prep-version
-        run: |
-          VERSION=${GITHUB_REF#refs/tags/}
-          echo "version=${VERSION}" >> $GITHUB_OUTPUT
-          
-      - name: Release
-        uses: softprops/action-gh-release@v2
-        with:
-          name: "${{ steps.prep-version.outputs.version }}"
-          draft: true
-          prerelease: ${{ contains(steps.prep-version.outputs.version, '-') }}
-          generate_release_notes: true
-          body: |
-            ## MII IG Meta Release ${{ steps.prep-version.outputs.version }}
-            
-            <!-- DELETE START -->
-            Download the FHIR package from Simplifier and manually attach it to this release.
-            <!-- DELETE END -->
-            
-            ### Changes
-
-            <!-- DELETE START -->
-            Add your own release notes here.
-            <!-- DELETE END -->
-
-            See the auto-generated release notes below.
-
-  NOTIFY_ZULIP:
-    if: github.event_name == 'release' && github.event.action == 'published'
-    runs-on: ubuntu-latest
-    steps:
-      - name: Post release to Zulip
-        uses: zulip/github-actions-zulip/send-message@v1
-        with:
-          api-key: ${{ secrets.ZULIP_API_KEY }}
-          email: "kds-github-bot@mii.zulipchat.com"
-          organization-url: "https://mii.zulipchat.com/"
-          to: "MII-Kerndatensatz"
-          type: "stream"
-          topic: "Releases"
-          content: |
-            **New Release:** `${{ github.event.release.tag_name }}`
-            **Repository:** `${{ github.repository }}`
-
-            ${{ github.event.release.body }}
-            
-            🔗 [View on GitHub](${{ github.event.release.html_url }})

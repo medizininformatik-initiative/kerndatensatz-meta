@@ -24,7 +24,7 @@ The Meta module's 175 source artifacts and authoritative 2025 German guide were 
 - **Build:** SUSHI reports **0 errors**. Before Gate approval, Publisher 2.3.2 produced **0 errors / 269 warnings / 0 broken links**. The post-approval render again produced 5,863 valid HTML pages and 0 broken links, but local terminology validation cannot reproduce CI: public `tx.fhir.org` rejects the approved SNOMED `20260701` manifest pin, while CI uses credentialed SU-TermServ.
 - **QA acceptance bar:** source **3 errors / 269 warnings / 0 broken links**; the clean pre-approval target build was **0 / 269 / 0**. Final terminology QA must run in CI with SU-TermServ; the prose-only approval cleanup has a clean structural render.
 - **Verification:** **71 IDENTISCH · 11 DIVERGIERT · 16 NICHT PRÜFBAR**. Three added C7 differences are the expected result of removing approved review markers; C4/R2 were accepted at Gate B. IDENTISCH means measured and matched; NICHT PRÜFBAR still needs a recorded disposition.
-- **Open for humans:** Gate D only: run CI with SU-TermServ, handle the ballot-version M6 exception, confirm the upstream search-form issue, and obtain governance approval.
+- **Open for humans:** Gate D only: run CI with SU-TermServ, confirm the upstream search-form issue, and obtain governance approval.
 - **Not checked by this migration:** clinical correctness beyond the source, organizational release approval, and publication infrastructure after a branch push.
 
 ## Where the evidence lives
@@ -53,7 +53,7 @@ Where this report and an evidence file disagree, the evidence file wins and this
 |---|---|---|
 | compile FSH | `npx --yes fsh-sushi@3.20.0 .` | 0 errors; CI pins SUSHI 3.20.1 |
 | render/validate | `java -Xmx6g -jar /tmp/mii-publisher-2.3.2.jar -ig ig.ini -tx https://tx.fhir.org -no-sushi` | `qa.txt`: 0 errors |
-| release checks M1–M11 | `node scripts/convention-check.mjs --release` | only M6 fails for the approved ballot prerelease |
+| release checks M1–M11 | `node scripts/convention-check.mjs --release` | all applicable checks pass, including M6 for the approved ballot prerelease |
 | verifier | `python3 /Users/julian/.agents/skills/mii-ig-migration/scripts/verify-migration.py --target . --source /tmp/kerndatensatz-meta-source-baseline.CD9uWM --rendered output --source-lang de --template-latest v0.13.1` | exit 1 until recorded C4/R2 human dispositions are incorporated |
 | derived scan | `python3 /Users/julian/.agents/skills/mii-ig-migration/scripts/derived-scan.py --target .` | 0 markers, 0 findings after Gates A–C approval |
 | page routing | `python3 /Users/julian/.agents/skills/mii-ig-migration/scripts/page-structure-advice.py --source /tmp/kerndatensatz-meta-source-baseline.CD9uWM --target . --out migration-log/page-structure-advice.md --map migration-log/page-map.tsv` | full coverage; re-review any regenerated map |
@@ -66,7 +66,7 @@ The verifier is supplied by `/Users/julian/.agents/skills/mii-ig-migration`, pro
 ## Codes, gates and words used in this report
 
 **Verdicts:** IDENTISCH = checked and equal; DIVERGIERT = checked and different; NICHT PRÜFBAR = needs human review.  
-**M1–M11:** template metadata/release checks. M6 requires plain CalVer and therefore rejects the approved ballot suffix; M9 checks optional-page decisions; M11 checks Security-and-Privacy completion.  
+**M1–M11:** template metadata/release checks. M6 requires a CalVer core and permits an optional SemVer-style prerelease suffix; M9 checks optional-page decisions; M11 checks Security-and-Privacy completion.
 **C/F/P/R/L:** conservation, fidelity, provenance, rendering, and the run log as a second oracle.  
 **Gate A:** identity and artifacts (approved by the user). **Gate B:** narrative. **Gate C:** bilingual quality. **Gate D:** organizational release and merge/publication. Gate 0 is a measurement, not approval.  
 **TODO:REVIEW:** a human-review marker. **Text run:** a source prose fragment of at least 40 characters used by C4.
@@ -80,14 +80,16 @@ The LICENSE already matched the source's CC-BY-4.0 legal text; no relicensing oc
 | FIX-1 | scaffolded module-template v0.13.1 while retaining module identity and artifacts | not committed | template workflows, configuration, bilingual page set | Publisher migration disappears | no; working-tree set |
 | FIX-2 | converted Simplifier/FQL narrative to Publisher pages and intro notes | not committed | English machine translations and generated tables | source narrative no longer renders | no; working-tree set |
 | FIX-3 | generated the approved CapabilityStatement and metadata overview | not committed | menu, pages, derived-content ledger | approved additions disappear | yes conceptually, not yet a commit |
+| FIX-4 | disabled the legacy Simplifier .NET and standalone Java validation workflows after the Publisher switch | not committed | workflow callers, release guidance, secrets and pin documentation | duplicate legacy validation resumes | yes conceptually, not yet a commit |
+| FIX-5 | extended M6 to accept a CalVer core with an optional SemVer-style prerelease suffix | not committed | checker contract, tests and release recipe | approved ballot versions fail strict convention CI | yes conceptually, not yet a commit |
 
-Required: FIX-1 and FIX-2. FIX-3 records explicit user approvals.
+Required: FIX-1 and FIX-2. FIX-3 through FIX-5 record explicit user approvals.
 
 ## ① Decision queue (Gate A — already answered)
 
 No open Gate-A decisions remain. The following decisions are accepted and recorded in `run.log`:
 
-- `2027.0.0-ballot.rc1`; M6's plain-CalVer rejection is an approved exception.
+- `2027.0.0-ballot.rc1`; its CalVer core and SemVer-style prerelease suffix now pass M6.
 - keep direct `hl7.terminology.r4#7.1.0` and `hl7.fhir.uv.extensions.r4#5.2.0`; keep template CRMI machinery.
 - do not re-enable the source IG licence extension or template artifact-versionPolicy.
 - publisher `NUM-DIZ`; expansion manifest; generated CapabilityStatement; metadata overview; recommended routes; default Security-and-Privacy text.
@@ -160,10 +162,9 @@ The exact generated row set, including line numbers and excerpts, is `migration-
 | QA-1 | Publisher warnings | 269 in clean build | unchanged total from source | warning debt remains | module authors triage during ballot review | module team | `qa-build.log` and source baseline |
 | QA-2 | R2 literal braces | 4 verifier rows | template/Publisher plus inherited core prose | orphan search form remains imperfect | REV-3 | template maintainer | `verification.md` |
 | QA-3 | Publisher 2.3.3 available while workflow pins 2.3.2 | 1 | toolchain currency, not migration defect | build remains reproducible on 2.3.2 | consider pin update separately | repository maintainers | P3 row |
-| QA-4 | M6 rejects ballot prerelease suffix | 1 | approved A1 deviation | release convention CI remains red in strict mode | align checker/policy before merge or record exception | TF KDS | `convention-check.log` |
 | QA-5 | final terminology validation unavailable locally | 176/564 environment-dependent errors | CI uses credentialed SU-TermServ; local fallback does not recognize the approved 20260701 manifest pin | local `output/qa.txt` is not release QA | run branch CI with SU-TermServ and require 0 errors | repository maintainer | `qa-approved.log`, `qa-approved-offline.log` |
 
-**Blocking?** QA-4 and QA-5 block Gate D. Gates B/C are approved; the clean pre-approval resource build remains evidence, but the final release candidate needs CI terminology validation.
+**Blocking?** QA-5 blocks Gate D. Gates B/C are approved; the clean pre-approval resource build remains evidence, but the final release candidate needs CI terminology validation.
 
 ## Gate 0 — pre-flight scope
 
@@ -292,13 +293,13 @@ Not run. The remaining findings are narrative judgements, upstream/template beha
 | 5.3 | structure-preserving artifact transfer | 175/175; 0 missing ids/canonicals | `run.log` | one approved CapabilityStatement addition | met |
 | 5.4–5.5 | page routing, FQL/derived scans, bilingual page titles | 0 active FQL findings; 46 review blocks reviewed and cleared; 0 remaining markers; 18/18 page parity; 19/19 title units | scan ledgers | Gates B/C approved | met |
 | 5.6 | SUSHI and Publisher 2.3.2 | 0 SUSHI errors; pre-approval QA 0/269/0; post-approval 5,863 valid HTML pages and 0 broken links | `qa-build.log`, `qa-approved*.log` | final terminology QA requires CI SU-TermServ; public/offline attempts are recorded | structural render met; release QA pending |
-| 5.6 | convention check | M1–M5, M7, M9–M11 pass; M6 fails | `convention-check.log` | approved ballot-version exception, policy action QA-4 | met as approved deviation |
+| 5.6 | convention check | all applicable M1–M11 checks pass, including M6 for `2027.0.0-ballot.rc1` | `convention-check.log` | none | met |
 | 7 | pre/post and same-module analysis | 0 source artifacts missing; only approved CS added | analysis reports | version regression and publisher change explicitly approved | met as approved deviation |
 | 11 | verifier | 71 identical, 11 divergent, 16 not mechanisable | `verification.md` | C4/C7/R2 dispositions recorded; remaining release items in Gate D | incomplete pending Gate D |
 
 **Log:** `migration-log/run.log` — 676 lines, 73 WARN, 8 ERROR, 7 run boundaries at final report generation. Earlier failed attempts remain by design. The package fetch and restricted-network Publisher attempts were superseded; the two source-build attempts led to the preserved source QA baseline; the pre/post exit 1 is the approved version change.  
 **Silent partial success:** none.  
-**Deviations:** A1 ballot prerelease suffix intentionally violates M6; source publisher changed to NUM-DIZ; the generated CapabilityStatement and manifest are approved; Publisher stays at workflow pin 2.3.2 despite 2.3.3 availability.  
+**Deviations:** source publisher changed to NUM-DIZ; the generated CapabilityStatement and manifest are approved; Publisher stays at workflow pin 2.3.2 despite 2.3.3 availability.
 **No publication action was taken.**
 
 ## Sign-off — what must happen before anything is published
@@ -359,6 +360,6 @@ Not run. The remaining findings are narrative judgements, upstream/template beha
 #### Gate D — release
 
 - [ ] Run the branch CI with credentialed SU-TermServ and require Publisher QA to report 0 errors.
-- [ ] Resolve or formally accept the M6 ballot-version policy exception.
+- [x] Confirm M6 accepts the approved `2027.0.0-ballot.rc1` prerelease.
 - [ ] Record the upstream multilingual search-form issue and its ownership.
 - [ ] Obtain organizational release approval before removing retained legacy trees or publishing.

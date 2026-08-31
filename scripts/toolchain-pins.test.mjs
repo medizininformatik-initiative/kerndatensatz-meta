@@ -59,19 +59,3 @@ for (const key of KEYS) {
     }
   });
 }
-
-// validation.yml carries a fourth SUSHI pin in a different shape: a
-// reusable-workflow input with a repository-variable override.
-// parseWorkflowEnvPin would return the literal `${{`, so read the fallback
-// literal directly.
-test("validation.yml's SUSHI fallback matches the build workflows", () => {
-  const text = readIfPresent(".github/workflows/validation.yml");
-  if (text === null) return;
-  const m = text.match(/SUSHI_VERSION:\s*\$\{\{\s*vars\.SUSHI_VERSION\s*\|\|\s*'([^']+)'/);
-  assert.ok(m, "validation.yml has no SUSHI_VERSION reusable-workflow input");
-
-  const build = presentWorkflows()[0];
-  if (!build) return;
-  const pinned = parseWorkflowEnvPin(build.text, "SUSHI_VERSION");
-  assert.equal(m[1], pinned, `validation.yml falls back to SUSHI ${m[1]}, ${build.file} pins ${pinned}`);
-});

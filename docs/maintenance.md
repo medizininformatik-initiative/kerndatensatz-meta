@@ -41,12 +41,9 @@ in sync:
 | IG Publisher / SUSHI / Jekyll | `env:` values (`PUBLISHER_VERSION`, `PUBLISHER_SHA256`, `SUSHI_VERSION`, `JEKYLL_VERSION`) in each build workflow — `ig-publisher.yml`, `module-release.yml`, `go-publish.yml` and (template repo only) `release-demo.yml`. A workflow cannot read another workflow's `env:`, so the four blocks are copies and must stay identical — `scripts/toolchain-pins.test.mjs` fails the build if they drift. The checker reads `go-publish.yml`. **Also sweep the copy-paste block in `docs/recipes/first-build-in-devcontainer.md`** (publisher URL + jar SHA + expected `sushi --version` output) — it is covered by no test and has gone stale before |
 | Jekyll gem checksum | `go-publish.yml` → `JEKYLL_GEM_SHA256` (**only** there — the release path verifies the gem bytes). **Covered by no test and not watched by the checker**: a Jekyll bump that updates the four `JEKYLL_VERSION` blocks but not this checksum passes every test and then fails `go-publish` at its `gem fetch … sha256sum --check` step. Recompute with `gem fetch jekyll -v <version> && sha256sum jekyll-<version>.gem` |
 | Ruby (for Jekyll) | `ruby-version: "3.3"` in the `ruby/setup-ruby` steps of `ig-publisher.yml`, `module-release.yml` and (template repo only) `release-demo.yml`; `go-publish.yml` deliberately uses the runner's system Ruby. CI floats the patch level on purpose; the dev container exact-pins (see the dev-container row) |
-| SUSHI, once more, for the reusable validation | `validation.yml` → the reusable-workflow input `SUSHI_VERSION: ${{ vars.SUSHI_VERSION \|\| '<version>' }}`. A different mechanism, so bump it in the same PR as the three `env:` blocks; the toolchain test asserts the fallback literal matches them |
-| HL7 Java validator | `validation.yml` → `JAVA_VALIDATOR_VERSION: ${{ vars.JAVA_VALIDATOR_VERSION \|\| '<version>' }}`. **Not watched by the checker** — it mirrors the reusable workflow's own default at the pinned `kerndatensatz-meta` SHA, so re-check it whenever that SHA is re-resolved |
 | GitHub Actions | commit-SHA pins in `.github/workflows/*.yml` (with `# vX.Y.Z` comments) |
 | Publication support repos (`HL7/fhir-ig-history-template`, `HL7/fhir-web-templates`) | commit-SHA `ref:` pins in `go-publish.yml` **only** (the two checkout steps). **Not watched by the checker** — re-resolve by hand when preparing a release; the comment at each pin records the last resolution date |
 | SU-TermServ proxy: the `medizininformatik-initiative/kerndatensatz-meta` `nginx.conf` ref **and** the nginx proxy image digest | commit-SHA / digest pins in all three build workflows — `ig-publisher.yml`, `module-release.yml`, `go-publish.yml`. Keep the three identical, for the same reason as the toolchain pins above; nothing cross-checks these. **Not watched by the checker** — re-resolve all three by hand when preparing a release |
-| MII reusable validation workflows (`kerndatensatz-meta/.github/workflows/ci_dotnet_validation.yml`, `ci_java_validation.yml`) | `uses: …@<commit-SHA>` in `validation.yml`. **Not watched by the checker** — re-resolve by hand; the trailing comment records the last resolution date |
 | Dev container (base-image digest, feature versions, SUSHI/Jekyll installs) | `.devcontainer/devcontainer.json` — features come as Dependabot PRs; the image digest and the `postCreateCommand` tool pins are bumped manually. **Kept pin-for-pin identical (same image digest and tool pins; the `name` field and comments differ) to the dev container in [`ig-template-mii-kds`](https://github.com/medizininformatik-initiative/ig-template-mii-kds)** — the template package and the modules built from it must agree on the toolchain, so bump both repos in the same sweep; drifted pins mean a module builds in one environment and fails in the other |
 
 Until a pin's file lands, the tracking issue shows a `pin not found` row — a
@@ -172,14 +169,6 @@ rather than assumed.
   two items recorded here (report prose still German while every document here is
   English-source, and `recommendations` rows still framed as a migration) belong
   to that skill now and were carried over with it; track them there, not here.
-- **Two pins in `validation.yml` are not watched by any layer.** The
-  reusable-workflow inputs `SUSHI_VERSION` and `JAVA_VALIDATOR_VERSION` are
-  written as `${{ vars.X || '<version>' }}`, which the checker's env parser
-  cannot read. `scripts/toolchain-pins.test.mjs` at least holds the SUSHI
-  fallback equal to the three build workflows; nothing compares
-  `JAVA_VALIDATOR_VERSION` against upstream — re-check it whenever the
-  `kerndatensatz-meta` SHA is re-resolved.
-
 ### Cross-repo consistency — decided, not pending
 
 This repository and the IG template share a number of documentation filenames —
@@ -194,4 +183,3 @@ No sync mechanism is planned. A module created from this template must be
 self-contained: replacing its copy of `glossary.md` or `maintenance.md` with a
 link back to the template would break the moment the module is developed
 independently, which is the whole point of a template.
-

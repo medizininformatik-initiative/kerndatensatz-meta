@@ -24,9 +24,8 @@ Store the certificate **once**, under `CDS_DEV_CLIENT_CERT`,
 **base64-encoded** (the workflows decode them with `base64 -d`).
 
 The preview build (`ig-publisher.yml`), the CalVer release build
-(`module-release.yml`), formal publication (`go-publish.yml`) and the MII
-reusable validation workflow all read those established names. One set of
-secrets therefore serves all four consumers.
+(`module-release.yml`) and formal publication (`go-publish.yml`) all read those
+established names. One set of secrets therefore serves all three consumers.
 
 ### What kind of certificate is required
 
@@ -121,27 +120,9 @@ Three traps that each cost a failed CI run — all handled by the helper script:
 ### Rotating or revoking
 
 Re-run the helper with the new certificate — `gh secret set` overwrites. To turn
-the integration off again, delete the three secrets; the preview and publish
-builds fall back to `tx.fhir.org` on the next run with a `::notice`, and the
-HL7 Java validator job **skips** (its upstream workflow has no fallback —
-without the certificate it would fail, not fall back). Note the expiry date: an expired
-certificate fails the handshake, so rotate before `notAfter`.
-
-## Simplifier login (the .NET validation job)
-
-`validation.yml` calls the MII reusable `ci_dotnet_validation.yml` with
-`secrets: inherit`; its Simplifier Quality-Control step signs in to
-[Simplifier](https://simplifier.net) with two repository secrets:
-
-```sh
-R=<owner>/<your-module-repo>
-gh secret set SIMPLIFIER_USERNAME --repo "$R"   # value on stdin
-gh secret set SIMPLIFIER_PASSWORD --repo "$R"
-```
-
-They have no local equivalent, so they are inherited rather than mapped. Note
-that the .NET validator is configured to always pass — if the sign-in fails,
-the job is still green and only its **log** says so.
+the integration off again, delete the three secrets; the Publisher builds fall
+back to `tx.fhir.org` on the next run with a `::notice`. Note the expiry date:
+an expired certificate fails the handshake, so rotate before `notAfter`.
 
 ## Zulip release announcement (optional)
 

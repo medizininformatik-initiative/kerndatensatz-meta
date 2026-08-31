@@ -46,10 +46,9 @@ The two that catch reviewers out (excerpt — the full list is in
 | Artifact | Edit here |
 |---|---|
 | IG Publisher | `PUBLISHER_VERSION` **and** the jar SHA-256 (step 4) in all build workflows — `ig-publisher.yml`, `module-release.yml`, `go-publish.yml` and (template repo only) `release-demo.yml`; the `env:` blocks must stay identical. Also update the copy-paste download block in `docs/recipes/first-build-in-devcontainer.md` (URL + SHA + prose date) |
-| SUSHI / Jekyll | `SUSHI_VERSION` / `JEKYLL_VERSION` in the same `env:` blocks — plus, for SUSHI only, the reusable-validation input in `validation.yml`, the dev-container `postCreateCommand` and the recipe's expected `sushi --version` output. For Jekyll only: recompute `JEKYLL_GEM_SHA256` in `go-publish.yml` (`gem fetch jekyll -v <version> && sha256sum jekyll-<version>.gem`) — no test covers that checksum |
+| SUSHI / Jekyll | `SUSHI_VERSION` / `JEKYLL_VERSION` in the same `env:` blocks — plus the dev-container `postCreateCommand` and the recipe's expected `sushi --version` output. For Jekyll only: recompute `JEKYLL_GEM_SHA256` in `go-publish.yml` (`gem fetch jekyll -v <version> && sha256sum jekyll-<version>.gem`) — no test covers that checksum |
 
-`scripts/toolchain-pins.test.mjs` fails the build when the `env:` blocks
-(all four on the template repo; or `validation.yml`'s SUSHI fallback) stop
+`scripts/toolchain-pins.test.mjs` fails the build when the `env:` blocks stop
 agreeing, so a half-applied bump does not reach `dev`.
 
 ### 4. IG Publisher only: recompute the jar SHA-256

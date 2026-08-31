@@ -15,7 +15,8 @@ for the step-by-step mapping to the MII wiki's Module Release Workflow.
    serve `package-list.json`; the first formal publication provides it — the
    commented block in `sushi-config.yaml` has the details.)
 1. **Pick the CalVer version** `YYYY.n.n` per the MII scheme (e.g. `2027.0.0`; the
-   first number is the release-sequence year). Confirm against the
+   first number is the release-sequence year). A prerelease may append a
+   SemVer-style suffix such as `-ballot.rc1` or `-rc.1`. Confirm against the
    [Module Release Workflow wiki page](https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Module-Release-Workflow).
 2. **Bump the version and the dates everywhere they appear** — the full file
    list is in [release.md § 2](../release.md#2-update-the-version--human):
@@ -52,7 +53,7 @@ publication ready for a human to promote. **No SemVer tag, no Release Please.**
 
 | Symptom | Cause | Fix |
 | --- | --- | --- |
-| Workflow did not trigger | Tag does not match `vYYYY.n.n` | Use the CalVer tag pattern |
+| Workflow did not trigger | Tag does not match `vYYYY.n.n` with an optional prerelease suffix | Use a tag such as `v2027.0.0` or `v2027.0.0-ballot.rc1` |
 | `convention-check` red on the release branch: M8 | The scaffold's demonstration page is still present | Remove it — the check's message lists every file; the list is also in [render existing artifacts](render-existing-artifacts.md) step 4 |
 | `convention-check` red on the release branch: M9 | Optional (0..1) pages still carry their `OPTIONAL-PAGE` banner | Decide each one — keep (delete the banner in both languages) or remove per [optional-pages.md](../optional-pages.md) |
 | `convention-check` red on the release branch: M11 | A scaffold `ILLUSTRATIVE-EXAMPLE` block is still present (the *Person* example on `security-and-privacy.md`) | Delete the example box + its marker comment in both languages; write the module's own aspects or adopt the section's default text |

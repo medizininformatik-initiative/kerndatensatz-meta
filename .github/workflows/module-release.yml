@@ -125,12 +125,9 @@ jobs:
 
   # ---------------------------------------------------------------------------
   # build — wiki step 5 support: verify the tagged commit BUILDS before a release
-  # is cut. kerndatensatz-basis, for example, runs no FHIR error gate at tag time
-  # — its only PR-time signal is its own IG-Publisher build, and it wires up
-  # neither MII reusable validation workflow (verified against `main` @ f6c6878).
-  # This template adds both: a buildability gate here, producing the package.tgz
-  # artifact, and the reusable validation workflows in validation.yml. Runs on
-  # a CalVer tag or on a workflow_dispatch dry run — never creates a release.
+  # is cut. The IG Publisher performs the FHIR validation and produces the QA
+  # report alongside package.tgz. Runs on a CalVer tag or on a workflow_dispatch
+  # dry run — never creates a release.
   # ---------------------------------------------------------------------------
   build:
     needs: guard
@@ -282,12 +279,9 @@ jobs:
           java -Xmx6g -jar "${RUNNER_TEMP}/publisher.jar" -ig ig.ini -tx "${TX_URL}" \
             -fhir-settings "${GITHUB_WORKSPACE}/.github/fhir-settings.json"
 
-          # The build must actually complete and produce a package. QA COUNTS
-          # are reported for review and are not required to be zero — the hard
-          # FHIR error gate is the reusable validation workflow (validation.yml),
-          # run on the release PR before the tag. That gate is this template's
-          # addition — kerndatensatz-basis, for example, wires up neither MII
-          # reusable validation workflow.
+          # The build must actually complete and produce a package. The IG
+          # Publisher performs validation and writes the QA report; its counts
+          # are surfaced for human review before the draft release is published.
           jq empty output/qa.json
           test -s output/package.tgz
 
@@ -301,7 +295,7 @@ jobs:
             echo "| ---: | ---: | ---: |"
             echo "| ${errors} | ${warnings} | ${hints} |"
             echo
-            echo "QA counts are reported for review; the authoritative FHIR error gate is the reusable validation workflow."
+            echo "Review the IG Publisher QA report before publishing the draft release."
           } >> "${GITHUB_STEP_SUMMARY}"
 
       - name: Upload the build (package + QA report)
