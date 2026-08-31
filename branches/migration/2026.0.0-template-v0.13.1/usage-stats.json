@@ -1,0 +1,115 @@
+{
+  "package": "de.medizininformatikinitiative.kerndatensatz.meta",
+  "version": "2027.0.0-ballot.rc1",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "DE",
+  "extensions": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "title": "MII EX Meta License Codeable",
+      "types": [
+        "CodeableConcept"
+      ]
+    }
+  ],
+  "profiles": {
+    "SearchParameter": [
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter",
+        "title": "MII PR Meta SearchParameter"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/StructureDefinition/artifact-author": [
+      "ImplementationGuide"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/artifact-editor": [
+      "ImplementationGuide"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/artifact-endorser": [
+      "ImplementationGuide"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/artifact-purpose": [
+      "ImplementationGuide"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/artifact-reviewer": [
+      "ImplementationGuide"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/artifact-topic": [
+      "ImplementationGuide"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/artifact-usage": [
+      "ImplementationGuide"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm": [
+      "ImplementationGuide"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/cqf-expansionParameters": [
+      "ImplementationGuide"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability": [
+      "ImplementationGuide"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/package-source": [
+      "ImplementationGuide"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/resource-approvalDate": [
+      "ImplementationGuide"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod": [
+      "ImplementationGuide"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/translation": [
+      "CapabilityStatement.publisher",
+      "CodeSystem.publisher",
+      "ImplementationGuide.definition.page.page.page.title",
+      "ImplementationGuide.definition.page.page.title",
+      "ImplementationGuide.definition.page.title",
+      "ImplementationGuide.publisher",
+      "SearchParameter.publisher",
+      "StructureDefinition.publisher"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page",
+      "ImplementationGuide.definition.page.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable": [
+      "Bundle.entry.resource",
+      "CodeSystem",
+      "SearchParameter",
+      "StructureDefinition"
+    ]
+  }
+}

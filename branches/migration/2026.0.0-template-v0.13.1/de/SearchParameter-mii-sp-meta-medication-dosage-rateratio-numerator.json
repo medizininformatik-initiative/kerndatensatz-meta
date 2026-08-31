@@ -1,0 +1,55 @@
+{
+  "resourceType" : "SearchParameter",
+  "id" : "mii-sp-meta-medication-dosage-rateratio-numerator",
+  "meta" : {
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+  },
+  "language" : "de",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xml:lang=\"de\" lang=\"de\"><hr/><p><b>German</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-medication-dosage-rateratio-numerator</b></p><a name=\"de-mii-sp-meta-medication-dosage-rateratio-numerator\"> </a><a name=\"de-hcmii-sp-meta-medication-dosage-rateratio-numerator\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><h2>MII_SP_Meta_Medication_Dosage_RateRatioNumerator</h2><p>Parameter <code>rateratio-numerator</code>:<code>quantity</code></p><div><p>Suchparameter für MedicationStatement.dosage.doseAndRate.rateRatio.numerator | MedicationAdministration.dosage.rate.ofType(Ratio).numerator | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio).numerator</p>\n</div><table class=\"grid\"><tr><td>Resources</td><td><a href=\"http://hl7.org/fhir/R4/medicationstatement.html\">MedicationStatement</a>, <a href=\"http://hl7.org/fhir/R4/medicationadministration.html\">MedicationAdministration</a>, <a href=\"http://hl7.org/fhir/R4/medicationrequest.html\">MedicationRequest</a></td></tr><tr><td>Expression</td><td><code>MedicationStatement.dosage.doseAndRate.rate.ofType(Ratio).numerator | MedicationAdministration.dosage.rate.ofType(Ratio).numerator | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio).numerator</code></td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: It's up to the server whether the parameter may repeat in order to specify multiple values that must all be true</li><li>multipleOr: It's up to the server whether the parameter can have multiple values (separated by comma) where at least one must be true</li></ul></td></tr><tr><td>Comparators</td><td>Allowed: eq, gt, lt, ge, le</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/spdx-license",
+        "code" : "CC-BY-4.0",
+        "display" : "Creative Commons Attribution 4.0 International"
+      }]
+    }
+  }],
+  "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-numerator",
+  "version" : "2027.0.0-ballot.rc1",
+  "name" : "MII_SP_Meta_Medication_Dosage_RateRatioNumerator",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-10-08",
+  "publisher" : "NUM-DIZ",
+  "contact" : [{
+    "name" : "NUM-DIZ",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.netzwerk-universitaetsmedizin.de"
+    }]
+  }],
+  "description" : "Suchparameter für MedicationStatement.dosage.doseAndRate.rateRatio.numerator | MedicationAdministration.dosage.rate.ofType(Ratio).numerator | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio).numerator",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "code" : "rateratio-numerator",
+  "base" : ["MedicationStatement",
+  "MedicationAdministration",
+  "MedicationRequest"],
+  "type" : "quantity",
+  "expression" : "MedicationStatement.dosage.doseAndRate.rate.ofType(Ratio).numerator | MedicationAdministration.dosage.rate.ofType(Ratio).numerator | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio).numerator",
+  "comparator" : ["eq",
+  "gt",
+  "lt",
+  "ge",
+  "le"]
+}

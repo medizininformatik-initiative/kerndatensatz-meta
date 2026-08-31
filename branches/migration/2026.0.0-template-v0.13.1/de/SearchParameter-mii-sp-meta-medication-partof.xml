@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="mii-sp-meta-medication-partof"/>
+  <meta>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"/>
+  </meta>
+  <language value="de"/>
+  <text>
+    <status value="generated"/><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: SearchParameter mii-sp-meta-medication-partof</b></p><a name="de-mii-sp-meta-medication-partof"> </a><a name="de-hcmii-sp-meta-medication-partof"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-meta-searchparameter.html">MII PR Meta SearchParameter</a></p></div><h2>MII_SP_Meta_Medication_PartOf</h2><p>Parameter <code>part-of</code>:<code>reference</code></p><div><p>Suchparameter für (MedicationAdministration|MedicationStatement).partOf</p>
+</div><table class="grid"><tr><td>Resources</td><td><a href="http://hl7.org/fhir/R4/medicationstatement.html">MedicationStatement</a>, <a href="http://hl7.org/fhir/R4/medicationadministration.html">MedicationAdministration</a></td></tr><tr><td>Expression</td><td><code>MedicationAdministration.partOf | MedicationStatement.partOf</code></td></tr><tr><td>Target Resources</td><td><a href="http://hl7.org/fhir/R4/medicationadministration.html">MedicationAdministration</a>, <a href="http://hl7.org/fhir/R4/procedure.html">Procedure</a>, <a href="http://hl7.org/fhir/R4/medicationdispense.html">MedicationDispense</a>, <a href="http://hl7.org/fhir/R4/medicationstatement.html">MedicationStatement</a>, <a href="http://hl7.org/fhir/R4/observation.html">Observation</a></td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: It's up to the server whether the parameter may repeat in order to specify multiple values that must all be true</li><li>multipleOr: It's up to the server whether the parameter can have multiple values (separated by comma) where at least one must be true</li></ul></td></tr></table></div>
+  </text>
+  <extension url="https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://hl7.org/fhir/spdx-license"/>
+        <code value="CC-BY-4.0"/>
+        <display value="Creative Commons Attribution 4.0 International"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <url value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-partof"/>
+  <version value="2027.0.0-ballot.rc1"/>
+  <name value="MII_SP_Meta_Medication_PartOf"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-11-14"/>
+  <publisher value="NUM-DIZ"/>
+  <contact>
+    <name value="NUM-DIZ"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+    </telecom>
+  </contact>
+  <description value="Suchparameter für (MedicationAdministration|MedicationStatement).partOf"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
+    </coding>
+  </jurisdiction>
+  <code value="part-of"/>
+  <base value="MedicationStatement"/>
+  <base value="MedicationAdministration"/>
+  <type value="reference"/>
+  <expression value="MedicationAdministration.partOf | MedicationStatement.partOf"/>
+  <target value="MedicationAdministration"/>
+  <target value="Procedure"/>
+  <target value="MedicationDispense"/>
+  <target value="MedicationStatement"/>
+  <target value="Observation"/>
+</SearchParameter>
