@@ -3,7 +3,7 @@ MII_IG_Meta : Validation Results
 
 err = 563, warn = 269, info = 1041
 IG Publisher Version: 2.3.2 Out of date - current version is 2.3.3
-Generated Mon Aug 31 19:50:40 UTC 2026. FHIR version 4.0.1 for de.medizininformatikinitiative.kerndatensatz.meta#2027.0.0-ballot.rc1 (canonical = https://www.medizininformatik-initiative.de/fhir/modul-meta)
+Generated Mon Aug 31 20:25:35 UTC 2026. FHIR version 4.0.1 for de.medizininformatikinitiative.kerndatensatz.meta#2027.0.0-ballot.rc1 (canonical = https://www.medizininformatik-initiative.de/fhir/modul-meta)
  Build Errors : 0 / 5 / 0
  /home/runner/work/kerndatensatz-meta/kerndatensatz-meta/fsh-generated/resources/Bundle-mii-exa-meta-searchparam-collection-bundle : 0 / 85 / 871
  /home/runner/work/kerndatensatz-meta/kerndatensatz-meta/fsh-generated/resources/Bundle-mii-exa-meta-searchparam-transaction-bundle : 0 / 85 / 877
