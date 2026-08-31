@@ -1,8 +1,8 @@
 {
   "name": "de.medizininformatikinitiative.kerndatensatz.meta",
-  "version": "2026.0.0",
+  "version": "2027.0.0-ballot.rc1",
   "type": "IG",
-  "description": "Medizininformatik Initiative - Kerndatensatz Meta",
+  "description": "The Meta module contains foundational artifacts used by all other MII implementation guides.",
   "author": "juliansass",
   "fhirVersions": [
     "4.0.1"
@@ -28,6 +28,9 @@
   "canonical": "https://www.medizininformatik-initiative.de/fhir/modul-meta",
   "jurisdiction": "urn:iso:std:iso:3166#DE",
   "dependencies": {
-    "hl7.fhir.r4.core": "4.0.1"
+    "hl7.fhir.r4.core": "4.0.1",
+    "hl7.fhir.uv.crmi": "2.0.0",
+    "hl7.terminology.r4": "7.1.0",
+    "hl7.fhir.uv.extensions.r4": "5.2.0"
   }
 }

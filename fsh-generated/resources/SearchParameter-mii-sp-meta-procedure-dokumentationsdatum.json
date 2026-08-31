@@ -7,8 +7,6 @@
     ]
   },
   "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-dokumentationsdatum",
-  "version": "2026.0.0",
-  "publisher": "Medizininformatik Initiative",
   "contact": [
     {
       "telecom": [
@@ -33,15 +31,17 @@
       }
     }
   ],
+  "base": [
+    "Procedure"
+  ],
+  "version": "2027.0.0-ballot.rc1",
+  "publisher": "Medizininformatik Initiative",
   "name": "MII_SP_Meta_Procedure_Dokumentationsdatum",
   "status": "active",
   "experimental": false,
   "date": "2024-10-08",
   "description": "Suchparameter für Procedure.extension:Dokumentationsdatum",
   "code": "dokumentationsdatum",
-  "base": [
-    "Procedure"
-  ],
   "type": "date",
   "expression": "Procedure.extension('http://fhir.de/StructureDefinition/ProzedurDokumentationsdatum').value"
 }

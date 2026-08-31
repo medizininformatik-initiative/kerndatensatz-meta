@@ -7,7 +7,6 @@
     ]
   },
   "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-partof",
-  "publisher": "Medizininformatik Initiative",
   "contact": [
     {
       "telecom": [
@@ -18,7 +17,6 @@
       ]
     }
   ],
-  "version": "2026.0.0",
   "extension": [
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -33,23 +31,25 @@
       }
     }
   ],
-  "name": "MII_SP_Meta_Medication_PartOf",
-  "status": "active",
-  "experimental": false,
-  "date": "2024-11-14",
-  "description": "Suchparameter für (MedicationAdministration|MedicationStatement).partOf",
-  "code": "part-of",
   "base": [
     "MedicationStatement",
     "MedicationAdministration"
   ],
-  "type": "reference",
-  "expression": "MedicationAdministration.partOf | MedicationStatement.partOf",
   "target": [
     "MedicationAdministration",
     "Procedure",
     "MedicationDispense",
     "MedicationStatement",
     "Observation"
-  ]
+  ],
+  "publisher": "Medizininformatik Initiative",
+  "version": "2027.0.0-ballot.rc1",
+  "name": "MII_SP_Meta_Medication_PartOf",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-11-14",
+  "description": "Suchparameter für (MedicationAdministration|MedicationStatement).partOf",
+  "code": "part-of",
+  "type": "reference",
+  "expression": "MedicationAdministration.partOf | MedicationStatement.partOf"
 }

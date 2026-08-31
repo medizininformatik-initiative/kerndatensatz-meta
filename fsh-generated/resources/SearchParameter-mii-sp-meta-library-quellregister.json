@@ -7,8 +7,6 @@
     ]
   },
   "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-library-quellregister",
-  "version": "2026.0.0",
-  "publisher": "Medizininformatik Initiative",
   "contact": [
     {
       "telecom": [
@@ -33,15 +31,17 @@
       }
     }
   ],
+  "base": [
+    "Library"
+  ],
+  "version": "2027.0.0-ballot.rc1",
+  "publisher": "Medizininformatik Initiative",
   "name": "MII_SP_Meta_Library_Quellregister",
   "status": "active",
   "description": "Suchparameter für Library.extension:QuellRegister",
   "experimental": false,
   "date": "2024-10-17",
   "code": "quellregister",
-  "base": [
-    "Library"
-  ],
   "type": "token",
   "expression": "Library.extension.where(url='https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-quell-register').value"
 }

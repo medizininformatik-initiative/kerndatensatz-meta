@@ -1,0 +1,71 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="de" id="StructureDefinition-mii-pr-meta-searchparameter" original="Resource StructureDefinition-mii-pr-meta-searchparameter" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="StructureDefinition-mii-pr-meta-searchparameter" resname="StructureDefinition.name">
+             <notes>
+               <note id="n1">A natural language name identifying the structure definition. This name should be usable as an identifier for the module by machine processing applications such as code generation.</note>
+             </notes>
+        <source>MII_PR_Meta_SearchParameter</source>
+        <target>MII_PR_Meta_SearchParameter</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-meta-searchparameter" resname="StructureDefinition.title">
+             <notes>
+               <note id="n1">A short, descriptive, user-friendly title for the structure definition.</note>
+             </notes>
+        <source>MII PR Meta SearchParameter</source>
+        <target>MII PR Meta SearchParameter</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-meta-searchparameter" resname="StructureDefinition.publisher">
+             <notes>
+               <note id="n1">The name of the organization or individual responsible for the release and ongoing maintenance of the structure definition.</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target>NUM-DIZ</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-meta-searchparameter" resname="StructureDefinition.contact.name">
+             <notes>
+               <note id="n1">The name of an individual to contact.</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target>NUM-DIZ</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-meta-searchparameter" resname="StructureDefinition.mapping.v2/name">
+             <notes>
+               <note id="n1">A name for the specification that is being mapped to.</note>
+             </notes>
+        <source>HL7 v2 Mapping</source>
+        <target>HL7 v2 Mapping</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-meta-searchparameter" resname="StructureDefinition.mapping.workflow/name">
+             <notes>
+               <note id="n1">A name for the specification that is being mapped to.</note>
+             </notes>
+        <source>Workflow Pattern</source>
+        <target>Workflow Pattern</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-meta-searchparameter" resname="StructureDefinition.mapping.w5/name">
+             <notes>
+               <note id="n1">A name for the specification that is being mapped to.</note>
+             </notes>
+        <source>FiveWs Pattern Mapping</source>
+        <target>FiveWs Pattern Mapping</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-meta-searchparameter" resname="StructureDefinition.mapping.objimpl/name">
+             <notes>
+               <note id="n1">A name for the specification that is being mapped to.</note>
+             </notes>
+        <source>Object Implementation Information</source>
+        <target>Object Implementation Information</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-mii-pr-meta-searchparameter" resname="StructureDefinition.element.SearchParameter.code/constraint">
+             <notes>
+               <note id="n1">Text that can be used to describe the constraint in messages identifying that the constraint has been violated.</note>
+             </notes>
+        <source>In SearchParameter.code DÜRFEN NICHT folgende Zeichen enthalten sein: Leerzeichen, `.`, `$`, `|`.</source>
+        <target>In SearchParameter.code DÜRFEN NICHT folgende Zeichen enthalten sein: Leerzeichen, `.`, `$`, `|`.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

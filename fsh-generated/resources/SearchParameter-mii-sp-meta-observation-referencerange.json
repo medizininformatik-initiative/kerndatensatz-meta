@@ -7,7 +7,6 @@
     ]
   },
   "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-referencerange",
-  "publisher": "Medizininformatik Initiative",
   "contact": [
     {
       "telecom": [
@@ -18,7 +17,6 @@
       ]
     }
   ],
-  "version": "2026.0.0",
   "extension": [
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -33,17 +31,9 @@
       }
     }
   ],
-  "name": "MII_SP_Meta_Observation_ReferenceRange",
-  "status": "active",
-  "experimental": false,
-  "date": "2024-10-08",
-  "description": "Suchparameter für Observation.referenceRange",
-  "code": "reference-range",
   "base": [
     "Observation"
   ],
-  "type": "composite",
-  "expression": "Observation.referenceRange | Observation.component.referenceRange",
   "component": [
     {
       "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-referencerange-high",
@@ -53,5 +43,15 @@
       "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-referencerange-low",
       "expression": "low"
     }
-  ]
+  ],
+  "publisher": "Medizininformatik Initiative",
+  "version": "2027.0.0-ballot.rc1",
+  "name": "MII_SP_Meta_Observation_ReferenceRange",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-10-08",
+  "description": "Suchparameter für Observation.referenceRange",
+  "code": "reference-range",
+  "type": "composite",
+  "expression": "Observation.referenceRange | Observation.component.referenceRange"
 }

@@ -7,7 +7,6 @@
     ]
   },
   "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-laterality",
-  "publisher": "Medizininformatik Initiative",
   "contact": [
     {
       "telecom": [
@@ -18,7 +17,6 @@
       ]
     }
   ],
-  "version": "2026.0.0",
   "extension": [
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -33,17 +31,9 @@
       }
     }
   ],
-  "name": "MII_SP_Bildgebung_Imaging_Study_Series_Laterality",
-  "status": "active",
-  "experimental": false,
-  "date": "2025-11-06",
-  "description": "Suchparameter für ImagingStudy.series.laterality",
-  "code": "series-laterality",
   "base": [
     "ImagingStudy"
   ],
-  "type": "token",
-  "expression": "ImagingStudy.series.laterality",
   "modifier": [
     "text",
     "not",
@@ -52,5 +42,15 @@
     "in",
     "not-in",
     "missing"
-  ]
+  ],
+  "publisher": "Medizininformatik Initiative",
+  "version": "2027.0.0-ballot.rc1",
+  "name": "MII_SP_Bildgebung_Imaging_Study_Series_Laterality",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-11-06",
+  "description": "Suchparameter für ImagingStudy.series.laterality",
+  "code": "series-laterality",
+  "type": "token",
+  "expression": "ImagingStudy.series.laterality"
 }

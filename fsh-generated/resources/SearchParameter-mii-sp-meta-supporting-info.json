@@ -7,7 +7,6 @@
     ]
   },
   "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-supporting-info",
-  "publisher": "Medizininformatik Initiative",
   "contact": [
     {
       "telecom": [
@@ -18,7 +17,6 @@
       ]
     }
   ],
-  "version": "2026.0.0",
   "extension": [
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -33,19 +31,21 @@
       }
     }
   ],
+  "base": [
+    "CarePlan",
+    "DiagnosticReport"
+  ],
+  "target": [
+    "DiagnosticReport"
+  ],
+  "publisher": "Medizininformatik Initiative",
+  "version": "2027.0.0-ballot.rc1",
   "name": "MII_SP_Bildgebung_Supporting_Info",
   "status": "active",
   "experimental": false,
   "date": "2025-11-06",
   "description": "Suchparameter für CarePlan.supportingInfo | DiagnosticReport.extension.supportingInfo",
   "code": "supporting-info",
-  "base": [
-    "CarePlan",
-    "DiagnosticReport"
-  ],
   "type": "reference",
-  "expression": "CarePlan.supportingInfo | DiagnosticReport.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo').extension('reference').value",
-  "target": [
-    "DiagnosticReport"
-  ]
+  "expression": "CarePlan.supportingInfo | DiagnosticReport.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo').extension('reference').value"
 }

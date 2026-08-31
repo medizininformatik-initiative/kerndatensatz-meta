@@ -7,7 +7,6 @@
     ]
   },
   "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-servicerequest-reasonreference",
-  "publisher": "Medizininformatik Initiative",
   "contact": [
     {
       "telecom": [
@@ -18,7 +17,6 @@
       ]
     }
   ],
-  "version": "2026.0.0",
   "extension": [
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -33,21 +31,23 @@
       }
     }
   ],
+  "base": [
+    "ServiceRequest"
+  ],
+  "target": [
+    "Condition",
+    "Observation",
+    "DiagnosticReport",
+    "DocumentReference"
+  ],
+  "publisher": "Medizininformatik Initiative",
+  "version": "2027.0.0-ballot.rc1",
   "name": "MII_SP_Meta_ServiceRequest_ReasonReference",
   "status": "active",
   "experimental": false,
   "date": "2024-10-08",
   "description": "Suchparameter für ServiceRequest.reasonReference",
   "code": "reason-reference",
-  "base": [
-    "ServiceRequest"
-  ],
   "type": "reference",
-  "expression": "ServiceRequest.reasonReference",
-  "target": [
-    "Condition",
-    "Observation",
-    "DiagnosticReport",
-    "DocumentReference"
-  ]
+  "expression": "ServiceRequest.reasonReference"
 }

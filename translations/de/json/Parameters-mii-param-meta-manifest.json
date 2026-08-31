@@ -1,0 +1,25 @@
+{
+  "id" : "Parameters-mii-param-meta-manifest",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "Parameters.parameter.name",
+      "context" : "Parameters.parameter.name",
+      "source" : "system-version",
+      "target" : null
+    },
+    {
+      "id" : "Parameters.parameter.name",
+      "context" : "Parameters.parameter.name",
+      "source" : "default-canonical-version",
+      "target" : null
+    },
+    {
+      "id" : "Parameters.parameter.name",
+      "context" : "Parameters.parameter.name",
+      "source" : "default-valueset-version",
+      "target" : null
+    }]
+  }]
+}

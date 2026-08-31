@@ -7,7 +7,6 @@
     ]
   },
   "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-bildgebungsgrund",
-  "publisher": "Medizininformatik Initiative",
   "contact": [
     {
       "telecom": [
@@ -18,7 +17,6 @@
       ]
     }
   ],
-  "version": "2026.0.0",
   "extension": [
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -33,20 +31,22 @@
       }
     }
   ],
+  "base": [
+    "ImagingStudy"
+  ],
+  "modifier": [
+    "contains",
+    "exact",
+    "missing"
+  ],
+  "publisher": "Medizininformatik Initiative",
+  "version": "2027.0.0-ballot.rc1",
   "name": "MII_SP_Bildgebung_Imaging_Study_Bildgebungsgrund",
   "status": "active",
   "experimental": false,
   "date": "2025-11-06",
   "description": "Suchparameter für ImagingStudy.Extension.Bildgebungsgrund",
   "code": "bildgebungsgrund",
-  "base": [
-    "ImagingStudy"
-  ],
   "type": "string",
-  "expression": "ImagingStudy.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildgebungsgrund').value",
-  "modifier": [
-    "contains",
-    "exact",
-    "missing"
-  ]
+  "expression": "ImagingStudy.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildgebungsgrund').value"
 }

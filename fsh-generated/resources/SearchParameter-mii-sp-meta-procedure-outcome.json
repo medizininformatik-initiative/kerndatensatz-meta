@@ -7,7 +7,6 @@
     ]
   },
   "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-outcome",
-  "publisher": "Medizininformatik Initiative",
   "contact": [
     {
       "telecom": [
@@ -32,16 +31,17 @@
       }
     }
   ],
-  "version": "2026.0.0",
+  "base": [
+    "Procedure"
+  ],
+  "publisher": "Medizininformatik Initiative",
+  "version": "2027.0.0-ballot.rc1",
   "date": "2024-11-07",
   "experimental": false,
   "name": "MII_SP_Meta_Procedure_Outcome",
   "description": "SearchParameter for Procedure.outcome",
   "status": "active",
   "code": "outcome",
-  "base": [
-    "Procedure"
-  ],
   "type": "token",
   "expression": "Procedure.outcome"
 }

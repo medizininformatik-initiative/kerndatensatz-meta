@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="de" id="SearchParameter-mii-sp-meta-encounter-servicetype" original="Resource SearchParameter-mii-sp-meta-encounter-servicetype" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="SearchParameter-mii-sp-meta-encounter-servicetype" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Creative Commons Attribution 4.0 International</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="SearchParameter-mii-sp-meta-encounter-servicetype" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Encounter_ServiceType</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="SearchParameter-mii-sp-meta-encounter-servicetype" resname="SearchParameter.publisher">
+             <notes>
+               <note id="n1">SearchParameter.publisher</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target>NUM-DIZ</target>
+      </trans-unit>
+      <trans-unit id="SearchParameter-mii-sp-meta-encounter-servicetype" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">ContactDetail.name</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="SearchParameter-mii-sp-meta-encounter-servicetype" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für Encounter.serviceType</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="SearchParameter-mii-sp-meta-encounter-servicetype" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Germany</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

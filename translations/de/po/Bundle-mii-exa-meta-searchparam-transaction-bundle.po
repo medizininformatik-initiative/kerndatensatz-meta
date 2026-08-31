@@ -1,0 +1,1736 @@
+
+# Coding.display
+#: Coding.display
+msgid "Creative Commons Attribution 4.0 International"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Person_Adresszusatz"
+msgstr ""
+
+# SearchParameter.publisher
+#: SearchParameter.publisher
+msgid "Medizininformatik Initiative"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für Patient.address.line.extension:Adresszusatz"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Patient_AssignerPID"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für Patient.identifier.assigner.identifier"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_ResearchSubject_Consent"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ResearchSubject.consent"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Patient_Gemeindeschluessel"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für Patient.address.city.extension:gemeindeschluessel"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Patient_Hausnummer"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für Patient.address.line.extension:Hausnummer"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Patient_OtherAmtlich"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für Patient.gender.extension:other-amtlich"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Patient_Postfach"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für Patient.address.line.extension:Postfach"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Patient_Prefix"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für Patient.name.prefix"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Patient_PrefixQualifier"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für Patient.name.prefix.extension:prefix-qualifier"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Patient_Stadtteil"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für Patient.address.extension:Stadtteil"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Patient_Strasse"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für Patient.address.line.extension:Strasse"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Condition_ICD10GM_Diagnosesicherheit"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für Condition.code.coding:icd10-gm.extension:Diagnosesicherheit"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Condition_ICD10GM_Mehrfachcodierung"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für Condition.code.coding:icd10-gm.extension:Mehrfachcodierungs-Kennzeichen"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Condition_ICD10GM_Seitenlokalisation"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für Condition.code.coding:icd10-gm.extension:Seitenlokalisation"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Procedure_BodySite"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für Procedure.bodySite"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Procedure_Dokumentationsdatum"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für Procedure.extension:Dokumentationsdatum"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Procedure_Durchfuehrungsabsicht"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für Procedure.extension:Durchfuehrungsabsicht"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Procedure_OPS_Seitenlokalisation"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für Procedure.code.coding:ops.extension:Seitenlokalisation"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Encounter_DiagnosisUse"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für Encounter.diagnosis.use"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Encounter_Hospitalization_AdmitSource"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für Encounter.hospitalization.admitSource"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Encounter_Location_PhysicalType"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für Encounter.location.physicalType"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Encounter_ServiceType"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für Encounter.serviceType"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Encounter_Aufnahmegrund_ErsteUndZweiteStelle"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für Encounter.extension:Aufnahmegrund.extension:ErsteUndZweiteStelle"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Encounter_Aufnahmegrund_DritteStelle"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für Encounter.extension:Aufnahmegrund.extension:DritteStelle"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Encounter_Aufnahmegrund_VierteStelle"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für Encounter.extension:Aufnahmegrund.extension:VierteStelle"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Encounter_Entlassungsgrund_ErsteUndZweiteStelle"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für Encounter.hospitalization.dischargeDisposition.extension:Entlassungsgrund.extension:ErsteUndZweiteStelle"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Encounter_Entlassungsgrund_DritteStelle"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für Encounter.hospitalization.dischargeDisposition.extension:Entlassungsgrund.extension:DritteStelle"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Medication_Ingredient_Strength_Numerator"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für Medication.ingredient.strength.numerator"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Medication_Ingredient_Strength_Denominator"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für Medication.ingredient.strength.denominator"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Medication_Ingredient_Strength"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für Medication.ingredient.strength"
+msgstr ""
+
+# SearchParameter.component.expression
+#: SearchParameter.component.expression
+msgid "numerator"
+msgstr ""
+
+# SearchParameter.component.expression
+#: SearchParameter.component.expression
+msgid "denominator"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Medication_ReasonReference"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für (MedicationAdministration|MedicationStatement).reasonReference"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Medication_Dosage_Site"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für (MedicationAdministration|MedicationStatement).dosage.site | MedicationRequest.dosageInstruction.site"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Medication_Dosage_Route"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für (MedicationAdministration|MedicationStatement).dosage.route | MedicationRequest.dosageInstruction.route"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Medication_Dosage_DoseRangeLow"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für MedicationStatement.dosage.doseAndRate.doseRange.low | MedicationRequest.dosageInstruction.doseAndRate.doseRange.low"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Medication_Dosage_DoseRangeHigh"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für MedicationStatement.dosage.doseAndRate.doseRange.high | MedicationRequest.dosageInstruction.doseAndRate.doseRange.high"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Medication_Dosage_DoseRange"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für MedicationStatement.dosage.doseAndRate.doseRange | MedicationRequest.dosageInstruction.doseAndRate.doseRange"
+msgstr ""
+
+# SearchParameter.component.expression
+#: SearchParameter.component.expression
+msgid "low"
+msgstr ""
+
+# SearchParameter.component.expression
+#: SearchParameter.component.expression
+msgid "high"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Medication_Dosage_DoseQuantity"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für MedicationStatement.dosage.doseAndRate.doseQuantity | MedicationRequest.dosageInstruction.doseAndRate.doseQuantity | MedicationAdministration.dosage.dose"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Medication_Dosage_RateRatioNumerator"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für MedicationStatement.dosage.doseAndRate.rateRatio.numerator | MedicationAdministration.dosage.rate.ofType(Ratio).numerator | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio).numerator"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Medication_Dosage_RateRatioDenominator"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für MedicationStatement.dosage.doseAndRate.rateRatio.denominator | MedicationAdministration.dosage.rate.ofType(Ratio).denominator | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio).denominator"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Medication_Dosage_RateRatio"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "MedicationStatement.dosage.doseAndRate.rate.ofType(Ratio) | MedicationAdministration.dosage.rate.ofType(Ratio) | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio)"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Medication_Dosage_RateRangeLow"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für MedicationStatement.dosage.doseAndRate.rateRange.low | MedicationRequest.dosageInstruction.doseAndRate.rateRange.low"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Medication_Dosage_RateRangeHigh"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für MedicationStatement.dosage.doseAndRate.rateRange.high | MedicationRequest.dosageInstruction.doseAndRate.rateRange.high"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Medication_Dosage_RateRange"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für MedicationStatement.dosage.doseAndRate.rateRange | MedicationRequest.dosageInstruction.doseAndRate.rateRange"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Medication_Dosage_RateQuantity"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für MedicationStatement.dosage.doseAndRate.rateQuantity | MedicationAdministration.dosage.rateQuantity | MedicationRequest.dosageInstruction.doseAndRate.rateQuantity"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Medication_List_Mode"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für List.mode"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Medication_PartOf"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für (MedicationAdministration|MedicationStatement).partOf"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Consent_PolicyUri"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suche in der Policy URI (versionsspezifische Policy / Broad Consent)"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Consent_ProvisionCode"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suche im Code der Provison"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Consent_ProvisionCodePeriod"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Composite-Suche nach Zeitraum (period) einer bestimmten, durch einen Code definierten, Provision."
+msgstr ""
+
+# SearchParameter.component.expression
+#: SearchParameter.component.expression
+msgid "code"
+msgstr ""
+
+# SearchParameter.component.expression
+#: SearchParameter.component.expression
+msgid "period"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Consent_ProvisionCodeType"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Composite-Suche nach Typ (type) einer bestimmten, durch einen Code definierten, Provision."
+msgstr ""
+
+# SearchParameter.component.expression
+#: SearchParameter.component.expression
+msgid "type"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Consent_ProvisionPeriod"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suche im Zeitraum der Provision. Dieser Suchparameter bezieht sich explizit auf die zweite Verschachtelungsebene von provison."
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Consent_ProvisionType"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suche im Typ der Provison (permit, deny)."
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Specimen_Diagnose"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für die Extension Diagnose am Profil Bioprobe"
+msgstr ""
+
+# SearchParameter.chain
+#: SearchParameter.chain
+msgid "*"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Observation_Interpretation"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für Observation.interpretation"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_ServiceRequest_ReasonCode"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ServiceRequest.reasonCode"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_ServiceRequest_ReasonReference"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ServiceRequest.reasonReference"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Task_ReasonCode"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für Task.reasonCode"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Task_ReasonReference"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für Task.reasonReference"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Task_For"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für Task.for"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_FamilyMemberHistory_ReasonCode"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für FamilyMemberHistory.reasonCode"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_FamilyMemberHistory_ReasonReference"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für FamilyMemberHistory.reasonReference"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Specimen_Request"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "SearchParameter for Specimen.request"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Specimen_Collection_Method"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "SearchParameter for Specimen.collection.method"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Specimen_Processing_Procedure"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "SearchParameter for Specimen.processing.procedure"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Specimen_Processing_Additive"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "SearchParameter for Specimen.processing.additive"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Specimen_Processing_Date"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "SearchParameter for Specimen.processing.time"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Specimen_Container_Additive"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "SearchParameter for Specimen.container.additive"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Observation_Value_Ratio"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "SearchParameter for Observation.valueRatio"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Observation_Value_Ratio_Numerator"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "SearchParameter for Observation.valueRatio.numerator"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Observation_Value_Ratio_Denominator"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "SearchParameter for Observation.valueRatio.denominator"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_ServiceRequest_SupportingInfo"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "SearchParameter for ServiceRequest.supportingInfo"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_DiagnosticReport_ImagingStudy"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "SearchParameter for DiagnosticReport.imagingStudy"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Composition_Attester_Mode"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "SearchParameter for Composition.attester.mode"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Composition_Custodian"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "SearchParameter for Composition.custodian"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Composition_RelatesTo_Code"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "SearchParameter for Composition.relatesTo.code"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Media_PartOf"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "SearchParameter for Media.partOf"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Device_Property_Type"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für Device.property.type"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_DeviceMetric_Source"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für DeviceMetric.source"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Observation_BodySite"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "SearchParameter for Observation.bodySite"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Observation_Component_Interpretation"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für Observation.component.interpretation"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Observation_ReferenceRange"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für Observation.referenceRange"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Observation_ReferenceRange_Low"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für Observation.referenceRange.low"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Observation_ReferenceRange_High"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für Observation.referenceRange.high"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Observation_Issued"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für Observation.issued"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Procedure_Recorder"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für Procedure.recorder"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_DocumentReference_Attachment_Title"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für DocumentReference.content.attachment.title"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_DocumentReference_Attachment_Size"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für DocumentReference.content.attachment.size"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_EvidenceVariable_Characteristic_Description"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für EvidenceVariable.characteristic.description"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Library_Quellregister"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für Library.extension:QuellRegister"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Library_RelatedArtifact_Url"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für Library.relatedArtifact.document.url"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_ResearchStudy_Arm_Name"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ResearchStudy.arm.name"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_ResearchStudy_Label"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ResearchStudy.extension:label"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_ResearchStudy_Akronym"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ResearchStudy.extension:Akronym"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_ResearchStudy_Finanzierung"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ResearchStudy.extension:Finanzierung"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_ResearchStudy_Studienregister"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ResearchStudy.extension:Studienregister"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_ResearchStudy_RekrutierungsstandDatum"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstand-datum"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_ResearchStudy_RekrutierungsstandGenauigkeit"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstand-genauigkeit"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_ResearchStudy_Rekrutierungsstand"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstand"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_ResearchStudy_Rekrutierungsziel"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsziel"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_ResearchStudy_Rekrutierungsstart"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstart"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Condition_Verification_Status"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "SearchParameter for Condition.verificationStatus"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Observation_hasMember"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "SearchParameter for Observation.hasMember"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Procedure_Complication"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "SearchParameter for Procedure.complication"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Procedure_Outcome"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "SearchParameter for Procedure.outcome"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_AdverseEvent_SuspectEntity_Instance"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "SearchParameter for AdverseEvent.suspectEntity.instance"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_AdverseEvent_Encounter"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "SearchParameter for AdverseEvent.encounter"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_CarePlan_Created"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "SearchParameter for CarePlan.created"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_CarePlan_Contributor"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "SearchParameter for CarePlan.contributor"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_CarePlan_Addresses"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "SearchParameter for CarePlan.addresses"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Observation_Focus"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "SearchParameter for Observation.focus"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Observation_Encounter"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "SearchParameter for Observation.encounter"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Supporting_Info"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für CarePlan.supportingInfo | DiagnosticReport.extension.supportingInfo"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Description"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für CarePlan.description | ImagingStudy.description | ImagingStudy.series.description"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Koerperstruktur_Location_Qualifier"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für BodyStructure.locationQualifier"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Composition_Section_Title"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für Composition.section.title"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Composition_Section_Author"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für Composition.section.author"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Diagnostic_Report_Conclusion"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für DiagnosticReport.conclusion"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Imaging_Study_Modality_Body_Site"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ImagingStudy.series.modality and ImagingStudy.series.bodySite"
+msgstr ""
+
+# SearchParameter.component.expression
+#: SearchParameter.component.expression
+msgid "modality"
+msgstr ""
+
+# SearchParameter.component.expression
+#: SearchParameter.component.expression
+msgid "bodysite"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Imaging_Study_Bildgebungsgrund"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ImagingStudy.Extension.Bildgebungsgrund"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Imaging_Study_Modality"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ImagingStudy.modality"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Reason_Reference"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ImagingStudy.reasonReference"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Imaging_Study_Number_Series"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ImagingStudy.numberOfSeries"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Imaging_Study_Number_Instances"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Imaging_Study_Procedure_Reference"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ImagingStudy.procedureReference"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Imaging_Study_Series_CTDI_Volume"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ImagingStudy.series.extension.CTDIvolume"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Imaging_Study_Series_Exposure_Time"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ImagingStudy.series.extension.exposureTime"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Imaging_Study_Series_Exposure"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ImagingStudy.series.extension.exposure"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Imaging_Study_Series_xRay_Tube_Current"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ImagingStudy.series.extension.xRayTubeCurrent"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Imaging_Study_Series_KVP"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ImagingStudy.series.extension.kvp"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Imaging_Study_Series_View_Position"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ImagingStudy.series.extension.viewPosition"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Imaging_Study_Series_Magnetic_Field_Strength"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ImagingStudy.series.extension.magneticFieldStrength"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Imaging_Study_Series_Scanning_Sequence"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ImagingStudy.series.extension.scanningSequence"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Imaging_Study_Series_Scanning_Sequence_Variant"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ImagingStudy.series.extension.scanningSequenceVariant"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Imaging_Study_Series_Echo_Time"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ImagingStudy.series.extension.echoTime"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Imaging_Study_Series_Repetition_Time"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ImagingStudy.series.extension.repetitionTime"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Imaging_Study_Series_Inversion_Time"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ImagingStudy.series.extension.inversionTime"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Imaging_Study_Series_Flip_Angle"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ImagingStudy.series.extension.flipAngle"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Imaging_Study_Radiopharmaceutical"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ImagingStudy.series.extension.radiopharmaceutical"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Imaging_Study_Radionuclide"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ImagingStudy.series.extension.radionuclide"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Imaging_Study_Series_Tracer_Exposure_Time"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ImagingStudy.series.tracerExposureTime"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Imaging_Study_Series_Units"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ImagingStudy.series.extension.units"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Imaging_Study_Series_Radionuclide_Total_Dose"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ImagingStudy.series.extension.radionuclideTotalDose"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Imaging_Study_Series_Radionuclide_Half_Life"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ImagingStudy.series.extension.radionuclideHalfLife"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Imaging_Study_Series_Series_Type"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "ImagingStudy.series.extension.seriesType"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Imaging_Study_Series_Transducer_Type"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "ImagingStudy.series.extension.transducerType"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Imaging_Study_Series_Transducer_Frequency"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ImagingStudy.series.extension.transducerFrequency"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Imaging_Study_Series_Pulse_Frequency"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ImagingStudy.series.extension.pulseRepetitionFrequency"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Imaging_Study_Series_Ultrasound_Color"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "ImagingStudy.series.extension.ultrasoundPresent"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Imaging_Study_Series_Contrast_Bolus"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ImagingStudy.series.extension.contrastBolus"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Imaging_Study_Contrast_Bolus_Details"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ImagingStudy.series.extension.contrastBolusDetails"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Imaging_Study_Series_Number"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ImagingStudy.series.number"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Imaging_Study_Series_Laterality"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ImagingStudy.series.laterality"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Imaging_Study_Series_Started"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ImagingStudy.series.started"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Imaging_Study_Instance_Pixel_Spacing_X"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ImagingStudy.series.instance.extension.pixelSpacingX"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Imaging_Study_Instance_Pixel_Spacing_Y"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ImagingStudy.series.instance.extension.pixelSpacingY"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Imaging_Study_Instance_Slice_Thickness"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ImagingStudy.series.instance.extension.sliceThickness"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Imaging_Study_Instance_Image_Type"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ImagingStudy.series.instance.extension.imageType"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Imaging_Study_Instance_Burned_In_Annotation"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ImagingStudy.series.instance.extension.burnedInAnnotation"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Imaging_Study_Instance_Number"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ImagingStudy.series.instance.number"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Observation_Series_UID"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für Observation.extension.seriesUID"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Observation_SOP_Instance_UID"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für Observation.sopInstanceUID"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Observation_Body_Structure"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für Observation.bodyStructure"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Read_Procedure_Report"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ReadProcedure.report"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Imaging_Study_Series_ConvolutionalKernel"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ImagingStudy.series.extension.convolutionalKernel"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Bildgebung_Imaging_Study_Series_Slice_Thickness"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ImagingStudy.series.extension.sliceThickness"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_DocumentReference_Attachment_Creation"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für DocumentReference.content.attachment.creation"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_DocumentReference_Document_Status"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für DocumentReference.docStatus"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_DocumentReference_NLP_Processing_Status"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für DocumentReference.extension[nlp-processing-status].valueCodeableConcept"
+msgstr ""
+

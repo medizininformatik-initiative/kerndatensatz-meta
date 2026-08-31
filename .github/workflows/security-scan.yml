@@ -1,0 +1,130 @@
+# Security scan (monitoring layer C — known vulnerabilities in the TOOLING
+# ecosystems: npm/gem manifests, GitHub Actions, OS packages, plus IaC
+# misconfigurations and committed secrets).
+#
+# Purpose:   OSV-Scanner + Trivy (filesystem mode) over the repo, plus Trivy
+#            (image mode) over the dev container's digest-pinned base image;
+#            findings are uploaded as SARIF to the repository Security tab
+#            (Code scanning), categories "osv-scanner", "trivy-fs" and
+#            "trivy-image". A module created from this template inherits
+#            this workflow unchanged (see docs/maintenance.md).
+# Triggers:  schedule (Mondays 07:00 UTC) + pull_request targeting dev +
+#            workflow_dispatch.
+# Toggle:    vars.ENABLE_SECURITY_SCAN — ON by default; set the repo variable
+#            to 'false' to skip all three jobs (shown as "skipped", not failed).
+# Human-gated: triaging every finding (fix vs. documented accepted risk) —
+#            see docs/recipes/triage-a-vulnerability-alert.md. Nothing here
+#            changes code or dependencies.
+#
+# HONEST COVERAGE LIMIT (docs/maintenance.md): these scanners do NOT cover
+# FHIR content packages or the IG Publisher jar (not in vulnerability
+# databases). For those, the dependency version check (layer B) is the
+# available safeguard.
+name: Security scan
+
+on:
+  schedule:
+    - cron: "0 7 * * 1" # Mondays 07:00 UTC
+  pull_request:
+    branches: [dev]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  security-events: write # upload SARIF to the Security tab
+  actions: read # required by codeql-action/upload-sarif on private repos
+
+jobs:
+  osv:
+    if: ${{ vars.ENABLE_SECURITY_SCAN != 'false' }} # toggle: ON by default
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      # Direct-use scanner action. Note: it lives in the osv-scanner-action/
+      # SUBDIRECTORY of google/osv-scanner-action (the repo-root action.yml has
+      # no runnable definition — verified upstream at v2.3.8).
+      - name: OSV-Scanner
+        uses: google/osv-scanner-action/osv-scanner-action@8deb546fdb875b9996d27d4950be7312dac076a1 # v2.5.0
+        # osv-scanner exits non-zero when it finds vulnerabilities (1) or when
+        # the repo has no scannable package sources yet (128). Neither must
+        # block the SARIF upload, so the step tolerates failure.
+        continue-on-error: true
+        with:
+          scan-args: |-
+            --recursive
+            --format=sarif
+            --output=osv.sarif
+            ./
+
+      - name: Upload OSV SARIF
+        if: ${{ always() && hashFiles('osv.sarif') != '' }}
+        uses: github/codeql-action/upload-sarif@ff2f1c621b7f889edc0d3c761ac2e6a3f8cdb0dd # v4.37.7
+        with:
+          sarif_file: osv.sarif
+          category: osv-scanner
+
+  trivy:
+    if: ${{ vars.ENABLE_SECURITY_SCAN != 'false' }} # toggle: ON by default
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Trivy filesystem scan
+        uses: aquasecurity/trivy-action@ed142fd0673e97e23eac54620cfb913e5ce36c25 # v0.36.0
+        with:
+          scan-type: fs
+          scanners: vuln,misconfig,secret
+          format: sarif
+          output: trivy.sarif
+
+      - name: Upload Trivy SARIF
+        if: ${{ always() && hashFiles('trivy.sarif') != '' }}
+        uses: github/codeql-action/upload-sarif@ff2f1c621b7f889edc0d3c761ac2e6a3f8cdb0dd # v4.37.7
+        with:
+          sarif_file: trivy.sarif
+          category: trivy-fs
+
+  # Scans the dev container's base image — this catches OS/base-image
+  # vulnerabilities that fs-mode and OSV scans miss. Honest limit: the dev
+  # container is image-only (no Dockerfile), so this scans the digest-PINNED
+  # BASE image from devcontainer.json, not a fully built dev container —
+  # feature layers and postCreateCommand installs (SUSHI, Jekyll) are not
+  # included; their manifests are covered by the fs/OSV jobs above.
+  trivy-image:
+    if: ${{ vars.ENABLE_SECURITY_SCAN != 'false' }} # toggle: ON by default
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Extract dev container base image ref
+        id: image
+        # devcontainer.json is JSONC (it carries // comments), so plain jq
+        # cannot parse it; the image line is extracted textually instead.
+        # An empty ref (file or image entry missing) skips the scan steps
+        # below instead of failing the job.
+        run: |
+          set -euo pipefail
+          ref=""
+          if [ -f .devcontainer/devcontainer.json ]; then
+            ref="$(sed -n 's/^[[:space:]]*"image":[[:space:]]*"\([^"]*\)".*/\1/p' \
+              .devcontainer/devcontainer.json | head -n 1)"
+          fi
+          echo "ref=${ref}" >> "$GITHUB_OUTPUT"
+          echo "Dev container base image: ${ref:-<none found>}"
+
+      - name: Trivy image scan (dev container base image)
+        if: ${{ steps.image.outputs.ref != '' }}
+        uses: aquasecurity/trivy-action@ed142fd0673e97e23eac54620cfb913e5ce36c25 # v0.36.0
+        with:
+          scan-type: image
+          image-ref: ${{ steps.image.outputs.ref }}
+          format: sarif
+          output: trivy-image.sarif
+
+      - name: Upload Trivy image SARIF
+        if: ${{ always() && hashFiles('trivy-image.sarif') != '' }}
+        uses: github/codeql-action/upload-sarif@ff2f1c621b7f889edc0d3c761ac2e6a3f8cdb0dd # v4.37.7
+        with:
+          sarif_file: trivy-image.sarif
+          category: trivy-image

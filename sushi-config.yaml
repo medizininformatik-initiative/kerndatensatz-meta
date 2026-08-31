@@ -1,32 +1,487 @@
-canonical: https://www.medizininformatik-initiative.de/fhir/modul-meta
-fhirVersion: 4.0.1
-FSHOnly: false
-applyExtensionMetadataToRoot: false
-status: active
-license: CC-BY-4.0
-version: 2026.0.0
-id: mii-ig-meta
-name: MII_IG_Meta
-title: "MII IG Meta"
-description: Das Modul Meta enthält Basisartefakte für alle weiteren MII-IGs.
-packageId: de.medizininformatikinitiative.kerndatensatz.meta
-copyrightYear: 2019+
-releaseLabel: ci-build
-publisher:
-  name: Medizininformatik Initiative
-  url: https://www.medizininformatik-initiative.de/
-#dependencies:
-#  hl7.fhir.uv.fhir-for-fair: 1.0.0
+# ╭────────────────────────────── TEMPLATE — READ FIRST ───────────────────────────────╮
+# │ This is the CRMI-profiled metadata contract for an MII KDS module IG,              │
+# │ parameterized from medizininformatik-initiative/kerndatensatz-basis (main).        │
+# │ The file does NOT build until every {{...}} placeholder is replaced.               │
+# │                                                                                    │
+# │ All 19 placeholders this repository uses are listed below — 15 ACTIVE and 4        │
+# │ OPTIONAL. ACTIVE ones sit on lines the build reads today — leaving one             │
+# │ unreplaced ships a bogus artifact. OPTIONAL ones sit inside commented-out          │
+# │ blocks and matter only once you enable that block.                                 │
+# │                                                                                    │
+# │ They occur in: this file, ig.ini, publication-request.json,                        │
+# │ qc/custom.rules.yaml, .github/workflows/go-publish.yml, the narrative pages        │
+# │ (input/pagecontent, input/translations), the FSH sources (input/fsh, incl. the     │
+# │ rulesets library), input/resources and tests/.                                     │
+# │                                                                                    │
+# │ ── ACTIVE ────────────────────────────────────────────────────────────────         │
+# │   meta         lowercase module short name, e.g. `base`, `person`,      │
+# │                           `icu`. Drives packageId, id, and the canonical — and     │
+# │                           the resource id inside input/resources/Parameters-       │
+# │                           expansion-manifest.json. It is also the only             │
+# │                           placeholder that appears in FILE NAMES — three:          │
+# │                           input/translations/de/ImplementationGuide-mii-ig-        │
+# │                           meta.po and the IG intro page                 │
+# │                           ImplementationGuide-mii-ig-meta.md in         │
+# │                           input/pagecontent/ + its German mirror. All three        │
+# │                           must be RENAMED as well as substituted                   │
+# │                           (docs/recipes/create-a-new-module.md step 4; .po         │
+# │                           details: docs/recipes/add-translation.md §5).            │
+# │   Meta         CamelCase computable name part, e.g. `Base` →            │
+# │                           name: MII_IG_Base.                                       │
+# │   Meta        human-readable title part, e.g.                          │
+# │                           `Core Dataset Base` → title: MII Implementation          │
+# │                           Guide Core Dataset Base.                                 │
+# │   The Meta module contains foundational artifacts used by all other MII implementation guides.  one-sentence English description of the module.          │
+# │   2026.0.0      MII CalVer YYYY.n.n, e.g. 2026.0.1 (NOT SemVer;          │
+# │                           see the MII Module Release Workflow). Also pins the      │
+# │                           versioned canonicals in input/fsh/rulesets/.             │
+# │   2026         the release sequence year, e.g. 2026.                    │
+# │   2026-08-31        ISO date YYYY-MM-DD; go-publish.yml requires it to       │
+# │                           equal the publication date.                              │
+# │   2019  first copyright year, e.g. 2019.                       │
+# │   2026-08-31       ISO date this release was approved; see docs/release.md. │
+# │   julian.sass@charite.de contact email of the module author.                      │
+# │   C80260      NCI Thesaurus code for the module's topic (basis        │
+# │                           declares seven: C15607, C154624, C25218, C16960,         │
+# │                           C25190, C81239, C25717). Read by the artifact-topic      │
+# │                           extension below AND by every profile via                 │
+# │                           `insert CRMIArtifactTopic(...)`. There is no sensible    │
+# │                           default: an unreplaced value ships a bogus code.         │
+# │   medizininformatik-initiative / kerndatensatz-meta  (publication-request.json, go-publish.yml)       │
+# │                           the org/repo hosting this module; GitHub Pages under     │
+# │                           the creating org is the publication website.             │
+# │   Meta module release 2026.0.0. (publication-request.json) one-line description of the   │
+# │                           release being published.                                 │
+# │   The Meta module contains foundational artifacts used by all other MII implementation guides.  (publication-request.json) the description shown in    │
+# │                           the FHIR IG registry entry.                              │
+# │                                                                                    │
+# │ ── OPTIONAL (inside commented-out blocks — replace only if you enable them) ──     │
+# │   https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier       one entry of the `special-url` list: a canonical this    │
+# │                           IG defines that does NOT start with the module           │
+# │                           canonical. Regenerate the list per                       │
+# │                           docs/recipes/regenerate-special-url.md.                  │
+# │   {{CITATION_TEXT}}       artifact-relatedArtifact — the module's literature       │
+# │   {{CITATION_URL}}        citation, its URL, and its publication date              │
+# │   {{CITATION_PUBLICATION_DATE}}  (ISO YYYY-MM-DD).                                 │
+# ╰────────────────────────────────────────────────────────────────────────────────────╯
+# ABOUT THE kerndatensatz-basis CITATIONS BELOW
+# `kerndatensatz-basis` is the MII reference module. Wherever a comment quotes
+# one of its values, that value is an EXAMPLE of the convention in force — not a
+# value to copy into your module. Every quoted value was verified against
+# medizininformatik-initiative/kerndatensatz-basis, branch `main`, commit
+# f6c6878, on 2026-07-26.
 
+# id pattern per the MII naming convention: mii-ig-<slug>
+# (for example, kerndatensatz-basis uses `mii-ig-base`).
+id: mii-ig-meta
+# Canonical pattern per the MII convention:
+# https://www.medizininformatik-initiative.de/fhir/modul-<slug>
+# (for example, kerndatensatz-basis uses
+# https://www.medizininformatik-initiative.de/fhir/modul-base).
+# The final value is set per module; the publication WEBSITE deliberately
+# differs (GitHub Pages under the creating org — "canonical-mismatch" in the
+# publication setup). Do not point the canonical at github.io.
+canonical: https://www.medizininformatik-initiative.de/fhir/modul-meta
+# name pattern per the MII convention: MII_IG_<Name>
+# (for example, kerndatensatz-basis uses `MII_IG_Base`).
+name: MII_IG_Meta
+# title pattern: "MII Implementation Guide <Title>" (for example,
+# kerndatensatz-basis uses "MII Implementation Guide Core Dataset Base").
+title: MII IG Meta
+description: "The Meta module contains foundational artifacts used by all other MII implementation guides."
+status: active # draft | active | retired | unknown
+# MII modules use CalVer YYYY.n.n (e.g. 2026.0.1) per the MII Module Release
+# Workflow — NOT SemVer. Only the template tooling repos use SemVer.
+version: "2027.0.0-ballot.rc1"
+# packageId pattern per the MII naming convention:
+# de.medizininformatikinitiative.kerndatensatz.<slug> (for example,
+# kerndatensatz-basis uses de.medizininformatikinitiative.kerndatensatz.base).
+packageId: de.medizininformatikinitiative.kerndatensatz.meta
+fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
+copyrightYear: "2019+"
+releaseLabel: ci-build
+license: CC-BY-4.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
+# Must equal the publication date; go-publish.yml validates this.
+date: "2026-08-31"
+jurisdiction: urn:iso:std:iso:3166#DE "Germany" # https://www.hl7.org/fhir/valueset-jurisdiction.html
+# NUM-DIZ takes over IG development and maintenance when MII funding ends
+# (end-2026), so NUM-DIZ is the publisher shown in the footer's
+# "IG © <year> <publisher>" line (TF-KDS feedback 2026-08-14). "NUM-DIZ" is a
+# proper name, hence language-neutral. The module CONTENT stays MII content —
+# the artifact copyright labels in input/fsh/rulesets/crmi.fsh are unaffected.
+publisher:
+  name: NUM-DIZ
+  # Language-neutral URL: the footer's publisher link is the same on every
+  # language's pages, so it must not pin one language's site.
+  url: https://www.netzwerk-universitaetsmedizin.de
+
+# CRMI conformance: the IG resource claims the CRMI shareable, publishable and
+# computable ImplementationGuide profiles (for example, kerndatensatz-basis
+# claims the same three).
+meta:
+  profile:
+    - http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareableimplementationguide
+    - http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishableimplementationguide
+    - http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-implementationguide
+experimental: false
+# The artifact-* / cqf-* extension set below mirrors the reference module
+# kerndatensatz-basis one-for-one; only the per-module values are placeholders.
 extension:
-  - url: https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable
+  # Existing module-specific licence extension retained from the source guide.
+  #- url: https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable
+  #  valueCodeableConcept:
+  #    coding:
+  #      - system: http://spdx.org/licenses/
+  #        code: CC-BY-4.0
+  #        display: Creative Commons Attribution 4.0 International License
+  # Date this release was approved by whoever governs the module
+  # (for example, kerndatensatz-basis records 2024-03-07).
+  - url: http://hl7.org/fhir/StructureDefinition/resource-approvalDate
+    valueDate: "2026-08-31"
+  - url: http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability
+    valueCode: shareable
+  - url: http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability
+    valueCode: publishable
+  #- url: http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy
+  #  valueCodeableConcept:
+  #    coding:
+  #      - system: http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes
+  #        code: package
+  #        display: Package
+  # Package provenance: must repeat packageId, version, and canonical.
+  - url: http://hl7.org/fhir/StructureDefinition/package-source
+    extension:
+      - url: packageId
+        valueId: de.medizininformatikinitiative.kerndatensatz.meta
+      - url: version
+        valueString: "2027.0.0-ballot.rc1"
+      - url: uri
+        valueUri: https://www.medizininformatik-initiative.de/fhir/modul-meta
+  # Year this release sequence became effective
+  # (for example, kerndatensatz-basis records "2026").
+  - url: http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod
+    valuePeriod:
+      start: "2027"
+  - url: http://hl7.org/fhir/StructureDefinition/artifact-author
+    valueContactDetail:
+      telecom:
+        - system: email
+          value: "julian.sass@charite.de"
+  # The MII-wide governance bodies below apply to every MII KDS module — for
+  # example, kerndatensatz-basis records the same National Steering Committee as
+  # reviewer and endorser. Adjust only if your module's governance differs.
+  - url: http://hl7.org/fhir/StructureDefinition/artifact-editor
+    valueContactDetail:
+      name: Taskforce Core Data Set
+  - url: http://hl7.org/fhir/StructureDefinition/artifact-reviewer
+    valueContactDetail:
+      name: Interoperability Working Group
+      telecom:
+        - system: url
+          value: https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group
+  - url: http://hl7.org/fhir/StructureDefinition/artifact-reviewer
+    valueContactDetail:
+      name: National Steering Committee
+      telecom:
+        - system: url
+          value: https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee
+  - url: http://hl7.org/fhir/StructureDefinition/artifact-endorser
+    valueContactDetail:
+      name: Interoperability Working Group
+      telecom:
+        - system: url
+          value: https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group
+  - url: http://hl7.org/fhir/StructureDefinition/artifact-endorser
+    valueContactDetail:
+      name: National Steering Committee
+      telecom:
+        - system: url
+          value: https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee
+  # OPTIONAL (module-specific): literature reference(s) for the module.
+  # For example, kerndatensatz-basis cites the MII core-data-set paper
+  # (doi:10.1007/s00103-024-03888-4) with this exact structure — uncomment and
+  # fill in when your module has a citation:
+  # - url: http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact
+  #   valueRelatedArtifact:
+  #     type: citation
+  #     citation: "{{CITATION_TEXT}}"
+  #     url: "{{CITATION_URL}}"
+  #     extension:
+  #       - url: http://hl7.org/fhir/StructureDefinition/cqf-publicationDate
+  #         valueDate: "{{CITATION_PUBLICATION_DATE}}"
+  #       - url: http://hl7.org/fhir/StructureDefinition/cqf-publicationStatus
+  #         valueCode: active
+  # The module's expansion-parameters manifest — the pinned code system versions
+  # every ValueSet in this IG is expanded against (MII meta wiki, "Terminology
+  # Version Policy"). Shipped at
+  # input/resources/Parameters-expansion-manifest.json; see
+  # input/resources/README.md for the CalVer → SNOMED CT release table. Active
+  # together with path-expansion-params / pin-manifest below — all three must
+  # name the same resource.
+  - url: http://hl7.org/fhir/StructureDefinition/cqf-expansionParameters
+    valueReference:
+      reference: Parameters/mii-param-meta-manifest
+  # `semver` is what the MII modules record here even though MII module versions
+  # are CalVer YYYY.n.n (which parses as three numeric fields) — for example,
+  # kerndatensatz-basis records `semver`. Do not "correct" it without an
+  # MII-wide decision.
+  - url: http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm
+    valueCoding:
+      system: http://hl7.org/fhir/version-algorithm
+      code: semver
+  - url: http://hl7.org/fhir/StructureDefinition/artifact-usage
+    valueMarkdown: "Use this ImplementationGuide resource as a computable definition of all the parts of the corresponding module of the Medical Informatics Initiative core data set."
+  - url: http://hl7.org/fhir/StructureDefinition/artifact-purpose
+    valueMarkdown: "Provide the computable publication unit for the MII Core Dataset Meta module, enabling implementers to discover, validate, version, and apply the specification consistently."
+  # Module topic(s), coded with the NCI Thesaurus (for example,
+  # kerndatensatz-basis declares seven: C15607, C154624, C25218, C16960,
+  # C25190, C81239, C25717 — verified against its main branch). Replace the
+  # code with your module's topic(s); repeat the block for each topic.
+  - url: http://hl7.org/fhir/StructureDefinition/artifact-topic
     valueCodeableConcept:
       coding:
-        - system: http://spdx.org/licenses/
-          code: CC-BY-4.0
-          display: Creative Commons Attribution 4.0 International License
+        - system: http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl
+          code: "C80260"
 
+# The dependencies property corresponds to IG.dependsOn. The key is the
+# package id and the value is the version (for advanced use cases the value
+# can be an object with keys for id, uri, and version).
+#
+# Pinned to the exact versions the reference module kerndatensatz-basis pins on
+# `main`. Fixed versions only — never `current`/`dev` (the go-publish workflow and the convention
+# check reject floating versions; the dependency checker proposes bumps).
+dependencies:
+  # Canonical Resource Management Infrastructure — required by the CRMI
+  # profiles claimed under meta.profile above (kerndatensatz-basis pins the
+  # same 2.0.0).
+  hl7.fhir.uv.crmi: 2.0.0
+  # HL7 Terminology (THO) — pinned DIRECTLY on purpose. The IG Publisher's
+  # auto-add guard reads only THIS IG's own dependsOn (PublisherIGLoader,
+  # verified at the pinned 2.2.11): without a direct pin every build silently
+  # injects the LATEST THO release; a transitive pin (e.g. in the meta
+  # package) cannot control the version. scripts/meta-pin-drift.mjs warns
+  # when this pin drifts from what the pinned meta package ships (meta
+  # 2026.0.0 pins none yet), and the Monday dependency check proposes newer
+  # releases like for every other pin.
+  hl7.terminology.r4: 7.1.0
+  # HL7 Extensions Pack — same rationale and same drift watch as
+  # hl7.terminology.r4 above.
+  hl7.fhir.uv.extensions.r4: 5.2.0
+#
+#
+# The pages property corresponds to IG.definition.page. SUSHI can
+# auto-generate the page list, but if the author includes pages in
+# this file, it is assumed that the author will fully manage the
+# pages section and SUSHI will not generate any page entries.
+# The page file name is used as the key. If title is not provided,
+# then the title will be generated from the file name.  If a
+# generation value is not provided, it will be inferred from the
+# file name extension.  Any subproperties that are valid filenames
+# with supported extensions (e.g., .md/.xml) will be treated as
+# sub-pages.
+#
+# This page tree implements the MII-agreed module menu structure (see
+# docs/page-structure.md for the structure with cardinalities, and
+# docs/optional-pages.md for the OPTIONAL (0..1) entries and how to remove
+# one). kerndatensatz-basis still lists the older combined pages
+# (profiles-and-extensions, search-parameters-and-operations, terminology);
+# this template splits them into one page per artifact type per the agreed
+# structure. The MII-wide conformance topics (Conformance, General
+# Requirements, Must Support, Handling Missing Data) and "Datasets and
+# Descriptions" are MENU LINKS, not pages — they have no entry here.
+# Every entry needs a matching file in input/pagecontent/ (starter pages are a
+# separate scaffolding step); OPTIONAL entries your module does not need are
+# removed per docs/optional-pages.md.
+# Every `title:` below is also a msgid in the IG-level translation catalogue
+# input/translations/de/ImplementationGuide-mii-ig-meta.po — if you
+# add, rename or delete a page here, update that catalogue in the same commit,
+# or the German rendering falls back to the English title for that page.
+pages:
+  index.md:
+    title: Home
 
-menu:
-  Home: index.html
-  Artifacts: artifacts.html
+  guidance.md:
+    title: Guidance
+    implementer-guidance.md:
+      title: Guidance for Implementers
+    uml-diagrams.md:
+      title: UML Diagrams
+
+  # The only Conformance-cluster PAGE of this guide; the MII-wide conformance
+  # topics are menu links to the Meta module (see input/includes/menu.xml).
+  security-and-privacy.md:
+    title: Security and Privacy
+
+  profiles.md:
+    title: Profiles
+  extensions.md:
+    title: Extensions
+  capability-statements.md:
+    title: Capability Statements
+  search-parameters.md:
+    title: Search Parameters
+  logical-models.md:
+    title: Logical Models
+  code-systems.md:
+    title: Code Systems
+  examples.md:
+    title: Examples
+
+  downloads.md:
+    title: Downloads
+
+  changes.md:
+    title: Changelog
+
+  metadata.md:
+    title: Metadata Overview
+  version-history.md:
+    title: Versioning
+
+  # The IG Publisher AUTO-GENERATES the ImplementationGuide resource page
+  # (ImplementationGuide-<id>.html); this entry gives it a hand-authored intro
+  # — dependency table, cross-version analysis, global profiles, copyrights —
+  # the kerndatensatz-basis idiom (ImplementationGuide-mii-ig-base.md there).
+  # BOTH this entry's key and the two source files carry meta in
+  # their NAME: like the IG-level .po catalogue, rename
+  # input/pagecontent/ImplementationGuide-mii-ig-meta.md and its
+  # German mirror under input/translations/de/pagecontent/ when you set your
+  # slug (docs/recipes/create-a-new-module.md step 4). The CI self-check
+  # substitutes and renames all of them for the template repo's own preview.
+  ImplementationGuide-mii-ig-meta.md:
+    title: MII ImplementationGuide Resource
+
+  translationinfo.md:
+    title: Translation Information
+
+#
+#
+# The parameters property represents IG.definition.parameter. Rather
+# than a list of code/value pairs (as in the ImplementationGuide
+# resource), the code is the YAML key. If a parameter allows repeating
+# values, the value in the YAML should be a sequence/array.
+# For parameters defined by core FHIR see:
+# http://build.fhir.org/codesystem-guide-parameter-code.html
+# For parameters defined by the FHIR Tools IG see:
+# http://build.fhir.org/ig/FHIR/fhir-tools-ig/branches/master/CodeSystem-ig-parameters.html
+#
+parameters:
+  path-resource:
+    - input/predefined-resources
+  path-pages:
+    - input/intro-notes # Custom introductory notes
+  # ── Multi-language (e.g. kerndatensatz-basis uses the same model) ──────────
+  # English is the DEFAULT rendering language, German the additional one. The MII
+  # naming conventions prefer German for a conformance resource's description/
+  # name/title but require a translation extension whose content is shown "im
+  # englischsprachigen Implementierungsleitfaden" — they assume the guide is
+  # English. German page mirrors live under input/translations/de/.
+  i18n-default-lang: en # Default language
+  i18n-lang:
+    - de # Additional languages
+  translation-sources:
+    - input/translations/de # Path to German translations
+  excludexml: false
+  excludejson: false
+  excludettl: true
+  # ── Version comparison (enable once a FORMAL publication exists) ───────────
+  # Publishes a machine-generated delta against the previous version at
+  # comparison-v<version>/index.html, and annotates changed elements on the
+  # artifact pages. TWO prerequisites (verified against the publisher's
+  # PreviousVersionComparator):
+  #   1. The canonical must serve package-list.json — the comparator fetches
+  #      <canonical>/package-list.json unconditionally, even for an explicit
+  #      version, and takes the package id from it. MII modules get this with
+  #      their first formal publication at the canonical; until then the
+  #      comparison reports "Unable to find version history" and does nothing.
+  #   2. The previous version's package must be loadable from the package
+  #      cache/registry. If it is not on packages.fhir.org yet,
+  #      scripts/seed-comparison-cache.sh fills the cache from this
+  #      repository's GitHub Release assets (module-release.yml attaches
+  #      package.tgz to every release for exactly this purpose).
+  # Keep the value a released version; update it with every release; link the
+  # report from the version's changelog section (see the Changelog page).
+  # Kill switch: the repository variable ENABLE_VERSION_COMPARISON=false
+  # sets `version-comparison: n/a` in the CI workspace before every build —
+  # n/a is the publisher's documented off-value; an ABSENT parameter defaults
+  # to {last} (registry: http://hl7.org/fhir/tools/CodeSystem/ig-parameters).
+  # version-comparison: "2027.0.0"
+  excludemap: false
+  # ({current}/{last} forms are NOT usable here: they resolve by fetching
+  # <canonical>/package-list.json, which the MII canonical does not serve —
+  # use the explicit version above.)
+  logging:
+    - init
+    - progress
+    - context
+    - html
+    - tx
+  # Pin every canonical reference in the built package (CRMI requirement; for
+  # example, kerndatensatz-basis sets the same value).
+  pin-canonicals: pin-all
+  # Where the IG Publisher reads the pinned code system versions from, and which
+  # manifest's pins are written into the built package. The path is relative to
+  # the publisher's working directory, hence the '../../'. (For example,
+  # kerndatensatz-basis names the file after its slug,
+  # Parameters-mii-param-base-manifest.json; this template uses
+  # a slug-free name so nothing has to be renamed per module.) Keep both in sync
+  # with the cqf-expansionParameters extension above and with the file in
+  # input/resources/ — see input/resources/README.md.
+  path-expansion-params: '../../input/resources/Parameters-expansion-manifest.json'
+  pin-manifest: 'mii-param-meta-manifest'
+  suppress-mappings:
+    - http://hl7.org/v3
+    - http://hl7.org/v3/cda
+  # ── special-url (PLACEHOLDER — do not copy another module's list) ───────────
+  # special-url lists every canonical URL DEFINED by this IG that does not
+  # start with the module canonical above (e.g. legacy
+  # .../fhir/core/modul-<x>/... canonicals kept for compatibility, or R5
+  # cross-version extension URLs). A NEW module normally needs none; the list in
+  # kerndatensatz-basis, for example, is specific to that module and must NOT be
+  # copied. Regenerate the list for
+  # your module per docs/recipes/regenerate-special-url.md, then uncomment:
+  special-url:
+    - https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier
+  # FHIR validation test cases (for example, kerndatensatz-basis does the same).
+  # A minimal working harness ships in
+  # tests/profiles/ — see tests/README.md. It stays COMMENTED OUT in the template
+  # repo: the fixtures' canonicals still carry meta, which the CI
+  # self-check substitution does not reach (it rewrites sushi-config.yaml, ig.ini
+  # and the narrative pages only). Replace the placeholders in tests/profiles/,
+  # then uncomment:
+  # profile-test-cases: tests/profiles/profiles.json
+
+# ── MENU (translatable — maintained as menu.xml, NOT the `menu:` property) ────
+# The menu lives in input/includes/menu.xml (English = the default language) with
+# a German translation at input/translations/de/includes/menu.xml. That is
+# the mechanism the HL7 reference IG FHIR/multi-lang-test-ig uses and the ONLY
+# way to get a TRANSLATED menu.
+#
+# Do NOT re-add a `menu:` property here: SUSHI would generate a competing
+# fsh-generated/includes/menu.xml whose labels cannot be translated, so the
+# navigation would stay in one language on every rendered language.
+#
+# Editing rules: keep href targets identical across languages, translate only the
+# labels, give dropdown parents a REAL page (href="#" fails the template's menu
+# QA), and remember only one sub-menu level is supported. When you add or remove
+# a page, update BOTH menu files and the `pages:` tree above.
+#
+# ╭──────────────────────────────────────────SUSHI flags───────────────────────────────────────────╮
+# │  The flags below configure aspects of how SUSHI processes FSH.                                 │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+#
+# The instanceOptions property is used to configure certain aspects of how SUSHI processes instances.
+#
+instanceOptions:
+  # When set to true, slices must be referred to by name and not only by a numeric index in order to be used
+  # in an Instance's assignment rule. All slices appear in the order in which they are specified in FSH rules.
+  # While SUSHI defaults to false for legacy reasons, manualSliceOrding is recommended for new projects.
+  manualSliceOrdering: true # true | false
+
+# Everything above is what this IG actually sets. SUSHI accepts further
+# properties (contact, global profiles, FSHOnly, the remaining instanceOptions,
+# …) that this template deliberately leaves unset; the authoritative list is the
+# SUSHI documentation: https://fshschool.org/docs/sushi/configuration/
+# One of them is a house rule rather than a preference: leave FSHOnly false —
+# this project builds the full IG, not just the resources. (`menu:` is the other;
+# see the menu section above for why it must stay unset.)

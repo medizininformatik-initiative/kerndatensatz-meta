@@ -7,8 +7,6 @@
     ]
   },
   "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-diagnosticreport-imagingstudy",
-  "version": "2026.0.0",
-  "publisher": "Medizininformatik Initiative",
   "contact": [
     {
       "telecom": [
@@ -33,18 +31,20 @@
       }
     }
   ],
+  "base": [
+    "DiagnosticReport"
+  ],
+  "target": [
+    "ImagingStudy"
+  ],
+  "version": "2027.0.0-ballot.rc1",
+  "publisher": "Medizininformatik Initiative",
   "date": "2025-10-06",
   "name": "MII_SP_Meta_DiagnosticReport_ImagingStudy",
   "description": "SearchParameter for DiagnosticReport.imagingStudy",
   "experimental": false,
   "status": "active",
   "code": "imaging-study",
-  "base": [
-    "DiagnosticReport"
-  ],
   "type": "reference",
-  "expression": "DiagnosticReport.imagingStudy",
-  "target": [
-    "ImagingStudy"
-  ]
+  "expression": "DiagnosticReport.imagingStudy"
 }

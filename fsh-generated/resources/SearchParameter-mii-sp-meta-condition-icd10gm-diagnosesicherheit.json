@@ -7,8 +7,6 @@
     ]
   },
   "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-icd10gm-diagnosesicherheit",
-  "version": "2026.0.0",
-  "publisher": "Medizininformatik Initiative",
   "contact": [
     {
       "telecom": [
@@ -33,15 +31,17 @@
       }
     }
   ],
+  "base": [
+    "Condition"
+  ],
+  "version": "2027.0.0-ballot.rc1",
+  "publisher": "Medizininformatik Initiative",
   "name": "MII_SP_Meta_Condition_ICD10GM_Diagnosesicherheit",
   "status": "active",
   "experimental": false,
   "date": "2024-10-08",
   "description": "Suchparameter für Condition.code.coding:icd10-gm.extension:Diagnosesicherheit",
   "code": "icd10gm-diagnosesicherheit",
-  "base": [
-    "Condition"
-  ],
   "type": "token",
   "expression": "Condition.code.coding.extension.where(url = 'http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit').value"
 }

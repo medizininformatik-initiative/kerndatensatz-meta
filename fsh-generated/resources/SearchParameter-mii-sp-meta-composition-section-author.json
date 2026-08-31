@@ -7,7 +7,6 @@
     ]
   },
   "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-composition-section-author",
-  "publisher": "Medizininformatik Initiative",
   "contact": [
     {
       "telecom": [
@@ -18,7 +17,6 @@
       ]
     }
   ],
-  "version": "2026.0.0",
   "extension": [
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -33,18 +31,20 @@
       }
     }
   ],
+  "base": [
+    "Composition"
+  ],
+  "target": [
+    "Practitioner"
+  ],
+  "publisher": "Medizininformatik Initiative",
+  "version": "2027.0.0-ballot.rc1",
   "name": "MII_SP_Bildgebung_Composition_Section_Author",
   "status": "active",
   "experimental": false,
   "date": "2025-11-06",
   "description": "Suchparameter für Composition.section.author",
   "code": "section-author",
-  "base": [
-    "Composition"
-  ],
   "type": "reference",
-  "expression": "Composition.section.author",
-  "target": [
-    "Practitioner"
-  ]
+  "expression": "Composition.section.author"
 }

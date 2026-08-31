@@ -7,7 +7,6 @@
     ]
   },
   "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength",
-  "publisher": "Medizininformatik Initiative",
   "contact": [
     {
       "telecom": [
@@ -18,7 +17,6 @@
       ]
     }
   ],
-  "version": "2026.0.0",
   "extension": [
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -33,17 +31,9 @@
       }
     }
   ],
-  "name": "MII_SP_Meta_Medication_Ingredient_Strength",
-  "status": "active",
-  "experimental": false,
-  "date": "2024-10-08",
-  "description": "Suchparameter für Medication.ingredient.strength",
-  "code": "ingredient-strength",
   "base": [
     "Medication"
   ],
-  "type": "composite",
-  "expression": "Medication.ingredient.strength",
   "component": [
     {
       "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength-numerator",
@@ -53,5 +43,15 @@
       "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength-denominator",
       "expression": "denominator"
     }
-  ]
+  ],
+  "publisher": "Medizininformatik Initiative",
+  "version": "2027.0.0-ballot.rc1",
+  "name": "MII_SP_Meta_Medication_Ingredient_Strength",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-10-08",
+  "description": "Suchparameter für Medication.ingredient.strength",
+  "code": "ingredient-strength",
+  "type": "composite",
+  "expression": "Medication.ingredient.strength"
 }

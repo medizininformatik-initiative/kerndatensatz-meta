@@ -7,8 +7,6 @@
     ]
   },
   "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-value-ratio",
-  "version": "2026.0.0",
-  "publisher": "Medizininformatik Initiative",
   "contact": [
     {
       "telecom": [
@@ -33,17 +31,9 @@
       }
     }
   ],
-  "date": "2024-10-08",
-  "name": "MII_SP_Meta_Observation_Value_Ratio",
-  "description": "SearchParameter for Observation.valueRatio",
-  "experimental": false,
-  "status": "active",
-  "code": "value-ratio",
   "base": [
     "Observation"
   ],
-  "type": "composite",
-  "expression": "Observation.value.ofType(Ratio)",
   "component": [
     {
       "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-value-ratio-numerator",
@@ -53,5 +43,15 @@
       "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-value-ratio-denominator",
       "expression": "denominator"
     }
-  ]
+  ],
+  "version": "2027.0.0-ballot.rc1",
+  "publisher": "Medizininformatik Initiative",
+  "date": "2024-10-08",
+  "name": "MII_SP_Meta_Observation_Value_Ratio",
+  "description": "SearchParameter for Observation.valueRatio",
+  "experimental": false,
+  "status": "active",
+  "code": "value-ratio",
+  "type": "composite",
+  "expression": "Observation.value.ofType(Ratio)"
 }

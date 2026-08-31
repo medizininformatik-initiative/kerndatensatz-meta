@@ -1,0 +1,45 @@
+2026-08-31T14:00:41Z  INFO   11  derived-scan  params  target=. out=migration-log/derived-content.tsv markdown=yes
+2026-08-31T14:00:41Z  INFO   11  derived-scan  result  files=42 markers=46 gates=A:2,B:32,C:12 kinds=bridge:8,no-source:10,suggestion:20,summary:8 langs=default,de findings=0 (none) out=migration-log/derived-content.tsv exit=0
+
+## Queue ② — derived content written during the migration
+
+Text the migration WROTE, not carried. Each row renders as a highlighted box on the page named. Clearing a row means deleting the marker and its box; **whether any may remain at publication is a Gate-D decision**, recorded in the report — nothing here blocks a release by itself.
+
+### Gate A — identity and values
+
+| Where | What was written | Derived from | Gate | Action |
+|---|---|---|---|---|
+| `capability-statements.html` (default, de) | The Simplifier source declared no CapabilityStatement. The draft below was generated from… _(suggestion)_ | `none` | A | adopt, replace or delete the suggested content, then delete the marker and box |
+
+### Gate B — narrative
+
+| Where | What was written | Derived from | Gate | Action |
+|---|---|---|---|---|
+| `CodeSystem-mii-cs-meta-diz-standorte.html` (default, de) | The Simplifier page contained only a generated artifact view. This summary is derived fro… _(summary)_ | `MII-IG-Meta/Technische-Implementierung/CodeSystem-MII-Standorte.page.md` | B | review the box on CodeSystem-mii-cs-meta-diz-standorte.html and delete the marker and box, or correct the text |
+| `StructureDefinition-mii-pr-meta-searchparameter.html` (default, de) | The former FQL result is summarized from the preserved profile: `search-param-code-regex`… _(summary)_ | `MII-IG-Meta/Technische-Implementierung/Profil-SearchParameter.page.md` | B | review the box on StructureDefinition-mii-pr-meta-searchparameter.html and delete the marker and box, or correct the text |
+| `ImplementationGuide-mii-ig-meta.html` (default, de) | The Simplifier guide had no equivalent ImplementationGuide-resource introduction. This st… _(suggestion)_ | `none` | B | adopt, replace or delete the suggested content, then delete the marker and box |
+| `changes.html` (default, de) | The entry for `2027.0.0-ballot.rc1` records this migration and was not present in the Sim… _(suggestion)_ | `none` | B | adopt, replace or delete the suggested content, then delete the marker and box |
+| `code-systems.html` (default, de) | The generated Simplifier artifact view was routed to the Publisher artifact page; this in… _(bridge)_ | `MII-IG-Meta/Technische-Implementierung/CodeSystem-MII-Standorte.page.md` | B | review the box on code-systems.html and delete the marker and box, or correct the text |
+| `downloads.html` (default, de) | The Simplifier guide had no download page. This standard Publisher download index was add… _(suggestion)_ | `none` | B | adopt, replace or delete the suggested content, then delete the marker and box |
+| `examples.html` (default, de) | The source provides two technical SearchParameter bundles but no clinical use-case exampl… _(bridge)_ | `MII-IG-Meta/Technische-Implementierung/Liste-Kerndatensatz-Suchparameter/Index.page.md` | B | review the box on examples.html and delete the marker and box, or correct the text |
+| `extensions.html` (default, de) | The source extension page was routed to the extension's generated artifact page; this ind… _(bridge)_ | `MII-IG-Meta/Technische-Implementierung/Extension-Lizenzbedingungen.page.md` | B | review the box on extensions.html and delete the marker and box, or correct the text |
+| `guidance.html` (default, de) | The authoritative source contains no detailed use cases, logical models, UML diagrams, re… _(summary)_ | `MII-IG-Meta/Index.page.md` | B | review the box on guidance.html and delete the marker and box, or correct the text |
+| `implementer-guidance.html` (default, de) | The source contains no separate implementation workflow. No ETL, server, or deployment gu… _(suggestion)_ | `none` | B | adopt, replace or delete the suggested content, then delete the marker and box |
+| `index.html` (default, de) | The source introduction announces use cases, but the authoritative guide tree contains no… _(summary)_ | `MII-IG-Meta/Index.page.md` | B | review the box on index.html and delete the marker and box, or correct the text |
+| `logical-models.html` (default, de) | The source module contains no logical models. None were created during migration. TODO:RE… _(suggestion)_ | `none` | B | adopt, replace or delete the suggested content, then delete the marker and box |
+| `metadata.html` (default, de) | The Simplifier guide had no metadata overview. This page was added from the module-templa… _(suggestion)_ | `none` | B | adopt, replace or delete the suggested content, then delete the marker and box |
+| `profiles.html` (default, de) | The source profile page was routed to the profile's generated artifact page; this index b… _(bridge)_ | `MII-IG-Meta/Technische-Implementierung/Profil-SearchParameter.page.md` | B | review the box on profiles.html and delete the marker and box, or correct the text |
+| `uml-diagrams.html` (default, de) | The source module contains no UML diagrams. None were created during migration. TODO:REVI… _(suggestion)_ | `none` | B | adopt, replace or delete the suggested content, then delete the marker and box |
+| `version-history.html` (default, de) | The Simplifier guide had no separate version-policy page. This page was added from the mo… _(suggestion)_ | `none` | B | adopt, replace or delete the suggested content, then delete the marker and box |
+
+### Gate C — language
+
+| Where | What was written | Derived from | Gate | Action |
+|---|---|---|---|---|
+| `StructureDefinition-mii-ex-meta-license-codeable.html` (default, de) | This English paragraph is a machine translation of the authoritative German Simplifier na… _(no-source)_ | `MII-IG-Meta/Technische-Implementierung/Extension-Lizenzbedingungen.page.md` | C | review the box on StructureDefinition-mii-ex-meta-license-codeable.html and delete the marker and box, or correct the text |
+| `StructureDefinition-mii-pr-meta-searchparameter.html` (default, de) | This English text is a machine translation of the authoritative German Simplifier narrati… _(no-source)_ | `MII-IG-Meta/Technische-Implementierung/Profil-SearchParameter.page.md` | C | review the box on StructureDefinition-mii-pr-meta-searchparameter.html and delete the marker and box, or correct the text |
+| `changes.html` (default, de) | This English changelog is a machine translation of the authoritative German release notes… _(no-source)_ | `MII-IG-Meta/Release-notes.page.md` | C | review the box on changes.html and delete the marker and box, or correct the text |
+| `index.html` (default, de) | This English page is a machine translation of the authoritative German Simplifier narrati… _(no-source)_ | `MII-IG-Meta/Index.page.md` | C | review the box on index.html and delete the marker and box, or correct the text |
+| `search-parameters.html` (default, de) | This English page and its description column are machine translations of the authoritativ… _(no-source)_ | `MII-IG-Meta/Technische-Implementierung/Liste-Kerndatensatz-Suchparameter/Index.page.md` | C | review the box on search-parameters.html and delete the marker and box, or correct the text |
+| `translationinfo.html` (default, de) | This language-status statement was added for the bilingual Publisher guide. TODO:REVIEW a… _(suggestion)_ | `none` | C | adopt, replace or delete the suggested content, then delete the marker and box |
+

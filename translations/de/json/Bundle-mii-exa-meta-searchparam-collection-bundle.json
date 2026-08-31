@@ -1,0 +1,2089 @@
+{
+  "id" : "Bundle-mii-exa-meta-searchparam-collection-bundle",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Creative Commons Attribution 4.0 International",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Person_Adresszusatz",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.publisher",
+      "context" : "SearchParameter.publisher",
+      "source" : "Medizininformatik Initiative",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für Patient.address.line.extension:Adresszusatz",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Patient_AssignerPID",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für Patient.identifier.assigner.identifier",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_ResearchSubject_Consent",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ResearchSubject.consent",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Patient_Gemeindeschluessel",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für Patient.address.city.extension:gemeindeschluessel",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Patient_Hausnummer",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für Patient.address.line.extension:Hausnummer",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Patient_OtherAmtlich",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für Patient.gender.extension:other-amtlich",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Patient_Postfach",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für Patient.address.line.extension:Postfach",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Patient_Prefix",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für Patient.name.prefix",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Patient_PrefixQualifier",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für Patient.name.prefix.extension:prefix-qualifier",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Patient_Stadtteil",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für Patient.address.extension:Stadtteil",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Patient_Strasse",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für Patient.address.line.extension:Strasse",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Condition_ICD10GM_Diagnosesicherheit",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für Condition.code.coding:icd10-gm.extension:Diagnosesicherheit",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Condition_ICD10GM_Mehrfachcodierung",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für Condition.code.coding:icd10-gm.extension:Mehrfachcodierungs-Kennzeichen",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Condition_ICD10GM_Seitenlokalisation",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für Condition.code.coding:icd10-gm.extension:Seitenlokalisation",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Procedure_BodySite",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für Procedure.bodySite",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Procedure_Dokumentationsdatum",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für Procedure.extension:Dokumentationsdatum",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Procedure_Durchfuehrungsabsicht",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für Procedure.extension:Durchfuehrungsabsicht",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Procedure_OPS_Seitenlokalisation",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für Procedure.code.coding:ops.extension:Seitenlokalisation",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Encounter_DiagnosisUse",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für Encounter.diagnosis.use",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Encounter_Hospitalization_AdmitSource",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für Encounter.hospitalization.admitSource",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Encounter_Location_PhysicalType",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für Encounter.location.physicalType",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Encounter_ServiceType",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für Encounter.serviceType",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Encounter_Aufnahmegrund_ErsteUndZweiteStelle",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für Encounter.extension:Aufnahmegrund.extension:ErsteUndZweiteStelle",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Encounter_Aufnahmegrund_DritteStelle",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für Encounter.extension:Aufnahmegrund.extension:DritteStelle",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Encounter_Aufnahmegrund_VierteStelle",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für Encounter.extension:Aufnahmegrund.extension:VierteStelle",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Encounter_Entlassungsgrund_ErsteUndZweiteStelle",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für Encounter.hospitalization.dischargeDisposition.extension:Entlassungsgrund.extension:ErsteUndZweiteStelle",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Encounter_Entlassungsgrund_DritteStelle",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für Encounter.hospitalization.dischargeDisposition.extension:Entlassungsgrund.extension:DritteStelle",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Medication_Ingredient_Strength_Numerator",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für Medication.ingredient.strength.numerator",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Medication_Ingredient_Strength_Denominator",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für Medication.ingredient.strength.denominator",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Medication_Ingredient_Strength",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für Medication.ingredient.strength",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.component.expression",
+      "context" : "SearchParameter.component.expression",
+      "source" : "numerator",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.component.expression",
+      "context" : "SearchParameter.component.expression",
+      "source" : "denominator",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Medication_ReasonReference",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für (MedicationAdministration|MedicationStatement).reasonReference",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Medication_Dosage_Site",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für (MedicationAdministration|MedicationStatement).dosage.site | MedicationRequest.dosageInstruction.site",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Medication_Dosage_Route",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für (MedicationAdministration|MedicationStatement).dosage.route | MedicationRequest.dosageInstruction.route",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Medication_Dosage_DoseRangeLow",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für MedicationStatement.dosage.doseAndRate.doseRange.low | MedicationRequest.dosageInstruction.doseAndRate.doseRange.low",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Medication_Dosage_DoseRangeHigh",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für MedicationStatement.dosage.doseAndRate.doseRange.high | MedicationRequest.dosageInstruction.doseAndRate.doseRange.high",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Medication_Dosage_DoseRange",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für MedicationStatement.dosage.doseAndRate.doseRange | MedicationRequest.dosageInstruction.doseAndRate.doseRange",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.component.expression",
+      "context" : "SearchParameter.component.expression",
+      "source" : "low",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.component.expression",
+      "context" : "SearchParameter.component.expression",
+      "source" : "high",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Medication_Dosage_DoseQuantity",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für MedicationStatement.dosage.doseAndRate.doseQuantity | MedicationRequest.dosageInstruction.doseAndRate.doseQuantity | MedicationAdministration.dosage.dose",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Medication_Dosage_RateRatioNumerator",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für MedicationStatement.dosage.doseAndRate.rateRatio.numerator | MedicationAdministration.dosage.rate.ofType(Ratio).numerator | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio).numerator",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Medication_Dosage_RateRatioDenominator",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für MedicationStatement.dosage.doseAndRate.rateRatio.denominator | MedicationAdministration.dosage.rate.ofType(Ratio).denominator | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio).denominator",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Medication_Dosage_RateRatio",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "MedicationStatement.dosage.doseAndRate.rate.ofType(Ratio) | MedicationAdministration.dosage.rate.ofType(Ratio) | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio)",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Medication_Dosage_RateRangeLow",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für MedicationStatement.dosage.doseAndRate.rateRange.low | MedicationRequest.dosageInstruction.doseAndRate.rateRange.low",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Medication_Dosage_RateRangeHigh",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für MedicationStatement.dosage.doseAndRate.rateRange.high | MedicationRequest.dosageInstruction.doseAndRate.rateRange.high",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Medication_Dosage_RateRange",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für MedicationStatement.dosage.doseAndRate.rateRange | MedicationRequest.dosageInstruction.doseAndRate.rateRange",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Medication_Dosage_RateQuantity",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für MedicationStatement.dosage.doseAndRate.rateQuantity | MedicationAdministration.dosage.rateQuantity | MedicationRequest.dosageInstruction.doseAndRate.rateQuantity",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Medication_List_Mode",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für List.mode",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Medication_PartOf",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für (MedicationAdministration|MedicationStatement).partOf",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Consent_PolicyUri",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suche in der Policy URI (versionsspezifische Policy / Broad Consent)",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Consent_ProvisionCode",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suche im Code der Provison",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Consent_ProvisionCodePeriod",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Composite-Suche nach Zeitraum (period) einer bestimmten, durch einen Code definierten, Provision.",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.component.expression",
+      "context" : "SearchParameter.component.expression",
+      "source" : "code",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.component.expression",
+      "context" : "SearchParameter.component.expression",
+      "source" : "period",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Consent_ProvisionCodeType",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Composite-Suche nach Typ (type) einer bestimmten, durch einen Code definierten, Provision.",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.component.expression",
+      "context" : "SearchParameter.component.expression",
+      "source" : "type",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Consent_ProvisionPeriod",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suche im Zeitraum der Provision. Dieser Suchparameter bezieht sich explizit auf die zweite Verschachtelungsebene von provison.",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Consent_ProvisionType",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suche im Typ der Provison (permit, deny).",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Specimen_Diagnose",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für die Extension Diagnose am Profil Bioprobe",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.chain",
+      "context" : "SearchParameter.chain",
+      "source" : "*",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Observation_Interpretation",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für Observation.interpretation",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_ServiceRequest_ReasonCode",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ServiceRequest.reasonCode",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_ServiceRequest_ReasonReference",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ServiceRequest.reasonReference",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Task_ReasonCode",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für Task.reasonCode",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Task_ReasonReference",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für Task.reasonReference",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Task_For",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für Task.for",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_FamilyMemberHistory_ReasonCode",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für FamilyMemberHistory.reasonCode",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_FamilyMemberHistory_ReasonReference",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für FamilyMemberHistory.reasonReference",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Specimen_Request",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "SearchParameter for Specimen.request",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Specimen_Collection_Method",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "SearchParameter for Specimen.collection.method",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Specimen_Processing_Procedure",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "SearchParameter for Specimen.processing.procedure",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Specimen_Processing_Additive",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "SearchParameter for Specimen.processing.additive",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Specimen_Processing_Date",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "SearchParameter for Specimen.processing.time",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Specimen_Container_Additive",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "SearchParameter for Specimen.container.additive",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Observation_Value_Ratio",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "SearchParameter for Observation.valueRatio",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Observation_Value_Ratio_Numerator",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "SearchParameter for Observation.valueRatio.numerator",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Observation_Value_Ratio_Denominator",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "SearchParameter for Observation.valueRatio.denominator",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_ServiceRequest_SupportingInfo",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "SearchParameter for ServiceRequest.supportingInfo",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_DiagnosticReport_ImagingStudy",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "SearchParameter for DiagnosticReport.imagingStudy",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Composition_Attester_Mode",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "SearchParameter for Composition.attester.mode",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Composition_Custodian",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "SearchParameter for Composition.custodian",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Composition_RelatesTo_Code",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "SearchParameter for Composition.relatesTo.code",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Media_PartOf",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "SearchParameter for Media.partOf",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Device_Property_Type",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für Device.property.type",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_DeviceMetric_Source",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für DeviceMetric.source",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Observation_BodySite",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "SearchParameter for Observation.bodySite",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Observation_ReferenceRange",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für Observation.referenceRange",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Observation_ReferenceRange_Low",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für Observation.referenceRange.low",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Observation_ReferenceRange_High",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für Observation.referenceRange.high",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Observation_Component_Interpretation",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für Observation.component.interpretation",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Observation_Issued",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für Observation.issued",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Procedure_Recorder",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für Procedure.recorder",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_DocumentReference_Attachment_Title",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für DocumentReference.content.attachment.title",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_DocumentReference_Attachment_Size",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für DocumentReference.content.attachment.size",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_EvidenceVariable_Characteristic_Description",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für EvidenceVariable.characteristic.description",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Library_Quellregister",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für Library.extension:QuellRegister",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Library_RelatedArtifact_Url",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für Library.relatedArtifact.document.url",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_ResearchStudy_Arm_Name",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ResearchStudy.arm.name",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_ResearchStudy_Label",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ResearchStudy.extension:label",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_ResearchStudy_Akronym",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ResearchStudy.extension:Akronym",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_ResearchStudy_Finanzierung",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ResearchStudy.extension:Finanzierung",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_ResearchStudy_Studienregister",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ResearchStudy.extension:Studienregister",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_ResearchStudy_RekrutierungsstandDatum",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstand-datum",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_ResearchStudy_RekrutierungsstandGenauigkeit",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstand-genauigkeit",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_ResearchStudy_Rekrutierungsstand",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstand",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_ResearchStudy_Rekrutierungsziel",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsziel",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_ResearchStudy_Rekrutierungsstart",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstart",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Condition_Verification_Status",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "SearchParameter for Condition.verificationStatus",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Observation_hasMember",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "SearchParameter for Observation.hasMember",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Procedure_Complication",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "SearchParameter for Procedure.complication",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Procedure_Outcome",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "SearchParameter for Procedure.outcome",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_AdverseEvent_SuspectEntity_Instance",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "SearchParameter for AdverseEvent.suspectEntity.instance",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_AdverseEvent_Encounter",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "SearchParameter for AdverseEvent.encounter",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_CarePlan_Created",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "SearchParameter for CarePlan.created",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_CarePlan_Contributor",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "SearchParameter for CarePlan.contributor",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_CarePlan_Addresses",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "SearchParameter for CarePlan.addresses",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Observation_Focus",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "SearchParameter for Observation.focus",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Observation_Encounter",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "SearchParameter for Observation.encounter",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Supporting_Info",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für CarePlan.supportingInfo | DiagnosticReport.extension.supportingInfo",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Description",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für CarePlan.description | ImagingStudy.description | ImagingStudy.series.description",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Koerperstruktur_Location_Qualifier",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für BodyStructure.locationQualifier",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Composition_Section_Title",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für Composition.section.title",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Composition_Section_Author",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für Composition.section.author",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Diagnostic_Report_Conclusion",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für DiagnosticReport.conclusion",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Imaging_Study_Modality_Body_Site",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ImagingStudy.series.modality and ImagingStudy.series.bodySite",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.component.expression",
+      "context" : "SearchParameter.component.expression",
+      "source" : "modality",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.component.expression",
+      "context" : "SearchParameter.component.expression",
+      "source" : "bodysite",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Imaging_Study_Bildgebungsgrund",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ImagingStudy.Extension.Bildgebungsgrund",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Imaging_Study_Modality",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ImagingStudy.modality",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Reason_Reference",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ImagingStudy.reasonReference",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Imaging_Study_Number_Series",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ImagingStudy.numberOfSeries",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Imaging_Study_Number_Instances",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Imaging_Study_Procedure_Reference",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ImagingStudy.procedureReference",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Imaging_Study_Series_CTDI_Volume",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ImagingStudy.series.extension.CTDIvolume",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Imaging_Study_Series_Exposure_Time",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ImagingStudy.series.extension.exposureTime",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Imaging_Study_Series_Exposure",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ImagingStudy.series.extension.exposure",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Imaging_Study_Series_xRay_Tube_Current",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ImagingStudy.series.extension.xRayTubeCurrent",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Imaging_Study_Series_KVP",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ImagingStudy.series.extension.kvp",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Imaging_Study_Series_View_Position",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ImagingStudy.series.extension.viewPosition",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Imaging_Study_Series_Magnetic_Field_Strength",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ImagingStudy.series.extension.magneticFieldStrength",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Imaging_Study_Series_Scanning_Sequence",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ImagingStudy.series.extension.scanningSequence",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Imaging_Study_Series_Scanning_Sequence_Variant",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ImagingStudy.series.extension.scanningSequenceVariant",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Imaging_Study_Series_Echo_Time",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ImagingStudy.series.extension.echoTime",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Imaging_Study_Series_Repetition_Time",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ImagingStudy.series.extension.repetitionTime",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Imaging_Study_Series_Inversion_Time",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ImagingStudy.series.extension.inversionTime",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Imaging_Study_Series_Flip_Angle",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ImagingStudy.series.extension.flipAngle",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Imaging_Study_Radiopharmaceutical",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ImagingStudy.series.extension.radiopharmaceutical",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Imaging_Study_Radionuclide",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ImagingStudy.series.extension.radionuclide",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Imaging_Study_Series_Tracer_Exposure_Time",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ImagingStudy.series.tracerExposureTime",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Imaging_Study_Series_Units",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ImagingStudy.series.extension.units",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Imaging_Study_Series_Radionuclide_Total_Dose",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ImagingStudy.series.extension.radionuclideTotalDose",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Imaging_Study_Series_Radionuclide_Half_Life",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ImagingStudy.series.extension.radionuclideHalfLife",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Imaging_Study_Series_Series_Type",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "ImagingStudy.series.extension.seriesType",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Imaging_Study_Series_Transducer_Type",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "ImagingStudy.series.extension.transducerType",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Imaging_Study_Series_Transducer_Frequency",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ImagingStudy.series.extension.transducerFrequency",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Imaging_Study_Series_Pulse_Frequency",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ImagingStudy.series.extension.pulseRepetitionFrequency",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Imaging_Study_Series_Ultrasound_Color",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "ImagingStudy.series.extension.ultrasoundPresent",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Imaging_Study_Series_Contrast_Bolus",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ImagingStudy.series.extension.contrastBolus",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Imaging_Study_Contrast_Bolus_Details",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ImagingStudy.series.extension.contrastBolusDetails",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Imaging_Study_Series_Number",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ImagingStudy.series.number",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Imaging_Study_Series_Laterality",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ImagingStudy.series.laterality",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Imaging_Study_Series_Started",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ImagingStudy.series.started",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Imaging_Study_Instance_Pixel_Spacing_X",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ImagingStudy.series.instance.extension.pixelSpacingX",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Imaging_Study_Instance_Pixel_Spacing_Y",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ImagingStudy.series.instance.extension.pixelSpacingY",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Imaging_Study_Instance_Slice_Thickness",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ImagingStudy.series.instance.extension.sliceThickness",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Imaging_Study_Instance_Image_Type",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ImagingStudy.series.instance.extension.imageType",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Imaging_Study_Instance_Burned_In_Annotation",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ImagingStudy.series.instance.extension.burnedInAnnotation",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Imaging_Study_Instance_Number",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ImagingStudy.series.instance.number",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Observation_Series_UID",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für Observation.extension.seriesUID",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Observation_SOP_Instance_UID",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für Observation.sopInstanceUID",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Observation_Body_Structure",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für Observation.bodyStructure",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Read_Procedure_Report",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ReadProcedure.report",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Imaging_Study_Series_ConvolutionalKernel",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ImagingStudy.series.extension.convolutionalKernel",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Bildgebung_Imaging_Study_Series_Slice_Thickness",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für ImagingStudy.series.extension.sliceThickness",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_DocumentReference_Attachment_Creation",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für DocumentReference.content.attachment.creation",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_DocumentReference_Document_Status",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für DocumentReference.docStatus",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_DocumentReference_NLP_Processing_Status",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für DocumentReference.extension[nlp-processing-status].valueCodeableConcept",
+      "target" : null
+    }]
+  }]
+}

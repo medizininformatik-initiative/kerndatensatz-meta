@@ -7,8 +7,6 @@
     ]
   },
   "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-rekrutierungsstand",
-  "version": "2026.0.0",
-  "publisher": "Medizininformatik Initiative",
   "contact": [
     {
       "telecom": [
@@ -33,15 +31,17 @@
       }
     }
   ],
+  "base": [
+    "ResearchStudy"
+  ],
+  "version": "2027.0.0-ballot.rc1",
+  "publisher": "Medizininformatik Initiative",
   "name": "MII_SP_Meta_ResearchStudy_Rekrutierungsstand",
   "status": "active",
   "description": "Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstand",
   "experimental": false,
   "date": "2024-10-17",
   "code": "rekrutierungsstand",
-  "base": [
-    "ResearchStudy"
-  ],
   "type": "number",
   "expression": "ResearchStudy.extension.where(url='https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-rekrutierung').extension.where(url='rekrutierungsstand').value"
 }

@@ -1,0 +1,8 @@
+	input/fsh/aliases.fsh
+	input/fsh/parameters/manifest.fsh
+	input/fsh/rulesets/cps-rules.fsh
+	input/fsh/rulesets/crmi.fsh
+	input/fsh/rulesets/license.fsh
+	input/fsh/rulesets/meta-profile.fsh
+	input/fsh/rulesets/test-data-label.fsh
+	input/fsh/rulesets/translation.fsh

@@ -1,0 +1,107 @@
+# =============================================================================
+# convention-check.yml — THE single convention checker
+#
+# Purpose:   Runs the hard MII KDS module-metadata contract mechanically
+#            (packageId / id / name / title / canonical / CalVer version / no
+#            floating pins — Section 1 of
+#            skills/wiki-consistency-check/references/check-matrix.md) via
+#            scripts/convention-check.mjs, and runs that checker's own unit tests.
+#            It also guards the IG's language model (English default, German
+#            translation) via scripts/language-model-check.sh, and runs the
+#            offline test suites — the publication scripts everywhere, the
+#            template scaffold contract on the template repo only.
+#            This is the ONLY metadata linter — do not add a second one. The
+#            advisory repo/MII-wiki drift findings (Section 2 of the check
+#            matrix) are reviewed by hand and are never failed here.
+#
+# Triggers:  push + pull_request to dev / main / release/** ; workflow_dispatch.
+#
+# Toggle:    vars.ENABLE_CONVENTION_CHECK — ON by default; set the repository
+#            variable to 'false' to make the job skip without editing YAML.
+#            A skipped job is expected, not an error.
+#
+# Placeholder-aware, branch-sensitive severity:
+#   - On normal branches (dev, feature/*), a {{PLACEHOLDER}} value is treated
+#     as "parameterized — pattern checked" and PASSES. This keeps THIS template
+#     scaffold (whose sushi-config is all placeholders) green.
+#   - On a release branch (release/**), or via workflow_dispatch strict=true,
+#     the check runs in --release mode: an unresolved {{PLACEHOLDER}} is a
+#     FAILURE — a module must not release with placeholders. The template repo
+#     never has a release/** branch, so it is never checked strictly.
+#
+# Human-gated steps: none. This job only reports; it fixes nothing.
+# =============================================================================
+name: convention-check
+
+on:
+  push:
+    branches: [dev, main, "release/**"]
+  pull_request:
+    branches: [dev, main, "release/**"]
+  workflow_dispatch:
+    inputs:
+      strict:
+        description: "Run in release (strict) mode: unresolved placeholders fail"
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: read
+
+jobs:
+  convention-check:
+    if: ${{ vars.ENABLE_CONVENTION_CHECK != 'false' }} # toggle: ON by default
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: "22"
+
+      # Every unit test in scripts/ — the convention checker, the dependency
+      # checker and the publication scripts. The publication scripts used to run
+      # only inside the manually dispatched go-publish.yml, so a regression in
+      # them stayed invisible until a formal publication; this gates them on
+      # every push and pull request.
+      - name: Test the scripts
+        run: node --test scripts/*.test.mjs
+
+      # The scaffold contract asserts the un-replaced {{PLACEHOLDER}} values,
+      # so it holds on the template repository only — a created module has
+      # replaced them. Org-agnostic guard: the repos have not moved yet.
+      - name: Test the template scaffold contract (template repo only)
+        if: ${{ endsWith(github.repository, '/mii-kds-module-template') }}
+        run: node --test scripts/*.template-test.mjs
+
+      - name: Decide strict (release) mode
+        id: mode
+        shell: bash
+        env:
+          REF: ${{ github.ref }}
+          HEAD_REF: ${{ github.head_ref }}
+          DISPATCH_STRICT: ${{ github.event.inputs.strict }}
+        run: |
+          set -euo pipefail
+          strict=""
+          if [[ "${REF}" == refs/heads/release/* ]] \
+            || [[ "${HEAD_REF}" == release/* ]] \
+            || [[ "${DISPATCH_STRICT}" == "true" ]]; then
+            strict="--release"
+            echo "Release branch or strict dispatch → hard-failing on unresolved placeholders."
+          else
+            echo "Non-release branch → placeholders are accepted as parameterized."
+          fi
+          echo "strict=${strict}" >> "${GITHUB_OUTPUT}"
+
+      - name: Run the module-metadata contract check
+        run: node scripts/convention-check.mjs ${{ steps.mode.outputs.strict }}
+
+      # Keeps prose, comments and tooling in step with i18n-default-lang: en.
+      # Not placeholder- or branch-sensitive: the language model is the same on
+      # every branch and in every module created from this template.
+      - name: Check the language model (English default, German translation)
+        run: bash scripts/language-model-check.sh

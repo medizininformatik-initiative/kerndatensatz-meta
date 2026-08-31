@@ -7,7 +7,6 @@
     ]
   },
   "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-aufnahmegrund-drittestelle",
-  "publisher": "Medizininformatik Initiative",
   "contact": [
     {
       "telecom": [
@@ -18,7 +17,6 @@
       ]
     }
   ],
-  "version": "2026.0.0",
   "extension": [
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -33,15 +31,17 @@
       }
     }
   ],
+  "base": [
+    "Encounter"
+  ],
+  "publisher": "Medizininformatik Initiative",
+  "version": "2027.0.0-ballot.rc1",
   "name": "MII_SP_Meta_Encounter_Aufnahmegrund_DritteStelle",
   "status": "active",
   "experimental": false,
   "date": "2025-07-14",
   "description": "Suchparameter für Encounter.extension:Aufnahmegrund.extension:DritteStelle",
   "code": "aufnahmegrund-drittestelle",
-  "base": [
-    "Encounter"
-  ],
   "type": "token",
   "expression": "Encounter.extension.where(url = 'http://fhir.de/StructureDefinition/Aufnahmegrund').extension.where(url = 'DritteStelle').value"
 }

@@ -1,0 +1,676 @@
+2026-08-31T11:39:27Z  INFO   log  run-boundary  ===== run 1 starts  run=1 label=mii-ig-migration Gate 0 from source commit 1db2e534704d92e5ee0cde663ce3e7ccd8825fa7 cwd=/Users/julian/git/kerndatensatz-meta log=migration-log/run.log
+    Every line below belongs to run 1; the lines above are earlier invocations.
+    Per-step raw logs (migration-log/<ACTION>.log) hold THIS run only -- `run`
+    truncates each one and rolls the previous attempt over to <ACTION>.prev.log.
+2026-08-31T11:39:48Z  INFO   pre.1  record-inputs  source_repo=https://github.com/medizininformatik-initiative/kerndatensatz-meta rendered_guide=https://simplifier.net/guide/mii-ig-modul-meta-2025 human_supplied=true
+2026-08-31T11:39:48Z  INFO   pre.2  classify-source-shape  shape=A state=hybrid root=/Users/julian/git/kerndatensatz-meta fsh=input/fsh sushi_config=sushi-config.yaml ig_ini=ig.ini simplifier_tree=implementation-guides
+2026-08-31T11:39:48Z  INFO   pre.3  record-source-revision  source_branch=v2027-ballot source_commit=1db2e534704d92e5ee0cde663ce3e7ccd8825fa7 migration_branch=migration/2026.0.0-template-v0.13.1 default_branch=master
+2026-08-31T11:39:48Z  INFO   pre.4  record-template-pin  module_template=v0.13.1 commit=61b02b504c9a48d12493b91ffb5e14fe4256429d ig_template_latest=v1.3.4
+2026-08-31T11:39:48Z  INFO   pre.5  toolchain-check  python3=/Library/Frameworks/Python.framework/Versions/3.13/bin/python3 node=/Users/julian/.nvm/versions/node/v25.6.1/bin/node npx=/Users/julian/.nvm/versions/node/v25.6.1/bin/npx shape=A gofsh=not-required
+2026-08-31T11:39:57Z  INFO   5.6a  sibling-skill-check  sibling-skill-present  skill=fhir-ig-analysis path=/Users/julian/.agents/skills/fhir-ig-analysis roots_examined=1 ref=<ref> ref_source=not recorded
+    Identified by its frontmatter name, not by its directory name. §5.6's
+    same-module verification can run; its IDENTISCH lines are the evidence, not
+    this line.
+2026-08-31T11:40:07Z  INFO   1  preflight-analysis  start  cmd=`python3 /Users/julian/.agents/skills/fhir-ig-analysis/scripts/ig-stats.py analyze /Users/julian/git/kerndatensatz-meta -o migration-log/preflight-analysis.json`  raw_log=migration-log/preflight-analysis.log
+ig-stats -> migration-log/preflight-analysis.json  (Artefakte 175, Direktiven 48, Inhalts-Seiten 11)
+2026-08-31T11:40:08Z  INFO   1  preflight-analysis  done  cmd=`python3 /Users/julian/.agents/skills/fhir-ig-analysis/scripts/ig-stats.py analyze /Users/julian/git/kerndatensatz-meta -o migration-log/preflight-analysis.json`  exit=0 raw_log=migration-log/preflight-analysis.log raw_log_lines=1
+2026-08-31T11:40:40Z  INFO   5.1c  simplifier-discover  params  base=https://simplifier.net org=<none> module=<none> package=<none> project=<none> guide=mii-ig-modul-meta-2025 pin=<propose> out=migration-log
+    Discovery only: nothing in the module repository is written, and no value is
+    claimed into the identity ledger -- a guide's version is not the module's
+    version (spec §5.1c).
+2026-08-31T11:40:40Z  INFO   5.1c  simplifier-discover  hop 3 skipped  guide_key_supplied=mii-ig-modul-meta-2025
+2026-08-31T11:40:40Z  WARN   5.1c  simplifier-discover  guide-versions-unreachable: hop 4 read nothing  http=000 key=mii-ig-modul-meta-2025 url=https://simplifier.net/published-guide/mii-ig-modul-meta-2025/versions
+2026-08-31T11:40:40Z  WARN   5.1c  simplifier-discover  no-discovery: the chain yielded no guide page  pages=0 exit=1
+    Read the WARNs above for the hop that stopped it. An empty result is a
+    finding for a human, never a licence to construct a key, a slug or a version.
+2026-08-31T11:41:33Z  INFO   5.1c  simplifier-discover  params  base=https://simplifier.net org=<none> module=<none> package=<none> project=<none> guide=mii-ig-modul-meta-2025 pin=<propose> out=migration-log
+    Discovery only: nothing in the module repository is written, and no value is
+    claimed into the identity ledger -- a guide's version is not the module's
+    version (spec §5.1c).
+2026-08-31T11:41:33Z  INFO   5.1c  simplifier-discover  hop 3 skipped  guide_key_supplied=mii-ig-modul-meta-2025
+2026-08-31T11:41:33Z  WARN   5.1c  simplifier-discover  no-published-version: hop 4 lists only a preview  key=mii-ig-modul-meta-2025 preview=1 url=https://simplifier.net/published-guide/mii-ig-modul-meta-2025/versions
+    `?version=current` is the LIVE EDITABLE project, so harvesting it makes the
+    migration unreproducible -- two runs could silently differ. Nothing is
+    pinned here; a human decides whether to publish a version first.
+2026-08-31T11:41:33Z  WARN   5.1c  simplifier-discover  no-discovery: the chain yielded no guide page  pages=0 exit=1
+    Read the WARNs above for the hop that stopped it. An empty result is a
+    finding for a human, never a licence to construct a key, a slug or a version.
+2026-08-31T11:43:58Z  INFO   5.1c  simplifier-discover  remeasurement=completed initial_http_000=sandbox-network-denial authoritative_result=no-published-version preview=1 url=https://simplifier.net/published-guide/mii-ig-modul-meta-2025/versions date=2026-08-31
+    The repository-authored implementation-guides tree remains available; current preview will not be harvested.
+2026-08-31T11:44:07Z  INFO   2.1  package-identity  params  package=de.medizininformatikinitiative.kerndatensatz.meta version=2026.0.0 registry=https://packages.simplifier.net work=/var/folders/lt/qjkx9tgd2qj9q6t1cx44d77h0000gp/T/tmp.V19W8W1K6l
+    Reporting only: no file in the module repository is read or written here.
+    Recovered values are Gate-A evidence, never applied to existing metadata.
+2026-08-31T11:44:07Z  INFO   2.1  package-identity  version supplied by the operator  version=2026.0.0 source=--version package=de.medizininformatikinitiative.kerndatensatz.meta
+2026-08-31T11:44:07Z  ERROR  2.1  package-identity  setup: cannot fetch the package  cmd=`curl -sfL https://packages.simplifier.net/de.medizininformatikinitiative.kerndatensatz.meta/2026.0.0 -o pkg.tgz` exit=2
+    Either the version does not exist or the registry is unreachable. A package
+    that cannot be fetched yields no identity -- and no identity is not a default.
+2026-08-31T11:44:27Z  INFO   2.1  package-identity  params  package=de.medizininformatikinitiative.kerndatensatz.meta version=2026.0.0 registry=https://packages.simplifier.net work=/var/folders/lt/qjkx9tgd2qj9q6t1cx44d77h0000gp/T/tmp.9iDk1pXDi7
+    Reporting only: no file in the module repository is read or written here.
+    Recovered values are Gate-A evidence, never applied to existing metadata.
+2026-08-31T11:44:27Z  INFO   2.1  package-identity  version supplied by the operator  version=2026.0.0 source=--version package=de.medizininformatikinitiative.kerndatensatz.meta
+2026-08-31T11:44:28Z  INFO   2.1  package-identity  fetched  cmd=`curl -sfL https://packages.simplifier.net/de.medizininformatikinitiative.kerndatensatz.meta/2026.0.0 -o pkg.tgz && tar xzf pkg.tgz`  bytes=68332 json_files=175 manifest=package/package.json
+2026-08-31T11:44:28Z  INFO   2.1  package-identity  manifest field  name=de.medizininformatikinitiative.kerndatensatz.meta  -- = packageId (spec §2.1)
+2026-08-31T11:44:28Z  INFO   2.1  package-identity  identity-claim  field=packageId value=de.medizininformatikinitiative.kerndatensatz.meta tier=P source=package/package.json
+2026-08-31T11:44:28Z  INFO   2.1  package-identity  manifest field  version=2026.0.0  -- the module version -- authoritative for this RELEASE
+2026-08-31T11:44:28Z  INFO   2.1  package-identity  identity-claim  field=version value=2026.0.0 tier=P source=package/package.json
+2026-08-31T11:44:28Z  INFO   2.1  package-identity  manifest field  description=Medizininformatik Initiative - Modul Meta
+2026-08-31T11:44:28Z  INFO   2.1  package-identity  identity-claim  field=description value=Medizininformatik Initiative - Modul Meta tier=P source=package/package.json
+2026-08-31T11:44:28Z  INFO   2.1  package-identity  manifest field  fhirVersions=["4.0.1"]
+2026-08-31T11:44:28Z  INFO   2.1  package-identity  identity-claim  field=fhirVersions value=["4.0.1"] tier=P source=package/package.json
+2026-08-31T11:44:28Z  INFO   2.1  package-identity  manifest field  jurisdiction=http://unstats.un.org/unsd/methods/m49/m49.htm#276
+2026-08-31T11:44:28Z  INFO   2.1  package-identity  identity-claim  field=jurisdiction value=http://unstats.un.org/unsd/methods/m49/m49.htm#276 tier=P source=package/package.json
+2026-08-31T11:44:28Z  INFO   2.1  package-identity  manifest field  author=juliansass  -- a REGISTRY ACCOUNT, not `publisher`
+2026-08-31T11:44:28Z  INFO   2.1  package-identity  manifest field  title=MII IG Meta
+2026-08-31T11:44:28Z  INFO   2.1  package-identity  identity-claim  field=title value=MII IG Meta tier=P source=package/package.json
+2026-08-31T11:44:28Z  INFO   2.1  package-identity  manifest field  license=CC-BY-4.0
+2026-08-31T11:44:28Z  INFO   2.1  package-identity  identity-claim  field=license value=CC-BY-4.0 tier=P source=package/package.json
+2026-08-31T11:44:28Z  INFO   2.1  package-identity  manifest field  homepage=https://www.medizininformatik-initiative.de/
+2026-08-31T11:44:28Z  INFO   2.1  package-identity  identity-claim  field=homepage value=https://www.medizininformatik-initiative.de/ tier=P source=package/package.json
+2026-08-31T11:44:28Z  INFO   2.1  package-identity  manifest read  package/package.json  recovered=9 absent=2 fields=name,version,description,fhirVersions,jurisdiction,author,title,license,homepage
+2026-08-31T11:44:28Z  WARN   2.1  package-identity  not-in-a-package-manifest: publisher
+    A FHIR package manifest has no field for these, so the published package
+    cannot supply them and no other field substitutes -- `author` is the
+    registry account that pushed the package, never a publishing organisation.
+    They stay Gate-A items: a human supplies them (spec §2.1).
+2026-08-31T11:44:28Z  INFO   2.1  package-identity  manifest fields absent (optional in this format)  canonical
+2026-08-31T11:44:28Z  INFO   2.1  package-identity  identity-claim  field=dependency:hl7.fhir.r4.core value=4.0.1 tier=P source=package/package.json (source pin)
+2026-08-31T11:44:28Z  INFO   2.1  package-identity  dependency pins from the SOURCE package  hl7.fhir.r4.core@4.0.1
+    SOURCE EVIDENCE, and it outranks the registry's dist-tags.latest for the
+    same package (spec §2.1 floating-pin rule, §5.1b.2 step 1): this is what
+    the module was actually published against. Use these for goFSH's `-d` set
+    and record any divergence from a previously assumed pin in the report.
+2026-08-31T11:44:28Z  INFO   2.1  package-identity  packaged ImplementationGuide  file=MII_IG_Meta_v2025.json url=https://www.medizininformatik-initiative.de/fhir/modul-meta/ImplementationGuide/mii-ig-meta version=2026.0.0 name=MII_IG_Meta title=MII IG Meta publisher=Medizininformatik Initiative license=CC-BY-4.0
+2026-08-31T11:44:28Z  INFO   2.1  package-identity  packaged resources carrying no url  count=2
+      examples/Bundle-mii-exa-meta-searchparam-collection-bundle.json [Bundle]
+      examples/Bundle-mii-exa-meta-searchparam-transaction-bundle.json [Bundle]
+2026-08-31T11:44:28Z  WARN   2.1  package-identity  canonical-not-unanimous: 2 distinct canonical bases across 173 resource url(s) -- NOT resolved by majority  bases=2 urls=173 exit=1
+    A split vote is a finding. Picking the larger set would silently re-home
+    the smaller one, and a changed published canonical breaks every consumer
+    that resolves it (guardrail 1). Every candidate, with an example:
+      https://www.medizininformatik-initiative.de/fhir/modul-meta  (172 resource(s), e.g. MII_IG_Meta_v2025.json)
+      https://www.medizininformatik-initiative.de/fhir/core  (1 resource(s), e.g. CodeSystem-mii-cs-meta-diz-standorte.json)
+    Take it to Gate A; do not pick one here.
+2026-08-31T11:44:28Z  INFO   2.1  package-identity  done  package=de.medizininformatikinitiative.kerndatensatz.meta version=2026.0.0  canonical=not-derived exit=1
+    The package was read; the canonical was not derivable from it. That is a
+    Gate-A item (spec §2.1), not a licence to infer one.
+2026-08-31T11:44:49Z  INFO   2.1  repo-identity  params  dir=/Users/julian/git/kerndatensatz-meta repo=medizininformatik-initiative/kerndatensatz-meta rendered=https://simplifier.net/guide/mii-ig-modul-meta-2025
+    Tier R (the source repository) and tier H (the rendered guide), spec §2.1.
+    Reporting only: no file in the module repository is written by this script.
+2026-08-31T11:44:49Z  INFO   2.1  repo-identity  identity-claim  field=title value=Medizininformatik Initiative - Kerndatensatz - Meta tier=R source=README.md first heading
+    A CANDIDATE, confirmed at Gate A -- a README heading is written for human
+    readers, and a module's `title` is a conformance-artefact field.
+2026-08-31T11:44:49Z  WARN   2.1  repo-identity  identity-contradiction: field=title  now=Medizininformatik Initiative - Kerndatensatz - Meta (tier R, README.md first heading)  vs  title=MII IG Meta (tier P, package/package.json)
+    Two sources disagree about the same identity field. This is REPORTED, not
+    resolved: the tier ranking (spec §2.1) says which value a human should
+    probably adopt, and adopting one here would silently rename, re-license or
+    re-version a published module. Both readings stand in the ledger; Gate A
+    decides, and nothing in the repository is rewritten either way.
+2026-08-31T11:44:49Z  INFO   2.1  repo-identity  identity-claim  field=license value=CC-BY-4.0 tier=R source=LICENSE (text matched)
+    REAL licence evidence, and the field a migration must never let default:
+    the template ships `license: CC-BY-4.0` as a literal that no placeholder
+    check flags, and MII modules commonly declare CC0-1.0 (spec §2.2).
+2026-08-31T11:44:49Z  INFO   2.1  repo-identity  release tags in the local checkout (newest last)  tags=v2025.0.1 v2025.0.1-rc.1 v2025.0.2 v2025.0.3 v2026.0.0
+    Tags are evidence for WHICH RELEASE a commit corresponds to; the module's
+    version still comes from the published package (§2.1.1).
+2026-08-31T11:44:49Z  INFO   2.1  repo-identity  identity-claim  field=description value=Kerndatensatz Medizininformatik Initiative tier=R source=GitHub repository description
+    A repository blurb, not the module's `description`; it is a candidate.
+2026-08-31T11:44:49Z  WARN   2.1  repo-identity  identity-contradiction: field=description  now=Kerndatensatz Medizininformatik Initiative (tier R, GitHub repository description)  vs  description=Medizininformatik Initiative - Modul Meta (tier P, package/package.json)
+    Two sources disagree about the same identity field. This is REPORTED, not
+    resolved: the tier ranking (spec §2.1) says which value a human should
+    probably adopt, and adopting one here would silently rename, re-license or
+    re-version a published module. Both readings stand in the ledger; Gate A
+    decides, and nothing in the repository is rewritten either way.
+2026-08-31T11:44:49Z  INFO   2.1  repo-identity  identity-claim  field=license value=CC-BY-4.0 tier=R source=GitHub license.spdx_id
+    GitHub's own detection of the same LICENSE file. Recorded separately so
+    that a disagreement with the text match becomes a visible contradiction.
+2026-08-31T11:44:49Z  WARN   2.1  repo-identity  not-recoverable-from-a-repository: publisher  owner=medizininformatik-initiative
+    The GitHub owner is an ACCOUNT that hosts the repository, not the
+    publishing organisation of a conformance artefact -- the same reason the
+    registry `author` is not a publisher (§2.1.1). `publisher` stays a Gate-A
+    field: a human names the organisation.
+2026-08-31T11:44:49Z  INFO   2.1  repo-identity  release tags on GitHub (newest first)  tags=v2026.0.0 v2025.0.3 v2025.0.2 v2025.0.1 v2025.0.1-rc.1 v2025.0.0
+    Cross-check: the tag matching the published package's version is what
+    ties that RELEASE to the commit being migrated (§2.1.1, which version).
+2026-08-31T11:44:50Z  INFO   2.1  repo-identity  rendered page probed  cmd=`curl -sL https://simplifier.net/guide/mii-ig-modul-meta-2025`  http=200 bytes=13516 script_markers=7 identity_markers=0 guide_page_links=12
+2026-08-31T11:44:50Z  INFO   2.1  repo-identity  server-rendered-guide: this URL space DOES deliver content  http=200 bytes=13516 guide_page_links=12 url=https://simplifier.net/guide/mii-ig-modul-meta-2025
+    It still yields no IDENTITY -- that stays a Gate-A read by a human. What it
+    yields is the NARRATIVE: harvest it with scripts/guide-harvest.sh (spec 5.1d),
+    or supply the authenticated project download, which is the better source.
+    Do NOT read the project page's client-rendered finding onto this one.
+2026-08-31T11:44:50Z  INFO   2.1  repo-identity  done  fields_recovered=4 exit=0
+    Recovered, not applied: every value above is Gate-A evidence, recorded in
+    the identity ledger beside the other tiers' readings (spec §2.1).
+2026-08-31T11:45:30Z  INFO   2.1  read-identity  identity-claim  field=id value=mii-ig-meta tier=C source=sushi-config.yaml
+2026-08-31T11:45:30Z  INFO   2.1  read-identity  identity-claim  field=canonical value=https://www.medizininformatik-initiative.de/fhir/modul-meta tier=C source=sushi-config.yaml
+2026-08-31T11:45:30Z  INFO   2.1  read-identity  identity-claim  field=packageId value=de.medizininformatikinitiative.kerndatensatz.meta tier=C source=sushi-config.yaml
+2026-08-31T11:45:30Z  INFO   2.1  read-identity  identity-claim  field=version value=2026.0.0 tier=C source=sushi-config.yaml
+2026-08-31T11:45:30Z  INFO   2.1  read-identity  identity-claim  field=name value=MII_IG_Meta tier=C source=sushi-config.yaml
+2026-08-31T11:45:31Z  INFO   2.1  read-identity  identity-claim  field=title value=MII IG Meta tier=C source=sushi-config.yaml
+2026-08-31T11:45:31Z  WARN   2.1  read-identity  identity-contradiction: field=title  now=MII IG Meta (tier C, sushi-config.yaml)  vs  title=Medizininformatik Initiative - Kerndatensatz - Meta (tier R, README.md first heading)
+    Two sources disagree about the same identity field. This is REPORTED, not
+    resolved: the tier ranking (spec §2.1) says which value a human should
+    probably adopt, and adopting one here would silently rename, re-license or
+    re-version a published module. Both readings stand in the ledger; Gate A
+    decides, and nothing in the repository is rewritten either way.
+2026-08-31T11:45:31Z  INFO   2.1  read-identity  identity-claim  field=status value=active tier=C source=sushi-config.yaml
+2026-08-31T11:45:31Z  INFO   2.1  read-identity  identity-claim  field=license value=CC-BY-4.0 tier=C source=sushi-config.yaml
+2026-08-31T11:45:31Z  INFO   2.1  read-identity  identity-claim  field=releaseLabel value=ci-build tier=C source=sushi-config.yaml
+2026-08-31T11:45:31Z  INFO   2.1  read-identity  identity-claim  field=publisher value=Medizininformatik Initiative tier=C source=sushi-config.yaml
+2026-08-31T11:45:31Z  INFO   2.1  read-identity  identity-claim  field=fhirVersions value=["4.0.1"] tier=C source=sushi-config.yaml
+2026-08-31T11:45:31Z  INFO   2.1  read-identity  identity-claim  field=description value=Das Modul Meta enthält Basisartefakte für alle weiteren MII-IGs. tier=C source=sushi-config.yaml
+2026-08-31T11:45:31Z  WARN   2.1  read-identity  identity-contradiction: field=description  now=Das Modul Meta enthält Basisartefakte für alle weiteren MII-IGs. (tier C, sushi-config.yaml)  vs  description=Medizininformatik Initiative - Modul Meta (tier P, package/package.json) description=Kerndatensatz Medizininformatik Initiative (tier R, GitHub repository description)
+    Two sources disagree about the same identity field. This is REPORTED, not
+    resolved: the tier ranking (spec §2.1) says which value a human should
+    probably adopt, and adopting one here would silently rename, re-license or
+    re-version a published module. Both readings stand in the ledger; Gate A
+    decides, and nothing in the repository is rewritten either way.
+2026-08-31T11:45:31Z  INFO   2.1  read-identity  identity-claim  field=copyrightYear value=2019+ tier=C source=sushi-config.yaml
+2026-08-31T11:45:31Z  INFO   2.1  read-identity  identity-claim  field=packageId value=de.medizininformatikinitiative.kerndatensatz.meta tier=J source=package.json:name
+2026-08-31T11:45:31Z  INFO   2.1  read-identity  identity-claim  field=version value=2026.0.0 tier=J source=package.json
+2026-08-31T11:45:31Z  INFO   2.1  read-identity  identity-claim  field=canonical value=https://www.medizininformatik-initiative.de/fhir/modul-meta tier=J source=package.json
+2026-08-31T11:45:31Z  INFO   2.1  read-identity  identity-claim  field=title value=MII IG Meta tier=J source=package.json
+2026-08-31T11:45:31Z  WARN   2.1  read-identity  identity-contradiction: field=title  now=MII IG Meta (tier J, package.json)  vs  title=Medizininformatik Initiative - Kerndatensatz - Meta (tier R, README.md first heading)
+    Two sources disagree about the same identity field. This is REPORTED, not
+    resolved: the tier ranking (spec §2.1) says which value a human should
+    probably adopt, and adopting one here would silently rename, re-license or
+    re-version a published module. Both readings stand in the ledger; Gate A
+    decides, and nothing in the repository is rewritten either way.
+2026-08-31T11:45:32Z  INFO   2.1  read-identity  identity-claim  field=license value=CC-BY-4.0 tier=J source=package.json
+2026-08-31T11:45:32Z  INFO   2.1  read-identity  identity-claim  field=description value=Medizininformatik Initiative - Kerndatensatz Meta tier=J source=package.json
+2026-08-31T11:45:32Z  WARN   2.1  read-identity  identity-contradiction: field=description  now=Medizininformatik Initiative - Kerndatensatz Meta (tier J, package.json)  vs  description=Medizininformatik Initiative - Modul Meta (tier P, package/package.json) description=Kerndatensatz Medizininformatik Initiative (tier R, GitHub repository description) description=Das Modul Meta enthält Basisartefakte für alle weiteren MII-IGs. (tier C, sushi-config.yaml)
+    Two sources disagree about the same identity field. This is REPORTED, not
+    resolved: the tier ranking (spec §2.1) says which value a human should
+    probably adopt, and adopting one here would silently rename, re-license or
+    re-version a published module. Both readings stand in the ledger; Gate A
+    decides, and nothing in the repository is rewritten either way.
+2026-08-31T11:45:32Z  INFO   2.1  read-identity  identity-claim  field=publisher value=Medizininformatik Initiative tier=I source=fsh-generated/resources/ImplementationGuide-mii-ig-meta.json
+2026-08-31T11:46:47Z  INFO   pre.4  placeholder-census  files=1138 source_narrative_files=15 generated_build_files=1122 audit_files=1 config_placeholders=0 method=grep-rIl-exclusion excluded=.git,.github
+    Narrative hits are accounted step-5 Simplifier directives; temp/template/output/input-cache are generated build surfaces; migration-log contains the recorded directive census.
+2026-08-31T11:49:26Z  INFO   5.1  source-inventory  inventory=migration-log/source-inventory.json artifacts=175 fsh_files=56 generated_resources=175 authoritative_pages=7 other_guide_pages=16 pagecontent_pages=1 top_level_entries=27
+2026-08-31T11:49:27Z  INFO   5.1  artifact-inventory  inventoried 175 of 175 artifacts  expected=175 actual=175 exit=0
+2026-08-31T11:49:27Z  INFO   5.1a  authoritative-guide-tree  decision=implementation-guides/ImplementationGuide-2025 language=de version=2026.0.0 pages=7 reason=module-specific-authored-markdown-and-version-match
+2026-08-31T11:49:27Z  WARN   5.1a  guide-retirement-set  trees=implementation-guides/MedizininformatikInitiative-ImplementationGuide-Template,implementation-guides/ImplementationGuide-Common disposition=retain-until-Gate-D
+2026-08-31T11:49:27Z  INFO   2  target-version  version=2026.0.0 source=default-to-source human_override=none
+2026-08-31T11:50:17Z  INFO   1  source-sushi-baseline  start  cmd=`npx --yes fsh-sushi@3.20.0 .`  raw_log=/Users/julian/git/kerndatensatz-meta/migration-log/source-sushi-baseline.log
+2026-08-31T11:51:28Z  ERROR  1  source-sushi-baseline  failed  cmd=`npx --yes fsh-sushi@3.20.0 .`  exit=1 raw_log=/Users/julian/git/kerndatensatz-meta/migration-log/source-sushi-baseline.log raw_log_lines=11
+    The exit status is preserved and returned -- this step did NOT meet its
+    acceptance criterion. Read /Users/julian/git/kerndatensatz-meta/migration-log/source-sushi-baseline.log, then either fix and re-run or take it
+    to the report's decision queue (spec §10.3).
+2026-08-31T11:51:48Z  INFO   1  source-sushi-baseline  start  cmd=`npx --yes fsh-sushi@3.20.0 .`  raw_log=/Users/julian/git/kerndatensatz-meta/migration-log/source-sushi-baseline.log prev_raw_log=/Users/julian/git/kerndatensatz-meta/migration-log/source-sushi-baseline.prev.log
+2026-08-31T11:51:51Z  ERROR  1  source-sushi-baseline  failed  cmd=`npx --yes fsh-sushi@3.20.0 .`  exit=1 raw_log=/Users/julian/git/kerndatensatz-meta/migration-log/source-sushi-baseline.log raw_log_lines=11
+    The exit status is preserved and returned -- this step did NOT meet its
+    acceptance criterion. Read /Users/julian/git/kerndatensatz-meta/migration-log/source-sushi-baseline.log, then either fix and re-run or take it
+    to the report's decision queue (spec §10.3).
+2026-08-31T11:52:14Z  INFO   1  source-sushi-baseline  start  cmd=`npx --yes fsh-sushi@3.20.0 .`  raw_log=/Users/julian/git/kerndatensatz-meta/migration-log/source-sushi-baseline.log prev_raw_log=/Users/julian/git/kerndatensatz-meta/migration-log/source-sushi-baseline.prev.log
+2026-08-31T11:52:28Z  INFO   1  source-sushi-baseline  done  cmd=`npx --yes fsh-sushi@3.20.0 .`  exit=0 raw_log=/Users/julian/git/kerndatensatz-meta/migration-log/source-sushi-baseline.log raw_log_lines=56
+2026-08-31T11:54:40Z  INFO   1  source-publisher-baseline  start  cmd=`java -Xmx6g -jar /tmp/mii-publisher-2.3.2.jar -ig ig.ini -tx https://tx.fhir.org -fhir-settings /tmp/kerndatensatz-meta-source-baseline.CD9uWM/.github/fhir-settings.json -no-sushi`  raw_log=/Users/julian/git/kerndatensatz-meta/migration-log/source-publisher-baseline.log
+2026-08-31T11:55:17Z  ERROR  1  source-publisher-baseline  failed  cmd=`java -Xmx6g -jar /tmp/mii-publisher-2.3.2.jar -ig ig.ini -tx https://tx.fhir.org -fhir-settings /tmp/kerndatensatz-meta-source-baseline.CD9uWM/.github/fhir-settings.json -no-sushi`  exit=1 raw_log=/Users/julian/git/kerndatensatz-meta/migration-log/source-publisher-baseline.log raw_log_lines=103
+    The exit status is preserved and returned -- this step did NOT meet its
+    acceptance criterion. Read /Users/julian/git/kerndatensatz-meta/migration-log/source-publisher-baseline.log, then either fix and re-run or take it
+    to the report's decision queue (spec §10.3).
+2026-08-31T11:55:55Z  INFO   1  source-publisher-baseline  start  cmd=`java -Xmx6g -jar /tmp/mii-publisher-2.3.2.jar -ig ig.ini -tx https://tx.fhir.org -no-sushi`  raw_log=/Users/julian/git/kerndatensatz-meta/migration-log/source-publisher-baseline.log prev_raw_log=/Users/julian/git/kerndatensatz-meta/migration-log/source-publisher-baseline.prev.log
+2026-08-31T11:56:44Z  INFO   1  source-publisher-baseline  done  cmd=`java -Xmx6g -jar /tmp/mii-publisher-2.3.2.jar -ig ig.ini -tx https://tx.fhir.org -no-sushi`  exit=0 raw_log=/Users/julian/git/kerndatensatz-meta/migration-log/source-publisher-baseline.log raw_log_lines=97
+2026-08-31T11:57:37Z  WARN   1  source-qa-baseline  fresh_baseline=true publisher=2.3.2 sushi=3.20.0 java=17.0.2 errors=3 warnings=269 info=524 broken_links=0 qa_json=migration-log/source-qa-baseline.json qa_txt=migration-log/source-qa-baseline.txt
+    Errors: missing suppressed-messages file; two canonical mismatch findings for the intentional core CodeSystem URL. The migration must add special-url and provide the suppression file before claiming QA improvement.
+2026-08-31T12:02:28Z  INFO   2.1  package-identity-recovery  resolved=true initial_error=network_sandbox rerun=escalated package=de.medizininformatikinitiative.kerndatensatz.meta@2026.0.0 json_files=175 remaining_finding=canonical-not-unanimous
+2026-08-31T12:02:28Z  INFO   1  source-sushi-baseline-recovery  resolved=true initial_errors=network_sandbox,npm-cache-permission fix=isolated_npm_cache final_exit=0 errors=0 warnings=0
+2026-08-31T12:02:28Z  INFO   1  source-publisher-baseline-recovery  resolved=true initial_error=jekyll-not-on-restricted-path fix=include-installed-jekyll-path final_exit=0 qa_errors=3 qa_warnings=269 broken_links=0
+2026-08-31T12:02:39Z  INFO   9c  gate0-summary  mode=static artifacts=175 generated_searchparameters=170 generated_examples=2 narrative_pages=24 authoritative_pages=7 directives=48 unknown_directives=1 special_url_prediction=1 licence_declared=CC-BY-4.0 dependency_injection_risk=true fresh_qa_errors=3 fresh_qa_warnings=269
+2026-08-31T12:20:18Z  INFO   log  run-boundary  ===== run 2 starts  run=2 label=step 5.2 — approved scaffold inputs and template v0.13.1 cwd=/Users/julian/git/kerndatensatz-meta log=migration-log/run.log
+    Every line below belongs to run 2; the lines above are earlier invocations.
+    Per-step raw logs (migration-log/<ACTION>.log) hold THIS run only -- `run`
+    truncates each one and rolls the previous attempt over to <ACTION>.prev.log.
+2026-08-31T12:20:18Z  INFO   2.2  human-decision  source_ref=v2027-ballot source_commit=1db2e534704d92e5ee0cde663ce3e7ccd8825fa7 authoritative_guide=implementation-guides/ImplementationGuide-2025
+2026-08-31T12:20:18Z  INFO   5.2  human-input  release_date=2026-08-31 approval_date=2026-08-31 module_contact=julian.sass@charite.de topic_nci_codes=C80260
+2026-08-31T12:20:18Z  INFO   5.2  human-input  approved_english_description=The Meta module contains foundational artifacts used by all other MII implementation guides.
+2026-08-31T12:22:06Z  INFO   5.2  skeleton-vendored  ref=v0.13.1 commit=61b02b504c9a48d12493b91ffb5e14fe4256429d source=/tmp/mii-kds-module-template-v0.13.1 no_vendored_ig_template=true
+2026-08-31T12:22:06Z  INFO   5.2  template-reference  url=https://github.com/medizininformatik-initiative/ig-template-mii-kds release=v1.3.4
+2026-08-31T12:22:06Z  INFO   5.2  scaffold-collisions  shared_alias_file=input/fsh/aliases.fsh appended_aliases=all-unique skipped_files=input/fsh/rulesets/extension-context.fsh,input/fsh/rulesets/license-terms.fsh,input/fsh/rulesets/publisher.fsh,input/fsh/rulesets/version.fsh module_definitions_win=true
+2026-08-31T12:22:06Z  INFO   5.2  scaffold-exclusions  template_examples=deleted-or-never-copied vendored_ig_template=absent sync_machinery=absent semver_release_automation=absent rendering_demo=absent
+2026-08-31T12:26:17Z  INFO   5.2  first-run-bootstrap  start  cmd=`bash scripts/first-run-bootstrap.sh`  raw_log=migration-log/first-run-bootstrap.log
+2026-08-31T12:26:17Z  INFO   5.2  first-run-bootstrap  done  cmd=`bash scripts/first-run-bootstrap.sh`  exit=0 raw_log=migration-log/first-run-bootstrap.log raw_log_lines=52
+2026-08-31T12:26:25Z  INFO   5.2  license-align  start  cmd=`python3 /Users/julian/.agents/skills/mii-ig-migration/scripts/license-align.py --source /tmp/kerndatensatz-meta-source-baseline.CD9uWM --target .`  raw_log=migration-log/license-align.log
+2026-08-31T12:26:26Z  INFO   5.2  license-align  params  source=/tmp/kerndatensatz-meta-source-baseline.CD9uWM target=/Users/julian/git/kerndatensatz-meta
+2026-08-31T12:26:26Z  INFO   5.2  license-align  result  already aligned: the target LICENSE is byte-identical to the source's (CC-BY-4.0)  exit=0
+2026-08-31T12:26:26Z  INFO   5.2  license-align  done  cmd=`python3 /Users/julian/.agents/skills/mii-ig-migration/scripts/license-align.py --source /tmp/kerndatensatz-meta-source-baseline.CD9uWM --target .`  exit=0 raw_log=migration-log/license-align.log raw_log_lines=2
+2026-08-31T12:57:28Z  INFO   log  run-boundary  ===== run 3 starts  run=3 label=resume step 5.2 — verify current scaffold before Gate A cwd=/Users/julian/git/kerndatensatz-meta log=migration-log/run.log
+    Every line below belongs to run 3; the lines above are earlier invocations.
+    Per-step raw logs (migration-log/<ACTION>.log) hold THIS run only -- `run`
+    truncates each one and rolls the previous attempt over to <ACTION>.prev.log.
+2026-08-31T12:57:28Z  WARN   5.2  local-edits  post-checkpoint edits preserved: target_version=2027.0.0-ballot.rc1 source_version=2026.0.0 tho=7.1.0 target_template_pin=7.3.0 extensions=5.2.0 target_template_pin=5.3.0 source_license_extension=commented artifact_version_policy=commented; Gate A decision required
+2026-08-31T12:57:28Z  INFO   5.3  fsh-path-conservation  source_paths=56 target_paths=64 removed=0 scaffold_additions=8 diff=migration-log/fsh-path-diff.txt
+2026-08-31T12:57:56Z  INFO   pre.4  placeholder-census  files_with_double_braces=1172 active_build_placeholders=0 optional_commented_citation_hits=6 placeholder_named_files=0 simplifier_directives_accounted=49 method=grep-rIl-exclusion excluded=.git,.github
+2026-08-31T12:58:13Z  INFO   5.2  sushi-skeleton  start  cmd=`env npm_config_cache=/tmp/mii-meta-npm-cache npx --yes fsh-sushi@3.20.0 .`  raw_log=migration-log/sushi-skeleton.log
+2026-08-31T12:59:37Z  INFO   5.2  sushi-skeleton  done  cmd=`env npm_config_cache=/tmp/mii-meta-npm-cache npx --yes fsh-sushi@3.20.0 .`  exit=0 raw_log=migration-log/sushi-skeleton.log raw_log_lines=50
+2026-08-31T13:00:54Z  INFO   5.2  sushi-skeleton-result  errors=0 warnings=2 exported_source_artifacts=175 generated_json_including_ig=176 warnings=network-latest-check-and-auto-tools-package
+2026-08-31T13:00:54Z  INFO   5.2  convention-check  start  cmd=`node scripts/convention-check.mjs`  raw_log=migration-log/convention-check.log
+2026-08-31T13:00:54Z  WARN   5.2  convention-check  anticipated-nonzero-exit: Gate A: locally edited prerelease suffix violates strict module CalVer  cmd=`node scripts/convention-check.mjs`  exit=1 raw_log=migration-log/convention-check.log raw_log_lines=20
+    This non-zero status is this step's ANTICIPATED, documented outcome, not a
+    failure to fix -- the acceptance criterion is met AS QUALIFIED (spec
+    §5.1b.4). Escalated, not ignored: every item behind it belongs in the
+    report's ① decision queue, named individually (spec §10.3, §10.6).
+2026-08-31T13:01:13Z  INFO   5.3  artifact-conservation  source=175 target_fsh_generated=175 id_url_diff_rows=0 template_input_resources=1 template_resource=Parameters/mii-param-meta-manifest diff=migration-log/artifact-set-diff.tsv
+2026-08-31T13:01:27Z  INFO   5.3  source-fsh-content  tracked_source_fsh_changed=0 expected=0
+2026-08-31T13:01:50Z  INFO   5.2  formatting  git_diff_check=pass normalized_package_json_line_endings=LF
+2026-08-31T13:03:50Z  INFO   A  gate-a-ready  review=migration-log/gate-a-review.md source_artifacts=175 artifact_id_url_diffs=0 source_fsh_removed=0 sushi_errors=0 active_placeholders=0
+2026-08-31T13:03:50Z  WARN   A  gate-a-decisions  pending=A1-target-version,A2-dependency-pins,A3-commented-metadata-extensions,A4-NUM-DIZ-site-publisher,A5-expansion-manifest narrative-work-paused=true
+2026-08-31T13:13:14Z  INFO   log  run-boundary  ===== run 4 starts  run=4 label=Gate A approved — align approved target metadata and begin page routing cwd=/Users/julian/git/kerndatensatz-meta log=migration-log/run.log
+    Every line below belongs to run 4; the lines above are earlier invocations.
+    Per-step raw logs (migration-log/<ACTION>.log) hold THIS run only -- `run`
+    truncates each one and rolls the previous attempt over to <ACTION>.prev.log.
+2026-08-31T13:13:14Z  INFO   A  gate-a-approved  A1=2027.0.0-ballot.rc1 A2=hl7.terminology.r4#7.1.0,hl7.fhir.uv.extensions.r4#5.2.0 A3=licence-extension-disabled,artifact-versionPolicy-disabled A4=NUM-DIZ-approved A5=Parameters/mii-param-meta-manifest-approved reviewer=user date=2026-08-31
+2026-08-31T13:13:14Z  WARN   A  approved-deviations  strict_calver_check=accepted-nonconforming source_version_change=2026.0.0-to-2027.0.0-ballot.rc1 dependency_drift_from_template=accepted source_ig_license_extension_omitted=accepted crmi_version_policy_omitted=accepted final_report_required=true
+2026-08-31T13:13:14Z  INFO   5.2  approved-version-alignment  sushi_config=2027.0.0-ballot.rc1 package_json=2027.0.0-ballot.rc1 publication_request=2027.0.0-ballot.rc1 artifact_rulesets=2027.0.0-ballot.rc1 sequence=2027
+2026-08-31T13:13:26Z  INFO   5.2  sushi-after-gate-a  start  cmd=`env npm_config_cache=/tmp/mii-meta-npm-cache npx --yes fsh-sushi@3.20.0 .`  raw_log=migration-log/sushi-after-gate-a.log
+2026-08-31T13:14:50Z  INFO   5.2  sushi-after-gate-a  done  cmd=`env npm_config_cache=/tmp/mii-meta-npm-cache npx --yes fsh-sushi@3.20.0 .`  exit=0 raw_log=migration-log/sushi-after-gate-a.log raw_log_lines=50
+2026-08-31T13:15:06Z  INFO   5.4c  page-routing  start  cmd=`python3 /Users/julian/.agents/skills/mii-ig-migration/scripts/page-structure-advice.py --source /tmp/kerndatensatz-meta-source-baseline.CD9uWM --target . --out migration-log/page-structure-advice.md --map migration-log/page-map.tsv --guide-tree ImplementationGuide-2025`  raw_log=migration-log/page-routing.log
+2026-08-31T13:15:07Z  INFO   5.4c  page-routing  done  cmd=`python3 /Users/julian/.agents/skills/mii-ig-migration/scripts/page-structure-advice.py --source /tmp/kerndatensatz-meta-source-baseline.CD9uWM --target . --out migration-log/page-structure-advice.md --map migration-log/page-map.tsv --guide-tree ImplementationGuide-2025`  exit=0 raw_log=migration-log/page-routing.log raw_log_lines=1
+2026-08-31T13:17:20Z  INFO   5.4c  page-routing  source=MII-IG-Meta/Index.page.md branch=3 target=input/pagecontent/index.md measure=agreed page named 'index' exists in the target
+2026-08-31T13:17:20Z  INFO   5.4c  page-routing  source=MII-IG-Meta/Release-notes.page.md branch=3 target=input/pagecontent/changes.md measure=semantic match 'releasenotes' -> changes (routing-table)
+2026-08-31T13:17:20Z  INFO   5.4c  page-routing  source=MII-IG-Meta/Technische-Implementierung/Index.page.md branch=2 target=input/pagecontent/code-systems.md measure=4 children, 2 anchoring distinct artefacts (CodeSystem)
+2026-08-31T13:17:20Z  INFO   5.4c  page-routing  source=MII-IG-Meta/Technische-Implementierung/CodeSystem-MII-Standorte.page.md branch=1 target=input/intro-notes/CodeSystem-mii-cs-meta-diz-standorte-intro.md measure=tokens match on mii-cs-meta-diz-standorte (1 candidate artefact)
+2026-08-31T13:17:20Z  INFO   5.4c  page-routing  source=MII-IG-Meta/Technische-Implementierung/Extension-Lizenzbedingungen.page.md branch=2 target=input/pagecontent/code-systems.md measure=child of family overview MII-IG-Meta/Technische-Implementierung/Index.page.md (no anchor of its own)
+2026-08-31T13:17:20Z  INFO   5.4c  page-routing  source=MII-IG-Meta/Technische-Implementierung/Profil-SearchParameter.page.md branch=1 target=input/intro-notes/StructureDefinition-mii-pr-meta-searchparameter-intro.md measure=tokens match on mii-pr-meta-searchparameter (1 candidate artefact)
+2026-08-31T13:17:20Z  INFO   5.4c  page-routing  source=MII-IG-Meta/Technische-Implementierung/Liste-Kerndatensatz-Suchparameter/Index.page.md branch=2 target=input/pagecontent/code-systems.md measure=child of family overview MII-IG-Meta/Technische-Implementierung/Index.page.md (no anchor of its own)
+2026-08-31T13:17:20Z  INFO   5.4c  page-routing  source=index.md branch=3 target=input/pagecontent/index.md measure=agreed page named 'index' exists in the target
+2026-08-31T13:17:20Z  INFO   5.4c  page-routing  source=ImplementationGuide-Common/** branch=5 target=RETIRED measure=dir version -, guide.yaml version -, lang -, 0 page file(s); authoritative: ImplementationGuide-2025
+2026-08-31T13:17:20Z  INFO   5.4c  page-routing  source=MedizininformatikInitiative-ImplementationGuide-Template/** branch=5 target=RETIRED measure=dir version -, guide.yaml version 2.0, lang -, 16 page file(s); authoritative: ImplementationGuide-2025
+2026-08-31T13:17:20Z  INFO   5.4c  page-routing-summary  map=migration-log/page-map.tsv rows=10 routed=8 retired=2 coverage=ok human_review=pending
+2026-08-31T13:17:20Z  WARN   5.4c  page-routing-review  recommended_overrides=technical-index-to-RETIRED,license-extension-to-own-intro-note,searchparameter-list-to-search-parameters,obsolete-pagecontent-index-to-RETIRED map_not_consumed=true
+2026-08-31T13:35:42Z  INFO   log  run-boundary  ===== run 5 starts  run=5 label=Routing approved — migrate narrative and generate CapabilityStatement cwd=/Users/julian/git/kerndatensatz-meta log=migration-log/run.log
+    Every line below belongs to run 5; the lines above are earlier invocations.
+    Per-step raw logs (migration-log/<ACTION>.log) hold THIS run only -- `run`
+    truncates each one and rolls the previous attempt over to <ACTION>.prev.log.
+2026-08-31T13:35:42Z  INFO   5.4c  page-routing-review  status=approved recommendation=accepted reviewer=user date=2026-08-31 map=migration-log/page-map.tsv
+2026-08-31T13:35:42Z  INFO   5.4a  optional-pages  M9=keep-metadata,extensions,search-parameters,code-systems remove=operations,value-sets,researcher-guidance reviewer=user
+2026-08-31T13:35:42Z  INFO   5.4b  security-default  M11=approved-default-text reviewer=user
+2026-08-31T13:35:42Z  INFO   5.3  capabilitystatement-decision  decision=generate source_capabilitystatements=0 basis=170-searchparameters,1-searchparameter-profile status=draft,experimental reviewer=user
+2026-08-31T13:35:42Z  INFO   5.3  capabilitystatement-generate  start  cmd=`python3 /tmp/generate_meta_capability_statement.py`  raw_log=migration-log/capabilitystatement-generate.log
+2026-08-31T13:35:43Z  INFO   5.3  capabilitystatement-generate  done  cmd=`python3 /tmp/generate_meta_capability_statement.py`  exit=0 raw_log=migration-log/capabilitystatement-generate.log raw_log_lines=1
+2026-08-31T13:35:52Z  INFO   5.3  capabilitystatement-sushi  start  cmd=`env npm_config_cache=/tmp/mii-meta-npm-cache npx --yes fsh-sushi@3.20.0 .`  raw_log=migration-log/capabilitystatement-sushi.log
+2026-08-31T13:37:16Z  INFO   5.3  capabilitystatement-sushi  done  cmd=`env npm_config_cache=/tmp/mii-meta-npm-cache npx --yes fsh-sushi@3.20.0 .`  exit=0 raw_log=migration-log/capabilitystatement-sushi.log raw_log_lines=50
+2026-08-31T13:50:30Z  INFO   5.4  searchparameter-table-generate  start  cmd=`python3 /tmp/generate_search_parameter_pages.py`  raw_log=migration-log/searchparameter-table-generate.log
+2026-08-31T13:50:30Z  INFO   5.4  searchparameter-table-generate  done  cmd=`python3 /tmp/generate_search_parameter_pages.py`  exit=0 raw_log=migration-log/searchparameter-table-generate.log raw_log_lines=1
+2026-08-31T13:59:16Z  INFO   5.4  fql-scan-strict  start  cmd=`bash /Users/julian/.agents/skills/mii-ig-migration/scripts/fql-scan.sh --strict input/pagecontent input/translations/de/pagecontent input/intro-notes input/translations/de/intro-notes`  raw_log=migration-log/fql-scan-strict.log
+2026-08-31T13:59:16Z  INFO   5.4  fql-scan  params  rules=/Users/julian/.agents/skills/mii-ig-migration/references/fql-rules.tsv  targets= input/pagecontent input/translations/de/pagecontent input/intro-notes input/translations/de/intro-notes  defaulted=0
+2026-08-31T13:59:16Z  INFO   5.4  fql-scan  target  path=input/pagecontent  kind=dir  files=18
+2026-08-31T13:59:16Z  INFO   5.4  fql-scan  target  path=input/translations/de/pagecontent  kind=dir  files=18
+2026-08-31T13:59:16Z  INFO   5.4  fql-scan  target  path=input/intro-notes  kind=dir  files=3
+2026-08-31T13:59:16Z  INFO   5.4  fql-scan  target  path=input/translations/de/intro-notes  kind=dir  files=3
+2026-08-31T13:59:18Z  INFO   5.4  fql-scan  result  mapped=0 unknown=0 files=42  exit=0  no directives found
+2026-08-31T13:59:18Z  INFO   5.4  fql-scan-strict  done  cmd=`bash /Users/julian/.agents/skills/mii-ig-migration/scripts/fql-scan.sh --strict input/pagecontent input/translations/de/pagecontent input/intro-notes input/translations/de/intro-notes`  exit=0 raw_log=migration-log/fql-scan-strict.log raw_log_lines=6
+2026-08-31T14:00:26Z  INFO   5.5  menu-seed  paired 26 of 26 anchors  expected=26 actual=26
+2026-08-31T14:00:26Z  INFO   5.5  menu-seed  wrote page-title seed entries=16 out=migration-log/menu-titles-de.txt
+2026-08-31T14:00:26Z  INFO   5.5  gen-page-title-po  start  cmd=`python3 /Users/julian/.agents/skills/mii-ig-migration/scripts/gen-page-title-po.py fsh-generated/resources/ImplementationGuide-mii-ig-meta.json migration-log/menu-titles-de.txt de input/translations/de/ImplementationGuide-mii-ig-meta.po`  raw_log=migration-log/gen-page-title-po.log
+2026-08-31T14:00:26Z  INFO   5.5  gen-page-title-po  params  ig=fsh-generated/resources/ImplementationGuide-mii-ig-meta.json seed=migration-log/menu-titles-de.txt lang=de out=input/translations/de/ImplementationGuide-mii-ig-meta.po
+2026-08-31T14:00:26Z  INFO   5.5  gen-page-title-po  seed  path=migration-log/menu-titles-de.txt  lines=16 entries=16 matched=16 applied=0 unused=0
+2026-08-31T14:00:26Z  INFO   5.5  gen-page-title-po  written  out=input/translations/de/ImplementationGuide-mii-ig-meta.po pages=19 units=19 translated=19 untranslated=0 carried_over=19 preserved_foreign=2 header_preserved=False
+2026-08-31T14:00:26Z  INFO   5.5  gen-page-title-po  result  exit=0  every page title translated
+2026-08-31T14:00:26Z  INFO   5.5  gen-page-title-po  done  cmd=`python3 /Users/julian/.agents/skills/mii-ig-migration/scripts/gen-page-title-po.py fsh-generated/resources/ImplementationGuide-mii-ig-meta.json migration-log/menu-titles-de.txt de input/translations/de/ImplementationGuide-mii-ig-meta.po`  exit=0 raw_log=migration-log/gen-page-title-po.log raw_log_lines=4
+2026-08-31T14:00:41Z  INFO   5.4d  derived-scan  start  cmd=`python3 /Users/julian/.agents/skills/mii-ig-migration/scripts/derived-scan.py --target . --out migration-log/derived-content.tsv --markdown`  raw_log=migration-log/derived-scan.log
+2026-08-31T14:00:41Z  INFO   11  derived-scan  params  target=. out=migration-log/derived-content.tsv markdown=yes
+2026-08-31T14:00:41Z  INFO   11  derived-scan  result  files=42 markers=46 gates=A:2,B:32,C:12 kinds=bridge:8,no-source:10,suggestion:20,summary:8 langs=default,de findings=0 (none) out=migration-log/derived-content.tsv exit=0
+
+## Queue ② — derived content written during the migration
+
+Text the migration WROTE, not carried. Each row renders as a highlighted box on the page named. Clearing a row means deleting the marker and its box; **whether any may remain at publication is a Gate-D decision**, recorded in the report — nothing here blocks a release by itself.
+
+### Gate A — identity and values
+
+| Where | What was written | Derived from | Gate | Action |
+|---|---|---|---|---|
+| `capability-statements.html` (default, de) | The Simplifier source declared no CapabilityStatement. The draft below was generated from… _(suggestion)_ | `none` | A | adopt, replace or delete the suggested content, then delete the marker and box |
+
+### Gate B — narrative
+
+| Where | What was written | Derived from | Gate | Action |
+|---|---|---|---|---|
+| `CodeSystem-mii-cs-meta-diz-standorte.html` (default, de) | The Simplifier page contained only a generated artifact view. This summary is derived fro… _(summary)_ | `MII-IG-Meta/Technische-Implementierung/CodeSystem-MII-Standorte.page.md` | B | review the box on CodeSystem-mii-cs-meta-diz-standorte.html and delete the marker and box, or correct the text |
+| `StructureDefinition-mii-pr-meta-searchparameter.html` (default, de) | The former FQL result is summarized from the preserved profile: `search-param-code-regex`… _(summary)_ | `MII-IG-Meta/Technische-Implementierung/Profil-SearchParameter.page.md` | B | review the box on StructureDefinition-mii-pr-meta-searchparameter.html and delete the marker and box, or correct the text |
+| `ImplementationGuide-mii-ig-meta.html` (default, de) | The Simplifier guide had no equivalent ImplementationGuide-resource introduction. This st… _(suggestion)_ | `none` | B | adopt, replace or delete the suggested content, then delete the marker and box |
+| `changes.html` (default, de) | The entry for `2027.0.0-ballot.rc1` records this migration and was not present in the Sim… _(suggestion)_ | `none` | B | adopt, replace or delete the suggested content, then delete the marker and box |
+| `code-systems.html` (default, de) | The generated Simplifier artifact view was routed to the Publisher artifact page; this in… _(bridge)_ | `MII-IG-Meta/Technische-Implementierung/CodeSystem-MII-Standorte.page.md` | B | review the box on code-systems.html and delete the marker and box, or correct the text |
+| `downloads.html` (default, de) | The Simplifier guide had no download page. This standard Publisher download index was add… _(suggestion)_ | `none` | B | adopt, replace or delete the suggested content, then delete the marker and box |
+| `examples.html` (default, de) | The source provides two technical SearchParameter bundles but no clinical use-case exampl… _(bridge)_ | `MII-IG-Meta/Technische-Implementierung/Liste-Kerndatensatz-Suchparameter/Index.page.md` | B | review the box on examples.html and delete the marker and box, or correct the text |
+| `extensions.html` (default, de) | The source extension page was routed to the extension's generated artifact page; this ind… _(bridge)_ | `MII-IG-Meta/Technische-Implementierung/Extension-Lizenzbedingungen.page.md` | B | review the box on extensions.html and delete the marker and box, or correct the text |
+| `guidance.html` (default, de) | The authoritative source contains no detailed use cases, logical models, UML diagrams, re… _(summary)_ | `MII-IG-Meta/Index.page.md` | B | review the box on guidance.html and delete the marker and box, or correct the text |
+| `implementer-guidance.html` (default, de) | The source contains no separate implementation workflow. No ETL, server, or deployment gu… _(suggestion)_ | `none` | B | adopt, replace or delete the suggested content, then delete the marker and box |
+| `index.html` (default, de) | The source introduction announces use cases, but the authoritative guide tree contains no… _(summary)_ | `MII-IG-Meta/Index.page.md` | B | review the box on index.html and delete the marker and box, or correct the text |
+| `logical-models.html` (default, de) | The source module contains no logical models. None were created during migration. TODO:RE… _(suggestion)_ | `none` | B | adopt, replace or delete the suggested content, then delete the marker and box |
+| `metadata.html` (default, de) | The Simplifier guide had no metadata overview. This page was added from the module-templa… _(suggestion)_ | `none` | B | adopt, replace or delete the suggested content, then delete the marker and box |
+| `profiles.html` (default, de) | The source profile page was routed to the profile's generated artifact page; this index b… _(bridge)_ | `MII-IG-Meta/Technische-Implementierung/Profil-SearchParameter.page.md` | B | review the box on profiles.html and delete the marker and box, or correct the text |
+| `uml-diagrams.html` (default, de) | The source module contains no UML diagrams. None were created during migration. TODO:REVI… _(suggestion)_ | `none` | B | adopt, replace or delete the suggested content, then delete the marker and box |
+| `version-history.html` (default, de) | The Simplifier guide had no separate version-policy page. This page was added from the mo… _(suggestion)_ | `none` | B | adopt, replace or delete the suggested content, then delete the marker and box |
+
+### Gate C — language
+
+| Where | What was written | Derived from | Gate | Action |
+|---|---|---|---|---|
+| `StructureDefinition-mii-ex-meta-license-codeable.html` (default, de) | This English paragraph is a machine translation of the authoritative German Simplifier na… _(no-source)_ | `MII-IG-Meta/Technische-Implementierung/Extension-Lizenzbedingungen.page.md` | C | review the box on StructureDefinition-mii-ex-meta-license-codeable.html and delete the marker and box, or correct the text |
+| `StructureDefinition-mii-pr-meta-searchparameter.html` (default, de) | This English text is a machine translation of the authoritative German Simplifier narrati… _(no-source)_ | `MII-IG-Meta/Technische-Implementierung/Profil-SearchParameter.page.md` | C | review the box on StructureDefinition-mii-pr-meta-searchparameter.html and delete the marker and box, or correct the text |
+| `changes.html` (default, de) | This English changelog is a machine translation of the authoritative German release notes… _(no-source)_ | `MII-IG-Meta/Release-notes.page.md` | C | review the box on changes.html and delete the marker and box, or correct the text |
+| `index.html` (default, de) | This English page is a machine translation of the authoritative German Simplifier narrati… _(no-source)_ | `MII-IG-Meta/Index.page.md` | C | review the box on index.html and delete the marker and box, or correct the text |
+| `search-parameters.html` (default, de) | This English page and its description column are machine translations of the authoritativ… _(no-source)_ | `MII-IG-Meta/Technische-Implementierung/Liste-Kerndatensatz-Suchparameter/Index.page.md` | C | review the box on search-parameters.html and delete the marker and box, or correct the text |
+| `translationinfo.html` (default, de) | This language-status statement was added for the bilingual Publisher guide. TODO:REVIEW a… _(suggestion)_ | `none` | C | adopt, replace or delete the suggested content, then delete the marker and box |
+
+2026-08-31T14:00:41Z  INFO   5.4d  derived-scan  done  cmd=`python3 /Users/julian/.agents/skills/mii-ig-migration/scripts/derived-scan.py --target . --out migration-log/derived-content.tsv --markdown`  exit=0 raw_log=migration-log/derived-scan.log raw_log_lines=45
+2026-08-31T14:01:17Z  INFO   5.4c  page-map-consumed  rows=10 routed=7 retired=3 unhandled=0 target_pages=18 translated_pages=18 intro_notes=3 translated_intro_notes=3
+2026-08-31T14:01:17Z  INFO   5.4  narrative-conservation  authoritative_source_pages=7 routed=6 directive_only_retired=1 searchparameters_static_rows=170 fql_findings=0 unknown_directives=0
+2026-08-31T14:01:17Z  INFO   5.4  source-gaps  use_cases=absent logical_models=0 uml_diagrams=0 researcher_guidance=absent implementation_workflow=absent invented_content=none review_markers=present
+2026-08-31T14:01:17Z  INFO   5.6  sushi-build  start  cmd=`env npm_config_cache=/tmp/mii-meta-npm-cache npx --yes fsh-sushi@3.20.0 .`  raw_log=migration-log/sushi-build.log
+2026-08-31T14:02:41Z  INFO   5.6  sushi-build  done  cmd=`env npm_config_cache=/tmp/mii-meta-npm-cache npx --yes fsh-sushi@3.20.0 .`  exit=0 raw_log=migration-log/sushi-build.log raw_log_lines=50
+2026-08-31T14:02:51Z  INFO   5.6  sushi-build  errors=0 warnings=2 exit=0 raw_log=migration-log/sushi-build.log generated_resources=176 source_artifacts=175 capabilitystatements=1
+2026-08-31T14:03:03Z  INFO   5.6  convention-check-after-narrative  start  cmd=`node scripts/convention-check.mjs`  raw_log=migration-log/convention-check-after-narrative.log
+2026-08-31T14:03:03Z  WARN   5.6  convention-check-after-narrative  anticipated-nonzero-exit: Gate A approved 2027.0.0-ballot.rc1 despite strict CalVer M6  cmd=`node scripts/convention-check.mjs`  exit=1 raw_log=migration-log/convention-check-after-narrative.log raw_log_lines=20
+    This non-zero status is this step's ANTICIPATED, documented outcome, not a
+    failure to fix -- the acceptance criterion is met AS QUALIFIED (spec
+    §5.1b.4). Escalated, not ignored: every item behind it belongs in the
+    report's ① decision queue, named individually (spec §10.3, §10.6).
+2026-08-31T14:03:30Z  INFO   5.6  ig-publisher  start  cmd=`java -Xmx6g -jar /tmp/mii-publisher-2.3.2.jar -ig ig.ini -tx https://tx.fhir.org -no-sushi`  raw_log=migration-log/qa-build.log
+2026-08-31T14:03:31Z  ERROR  5.6  ig-publisher  failed  cmd=`java -Xmx6g -jar /tmp/mii-publisher-2.3.2.jar -ig ig.ini -tx https://tx.fhir.org -no-sushi`  exit=1 raw_log=migration-log/qa-build.log raw_log_lines=71
+    The exit status is preserved and returned -- this step did NOT meet its
+    acceptance criterion. Read migration-log/qa-build.log, then either fix and re-run or take it
+    to the report's decision queue (spec §10.3).
+2026-08-31T14:03:58Z  INFO   5.6  ig-publisher  start  cmd=`java -Xmx6g -jar /tmp/mii-publisher-2.3.2.jar -ig ig.ini -tx https://tx.fhir.org -no-sushi`  raw_log=migration-log/qa-build.log prev_raw_log=migration-log/qa-build.prev.log
+2026-08-31T14:07:39Z  INFO   5.6  ig-publisher  done  cmd=`java -Xmx6g -jar /tmp/mii-publisher-2.3.2.jar -ig ig.ini -tx https://tx.fhir.org -no-sushi`  exit=0 raw_log=migration-log/qa-build.log raw_log_lines=14509
+2026-08-31T14:08:02Z  INFO   5.6  ig-publisher  qa= qa_txt=output/qa.txt raw_log=migration-log/qa-build.log publisher=2.3.2 template_release=1.3.4
+2026-08-31T14:08:44Z  INFO   5.6a  sibling-skill-check  sibling-skill-present  skill=fhir-ig-analysis path=/Users/julian/.agents/skills/fhir-ig-analysis roots_examined=1 ref=<ref> ref_source=not recorded
+    Identified by its frontmatter name, not by its directory name. §5.6's
+    same-module verification can run; its IDENTISCH lines are the evidence, not
+    this line.
+2026-08-31T14:09:07Z  INFO   5.6  ig-publisher  qa=err=0,warn=269,info=1039,broken_links=0 qa_txt=output/qa.txt raw_log=migration-log/qa-build.log source_baseline=errors:3,warnings:269,broken_links:0
+2026-08-31T14:09:19Z  INFO   7  postflight-analysis  start  cmd=`python3 /Users/julian/.agents/skills/fhir-ig-analysis/scripts/ig-stats.py analyze . -o migration-log/postflight-analysis.json`  raw_log=migration-log/postflight-analysis.log
+2026-08-31T14:09:20Z  INFO   7  postflight-analysis  done  cmd=`python3 /Users/julian/.agents/skills/fhir-ig-analysis/scripts/ig-stats.py analyze . -o migration-log/postflight-analysis.json`  exit=0 raw_log=migration-log/postflight-analysis.log raw_log_lines=1
+2026-08-31T14:09:39Z  INFO   7  prepost-delta  start  cmd=`python3 /Users/julian/.agents/skills/mii-ig-migration/scripts/prepost-delta.py --pre migration-log/preflight-analysis.json --post migration-log/postflight-analysis.json --out migration-log/prepost-delta.md --tsv migration-log/prepost-delta.tsv`  raw_log=migration-log/prepost-delta.log
+2026-08-31T14:09:39Z  ERROR  7  prepost-delta  failed  cmd=`python3 /Users/julian/.agents/skills/mii-ig-migration/scripts/prepost-delta.py --pre migration-log/preflight-analysis.json --post migration-log/postflight-analysis.json --out migration-log/prepost-delta.md --tsv migration-log/prepost-delta.tsv`  exit=1 raw_log=migration-log/prepost-delta.log raw_log_lines=7
+    The exit status is preserved and returned -- this step did NOT meet its
+    acceptance criterion. Read migration-log/prepost-delta.log, then either fix and re-run or take it
+    to the report's decision queue (spec §10.3).
+2026-08-31T14:10:14Z  INFO   7  same-module-analysis  start  cmd=`python3 /Users/julian/.agents/skills/fhir-ig-analysis/scripts/ig-stats.py run /tmp/kerndatensatz-meta-source-baseline.CD9uWM . -o migration-log/same-module-analysis --label source-1db2e53,migrated`  raw_log=migration-log/same-module-analysis.log
+2026-08-31T14:10:15Z  INFO   7  same-module-analysis  done  cmd=`python3 /Users/julian/.agents/skills/fhir-ig-analysis/scripts/ig-stats.py run /tmp/kerndatensatz-meta-source-baseline.CD9uWM . -o migration-log/same-module-analysis --label source-1db2e53,migrated`  exit=0 raw_log=migration-log/same-module-analysis.log raw_log_lines=3
+2026-08-31T14:10:45Z  WARN   7  prepost-delta-approved-deviation  identity.version source=2026.0.0 target=2027.0.0-ballot.rc1 script_verdict=REGRESSION human_decision=A1-approved source_ref=v2027-ballot report_required=true
+2026-08-31T14:10:45Z  WARN   7  same-module-analysis  identity_divergences=version,publisher both_human_approved=A1,A4 artifact_addition=CapabilityStatement/mii-cps-meta-server-capabilities generation_approved=true canonical_addition=1 missing_source_artifacts=0 report=migration-log/same-module-analysis/compare-report.md
+2026-08-31T14:10:45Z  INFO   7  same-module-conservation  id=identical canonical=identical packageId=identical name=identical title=identical fhirVersion=identical license=identical status=identical source_artifacts_missing=0 direct_dependency_injection_risk=improved
+2026-08-31T14:10:45Z  WARN   7  retained-platform-source  implementation-guides retained_until=Gate-D analyzer_directives_pre=48 post=48 active_publisher_narrative_fql_scan=0 dual_source=true expected_cleanup=Gate-D
+2026-08-31T14:11:04Z  INFO   11  verify-migration  start  cmd=`python3 /Users/julian/.agents/skills/mii-ig-migration/scripts/verify-migration.py --target . --source /tmp/kerndatensatz-meta-source-baseline.CD9uWM --rendered output --source-lang de --template-latest v0.13.1`  raw_log=migration-log/verify-migration.log
+2026-08-31T14:11:04Z  INFO   11  verify-migration  params  target=. source=/tmp/kerndatensatz-meta-source-baseline.CD9uWM guide_tree=ImplementationGuide-2025 rendered=output log=./migration-log/run.log layers=conservation,fidelity,provenance,rendering,log
+2026-08-31T14:11:05Z  INFO   11  verify-migration  conservation C1  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-31T14:11:05Z  INFO   11  verify-migration  conservation C2  identisch=2 divergiert=0 nicht_pruefbar=0
+2026-08-31T14:11:05Z  INFO   11  verify-migration  conservation C3  identisch=8 divergiert=0 nicht_pruefbar=0
+2026-08-31T14:11:05Z  INFO   11  verify-migration  conservation C4  identisch=1 divergiert=4 nicht_pruefbar=3
+2026-08-31T14:11:05Z  WARN   11  verify-migration  verification-divergence: conservation C4  count=4 subjects=CodeSystem-MII-Standorte.page.md, Liste-Kerndatensatz-Suchparameter/Index.page.md, MII-IG-Meta/Index.page.md …
+    Each is a row in migration-log/verification-findings.tsv with its evidence and its next action.
+2026-08-31T14:11:05Z  WARN   11  verify-migration  not-mechanisable: conservation C4  count=3 subjects=Extension-Lizenzbedingungen.page.md, Profil-SearchParameter.page.md, Technische-Implementierung/Index.page.md
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-31T14:11:05Z  INFO   11  verify-migration  conservation C5  identisch=3 divergiert=0 nicht_pruefbar=1
+2026-08-31T14:11:05Z  WARN   11  verify-migration  not-mechanisable: conservation C5  count=1 subjects=target pages without a source counterpart
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-31T14:11:05Z  INFO   11  verify-migration  conservation C6  identisch=5 divergiert=0 nicht_pruefbar=0
+2026-08-31T14:11:05Z  INFO   11  verify-migration  conservation C7  identisch=1 divergiert=0 nicht_pruefbar=2
+2026-08-31T14:11:05Z  WARN   11  verify-migration  not-mechanisable: conservation C7  count=2 subjects=Extension-Lizenzbedingungen.page.md, Profil-SearchParameter.page.md
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-31T14:11:05Z  INFO   11  verify-migration  fidelity F1  identisch=8 divergiert=0 nicht_pruefbar=1
+2026-08-31T14:11:05Z  WARN   11  verify-migration  not-mechanisable: fidelity F1  count=1 subjects=version
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-31T14:11:05Z  INFO   11  verify-migration  fidelity F2  identisch=1 divergiert=0 nicht_pruefbar=3
+2026-08-31T14:11:05Z  WARN   11  verify-migration  not-mechanisable: fidelity F2  count=3 subjects=hl7.fhir.uv.crmi, hl7.fhir.uv.extensions.r4, hl7.terminology.r4
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-31T14:11:05Z  INFO   11  verify-migration  fidelity F3  identisch=2 divergiert=0 nicht_pruefbar=0
+2026-08-31T14:11:05Z  INFO   11  verify-migration  fidelity F4  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-31T14:11:05Z  INFO   11  verify-migration  provenance P1  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-31T14:11:05Z  INFO   11  verify-migration  provenance P2  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-31T14:11:05Z  INFO   11  verify-migration  provenance P3  identisch=1 divergiert=0 nicht_pruefbar=1
+2026-08-31T14:11:05Z  WARN   11  verify-migration  not-mechanisable: provenance P3  count=1 subjects=IG Publisher currency
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-31T14:11:05Z  INFO   11  verify-migration  provenance P4  identisch=0 divergiert=0 nicht_pruefbar=1
+2026-08-31T14:11:05Z  WARN   11  verify-migration  not-mechanisable: provenance P4  count=1 subjects=source guide version
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-31T14:11:05Z  INFO   11  verify-migration  provenance P5  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-31T14:11:05Z  INFO   11  verify-migration  rendering R1  identisch=2 divergiert=0 nicht_pruefbar=1
+2026-08-31T14:11:05Z  WARN   11  verify-migration  not-mechanisable: rendering R1  count=1 subjects=source-versus-target rendering
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-31T14:11:05Z  INFO   11  verify-migration  rendering R2  identisch=0 divergiert=4 nicht_pruefbar=0
+2026-08-31T14:11:05Z  WARN   11  verify-migration  verification-divergence: rendering R2  count=4 subjects=output/de id="publish-box" [{{], output/de id="ig-status" [{{], output/en id="publish-box" [{{] …
+    Each is a row in migration-log/verification-findings.tsv with its evidence and its next action.
+2026-08-31T14:11:05Z  INFO   11  verify-migration  rendering R3  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-31T14:11:05Z  INFO   11  verify-migration  rendering R4  identisch=0 divergiert=0 nicht_pruefbar=1
+2026-08-31T14:11:05Z  WARN   11  verify-migration  not-mechanisable: rendering R4  count=1 subjects=template example links
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-31T14:11:05Z  INFO   11  verify-migration  rendering R5  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-31T14:11:05Z  INFO   11  verify-migration  log L0  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-31T14:11:05Z  INFO   11  verify-migration  log L1  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-31T14:11:05Z  INFO   11  verify-migration  log L2  identisch=20 divergiert=2 nicht_pruefbar=3
+2026-08-31T14:11:05Z  WARN   11  verify-migration  verification-divergence: log L2  count=2 subjects=pre.5 toolchain, 5.3 transfer-artefacts
+    Each is a row in migration-log/verification-findings.tsv with its evidence and its next action.
+2026-08-31T14:11:05Z  WARN   11  verify-migration  not-mechanisable: log L2  count=3 subjects=5.1d guide-harvest, 5.4a optional-page-decisions, 5.4b security-privacy-decision
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-31T14:11:05Z  INFO   11  verify-migration  log L3  identisch=1 divergiert=2 nicht_pruefbar=0
+2026-08-31T14:11:05Z  WARN   11  verify-migration  verification-divergence: log L3  count=2 subjects=identity field description, identity field title
+    Each is a row in migration-log/verification-findings.tsv with its evidence and its next action.
+2026-08-31T14:11:05Z  INFO   11  verify-migration  log L4  identisch=1 divergiert=0 nicht_pruefbar=2
+2026-08-31T14:11:05Z  WARN   11  verify-migration  not-mechanisable: log L4  count=2 subjects=conversion count, page count
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-31T14:11:05Z  WARN   11  verify-migration  result  identisch=65 divergiert=12 nicht_pruefbar=19 findings=./migration-log/verification-findings.tsv markdown=./migration-log/verification.md exit=1
+    exit 1 = at least one DIVERGIERT; exit 3 = none, but verification is INCOMPLETE
+    because a check could not be mechanised. Neither is a pass.
+2026-08-31T14:11:05Z  WARN   11  verify-migration  anticipated-nonzero-exit: findings are this step output (1 = DIVERGIERT, 3 = NICHT PRÜFBAR)  cmd=`python3 /Users/julian/.agents/skills/mii-ig-migration/scripts/verify-migration.py --target . --source /tmp/kerndatensatz-meta-source-baseline.CD9uWM --rendered output --source-lang de --template-latest v0.13.1`  exit=1 raw_log=migration-log/verify-migration.log raw_log_lines=71
+    This non-zero status is this step's ANTICIPATED, documented outcome, not a
+    failure to fix -- the acceptance criterion is met AS QUALIFIED (spec
+    §5.1b.4). Escalated, not ignored: every item behind it belongs in the
+    report's ① decision queue, named individually (spec §10.3, §10.6).
+2026-08-31T14:19:01Z  INFO   log  run-boundary  ===== run 6 starts  run=6 label=run 6 — verification remediation and Gate B/C handoff cwd=/Users/julian/git/kerndatensatz-meta log=migration-log/run.log
+    Every line below belongs to run 6; the lines above are earlier invocations.
+    Per-step raw logs (migration-log/<ACTION>.log) hold THIS run only -- `run`
+    truncates each one and rolls the previous attempt over to <ACTION>.prev.log.
+2026-08-31T14:19:01Z  INFO   pre.5  toolchain  source_shape=A local_sushi=npx --yes fsh-sushi@3.20.0 workflow_sushi=3.20.1 gofsh=2.6.1 gofsh_invoked=false publisher=2.3.2 publisher_sha256=07c576024df917cc1f879b6b5a64147cd0222d5b4129688e8f0ad9ccce58b1d5 evidence=.github/workflows/ig-publisher.yml,migration-log/qa-build.log
+2026-08-31T14:19:01Z  INFO   5.1d  guide-harvest  narrative-source=repository source_tree=implementation-guides/ImplementationGuide-2025 harvested=not-applicable source_shape=A authoritative_tree_present=true
+2026-08-31T14:19:01Z  INFO   5.3  transfer-artefacts  source_ref=1db2e534704d92e5ee0cde663ce3e7ccd8825fa7 source_artifacts=175 transferred=175 missing=0 changed_ids=0 changed_canonicals=0 extra=CapabilityStatement/mii-cps-meta-server-capabilities extra_reason=user-approved-generation
+2026-08-31T14:19:01Z  INFO   5.4a  optional-page-decisions  template=v0.13.1 user_decision=recommended-routes keep=metadata,search-parameters remove=operations,value-sets,researcher-guidance artifact_evidence=SearchParameter:170,ValueSet:0,OperationDefinition:0 metadata_overview=added markers_remaining=0
+2026-08-31T14:19:01Z  INFO   5.4b  security-privacy-decision  user_decision=default-text adopted=true person_example_removed=true illustrative_marker_remaining=0 language_pages=en,de
+2026-08-31T14:19:01Z  INFO   2.1  identity-decision  decision: field=title value=MII IG Meta basis=sushi-config.yaml source-wins unchanged=true gate=A
+2026-08-31T14:19:01Z  INFO   2.1  identity-decision  decision: field=description value=The Meta module contains foundational artifacts used by all other MII implementation guides. basis=human-approved-English-description date=2026-08-31 gate=A
+2026-08-31T14:19:12Z  INFO   11  verify-migration  start  cmd=`python3 /Users/julian/.agents/skills/mii-ig-migration/scripts/verify-migration.py --target . --source /tmp/kerndatensatz-meta-source-baseline.CD9uWM --rendered output --source-lang de --template-latest v0.13.1`  raw_log=migration-log/verify-migration.log prev_raw_log=migration-log/verify-migration.prev.log
+2026-08-31T14:19:12Z  INFO   11  verify-migration  params  target=. source=/tmp/kerndatensatz-meta-source-baseline.CD9uWM guide_tree=ImplementationGuide-2025 rendered=output log=./migration-log/run.log layers=conservation,fidelity,provenance,rendering,log
+2026-08-31T14:19:13Z  INFO   11  verify-migration  conservation C1  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-31T14:19:13Z  INFO   11  verify-migration  conservation C2  identisch=2 divergiert=0 nicht_pruefbar=0
+2026-08-31T14:19:13Z  INFO   11  verify-migration  conservation C3  identisch=8 divergiert=0 nicht_pruefbar=0
+2026-08-31T14:19:13Z  INFO   11  verify-migration  conservation C4  identisch=1 divergiert=4 nicht_pruefbar=3
+2026-08-31T14:19:13Z  WARN   11  verify-migration  verification-divergence: conservation C4  count=4 subjects=CodeSystem-MII-Standorte.page.md, Liste-Kerndatensatz-Suchparameter/Index.page.md, MII-IG-Meta/Index.page.md …
+    Each is a row in migration-log/verification-findings.tsv with its evidence and its next action.
+2026-08-31T14:19:13Z  WARN   11  verify-migration  not-mechanisable: conservation C4  count=3 subjects=Extension-Lizenzbedingungen.page.md, Profil-SearchParameter.page.md, Technische-Implementierung/Index.page.md
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-31T14:19:13Z  INFO   11  verify-migration  conservation C5  identisch=3 divergiert=0 nicht_pruefbar=1
+2026-08-31T14:19:13Z  WARN   11  verify-migration  not-mechanisable: conservation C5  count=1 subjects=target pages without a source counterpart
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-31T14:19:13Z  INFO   11  verify-migration  conservation C6  identisch=5 divergiert=0 nicht_pruefbar=0
+2026-08-31T14:19:13Z  INFO   11  verify-migration  conservation C7  identisch=1 divergiert=0 nicht_pruefbar=2
+2026-08-31T14:19:13Z  WARN   11  verify-migration  not-mechanisable: conservation C7  count=2 subjects=Extension-Lizenzbedingungen.page.md, Profil-SearchParameter.page.md
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-31T14:19:13Z  INFO   11  verify-migration  fidelity F1  identisch=8 divergiert=0 nicht_pruefbar=1
+2026-08-31T14:19:13Z  WARN   11  verify-migration  not-mechanisable: fidelity F1  count=1 subjects=version
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-31T14:19:13Z  INFO   11  verify-migration  fidelity F2  identisch=1 divergiert=0 nicht_pruefbar=3
+2026-08-31T14:19:13Z  WARN   11  verify-migration  not-mechanisable: fidelity F2  count=3 subjects=hl7.fhir.uv.crmi, hl7.fhir.uv.extensions.r4, hl7.terminology.r4
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-31T14:19:13Z  INFO   11  verify-migration  fidelity F3  identisch=2 divergiert=0 nicht_pruefbar=0
+2026-08-31T14:19:13Z  INFO   11  verify-migration  fidelity F4  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-31T14:19:13Z  INFO   11  verify-migration  provenance P1  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-31T14:19:13Z  INFO   11  verify-migration  provenance P2  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-31T14:19:13Z  INFO   11  verify-migration  provenance P3  identisch=1 divergiert=0 nicht_pruefbar=1
+2026-08-31T14:19:13Z  WARN   11  verify-migration  not-mechanisable: provenance P3  count=1 subjects=IG Publisher currency
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-31T14:19:13Z  INFO   11  verify-migration  provenance P4  identisch=0 divergiert=0 nicht_pruefbar=1
+2026-08-31T14:19:13Z  WARN   11  verify-migration  not-mechanisable: provenance P4  count=1 subjects=source guide version
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-31T14:19:13Z  INFO   11  verify-migration  provenance P5  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-31T14:19:13Z  INFO   11  verify-migration  rendering R1  identisch=2 divergiert=0 nicht_pruefbar=1
+2026-08-31T14:19:13Z  WARN   11  verify-migration  not-mechanisable: rendering R1  count=1 subjects=source-versus-target rendering
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-31T14:19:13Z  INFO   11  verify-migration  rendering R2  identisch=0 divergiert=4 nicht_pruefbar=0
+2026-08-31T14:19:13Z  WARN   11  verify-migration  verification-divergence: rendering R2  count=4 subjects=output/de id="publish-box" [{{], output/de id="ig-status" [{{], output/en id="publish-box" [{{] …
+    Each is a row in migration-log/verification-findings.tsv with its evidence and its next action.
+2026-08-31T14:19:13Z  INFO   11  verify-migration  rendering R3  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-31T14:19:13Z  INFO   11  verify-migration  rendering R4  identisch=0 divergiert=0 nicht_pruefbar=1
+2026-08-31T14:19:13Z  WARN   11  verify-migration  not-mechanisable: rendering R4  count=1 subjects=template example links
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-31T14:19:13Z  INFO   11  verify-migration  rendering R5  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-31T14:19:13Z  INFO   11  verify-migration  log L0  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-31T14:19:13Z  INFO   11  verify-migration  log L1  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-31T14:19:13Z  INFO   11  verify-migration  log L2  identisch=25 divergiert=0 nicht_pruefbar=0
+2026-08-31T14:19:13Z  INFO   11  verify-migration  log L3  identisch=3 divergiert=0 nicht_pruefbar=0
+2026-08-31T14:19:13Z  INFO   11  verify-migration  log L4  identisch=1 divergiert=0 nicht_pruefbar=2
+2026-08-31T14:19:13Z  WARN   11  verify-migration  not-mechanisable: log L4  count=2 subjects=conversion count, page count
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-31T14:19:13Z  WARN   11  verify-migration  result  identisch=72 divergiert=8 nicht_pruefbar=16 findings=./migration-log/verification-findings.tsv markdown=./migration-log/verification.md exit=1
+    exit 1 = at least one DIVERGIERT; exit 3 = none, but verification is INCOMPLETE
+    because a check could not be mechanised. Neither is a pass.
+2026-08-31T14:19:13Z  WARN   11  verify-migration  anticipated-nonzero-exit: findings are this step output (1 = DIVERGIERT, 3 = NICHT PRÜFBAR)  cmd=`python3 /Users/julian/.agents/skills/mii-ig-migration/scripts/verify-migration.py --target . --source /tmp/kerndatensatz-meta-source-baseline.CD9uWM --rendered output --source-lang de --template-latest v0.13.1`  exit=1 raw_log=migration-log/verify-migration.log raw_log_lines=64
+    This non-zero status is this step's ANTICIPATED, documented outcome, not a
+    failure to fix -- the acceptance criterion is met AS QUALIFIED (spec
+    §5.1b.4). Escalated, not ignored: every item behind it belongs in the
+    report's ① decision queue, named individually (spec §10.3, §10.6).
+2026-08-31T14:22:01Z  INFO   5.6  convention-check  start  cmd=`node scripts/convention-check.mjs --release`  raw_log=migration-log/convention-check.log prev_raw_log=migration-log/convention-check.prev.log
+2026-08-31T14:22:01Z  WARN   5.6  convention-check  anticipated-nonzero-exit: M6 rejects the Gate-A-approved ballot prerelease 2027.0.0-ballot.rc1; all other applicable M1-M11 checks pass  cmd=`node scripts/convention-check.mjs --release`  exit=1 raw_log=migration-log/convention-check.log raw_log_lines=20
+    This non-zero status is this step's ANTICIPATED, documented outcome, not a
+    failure to fix -- the acceptance criterion is met AS QUALIFIED (spec
+    §5.1b.4). Escalated, not ignored: every item behind it belongs in the
+    report's ① decision queue, named individually (spec §10.3, §10.6).
+2026-08-31T14:29:23Z  INFO   8  migration-report  report=migration-log/migration-report.md state=complete-through-build-and-verification next_gate=B,C published=false verifier=72-identisch,8-divergiert,16-nicht-pruefbar qa=0-errors,269-warnings,0-broken-links
+2026-08-31T14:29:23Z  INFO   8  review-aids  qa_checklist=migration-log/qa-checklist.md checkboxes=47 comparison_table=migration-log/comparison-table.md page_map_rows=10 derived_markers=46
+2026-08-31T15:15:47Z  INFO   log  run-boundary  ===== run 7 starts  run=7 label=run 7 — Gate B/C approval and review-marker clearance cwd=/Users/julian/git/kerndatensatz-meta log=migration-log/run.log
+    Every line below belongs to run 7; the lines above are earlier invocations.
+    Per-step raw logs (migration-log/<ACTION>.log) hold THIS run only -- `run`
+    truncates each one and rolls the previous attempt over to <ACTION>.prev.log.
+2026-08-31T15:15:47Z  INFO   B  gate-approved  decision: Gate-B narrative routing, derived content, source-gap statements, generated-view replacements, C4 dispositions and retire proposals approved by user date=2026-08-31 reviewer=user markers_before=32
+2026-08-31T15:15:47Z  INFO   C  gate-approved  decision: Gate-C English machine translations, German mirrors and page-title localization approved by user date=2026-08-31 reviewer=user markers_before=12
+2026-08-31T15:15:47Z  INFO   A  derived-content-approved  decision: Gate-A CapabilityStatement narrative markers cleared under prior CapabilityStatement=generate approval markers_before=2
+2026-08-31T15:15:47Z  INFO   B  c4-disposition  decision: C4 source text-run divergences accepted after Gate-B review; raw FQL is generated view, starter index is retired, linked/formatted prose is substantively preserved
+2026-08-31T15:15:47Z  INFO   B  r2-disposition  decision: R2 module narrative/header accepted at Gate B; inherited FHIR R4 snapshot token must not be mutated; orphan multilingual searchform token remains Gate-D upstream-template follow-up
+2026-08-31T15:15:47Z  INFO   5.4d  derived-scan  start  cmd=`python3 /Users/julian/.agents/skills/mii-ig-migration/scripts/derived-scan.py --target .`  raw_log=migration-log/derived-scan.log prev_raw_log=migration-log/derived-scan.prev.log
+2026-08-31T15:15:47Z  INFO   11  derived-scan  params  target=. out=./migration-log/derived-content.tsv markdown=no
+2026-08-31T15:15:47Z  INFO   11  derived-scan  result  files=42 markers=0 gates=A:0,B:0,C:0 kinds=- langs=- findings=0 (none) out=./migration-log/derived-content.tsv exit=0
+2026-08-31T15:15:47Z  INFO   5.4d  derived-scan  done  cmd=`python3 /Users/julian/.agents/skills/mii-ig-migration/scripts/derived-scan.py --target .`  exit=0 raw_log=migration-log/derived-scan.log raw_log_lines=2
+2026-08-31T15:15:47Z  INFO   5.4  fql-scan  start  cmd=`bash /Users/julian/.agents/skills/mii-ig-migration/scripts/fql-scan.sh --strict input/pagecontent input/translations/de/pagecontent input/intro-notes input/translations/de/intro-notes`  raw_log=migration-log/fql-scan.log
+2026-08-31T15:15:47Z  INFO   5.4  fql-scan  params  rules=/Users/julian/.agents/skills/mii-ig-migration/references/fql-rules.tsv  targets= input/pagecontent input/translations/de/pagecontent input/intro-notes input/translations/de/intro-notes  defaulted=0
+2026-08-31T15:15:47Z  INFO   5.4  fql-scan  target  path=input/pagecontent  kind=dir  files=18
+2026-08-31T15:15:47Z  INFO   5.4  fql-scan  target  path=input/translations/de/pagecontent  kind=dir  files=18
+2026-08-31T15:15:47Z  INFO   5.4  fql-scan  target  path=input/intro-notes  kind=dir  files=3
+2026-08-31T15:15:47Z  INFO   5.4  fql-scan  target  path=input/translations/de/intro-notes  kind=dir  files=3
+2026-08-31T15:15:49Z  INFO   5.4  fql-scan  result  mapped=0 unknown=0 files=42  exit=0  no directives found
+2026-08-31T15:15:49Z  INFO   5.4  fql-scan  done  cmd=`bash /Users/julian/.agents/skills/mii-ig-migration/scripts/fql-scan.sh --strict input/pagecontent input/translations/de/pagecontent input/intro-notes input/translations/de/intro-notes`  exit=0 raw_log=migration-log/fql-scan.log raw_log_lines=6
+2026-08-31T15:16:01Z  INFO   5.6  sushi-build  start  cmd=`npx --yes fsh-sushi@3.20.1 .`  raw_log=migration-log/sushi-approved.log
+2026-08-31T15:17:11Z  ERROR  5.6  sushi-build  failed  cmd=`npx --yes fsh-sushi@3.20.1 .`  exit=1 raw_log=migration-log/sushi-approved.log raw_log_lines=11
+    The exit status is preserved and returned -- this step did NOT meet its
+    acceptance criterion. Read migration-log/sushi-approved.log, then either fix and re-run or take it
+    to the report's decision queue (spec §10.3).
+2026-08-31T15:17:25Z  WARN   5.6  sushi-build  interrupted-attempt: npx --yes fsh-sushi@3.20.1 produced no output before execution wrapper timeout; no result claimed; rerunning pinned migration toolchain 3.20.0 from populated cache
+2026-08-31T15:17:25Z  INFO   5.6  sushi-build  start  cmd=`env npm_config_cache=/tmp/mii-meta-npm-cache npx --offline --yes fsh-sushi@3.20.0 .`  raw_log=migration-log/sushi-approved.log prev_raw_log=migration-log/sushi-approved.prev.log
+2026-08-31T15:17:35Z  INFO   5.6  sushi-build  done  cmd=`env npm_config_cache=/tmp/mii-meta-npm-cache npx --offline --yes fsh-sushi@3.20.0 .`  exit=0 raw_log=migration-log/sushi-approved.log raw_log_lines=46
+2026-08-31T15:17:48Z  INFO   5.6  ig-publisher  start  cmd=`java -Xmx6g -jar /tmp/mii-publisher-2.3.2.jar -ig ig.ini -tx https://tx.fhir.org -no-sushi`  raw_log=migration-log/qa-approved.log
+2026-08-31T15:17:50Z  ERROR  5.6  ig-publisher  failed  cmd=`java -Xmx6g -jar /tmp/mii-publisher-2.3.2.jar -ig ig.ini -tx https://tx.fhir.org -no-sushi`  exit=1 raw_log=migration-log/qa-approved.log raw_log_lines=71
+    The exit status is preserved and returned -- this step did NOT meet its
+    acceptance criterion. Read migration-log/qa-approved.log, then either fix and re-run or take it
+    to the report's decision queue (spec §10.3).
+2026-08-31T15:18:05Z  INFO   5.6  ig-publisher  start  cmd=`java -Xmx6g -jar /tmp/mii-publisher-2.3.2.jar -ig ig.ini -tx https://tx.fhir.org -no-sushi`  raw_log=migration-log/qa-approved.log prev_raw_log=migration-log/qa-approved.prev.log
+2026-08-31T15:19:43Z  INFO   5.6  ig-publisher  done  cmd=`java -Xmx6g -jar /tmp/mii-publisher-2.3.2.jar -ig ig.ini -tx https://tx.fhir.org -no-sushi`  exit=0 raw_log=migration-log/qa-approved.log raw_log_lines=14504
+2026-08-31T18:15:22Z  WARN   5.6  ig-publisher  terminology-environment: public tx.fhir.org returned 564 terminology resolution errors for future SNOMED 20260701 and BCP-47 language coding; render completed with 5863 valid HTML pages and 0 broken links; rerunning structural QA with tx=n/a because CI reference uses a private SU-TermServ proxy at 127.0.0.1:8090
+2026-08-31T18:15:22Z  INFO   5.6  ig-publisher-offline  start  cmd=`java -Xmx6g -jar /tmp/mii-publisher-2.3.2.jar -ig ig.ini -tx n/a -fhir-settings .github/fhir-settings.json -no-sushi`  raw_log=migration-log/qa-approved-offline.log
+2026-08-31T18:17:05Z  INFO   5.6  ig-publisher-offline  done  cmd=`java -Xmx6g -jar /tmp/mii-publisher-2.3.2.jar -ig ig.ini -tx n/a -fhir-settings .github/fhir-settings.json -no-sushi`  exit=0 raw_log=migration-log/qa-approved-offline.log raw_log_lines=14500
+2026-08-31T18:19:02Z  INFO   11  verify-migration  start  cmd=`python3 /Users/julian/.agents/skills/mii-ig-migration/scripts/verify-migration.py --target . --source /tmp/kerndatensatz-meta-source-baseline.CD9uWM --rendered output --source-lang de --template-latest v0.13.1`  raw_log=migration-log/verify-migration.log prev_raw_log=migration-log/verify-migration.prev.log
+2026-08-31T18:19:03Z  INFO   11  verify-migration  params  target=. source=/tmp/kerndatensatz-meta-source-baseline.CD9uWM guide_tree=ImplementationGuide-2025 rendered=output log=./migration-log/run.log layers=conservation,fidelity,provenance,rendering,log
+2026-08-31T18:19:04Z  INFO   11  verify-migration  conservation C1  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-31T18:19:04Z  INFO   11  verify-migration  conservation C2  identisch=2 divergiert=0 nicht_pruefbar=0
+2026-08-31T18:19:04Z  INFO   11  verify-migration  conservation C3  identisch=8 divergiert=0 nicht_pruefbar=0
+2026-08-31T18:19:04Z  INFO   11  verify-migration  conservation C4  identisch=1 divergiert=4 nicht_pruefbar=3
+2026-08-31T18:19:04Z  WARN   11  verify-migration  verification-divergence: conservation C4  count=4 subjects=CodeSystem-MII-Standorte.page.md, Liste-Kerndatensatz-Suchparameter/Index.page.md, MII-IG-Meta/Index.page.md …
+    Each is a row in migration-log/verification-findings.tsv with its evidence and its next action.
+2026-08-31T18:19:04Z  WARN   11  verify-migration  not-mechanisable: conservation C4  count=3 subjects=Extension-Lizenzbedingungen.page.md, Profil-SearchParameter.page.md, Technische-Implementierung/Index.page.md
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-31T18:19:04Z  INFO   11  verify-migration  conservation C5  identisch=3 divergiert=0 nicht_pruefbar=1
+2026-08-31T18:19:04Z  WARN   11  verify-migration  not-mechanisable: conservation C5  count=1 subjects=target pages without a source counterpart
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-31T18:19:04Z  INFO   11  verify-migration  conservation C6  identisch=5 divergiert=0 nicht_pruefbar=0
+2026-08-31T18:19:04Z  INFO   11  verify-migration  conservation C7  identisch=0 divergiert=3 nicht_pruefbar=2
+2026-08-31T18:19:04Z  WARN   11  verify-migration  verification-divergence: conservation C7  count=3 subjects=CodeSystem-mii-cs-meta-diz-standorte-intro, search-parameters, index
+    Each is a row in migration-log/verification-findings.tsv with its evidence and its next action.
+2026-08-31T18:19:04Z  WARN   11  verify-migration  not-mechanisable: conservation C7  count=2 subjects=Extension-Lizenzbedingungen.page.md, Profil-SearchParameter.page.md
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-31T18:19:04Z  INFO   11  verify-migration  fidelity F1  identisch=8 divergiert=0 nicht_pruefbar=1
+2026-08-31T18:19:04Z  WARN   11  verify-migration  not-mechanisable: fidelity F1  count=1 subjects=version
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-31T18:19:04Z  INFO   11  verify-migration  fidelity F2  identisch=1 divergiert=0 nicht_pruefbar=3
+2026-08-31T18:19:04Z  WARN   11  verify-migration  not-mechanisable: fidelity F2  count=3 subjects=hl7.fhir.uv.crmi, hl7.fhir.uv.extensions.r4, hl7.terminology.r4
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-31T18:19:04Z  INFO   11  verify-migration  fidelity F3  identisch=2 divergiert=0 nicht_pruefbar=0
+2026-08-31T18:19:04Z  INFO   11  verify-migration  fidelity F4  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-31T18:19:04Z  INFO   11  verify-migration  provenance P1  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-31T18:19:04Z  INFO   11  verify-migration  provenance P2  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-31T18:19:04Z  INFO   11  verify-migration  provenance P3  identisch=1 divergiert=0 nicht_pruefbar=1
+2026-08-31T18:19:04Z  WARN   11  verify-migration  not-mechanisable: provenance P3  count=1 subjects=IG Publisher currency
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-31T18:19:04Z  INFO   11  verify-migration  provenance P4  identisch=0 divergiert=0 nicht_pruefbar=1
+2026-08-31T18:19:04Z  WARN   11  verify-migration  not-mechanisable: provenance P4  count=1 subjects=source guide version
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-31T18:19:04Z  INFO   11  verify-migration  provenance P5  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-31T18:19:04Z  INFO   11  verify-migration  rendering R1  identisch=2 divergiert=0 nicht_pruefbar=1
+2026-08-31T18:19:04Z  WARN   11  verify-migration  not-mechanisable: rendering R1  count=1 subjects=source-versus-target rendering
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-31T18:19:04Z  INFO   11  verify-migration  rendering R2  identisch=0 divergiert=4 nicht_pruefbar=0
+2026-08-31T18:19:04Z  WARN   11  verify-migration  verification-divergence: rendering R2  count=4 subjects=output/de id="publish-box" [{{], output/de id="ig-status" [{{], output/en id="publish-box" [{{] …
+    Each is a row in migration-log/verification-findings.tsv with its evidence and its next action.
+2026-08-31T18:19:04Z  INFO   11  verify-migration  rendering R3  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-31T18:19:04Z  INFO   11  verify-migration  rendering R4  identisch=0 divergiert=0 nicht_pruefbar=1
+2026-08-31T18:19:04Z  WARN   11  verify-migration  not-mechanisable: rendering R4  count=1 subjects=template example links
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-31T18:19:04Z  INFO   11  verify-migration  rendering R5  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-31T18:19:04Z  INFO   11  verify-migration  log L0  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-31T18:19:04Z  INFO   11  verify-migration  log L1  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-31T18:19:04Z  INFO   11  verify-migration  log L2  identisch=25 divergiert=0 nicht_pruefbar=0
+2026-08-31T18:19:04Z  INFO   11  verify-migration  log L3  identisch=3 divergiert=0 nicht_pruefbar=0
+2026-08-31T18:19:04Z  INFO   11  verify-migration  log L4  identisch=1 divergiert=0 nicht_pruefbar=2
+2026-08-31T18:19:04Z  WARN   11  verify-migration  not-mechanisable: log L4  count=2 subjects=conversion count, page count
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-31T18:19:04Z  WARN   11  verify-migration  result  identisch=71 divergiert=11 nicht_pruefbar=16 findings=./migration-log/verification-findings.tsv markdown=./migration-log/verification.md exit=1
+    exit 1 = at least one DIVERGIERT; exit 3 = none, but verification is INCOMPLETE
+    because a check could not be mechanised. Neither is a pass.
+2026-08-31T18:19:04Z  WARN   11  verify-migration  anticipated-nonzero-exit: Gate-B accepted C4/R2 dispositions and remaining unmechanisable checks are recorded; verifier reports evidence, not gate state  cmd=`python3 /Users/julian/.agents/skills/mii-ig-migration/scripts/verify-migration.py --target . --source /tmp/kerndatensatz-meta-source-baseline.CD9uWM --rendered output --source-lang de --template-latest v0.13.1`  exit=1 raw_log=migration-log/verify-migration.log raw_log_lines=66
+    This non-zero status is this step's ANTICIPATED, documented outcome, not a
+    failure to fix -- the acceptance criterion is met AS QUALIFIED (spec
+    §5.1b.4). Escalated, not ignored: every item behind it belongs in the
+    report's ① decision queue, named individually (spec §10.3, §10.6).
+2026-08-31T18:22:37Z  INFO   5.2  terminology-pin-align  approved_manifest=SNOMED-CT-20260701 aligned=input/fsh/aliases.fsh,input/resources/README.md,input/pagecontent/metadata.md,input/translations/de/pagecontent/metadata.md previous_alias_and_docs=20250701 resource_unchanged=true
+2026-08-31T18:22:37Z  INFO   5.6  sushi-build  start  cmd=`env npm_config_cache=/tmp/mii-meta-npm-cache npx --offline --yes fsh-sushi@3.20.0 .`  raw_log=migration-log/sushi-approved.log prev_raw_log=migration-log/sushi-approved.prev.log
+2026-08-31T18:22:47Z  INFO   5.6  sushi-build  done  cmd=`env npm_config_cache=/tmp/mii-meta-npm-cache npx --offline --yes fsh-sushi@3.20.0 .`  exit=0 raw_log=migration-log/sushi-approved.log raw_log_lines=46
+2026-08-31T18:26:21Z  INFO   8  migration-report  state=gates-A-B-C-approved derived_markers=0 fql_findings=0 page_parity=18/18 title_units=19/19 verifier=71/11/16 next_gate=D publication=false
+2026-08-31T18:26:21Z  INFO   D  gate-pending  requirements=green-CI-SU-TermServ,M6-policy,upstream-searchform,governance,legacy-cleanup publication=false

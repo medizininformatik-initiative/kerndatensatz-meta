@@ -7,7 +7,6 @@
     ]
   },
   "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-dokument-documentreference-attachment-creation",
-  "publisher": "Medizininformatik Initiative",
   "contact": [
     {
       "telecom": [
@@ -18,7 +17,6 @@
       ]
     }
   ],
-  "version": "2026.0.0",
   "extension": [
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -33,15 +31,17 @@
       }
     }
   ],
+  "base": [
+    "DocumentReference"
+  ],
+  "publisher": "Medizininformatik Initiative",
+  "version": "2027.0.0-ballot.rc1",
   "name": "MII_SP_Meta_DocumentReference_Attachment_Creation",
   "status": "active",
   "description": "Suchparameter für DocumentReference.content.attachment.creation",
   "experimental": false,
   "date": "2025-06-23",
   "code": "creation",
-  "base": [
-    "DocumentReference"
-  ],
   "type": "date",
   "expression": "DocumentReference.content.attachment.creation"
 }

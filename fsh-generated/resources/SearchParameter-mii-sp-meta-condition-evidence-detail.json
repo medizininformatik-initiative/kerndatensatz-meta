@@ -7,7 +7,6 @@
     ]
   },
   "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-evidence-detail",
-  "publisher": "Medizininformatik Initiative",
   "contact": [
     {
       "telecom": [
@@ -32,19 +31,20 @@
       }
     }
   ],
-  "version": "2026.0.0",
+  "base": [
+    "Condition"
+  ],
+  "target": [
+    "List"
+  ],
+  "publisher": "Medizininformatik Initiative",
+  "version": "2027.0.0-ballot.rc1",
   "experimental": false,
   "date": "2024-10-24",
   "name": "MII_SP_Meta_Condition_Evidence_Detail",
   "description": "SearchParameter for Condition.evidence.detail",
   "status": "active",
   "code": "evidence-detail",
-  "base": [
-    "Condition"
-  ],
   "type": "reference",
-  "target": [
-    "List"
-  ],
   "expression": "Condition.evidence.detail"
 }

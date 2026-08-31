@@ -7,7 +7,6 @@
     ]
   },
   "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-dosequantity",
-  "publisher": "Medizininformatik Initiative",
   "contact": [
     {
       "telecom": [
@@ -18,7 +17,6 @@
       ]
     }
   ],
-  "version": "2026.0.0",
   "extension": [
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -33,24 +31,26 @@
       }
     }
   ],
-  "name": "MII_SP_Meta_Medication_Dosage_DoseQuantity",
-  "status": "active",
-  "experimental": false,
-  "date": "2024-10-08",
-  "description": "Suchparameter für MedicationStatement.dosage.doseAndRate.doseQuantity | MedicationRequest.dosageInstruction.doseAndRate.doseQuantity | MedicationAdministration.dosage.dose",
-  "code": "dose-quantity",
   "base": [
     "MedicationStatement",
     "MedicationRequest",
     "MedicationAdministration"
   ],
-  "type": "quantity",
-  "expression": "MedicationStatement.dosage.doseAndRate.dose.ofType(Quantity) | MedicationRequest.dosageInstruction.doseAndRate.dose.ofType(Quantity) | MedicationAdministration.dosage.dose",
   "comparator": [
     "eq",
     "gt",
     "lt",
     "ge",
     "le"
-  ]
+  ],
+  "publisher": "Medizininformatik Initiative",
+  "version": "2027.0.0-ballot.rc1",
+  "name": "MII_SP_Meta_Medication_Dosage_DoseQuantity",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-10-08",
+  "description": "Suchparameter für MedicationStatement.dosage.doseAndRate.doseQuantity | MedicationRequest.dosageInstruction.doseAndRate.doseQuantity | MedicationAdministration.dosage.dose",
+  "code": "dose-quantity",
+  "type": "quantity",
+  "expression": "MedicationStatement.dosage.doseAndRate.dose.ofType(Quantity) | MedicationRequest.dosageInstruction.doseAndRate.dose.ofType(Quantity) | MedicationAdministration.dosage.dose"
 }

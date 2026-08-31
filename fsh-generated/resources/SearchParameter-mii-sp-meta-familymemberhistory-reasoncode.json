@@ -7,7 +7,6 @@
     ]
   },
   "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-familymemberhistory-reasoncode",
-  "publisher": "Medizininformatik Initiative",
   "contact": [
     {
       "telecom": [
@@ -18,7 +17,6 @@
       ]
     }
   ],
-  "version": "2026.0.0",
   "extension": [
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -33,15 +31,17 @@
       }
     }
   ],
+  "base": [
+    "FamilyMemberHistory"
+  ],
+  "publisher": "Medizininformatik Initiative",
+  "version": "2027.0.0-ballot.rc1",
   "name": "MII_SP_Meta_FamilyMemberHistory_ReasonCode",
   "status": "active",
   "experimental": false,
   "date": "2024-10-08",
   "description": "Suchparameter für FamilyMemberHistory.reasonCode",
   "code": "reason-code",
-  "base": [
-    "FamilyMemberHistory"
-  ],
   "type": "token",
   "expression": "FamilyMemberHistory.reasonCode"
 }

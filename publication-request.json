@@ -1,0 +1,17 @@
+{
+   "package-id" : "de.medizininformatikinitiative.kerndatensatz.meta",
+   "version" : "2027.0.0-ballot.rc1",
+   "path" : "https://medizininformatik-initiative.github.io/kerndatensatz-meta/2027.0.0-ballot.rc1",
+   "mode" : "milestone",
+   "status" : "release",
+   "sequence" : "2027",
+   "desc" : "Meta module ballot release 2027.0.0-ballot.rc1.",
+   "first" : true,
+   "title" : "MII IG Meta",
+   "ci-build" : "https://medizininformatik-initiative.github.io/kerndatensatz-meta/branches/dev/",
+   "category" : "Research",
+   "introduction" : "The Meta module contains foundational artifacts used by all other MII implementation guides.",
+   "registry-description" : "The Meta module contains foundational artifacts used by all other MII implementation guides.",
+   "registry-country" : "de",
+   "registry-authority" : "Medical Informatics Initiative (MII)"
+}

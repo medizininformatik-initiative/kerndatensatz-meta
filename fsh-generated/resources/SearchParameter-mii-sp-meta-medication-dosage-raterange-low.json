@@ -7,7 +7,6 @@
     ]
   },
   "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange-low",
-  "publisher": "Medizininformatik Initiative",
   "contact": [
     {
       "telecom": [
@@ -18,7 +17,6 @@
       ]
     }
   ],
-  "version": "2026.0.0",
   "extension": [
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -33,23 +31,25 @@
       }
     }
   ],
-  "name": "MII_SP_Meta_Medication_Dosage_RateRangeLow",
-  "status": "active",
-  "experimental": false,
-  "date": "2024-10-08",
-  "description": "Suchparameter für MedicationStatement.dosage.doseAndRate.rateRange.low | MedicationRequest.dosageInstruction.doseAndRate.rateRange.low",
-  "code": "raterange-low",
   "base": [
     "MedicationStatement",
     "MedicationRequest"
   ],
-  "type": "quantity",
-  "expression": "MedicationStatement.dosage.doseAndRate.rate.ofType(Range).low | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Range).low",
   "comparator": [
     "eq",
     "gt",
     "lt",
     "ge",
     "le"
-  ]
+  ],
+  "publisher": "Medizininformatik Initiative",
+  "version": "2027.0.0-ballot.rc1",
+  "name": "MII_SP_Meta_Medication_Dosage_RateRangeLow",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-10-08",
+  "description": "Suchparameter für MedicationStatement.dosage.doseAndRate.rateRange.low | MedicationRequest.dosageInstruction.doseAndRate.rateRange.low",
+  "code": "raterange-low",
+  "type": "quantity",
+  "expression": "MedicationStatement.dosage.doseAndRate.rate.ofType(Range).low | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Range).low"
 }

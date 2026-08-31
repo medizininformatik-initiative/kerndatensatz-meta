@@ -7,8 +7,6 @@
     ]
   },
   "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-label",
-  "version": "2026.0.0",
-  "publisher": "Medizininformatik Initiative",
   "contact": [
     {
       "telecom": [
@@ -33,15 +31,17 @@
       }
     }
   ],
+  "base": [
+    "ResearchStudy"
+  ],
+  "version": "2027.0.0-ballot.rc1",
+  "publisher": "Medizininformatik Initiative",
   "name": "MII_SP_Meta_ResearchStudy_Label",
   "status": "active",
   "description": "Suchparameter für ResearchStudy.extension:label",
   "experimental": false,
   "date": "2024-10-17",
   "code": "label",
-  "base": [
-    "ResearchStudy"
-  ],
   "type": "string",
   "expression": "ResearchStudy.extension.where(url='http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.label').extension.where(url='value').value"
 }

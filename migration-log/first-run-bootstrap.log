@@ -1,0 +1,52 @@
+== first-run-bootstrap (mode: DRY-RUN) ==
+
+-- Step 1: create 'dev' from 'main' and protect both branches --
+   # create dev from main:
+   gh api -X POST repos/:owner/:repo/git/refs -f ref=refs/heads/dev \
+     -f sha="$(gh api repos/:owner/:repo/git/refs/heads/main --jq .object.sha)"
+   # protect main (require PR + 1 approval(s), no force-push/deletion) and
+   # dev (require PR + 0 approval(s)); keep main the default branch.
+   #   PUT repos/:owner/:repo/branches/{main,dev}/protection
+   #   PATCH repos/:owner/:repo -f default_branch=main
+   (dry-run: the commands above are NOT executed)
+
+-- Step 2: remove the template's release automation (reversible git rm) --
+   (none present — already bootstrapped?)
+   (dry-run: nothing removed)
+
+== Post-bootstrap checklist (do these by hand) ==
+
+1. Replace every {{PLACEHOLDER}} in the scaffold. Start here and follow the
+   comments — the module does NOT build until they are all replaced:
+     - sushi-config.yaml   ({{MODULE_SLUG}}, {{MODULE_NAME}}, {{MODULE_TITLE}},
+                            {{MODULE_DESCRIPTION}}, {{CALVER_VERSION}}, dates, …)
+     - ig.ini              (the {{MODULE_SLUG}} in the ig path; LEAVE the
+                            `template =` line as it is — the repository-URL
+                            default, with `#ig-template` as the vendored
+                            offline fallback — until the MII template package
+                            is published; see
+                            docs/recipes/switch-template-to-published.md)
+     - publication-request.json, .github/workflows/go-publish.yml
+       ({{GITHUB_ORG}}, {{REPO_NAME}}, canonical, …)
+     - qc/custom.rules.yaml, tests/, the pages and the FSH sources
+   Run `node scripts/convention-check.mjs` — it must be green (parameterized
+   fields are OK until you resolve them; a release branch requires them all set).
+
+2. Enable GitHub Pages: Settings → Pages → Build and deployment → "GitHub
+   Actions". Then set the repository variable PAGES_ACTIONS_ENABLED=true only
+   once that is done (the publication workflow checks it).
+
+3. Terminology (optional): to build against the MII SU-TermServ, add the
+   repository secrets SU_TERMSERV_CLIENT_CERT / SU_TERMSERV_CLIENT_KEY /
+   SU_TERMSERV_CLIENT_PASSWORD. Without them the build falls back to the
+   public HL7 server https://tx.fhir.org (it does not hard-fail).
+
+4. Release announcements (optional): add ZULIP_API_KEY to announce your
+   module's CalVer releases to the MII Zulip.
+
+5. CI pipeline toggles are ON by default. To require CI as a merge gate, add the
+   relevant checks (e.g. convention-check, the IG preview build) as required
+   status checks under Settings → Branches once they have run once.
+
+6. Verify the branch model: `main` (stable, default) and `dev` (integration)
+   both exist and are protected. Open your first change as a PR into `dev`.

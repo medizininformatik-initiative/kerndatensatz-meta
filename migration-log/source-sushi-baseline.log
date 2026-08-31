@@ -1,0 +1,56 @@
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+npm warn deprecated rimraf@2.6.3: Rimraf versions prior to v4 are no longer supported
+info  Running SUSHI v3.20.0 (implements FHIR Shorthand specification v3.0.0)
+info  Arguments:
+info    /private/tmp/kerndatensatz-meta-source-baseline.CD9uWM
+info  No output path specified. Output to .
+info  Using configuration file: /private/tmp/kerndatensatz-meta-source-baseline.CD9uWM/sushi-config.yaml
+info  Importing FSH text...
+info  Preprocessed 56 documents with 1 aliases.
+info  Imported 3 definitions and 172 instances.
+info  Loaded virtual package sushi-r5forR4#1.0.0 with 7 resources
+info  Resolved hl7.fhir.uv.tools.r4#latest to concrete version 1.1.2
+info  Loaded hl7.fhir.uv.tools.r4#1.1.2 with 119 resources
+info  Resolved hl7.terminology.r4#latest to concrete version 7.3.0
+info  Loaded hl7.terminology.r4#7.3.0 with 4176 resources
+info  Loaded hl7.fhir.r4.core#4.0.1 with 4581 resources
+info  Resolved hl7.fhir.uv.extensions.r4#latest to concrete version 5.3.0
+info  Loaded hl7.fhir.uv.extensions.r4#5.3.0 with 885 resources
+info  Loaded virtual package sushi-local#LOCAL with 0 resources
+info  Converting FSH to FHIR resources...
+info  Converted 2 FHIR StructureDefinitions.
+info  Converted 1 FHIR CodeSystems.
+info  Converted 172 FHIR instances.
+info  Exporting FHIR resources as JSON...
+info  Exported 175 FHIR resources as JSON.
+info  Assembling Implementation Guide sources...
+info  Generated ImplementationGuide-mii-ig-meta.json
+info  Assembled Implementation Guide sources; ready for IG Publisher.
+info  The _build script hosted at https://github.com/HL7/ig-publisher-scripts is useful for downloading and running the IG Publisher.
+
+========================= SUSHI RESULTS ===========================
+|  -------------------------------------------------------------  |
+| |    Profiles   |  Extensions  |   Logicals   |   Resources   | |
+| |-------------------------------------------------------------| |
+| |       1       |      1       |      0       |       0       | |
+|  -------------------------------------------------------------  |
+|  -------------------------------------------------------------  |
+| |      ValueSets     |    CodeSystems    |     Instances      | |
+| |-------------------------------------------------------------| |
+| |         0          |         1         |        172         | |
+|  -------------------------------------------------------------  |
+|                                                                 |
+===================================================================
+| FSHing for compliments? Super job!     0 Errors      0 Warnings |
+===================================================================
+|    You are using SUSHI version 3.20.0, but the latest stable    |
+| release is version 3.20.1. To install the latest release, run:  |
+|                    npm install -g fsh-sushi                     |
+===================================================================
+
+npm notice
+npm notice New major version of npm available! 10.8.2 -> 12.0.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.0.2
+npm notice To update run: npm install -g npm@12.0.2
+npm notice

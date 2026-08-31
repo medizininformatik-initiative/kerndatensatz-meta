@@ -7,7 +7,6 @@
     ]
   },
   "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-hasmember",
-  "publisher": "Medizininformatik Initiative",
   "contact": [
     {
       "telecom": [
@@ -32,16 +31,17 @@
       }
     }
   ],
-  "version": "2026.0.0",
+  "base": [
+    "Observation"
+  ],
+  "publisher": "Medizininformatik Initiative",
+  "version": "2027.0.0-ballot.rc1",
   "experimental": false,
   "date": "2024-10-24",
   "name": "MII_SP_Meta_Observation_hasMember",
   "description": "SearchParameter for Observation.hasMember",
   "status": "active",
   "code": "has-member",
-  "base": [
-    "Observation"
-  ],
   "type": "reference",
   "expression": "Observation.hasMember"
 }

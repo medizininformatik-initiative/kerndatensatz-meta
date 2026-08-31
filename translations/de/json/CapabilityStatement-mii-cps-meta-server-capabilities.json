@@ -1,0 +1,43 @@
+{
+  "id" : "CapabilityStatement-mii-cps-meta-server-capabilities",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "CapabilityStatement.title",
+      "context" : "CapabilityStatement.title",
+      "source" : "MII CapabilityStatement Meta Server Capabilities",
+      "target" : null
+    },
+    {
+      "id" : "CapabilityStatement.publisher",
+      "context" : "CapabilityStatement.publisher",
+      "source" : "NUM-DIZ",
+      "target" : "NUM-DIZ"
+    },
+    {
+      "id" : "ContactDetail.name",
+      "context" : "ContactDetail.name",
+      "source" : "NUM-DIZ",
+      "target" : null
+    },
+    {
+      "id" : "CapabilityStatement.description",
+      "context" : "CapabilityStatement.description",
+      "source" : "Migration-generated proposal describing the resource types and search parameters published by the Meta module. Review before use as a normative capability statement.",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Germany",
+      "target" : null
+    },
+    {
+      "id" : "CapabilityStatement.rest.documentation",
+      "context" : "CapabilityStatement.rest.documentation",
+      "source" : "Proposal derived from the module's published SearchParameter definitions; support expectations require module-team review.",
+      "target" : null
+    }]
+  }]
+}

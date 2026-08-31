@@ -1,0 +1,2 @@
+2026-08-31T12:26:26Z  INFO   5.2  license-align  params  source=/tmp/kerndatensatz-meta-source-baseline.CD9uWM target=/Users/julian/git/kerndatensatz-meta
+2026-08-31T12:26:26Z  INFO   5.2  license-align  result  already aligned: the target LICENSE is byte-identical to the source's (CC-BY-4.0)  exit=0

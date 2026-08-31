@@ -7,7 +7,6 @@
     ]
   },
   "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-contrast-bolus-details",
-  "publisher": "Medizininformatik Initiative",
   "contact": [
     {
       "telecom": [
@@ -18,7 +17,6 @@
       ]
     }
   ],
-  "version": "2026.0.0",
   "extension": [
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -33,19 +31,21 @@
       }
     }
   ],
+  "base": [
+    "ImagingStudy"
+  ],
+  "target": [
+    "MedicationStatement",
+    "MedicationAdministration"
+  ],
+  "publisher": "Medizininformatik Initiative",
+  "version": "2027.0.0-ballot.rc1",
   "name": "MII_SP_Bildgebung_Imaging_Study_Contrast_Bolus_Details",
   "status": "active",
   "experimental": false,
   "date": "2025-11-06",
   "description": "Suchparameter für ImagingStudy.series.extension.contrastBolusDetails",
   "code": "contrast-bolus-details",
-  "base": [
-    "ImagingStudy"
-  ],
   "type": "reference",
-  "expression": "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel').extension('contrastBolusDetails').value",
-  "target": [
-    "MedicationStatement",
-    "MedicationAdministration"
-  ]
+  "expression": "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel').extension('contrastBolusDetails').value"
 }

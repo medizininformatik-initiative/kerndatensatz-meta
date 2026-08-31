@@ -1,0 +1,557 @@
+# IG build + GitHub Pages branch preview.
+#
+# Purpose:   On every push to a non-release branch, run SUSHI + the HL7 IG
+#            Publisher and deploy the rendered IG to the gh-pages branch under
+#            branches/<branch>/, so a reviewer sees the real result without a
+#            local build. The site ROOT and version-like paths stay reserved
+#            for the formal -go-publish output (go-publish.yml); a preview never
+#            overwrites them. A stale-preview sweeper (cleanup-gh-pages.yml)
+#            removes previews of deleted branches (keyed on the .branch-name
+#            marker each preview drops here).
+#
+# PROPAGATION: this workflow — unlike Release Please — is MEANT to
+#            propagate to modules created from this template. A module maintainer
+#            wants dev/feature previews too, and the MII modules work this way
+#            — for example kerndatensatz-basis builds on every branch, which shows
+#            modules use exactly this model. The first-run bootstrap KEEPS this
+#            file (and cleanup-gh-pages.yml); it strips only the template's own
+#            release automation.
+#
+# Triggers:  push to every branch except main / gh-pages / fsh-generated, plus
+#            manual workflow_dispatch (rebuild one branch's preview). main and
+#            tags are reserved for formal publication and are NOT previewed here.
+#
+# Toggle:    vars.ENABLE_PREVIEW — ON by default. Set the repo variable
+#            to 'false' to skip the whole workflow (jobs show as "skipped", not
+#            failed).
+#
+# Pages two modes (vars.PAGES_ACTIONS_ENABLED):
+#            - unset / not 'true' (default): the preview is served by "Deploy
+#              from a branch → gh-pages" (Settings → Pages). This workflow only
+#              git-pushes the output to gh-pages/branches/<branch>/.
+#            - 'true': additionally upload the whole gh-pages tree as a Pages
+#              artifact and run the deploy job (Settings → Pages → GitHub
+#              Actions). Set PAGES_ACTIONS_ENABLED=true ONLY after switching
+#              Settings → Pages to "GitHub Actions" (mirrors go-publish.yml).
+#
+# Terminology: the IG Publisher build prefers the MII terminology server
+#            (SU-TermServ) through a client-certificate nginx proxy when the repo
+#            secrets SU_TERMSERV_CLIENT_CERT / _KEY / _PASSWORD are set, and
+#            otherwise falls back to the public HL7 server https://tx.fhir.org
+#            with a ::notice. The build must not hard-fail without the cert;
+#            some MII-specific value sets may then not fully expand (a QA note).
+#
+# TEMPLATE-REPO SELF-CHECK (this repo only — a created module skips it):
+#            sushi-config.yaml here still carries {{PLACEHOLDER}} values, so the
+#            repo is not buildable as-is. The "Template-repo self-check
+#            substitution" step is gated to the template repository and, in a
+#            WORKSPACE COPY that is NEVER committed, sed-substitutes the
+#            documented self-check values (MODULE_SLUG=template, …) into
+#            sushi-config.yaml, ig.ini and the build inputs so a real build can
+#            run. The template line itself is left alone: both the repository-URL
+#            default and `#ig-template` (the vendored fallback folder) are
+#            buildable, so the full build + preview run.
+#            Should a repository ever carry a TODO template line instead, the
+#            build DEGRADES at runtime to a SUSHI-only check with a clear
+#            ::notice — no edit to this file needed either way. In a created
+#            module every placeholder is already replaced and this whole step is
+#            a no-op (it never runs, the repo name differs).
+#
+# Fixed versions: every Action is pinned to a commit SHA (# vX.Y.Z); the
+#            IG Publisher jar, SUSHI and Jekyll are pinned in the `env:` block
+#            below under the SAME names go-publish.yml and module-release.yml
+#            use (PUBLISHER_VERSION / PUBLISHER_SHA256 / SUSHI_VERSION /
+#            JEKYLL_VERSION), the jar additionally by SHA-256. Keep them there,
+#            not inline: docs/maintenance.md sends the maintainer to those
+#            names, and scripts/toolchain-pins.test.mjs asserts the three
+#            blocks agree — an inline literal here would escape that check and
+#            drift behind the other two builds unnoticed. The JDK the jar runs
+#            on is pinned too (temurin 17, below). The scheduled dependency
+#            check proposes bumps.
+#
+# Human-gated: none. PAGES_ACTIONS_ENABLED is the only extra authorization and
+#            it gates the Actions-based Pages deploy path, not the preview build.
+name: IG build and preview
+
+on:
+  push:
+    branches:
+      - "**"
+      - "!main"
+      - "!gh-pages"
+      - "!fsh-generated"
+  workflow_dispatch:
+
+permissions:
+  contents: write # push previews to the gh-pages branch
+  pages: write # PAGES_ACTIONS_ENABLED deploy path
+  id-token: write # deploy-pages OIDC
+  pull-requests: write # upsert the preview-URL PR comment
+  issues: write # PR comments go through the issues API
+
+concurrency:
+  # Serialize every writer of the gh-pages branch (previews, cleanup, and the
+  # formal go-publish share this group) so they never race. Queue, never cancel.
+  group: gh-pages-writes
+  cancel-in-progress: false
+
+env:
+  # Pinned toolchain — identical to go-publish.yml, module-release.yml and
+  # (template repo only) release-demo.yml, and the names docs/maintenance.md
+  # tells the maintainer to edit. A workflow cannot read another workflow's
+  # env:, so the four blocks are copies; scripts/toolchain-pins.test.mjs
+  # fails the build if they drift apart.
+  PUBLISHER_VERSION: "2.3.2"
+  PUBLISHER_SHA256: "07c576024df917cc1f879b6b5a64147cd0222d5b4129688e8f0ad9ccce58b1d5"
+  SUSHI_VERSION: "3.20.1"
+  JEKYLL_VERSION: "4.4.1"
+
+jobs:
+  build:
+    if: ${{ vars.ENABLE_PREVIEW != 'false' }} # toggle: ON by default
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    outputs:
+      mode: ${{ steps.build.outputs.mode }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: "22"
+
+      # The IG Publisher is a Java program; pin the JDK instead of inheriting
+      # whatever `ubuntu-latest` preinstalls. Same distribution/version as
+      # go-publish.yml, module-release.yml and the ig-template-mii-kds preview.
+      # The digest-pinned dev container ships the same MAJOR (17) but the
+      # Microsoft Build of OpenJDK (the base image's default) — fine for a Java
+      # program the container merely runs; CI (Temurin) is the reference.
+      - name: Set up Java (for the IG Publisher)
+        uses: actions/setup-java@b6effb05e454b25005698d916606bdc6ffcbf961 # v5.7.0
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      # The IG Publisher shells out to `jekyll` to render the HTML pages, and it
+      # is NOT pre-installed on the runner. Without this step the build fails with
+      # `Cannot run program "jekyll" ... No such file or directory`. Pinned to the
+      # same Jekyll version as go-publish.yml / the ig-template-mii-kds preview.
+      - name: Set up Ruby (for Jekyll)
+        uses: ruby/setup-ruby@95ef2b042f9d7a56d8268cba8559e2842e2ad01b # v1.321.0
+        with:
+          ruby-version: "3.3"
+
+      - name: Install Jekyll (pinned — the IG template renders via Jekyll)
+        run: gem install jekyll -v "${JEKYLL_VERSION}"
+
+      - name: Template-repo self-check substitution (workspace only, never committed)
+        # WHY: this repo ships {{PLACEHOLDER}} values so a module author starts
+        # from a documented scaffold. To let CI still prove the pipeline builds,
+        # substitute the documented self-check values into WORKSPACE copies. The
+        # workflow never commits source, so nothing here reaches the repo. In a
+        # created module the placeholders are gone and this step does not run.
+        #
+        # The value table itself lives in scripts/self-check-substitute.sh rather
+        # than inline here, because release-demo.yml needs the SAME substitution
+        # to render the demo the Pages root index advertises. Two copies of the
+        # table is how the two builds drift apart — exactly the class of bug
+        # release-demo.yml exists to end. Leaving SELF_CHECK_RELEASE_TAG unset
+        # keeps the fixed draft CALVER_VERSION that a preview should carry; the
+        # release demo sets it so the render names the tag it was built from.
+        if: ${{ endsWith(github.repository, '/mii-kds-module-template') }}
+        shell: bash
+        run: bash scripts/self-check-substitute.sh
+
+      - name: Disable the version comparison when toggled off
+        # ENABLE_VERSION_COMPARISON=false switches the FEATURE off - the real
+        # publisher comparison (by deactivating the sushi-config parameter in
+        # the workspace copy before SUSHI reads it) AND the demo below.
+        if: ${{ vars.ENABLE_VERSION_COMPARISON == 'false' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          # Comment out any explicit versions, then set the publisher's NATIVE
+          # off-value: the ig-parameters registry documents that an ABSENT
+          # version-comparison defaults to {last} (the comparator still runs),
+          # while the value n/a means "don't do any comparison".
+          sed -i -E 's/^(  version-comparison(-master)?:)/  # (disabled by ENABLE_VERSION_COMPARISON) \1/' sushi-config.yaml
+          sed -i '/^parameters:/a\  version-comparison: n/a' sushi-config.yaml
+          echo "::notice::version comparison disabled via ENABLE_VERSION_COMPARISON (set to the publisher-native n/a)."
+
+      - name: SUSHI compile and decide build mode
+        id: build
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm install --global "fsh-sushi@${SUSHI_VERSION}"
+          sushi .
+          test -d fsh-generated/resources
+          # A full IG Publisher build needs a buildable IG template in ig.ini.
+          # The repository-URL default and `#ig-template` (the vendored
+          # fallback) are both buildable, so this normally takes the full path;
+          # a TODO template line degrades to a SUSHI-only check. Detecting it
+          # at runtime keeps this file edit-free either way.
+          tmpl_line="$(grep -E '^[[:space:]]*template[[:space:]]*=' ig.ini || true)"
+          if printf '%s' "${tmpl_line}" | grep -q 'TODO'; then
+            echo "mode=sushi-only" >> "${GITHUB_OUTPUT}"
+            echo "::notice::ig.ini carries a TODO template placeholder — running a SUSHI-only check. The IG Publisher build and the Pages preview are skipped until ig.ini names a buildable template (the template repository URL — the default, the vendored #ig-template fallback, or the published package once it exists — see docs/recipes/switch-template-to-published.md)."
+          else
+            echo "mode=full" >> "${GITHUB_OUTPUT}"
+            echo "IG template reference present — running the full IG Publisher build + preview."
+          fi
+
+      - name: Install Graphviz
+        if: ${{ steps.build.outputs.mode == 'full' }}
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y graphviz
+
+      - name: Select terminology server (SU-TermServ if cert present, else HL7)
+        id: tx
+        if: ${{ steps.build.outputs.mode == 'full' }}
+        shell: bash
+        env:
+          SU_TERMSERV_CLIENT_CERT: ${{ secrets.SU_TERMSERV_CLIENT_CERT }}
+          SU_TERMSERV_CLIENT_KEY: ${{ secrets.SU_TERMSERV_CLIENT_KEY }}
+          SU_TERMSERV_CLIENT_PASSWORD: ${{ secrets.SU_TERMSERV_CLIENT_PASSWORD }}
+        run: |
+          set -euo pipefail
+          # Prefer the MII terminology server (SU-TermServ) through a client-cert
+          # nginx proxy; otherwise fall back to the public HL7 server. The build
+          # must not hard-fail without the certificate.
+          if [[ -n "${SU_TERMSERV_CLIENT_CERT}" ]] && [[ -n "${SU_TERMSERV_CLIENT_KEY}" ]] && [[ -n "${SU_TERMSERV_CLIENT_PASSWORD}" ]]; then
+            nginx_dir="${RUNNER_TEMP}/nginx"
+            mkdir -p "${nginx_dir}/certs"
+            # nginx.conf pinned by commit SHA (fixed versions; same ref go-publish.yml uses).
+            curl --fail --location --silent --show-error \
+              "https://raw.githubusercontent.com/medizininformatik-initiative/kerndatensatz-meta/1db2e534704d92e5ee0cde663ce3e7ccd8825fa7/.github/workflows/nginx.conf" \
+              --output "${nginx_dir}/nginx.conf"
+            printf '%s' "${SU_TERMSERV_CLIENT_CERT}" | base64 --decode > "${nginx_dir}/certs/client-cert.pem"
+            printf '%s' "${SU_TERMSERV_CLIENT_KEY}" | base64 --decode > "${nginx_dir}/certs/client-key-encrypted.key"
+            openssl rsa \
+              -in "${nginx_dir}/certs/client-key-encrypted.key" \
+              -out "${nginx_dir}/certs/client-key.key" \
+              -passin env:SU_TERMSERV_CLIENT_PASSWORD
+            chmod 600 "${nginx_dir}/certs/"*
+            docker run --detach --name preview-nginx \
+              --volume "${nginx_dir}/nginx.conf:/etc/nginx/nginx.conf:ro" \
+              --volume "${nginx_dir}/certs:/etc/nginx/certs:ro" \
+              --publish 8090:80 \
+              nginx:1.30.4-alpine@sha256:97d490c12ba55b4946b01546d1c3ed324e8d41ab1c9fcb2a616aa470620e5b46
+            ready=false
+            for _ in {1..15}; do
+              if curl --head --silent --fail http://127.0.0.1:8090 >/dev/null; then ready=true; break; fi
+              sleep 2
+            done
+            if [[ "${ready}" != "true" ]]; then docker logs preview-nginx; exit 1; fi
+            echo "tx=http://127.0.0.1:8090/fhir" >> "${GITHUB_OUTPUT}"
+            echo "Terminology: SU-TermServ via client-certificate proxy" >> "${GITHUB_STEP_SUMMARY}"
+          else
+            echo "tx=https://tx.fhir.org" >> "${GITHUB_OUTPUT}"
+            echo "::notice::No SU-TermServ client certificate configured — falling back to the public HL7 terminology server https://tx.fhir.org. Some MII-specific value sets may not fully expand (a QA note, not a failure)."
+            echo "Terminology: public HL7 fallback (https://tx.fhir.org)" >> "${GITHUB_STEP_SUMMARY}"
+          fi
+
+      - name: Seed the comparison cache (previous-version packages)
+        # No-op unless sushi-config.yaml activates `version-comparison`; then
+        # the previous release's package.tgz (a GitHub Release asset) is placed
+        # in ~/.fhir/packages so the publisher's PreviousVersionComparator can
+        # load it. Warn-not-fail: a missing historical asset must not break the
+        # build - the comparison page reports the gap instead.
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: bash scripts/seed-comparison-cache.sh
+
+      - name: Build IG (SUSHI already ran) with the pinned IG Publisher
+        if: ${{ steps.build.outputs.mode == 'full' }}
+        shell: bash
+        env:
+          TX_URL: ${{ steps.tx.outputs.tx }}
+        run: |
+          set -euo pipefail
+          # IG Publisher pinned + checksum-verified (fixed versions; same jar as go-publish.yml).
+          publisher_url="https://github.com/HL7/fhir-ig-publisher/releases/download/${PUBLISHER_VERSION}/publisher.jar"
+          curl --fail --location --silent --show-error "${publisher_url}" --output "${RUNNER_TEMP}/publisher.jar"
+          echo "${PUBLISHER_SHA256}  ${RUNNER_TEMP}/publisher.jar" | sha256sum --check
+          # -fhir-settings allowlists the local SU-TermServ nginx proxy
+          # (http://127.0.0.1:8090) for the publisher's terminology access:
+          # publisher 2.3.1+ SSRF hardening can refuse plain-HTTP/private-
+          # network -tx targets without it (basis idiom, kerndatensatz-basis
+          # @190a3a18). Inert on the tx.fhir.org fallback path.
+          java -Xmx6g -jar "${RUNNER_TEMP}/publisher.jar" -ig ig.ini -tx "${TX_URL}" \
+            -fhir-settings "${GITHUB_WORKSPACE}/.github/fhir-settings.json"
+          test -s output/index.html
+          jq empty output/qa.json
+
+      - name: Template-repo self-check DEMO — render the version-comparison report
+        # Demonstrates what a version delta looks like and where it lives,
+        # using the FHIR validator's compare command (the publisher's own
+        # `version-comparison` needs a formal publication history at the
+        # canonical, which this scaffold will never have). The last dev
+        # preview's package is relabelled 2027.0.0-draft.0 and compared to the
+        # package just built: on dev a self-comparison (a clean, no-changes
+        # report), on a feature branch the REAL delta against dev. The report
+        # lands in output/comparison-demo/ and deploys with the preview.
+        # Template repo only; skip-not-fail throughout.
+        # Toggle: ENABLE_VERSION_COMPARISON=false switches the whole feature
+        # off - this demo and the real publisher comparison alike; unset/true =
+        # on (the repo's usual toggle convention).
+        if: ${{ endsWith(github.repository, '/mii-kds-module-template') && steps.build.outputs.mode == 'full' && vars.ENABLE_VERSION_COMPARISON != 'false' }}
+        env:
+          VALIDATOR_VERSION: "6.5.7"
+          VALIDATOR_SHA256: "e9ee13966d5cef045adf946c3e4ecb57400eaaa459c889f4ec0f68ba23551bff"
+        shell: bash
+        run: |
+          set -euo pipefail
+          canonical="https://www.medizininformatik-initiative.de/fhir/modul-template/StructureDefinition/example-patient"
+          # Org-agnostic on purpose: survives the move to the target GitHub
+          # organisation without an edit.
+          prev_url="https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}/branches/dev/package.tgz"
+          work="${RUNNER_TEMP}/comparison-demo"
+          mkdir -p "${work}"
+          if ! curl -fsSL "${prev_url}" --output "${work}/current-dev.tgz"; then
+            echo "::warning::comparison demo skipped — no dev preview package.tgz reachable."
+            exit 0
+          fi
+          mkdir -p "${work}/prev" && tar -xzf "${work}/current-dev.tgz" -C "${work}/prev"
+          python3 -c '
+          import json, glob, sys
+          for f in glob.glob(sys.argv[1] + "/package/*.json"):
+              try: d = json.load(open(f))
+              except Exception: continue
+              if isinstance(d, dict) and "version" in d:
+                  d["version"] = "2027.0.0-draft.0"
+                  json.dump(d, open(f, "w"), indent=2)
+          ' "${work}/prev"
+          (cd "${work}/prev" && tar -czf "${work}/prev.tgz" package)
+          curl -fsSL "https://github.com/hapifhir/org.hl7.fhir.core/releases/download/${VALIDATOR_VERSION}/validator_cli.jar"             --output "${work}/validator_cli.jar"
+          echo "${VALIDATOR_SHA256}  ${work}/validator_cli.jar" | sha256sum --check
+          mkdir -p output/comparison-demo
+          # After rendering, the compare command calls Desktop.getDesktop() to
+          # open a browser and dies with a HeadlessException on CI - the files
+          # are already on disk at that point, so success is judged by the
+          # rendered index, not by the exit code.
+          java -Xmx4g -jar "${work}/validator_cli.jar" -compare               -dest "$(pwd)/output/comparison-demo" -version 4.0.1 -tx n/a               -ig "${work}/prev.tgz" -ig output/package.tgz               -left "${canonical}|2027.0.0-draft.0"               -right "${canonical}|2027.0.0-draft.1" || true
+          if [ -s output/comparison-demo/index.html ]; then
+            echo "Comparison demo rendered to output/comparison-demo/ (deploys with the preview)."
+            # Link the demo from the QA report: qa.html already carries a
+            # "Previous Version Comparison:" row (here it reports that the
+            # canonical serves no version history - expected pre-publication);
+            # a sibling row right after it links the demo report.
+            python3 -c '
+          import re
+          p = "output/qa.html"
+          h = open(p, encoding="utf-8").read()
+          i = h.find("Previous Version Comparison:")
+          j = h.find("</tr>", i) if i >= 0 else -1
+          if i >= 0 and j >= 0:
+              row = "<tr><td>Version Comparison (demo):</td><td><a href=\"comparison-demo/index.html\">comparison-demo/index.html</a> - the previous dev preview (relabelled 2027.0.0-draft.0) vs this build</td></tr>"
+              h = h[:j+5] + row + h[j+5:]
+              open(p, "w", encoding="utf-8").write(h)
+              print("comparison-demo link injected into qa.html")
+          else:
+              # The anchor is publisher-generated markup: a publisher bump may
+              # rename or restructure it. Warn loudly so the bump PR shows it.
+              print("::warning::qa.html no longer carries the \"Previous Version Comparison:\" row this injection anchors on - the qa link to the comparison demo was NOT added. Re-check the injection against the new IG Publisher qa.html format.")
+          '
+            # Link the demo from the rendered Versioning pages (both languages)
+            # - injected AFTER the build so the link exists only when the
+            # report does: no dead link on a skipped demo, no effect on the QA
+            # link check (inspection already ran), nothing in a created module.
+            python3 -c '
+          import sys
+          blocks = {
+            "output/en/version-history.html": (
+              "machine-generated",
+              "<div class=\"mii-highlight mii-highlight-grey\"><h5>Demonstration (this template repository&#39;s preview only)</h5>"
+              "<p>This preview renders a live demonstration of such a report, produced with the FHIR validator&#39;s "
+              "<code>-compare</code>: the previous dev build (relabelled <code>2027.0.0-draft.0</code>) against this build - "
+              "<a href=\"../comparison-demo/index.html\">open the comparison report</a>. "
+              "On <code>dev</code> it is a self-comparison; on a feature branch it shows the real delta against <code>dev</code>.</p></div>"),
+            "output/de/version-history.html": (
+              "maschinell erzeugten",
+              "<div class=\"mii-highlight mii-highlight-grey\"><h5>Demonstration (nur in der Vorschau dieses Vorlagen-Repositories)</h5>"
+              "<p>Diese Vorschau rendert eine lebende Demonstration eines solchen Berichts, erzeugt mit dem "
+              "<code>-compare</code> des FHIR-Validators: der vorherige dev-Build (umbenannt zu <code>2027.0.0-draft.0</code>) "
+              "gegen diesen Build - <a href=\"../comparison-demo/index.html\">Vergleichsbericht &ouml;ffnen</a>. "
+              "Auf <code>dev</code> ist es ein Selbstvergleich; auf einem Feature-Branch zeigt er das echte Delta gegen&uuml;ber <code>dev</code>.</p></div>"),
+          }
+          for path, (anchor, block) in blocks.items():
+              try:
+                  h = open(path, encoding="utf-8").read()
+              except OSError:
+                  print("::warning::" + path + " not found - comparison-demo link not injected there.")
+                  continue
+              i = h.find(anchor)
+              j = h.find("</p>", i) if i >= 0 else -1
+              if i < 0 or j < 0:
+                  print("::warning::" + path + " no longer contains the anchor text this injection relies on - comparison-demo link not injected there.")
+                  continue
+              h = h[:j+4] + block + h[j+4:]
+              open(path, "w", encoding="utf-8").write(h)
+              print("comparison-demo link injected into " + path)
+          '
+          else
+            rm -rf output/comparison-demo
+            echo "::warning::comparison demo skipped — the validator compare produced no report; the preview deploys without it."
+          fi
+
+      - name: Stop terminology proxy
+        if: ${{ always() && steps.build.outputs.mode == 'full' }}
+        shell: bash
+        run: docker rm --force preview-nginx >/dev/null 2>&1 || true
+
+      - name: Publish preview to gh-pages/branches/<branch>/
+        if: ${{ steps.build.outputs.mode == 'full' && github.ref_name != 'main' && github.ref_name != 'gh-pages' }}
+        shell: bash
+        env:
+          REPO: ${{ github.repository }}
+          BRANCH: ${{ github.ref_name }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PAGES_ACTIONS_ENABLED: ${{ vars.PAGES_ACTIONS_ENABLED }}
+          GIT_AUTHOR_NAME: "github-actions[bot]"
+          GIT_AUTHOR_EMAIL: "41898282+github-actions[bot]@users.noreply.github.com"
+        run: |
+          set -euo pipefail
+          remote_url="https://x-access-token:${GITHUB_TOKEN}@github.com/${REPO}.git"
+          rm -rf gh-pages
+          if git ls-remote --heads "${remote_url}" gh-pages | grep -q "."; then
+            git clone --depth 1 --branch gh-pages "${remote_url}" gh-pages
+          else
+            # First preview ever: orphan-init gh-pages with a .nojekyll marker so
+            # Pages serves the IG output verbatim (no Jekyll re-processing).
+            git clone "${remote_url}" gh-pages
+            cd gh-pages
+            git config user.name "${GIT_AUTHOR_NAME}"
+            git config user.email "${GIT_AUTHOR_EMAIL}"
+            git checkout --orphan gh-pages
+            git rm -rf . >/dev/null 2>&1 || true
+            touch .nojekyll
+            git add .nojekyll
+            git commit -m "chore: initialize gh-pages"
+            git push --set-upstream origin gh-pages
+            cd ..
+          fi
+          # The root and version-like paths are reserved for formal -go-publish
+          # output; every CI preview lives below branches/<branch>/.
+          touch gh-pages/.nojekyll
+          branch_dir="gh-pages/branches/${BRANCH}"
+          rm -rf "${branch_dir}"
+          mkdir -p "${branch_dir}"
+          cp -R "output/." "${branch_dir}/"
+          # Marker consumed by cleanup-gh-pages.yml to detect deleted branches.
+          echo "${BRANCH}" > "${branch_dir}/.branch-name"
+          # TEMPLATE REPOSITORY ONLY: (re)generate the root index — a plain
+          # autoindex-style listing of branches/dev/ + the latest demo/<tag>/ —
+          # so it heals on every preview deploy. A created module's site root
+          # stays reserved for the gated -go-publish output, so the generator
+          # never runs there (same guard as release-demo.yml's job).
+          case "${REPO}" in
+            */mii-kds-module-template)
+              if [ -f scripts/gen-pages-index.mjs ]; then
+                node scripts/gen-pages-index.mjs gh-pages "${REPO}"
+              else
+                echo "gen-pages-index.mjs not on this branch yet - root index unchanged (rebase onto dev/main to heal it)"
+              fi
+              ;;
+          esac
+          cd gh-pages
+          if [[ "${PAGES_ACTIONS_ENABLED}" == "true" ]]; then
+            bytes="$(du --bytes --summarize --exclude=.git . | cut -f1)"
+            supported_max_bytes="1000000000"
+            if (( bytes > supported_max_bytes )); then
+              echo "::warning::The staged Pages site is ${bytes} bytes, above GitHub Pages' ${supported_max_bytes}-byte officially supported maximum. Publication will continue, but Pages does not guarantee deployments above 1 GB."
+            fi
+          fi
+          git config user.name "${GIT_AUTHOR_NAME}"
+          git config user.email "${GIT_AUTHOR_EMAIL}"
+          git add --all
+          if git diff --cached --quiet; then
+            echo "No preview changes to publish for ${BRANCH}."
+            exit 0
+          fi
+          git commit -m "chore: preview ${BRANCH}"
+          git push origin gh-pages
+
+      - name: Preview URL
+        if: ${{ steps.build.outputs.mode == 'full' && github.ref_name != 'main' && github.ref_name != 'gh-pages' }}
+        shell: bash
+        run: |
+          base="https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}/branches/${GITHUB_REF_NAME}"
+          echo "Preview: ${base}/" >> "${GITHUB_STEP_SUMMARY}"
+          if [ -s output/comparison-demo/index.html ]; then
+            echo "Comparison demo: ${base}/comparison-demo/index.html" >> "${GITHUB_STEP_SUMMARY}"
+          fi
+
+      # ── PAGES_ACTIONS_ENABLED mode only: also publish via the Pages Actions
+      # pipeline (Settings → Pages → GitHub Actions). Mirrors go-publish.yml's
+      # tar + github-pages artifact + deploy-pages pairing (verified pins).
+      - name: Package gh-pages tree as a Pages artifact
+        if: ${{ steps.build.outputs.mode == 'full' && github.ref_name != 'main' && github.ref_name != 'gh-pages' && vars.PAGES_ACTIONS_ENABLED == 'true' }}
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          path: gh-pages
+
+  deploy:
+    name: Deploy GitHub Pages (Actions mode)
+    if: ${{ vars.ENABLE_PREVIEW != 'false' && needs.build.outputs.mode == 'full' && github.ref_name != 'main' && github.ref_name != 'gh-pages' && vars.PAGES_ACTIONS_ENABLED == 'true' }}
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      contents: read
+      id-token: write
+      pages: write
+    steps:
+      - name: Deploy Pages artifact
+        id: deployment
+        uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128 # v5.0.0
+
+  announce:
+    name: Report preview URL
+    # Separate from the build job (which touches the terminology secrets) so the
+    # literal repository URL is never masked in the summary or the PR comment.
+    if: ${{ vars.ENABLE_PREVIEW != 'false' && needs.build.outputs.mode == 'full' && github.ref_name != 'main' && github.ref_name != 'gh-pages' }}
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+      pull-requests: write
+    steps:
+      - name: Upsert the preview-URL PR comment
+        id: preview_comment
+        continue-on-error: true
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
+        env:
+          BRANCH_NAME: ${{ github.ref_name }}
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const branch = process.env.BRANCH_NAME;
+            const marker = '<!-- ig-preview-url -->';
+            const url = `https://${owner}.github.io/${repo}/branches/${branch}/`;
+            const body = `${marker}\n### IG preview\n[Open the rendered IG for branch \`${branch}\`](${url})`;
+            const { data: prs } = await github.rest.pulls.list({ owner, repo, state: 'open', per_page: 100 });
+            const pr = prs.find(p => p.head && p.head.ref === branch);
+            if (!pr) { core.info(`No open PR for branch ${branch}; skipping PR comment.`); return; }
+            const { data: comments } = await github.rest.issues.listComments({ owner, repo, issue_number: pr.number, per_page: 100 });
+            const existing = comments.find(c => typeof c.body === 'string' && c.body.includes(marker));
+            if (existing) {
+              await github.rest.issues.updateComment({ owner, repo, comment_id: existing.id, body });
+              core.info(`Updated preview-URL comment on PR #${pr.number}`);
+            } else {
+              await github.rest.issues.createComment({ owner, repo, issue_number: pr.number, body });
+              core.info(`Created preview-URL comment on PR #${pr.number}`);
+            }
+      - name: Warn when the PR comment could not be updated
+        if: ${{ steps.preview_comment.outcome == 'failure' }}
+        shell: bash
+        run: echo "::warning::The preview was deployed, but the PR comment could not be updated. The preview URL is in the build job summary."

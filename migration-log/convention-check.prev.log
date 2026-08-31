@@ -1,0 +1,20 @@
+# Convention check — module-metadata contract (development (placeholder-tolerant))
+
+| Assertion | Applies | Status | Observed |
+| --- | --- | --- | --- |
+| M1 packageId | module | PASS | de.medizininformatikinitiative.kerndatensatz.meta |
+| M2 id | module | PASS | mii-ig-meta |
+| M3 name | module | PASS | MII_IG_Meta |
+| M4 title | module | PASS | MII IG Meta |
+| M5 canonical | module | PASS | https://www.medizininformatik-initiative.de/fhir/modul-meta |
+| M6 version | module | FAIL | 2027.0.0-ballot.rc1 |
+| M7 no floating pins | module | PASS | template = https://github.com/medizininformatik-initiative/ig-template-mii-kds |
+| M9 optional pages | module | PASS | code-systems.md, extensions.md, metadata.md, operations.md, researcher-guidance.md, search-parameters.md, value-sets.md |
+| M10 duplicate headings | module | PASS | no page repeats its title or a parent heading |
+| M11 illustrative examples | module | PASS | security-and-privacy.md |
+| Section 1b | template | skip |  |
+
+Result: FAIL — hard violation(s) above.
+
+Advisory repo/wiki drift findings (Section 2 of the check matrix) are not evaluated here; they are reviewed by hand.
+::error::M6 version: version must be CalVer YYYY.n.n (modules never use SemVer) (observed: 2027.0.0-ballot.rc1)

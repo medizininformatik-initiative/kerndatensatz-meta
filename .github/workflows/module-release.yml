@@ -1,0 +1,444 @@
+# =============================================================================
+# module-release.yml — MII CalVer module release path
+#
+# INHERITED BY MODULES: this workflow is a MODULE file. The first-run bootstrap
+# (docs/recipes/first-run-setup.md) KEEPS it in a created module — unlike the
+# template-maintenance release automation (release-please.yml / notify-zulip.yml),
+# which the bootstrap removes. A module released from this template uses THIS
+# workflow (MII CalVer `YYYY.n.n`) and NEVER Release Please. See docs/release.md.
+#
+#   The two template repos release themselves with SemVer via Release Please.
+#   The MODULES they produce release with CalVer via THIS workflow. Never mix
+#   the two on one repo — two release systems corrupt the history.
+#
+# Purpose:   Faithful, gated automation of the MII "Module Release Workflow"
+#            (kerndatensatz-meta wiki). Modelled on the reference module's
+#            release workflow — for example kerndatensatz-basis `main.yml`
+#            (RELEASE + NOTIFY_ZULIP jobs) + hands off to `go-publish.yml`.
+#            On a CalVer tag it BUILDS the IG (buildability gate), CREATES a
+#            DRAFT GitHub Release with generated notes, and — when a human
+#            publishes that release — ANNOUNCES it to the MII Zulip (topic
+#            "Releases"). Formal FHIR publication stays behind the gated,
+#            manual `go-publish.yml` (this workflow only points at it).
+#
+# Triggers:
+#   - push tag `v[0-9]+.[0-9]+.[0-9]+*` (CalVer, e.g. v2026.0.1; the same glob
+#     kerndatensatz-basis uses, for example) →
+#     build + create the DRAFT release.
+#   - release published → announce on the MII Zulip.
+#   - workflow_dispatch → dry run: build only, NO release side effects.
+#
+# Toggles:
+#   - vars.ENABLE_MODULE_RELEASE — gates `build` + `release`; ON by default
+#     (set the repo variable to 'false' to disable the automated release path).
+#   - vars.ENABLE_ZULIP_ANNOUNCE — gates `notify_zulip`; ON by default (set to
+#     'false' to disable the MII announcement). Same toggle name the template's
+#     notify-zulip.yml uses — both are "MII Zulip release announcement".
+#
+# Template-repo self-skip: the `guard` job detects unreplaced `{{...}}`
+#   placeholders in sushi-config.yaml. On the UN-INSTANTIATED template repo (or a
+#   module not yet bootstrapped) a release is meaningless, so every downstream
+#   job SKIPS with a ::notice instead of failing. This also prevents a template
+#   SemVer tag/release (Release Please) from ever driving the module path.
+#
+# Human-gated steps (never automated):
+#   1. Preparing the release (branch, version bump, PR, merge, tag) — the human
+#      does steps 1–5 of the wiki workflow; this file reacts to the pushed tag.
+#   2. Publishing the DRAFT release — turns the draft
+#      created here into a published release, which fires `notify_zulip`.
+#   3. Formal FHIR publication via `go-publish.yml` — manual
+#      workflow_dispatch, `publish: false` (a complete dry run) by default. This
+#      workflow only PRINTS the handoff; it never dispatches go-publish itself.
+#   4. secrets.ZULIP_API_KEY — mapped to env; when absent the
+#      announcement SKIPS with a ::notice, it never fails the release.
+#
+# Terminology: the build prefers the MII terminology server
+#   (SU-TermServ) through a client-certificate nginx proxy when the repository
+#   secrets SU_TERMSERV_CLIENT_CERT / _KEY / _PASSWORD are configured, and
+#   otherwise falls back to the public HL7 server https://tx.fhir.org with a
+#   ::notice — the same selection idiom as the preview / go-publish workflows.
+#   The build must not hard-fail without the certificate.
+#
+# Fixed versions: every action is pinned to a commit SHA; the IG
+#   Publisher jar, SUSHI, Jekyll, the nginx image, and the kerndatensatz-meta
+#   ref are pinned by exact version + SHA-256/commit — identical to
+#   go-publish.yml. The scheduled dependency check proposes bumps for the
+#   toolchain pins in the env: block below; the nginx digest and the
+#   kerndatensatz-meta ref are re-resolved by hand (it does not watch them).
+# =============================================================================
+name: Module release (CalVer)
+
+on:
+  push:
+    tags:
+      # CalVer `YYYY.n.n` (+ optional `-rc.1` / `-alpha.1` suffix), exactly the
+      # the glob the reference module uses — for example kerndatensatz-basis
+      # `main.yml` matches 'v[0-9]+.[0-9]+.[0-9]+*' (its tags: v2026.0.0, v2026.0.1).
+      - "v[0-9]+.[0-9]+.[0-9]+*"
+  release:
+    types: [published]
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+concurrency:
+  # Serialize per ref so a re-pushed tag or a re-published release does not race.
+  group: module-release-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  # Pinned toolchain — identical to go-publish.yml and ig-publisher.yml; a
+  # workflow cannot read another workflow's env:, so these are copies and
+  # scripts/toolchain-pins.test.mjs fails the build if they drift apart.
+  PUBLISHER_VERSION: "2.3.2"
+  PUBLISHER_SHA256: "07c576024df917cc1f879b6b5a64147cd0222d5b4129688e8f0ad9ccce58b1d5"
+  SUSHI_VERSION: "3.20.1"
+  JEKYLL_VERSION: "4.4.1"
+
+jobs:
+  # ---------------------------------------------------------------------------
+  # guard — is this a real, bootstrapped MODULE, or the un-instantiated template?
+  # A created module has every {{...}} placeholder replaced; the template repo
+  # does not. This is the self-skip that keeps the module release path from ever
+  # running on the template repo (including on a Release Please SemVer tag).
+  # ---------------------------------------------------------------------------
+  guard:
+    runs-on: ubuntu-latest
+    outputs:
+      is_module: ${{ steps.detect.outputs.is_module }}
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Detect unreplaced template placeholders
+        id: detect
+        shell: bash
+        run: |
+          set -euo pipefail
+          if grep -q '{{' sushi-config.yaml; then
+            echo "is_module=false" >> "${GITHUB_OUTPUT}"
+            echo "::notice::Unreplaced {{...}} placeholders found in sushi-config.yaml. This looks like the un-instantiated module template (or a module whose set-up is unfinished), so the MII CalVer release path is skipped. A real module — placeholders replaced by hand, per the first-run bootstrap's checklist — runs it for real."
+          else
+            echo "is_module=true" >> "${GITHUB_OUTPUT}"
+            echo "Bootstrapped module detected — the CalVer release path applies."
+          fi
+
+  # ---------------------------------------------------------------------------
+  # build — wiki step 5 support: verify the tagged commit BUILDS before a release
+  # is cut. kerndatensatz-basis, for example, runs no FHIR error gate at tag time
+  # — its only PR-time signal is its own IG-Publisher build, and it wires up
+  # neither MII reusable validation workflow (verified against `main` @ f6c6878).
+  # This template adds both: a buildability gate here, producing the package.tgz
+  # artifact, and the reusable validation workflows in validation.yml. Runs on
+  # a CalVer tag or on a workflow_dispatch dry run — never creates a release.
+  # ---------------------------------------------------------------------------
+  build:
+    needs: guard
+    if: >-
+      ${{ needs.guard.outputs.is_module == 'true'
+      && vars.ENABLE_MODULE_RELEASE != 'false'
+      && (startsWith(github.ref, 'refs/tags/v') || github.event_name == 'workflow_dispatch') }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the tagged commit
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Pin the kerndatensatz-meta reusable assets (nginx proxy config)
+        # Only needed for the SU-TermServ proxy; pinned like go-publish.yml.
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: medizininformatik-initiative/kerndatensatz-meta
+          ref: 1db2e534704d92e5ee0cde663ce3e7ccd8825fa7
+          path: kerndatensatz-meta
+
+      - name: Set up Java (temurin 17)
+        uses: actions/setup-java@b6effb05e454b25005698d916606bdc6ffcbf961 # v5.7.0
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Set up Node.js
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: "22"
+
+      # The IG Publisher shells out to `jekyll` to render the HTML pages, and it
+      # is NOT pre-installed on the runner — without it the build dies with
+      # `Cannot run program "jekyll"`. Mirrors ig-publisher.yml; this also makes
+      # the JEKYLL_VERSION pin above real (it was previously declared but never
+      # installed in this workflow).
+      - name: Set up Ruby (for Jekyll)
+        uses: ruby/setup-ruby@95ef2b042f9d7a56d8268cba8559e2842e2ad01b # v1.321.0
+        with:
+          ruby-version: "3.3"
+
+      - name: Install Jekyll (pinned — the IG template renders via Jekyll)
+        run: gem install jekyll -v "${JEKYLL_VERSION}"
+
+      - name: Install pinned build tools
+        shell: bash
+        run: |
+          set -euo pipefail
+          sudo apt-get update
+          sudo apt-get install -y graphviz libxml2-utils unzip jq
+
+          # SUSHI, pinned (no @latest — reproducibility).
+          npm install --global "fsh-sushi@${SUSHI_VERSION}"
+
+          # IG Publisher, pinned + checksum-verified.
+          publisher_url="https://github.com/HL7/fhir-ig-publisher/releases/download/${PUBLISHER_VERSION}/publisher.jar"
+          curl --fail --location --silent --show-error \
+            "${publisher_url}" --output "${RUNNER_TEMP}/publisher.jar"
+          echo "${PUBLISHER_SHA256}  ${RUNNER_TEMP}/publisher.jar" | sha256sum --check
+
+          {
+            echo "### Pinned build tools"
+            echo
+            printf -- '- FHIR IG Publisher: `%s` (SHA-256 `%s`)\n' "${PUBLISHER_VERSION}" "${PUBLISHER_SHA256}"
+            printf -- '- SUSHI: `%s`\n' "$(sushi --version)"
+          } >> "${GITHUB_STEP_SUMMARY}"
+
+      - name: Select terminology server (SU-TermServ if cert present, else HL7)
+        id: terminology
+        shell: bash
+        env:
+          SU_TERMSERV_CLIENT_CERT: ${{ secrets.SU_TERMSERV_CLIENT_CERT }}
+          SU_TERMSERV_CLIENT_KEY: ${{ secrets.SU_TERMSERV_CLIENT_KEY }}
+          SU_TERMSERV_CLIENT_PASSWORD: ${{ secrets.SU_TERMSERV_CLIENT_PASSWORD }}
+        run: |
+          set -euo pipefail
+          # Prefer SU-TermServ through the client-certificate nginx proxy;
+          # otherwise fall back to the public HL7 server. Same idiom as the
+          # preview / go-publish workflows; the build must not hard-fail without
+          # the certificate.
+          if [[ -n "${SU_TERMSERV_CLIENT_CERT}" ]] && [[ -n "${SU_TERMSERV_CLIENT_KEY}" ]] && [[ -n "${SU_TERMSERV_CLIENT_PASSWORD}" ]]; then
+            nginx_dir="${RUNNER_TEMP}/nginx"
+            mkdir -p "${nginx_dir}/certs"
+            cp kerndatensatz-meta/.github/workflows/nginx.conf "${nginx_dir}/nginx.conf"
+            printf '%s' "${SU_TERMSERV_CLIENT_CERT}" | base64 --decode > "${nginx_dir}/certs/client-cert.pem"
+            printf '%s' "${SU_TERMSERV_CLIENT_KEY}" | base64 --decode > "${nginx_dir}/certs/client-key-encrypted.key"
+            openssl rsa \
+              -in "${nginx_dir}/certs/client-key-encrypted.key" \
+              -out "${nginx_dir}/certs/client-key.key" \
+              -passin env:SU_TERMSERV_CLIENT_PASSWORD
+            chmod 600 "${nginx_dir}/certs/"*
+
+            docker run --detach --name termserv-proxy \
+              --volume "${nginx_dir}/nginx.conf:/etc/nginx/nginx.conf:ro" \
+              --volume "${nginx_dir}/certs:/etc/nginx/certs:ro" \
+              --publish 8090:80 \
+              nginx:1.30.4-alpine@sha256:97d490c12ba55b4946b01546d1c3ed324e8d41ab1c9fcb2a616aa470620e5b46
+
+            ready=false
+            for _ in {1..15}; do
+              if curl --head --silent --fail http://127.0.0.1:8090 >/dev/null; then ready=true; break; fi
+              sleep 2
+            done
+            if [[ "${ready}" != "true" ]]; then docker logs termserv-proxy; exit 1; fi
+            echo "tx_url=http://127.0.0.1:8090/fhir" >> "${GITHUB_OUTPUT}"
+            echo "Terminology: SU-TermServ via client-certificate proxy" >> "${GITHUB_STEP_SUMMARY}"
+          else
+            echo "::notice::SU-TermServ client-certificate secrets are not configured; falling back to the public HL7 terminology server https://tx.fhir.org. Some MII-specific value sets may not fully expand — review the QA report (QA note, not a failure)."
+            echo "tx_url=https://tx.fhir.org" >> "${GITHUB_OUTPUT}"
+            echo "Terminology: public HL7 fallback (https://tx.fhir.org)" >> "${GITHUB_STEP_SUMMARY}"
+          fi
+
+      - name: Seed the comparison cache (previous-version packages)
+        # No-op unless sushi-config.yaml activates `version-comparison`; then
+        # the previous release's package.tgz (a GitHub Release asset) is placed
+        # in ~/.fhir/packages so the publisher's PreviousVersionComparator can
+        # load it. Warn-not-fail: a missing historical asset must not break the
+        # build - the comparison page reports the gap instead.
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: bash scripts/seed-comparison-cache.sh
+
+      - name: Disable the version comparison when toggled off
+        if: ${{ vars.ENABLE_VERSION_COMPARISON == 'false' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          # Comment out any explicit versions, then set the publisher's NATIVE
+          # off-value: the ig-parameters registry documents that an ABSENT
+          # version-comparison defaults to {last} (the comparator still runs),
+          # while the value n/a means "don't do any comparison".
+          sed -i -E 's/^(  version-comparison(-master)?:)/  # (disabled by ENABLE_VERSION_COMPARISON) \1/' sushi-config.yaml
+          sed -i '/^parameters:/a\  version-comparison: n/a' sushi-config.yaml
+          echo "::notice::version comparison disabled via ENABLE_VERSION_COMPARISON (set to the publisher-native n/a)."
+
+      - name: Build the IG (SUSHI + IG Publisher)
+        shell: bash
+        env:
+          TX_URL: ${{ steps.terminology.outputs.tx_url }}
+        run: |
+          set -euo pipefail
+          rm -rf fsh-generated output temp template
+          sushi .
+          # -fhir-settings allowlists the local SU-TermServ nginx proxy
+          # (http://127.0.0.1:8090) for the publisher's terminology access:
+          # publisher 2.3.1+ SSRF hardening can refuse plain-HTTP/private-
+          # network -tx targets without it (basis idiom, kerndatensatz-basis
+          # @190a3a18). Inert on the tx.fhir.org fallback path.
+          java -Xmx6g -jar "${RUNNER_TEMP}/publisher.jar" -ig ig.ini -tx "${TX_URL}" \
+            -fhir-settings "${GITHUB_WORKSPACE}/.github/fhir-settings.json"
+
+          # The build must actually complete and produce a package. QA COUNTS
+          # are reported for review and are not required to be zero — the hard
+          # FHIR error gate is the reusable validation workflow (validation.yml),
+          # run on the release PR before the tag. That gate is this template's
+          # addition — kerndatensatz-basis, for example, wires up neither MII
+          # reusable validation workflow.
+          jq empty output/qa.json
+          test -s output/package.tgz
+
+          errors="$(jq -er '.errs' output/qa.json)"
+          warnings="$(jq -er '.warnings' output/qa.json)"
+          hints="$(jq -er '.hints' output/qa.json)"
+          {
+            echo "### Release build QA"
+            echo
+            echo "| Errors | Warnings | Hints |"
+            echo "| ---: | ---: | ---: |"
+            echo "| ${errors} | ${warnings} | ${hints} |"
+            echo
+            echo "QA counts are reported for review; the authoritative FHIR error gate is the reusable validation workflow."
+          } >> "${GITHUB_STEP_SUMMARY}"
+
+      - name: Upload the build (package + QA report)
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: module-release-build
+          path: |
+            output/package.tgz
+            output/qa.json
+            output/qa.html
+          if-no-files-found: warn
+          retention-days: 30
+
+  # ---------------------------------------------------------------------------
+  # release — wiki step 5: on a pushed CalVer tag, create a DRAFT GitHub Release
+  # with auto-generated notes (for example, the RELEASE job of kerndatensatz-basis
+  # `main.yml` does the same). A human finalizes
+  # and PUBLISHES it (wiki step 7), which fires `notify_zulip`. Draft, so the
+  # human can attach the package and edit notes before it goes out.
+  # ---------------------------------------------------------------------------
+  release:
+    needs: [guard, build]
+    if: >-
+      ${{ needs.guard.outputs.is_module == 'true'
+      && vars.ENABLE_MODULE_RELEASE != 'false'
+      && github.event_name == 'push'
+      && startsWith(github.ref, 'refs/tags/v') }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # create the GitHub Release for this tag
+    steps:
+      - name: Prepare version
+        id: prep
+        shell: bash
+        run: |
+          set -euo pipefail
+          version="${GITHUB_REF#refs/tags/}"
+          echo "version=${version}" >> "${GITHUB_OUTPUT}"
+
+      - name: Download the build (package.tgz for the release assets)
+        # Attaching the package to every release is what makes the version
+        # comparison of FUTURE releases work: seed-comparison-cache.sh fetches
+        # the previous version's package.tgz from exactly this asset.
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          name: module-release-build
+          path: release-assets
+
+      - name: Create the draft GitHub Release
+        uses: softprops/action-gh-release@3d0d9888cb7fd7b750713d6e236d1fcb99157228 # v3.0.2
+        with:
+          name: "${{ steps.prep.outputs.version }}"
+          files: release-assets/package.tgz
+          draft: true
+          prerelease: ${{ contains(steps.prep.outputs.version, '-') }}
+          generate_release_notes: true
+          body: |
+            ## MII KDS module release ${{ steps.prep.outputs.version }}
+
+            <!-- DELETE START -->
+            This is a **draft** created automatically from the CalVer tag. The
+            module's FHIR package (`package.tgz`) is already attached — future
+            releases' version comparison fetches the previous package from this
+            asset, so leave it in place. Before publishing (wiki step 7): edit
+            these notes and remove the DELETE blocks.
+            <!-- DELETE END -->
+
+            ### Changes
+
+            <!-- DELETE START -->
+            Add your own release notes here; the auto-generated notes are below.
+            <!-- DELETE END -->
+
+            ### Next: formal FHIR publication (human-gated)
+
+            <!-- DELETE START -->
+            After publishing this release, run the gated **go-publish.yml**
+            (Actions → "Publish release with IG Publisher" → Run workflow):
+            first with `publish: false` (a complete dry run), then — only after
+            review — with `publish: true`. This workflow never triggers
+            go-publish itself. See `docs/release.md`.
+            <!-- DELETE END -->
+
+            See the auto-generated release notes below.
+
+      - name: Hand off to gated formal publication (go-publish.yml)
+        shell: bash
+        run: |
+          {
+            echo "### Release drafted — next steps (human-gated)"
+            echo
+            echo "1. Finalize and **publish** the draft Release \`${{ steps.prep.outputs.version }}\` (fires the MII Zulip announcement)."
+            echo "2. Run the gated **go-publish.yml** dry run: Actions → \"Publish release with IG Publisher\" → \`release_ref = ${{ steps.prep.outputs.version }}\`, \`publish = false\`."
+            echo "3. After review, re-run go-publish with \`publish = true\`."
+            echo
+            echo "The two paths never mix: modules release with CalVer via this workflow; the template repos release with SemVer via Release Please. See docs/release.md."
+          } >> "${GITHUB_STEP_SUMMARY}"
+
+  # ---------------------------------------------------------------------------
+  # notify_zulip — wiki step 7: when the human PUBLISHES the release, announce it
+  # on the MII Zulip. Topic "Releases" (the MODULE topic) — distinct from the
+  # template repos' "Template Releases" topic. Skip-not-fail on a missing
+  # key. Guarded by `is_module` so a template SemVer release never fires
+  # this (that repo's notify-zulip.yml owns "Template Releases").
+  # ---------------------------------------------------------------------------
+  notify_zulip:
+    needs: guard
+    if: >-
+      ${{ needs.guard.outputs.is_module == 'true'
+      && vars.ENABLE_ZULIP_ANNOUNCE != 'false'
+      && github.event_name == 'release'
+      && github.event.action == 'published' }}
+    runs-on: ubuntu-latest
+    env:
+      ZULIP_API_KEY: ${{ secrets.ZULIP_API_KEY }}
+    steps:
+      - name: Announce the release on the MII Zulip (skipped if no key)
+        if: ${{ env.ZULIP_API_KEY != '' }}
+        uses: zulip/github-actions-zulip/send-message@f675f2b4eb2a95fae974215476dcb7ad8dfeff6b # v2.0.2
+        with:
+          api-key: ${{ env.ZULIP_API_KEY }}
+          email: "kds-github-bot@mii.zulipchat.com"
+          organization-url: "https://mii.zulipchat.com/"
+          type: "stream"
+          to: "MII-Kerndatensatz"
+          # "Releases" is the MODULE topic (for example, the NOTIFY_ZULIP job of
+          # kerndatensatz-basis `main.yml` posts to the same topic) — NOT the template
+          # repos' "Template Releases" topic. Keep the CalVer/SemVer split
+          # legible in chat too.
+          topic: "Releases"
+          content: |
+            **New Release:** `${{ github.event.release.tag_name }}`
+            **Repository:** `${{ github.repository }}`
+
+            ${{ github.event.release.body }}
+
+            🔗 [View on GitHub](${{ github.event.release.html_url }})
+      - name: Skip notice when ZULIP_API_KEY is absent
+        if: ${{ env.ZULIP_API_KEY == '' }}
+        run: echo "::notice::ZULIP_API_KEY not set — skipping MII announcement."

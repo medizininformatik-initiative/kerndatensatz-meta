@@ -5,6 +5,12 @@ Thumbs.db
 /temp
 /template
 fsh-generated/includes
+/fsh-generated/
+/output/
+/temp/
+/template/
+/input-cache/
+publisher.jar
 ImplementationGuide-medizininformatikinitiative-modulmedikation-implementationguide.json
 menu.xml
 .vscode

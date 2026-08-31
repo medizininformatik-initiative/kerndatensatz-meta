@@ -7,8 +7,6 @@
     ]
   },
   "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-provisioncodeperiod",
-  "version": "2026.0.0",
-  "publisher": "Medizininformatik Initiative",
   "contact": [
     {
       "telecom": [
@@ -33,17 +31,9 @@
       }
     }
   ],
-  "name": "MII_SP_Meta_Consent_ProvisionCodePeriod",
-  "status": "active",
-  "experimental": false,
-  "date": "2024-10-17",
-  "description": "Composite-Suche nach Zeitraum (period) einer bestimmten, durch einen Code definierten, Provision.",
-  "code": "mii-provision-provision-code-period",
   "base": [
     "Consent"
   ],
-  "type": "composite",
-  "expression": "Consent.provision.provision",
   "component": [
     {
       "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-provisioncode",
@@ -53,5 +43,15 @@
       "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-provisionperiod",
       "expression": "period"
     }
-  ]
+  ],
+  "version": "2027.0.0-ballot.rc1",
+  "publisher": "Medizininformatik Initiative",
+  "name": "MII_SP_Meta_Consent_ProvisionCodePeriod",
+  "status": "active",
+  "experimental": false,
+  "date": "2024-10-17",
+  "description": "Composite-Suche nach Zeitraum (period) einer bestimmten, durch einen Code definierten, Provision.",
+  "code": "mii-provision-provision-code-period",
+  "type": "composite",
+  "expression": "Consent.provision.provision"
 }

@@ -7,7 +7,6 @@
     ]
   },
   "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-verification-status",
-  "publisher": "Medizininformatik Initiative",
   "contact": [
     {
       "telecom": [
@@ -32,16 +31,17 @@
       }
     }
   ],
-  "version": "2026.0.0",
+  "base": [
+    "Condition"
+  ],
+  "publisher": "Medizininformatik Initiative",
+  "version": "2027.0.0-ballot.rc1",
   "experimental": false,
   "date": "2024-10-24",
   "name": "MII_SP_Meta_Condition_Verification_Status",
   "description": "SearchParameter for Condition.verificationStatus",
   "status": "active",
   "code": "verification-status",
-  "base": [
-    "Condition"
-  ],
   "type": "token",
   "expression": "Condition.verificationStatus"
 }

@@ -1,0 +1,31 @@
+
+# CapabilityStatement.title
+#: CapabilityStatement.title
+msgid "MII CapabilityStatement Meta Server Capabilities"
+msgstr ""
+
+# CapabilityStatement.publisher
+#: CapabilityStatement.publisher
+msgid "NUM-DIZ"
+msgstr "NUM-DIZ"
+
+# ContactDetail.name
+#: ContactDetail.name
+msgid "NUM-DIZ"
+msgstr ""
+
+# CapabilityStatement.description
+#: CapabilityStatement.description
+msgid "Migration-generated proposal describing the resource types and search parameters published by the Meta module. Review before use as a normative capability statement."
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Germany"
+msgstr ""
+
+# CapabilityStatement.rest.documentation
+#: CapabilityStatement.rest.documentation
+msgid "Proposal derived from the module's published SearchParameter definitions; support expectations require module-team review."
+msgstr ""
+

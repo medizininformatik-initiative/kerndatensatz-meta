@@ -1,0 +1,61 @@
+# Issue form: bug reports about THIS template repository (scaffold, CI,
+# scripts, docs). Bugs in a module created from the template belong in that
+# module's repo unless the root cause is the template.
+name: Bug report
+description: Something in this template repository is broken or wrong.
+title: "bug: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        Thanks for the report! Please note: this tracker is for the **template
+        repository itself**. General FHIR/IG questions belong on
+        [chat.fhir.org](https://chat.fhir.org) (stream `german/mi-initiative`).
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What went wrong, and what did you expect instead?
+      placeholder: The IG preview build failed with ...; I expected ...
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Numbered steps a maintainer can follow. Copy-pasteable commands help most.
+      placeholder: |
+        1. Click "Use this template" ...
+        2. Run ...
+        3. See error ...
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Where did it fail — CI or locally? If locally, include OS and tool versions.
+      placeholder: |
+        - CI run link, or:
+        - OS: macOS 15
+        - Node: 22.x · Java: 17 · SUSHI: x.y.z · IG Publisher: x.y.z
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Paste the failing part of the log. It is formatted as code automatically.
+      render: shell
+    validations:
+      required: false
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues for the same problem.
+          required: true
+        - label: This is about the template repository, not (only) about a module created from it.
+          required: true

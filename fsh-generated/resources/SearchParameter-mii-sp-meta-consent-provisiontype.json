@@ -7,8 +7,6 @@
     ]
   },
   "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-provisiontype",
-  "version": "2026.0.0",
-  "publisher": "Medizininformatik Initiative",
   "contact": [
     {
       "telecom": [
@@ -33,15 +31,17 @@
       }
     }
   ],
+  "base": [
+    "Consent"
+  ],
+  "version": "2027.0.0-ballot.rc1",
+  "publisher": "Medizininformatik Initiative",
   "name": "MII_SP_Meta_Consent_ProvisionType",
   "status": "active",
   "experimental": false,
   "date": "2024-10-17",
   "description": "Suche im Typ der Provison (permit, deny).",
   "code": "mii-provision-provision-type",
-  "base": [
-    "Consent"
-  ],
   "type": "token",
   "expression": "Consent.provision.provision.type",
   "multipleOr": true,
