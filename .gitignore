@@ -12,13 +12,10 @@ fsh-generated/includes
 /input-cache/
 publisher.jar
 ImplementationGuide-medizininformatikinitiative-modulmedikation-implementationguide.json
-menu.xml
 .vscode
-ImplementationGuide-mii-ig-*
 fsh-index.json
 fsh-index.txt
 terminologie/CodeSystem/core-location-identifier.CodeSystem.json
-index.html
 _gencontinuous.bat
 _gencontinuous.sh
 _genonce.bat
