@@ -43,11 +43,9 @@
 #              - SIMPLIFIER_USERNAME / SIMPLIFIER_PASSWORD  (dotnet QC login)
 #              - CDS_DEV_CLIENT_CERT / CDS_DEV_CLIENT_KEY /
 #                CDS_DEV_CLIENT_CERT_PASSWORD  (Java validator → SU-TermServ)
-#            > RESOLVED: the Java job now MAPS this repo's canonical
-#            > SU_TERMSERV_CLIENT_CERT / _KEY / _PASSWORD onto the upstream
-#            > CDS_DEV_CLIENT_* names at the call site, so the SU-TermServ
-#            > certificate is stored ONCE under one name for the whole repo
-#            > (ig-publisher.yml, go-publish.yml and validation all use it).
+#            > All build and validation workflows use the established
+#            > CDS_DEV_CLIENT_CERT / _KEY / _CERT_PASSWORD names, so the
+#            > SU-TermServ certificate is stored once for the whole repo.
 #            > SIMPLIFIER_USERNAME / SIMPLIFIER_PASSWORD have no local equivalent
 #            > and stay inherited.
 # Human-gated: none here; supplying the validation secrets is the human step.
@@ -118,9 +116,9 @@ jobs:
       - name: Probe
         id: probe
         env:
-          C: ${{ secrets.SU_TERMSERV_CLIENT_CERT }}
-          K: ${{ secrets.SU_TERMSERV_CLIENT_KEY }}
-          P: ${{ secrets.SU_TERMSERV_CLIENT_PASSWORD }}
+          C: ${{ secrets.CDS_DEV_CLIENT_CERT }}
+          K: ${{ secrets.CDS_DEV_CLIENT_KEY }}
+          P: ${{ secrets.CDS_DEV_CLIENT_CERT_PASSWORD }}
         run: |
           if [ -n "${C}" ] && [ -n "${K}" ] && [ -n "${P}" ]; then
             echo "has_cert=true" >> "${GITHUB_OUTPUT}"
@@ -150,19 +148,12 @@ jobs:
       JAVA_VALIDATION_OPTIONS: "-advisor-file advisor.json"
       VALIDATION_REPORT_FILTERS: |
         filename | messageId | detailsWildcard | location
-    # Secret-name reconciliation: the MII reusable workflow declares
-    # CDS_DEV_CLIENT_CERT / _KEY / _CERT_PASSWORD (all required), but THIS repo's
-    # canonical name for the same SU-TermServ client certificate is
-    # SU_TERMSERV_CLIENT_CERT / _KEY / _PASSWORD (used by ig-publisher.yml and
-    # go-publish.yml). Mapping them explicitly here means a maintainer sets
-    # the certificate ONCE, under one name, for the whole repository — instead of
-    # storing the same cert twice under two different secret names.
-    # If your organisation already provisions CDS_DEV_CLIENT_* centrally, replace
-    # this block with `secrets: inherit`.
+    # Pass the repository's established SU-TermServ secret names to the
+    # identically named required inputs of the reusable workflow.
     secrets:
-      CDS_DEV_CLIENT_CERT: ${{ secrets.SU_TERMSERV_CLIENT_CERT }}
-      CDS_DEV_CLIENT_KEY: ${{ secrets.SU_TERMSERV_CLIENT_KEY }}
-      CDS_DEV_CLIENT_CERT_PASSWORD: ${{ secrets.SU_TERMSERV_CLIENT_PASSWORD }}
+      CDS_DEV_CLIENT_CERT: ${{ secrets.CDS_DEV_CLIENT_CERT }}
+      CDS_DEV_CLIENT_KEY: ${{ secrets.CDS_DEV_CLIENT_KEY }}
+      CDS_DEV_CLIENT_CERT_PASSWORD: ${{ secrets.CDS_DEV_CLIENT_CERT_PASSWORD }}
 
   template-repo-notice:
     name: Validation skipped on the template repo

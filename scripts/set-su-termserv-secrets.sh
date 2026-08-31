@@ -28,9 +28,9 @@
 #                      (otherwise you are prompted; never passed as an argument)
 #
 # WHAT IT SETS
-#   SU_TERMSERV_CLIENT_CERT      base64 (single line) of the client certificate PEM
-#   SU_TERMSERV_CLIENT_KEY       base64 (single line) of the ENCRYPTED private key PEM
-#   SU_TERMSERV_CLIENT_PASSWORD  the key password, plain text
+#   CDS_DEV_CLIENT_CERT           base64 (single line) of the client certificate PEM
+#   CDS_DEV_CLIENT_KEY            base64 (single line) of the ENCRYPTED private key PEM
+#   CDS_DEV_CLIENT_CERT_PASSWORD  the key password, plain text
 set -euo pipefail
 
 CERT=""; KEY=""; P12=""; PWFILE=""; REPO=""; CHECK_ONLY="false"; DO_TEST="false"
@@ -102,7 +102,7 @@ if openssl rsa -in "${KEY}" -passin env:PWV -noout 2>/dev/null; then
   echo "   Key decrypts with the given password."
 elif openssl rsa -in "${KEY}" -noout 2>/dev/null; then
   echo "ERROR: the key is NOT encrypted. The workflow runs" >&2
-  echo "       'openssl rsa -passin env:SU_TERMSERV_CLIENT_PASSWORD', which needs an encrypted PEM." >&2
+  echo "       'openssl rsa -passin env:CDS_DEV_CLIENT_CERT_PASSWORD', which needs an encrypted PEM." >&2
   echo "       Encrypt it: openssl rsa -aes256 -in key.pem -out key-enc.pem" >&2
   exit 1
 else
@@ -153,9 +153,9 @@ echo
 echo "== Uploading the secrets${REPO:+ to ${REPO}} =="
 # base64 MUST be single-line: the workflow runs `echo "$SECRET" | base64 -d`,
 # and macOS `base64` wraps at 76 characters by default.
-base64 < "${CERT}" | tr -d '\n' | gh secret set SU_TERMSERV_CLIENT_CERT "${REPO_ARGS[@]}"
-base64 < "${KEY}"  | tr -d '\n' | gh secret set SU_TERMSERV_CLIENT_KEY  "${REPO_ARGS[@]}"
-printf '%s' "${PWV}" | gh secret set SU_TERMSERV_CLIENT_PASSWORD "${REPO_ARGS[@]}"
+base64 < "${CERT}" | tr -d '\n' | gh secret set CDS_DEV_CLIENT_CERT "${REPO_ARGS[@]}"
+base64 < "${KEY}"  | tr -d '\n' | gh secret set CDS_DEV_CLIENT_KEY  "${REPO_ARGS[@]}"
+printf '%s' "${PWV}" | gh secret set CDS_DEV_CLIENT_CERT_PASSWORD "${REPO_ARGS[@]}"
 
 echo
 echo "Done — the SU-TermServ credential is configured."

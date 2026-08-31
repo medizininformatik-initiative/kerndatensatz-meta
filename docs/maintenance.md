@@ -144,7 +144,7 @@ should re-check them.
 The guards are worth more than the drift they catch, so their reach is stated
 rather than assumed.
 
-- **The `SU_TERMSERV_CLIENT_CERT_PASSWORD` anti-drift assertion runs on the
+- **The `CDS_DEV_CLIENT_CERT_PASSWORD` anti-drift assertion runs on the
   template repository only.** It lives in
   `scripts/publication-url-consistency.template-test.mjs`, which asserts
   un-replaced placeholders and therefore cannot run in a created module. A

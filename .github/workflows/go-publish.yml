@@ -28,8 +28,8 @@
 #
 # Terminology: the build prefers the MII terminology server (SU-TermServ)
 #   through a client-certificate nginx proxy when the repository secrets
-#   SU_TERMSERV_CLIENT_CERT / SU_TERMSERV_CLIENT_KEY /
-#   SU_TERMSERV_CLIENT_PASSWORD are configured, and otherwise falls back
+#   CDS_DEV_CLIENT_CERT / CDS_DEV_CLIENT_KEY /
+#   CDS_DEV_CLIENT_CERT_PASSWORD are configured, and otherwise falls back
 #   to the public HL7 server https://tx.fhir.org with a workflow notice (the
 #   build must not hard-fail without the certificate).
 #
@@ -494,26 +494,26 @@ jobs:
         id: terminology
         shell: bash
         env:
-          SU_TERMSERV_CLIENT_CERT: ${{ secrets.SU_TERMSERV_CLIENT_CERT }}
-          SU_TERMSERV_CLIENT_KEY: ${{ secrets.SU_TERMSERV_CLIENT_KEY }}
-          SU_TERMSERV_CLIENT_PASSWORD: ${{ secrets.SU_TERMSERV_CLIENT_PASSWORD }}
+          CDS_DEV_CLIENT_CERT: ${{ secrets.CDS_DEV_CLIENT_CERT }}
+          CDS_DEV_CLIENT_KEY: ${{ secrets.CDS_DEV_CLIENT_KEY }}
+          CDS_DEV_CLIENT_CERT_PASSWORD: ${{ secrets.CDS_DEV_CLIENT_CERT_PASSWORD }}
         run: |
           set -euo pipefail
           # Prefer the MII terminology server (SU-TermServ) through the
           # client-certificate nginx proxy; otherwise fall back to the public
           # HL7 server. The build must not hard-fail without the certificate.
-          if [[ -n "${SU_TERMSERV_CLIENT_CERT}" ]] && [[ -n "${SU_TERMSERV_CLIENT_KEY}" ]] && [[ -n "${SU_TERMSERV_CLIENT_PASSWORD}" ]]; then
+          if [[ -n "${CDS_DEV_CLIENT_CERT}" ]] && [[ -n "${CDS_DEV_CLIENT_KEY}" ]] && [[ -n "${CDS_DEV_CLIENT_CERT_PASSWORD}" ]]; then
             nginx_dir="${RUNNER_TEMP}/nginx"
             mkdir -p "${nginx_dir}/certs"
             cp \
               publication/kerndatensatz-meta/.github/workflows/nginx.conf \
               "${nginx_dir}/nginx.conf"
-            printf '%s' "${SU_TERMSERV_CLIENT_CERT}" | base64 --decode > "${nginx_dir}/certs/client-cert.pem"
-            printf '%s' "${SU_TERMSERV_CLIENT_KEY}" | base64 --decode > "${nginx_dir}/certs/client-key-encrypted.key"
+            printf '%s' "${CDS_DEV_CLIENT_CERT}" | base64 --decode > "${nginx_dir}/certs/client-cert.pem"
+            printf '%s' "${CDS_DEV_CLIENT_KEY}" | base64 --decode > "${nginx_dir}/certs/client-key-encrypted.key"
             openssl rsa \
               -in "${nginx_dir}/certs/client-key-encrypted.key" \
               -out "${nginx_dir}/certs/client-key.key" \
-              -passin env:SU_TERMSERV_CLIENT_PASSWORD
+              -passin env:CDS_DEV_CLIENT_CERT_PASSWORD
             chmod 600 "${nginx_dir}/certs/"*
 
             docker run --detach --name publication-nginx \

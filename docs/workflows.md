@@ -246,6 +246,7 @@ A module builds and previews without secrets. To enable the optional gated
 features — SU-TermServ terminology (for both the build and the reusable
 validation) and the Zulip release announcement — see
 [docs/secrets.md](secrets.md) for the exact `gh secret set` commands (including
-why one secret name suffices: `validation.yml` maps `SU_TERMSERV_CLIENT_*` onto
+why one secret set suffices: `validation.yml` passes the `CDS_DEV_CLIENT_CERT`,
+`CDS_DEV_CLIENT_KEY`, and `CDS_DEV_CLIENT_CERT_PASSWORD` secrets through to
 the reusable workflow's `CDS_DEV_CLIENT_*` inputs at the call site). The
 workflows are already wired.

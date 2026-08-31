@@ -201,7 +201,7 @@ for (const file of [
     // the build instead of falling back.
     assert.match(
       workflow,
-      /-n "\$\{SU_TERMSERV_CLIENT_CERT\}"[^\n]*-n "\$\{SU_TERMSERV_CLIENT_KEY\}"[^\n]*-n "\$\{SU_TERMSERV_CLIENT_PASSWORD\}"/,
+      /-n "\$\{CDS_DEV_CLIENT_CERT\}"[^\n]*-n "\$\{CDS_DEV_CLIENT_KEY\}"[^\n]*-n "\$\{CDS_DEV_CLIENT_CERT_PASSWORD\}"/,
       "the terminology step does not guard on all three SU-TermServ secrets",
     );
     // The else branch: a notice, and the public HL7 server as the tx URL.
@@ -212,21 +212,26 @@ for (const file of [
   });
 }
 
-test("spells the SU-TermServ key password the same way in every workflow", () => {
+test("uses the established SU-TermServ secret names in every workflow", () => {
   // scripts/set-su-termserv-secrets.sh and docs/secrets.md provision the key
-  // password as SU_TERMSERV_CLIENT_PASSWORD. A workflow reading any other
+  // password as CDS_DEV_CLIENT_CERT_PASSWORD. A workflow reading any other
   // name gets an empty value and falls back to tx.fhir.org silently — no
   // error, only a ::notice — so no other spelling may appear.
   const workflowDirectory = new URL(
     ".github/workflows/",
     `file://${repository}/`,
   );
-  for (const file of readdirSync(workflowDirectory)) {
-    const text = readFileSync(new URL(file, workflowDirectory), "utf8");
+  for (const entry of readdirSync(workflowDirectory, { withFileTypes: true })) {
+    if (!entry.isFile() || !/\.ya?ml$/.test(entry.name)) continue;
+
+    const text = readFileSync(
+      new URL(entry.name, workflowDirectory),
+      "utf8",
+    );
     assert.doesNotMatch(
       text,
-      /SU_TERMSERV_CLIENT_CERT_PASSWORD/,
-      `${file} reads the SU-TermServ key password under a name nothing sets`,
+      /SU_TERMSERV_CLIENT_(?:CERT|KEY|PASSWORD)|CDS_DEV_CLIENT_PASSWORD/,
+      `${entry.name} reads an obsolete or misspelled SU-TermServ secret name`,
     );
   }
 });

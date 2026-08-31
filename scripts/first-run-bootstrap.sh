@@ -122,8 +122,8 @@ print_checklist() {
    once that is done (the publication workflow checks it).
 
 3. Terminology (optional): to build against the MII SU-TermServ, add the
-   repository secrets SU_TERMSERV_CLIENT_CERT / SU_TERMSERV_CLIENT_KEY /
-   SU_TERMSERV_CLIENT_PASSWORD. Without them the build falls back to the
+   repository secrets CDS_DEV_CLIENT_CERT / CDS_DEV_CLIENT_KEY /
+   CDS_DEV_CLIENT_CERT_PASSWORD. Without them the build falls back to the
    public HL7 server https://tx.fhir.org (it does not hard-fail).
 
 4. Release announcements (optional): add ZULIP_API_KEY to announce your

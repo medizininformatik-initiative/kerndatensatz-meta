@@ -162,8 +162,8 @@ The bootstrap printed it; the essentials:
    setting and the variable — then nothing serves the preview. Formal
    publication requires the "GitHub Actions" pairing, so pick it if you intend
    to publish. See [workflows.md](../workflows.md).
-3. **Terminology (optional):** add `SU_TERMSERV_CLIENT_CERT` /
-   `SU_TERMSERV_CLIENT_KEY` / `SU_TERMSERV_CLIENT_PASSWORD` to build against
+3. **Terminology (optional):** add `CDS_DEV_CLIENT_CERT` /
+   `CDS_DEV_CLIENT_KEY` / `CDS_DEV_CLIENT_CERT_PASSWORD` to build against
    the MII SU-TermServ; without them the build falls back to the public HL7
    server and does not fail.
 4. **Release announcements (optional):** add `ZULIP_API_KEY` to announce your

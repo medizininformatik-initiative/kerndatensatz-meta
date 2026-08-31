@@ -19,17 +19,14 @@ server `tx.fhir.org` by default. To use the **MII SU-TermServ**
 ICD-10-GM, OPS, …), supply the client certificate. It is client-certificate-gated
 and granted only to entities in Germany.
 
-Store the certificate **once**, under `SU_TERMSERV_CLIENT_CERT`,
-`SU_TERMSERV_CLIENT_KEY` and `SU_TERMSERV_CLIENT_PASSWORD`. The two files are
+Store the certificate **once**, under `CDS_DEV_CLIENT_CERT`,
+`CDS_DEV_CLIENT_KEY` and `CDS_DEV_CLIENT_CERT_PASSWORD`. The two files are
 **base64-encoded** (the workflows decode them with `base64 -d`).
 
 The preview build (`ig-publisher.yml`), the CalVer release build
-(`module-release.yml`) and formal publication (`go-publish.yml`) read those
-names directly. The fourth consumer, the MII reusable validation workflow,
-declares its own `CDS_DEV_CLIENT_CERT` / `_KEY` / `_CERT_PASSWORD` inputs;
-`validation.yml` maps this repo's names onto them at the call site (the
-`secrets:` block of its `java-validation` job). So one set of secrets serves
-all four — you never store the certificate twice.
+(`module-release.yml`), formal publication (`go-publish.yml`) and the MII
+reusable validation workflow all read those established names. One set of
+secrets therefore serves all four consumers.
 
 ### What kind of certificate is required
 
@@ -97,7 +94,7 @@ A successful run looks like:
 
 The two files are **base64-encoded, single-line**; the key must be the
 **encrypted** PEM (the workflow decrypts it with
-`openssl rsa -passin env:SU_TERMSERV_CLIENT_PASSWORD`).
+`openssl rsa -passin env:CDS_DEV_CLIENT_CERT_PASSWORD`).
 
 From a PKCS#12 bundle:
 
@@ -107,9 +104,9 @@ openssl pkcs12 -in cert.p12 -clcerts -nokeys -passin env:PWV | openssl x509 -out
 openssl pkcs12 -in cert.p12 -nocerts -passin env:PWV -passout env:PWV -out key-enc.pem
 
 R=<owner>/<your-module-repo>
-base64 < cert.pem    | tr -d '\n' | gh secret set SU_TERMSERV_CLIENT_CERT     --repo "$R"
-base64 < key-enc.pem | tr -d '\n' | gh secret set SU_TERMSERV_CLIENT_KEY      --repo "$R"
-printf '%s' "$PWV"                 | gh secret set SU_TERMSERV_CLIENT_PASSWORD --repo "$R"
+base64 < cert.pem    | tr -d '\n' | gh secret set CDS_DEV_CLIENT_CERT          --repo "$R"
+base64 < key-enc.pem | tr -d '\n' | gh secret set CDS_DEV_CLIENT_KEY           --repo "$R"
+printf '%s' "$PWV"                 | gh secret set CDS_DEV_CLIENT_CERT_PASSWORD --repo "$R"
 rm -f cert.pem key-enc.pem; unset PWV
 ```
 
