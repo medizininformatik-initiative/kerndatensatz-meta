@@ -1,5 +1,5 @@
 2026-08-31T14:09:39Z  INFO   7  prepost-delta  params  pre=migration-log/preflight-analysis.json post=migration-log/postflight-analysis.json out=migration-log/prepost-delta.md tsv=migration-log/prepost-delta.tsv
-2026-08-31T14:09:39Z  ERROR  7  prepost-delta  delta-regression: identity.version  pre=2026.0.0 post=2027.0.0-ballot.rc1
+2026-08-31T14:09:39Z  ERROR  7  prepost-delta  delta-regression: identity.version  pre=2026.0.0 post=2027.0.0-ballot.rc3
     why: machine-identity field changed -- the migrated package is no longer the same package
 2026-08-31T14:09:39Z  INFO   7  prepost-delta  result  rows=34 unchanged=25 improved=1 expected-change=7 regression=1 not-measurable=0 out=migration-log/prepost-delta.md tsv=migration-log/prepost-delta.tsv exit=1
 2026-08-31T14:09:39Z  WARN   7  prepost-delta  prepost-delta: 1 regression(s) -- a property of the module got WORSE between the pre- and post-measurement.

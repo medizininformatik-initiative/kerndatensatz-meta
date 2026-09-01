@@ -89,7 +89,7 @@ Required: FIX-1 and FIX-2. FIX-3 through FIX-5 record explicit user approvals.
 
 No open Gate-A decisions remain. The following decisions are accepted and recorded in `run.log`:
 
-- `2027.0.0-ballot.rc1`; its CalVer core and SemVer-style prerelease suffix now pass M6.
+- `2027.0.0-ballot.rc3`; its CalVer core and SemVer-style prerelease suffix now pass M6.
 - keep direct `hl7.terminology.r4#7.1.0` and `hl7.fhir.uv.extensions.r4#5.2.0`; keep template CRMI machinery.
 - do not re-enable the source IG licence extension or template artifact-versionPolicy.
 - publisher `NUM-DIZ`; expansion manifest; generated CapabilityStatement; metadata overview; recommended routes; default Security-and-Privacy text.
@@ -216,7 +216,7 @@ The full generated table, including all template-mandated pages and provenance c
 | id / name | `mii-ig-meta` / `MII_IG_Meta` | yes | source config |
 | title | `MII IG Meta` | yes | source config; title contradiction closed in run 6 |
 | packageId | `de.medizininformatikinitiative.kerndatensatz.meta` | yes | source config/package |
-| version / releaseLabel | `2027.0.0-ballot.rc1` / ballot | **changed** | user-approved A1; source was 2026.0.0 |
+| version / releaseLabel | `2027.0.0-ballot.rc3` / ballot | **changed** | user-approved A1; source was 2026.0.0 |
 | status / licence | `active` / `CC-BY-4.0` | yes | source config and LICENSE |
 | publisher | `NUM-DIZ` | **changed** | user-approved A4; source was Medizininformatik Initiative |
 | dependencies | CRMI 2.0.0, extensions 5.2.0, THO 7.1.0, core R4 | target additions | CRMI/template machinery and user-approved direct pins |
@@ -295,7 +295,7 @@ Not run. The remaining findings are narrative judgements, upstream/template beha
 | 5.3 | structure-preserving artifact transfer | 175/175; 0 missing ids/canonicals | `run.log` | one approved CapabilityStatement addition | met |
 | 5.4–5.5 | page routing, FQL/derived scans, bilingual page titles | 0 active FQL findings; 46 review blocks reviewed and cleared; 0 remaining markers; 18/18 page parity; 18/18 title units | scan ledgers | Gates B/C approved; standalone SearchParameter page later retired | met |
 | 5.6 | SUSHI and Publisher 2.3.2 | 0 SUSHI errors; pinned Publisher build produced 5,858 files and 0 broken links | `sushi-searchparameter-page-removal.log`, `publisher-searchparameter-page-removal-pinned.log` | offline QA retains the known publication-path error and requires credentialed CI SU-TermServ | structural render met; release QA pending |
-| 5.6 | convention check | all applicable M1–M11 checks pass, including M6 for `2027.0.0-ballot.rc1` | `convention-check.log` | none | met |
+| 5.6 | convention check | all applicable M1–M11 checks pass, including M6 for `2027.0.0-ballot.rc3` | `convention-check.log` | none | met |
 | 7 | pre/post and same-module analysis | 0 source artifacts missing; only approved CS added | analysis reports | version regression and publisher change explicitly approved | met as approved deviation |
 | 11 | verifier | 69 identical, 10 divergent, 16 not mechanisable | `verification.md` | C4/C7/R2 dispositions recorded; remaining release items in Gate D | incomplete pending Gate D |
 
@@ -311,7 +311,7 @@ Not run. The remaining findings are narrative judgements, upstream/template beha
 
 #### Gate A — identity
 
-- [x] **F1-6cbfea:** confirm the already approved `2027.0.0-ballot.rc1` decision in the final review record.
+- [x] **F1-6cbfea:** confirm the already approved `2027.0.0-ballot.rc3` decision in the final review record.
 - [x] **F2 ×3:** confirm CRMI 2.0.0 is template machinery and THO 7.1.0 / extensions 5.2.0 are the approved direct pins.
 - [x] **identity `description`:** record the approved English description as resolution of four source readings.
 - [x] **identity `title`:** record `MII IG Meta` as resolution of two source readings.
@@ -362,6 +362,6 @@ Not run. The remaining findings are narrative judgements, upstream/template beha
 #### Gate D — release
 
 - [ ] Run the branch CI with credentialed SU-TermServ and require Publisher QA to report 0 errors.
-- [x] Confirm M6 accepts the approved `2027.0.0-ballot.rc1` prerelease.
+- [x] Confirm M6 accepts the approved `2027.0.0-ballot.rc3` prerelease.
 - [ ] Record the upstream multilingual search-form issue and its ownership.
 - [ ] Obtain organizational release approval before removing retained legacy trees or publishing.

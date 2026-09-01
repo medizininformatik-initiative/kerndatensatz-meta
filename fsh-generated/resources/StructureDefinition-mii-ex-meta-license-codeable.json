@@ -16,7 +16,7 @@
           },
           {
             "url": "version",
-            "valueString": "2027.0.0-ballot.rc1"
+            "valueString": "2027.0.0-ballot.rc3"
           },
           {
             "url": "uri",
@@ -152,7 +152,7 @@
     }
   ],
   "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
-  "version": "2027.0.0-ballot.rc1",
+  "version": "2027.0.0-ballot.rc3",
   "name": "MII_EX_Meta_License_Codeable",
   "title": "MII EX Meta License Codeable",
   "status": "active",

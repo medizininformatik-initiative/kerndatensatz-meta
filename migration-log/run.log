@@ -237,7 +237,7 @@ ig-stats -> migration-log/preflight-analysis.json  (Artefakte 175, Direktiven 48
     Every line below belongs to run 3; the lines above are earlier invocations.
     Per-step raw logs (migration-log/<ACTION>.log) hold THIS run only -- `run`
     truncates each one and rolls the previous attempt over to <ACTION>.prev.log.
-2026-08-31T12:57:28Z  WARN   5.2  local-edits  post-checkpoint edits preserved: target_version=2027.0.0-ballot.rc1 source_version=2026.0.0 tho=7.1.0 target_template_pin=7.3.0 extensions=5.2.0 target_template_pin=5.3.0 source_license_extension=commented artifact_version_policy=commented; Gate A decision required
+2026-08-31T12:57:28Z  WARN   5.2  local-edits  post-checkpoint edits preserved: target_version=2027.0.0-ballot.rc3 source_version=2026.0.0 tho=7.1.0 target_template_pin=7.3.0 extensions=5.2.0 target_template_pin=5.3.0 source_license_extension=commented artifact_version_policy=commented; Gate A decision required
 2026-08-31T12:57:28Z  INFO   5.3  fsh-path-conservation  source_paths=56 target_paths=64 removed=0 scaffold_additions=8 diff=migration-log/fsh-path-diff.txt
 2026-08-31T12:57:56Z  INFO   pre.4  placeholder-census  files_with_double_braces=1172 active_build_placeholders=0 optional_commented_citation_hits=6 placeholder_named_files=0 simplifier_directives_accounted=49 method=grep-rIl-exclusion excluded=.git,.github
 2026-08-31T12:58:13Z  INFO   5.2  sushi-skeleton  start  cmd=`env npm_config_cache=/tmp/mii-meta-npm-cache npx --yes fsh-sushi@3.20.0 .`  raw_log=migration-log/sushi-skeleton.log
@@ -258,9 +258,9 @@ ig-stats -> migration-log/preflight-analysis.json  (Artefakte 175, Direktiven 48
     Every line below belongs to run 4; the lines above are earlier invocations.
     Per-step raw logs (migration-log/<ACTION>.log) hold THIS run only -- `run`
     truncates each one and rolls the previous attempt over to <ACTION>.prev.log.
-2026-08-31T13:13:14Z  INFO   A  gate-a-approved  A1=2027.0.0-ballot.rc1 A2=hl7.terminology.r4#7.1.0,hl7.fhir.uv.extensions.r4#5.2.0 A3=licence-extension-disabled,artifact-versionPolicy-disabled A4=NUM-DIZ-approved A5=Parameters/mii-param-meta-manifest-approved reviewer=user date=2026-08-31
-2026-08-31T13:13:14Z  WARN   A  approved-deviations  strict_calver_check=accepted-nonconforming source_version_change=2026.0.0-to-2027.0.0-ballot.rc1 dependency_drift_from_template=accepted source_ig_license_extension_omitted=accepted crmi_version_policy_omitted=accepted final_report_required=true
-2026-08-31T13:13:14Z  INFO   5.2  approved-version-alignment  sushi_config=2027.0.0-ballot.rc1 package_json=2027.0.0-ballot.rc1 publication_request=2027.0.0-ballot.rc1 artifact_rulesets=2027.0.0-ballot.rc1 sequence=2027
+2026-08-31T13:13:14Z  INFO   A  gate-a-approved  A1=2027.0.0-ballot.rc3 A2=hl7.terminology.r4#7.1.0,hl7.fhir.uv.extensions.r4#5.2.0 A3=licence-extension-disabled,artifact-versionPolicy-disabled A4=NUM-DIZ-approved A5=Parameters/mii-param-meta-manifest-approved reviewer=user date=2026-08-31
+2026-08-31T13:13:14Z  WARN   A  approved-deviations  strict_calver_check=accepted-nonconforming source_version_change=2026.0.0-to-2027.0.0-ballot.rc3 dependency_drift_from_template=accepted source_ig_license_extension_omitted=accepted crmi_version_policy_omitted=accepted final_report_required=true
+2026-08-31T13:13:14Z  INFO   5.2  approved-version-alignment  sushi_config=2027.0.0-ballot.rc3 package_json=2027.0.0-ballot.rc3 publication_request=2027.0.0-ballot.rc3 artifact_rulesets=2027.0.0-ballot.rc3 sequence=2027
 2026-08-31T13:13:26Z  INFO   5.2  sushi-after-gate-a  start  cmd=`env npm_config_cache=/tmp/mii-meta-npm-cache npx --yes fsh-sushi@3.20.0 .`  raw_log=migration-log/sushi-after-gate-a.log
 2026-08-31T13:14:50Z  INFO   5.2  sushi-after-gate-a  done  cmd=`env npm_config_cache=/tmp/mii-meta-npm-cache npx --yes fsh-sushi@3.20.0 .`  exit=0 raw_log=migration-log/sushi-after-gate-a.log raw_log_lines=50
 2026-08-31T13:15:06Z  INFO   5.4c  page-routing  start  cmd=`python3 /Users/julian/.agents/skills/mii-ig-migration/scripts/page-structure-advice.py --source /tmp/kerndatensatz-meta-source-baseline.CD9uWM --target . --out migration-log/page-structure-advice.md --map migration-log/page-map.tsv --guide-tree ImplementationGuide-2025`  raw_log=migration-log/page-routing.log
@@ -328,7 +328,7 @@ Text the migration WROTE, not carried. Each row renders as a highlighted box on 
 | `CodeSystem-mii-cs-meta-diz-standorte.html` (default, de) | The Simplifier page contained only a generated artifact view. This summary is derived fro… _(summary)_ | `MII-IG-Meta/Technische-Implementierung/CodeSystem-MII-Standorte.page.md` | B | review the box on CodeSystem-mii-cs-meta-diz-standorte.html and delete the marker and box, or correct the text |
 | `StructureDefinition-mii-pr-meta-searchparameter.html` (default, de) | The former FQL result is summarized from the preserved profile: `search-param-code-regex`… _(summary)_ | `MII-IG-Meta/Technische-Implementierung/Profil-SearchParameter.page.md` | B | review the box on StructureDefinition-mii-pr-meta-searchparameter.html and delete the marker and box, or correct the text |
 | `ImplementationGuide-mii-ig-meta.html` (default, de) | The Simplifier guide had no equivalent ImplementationGuide-resource introduction. This st… _(suggestion)_ | `none` | B | adopt, replace or delete the suggested content, then delete the marker and box |
-| `changes.html` (default, de) | The entry for `2027.0.0-ballot.rc1` records this migration and was not present in the Sim… _(suggestion)_ | `none` | B | adopt, replace or delete the suggested content, then delete the marker and box |
+| `changes.html` (default, de) | The entry for `2027.0.0-ballot.rc3` records this migration and was not present in the Sim… _(suggestion)_ | `none` | B | adopt, replace or delete the suggested content, then delete the marker and box |
 | `code-systems.html` (default, de) | The generated Simplifier artifact view was routed to the Publisher artifact page; this in… _(bridge)_ | `MII-IG-Meta/Technische-Implementierung/CodeSystem-MII-Standorte.page.md` | B | review the box on code-systems.html and delete the marker and box, or correct the text |
 | `downloads.html` (default, de) | The Simplifier guide had no download page. This standard Publisher download index was add… _(suggestion)_ | `none` | B | adopt, replace or delete the suggested content, then delete the marker and box |
 | `examples.html` (default, de) | The source provides two technical SearchParameter bundles but no clinical use-case exampl… _(bridge)_ | `MII-IG-Meta/Technische-Implementierung/Liste-Kerndatensatz-Suchparameter/Index.page.md` | B | review the box on examples.html and delete the marker and box, or correct the text |
@@ -361,7 +361,7 @@ Text the migration WROTE, not carried. Each row renders as a highlighted box on 
 2026-08-31T14:02:41Z  INFO   5.6  sushi-build  done  cmd=`env npm_config_cache=/tmp/mii-meta-npm-cache npx --yes fsh-sushi@3.20.0 .`  exit=0 raw_log=migration-log/sushi-build.log raw_log_lines=50
 2026-08-31T14:02:51Z  INFO   5.6  sushi-build  errors=0 warnings=2 exit=0 raw_log=migration-log/sushi-build.log generated_resources=176 source_artifacts=175 capabilitystatements=1
 2026-08-31T14:03:03Z  INFO   5.6  convention-check-after-narrative  start  cmd=`node scripts/convention-check.mjs`  raw_log=migration-log/convention-check-after-narrative.log
-2026-08-31T14:03:03Z  WARN   5.6  convention-check-after-narrative  anticipated-nonzero-exit: Gate A approved 2027.0.0-ballot.rc1 despite strict CalVer M6  cmd=`node scripts/convention-check.mjs`  exit=1 raw_log=migration-log/convention-check-after-narrative.log raw_log_lines=20
+2026-08-31T14:03:03Z  WARN   5.6  convention-check-after-narrative  anticipated-nonzero-exit: Gate A approved 2027.0.0-ballot.rc3 despite strict CalVer M6  cmd=`node scripts/convention-check.mjs`  exit=1 raw_log=migration-log/convention-check-after-narrative.log raw_log_lines=20
     This non-zero status is this step's ANTICIPATED, documented outcome, not a
     failure to fix -- the acceptance criterion is met AS QUALIFIED (spec
     §5.1b.4). Escalated, not ignored: every item behind it belongs in the
@@ -388,7 +388,7 @@ Text the migration WROTE, not carried. Each row renders as a highlighted box on 
     to the report's decision queue (spec §10.3).
 2026-08-31T14:10:14Z  INFO   7  same-module-analysis  start  cmd=`python3 /Users/julian/.agents/skills/fhir-ig-analysis/scripts/ig-stats.py run /tmp/kerndatensatz-meta-source-baseline.CD9uWM . -o migration-log/same-module-analysis --label source-1db2e53,migrated`  raw_log=migration-log/same-module-analysis.log
 2026-08-31T14:10:15Z  INFO   7  same-module-analysis  done  cmd=`python3 /Users/julian/.agents/skills/fhir-ig-analysis/scripts/ig-stats.py run /tmp/kerndatensatz-meta-source-baseline.CD9uWM . -o migration-log/same-module-analysis --label source-1db2e53,migrated`  exit=0 raw_log=migration-log/same-module-analysis.log raw_log_lines=3
-2026-08-31T14:10:45Z  WARN   7  prepost-delta-approved-deviation  identity.version source=2026.0.0 target=2027.0.0-ballot.rc1 script_verdict=REGRESSION human_decision=A1-approved source_ref=v2027-ballot report_required=true
+2026-08-31T14:10:45Z  WARN   7  prepost-delta-approved-deviation  identity.version source=2026.0.0 target=2027.0.0-ballot.rc3 script_verdict=REGRESSION human_decision=A1-approved source_ref=v2027-ballot report_required=true
 2026-08-31T14:10:45Z  WARN   7  same-module-analysis  identity_divergences=version,publisher both_human_approved=A1,A4 artifact_addition=CapabilityStatement/mii-cps-meta-server-capabilities generation_approved=true canonical_addition=1 missing_source_artifacts=0 report=migration-log/same-module-analysis/compare-report.md
 2026-08-31T14:10:45Z  INFO   7  same-module-conservation  id=identical canonical=identical packageId=identical name=identical title=identical fhirVersion=identical license=identical status=identical source_artifacts_missing=0 direct_dependency_injection_risk=improved
 2026-08-31T14:10:45Z  WARN   7  retained-platform-source  implementation-guides retained_until=Gate-D analyzer_directives_pre=48 post=48 active_publisher_narrative_fql_scan=0 dual_source=true expected_cleanup=Gate-D
@@ -551,7 +551,7 @@ Text the migration WROTE, not carried. Each row renders as a highlighted box on 
     §5.1b.4). Escalated, not ignored: every item behind it belongs in the
     report's ① decision queue, named individually (spec §10.3, §10.6).
 2026-08-31T14:22:01Z  INFO   5.6  convention-check  start  cmd=`node scripts/convention-check.mjs --release`  raw_log=migration-log/convention-check.log prev_raw_log=migration-log/convention-check.prev.log
-2026-08-31T14:22:01Z  WARN   5.6  convention-check  anticipated-nonzero-exit: M6 rejects the Gate-A-approved ballot prerelease 2027.0.0-ballot.rc1; all other applicable M1-M11 checks pass  cmd=`node scripts/convention-check.mjs --release`  exit=1 raw_log=migration-log/convention-check.log raw_log_lines=20
+2026-08-31T14:22:01Z  WARN   5.6  convention-check  anticipated-nonzero-exit: M6 rejects the Gate-A-approved ballot prerelease 2027.0.0-ballot.rc3; all other applicable M1-M11 checks pass  cmd=`node scripts/convention-check.mjs --release`  exit=1 raw_log=migration-log/convention-check.log raw_log_lines=20
     This non-zero status is this step's ANTICIPATED, documented outcome, not a
     failure to fix -- the acceptance criterion is met AS QUALIFIED (spec
     §5.1b.4). Escalated, not ignored: every item behind it belongs in the

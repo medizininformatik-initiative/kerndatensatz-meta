@@ -12,7 +12,7 @@ MII-Implementierungsleitfäden verwendet werden.
 | Veröffentlichung | |
 | --- | --- |
 | Datum | 2026-08-31 |
-| Version | `2027.0.0-ballot.rc1` |
+| Version | `2027.0.0-ballot.rc3` |
 | Status | active |
 | Realm | DE |
 

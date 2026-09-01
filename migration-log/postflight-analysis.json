@@ -16,7 +16,7 @@
     "packageId": "de.medizininformatikinitiative.kerndatensatz.meta",
     "name": "MII_IG_Meta",
     "title": "MII IG Meta",
-    "version": "2027.0.0-ballot.rc1",
+    "version": "2027.0.0-ballot.rc3",
     "calver": true,
     "status": "active",
     "fhirVersion": "4.0.1",

@@ -15,7 +15,7 @@
           },
           {
             "url": "version",
-            "valueString": "2027.0.0-ballot.rc1"
+            "valueString": "2027.0.0-ballot.rc3"
           },
           {
             "url": "uri",
@@ -71,7 +71,7 @@
     "MedicationAdministration"
   ],
   "publisher": "Medizininformatik Initiative",
-  "version": "2027.0.0-ballot.rc1",
+  "version": "2027.0.0-ballot.rc3",
   "name": "MII_SP_Bildgebung_Imaging_Study_Contrast_Bolus_Details",
   "status": "active",
   "experimental": false,

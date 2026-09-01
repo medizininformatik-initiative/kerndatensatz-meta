@@ -4,7 +4,7 @@ Status: **approved 2026-08-31**
 
 Approved decisions:
 
-- A1: retain target version `2027.0.0-ballot.rc1`, accepting the documented
+- A1: retain target version `2027.0.0-ballot.rc3`, accepting the documented
   strict-CalVer convention-check deviation.
 - A2: retain `hl7.terminology.r4#7.1.0` and
   `hl7.fhir.uv.extensions.r4#5.2.0`.
@@ -45,7 +45,7 @@ artifacts and requires explicit approval below.
 ### A1 — Target version
 
 The source declares `2026.0.0`. After the scaffold checkpoint, the working tree
-was locally changed to `2027.0.0-ballot.rc1`. SUSHI accepts it, but the module
+was locally changed to `2027.0.0-ballot.rc3`. SUSHI accepts it, but the module
 template convention check rejects the prerelease suffix because module versions
 must be strict MII CalVer `YYYY.n.n`.
 
@@ -56,7 +56,7 @@ Choose one:
 - `2027.0.0` records a human-approved target-version change, but requires the
   publication request and the v2027 terminology-policy pin to be aligned.
 
-`2027.0.0-ballot.rc1` cannot pass the current template convention.
+`2027.0.0-ballot.rc3` cannot pass the current template convention.
 
 ### A2 — Template dependency pins
 

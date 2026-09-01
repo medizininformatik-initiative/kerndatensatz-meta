@@ -1,6 +1,6 @@
 // ─────────────────────────────────────────────────────────────────────────────
 // Ported from kerndatensatz-basis (main): input/fsh/rulesets/cps-rules.fsh
-// basis literal 2026.0.1 (the pinned supportedProfile version) → 2027.0.0-ballot.rc1.
+// basis literal 2026.0.1 (the pinned supportedProfile version) → 2027.0.0-ballot.rc3.
 //
 // Building blocks for a module CapabilityStatement (input/fsh/capabilitystatements/,
 // naming MII_CPS_<Module>). They are ORDER-DEPENDENT: `SupportResource` opens a
@@ -43,7 +43,7 @@ RuleSet: Profile (profile)
 
 RuleSet: SupportProfile (profile, expectation)
 // This rule set must follow a SupportResource rule set, and applies to that resource.
-* rest.resource[=].supportedProfile[+] = "{profile}|2027.0.0-ballot.rc1"
+* rest.resource[=].supportedProfile[+] = "{profile}|2027.0.0-ballot.rc3"
 * rest.resource[=].supportedProfile[=].extension[0].url = $exp
 * rest.resource[=].supportedProfile[=].extension[0].valueCode = {expectation}
 

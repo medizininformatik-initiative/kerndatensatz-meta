@@ -92,7 +92,7 @@ description: "The Meta module contains foundational artifacts used by all other 
 status: active # draft | active | retired | unknown
 # MII modules use CalVer YYYY.n.n (e.g. 2026.0.1) per the MII Module Release
 # Workflow — NOT SemVer. Only the template tooling repos use SemVer.
-version: "2027.0.0-ballot.rc1"
+version: "2027.0.0-ballot.rc3"
 # packageId pattern per the MII naming convention:
 # de.medizininformatikinitiative.kerndatensatz.<slug> (for example,
 # kerndatensatz-basis uses de.medizininformatikinitiative.kerndatensatz.base).
@@ -154,7 +154,7 @@ extension:
       - url: packageId
         valueId: de.medizininformatikinitiative.kerndatensatz.meta
       - url: version
-        valueString: "2027.0.0-ballot.rc1"
+        valueString: "2027.0.0-ballot.rc3"
       - url: uri
         valueUri: https://www.medizininformatik-initiative.de/fhir/modul-meta
   # Year this release sequence became effective

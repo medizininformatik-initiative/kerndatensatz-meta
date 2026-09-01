@@ -3,7 +3,7 @@ identity.id	mii-ig-meta	mii-ig-meta	unchanged
 identity.canonical	https://www.medizininformatik-initiative.de/fhir/modul-meta	https://www.medizininformatik-initiative.de/fhir/modul-meta	unchanged
 identity.packageId	de.medizininformatikinitiative.kerndatensatz.meta	de.medizininformatikinitiative.kerndatensatz.meta	unchanged
 identity.name	MII_IG_Meta	MII_IG_Meta	unchanged
-identity.version	2026.0.0	2027.0.0-ballot.rc1	REGRESSION
+identity.version	2026.0.0	2027.0.0-ballot.rc3	REGRESSION
 identity.fhirVersion	4.0.1	4.0.1	unchanged
 identity.license	CC-BY-4.0	CC-BY-4.0	unchanged
 identity.calver	true	true	unchanged

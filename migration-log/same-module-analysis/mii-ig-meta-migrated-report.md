@@ -170,7 +170,7 @@ _Je Themenbereich der gemessene Befund und eine neutrale Einordnung, was er übe
 | Mehrsprachigkeit | FSH-Übersetzung ja, Supplements 0 | Ob Übersetzungen in den FSH-Quellen (translation-Extensions) und/oder als Publisher-Supplements vorliegen. Die beiden Mechanismen decken unterschiedliche Textarten ab; der Wert zeigt den vorhandenen Stand, nicht den Bedarf. |
 | Pflichtseiten | 13/13 im Zielformat | Wie viele Seiten des hinterlegten Pflicht-Rasters (mandatory_pages in dieser Datei) im Zielformat existieren. Die Aussagekraft hängt vom Raster ab: Nutzt ein Guide legitim ein anderes Seitenraster, wird das Raster korrigiert — nicht die Seiten als fehlend gewertet. |
 | QC-Regeln | 14 definiert | Anzahl der im Projekt definierten Qualitätsregeln (qc/custom.rules.yaml). Statisch wird nur die Definition gezählt; Verletzungen zeigt erst der Qualitätslauf eines Builds. |
-| Metadaten/Config | id mii-ig-meta, v2027.0.0-ballot.rc1 | Kern-Identität (id, Version) wie in sushi-config.yaml/package.json deklariert; die vollständigen Identitätsfelder stehen im Anhang. |
+| Metadaten/Config | id mii-ig-meta, v2027.0.0-ballot.rc3 | Kern-Identität (id, Version) wie in sushi-config.yaml/package.json deklariert; die vollständigen Identitätsfelder stehen im Anhang. |
 
 </div>
 
@@ -213,7 +213,7 @@ _Im Anhang steht jeder Einzelwert mit seiner Quelle, damit man die Kennzahlen na
 | packageId | de.medizininformatikinitiative.kerndatensatz.meta | sushi-config.yaml / package.json |
 | name | MII_IG_Meta | sushi-config.yaml / package.json |
 | title | MII IG Meta | sushi-config.yaml / package.json |
-| version | 2027.0.0-ballot.rc1 | sushi-config.yaml / package.json |
+| version | 2027.0.0-ballot.rc3 | sushi-config.yaml / package.json |
 | status | active | sushi-config.yaml / package.json |
 | fhirVersion | 4.0.1 | sushi-config.yaml / package.json |
 | license | CC-BY-4.0 | sushi-config.yaml / package.json |

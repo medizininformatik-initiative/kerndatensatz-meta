@@ -11,7 +11,7 @@ Verdicts: **unchanged** 25 · **improved** 1 · **expected-change** 7 · **REGRE
 
 Each one blocks the migration until it is fixed or explained; an explanation belongs in the migration report, not in a merge commit.
 
-- **`identity.version`**: `2026.0.0` → `2027.0.0-ballot.rc1` — machine-identity field changed -- the migrated package is no longer the same package
+- **`identity.version`**: `2026.0.0` → `2027.0.0-ballot.rc3` — machine-identity field changed -- the migrated package is no longer the same package
 
 ## Identity
 
@@ -21,7 +21,7 @@ Each one blocks the migration until it is fixed or explained; an explanation bel
 | `identity.canonical` | https://www.medizininformatik-initiative.de/fhir/modul-meta | https://www.medizininformatik-initiative.de/fhir/modul-meta | unchanged |  |
 | `identity.packageId` | de.medizininformatikinitiative.kerndatensatz.meta | de.medizininformatikinitiative.kerndatensatz.meta | unchanged |  |
 | `identity.name` | MII_IG_Meta | MII_IG_Meta | unchanged |  |
-| `identity.version` | 2026.0.0 | 2027.0.0-ballot.rc1 | **REGRESSION** | machine-identity field changed -- the migrated package is no longer the same package |
+| `identity.version` | 2026.0.0 | 2027.0.0-ballot.rc3 | **REGRESSION** | machine-identity field changed -- the migrated package is no longer the same package |
 | `identity.fhirVersion` | 4.0.1 | 4.0.1 | unchanged |  |
 | `identity.license` | CC-BY-4.0 | CC-BY-4.0 | unchanged |  |
 | `identity.calver` | true | true | unchanged |  |
