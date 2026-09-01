@@ -9,7 +9,7 @@ Usage: #definition
 * name = "MII_SP_Meta_Encounter_DiagnosisUse"
 * status = #active
 * experimental = false
-* date = "2024-10-08"
+* date = "2026-09-01"
 * description = "Suchparameter für Encounter.diagnosis.use"
 * code = #diagnosis-use
 * base = #Encounter 

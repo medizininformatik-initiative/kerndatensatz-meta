@@ -1,0 +1,16 @@
+
+# Parameters.parameter.name
+#: Parameters.parameter.name
+msgid "system-version"
+msgstr ""
+
+# Parameters.parameter.name
+#: Parameters.parameter.name
+msgid "default-canonical-version"
+msgstr ""
+
+# Parameters.parameter.name
+#: Parameters.parameter.name
+msgid "default-valueset-version"
+msgstr ""
+

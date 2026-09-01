@@ -2,12 +2,34 @@
   "resourceType": "SearchParameter",
   "id": "mii-sp-meta-imaging-study-series-exposure-time",
   "meta": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+        "valueCode": "CC-BY-4.0"
+      },
+      {
+        "extension": [
+          {
+            "url": "packageId",
+            "valueId": "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url": "version",
+            "valueString": "2027.0.0-ballot.rc1"
+          },
+          {
+            "url": "uri",
+            "valueUri": "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }
+        ],
+        "url": "http://hl7.org/fhir/StructureDefinition/package-source"
+      }
+    ],
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
     ]
   },
   "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-exposure-time",
-  "publisher": "Medizininformatik Initiative",
   "contact": [
     {
       "telecom": [
@@ -18,37 +40,47 @@
       ]
     }
   ],
-  "version": "2026.0.0",
   "extension": [
     {
-      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+      "valueCoding": {
+        "code": "semver",
+        "system": "http://hl7.org/fhir/version-algorithm",
+        "display": "SemVer"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
       "valueCodeableConcept": {
         "coding": [
           {
-            "code": "CC-BY-4.0",
-            "system": "http://hl7.org/fhir/spdx-license",
-            "display": "Creative Commons Attribution 4.0 International"
+            "code": "package",
+            "system": "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version": "3.0.0",
+            "display": "Package"
           }
         ]
       }
     }
   ],
-  "name": "MII_SP_Bildgebung_Imaging_Study_Series_Exposure_Time",
-  "status": "active",
-  "experimental": false,
-  "date": "2025-11-06",
-  "description": "Suchparameter für ImagingStudy.series.extension.exposureTime",
-  "code": "exposure-time",
   "base": [
     "ImagingStudy"
   ],
-  "type": "quantity",
-  "expression": "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct').extension('exposureTime').value | ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx').extension('exposureTime').value",
   "comparator": [
     "eq",
     "gt",
     "lt",
     "ge",
     "le"
-  ]
+  ],
+  "publisher": "Medizininformatik Initiative",
+  "version": "2027.0.0-ballot.rc1",
+  "name": "MII_SP_Bildgebung_Imaging_Study_Series_Exposure_Time",
+  "status": "active",
+  "experimental": false,
+  "date": "2025-11-06",
+  "description": "Suchparameter für ImagingStudy.series.extension.exposureTime",
+  "code": "exposure-time",
+  "type": "quantity",
+  "expression": "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct').extension('exposureTime').value | ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx').extension('exposureTime').value"
 }

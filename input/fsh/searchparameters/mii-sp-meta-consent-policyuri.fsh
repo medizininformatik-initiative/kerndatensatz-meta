@@ -10,7 +10,7 @@ Usage: #definition
 * name = "MII_SP_Meta_Consent_PolicyUri"
 * status = #active
 * experimental = false
-* date = "2024-10-17"
+* date = "2026-09-01"
 * description = "Suche in der Policy URI (versionsspezifische Policy / Broad Consent)"
 * code = #mii-policy-uri
 * base = #Consent

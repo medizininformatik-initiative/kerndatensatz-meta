@@ -1,0 +1,11 @@
+npm error code EACCES
+npm error syscall open
+npm error path /Users/julian/.npm/_cacache/index-v5/62/64/ab00a5dec51fd20eef5fa11f695aa403114419ffd8649e67bb34a99225eb
+npm error errno EACCES
+npm error
+npm error Your cache folder contains root-owned files, due to a bug in
+npm error previous versions of npm which has since been addressed.
+npm error
+npm error To permanently fix this problem, please run:
+npm error   sudo chown -R 502:20 "/Users/julian/.npm"
+npm error A complete log of this run can be found in: /Users/julian/.npm/_logs/2026-08-31T11_51_48_554Z-debug-0.log

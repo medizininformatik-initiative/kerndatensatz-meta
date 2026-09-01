@@ -1,0 +1,22 @@
+# Code owners are requested for review automatically on every pull request.
+#
+# No active rule YET — deliberately. Ownership IS decided (2026-08-28, the
+# funded handover recorded in docs/org-move.md; contact data researched
+# 2026-08-28):
+#
+#   * until 2026-12-31: the MII — Koordinationsstelle der
+#     Medizininformatik-Initiative at TMF e.V.
+#     (info@medizininformatik-initiative.de)
+#   * from 2027-01-01: NUM-DIZ — NUM-Koordinierungsstelle at Charité –
+#     Universitätsmedizin Berlin (forschungsnetzwerk-unimedizin@charite.de;
+#     NUM-DIZ project coordination: Annalena Herzog)
+#
+# But neither owner has a GitHub team in this organisation yet, so there is
+# nothing an ownership rule could name. Add the rule once a maintaining team
+# exists:
+#
+#   * @medizininformatik-initiative/<team-name>
+#
+# A team survives personnel changes and holidays; an individual owner blocks
+# reviews whenever they are unavailable — so the rule waits for the team, and
+# reviews are requested by hand until then.

@@ -8,7 +8,7 @@ Usage: #definition
 * insert SP_Publisher
 * insert LicenseCodeableCCBY40Instance
 * insert SP_Profile
-* date = "2024-10-08"
+* date = "2026-09-01"
 * name = "MII_SP_Meta_Specimen_Request"
 * description = "SearchParameter for Specimen.request"
 * experimental = false
@@ -25,7 +25,7 @@ Usage: #definition
 * insert SP_Publisher
 * insert LicenseCodeableCCBY40Instance
 * insert SP_Profile
-* date = "2024-10-08"
+* date = "2026-09-01"
 * name = "MII_SP_Meta_Specimen_Collection_Method"
 * description = "SearchParameter for Specimen.collection.method"
 * experimental = false
@@ -42,7 +42,7 @@ Usage: #definition
 * insert SP_Publisher
 * insert LicenseCodeableCCBY40Instance
 * insert SP_Profile
-* date = "2025-11-04"
+* date = "2026-09-01"
 * name = "MII_SP_Meta_Specimen_Collection_Body_Site"
 * description = "SearchParameter for Specimen.collection.bodySite"
 * experimental = false
@@ -59,7 +59,7 @@ Usage: #definition
 * insert SP_Publisher
 * insert LicenseCodeableCCBY40Instance
 * insert SP_Profile
-* date = "2024-10-08"
+* date = "2026-09-01"
 * name = "MII_SP_Meta_Specimen_Processing_Procedure"
 * description = "SearchParameter for Specimen.processing.procedure"
 * experimental = false
@@ -76,7 +76,7 @@ Usage: #definition
 * insert SP_Publisher
 * insert LicenseCodeableCCBY40Instance
 * insert SP_Profile
-* date = "2024-10-08"
+* date = "2026-09-01"
 * name = "MII_SP_Meta_Specimen_Processing_Additive"
 * description = "SearchParameter for Specimen.processing.additive"
 * experimental = false
@@ -93,7 +93,7 @@ Usage: #definition
 * insert SP_Publisher
 * insert LicenseCodeableCCBY40Instance
 * insert SP_Profile
-* date = "2024-10-08"
+* date = "2026-09-01"
 * name = "MII_SP_Meta_Specimen_Processing_Date"
 * description = "SearchParameter for Specimen.processing.time"
 * experimental = false
@@ -110,7 +110,7 @@ Usage: #definition
 * insert SP_Publisher
 * insert LicenseCodeableCCBY40Instance
 * insert SP_Profile
-* date = "2024-10-08"
+* date = "2026-09-01"
 * name = "MII_SP_Meta_Specimen_Container_Additive"
 * description = "SearchParameter for Specimen.container.additive"
 * experimental = false
@@ -130,7 +130,7 @@ Usage: #definition
 * insert SP_Publisher
 * insert LicenseCodeableCCBY40Instance
 * insert SP_Profile
-* date = "2024-10-08"
+* date = "2026-09-01"
 * name = "MII_SP_Meta_Observation_BodySite"
 * description = "SearchParameter for Observation.bodySite"
 * experimental = false
@@ -147,7 +147,7 @@ Usage: #definition
 * insert SP_Publisher
 * insert LicenseCodeableCCBY40Instance
 * insert SP_Profile
-* date = "2024-10-08"
+* date = "2026-09-01"
 * name = "MII_SP_Meta_Observation_Value_Ratio"
 * description = "SearchParameter for Observation.valueRatio"
 * experimental = false
@@ -169,7 +169,7 @@ Usage: #definition
 * insert SP_Publisher
 * insert LicenseCodeableCCBY40Instance
 * insert SP_Profile
-* date = "2024-11-07"
+* date = "2026-09-01"
 * name = "MII_SP_Meta_Observation_Value_Ratio_Numerator"
 * status = #active
 * experimental = false
@@ -187,7 +187,7 @@ Usage: #definition
 * insert SP_Publisher
 * insert LicenseCodeableCCBY40Instance
 * insert SP_Profile
-* date = "2024-10-08"
+* date = "2026-09-01"
 * name = "MII_SP_Meta_Observation_Value_Ratio_Denominator"
 * status = #active
 * experimental = false
@@ -222,7 +222,7 @@ Usage: #definition
 * insert SP_Publisher
 * insert LicenseCodeableCCBY40Instance
 * insert SP_Profile
-* date = "2024-10-08"
+* date = "2026-09-01"
 * name = "MII_SP_Meta_ServiceRequest_SupportingInfo"
 * description = "SearchParameter for ServiceRequest.supportingInfo"
 * experimental = false
@@ -242,7 +242,7 @@ Usage: #definition
 * insert SP_Publisher
 * insert LicenseCodeableCCBY40Instance
 * insert SP_Profile
-* date = "2025-10-06"
+* date = "2026-09-01"
 * name = "MII_SP_Meta_DiagnosticReport_ImagingStudy"
 * description = "SearchParameter for DiagnosticReport.imagingStudy"
 * experimental = false
@@ -263,7 +263,7 @@ Usage: #definition
 * insert SP_Publisher
 * insert LicenseCodeableCCBY40Instance
 * insert SP_Profile
-* date = "2024-10-08"
+* date = "2026-09-01"
 * name = "MII_SP_Meta_Composition_Attester_Mode"
 * code = #attester-mode
 * description = "SearchParameter for Composition.attester.mode"
@@ -280,7 +280,7 @@ Usage: #definition
 * insert SP_Publisher
 * insert LicenseCodeableCCBY40Instance
 * insert SP_Profile
-* date = "2024-10-08"
+* date = "2026-09-01"
 * name = "MII_SP_Meta_Composition_Custodian"
 * description = "SearchParameter for Composition.custodian"
 * experimental = false
@@ -297,7 +297,7 @@ Usage: #definition
 * insert SP_Publisher
 * insert LicenseCodeableCCBY40Instance
 * insert SP_Profile
-* date = "2024-10-08"
+* date = "2026-09-01"
 * name = "MII_SP_Meta_Composition_RelatesTo_Code"
 * description = "SearchParameter for Composition.relatesTo.code"
 * experimental = false
@@ -317,7 +317,7 @@ Usage: #definition
 * insert SP_Publisher
 * insert LicenseCodeableCCBY40Instance
 * insert SP_Profile
-* date = "2024-10-08"
+* date = "2026-09-01"
 * name = "MII_SP_Meta_Media_PartOf"
 * code = #part-of
 * description = "SearchParameter for Media.partOf"

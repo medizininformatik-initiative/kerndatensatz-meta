@@ -9,7 +9,7 @@ Usage: #definition
 * name = "MII_SP_Meta_Observation_ReferenceRange"
 * status = #active
 * experimental = false
-* date = "2024-10-08"
+* date = "2026-09-01"
 * description = "Suchparameter für Observation.referenceRange"
 * code = #reference-range
 * base = #Observation
@@ -31,7 +31,7 @@ Usage: #definition
 * name = "MII_SP_Meta_Observation_ReferenceRange_Low"
 * status = #active
 * experimental = false
-* date = "2024-10-08"
+* date = "2026-09-01"
 * description = "Suchparameter für Observation.referenceRange.low"
 * code = #reference-range-low
 * base = #Observation
@@ -49,7 +49,7 @@ Usage: #definition
 * name = "MII_SP_Meta_Observation_ReferenceRange_High"
 * status = #active
 * experimental = false
-* date = "2024-10-08"
+* date = "2026-09-01"
 * description = "Suchparameter für Observation.referenceRange.high"
 * code = #reference-range-high
 * base = #Observation

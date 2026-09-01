@@ -1,0 +1,6 @@
+2026-08-31T15:15:47Z  INFO   5.4  fql-scan  params  rules=/Users/julian/.agents/skills/mii-ig-migration/references/fql-rules.tsv  targets= input/pagecontent input/translations/de/pagecontent input/intro-notes input/translations/de/intro-notes  defaulted=0
+2026-08-31T15:15:47Z  INFO   5.4  fql-scan  target  path=input/pagecontent  kind=dir  files=18
+2026-08-31T15:15:47Z  INFO   5.4  fql-scan  target  path=input/translations/de/pagecontent  kind=dir  files=18
+2026-08-31T15:15:47Z  INFO   5.4  fql-scan  target  path=input/intro-notes  kind=dir  files=3
+2026-08-31T15:15:47Z  INFO   5.4  fql-scan  target  path=input/translations/de/intro-notes  kind=dir  files=3
+2026-08-31T15:15:49Z  INFO   5.4  fql-scan  result  mapped=0 unknown=0 files=42  exit=0  no directives found

@@ -1,0 +1,249 @@
+# Stale GitHub Pages preview cleanup (companion to ig-publisher.yml).
+#
+# Purpose:   Remove branch previews under gh-pages/branches/<branch>/ whose
+#            branch no longer exists, so gh-pages does not grow without bound as
+#            short-lived feature branches come and go. Each preview drops a
+#            .branch-name marker; this workflow deletes a preview ONLY when its
+#            marker names a branch that is gone. The formal publication ROOT and
+#            any version-like paths (e.g. 2026.0.0/) are NEVER cleanup
+#            candidates — they belong to -go-publish, not to previews.
+#
+# PROPAGATION: like ig-publisher.yml, this file is meant to propagate to
+#            modules created from this template (the first-run bootstrap keeps
+#            it) — every module's gh-pages benefits from the same sweep.
+#
+# Triggers:  weekly schedule (Sundays 00:00 UTC) + manual workflow_dispatch
+#            (with a dry_run input to list stale previews without deleting).
+#
+# Toggle:    vars.ENABLE_PREVIEW — ON by default; shares the preview
+#            subsystem's switch. Set the repo variable to 'false' to skip the
+#            sweep (it then shows as "skipped"). To purge once while previews are
+#            off, flip it on, dispatch this workflow, flip it back.
+#
+# Pages two modes (vars.PAGES_ACTIONS_ENABLED): the sweep always commits the
+#            pruned tree to the gh-pages branch (served by "Deploy from a branch")
+#            and, when PAGES_ACTIONS_ENABLED='true', additionally re-deploys the
+#            cleaned tree through the Pages Actions pipeline. Mirrors
+#            ig-publisher.yml / go-publish.yml.
+#
+# Fixed versions: every Action is pinned to a commit SHA (# vX.Y.Z).
+#
+# Prerequisite: none. If the repository has no `gh-pages` branch yet (no preview
+#            and no publication so far), the sweep skips with a ::notice — an
+#            empty repository must not produce a red scheduled run.
+#
+# Human-gated: none (dry_run lets a human preview the deletions first).
+name: Cleanup stale GitHub Pages previews
+
+on:
+  schedule:
+    - cron: "0 0 * * 0"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "List stale previews without deleting them"
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+  id-token: write
+  pages: write
+
+concurrency:
+  # Share the gh-pages writer group so the sweep never races ig-publisher.yml or
+  # go-publish.yml. Queue, never cancel.
+  group: gh-pages-writes
+  cancel-in-progress: false
+
+jobs:
+  cleanup:
+    if: ${{ vars.ENABLE_PREVIEW != 'false' }} # toggle: ON by default
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.cleanup.outputs.changed }}
+    steps:
+      # gh-pages only exists once a preview or a formal publication has been
+      # deployed. A freshly created module has neither yet — that is NOT an
+      # error, there is simply nothing to sweep, so probe before checking out
+      # (a checkout of a missing ref fails the whole scheduled run).
+      - name: Check whether a gh-pages branch exists
+        id: probe
+        shell: bash
+        env:
+          REMOTE_URL: https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git
+        run: |
+          set -euo pipefail
+          if git ls-remote --heads "${REMOTE_URL}" gh-pages | grep -q .; then
+            echo "exists=true" >> "${GITHUB_OUTPUT}"
+          else
+            echo "exists=false" >> "${GITHUB_OUTPUT}"
+            echo "::notice::No gh-pages branch yet — nothing to clean up. It is created by the first branch preview (ig-publisher.yml) or the first formal publication."
+          fi
+
+      - name: Checkout gh-pages branch
+        if: ${{ steps.probe.outputs.exists == 'true' }}
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: gh-pages
+          fetch-depth: 1
+
+      - name: Remove only marker-backed stale previews
+        id: cleanup
+        if: ${{ steps.probe.outputs.exists == 'true' }}
+        shell: bash
+        env:
+          DRY_RUN: ${{ inputs.dry_run || false }}
+          PAGES_ACTIONS_ENABLED: ${{ vars.PAGES_ACTIONS_ENABLED }}
+        run: |
+          set -euo pipefail
+
+          remote_refs="$(git ls-remote --heads origin)"
+          mapfile -t active_branches < <(
+            awk '
+              {
+                sub("refs/heads/", "", $2)
+                if ($2 != "gh-pages") {
+                  print $2
+                }
+              }
+            ' <<< "${remote_refs}"
+          )
+          mapfile -d '' -t markers < <(
+            find . \
+              -path './.git' -prune -o \
+              -type f \
+              -name '.branch-name' \
+              -print0
+          )
+
+          printf 'Active branches: %s\n' "${#active_branches[@]}"
+          printf 'Marked preview deployments: %s\n' "${#markers[@]}"
+
+          stale_count=0
+          preserved_count=0
+          branch_is_active() {
+            local candidate="$1" active
+            for active in "${active_branches[@]}"; do
+              if [[ "${active}" == "${candidate}" ]]; then
+                return 0
+              fi
+            done
+            return 1
+          }
+
+          for marker in "${markers[@]}"; do
+            # An earlier stale ancestor may already have removed this marker.
+            [[ -f "${marker}" ]] || continue
+            deployment="$(dirname "${marker}")"
+            branch="$(tr -d '\r\n' < "${marker}")"
+
+            # A marker at the site root belongs to a formal publication; never a
+            # cleanup candidate.
+            if [[ "${deployment}" == "." ]]; then
+              echo "Preserving formal publication root"
+              preserved_count=$((preserved_count + 1))
+              continue
+            fi
+            relative_deployment="${deployment#./}"
+            # Version-like permanent paths (CalVer YYYY.n.n and friends) are formal.
+            if [[ "${relative_deployment}" =~ ^[0-9]+\.[0-9]+\.[0-9]+([-.][0-9A-Za-z.-]+)?$ ]]; then
+              echo "Preserving version-like permanent path ${relative_deployment}/"
+              preserved_count=$((preserved_count + 1))
+              continue
+            fi
+            if [[ -z "${branch}" ]]; then
+              echo "::warning::Ignoring empty preview marker at ${marker}"
+              preserved_count=$((preserved_count + 1))
+              continue
+            fi
+
+            if branch_is_active "${branch}"; then
+              echo "Preserving ${deployment#./}/ (${branch})"
+              preserved_count=$((preserved_count + 1))
+              continue
+            fi
+
+            # Branch names may contain slashes, so a stale preview can be an
+            # ancestor of another preview. Never recursively delete an active
+            # descendant deployment.
+            has_active_descendant=false
+            for descendant_marker in "${markers[@]}"; do
+              if [[ "${descendant_marker}" == "${marker}" ]] ||
+                [[ "${descendant_marker}" != "${deployment}/"* ]] ||
+                [[ ! -f "${descendant_marker}" ]]; then
+                continue
+              fi
+              descendant_branch="$(tr -d '\r\n' < "${descendant_marker}")"
+              if branch_is_active "${descendant_branch}"; then
+                echo "::warning::Preserving stale ancestor ${deployment#./}/ (${branch}) because it contains active preview ${descendant_branch}."
+                has_active_descendant=true
+                break
+              fi
+            done
+            if [[ "${has_active_descendant}" == "true" ]]; then
+              preserved_count=$((preserved_count + 1))
+              continue
+            fi
+
+            stale_count=$((stale_count + 1))
+            if [[ "${DRY_RUN}" == "true" ]]; then
+              echo "[dry run] Would remove ${deployment#./}/ (${branch})"
+            else
+              echo "Removing ${deployment#./}/ (${branch})"
+              rm -rf -- "${deployment}"
+            fi
+          done
+
+          changed=false
+          if [[ "${DRY_RUN}" != "true" ]]; then
+            if [[ "${PAGES_ACTIONS_ENABLED}" == "true" ]]; then
+              bytes="$(du --bytes --summarize --exclude=.git . | cut -f1)"
+              supported_max_bytes="1000000000"
+              if (( bytes > supported_max_bytes )); then
+                echo "::warning::The cleaned Pages site is ${bytes} bytes, above GitHub Pages' ${supported_max_bytes}-byte officially supported maximum. Cleanup and deployment will continue, but Pages does not guarantee deployments above 1 GB."
+              fi
+            fi
+            git add --all
+            if ! git diff --cached --quiet; then
+              git config user.name "github-actions[bot]"
+              git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+              git commit -m "chore: remove ${stale_count} stale Pages preview(s)"
+              git push origin gh-pages
+              changed=true
+            fi
+          fi
+          echo "changed=${changed}" >> "${GITHUB_OUTPUT}"
+
+          {
+            echo "### GitHub Pages preview cleanup"
+            echo
+            echo "- Dry run: ${DRY_RUN}"
+            echo "- Preserved: ${preserved_count}"
+            echo "- Stale: ${stale_count}"
+            echo "- Changed: ${changed}"
+          } >> "${GITHUB_STEP_SUMMARY}"
+
+      - name: Package cleaned gh-pages tree as a Pages artifact
+        if: ${{ steps.cleanup.outputs.changed == 'true' && vars.PAGES_ACTIONS_ENABLED == 'true' }}
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          path: .
+
+  deploy:
+    name: Deploy cleaned Pages tree (Actions mode)
+    if: ${{ vars.ENABLE_PREVIEW != 'false' && needs.cleanup.outputs.changed == 'true' && vars.PAGES_ACTIONS_ENABLED == 'true' }}
+    needs: cleanup
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      contents: read
+      id-token: write
+      pages: write
+    steps:
+      - name: Deploy Pages artifact
+        id: deployment
+        uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128 # v5.0.0

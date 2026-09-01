@@ -10,7 +10,7 @@ Usage: #definition
 * status = #active
 * description = "Suchparameter für DocumentReference.content.attachment.creation"
 * experimental = false
-* date = "2025-06-23"
+* date = "2026-09-01"
 * code = #creation
 * base = #DocumentReference
 * type = #date
@@ -28,7 +28,7 @@ Usage: #definition
 * status = #active
 * description = "Suchparameter für DocumentReference.docStatus"
 * experimental = false
-* date = "2025-06-23"
+* date = "2026-09-01"
 * code = #doc-status
 * base = #DocumentReference
 * type = #token
@@ -46,7 +46,7 @@ Usage: #definition
 * status = #active
 * description = "Suchparameter für DocumentReference.extension[nlp-processing-status].valueCodeableConcept"
 * experimental = false
-* date = "2025-07-30"
+* date = "2026-09-01"
 * code = #nlp-processing-status
 * base = #DocumentReference
 * type = #token
