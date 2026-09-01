@@ -1,0 +1,1410 @@
+[
+  {
+    "outputFile": "Bundle-mii-exa-meta-searchparam-collection-bundle.json",
+    "fshName": "mii-exa-meta-searchparam-collection-bundle",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bundle.fsh",
+    "startLine": 205,
+    "endLine": 398
+  },
+  {
+    "outputFile": "Bundle-mii-exa-meta-searchparam-transaction-bundle.json",
+    "fshName": "mii-exa-meta-searchparam-transaction-bundle",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bundle.fsh",
+    "startLine": 11,
+    "endLine": 203
+  },
+  {
+    "outputFile": "CapabilityStatement-mii-cps-meta-server-capabilities.json",
+    "fshName": "mii-cps-meta-server-capabilities",
+    "fshType": "Instance",
+    "fshFile": "capabilitystatements/mii-cps-meta-server-capabilities.fsh",
+    "startLine": 6,
+    "endLine": 649
+  },
+  {
+    "outputFile": "CodeSystem-mii-cs-meta-diz-standorte.json",
+    "fshName": "MII_CS_Meta_DIZ_Standorte",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystems/mii-cs-meta-diz-standorte.fsh",
+    "startLine": 45,
+    "endLine": 468
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-adverseevent-encounter.json",
+    "fshName": "mii-sp-meta-adverseevent-encounter",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-onko.fsh",
+    "startLine": 300,
+    "endLine": 315
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-adverseevent-suspectentity-instance.json",
+    "fshName": "mii-sp-meta-adverseevent-suspectentity-instance",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-onko.fsh",
+    "startLine": 283,
+    "endLine": 298
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-body-structure-location-qualifier.json",
+    "fshName": "mii-sp-meta-body-structure-location-qualifier",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 44,
+    "endLine": 67
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-careplan-addresses.json",
+    "fshName": "mii-sp-meta-careplan-addresses",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-onko.fsh",
+    "startLine": 381,
+    "endLine": 396
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-careplan-contributor.json",
+    "fshName": "mii-sp-meta-careplan-contributor",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-onko.fsh",
+    "startLine": 364,
+    "endLine": 379
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-careplan-created.json",
+    "fshName": "mii-sp-meta-careplan-created",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-onko.fsh",
+    "startLine": 347,
+    "endLine": 362
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-composition-attester-mode.json",
+    "fshName": "mii-sp-meta-composition-attester-mode",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-patho.fsh",
+    "startLine": 259,
+    "endLine": 274
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-composition-custodian.json",
+    "fshName": "mii-sp-meta-composition-custodian",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-patho.fsh",
+    "startLine": 276,
+    "endLine": 291
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-composition-relatesto-code.json",
+    "fshName": "mii-sp-meta-composition-relatesto-code",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-patho.fsh",
+    "startLine": 293,
+    "endLine": 308
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-composition-section-author.json",
+    "fshName": "mii-sp-meta-composition-section-author",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 91,
+    "endLine": 108
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-composition-section-title.json",
+    "fshName": "mii-sp-meta-composition-section-title",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 70,
+    "endLine": 89
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-condition-evidence-detail.json",
+    "fshName": "mii-sp-meta-condition-evidence-detail",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-onko.fsh",
+    "startLine": 21,
+    "endLine": 37
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-condition-icd10gm-diagnosesicherheit.json",
+    "fshName": "mii-sp-meta-condition-icd10gm-diagnosesicherheit",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-condition-icd10gm-diagnosesicherheit.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-condition-icd10gm-mehrfachcodierung.json",
+    "fshName": "mii-sp-meta-condition-icd10gm-mehrfachcodierung",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-condition-icd10gm-mehrfachcodierung.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-condition-icd10gm-seitenlokalisation.json",
+    "fshName": "mii-sp-meta-condition-icd10gm-seitenlokalisation",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-condition-icd10gm-seitenlokalisation.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-condition-verification-status.json",
+    "fshName": "mii-sp-meta-condition-verification-status",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-onko.fsh",
+    "startLine": 4,
+    "endLine": 19
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-consent-policyuri.json",
+    "fshName": "mii-sp-meta-consent-policyuri",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-consent-policyuri.fsh",
+    "startLine": 1,
+    "endLine": 20
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-consent-provisioncode.json",
+    "fshName": "mii-sp-meta-consent-provisioncode",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-consent-provisioncode.fsh",
+    "startLine": 1,
+    "endLine": 20
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-consent-provisioncodeperiod.json",
+    "fshName": "mii-sp-meta-consent-provisioncodeperiod",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-consent-provisioncodeperiod.fsh",
+    "startLine": 1,
+    "endLine": 22
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-consent-provisioncodetype.json",
+    "fshName": "mii-sp-meta-consent-provisioncodetype",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-consent-provisioncodetype.fsh",
+    "startLine": 1,
+    "endLine": 22
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-consent-provisionperiod.json",
+    "fshName": "mii-sp-meta-consent-provisionperiod",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-consent-provisionperiod.fsh",
+    "startLine": 1,
+    "endLine": 20
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-consent-provisiontype.json",
+    "fshName": "mii-sp-meta-consent-provisiontype",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-consent-provisiontype.fsh",
+    "startLine": 1,
+    "endLine": 20
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-description.json",
+    "fshName": "mii-sp-meta-description",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 21,
+    "endLine": 41
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-device-property-type.json",
+    "fshName": "mii-sp-meta-device-property-type",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-device-property-type.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-devicemetric-source.json",
+    "fshName": "mii-sp-meta-devicemetric-source",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-devicemetric-source.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-diagnostic-report-conclusion.json",
+    "fshName": "mii-sp-meta-diagnostic-report-conclusion",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 111,
+    "endLine": 130
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-diagnosticreport-imagingstudy.json",
+    "fshName": "mii-sp-meta-diagnosticreport-imagingstudy",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-patho.fsh",
+    "startLine": 238,
+    "endLine": 254
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-documentreference-attachment-size.json",
+    "fshName": "mii-sp-meta-documentreference-attachment-size",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-studie.fsh",
+    "startLine": 19,
+    "endLine": 35
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-documentreference-attachment-title.json",
+    "fshName": "mii-sp-meta-documentreference-attachment-title",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-studie.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-dokument-documentreference-attachment-creation.json",
+    "fshName": "mii-sp-meta-dokument-documentreference-attachment-creation",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-dokument.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-dokument-documentreference-doc-status.json",
+    "fshName": "mii-sp-meta-dokument-documentreference-doc-status",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-dokument.fsh",
+    "startLine": 19,
+    "endLine": 35
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-dokument-documentreference-nlp-processing-status.json",
+    "fshName": "mii-sp-meta-dokument-documentreference-nlp-processing-status",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-dokument.fsh",
+    "startLine": 37,
+    "endLine": 53
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-encounter-aufnahmegrund-drittestelle.json",
+    "fshName": "mii-sp-meta-encounter-aufnahmegrund-drittestelle",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-encounter-aufnahmegrund.fsh",
+    "startLine": 18,
+    "endLine": 33
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-encounter-aufnahmegrund-ersteundzweitestelle.json",
+    "fshName": "mii-sp-meta-encounter-aufnahmegrund-ersteundzweitestelle",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-encounter-aufnahmegrund.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-encounter-aufnahmegrund-viertestelle.json",
+    "fshName": "mii-sp-meta-encounter-aufnahmegrund-viertestelle",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-encounter-aufnahmegrund.fsh",
+    "startLine": 35,
+    "endLine": 50
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-encounter-diagnosis-use.json",
+    "fshName": "mii-sp-meta-encounter-diagnosis-use",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-encounter-diagnosis-use.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-encounter-entlassungsgrund-drittestelle.json",
+    "fshName": "mii-sp-meta-encounter-entlassungsgrund-drittestelle",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-encounter-entlassungsgrund.fsh",
+    "startLine": 18,
+    "endLine": 33
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-encounter-entlassungsgrund-ersteundzweitestelle.json",
+    "fshName": "mii-sp-meta-encounter-entlassungsgrund-ersteundzweitestelle",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-encounter-entlassungsgrund.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-encounter-hospitalization-admitsource.json",
+    "fshName": "mii-sp-meta-encounter-hospitalization-admitsource",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-encounter-hospitalization-admitsource.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-encounter-location-physical-type.json",
+    "fshName": "mii-sp-meta-encounter-location-physical-type",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-encounter-location-physical-type.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-encounter-servicetype.json",
+    "fshName": "mii-sp-meta-encounter-servicetype",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-encounter-servicetype.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-evidencevariable-characteristic-description.json",
+    "fshName": "mii-sp-meta-evidencevariable-characteristic-description",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-studie.fsh",
+    "startLine": 37,
+    "endLine": 53
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-familymemberhistory-reasoncode.json",
+    "fshName": "mii-sp-meta-familymemberhistory-reasoncode",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-molgen.fsh",
+    "startLine": 97,
+    "endLine": 113
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-familymemberhistory-reasonreference.json",
+    "fshName": "mii-sp-meta-familymemberhistory-reasonreference",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-molgen.fsh",
+    "startLine": 115,
+    "endLine": 137
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-imaging-study-bildgebungsgrund.json",
+    "fshName": "mii-sp-meta-imaging-study-bildgebungsgrund",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 155,
+    "endLine": 174
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-imaging-study-instance-burned-in-annotation.json",
+    "fshName": "mii-sp-meta-imaging-study-instance-burned-in-annotation",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 1107,
+    "endLine": 1130
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-imaging-study-instance-image-type.json",
+    "fshName": "mii-sp-meta-imaging-study-instance-image-type",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 1082,
+    "endLine": 1105
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-imaging-study-instance-number.json",
+    "fshName": "mii-sp-meta-imaging-study-instance-number",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 1132,
+    "endLine": 1153
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-imaging-study-instance-pixel-x.json",
+    "fshName": "mii-sp-meta-imaging-study-instance-pixel-x",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 1013,
+    "endLine": 1034
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-imaging-study-instance-pixel-y.json",
+    "fshName": "mii-sp-meta-imaging-study-instance-pixel-y",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 1036,
+    "endLine": 1057
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-imaging-study-instance-slice-thickness.json",
+    "fshName": "mii-sp-meta-imaging-study-instance-slice-thickness",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 1059,
+    "endLine": 1080
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-imaging-study-modality-body-site.json",
+    "fshName": "mii-sp-meta-imaging-study-modality-body-site",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 133,
+    "endLine": 153
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-imaging-study-modality.json",
+    "fshName": "mii-sp-meta-imaging-study-modality",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 176,
+    "endLine": 199
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-imaging-study-number-instances.json",
+    "fshName": "mii-sp-meta-imaging-study-number-instances",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 246,
+    "endLine": 267
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-imaging-study-number-series.json",
+    "fshName": "mii-sp-meta-imaging-study-number-series",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 223,
+    "endLine": 244
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-imaging-study-procedure-reference.json",
+    "fshName": "mii-sp-meta-imaging-study-procedure-reference",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 269,
+    "endLine": 286
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-imaging-study-series-contrast-bolus-details.json",
+    "fshName": "mii-sp-meta-imaging-study-series-contrast-bolus-details",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 904,
+    "endLine": 922
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-imaging-study-series-contrast-bolus.json",
+    "fshName": "mii-sp-meta-imaging-study-series-contrast-bolus",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 879,
+    "endLine": 902
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-imaging-study-series-convolutional-kernel.json",
+    "fshName": "mii-sp-meta-imaging-study-series-convolutional-kernel",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 288,
+    "endLine": 307
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-imaging-study-series-ctdi-volume.json",
+    "fshName": "mii-sp-meta-imaging-study-series-ctdi-volume",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 309,
+    "endLine": 330
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-imaging-study-series-echo-time.json",
+    "fshName": "mii-sp-meta-imaging-study-series-echo-time",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 522,
+    "endLine": 543
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-imaging-study-series-exposure-time.json",
+    "fshName": "mii-sp-meta-imaging-study-series-exposure-time",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 332,
+    "endLine": 353
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-imaging-study-series-exposure.json",
+    "fshName": "mii-sp-meta-imaging-study-series-exposure",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 355,
+    "endLine": 376
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-imaging-study-series-flip-angle.json",
+    "fshName": "mii-sp-meta-imaging-study-series-flip-angle",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 591,
+    "endLine": 612
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-imaging-study-series-inversion-time.json",
+    "fshName": "mii-sp-meta-imaging-study-series-inversion-time",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 568,
+    "endLine": 589
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-imaging-study-series-kvp.json",
+    "fshName": "mii-sp-meta-imaging-study-series-kvp",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 401,
+    "endLine": 422
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-imaging-study-series-laterality.json",
+    "fshName": "mii-sp-meta-imaging-study-series-laterality",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 970,
+    "endLine": 993
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-imaging-study-series-magnetic-field-strength.json",
+    "fshName": "mii-sp-meta-imaging-study-series-magnetic-field-strength",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 449,
+    "endLine": 470
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-imaging-study-series-number.json",
+    "fshName": "mii-sp-meta-imaging-study-series-number",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 947,
+    "endLine": 968
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-imaging-study-series-pulse-frequency.json",
+    "fshName": "mii-sp-meta-imaging-study-series-pulse-frequency",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 831,
+    "endLine": 852
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-imaging-study-series-radionuclide-half-life.json",
+    "fshName": "mii-sp-meta-imaging-study-series-radionuclide-half-life",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 735,
+    "endLine": 756
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-imaging-study-series-radionuclide-total-dose.json",
+    "fshName": "mii-sp-meta-imaging-study-series-radionuclide-total-dose",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 712,
+    "endLine": 733
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-imaging-study-series-radionuclide.json",
+    "fshName": "mii-sp-meta-imaging-study-series-radionuclide",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 639,
+    "endLine": 662
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-imaging-study-series-radiopharmaceutical.json",
+    "fshName": "mii-sp-meta-imaging-study-series-radiopharmaceutical",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 614,
+    "endLine": 637
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-imaging-study-series-repetition-time.json",
+    "fshName": "mii-sp-meta-imaging-study-series-repetition-time",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 545,
+    "endLine": 566
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-imaging-study-series-scanning-sequence-variant.json",
+    "fshName": "mii-sp-meta-imaging-study-series-scanning-sequence-variant",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 497,
+    "endLine": 520
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-imaging-study-series-scanning-sequence.json",
+    "fshName": "mii-sp-meta-imaging-study-series-scanning-sequence",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 472,
+    "endLine": 495
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-imaging-study-series-series-type.json",
+    "fshName": "mii-sp-meta-imaging-study-series-series-type",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 758,
+    "endLine": 781
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-imaging-study-series-slice-thickness.json",
+    "fshName": "mii-sp-meta-imaging-study-series-slice-thickness",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 924,
+    "endLine": 945
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-imaging-study-series-started.json",
+    "fshName": "mii-sp-meta-imaging-study-series-started",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 995,
+    "endLine": 1011
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-imaging-study-series-tracer-exposure-time.json",
+    "fshName": "mii-sp-meta-imaging-study-series-tracer-exposure-time",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 664,
+    "endLine": 685
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-imaging-study-series-transducer-frequency.json",
+    "fshName": "mii-sp-meta-imaging-study-series-transducer-frequency",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 808,
+    "endLine": 829
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-imaging-study-series-transducer-type.json",
+    "fshName": "mii-sp-meta-imaging-study-series-transducer-type",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 783,
+    "endLine": 806
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-imaging-study-series-ultrasound-color.json",
+    "fshName": "mii-sp-meta-imaging-study-series-ultrasound-color",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 854,
+    "endLine": 877
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-imaging-study-series-units.json",
+    "fshName": "mii-sp-meta-imaging-study-series-units",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 687,
+    "endLine": 710
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-imaging-study-series-view-position.json",
+    "fshName": "mii-sp-meta-imaging-study-series-view-position",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 424,
+    "endLine": 447
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-imaging-study-series-xray-tube-current.json",
+    "fshName": "mii-sp-meta-imaging-study-series-xray-tube-current",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 378,
+    "endLine": 399
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-library-quellregister.json",
+    "fshName": "mii-sp-meta-library-quellregister",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-studie.fsh",
+    "startLine": 55,
+    "endLine": 71
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-library-relatedartifact-url.json",
+    "fshName": "mii-sp-meta-library-relatedartifact-url",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-studie.fsh",
+    "startLine": 73,
+    "endLine": 89
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-media-partof.json",
+    "fshName": "mii-sp-meta-media-partof",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-patho.fsh",
+    "startLine": 313,
+    "endLine": 328
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-medication-dosage-dosequantity.json",
+    "fshName": "mii-sp-meta-medication-dosage-dosequantity",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-medication.fsh",
+    "startLine": 212,
+    "endLine": 235
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-medication-dosage-doserange-high.json",
+    "fshName": "mii-sp-meta-medication-dosage-doserange-high",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-medication.fsh",
+    "startLine": 165,
+    "endLine": 187
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-medication-dosage-doserange-low.json",
+    "fshName": "mii-sp-meta-medication-dosage-doserange-low",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-medication.fsh",
+    "startLine": 141,
+    "endLine": 163
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-medication-dosage-doserange.json",
+    "fshName": "mii-sp-meta-medication-dosage-doserange",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-medication.fsh",
+    "startLine": 189,
+    "endLine": 210
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-medication-dosage-ratequantity.json",
+    "fshName": "mii-sp-meta-medication-dosage-ratequantity",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-medication.fsh",
+    "startLine": 308,
+    "endLine": 331
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-medication-dosage-raterange-high.json",
+    "fshName": "mii-sp-meta-medication-dosage-raterange-high",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-medication.fsh",
+    "startLine": 261,
+    "endLine": 283
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-medication-dosage-raterange-low.json",
+    "fshName": "mii-sp-meta-medication-dosage-raterange-low",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-medication.fsh",
+    "startLine": 237,
+    "endLine": 259
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-medication-dosage-raterange.json",
+    "fshName": "mii-sp-meta-medication-dosage-raterange",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-medication.fsh",
+    "startLine": 285,
+    "endLine": 306
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-medication-dosage-rateratio-denominator.json",
+    "fshName": "mii-sp-meta-medication-dosage-rateratio-denominator",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-medication.fsh",
+    "startLine": 376,
+    "endLine": 399
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-medication-dosage-rateratio-numerator.json",
+    "fshName": "mii-sp-meta-medication-dosage-rateratio-numerator",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-medication.fsh",
+    "startLine": 351,
+    "endLine": 374
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-medication-dosage-rateratio.json",
+    "fshName": "mii-sp-meta-medication-dosage-rateratio",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-medication.fsh",
+    "startLine": 401,
+    "endLine": 423
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-medication-dosage-route.json",
+    "fshName": "mii-sp-meta-medication-dosage-route",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-medication.fsh",
+    "startLine": 116,
+    "endLine": 139
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-medication-dosage-site.json",
+    "fshName": "mii-sp-meta-medication-dosage-site",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-medication.fsh",
+    "startLine": 91,
+    "endLine": 114
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-medication-ingredient-strength-denominator.json",
+    "fshName": "mii-sp-meta-medication-ingredient-strength-denominator",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-medication.fsh",
+    "startLine": 24,
+    "endLine": 45
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-medication-ingredient-strength-numerator.json",
+    "fshName": "mii-sp-meta-medication-ingredient-strength-numerator",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-medication.fsh",
+    "startLine": 1,
+    "endLine": 22
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-medication-ingredient-strength.json",
+    "fshName": "mii-sp-meta-medication-ingredient-strength",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-medication.fsh",
+    "startLine": 47,
+    "endLine": 67
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-medication-list-mode.json",
+    "fshName": "mii-sp-meta-medication-list-mode",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-medication.fsh",
+    "startLine": 333,
+    "endLine": 349
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-medication-partof.json",
+    "fshName": "mii-sp-meta-medication-partof",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-medication.fsh",
+    "startLine": 425,
+    "endLine": 446
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-medication-reasonreference.json",
+    "fshName": "mii-sp-meta-medication-reasonreference",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-medication.fsh",
+    "startLine": 69,
+    "endLine": 89
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-observation-body-structure.json",
+    "fshName": "mii-sp-meta-observation-body-structure",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 1206,
+    "endLine": 1223
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-observation-bodysite.json",
+    "fshName": "mii-sp-meta-observation-bodysite",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-patho.fsh",
+    "startLine": 126,
+    "endLine": 141
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-observation-component-interpretation.json",
+    "fshName": "mii-sp-meta-observation-component-interpretation",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-observation-component-interpretation.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-observation-encounter.json",
+    "fshName": "mii-sp-meta-observation-encounter",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-onko.fsh",
+    "startLine": 433,
+    "endLine": 448
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-observation-focus.json",
+    "fshName": "mii-sp-meta-observation-focus",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-onko.fsh",
+    "startLine": 416,
+    "endLine": 431
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-observation-hasmember.json",
+    "fshName": "mii-sp-meta-observation-hasmember",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-onko.fsh",
+    "startLine": 63,
+    "endLine": 78
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-observation-interpretation.json",
+    "fshName": "mii-sp-meta-observation-interpretation",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-observation-interpretation.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-observation-issued.json",
+    "fshName": "mii-sp-meta-observation-issued",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-observation-issued.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-observation-referencerange-high.json",
+    "fshName": "mii-sp-meta-observation-referencerange-high",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-observation-referencerange.fsh",
+    "startLine": 41,
+    "endLine": 57
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-observation-referencerange-low.json",
+    "fshName": "mii-sp-meta-observation-referencerange-low",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-observation-referencerange.fsh",
+    "startLine": 23,
+    "endLine": 39
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-observation-referencerange.json",
+    "fshName": "mii-sp-meta-observation-referencerange",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-observation-referencerange.fsh",
+    "startLine": 1,
+    "endLine": 21
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-observation-series-uid.json",
+    "fshName": "mii-sp-meta-observation-series-uid",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 1156,
+    "endLine": 1179
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-observation-sop-instance-uid.json",
+    "fshName": "mii-sp-meta-observation-sop-instance-uid",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 1181,
+    "endLine": 1204
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-observation-value-ratio-denominator.json",
+    "fshName": "mii-sp-meta-observation-value-ratio-denominator",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-patho.fsh",
+    "startLine": 182,
+    "endLine": 198
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-observation-value-ratio-numerator.json",
+    "fshName": "mii-sp-meta-observation-value-ratio-numerator",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-patho.fsh",
+    "startLine": 164,
+    "endLine": 180
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-observation-value-ratio.json",
+    "fshName": "mii-sp-meta-observation-value-ratio",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-patho.fsh",
+    "startLine": 143,
+    "endLine": 162
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-patient-adresszusatz.json",
+    "fshName": "mii-sp-meta-patient-adresszusatz",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-patient-adresszusatz.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-patient-assignerpid.json",
+    "fshName": "mii-sp-meta-patient-assignerpid",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-patient-assignerpid.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-patient-gemeindeschluessel.json",
+    "fshName": "mii-sp-meta-patient-gemeindeschluessel",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-patient-gemeindeschluessel.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-patient-hausnummer.json",
+    "fshName": "mii-sp-meta-patient-hausnummer",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-patient-hausnummer.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-patient-otheramtlich.json",
+    "fshName": "mii-sp-meta-patient-otheramtlich",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-patient-otheramtlich.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-patient-postfach.json",
+    "fshName": "mii-sp-meta-patient-postfach",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-patient-postfach.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-patient-prefix.json",
+    "fshName": "mii-sp-meta-patient-prefix",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-patient-prefix.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-patient-prefixqualifier.json",
+    "fshName": "mii-sp-meta-patient-prefixqualifier",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-patient-prefixqualifier.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-patient-stadtteil.json",
+    "fshName": "mii-sp-meta-patient-stadtteil",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-patient-stadtteil.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-patient-strasse.json",
+    "fshName": "mii-sp-meta-patient-strasse",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-patient-strasse.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-procedure-bodysite.json",
+    "fshName": "mii-sp-meta-procedure-bodysite",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-procedure-bodysite.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-procedure-complication.json",
+    "fshName": "mii-sp-meta-procedure-complication",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-onko.fsh",
+    "startLine": 123,
+    "endLine": 138
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-procedure-dokumentationsdatum.json",
+    "fshName": "mii-sp-meta-procedure-dokumentationsdatum",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-procedure-dokumentationsdatum.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-procedure-durchfuehrungsabsicht.json",
+    "fshName": "mii-sp-meta-procedure-durchfuehrungsabsicht",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-procedure-durchfuehrungsabsicht.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-procedure-ops-seitenlokalisation.json",
+    "fshName": "mii-sp-meta-procedure-ops-seitenlokalisation",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-procedure-seitenlokalisation.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-procedure-outcome.json",
+    "fshName": "mii-sp-meta-procedure-outcome",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-onko.fsh",
+    "startLine": 263,
+    "endLine": 278
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-procedure-recorder.json",
+    "fshName": "mii-sp-meta-procedure-recorder",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-procedure-recorder.fsh",
+    "startLine": 1,
+    "endLine": 21
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-read-proc-report.json",
+    "fshName": "mii-sp-meta-read-proc-report",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 1226,
+    "endLine": 1245
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-reason-reference.json",
+    "fshName": "mii-sp-meta-reason-reference",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 201,
+    "endLine": 221
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-researchstudy-akronym.json",
+    "fshName": "mii-sp-meta-researchstudy-akronym",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-studie.fsh",
+    "startLine": 127,
+    "endLine": 143
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-researchstudy-arm-name.json",
+    "fshName": "mii-sp-meta-researchstudy-arm-name",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-studie.fsh",
+    "startLine": 91,
+    "endLine": 107
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-researchstudy-finanzierung.json",
+    "fshName": "mii-sp-meta-researchstudy-finanzierung",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-studie.fsh",
+    "startLine": 145,
+    "endLine": 161
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-researchstudy-label.json",
+    "fshName": "mii-sp-meta-researchstudy-label",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-studie.fsh",
+    "startLine": 109,
+    "endLine": 125
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-researchstudy-rekrutierungsstand-datum.json",
+    "fshName": "mii-sp-meta-researchstudy-rekrutierungsstand-datum",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-studie.fsh",
+    "startLine": 181,
+    "endLine": 197
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-researchstudy-rekrutierungsstand-genauigkeit.json",
+    "fshName": "mii-sp-meta-researchstudy-rekrutierungsstand-genauigkeit",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-studie.fsh",
+    "startLine": 199,
+    "endLine": 215
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-researchstudy-rekrutierungsstand.json",
+    "fshName": "mii-sp-meta-researchstudy-rekrutierungsstand",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-studie.fsh",
+    "startLine": 217,
+    "endLine": 233
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-researchstudy-rekrutierungsstart.json",
+    "fshName": "mii-sp-meta-researchstudy-rekrutierungsstart",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-studie.fsh",
+    "startLine": 253,
+    "endLine": 269
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-researchstudy-rekrutierungsziel.json",
+    "fshName": "mii-sp-meta-researchstudy-rekrutierungsziel",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-studie.fsh",
+    "startLine": 235,
+    "endLine": 251
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-researchstudy-studienregister.json",
+    "fshName": "mii-sp-meta-researchstudy-studienregister",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-studie.fsh",
+    "startLine": 163,
+    "endLine": 179
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-researchsubject-consent.json",
+    "fshName": "mii-sp-meta-researchsubject-consent",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-researchsubject-consent.fsh",
+    "startLine": 1,
+    "endLine": 18
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-servicerequest-reasoncode.json",
+    "fshName": "mii-sp-meta-servicerequest-reasoncode",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-molgen.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-servicerequest-reasonreference.json",
+    "fshName": "mii-sp-meta-servicerequest-reasonreference",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-molgen.fsh",
+    "startLine": 19,
+    "endLine": 39
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-servicerequest-supportinginfo.json",
+    "fshName": "mii-sp-meta-servicerequest-supportinginfo",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-patho.fsh",
+    "startLine": 218,
+    "endLine": 233
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-specimen-collection-body-site.json",
+    "fshName": "mii-sp-meta-specimen-collection-body-site",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-patho.fsh",
+    "startLine": 38,
+    "endLine": 53
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-specimen-collection-method.json",
+    "fshName": "mii-sp-meta-specimen-collection-method",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-patho.fsh",
+    "startLine": 21,
+    "endLine": 36
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-specimen-container-additive.json",
+    "fshName": "mii-sp-meta-specimen-container-additive",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-patho.fsh",
+    "startLine": 106,
+    "endLine": 121
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-specimen-diagnose.json",
+    "fshName": "mii-sp-meta-specimen-diagnose",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-specimen-diagnose.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-specimen-processing-additive.json",
+    "fshName": "mii-sp-meta-specimen-processing-additive",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-patho.fsh",
+    "startLine": 72,
+    "endLine": 87
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-specimen-processing-date.json",
+    "fshName": "mii-sp-meta-specimen-processing-date",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-patho.fsh",
+    "startLine": 89,
+    "endLine": 104
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-specimen-processing-procedure.json",
+    "fshName": "mii-sp-meta-specimen-processing-procedure",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-patho.fsh",
+    "startLine": 55,
+    "endLine": 70
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-specimen-request.json",
+    "fshName": "mii-sp-meta-specimen-request",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-patho.fsh",
+    "startLine": 4,
+    "endLine": 19
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-supporting-info.json",
+    "fshName": "mii-sp-meta-supporting-info",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-bildgebung.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-task-for.json",
+    "fshName": "mii-sp-meta-task-for",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-molgen.fsh",
+    "startLine": 78,
+    "endLine": 95
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-task-reasoncode.json",
+    "fshName": "mii-sp-meta-task-reasoncode",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-molgen.fsh",
+    "startLine": 41,
+    "endLine": 57
+  },
+  {
+    "outputFile": "SearchParameter-mii-sp-meta-task-reasonreference.json",
+    "fshName": "mii-sp-meta-task-reasonreference",
+    "fshType": "Instance",
+    "fshFile": "searchparameters/mii-sp-meta-molgen.fsh",
+    "startLine": 59,
+    "endLine": 76
+  },
+  {
+    "outputFile": "StructureDefinition-mii-ex-meta-license-codeable.json",
+    "fshName": "MII_EX_Meta_License_Codeable",
+    "fshType": "Extension",
+    "fshFile": "extensions/mii-ex-meta-license-codeable.fsh",
+    "startLine": 1,
+    "endLine": 25
+  },
+  {
+    "outputFile": "StructureDefinition-mii-pr-meta-searchparameter.json",
+    "fshName": "MII_PR_Meta_SearchParameter",
+    "fshType": "Profile",
+    "fshFile": "profiles/MII_PR_Meta_SearchParameter.fsh",
+    "startLine": 1,
+    "endLine": 26
+  }
+]
