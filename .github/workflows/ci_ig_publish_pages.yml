@@ -184,6 +184,38 @@ jobs:
         if: steps.sushi.outcome == 'failure'
         run: echo "::warning::SUSHI reported errors (non-zero exit). Continuing to IG Publisher so qa.json is still produced for QA farming. Inspect qa.json / the SUSHI log for details."
 
+      # IG Publisher 2.3.1+ refuses plain-HTTP / private-network -tx targets
+      # (SSRF hardening): "Refusing to fetch from non-https URL". A
+      # fhir-settings.json allowlists exactly the local NGINX terminology proxy.
+      # A module may ship its own .github/fhir-settings.json (idiom of
+      # kerndatensatzmodul-intensivmedizin); otherwise one is generated for the
+      # configured tx_server. Inert on an https target such as tx.fhir.org.
+      - name: Provide fhir-settings.json for the terminology server
+        id: fhir_settings
+        shell: bash
+        env:
+          TX_SERVER: ${{ inputs.tx_server }}
+        run: |
+          set -euo pipefail
+          if [ -f .github/fhir-settings.json ]; then
+            echo "Using the module's own .github/fhir-settings.json"
+            echo "path=.github/fhir-settings.json" >> "${GITHUB_OUTPUT}"
+            exit 0
+          fi
+          jq -n --arg url "${TX_SERVER}" '{
+            servers: [
+              {
+                url: $url,
+                type: "fhir",
+                authenticationType: "none",
+                allowHttp: true,
+                allowPrivateNetwork: true
+              }
+            ]
+          }' > .ci-fhir-settings.json
+          cat .ci-fhir-settings.json
+          echo "path=.ci-fhir-settings.json" >> "${GITHUB_OUTPUT}"
+
       # IG Publisher is allowed to fail too: it normally exits 0 and writes qa.json
       # even with validation errors, but for QA farming we never want a hard stop
       # to swallow the qa report. Real failures remain visible via the step outcome.
@@ -191,7 +223,7 @@ jobs:
         id: igbuild
         continue-on-error: true
         run: |
-          docker run --rm --network host ${{ steps.cache_mount.outputs.args }} -v $PWD:/workspace -v /usr/bin/dot:/usr/local/bin/dot:ro -v /usr/lib/x86_64-linux-gnu:/usr/host/lib:ro -e LD_LIBRARY_PATH="/usr/host/lib:$LD_LIBRARY_PATH" -w /workspace ghcr.io/gefyra/ig-publisher-with-snapshot-support:latest sh -c "igpublisher -ig ${{ inputs.ig_ini }} -tx ${{ inputs.tx_server }}"
+          docker run --rm --network host ${{ steps.cache_mount.outputs.args }} -v $PWD:/workspace -v /usr/bin/dot:/usr/local/bin/dot:ro -v /usr/lib/x86_64-linux-gnu:/usr/host/lib:ro -e LD_LIBRARY_PATH="/usr/host/lib:$LD_LIBRARY_PATH" -w /workspace ghcr.io/gefyra/ig-publisher-with-snapshot-support:latest sh -c "igpublisher -ig ${{ inputs.ig_ini }} -tx ${{ inputs.tx_server }} -fhir-settings /workspace/${{ steps.fhir_settings.outputs.path }}"
 
       - name: Cleanup NGINX
         if: always()
@@ -236,6 +268,19 @@ jobs:
             output/qa.txt
             output/qa.html
           if-no-files-found: warn
+
+      # Hard gate. SUSHI and the IG Publisher run with continue-on-error so that
+      # qa.json survives a failing build for QA farming - but a build that never
+      # produced a landing page has nothing to publish, and must not report
+      # success. Placed AFTER the QA upload so the report is harvested first.
+      - name: Verify the build produced a site
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ ! -s output/index.html ]; then
+            echo "::error::The IG Publisher produced no output/index.html - nothing to publish. SUSHI: ${{ steps.sushi.outcome }}, IG Publisher: ${{ steps.igbuild.outcome }}. See the logs and the QA artifact."
+            exit 1
+          fi
 
       # Optional, module-local post-processing helpers. Skipped when the module
       # does not ship them (keeps the reusable workflow module-agnostic).
