@@ -113,6 +113,34 @@ The extension is a R4-compatible version of the FHIR for FAIR R4B IG Licence Ter
              <notes>
                <note id="n1">ImplementationGuide.definition.resource.name</note>
              </notes>
+        <source>MII Meta SearchParameter Collection Bundle</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Collection bundle containing the SearchParameter resources published by the MII Meta module.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>MII Meta SearchParameter Transaction Bundle</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Transaction bundle containing the SearchParameter resources published by the MII Meta module for convenient import into a FHIR server.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
         <source>MII PR Meta SearchParameter</source>
         <target></target>
       </trans-unit>
@@ -121,20 +149,6 @@ The extension is a R4-compatible version of the FHIR for FAIR R4B IG Licence Ter
                <note id="n1">ImplementationGuide.definition.resource.description</note>
              </notes>
         <source>Das Profil legt die Mindestanforderungen fest, die SearchParameter-Ressourcen im Kerndatensatz erfüllen müssen.</source>
-        <target></target>
-      </trans-unit>
-      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
-             <notes>
-               <note id="n1">ImplementationGuide.definition.resource.name</note>
-             </notes>
-        <source>mii-exa-meta-searchparam-collection-bundle</source>
-        <target></target>
-      </trans-unit>
-      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
-             <notes>
-               <note id="n1">ImplementationGuide.definition.resource.name</note>
-             </notes>
-        <source>mii-exa-meta-searchparam-transaction-bundle</source>
         <target></target>
       </trans-unit>
       <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">

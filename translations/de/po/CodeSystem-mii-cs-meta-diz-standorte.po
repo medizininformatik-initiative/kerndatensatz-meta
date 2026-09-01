@@ -1,4 +1,29 @@
 
+# Coding.display
+#: Coding.display
+msgid "SemVer"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Package"
+msgstr ""
+
+# ContactDetail.name
+#: ContactDetail.name
+msgid "Taskforce Core Data Set"
+msgstr ""
+
+# ContactDetail.name
+#: ContactDetail.name
+msgid "Interoperability Working Group"
+msgstr ""
+
+# ContactDetail.name
+#: ContactDetail.name
+msgid "National Steering Committee"
+msgstr ""
+
 # CodeSystem.name
 #: CodeSystem.name
 msgid "MII_CS_Meta_DIZ_Standorte"

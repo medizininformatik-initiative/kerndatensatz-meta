@@ -1,4 +1,14 @@
 
+# Coding.display
+#: Coding.display
+msgid "SemVer"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Package"
+msgstr ""
+
 # SearchParameter.name
 #: SearchParameter.name
 msgid "MII_SP_Meta_Condition_ICD10GM_Diagnosesicherheit"

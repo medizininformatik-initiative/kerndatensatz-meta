@@ -1,15 +1,16 @@
 <!-- markdownlint-disable MD041 -->
 
 
-### Version 2027.0.0-ballot.rc1
+### Version 2027.0.0-ballot
 
-**Datum:** 2026-08-31
+**Datum:** 01.09.2026
 
-* **Geändert:** Publikationsworkflow und Narrativ von Simplifier auf den HL7 IG
-  Publisher migriert; die Identitäten der veröffentlichten FHIR-Artefakte
-  wurden beibehalten.
-* **Hinzugefügt:** Ein während der Migration erzeugtes, zu prüfendes
-  CapabilityStatement im Status `draft`.
+* **Added:** Abhängigkeit `hl7.terminology.r4`: `7.1.0`
+* **Added:** Abhängigkeit `hl7.fhir.uv.extensions.r4`: `5.2.0`
+* **Added:** Abhängigkeit `hl7.fhir.uv.crmi`: `2.0.0`
+* **Added:** Die Ressourcen enthalten nun CRMI-basierte
+  Artefaktmetadaten.
+* **Added:** Das Modul enthält nun eine CapabilityStatement-Ressource.
 
 ### Version 2026.0.0
 

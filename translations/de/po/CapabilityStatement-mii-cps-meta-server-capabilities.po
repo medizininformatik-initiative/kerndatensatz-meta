@@ -1,4 +1,34 @@
 
+# Coding.display
+#: Coding.display
+msgid "SemVer"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Package"
+msgstr ""
+
+# ContactDetail.name
+#: ContactDetail.name
+msgid "Taskforce Core Data Set"
+msgstr ""
+
+# ContactDetail.name
+#: ContactDetail.name
+msgid "Interoperability Working Group"
+msgstr ""
+
+# ContactDetail.name
+#: ContactDetail.name
+msgid "National Steering Committee"
+msgstr ""
+
+# CapabilityStatement.name
+#: CapabilityStatement.name
+msgid "MII_CPS_Meta_Server_Capabilities"
+msgstr ""
+
 # CapabilityStatement.title
 #: CapabilityStatement.title
 msgid "MII CapabilityStatement Meta Server Capabilities"
@@ -22,6 +52,11 @@ msgstr ""
 # Coding.display
 #: Coding.display
 msgid "Germany"
+msgstr ""
+
+# CapabilityStatement.purpose
+#: CapabilityStatement.purpose
+msgid "Define the SearchParameter support described by the MII Meta module for implementations of the MII Core Data Set."
 msgstr ""
 
 # CapabilityStatement.rest.documentation

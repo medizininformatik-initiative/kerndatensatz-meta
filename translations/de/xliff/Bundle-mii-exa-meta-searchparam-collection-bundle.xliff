@@ -3,6 +3,20 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
   <file source-language="en" target-language="de" id="Bundle-mii-exa-meta-searchparam-collection-bundle" original="Resource Bundle-mii-exa-meta-searchparam-collection-bundle" datatype="KEYVALUEJSON">
     <body>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-collection-bundle" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>SemVer</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-collection-bundle" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Package</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="Bundle-mii-exa-meta-searchparam-collection-bundle" resname="SearchParameter.name">
              <notes>
                <note id="n1">SearchParameter.name</note>

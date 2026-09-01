@@ -3,6 +3,41 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
   <file source-language="en" target-language="de" id="CodeSystem-mii-cs-meta-diz-standorte" original="Resource CodeSystem-mii-cs-meta-diz-standorte" datatype="KEYVALUEJSON">
     <body>
+      <trans-unit id="CodeSystem-mii-cs-meta-diz-standorte" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>SemVer</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-meta-diz-standorte" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Package</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-meta-diz-standorte" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">ContactDetail.name</note>
+             </notes>
+        <source>Taskforce Core Data Set</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-meta-diz-standorte" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">ContactDetail.name</note>
+             </notes>
+        <source>Interoperability Working Group</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-meta-diz-standorte" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">ContactDetail.name</note>
+             </notes>
+        <source>National Steering Committee</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-mii-cs-meta-diz-standorte" resname="CodeSystem.name">
              <notes>
                <note id="n1">CodeSystem.name</note>

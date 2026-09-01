@@ -4,6 +4,18 @@
   "languages" : [{
     "targetLang" : "de",
     "entries" : [{
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "SemVer",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Package",
+      "target" : null
+    },
+    {
       "id" : "SearchParameter.name",
       "context" : "SearchParameter.name",
       "source" : "MII_SP_Meta_ResearchStudy_Rekrutierungsstart",
