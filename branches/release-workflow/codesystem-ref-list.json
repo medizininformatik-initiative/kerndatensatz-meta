@@ -1,0 +1,14 @@
+{
+  "codeSystems" : [{
+    "url" : "http://hl7.org/fhir/spdx-license",
+    "version" : "84728b7",
+    "status" : "draft",
+    "name" : "SPDXLicense",
+    "title" : "SPDXLicense",
+    "description" : "The license that applies to an Implementation Guide (using an SPDX license Identifiers, or 'not-open-source'). The binding is required but new SPDX license Identifiers are allowed to be used (https://spdx.org/licenses/).",
+    "oids" : ["2.16.840.1.113883.4.642.4.1027"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-spdx-license.html" : "SPDXLicense"
+  }]
+}
