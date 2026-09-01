@@ -76,7 +76,7 @@ on:
       release_ref:
         description: "Immutable release tag to publish"
         required: true
-        default: "v2027.0.0-ballot.rc1"
+        default: "v2027.0.0-ballot.rc3"
         type: string
       publication_date:
         description: "Publication date (YYYY-MM-DD, must match sushi-config.yaml); blank uses the tagged commit date"

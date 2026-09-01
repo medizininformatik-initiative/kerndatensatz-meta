@@ -32,7 +32,7 @@ C7-65e91c	conservation	C7	NICHT PRUEFBAR	Profil-SearchParameter.page.md	C4 could
 F1-093008	fidelity	F1	IDENTISCH	id	mii-ig-meta (identical to the source)	-	-
 F1-bacf3c	fidelity	F1	IDENTISCH	packageId	de.medizininformatikinitiative.kerndatensatz.meta (identical to the source)	-	-
 F1-489e82	fidelity	F1	IDENTISCH	canonical	https://www.medizininformatik-initiative.de/fhir/modul-meta (identical to the source)	-	-
-F1-6cbfea	fidelity	F1	NICHT PRUEFBAR	version	target 2027.0.0-ballot.rc1 vs source 2026.0.0 -- the target version is a human decision (spec 2.1)	-	confirm the target version at Gate A and record it
+F1-6cbfea	fidelity	F1	NICHT PRUEFBAR	version	target 2027.0.0-ballot.rc3 vs source 2026.0.0 -- the target version is a human decision (spec 2.1)	-	confirm the target version at Gate A and record it
 F1-8a3995	fidelity	F1	IDENTISCH	status	active (identical to the source)	-	-
 F1-b5b102	fidelity	F1	IDENTISCH	title	MII IG Meta (identical to the source)	-	-
 F1-7bae24	fidelity	F1	IDENTISCH	license	CC-BY-4.0 (identical to the source)	-	-

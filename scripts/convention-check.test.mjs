@@ -83,7 +83,7 @@ test("M6 accepts a CalVer core with an optional SemVer-style prerelease", () => 
   for (const version of [
     "2027.0.0",
     "2027.0.0-ballot",
-    "2027.0.0-ballot.rc1",
+    "2027.0.0-ballot.rc3",
     "2027.0.0-rc.1",
     "2027.0.0-draft.1",
     "2027.0.0-0",

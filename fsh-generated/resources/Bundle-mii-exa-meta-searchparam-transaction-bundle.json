@@ -11,7 +11,7 @@
           },
           {
             "url": "version",
-            "valueString": "2027.0.0-ballot.rc1"
+            "valueString": "2027.0.0-ballot.rc3"
           },
           {
             "url": "uri",
@@ -46,7 +46,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -97,7 +97,7 @@
         "base": [
           "Patient"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "name": "MII_SP_Meta_Person_Adresszusatz",
         "status": "active",
@@ -132,7 +132,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -183,7 +183,7 @@
         "base": [
           "Patient"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "name": "MII_SP_Meta_Patient_AssignerPID",
         "status": "active",
@@ -218,7 +218,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -272,7 +272,7 @@
         "target": [
           "Consent"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "name": "MII_SP_Meta_ResearchSubject_Consent",
         "status": "active",
@@ -307,7 +307,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -358,7 +358,7 @@
         "base": [
           "Patient"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "name": "MII_SP_Meta_Patient_Gemeindeschluessel",
         "status": "active",
@@ -393,7 +393,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -444,7 +444,7 @@
         "base": [
           "Patient"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "name": "MII_SP_Meta_Patient_Hausnummer",
         "status": "active",
@@ -479,7 +479,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -530,7 +530,7 @@
         "base": [
           "Patient"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "name": "MII_SP_Meta_Patient_OtherAmtlich",
         "status": "active",
@@ -565,7 +565,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -616,7 +616,7 @@
         "base": [
           "Patient"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "name": "MII_SP_Meta_Patient_Postfach",
         "status": "active",
@@ -651,7 +651,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -702,7 +702,7 @@
         "base": [
           "Patient"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "name": "MII_SP_Meta_Patient_Prefix",
         "status": "active",
@@ -737,7 +737,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -788,7 +788,7 @@
         "base": [
           "Patient"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "name": "MII_SP_Meta_Patient_PrefixQualifier",
         "status": "active",
@@ -823,7 +823,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -874,7 +874,7 @@
         "base": [
           "Patient"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "name": "MII_SP_Meta_Patient_Stadtteil",
         "status": "active",
@@ -909,7 +909,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -960,7 +960,7 @@
         "base": [
           "Patient"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "name": "MII_SP_Meta_Patient_Strasse",
         "status": "active",
@@ -995,7 +995,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -1046,7 +1046,7 @@
         "base": [
           "Condition"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "name": "MII_SP_Meta_Condition_ICD10GM_Diagnosesicherheit",
         "status": "active",
@@ -1081,7 +1081,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -1132,7 +1132,7 @@
         "base": [
           "Condition"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "name": "MII_SP_Meta_Condition_ICD10GM_Mehrfachcodierung",
         "status": "active",
@@ -1167,7 +1167,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -1218,7 +1218,7 @@
         "base": [
           "Condition"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "name": "MII_SP_Meta_Condition_ICD10GM_Seitenlokalisation",
         "status": "active",
@@ -1253,7 +1253,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -1304,7 +1304,7 @@
         "base": [
           "Procedure"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "name": "MII_SP_Meta_Procedure_BodySite",
         "status": "active",
@@ -1339,7 +1339,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -1390,7 +1390,7 @@
         "base": [
           "Procedure"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "name": "MII_SP_Meta_Procedure_Dokumentationsdatum",
         "status": "active",
@@ -1425,7 +1425,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -1476,7 +1476,7 @@
         "base": [
           "Procedure"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "name": "MII_SP_Meta_Procedure_Durchfuehrungsabsicht",
         "status": "active",
@@ -1511,7 +1511,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -1562,7 +1562,7 @@
         "base": [
           "Procedure"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "name": "MII_SP_Meta_Procedure_OPS_Seitenlokalisation",
         "status": "active",
@@ -1597,7 +1597,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -1649,7 +1649,7 @@
           "Encounter"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Meta_Encounter_DiagnosisUse",
         "status": "active",
         "experimental": false,
@@ -1683,7 +1683,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -1735,7 +1735,7 @@
           "Encounter"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Meta_Encounter_Hospitalization_AdmitSource",
         "status": "active",
         "experimental": false,
@@ -1769,7 +1769,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -1821,7 +1821,7 @@
           "Encounter"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Meta_Encounter_Location_PhysicalType",
         "status": "active",
         "experimental": false,
@@ -1855,7 +1855,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -1907,7 +1907,7 @@
           "Encounter"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Meta_Encounter_ServiceType",
         "status": "active",
         "experimental": false,
@@ -1941,7 +1941,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -1993,7 +1993,7 @@
           "Encounter"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Meta_Encounter_Aufnahmegrund_ErsteUndZweiteStelle",
         "status": "active",
         "experimental": false,
@@ -2027,7 +2027,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -2079,7 +2079,7 @@
           "Encounter"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Meta_Encounter_Aufnahmegrund_DritteStelle",
         "status": "active",
         "experimental": false,
@@ -2113,7 +2113,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -2165,7 +2165,7 @@
           "Encounter"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Meta_Encounter_Aufnahmegrund_VierteStelle",
         "status": "active",
         "experimental": false,
@@ -2199,7 +2199,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -2251,7 +2251,7 @@
           "Encounter"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Meta_Encounter_Entlassungsgrund_ErsteUndZweiteStelle",
         "status": "active",
         "experimental": false,
@@ -2285,7 +2285,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -2337,7 +2337,7 @@
           "Encounter"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Meta_Encounter_Entlassungsgrund_DritteStelle",
         "status": "active",
         "experimental": false,
@@ -2371,7 +2371,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -2430,7 +2430,7 @@
           "le"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Meta_Medication_Ingredient_Strength_Numerator",
         "status": "active",
         "experimental": false,
@@ -2464,7 +2464,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -2523,7 +2523,7 @@
           "le"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Meta_Medication_Ingredient_Strength_Denominator",
         "status": "active",
         "experimental": false,
@@ -2557,7 +2557,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -2619,7 +2619,7 @@
           }
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Meta_Medication_Ingredient_Strength",
         "status": "active",
         "experimental": false,
@@ -2653,7 +2653,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -2711,7 +2711,7 @@
           "DiagnosticReport"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Meta_Medication_ReasonReference",
         "status": "active",
         "experimental": false,
@@ -2745,7 +2745,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -2806,7 +2806,7 @@
           "above"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Meta_Medication_Dosage_Site",
         "status": "active",
         "experimental": false,
@@ -2840,7 +2840,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -2901,7 +2901,7 @@
           "above"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Meta_Medication_Dosage_Route",
         "status": "active",
         "experimental": false,
@@ -2935,7 +2935,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -2995,7 +2995,7 @@
           "le"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Meta_Medication_Dosage_DoseRangeLow",
         "status": "active",
         "experimental": false,
@@ -3029,7 +3029,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -3089,7 +3089,7 @@
           "le"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Meta_Medication_Dosage_DoseRangeHigh",
         "status": "active",
         "experimental": false,
@@ -3123,7 +3123,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -3186,7 +3186,7 @@
           }
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Meta_Medication_Dosage_DoseRange",
         "status": "active",
         "experimental": false,
@@ -3220,7 +3220,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -3281,7 +3281,7 @@
           "le"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Meta_Medication_Dosage_DoseQuantity",
         "status": "active",
         "experimental": false,
@@ -3315,7 +3315,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -3376,7 +3376,7 @@
           "le"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Meta_Medication_Dosage_RateRatioNumerator",
         "status": "active",
         "experimental": false,
@@ -3410,7 +3410,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -3471,7 +3471,7 @@
           "le"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Meta_Medication_Dosage_RateRatioDenominator",
         "status": "active",
         "experimental": false,
@@ -3505,7 +3505,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -3569,7 +3569,7 @@
           }
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Meta_Medication_Dosage_RateRatio",
         "status": "active",
         "experimental": false,
@@ -3603,7 +3603,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -3663,7 +3663,7 @@
           "le"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Meta_Medication_Dosage_RateRangeLow",
         "status": "active",
         "experimental": false,
@@ -3697,7 +3697,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -3757,7 +3757,7 @@
           "le"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Meta_Medication_Dosage_RateRangeHigh",
         "status": "active",
         "experimental": false,
@@ -3791,7 +3791,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -3854,7 +3854,7 @@
           }
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Meta_Medication_Dosage_RateRange",
         "status": "active",
         "experimental": false,
@@ -3888,7 +3888,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -3949,7 +3949,7 @@
           "le"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Meta_Medication_Dosage_RateQuantity",
         "status": "active",
         "experimental": false,
@@ -3983,7 +3983,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -4035,7 +4035,7 @@
           "List"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Meta_Medication_List_Mode",
         "status": "active",
         "experimental": false,
@@ -4069,7 +4069,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -4129,7 +4129,7 @@
           "Observation"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Meta_Medication_PartOf",
         "status": "active",
         "experimental": false,
@@ -4162,7 +4162,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -4214,7 +4214,7 @@
         "base": [
           "Consent"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "name": "MII_SP_Meta_Consent_PolicyUri",
         "status": "active",
@@ -4251,7 +4251,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -4302,7 +4302,7 @@
         "base": [
           "Consent"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "name": "MII_SP_Meta_Consent_ProvisionCode",
         "status": "active",
@@ -4339,7 +4339,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -4400,7 +4400,7 @@
             "expression": "period"
           }
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "name": "MII_SP_Meta_Consent_ProvisionCodePeriod",
         "status": "active",
@@ -4435,7 +4435,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -4496,7 +4496,7 @@
             "expression": "type"
           }
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "name": "MII_SP_Meta_Consent_ProvisionCodeType",
         "status": "active",
@@ -4531,7 +4531,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -4582,7 +4582,7 @@
         "base": [
           "Consent"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "name": "MII_SP_Meta_Consent_ProvisionPeriod",
         "status": "active",
@@ -4619,7 +4619,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -4670,7 +4670,7 @@
         "base": [
           "Consent"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "name": "MII_SP_Meta_Consent_ProvisionType",
         "status": "active",
@@ -4707,7 +4707,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -4764,7 +4764,7 @@
         "chain": [
           "*"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "name": "MII_SP_Meta_Specimen_Diagnose",
         "date": "2026-09-01",
@@ -4799,7 +4799,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -4851,7 +4851,7 @@
           "Observation"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Meta_Observation_Interpretation",
         "status": "active",
         "experimental": false,
@@ -4885,7 +4885,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -4937,7 +4937,7 @@
           "ServiceRequest"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Meta_ServiceRequest_ReasonCode",
         "status": "active",
         "experimental": false,
@@ -4971,7 +4971,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -5029,7 +5029,7 @@
           "DocumentReference"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Meta_ServiceRequest_ReasonReference",
         "status": "active",
         "experimental": false,
@@ -5063,7 +5063,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -5115,7 +5115,7 @@
           "Task"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Meta_Task_ReasonCode",
         "status": "active",
         "experimental": false,
@@ -5149,7 +5149,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -5204,7 +5204,7 @@
           "Observation"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Meta_Task_ReasonReference",
         "status": "active",
         "experimental": false,
@@ -5238,7 +5238,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -5293,7 +5293,7 @@
           "Patient"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Meta_Task_For",
         "status": "active",
         "experimental": false,
@@ -5327,7 +5327,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -5379,7 +5379,7 @@
           "FamilyMemberHistory"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Meta_FamilyMemberHistory_ReasonCode",
         "status": "active",
         "experimental": false,
@@ -5413,7 +5413,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -5473,7 +5473,7 @@
           "QuestionnaireResponse"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Meta_FamilyMemberHistory_ReasonReference",
         "status": "active",
         "experimental": false,
@@ -5507,7 +5507,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -5558,7 +5558,7 @@
         "base": [
           "Specimen"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "date": "2026-09-01",
         "name": "MII_SP_Meta_Specimen_Request",
@@ -5593,7 +5593,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -5644,7 +5644,7 @@
         "base": [
           "Specimen"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "date": "2026-09-01",
         "name": "MII_SP_Meta_Specimen_Collection_Method",
@@ -5679,7 +5679,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -5730,7 +5730,7 @@
         "base": [
           "Specimen"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "date": "2026-09-01",
         "name": "MII_SP_Meta_Specimen_Processing_Procedure",
@@ -5765,7 +5765,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -5816,7 +5816,7 @@
         "base": [
           "Specimen"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "date": "2026-09-01",
         "name": "MII_SP_Meta_Specimen_Processing_Additive",
@@ -5851,7 +5851,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -5902,7 +5902,7 @@
         "base": [
           "Specimen"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "date": "2026-09-01",
         "name": "MII_SP_Meta_Specimen_Processing_Date",
@@ -5937,7 +5937,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -5988,7 +5988,7 @@
         "base": [
           "Specimen"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "date": "2026-09-01",
         "name": "MII_SP_Meta_Specimen_Container_Additive",
@@ -6023,7 +6023,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -6084,7 +6084,7 @@
             "expression": "denominator"
           }
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "date": "2026-09-01",
         "name": "MII_SP_Meta_Observation_Value_Ratio",
@@ -6119,7 +6119,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -6170,7 +6170,7 @@
         "base": [
           "Observation"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "date": "2026-09-01",
         "name": "MII_SP_Meta_Observation_Value_Ratio_Numerator",
@@ -6205,7 +6205,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -6256,7 +6256,7 @@
         "base": [
           "Observation"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "date": "2026-09-01",
         "name": "MII_SP_Meta_Observation_Value_Ratio_Denominator",
@@ -6291,7 +6291,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -6342,7 +6342,7 @@
         "base": [
           "ServiceRequest"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "date": "2026-09-01",
         "name": "MII_SP_Meta_ServiceRequest_SupportingInfo",
@@ -6377,7 +6377,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -6431,7 +6431,7 @@
         "target": [
           "ImagingStudy"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "date": "2026-09-01",
         "name": "MII_SP_Meta_DiagnosticReport_ImagingStudy",
@@ -6466,7 +6466,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -6517,7 +6517,7 @@
         "base": [
           "Composition"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "date": "2026-09-01",
         "name": "MII_SP_Meta_Composition_Attester_Mode",
@@ -6552,7 +6552,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -6603,7 +6603,7 @@
         "base": [
           "Composition"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "date": "2026-09-01",
         "name": "MII_SP_Meta_Composition_Custodian",
@@ -6638,7 +6638,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -6689,7 +6689,7 @@
         "base": [
           "Composition"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "date": "2026-09-01",
         "name": "MII_SP_Meta_Composition_RelatesTo_Code",
@@ -6724,7 +6724,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -6775,7 +6775,7 @@
         "base": [
           "Media"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "date": "2026-09-01",
         "name": "MII_SP_Meta_Media_PartOf",
@@ -6810,7 +6810,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -6862,7 +6862,7 @@
           "Device"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Meta_Device_Property_Type",
         "status": "active",
         "experimental": false,
@@ -6896,7 +6896,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -6948,7 +6948,7 @@
           "DeviceMetric"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Meta_DeviceMetric_Source",
         "status": "active",
         "experimental": false,
@@ -6982,7 +6982,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -7033,7 +7033,7 @@
         "base": [
           "Observation"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "date": "2026-09-01",
         "name": "MII_SP_Meta_Observation_BodySite",
@@ -7068,7 +7068,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -7120,7 +7120,7 @@
           "Observation"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Meta_Observation_Component_Interpretation",
         "status": "active",
         "experimental": false,
@@ -7154,7 +7154,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -7216,7 +7216,7 @@
           }
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Meta_Observation_ReferenceRange",
         "status": "active",
         "experimental": false,
@@ -7250,7 +7250,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -7302,7 +7302,7 @@
           "Observation"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Meta_Observation_ReferenceRange_Low",
         "status": "active",
         "experimental": false,
@@ -7336,7 +7336,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -7388,7 +7388,7 @@
           "Observation"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Meta_Observation_ReferenceRange_High",
         "status": "active",
         "experimental": false,
@@ -7422,7 +7422,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -7474,7 +7474,7 @@
           "Observation"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Meta_Observation_Issued",
         "status": "active",
         "experimental": false,
@@ -7508,7 +7508,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -7566,7 +7566,7 @@
           "Patient"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Meta_Procedure_Recorder",
         "status": "active",
         "experimental": false,
@@ -7600,7 +7600,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -7651,7 +7651,7 @@
         "base": [
           "DocumentReference"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "name": "MII_SP_Meta_DocumentReference_Attachment_Title",
         "status": "active",
@@ -7686,7 +7686,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -7737,7 +7737,7 @@
         "base": [
           "DocumentReference"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "name": "MII_SP_Meta_DocumentReference_Attachment_Size",
         "status": "active",
@@ -7772,7 +7772,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -7823,7 +7823,7 @@
         "base": [
           "EvidenceVariable"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "name": "MII_SP_Meta_EvidenceVariable_Characteristic_Description",
         "status": "active",
@@ -7858,7 +7858,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -7909,7 +7909,7 @@
         "base": [
           "Library"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "name": "MII_SP_Meta_Library_Quellregister",
         "status": "active",
@@ -7944,7 +7944,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -7995,7 +7995,7 @@
         "base": [
           "Library"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "name": "MII_SP_Meta_Library_RelatedArtifact_Url",
         "status": "active",
@@ -8030,7 +8030,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -8081,7 +8081,7 @@
         "base": [
           "ResearchStudy"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "name": "MII_SP_Meta_ResearchStudy_Arm_Name",
         "status": "active",
@@ -8116,7 +8116,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -8167,7 +8167,7 @@
         "base": [
           "ResearchStudy"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "name": "MII_SP_Meta_ResearchStudy_Label",
         "status": "active",
@@ -8202,7 +8202,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -8253,7 +8253,7 @@
         "base": [
           "ResearchStudy"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "name": "MII_SP_Meta_ResearchStudy_Akronym",
         "status": "active",
@@ -8288,7 +8288,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -8339,7 +8339,7 @@
         "base": [
           "ResearchStudy"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "name": "MII_SP_Meta_ResearchStudy_Finanzierung",
         "status": "active",
@@ -8374,7 +8374,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -8425,7 +8425,7 @@
         "base": [
           "ResearchStudy"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "name": "MII_SP_Meta_ResearchStudy_Studienregister",
         "status": "active",
@@ -8460,7 +8460,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -8511,7 +8511,7 @@
         "base": [
           "ResearchStudy"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "name": "MII_SP_Meta_ResearchStudy_RekrutierungsstandDatum",
         "status": "active",
@@ -8546,7 +8546,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -8597,7 +8597,7 @@
         "base": [
           "ResearchStudy"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "name": "MII_SP_Meta_ResearchStudy_RekrutierungsstandGenauigkeit",
         "status": "active",
@@ -8632,7 +8632,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -8683,7 +8683,7 @@
         "base": [
           "ResearchStudy"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "name": "MII_SP_Meta_ResearchStudy_Rekrutierungsstand",
         "status": "active",
@@ -8718,7 +8718,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -8769,7 +8769,7 @@
         "base": [
           "ResearchStudy"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "name": "MII_SP_Meta_ResearchStudy_Rekrutierungsziel",
         "status": "active",
@@ -8804,7 +8804,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -8855,7 +8855,7 @@
         "base": [
           "ResearchStudy"
         ],
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "publisher": "Medizininformatik Initiative",
         "name": "MII_SP_Meta_ResearchStudy_Rekrutierungsstart",
         "status": "active",
@@ -8890,7 +8890,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -8942,7 +8942,7 @@
           "Condition"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "experimental": false,
         "date": "2026-09-01",
         "name": "MII_SP_Meta_Condition_Verification_Status",
@@ -8976,7 +8976,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -9031,7 +9031,7 @@
           "List"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "experimental": false,
         "date": "2026-09-01",
         "name": "MII_SP_Meta_Condition_Evidence_Detail",
@@ -9065,7 +9065,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -9117,7 +9117,7 @@
           "Observation"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "experimental": false,
         "date": "2026-09-01",
         "name": "MII_SP_Meta_Observation_hasMember",
@@ -9151,7 +9151,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -9203,7 +9203,7 @@
           "Procedure"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "experimental": false,
         "date": "2026-09-01",
         "name": "MII_SP_Meta_Procedure_Complication",
@@ -9237,7 +9237,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -9289,7 +9289,7 @@
           "Procedure"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "date": "2026-09-01",
         "experimental": false,
         "name": "MII_SP_Meta_Procedure_Outcome",
@@ -9323,7 +9323,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -9375,7 +9375,7 @@
           "AdverseEvent"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "experimental": false,
         "date": "2026-09-01",
         "name": "MII_SP_Meta_AdverseEvent_SuspectEntity_Instance",
@@ -9409,7 +9409,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -9461,7 +9461,7 @@
           "AdverseEvent"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "experimental": false,
         "date": "2026-09-01",
         "name": "MII_SP_Meta_AdverseEvent_Encounter",
@@ -9495,7 +9495,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -9547,7 +9547,7 @@
           "CarePlan"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "experimental": false,
         "date": "2026-09-01",
         "name": "MII_SP_Meta_CarePlan_Created",
@@ -9581,7 +9581,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -9633,7 +9633,7 @@
           "CarePlan"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "experimental": false,
         "date": "2026-09-01",
         "name": "MII_SP_Meta_CarePlan_Contributor",
@@ -9667,7 +9667,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -9719,7 +9719,7 @@
           "CarePlan"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "experimental": false,
         "date": "2026-09-01",
         "name": "MII_SP_Meta_CarePlan_Addresses",
@@ -9753,7 +9753,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -9805,7 +9805,7 @@
           "Observation"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "experimental": false,
         "date": "2026-09-01",
         "name": "MII_SP_Meta_Observation_Focus",
@@ -9839,7 +9839,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -9891,7 +9891,7 @@
           "Observation"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "experimental": false,
         "date": "2026-09-01",
         "name": "MII_SP_Meta_Observation_Encounter",
@@ -9925,7 +9925,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -9981,7 +9981,7 @@
           "DiagnosticReport"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Supporting_Info",
         "status": "active",
         "experimental": false,
@@ -10015,7 +10015,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -10073,7 +10073,7 @@
           "missing"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Description",
         "status": "active",
         "experimental": false,
@@ -10107,7 +10107,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -10168,7 +10168,7 @@
           "missing"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Koerperstruktur_Location_Qualifier",
         "status": "active",
         "experimental": false,
@@ -10202,7 +10202,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -10259,7 +10259,7 @@
           "missing"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Composition_Section_Title",
         "status": "active",
         "experimental": false,
@@ -10293,7 +10293,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -10348,7 +10348,7 @@
           "Practitioner"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Composition_Section_Author",
         "status": "active",
         "experimental": false,
@@ -10382,7 +10382,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -10439,7 +10439,7 @@
           "missing"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Diagnostic_Report_Conclusion",
         "status": "active",
         "experimental": false,
@@ -10473,7 +10473,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -10535,7 +10535,7 @@
           }
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Imaging_Study_Modality_Body_Site",
         "status": "active",
         "experimental": false,
@@ -10569,7 +10569,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -10626,7 +10626,7 @@
           "missing"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Imaging_Study_Bildgebungsgrund",
         "status": "active",
         "experimental": false,
@@ -10660,7 +10660,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -10721,7 +10721,7 @@
           "missing"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Imaging_Study_Modality",
         "status": "active",
         "experimental": false,
@@ -10755,7 +10755,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -10813,7 +10813,7 @@
           "DocumentReference"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Reason_Reference",
         "status": "active",
         "experimental": false,
@@ -10847,7 +10847,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -10906,7 +10906,7 @@
           "le"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Imaging_Study_Number_Series",
         "status": "active",
         "experimental": false,
@@ -10940,7 +10940,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -10999,7 +10999,7 @@
           "le"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Imaging_Study_Number_Instances",
         "status": "active",
         "experimental": false,
@@ -11033,7 +11033,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -11088,7 +11088,7 @@
           "Procedure"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Imaging_Study_Procedure_Reference",
         "status": "active",
         "experimental": false,
@@ -11122,7 +11122,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -11181,7 +11181,7 @@
           "le"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Imaging_Study_Series_CTDI_Volume",
         "status": "active",
         "experimental": false,
@@ -11215,7 +11215,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -11274,7 +11274,7 @@
           "le"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Imaging_Study_Series_Exposure_Time",
         "status": "active",
         "experimental": false,
@@ -11308,7 +11308,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -11367,7 +11367,7 @@
           "le"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Imaging_Study_Series_Exposure",
         "status": "active",
         "experimental": false,
@@ -11401,7 +11401,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -11460,7 +11460,7 @@
           "le"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Imaging_Study_Series_xRay_Tube_Current",
         "status": "active",
         "experimental": false,
@@ -11494,7 +11494,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -11553,7 +11553,7 @@
           "le"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Imaging_Study_Series_KVP",
         "status": "active",
         "experimental": false,
@@ -11587,7 +11587,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -11648,7 +11648,7 @@
           "missing"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Imaging_Study_Series_View_Position",
         "status": "active",
         "experimental": false,
@@ -11682,7 +11682,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -11741,7 +11741,7 @@
           "le"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Imaging_Study_Series_Magnetic_Field_Strength",
         "status": "active",
         "experimental": false,
@@ -11775,7 +11775,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -11836,7 +11836,7 @@
           "missing"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Imaging_Study_Series_Scanning_Sequence",
         "status": "active",
         "experimental": false,
@@ -11870,7 +11870,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -11931,7 +11931,7 @@
           "missing"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Imaging_Study_Series_Scanning_Sequence_Variant",
         "status": "active",
         "experimental": false,
@@ -11965,7 +11965,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -12024,7 +12024,7 @@
           "le"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Imaging_Study_Series_Echo_Time",
         "status": "active",
         "experimental": false,
@@ -12058,7 +12058,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -12117,7 +12117,7 @@
           "le"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Imaging_Study_Series_Repetition_Time",
         "status": "active",
         "experimental": false,
@@ -12151,7 +12151,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -12210,7 +12210,7 @@
           "le"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Imaging_Study_Series_Inversion_Time",
         "status": "active",
         "experimental": false,
@@ -12244,7 +12244,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -12303,7 +12303,7 @@
           "le"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Imaging_Study_Series_Flip_Angle",
         "status": "active",
         "experimental": false,
@@ -12337,7 +12337,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -12398,7 +12398,7 @@
           "missing"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Imaging_Study_Radiopharmaceutical",
         "status": "active",
         "experimental": false,
@@ -12432,7 +12432,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -12493,7 +12493,7 @@
           "missing"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Imaging_Study_Radionuclide",
         "status": "active",
         "experimental": false,
@@ -12527,7 +12527,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -12586,7 +12586,7 @@
           "le"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Imaging_Study_Series_Tracer_Exposure_Time",
         "status": "active",
         "experimental": false,
@@ -12620,7 +12620,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -12681,7 +12681,7 @@
           "missing"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Imaging_Study_Series_Units",
         "status": "active",
         "experimental": false,
@@ -12715,7 +12715,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -12774,7 +12774,7 @@
           "le"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Imaging_Study_Series_Radionuclide_Total_Dose",
         "status": "active",
         "experimental": false,
@@ -12808,7 +12808,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -12867,7 +12867,7 @@
           "le"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Imaging_Study_Series_Radionuclide_Half_Life",
         "status": "active",
         "experimental": false,
@@ -12901,7 +12901,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -12962,7 +12962,7 @@
           "missing"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Imaging_Study_Series_Series_Type",
         "status": "active",
         "experimental": false,
@@ -12996,7 +12996,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -13057,7 +13057,7 @@
           "missing"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Imaging_Study_Series_Transducer_Type",
         "status": "active",
         "experimental": false,
@@ -13091,7 +13091,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -13150,7 +13150,7 @@
           "le"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Imaging_Study_Series_Transducer_Frequency",
         "status": "active",
         "experimental": false,
@@ -13184,7 +13184,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -13243,7 +13243,7 @@
           "le"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Imaging_Study_Series_Pulse_Frequency",
         "status": "active",
         "experimental": false,
@@ -13277,7 +13277,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -13338,7 +13338,7 @@
           "missing"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Imaging_Study_Series_Ultrasound_Color",
         "status": "active",
         "experimental": false,
@@ -13372,7 +13372,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -13433,7 +13433,7 @@
           "missing"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Imaging_Study_Series_Contrast_Bolus",
         "status": "active",
         "experimental": false,
@@ -13467,7 +13467,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -13523,7 +13523,7 @@
           "MedicationAdministration"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Imaging_Study_Contrast_Bolus_Details",
         "status": "active",
         "experimental": false,
@@ -13557,7 +13557,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -13616,7 +13616,7 @@
           "le"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Imaging_Study_Series_Number",
         "status": "active",
         "experimental": false,
@@ -13650,7 +13650,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -13711,7 +13711,7 @@
           "missing"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Imaging_Study_Series_Laterality",
         "status": "active",
         "experimental": false,
@@ -13745,7 +13745,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -13797,7 +13797,7 @@
           "ImagingStudy"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Imaging_Study_Series_Started",
         "status": "active",
         "experimental": false,
@@ -13831,7 +13831,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -13890,7 +13890,7 @@
           "le"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Imaging_Study_Instance_Pixel_Spacing_X",
         "status": "active",
         "experimental": false,
@@ -13924,7 +13924,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -13983,7 +13983,7 @@
           "le"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Imaging_Study_Instance_Pixel_Spacing_Y",
         "status": "active",
         "experimental": false,
@@ -14017,7 +14017,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -14076,7 +14076,7 @@
           "le"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Imaging_Study_Instance_Slice_Thickness",
         "status": "active",
         "experimental": false,
@@ -14110,7 +14110,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -14171,7 +14171,7 @@
           "missing"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Imaging_Study_Instance_Image_Type",
         "status": "active",
         "experimental": false,
@@ -14205,7 +14205,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -14266,7 +14266,7 @@
           "missing"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Imaging_Study_Instance_Burned_In_Annotation",
         "status": "active",
         "experimental": false,
@@ -14300,7 +14300,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -14359,7 +14359,7 @@
           "le"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Imaging_Study_Instance_Number",
         "status": "active",
         "experimental": false,
@@ -14393,7 +14393,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -14454,7 +14454,7 @@
           "missing"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Observation_Series_UID",
         "status": "active",
         "experimental": false,
@@ -14488,7 +14488,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -14549,7 +14549,7 @@
           "missing"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Observation_SOP_Instance_UID",
         "status": "active",
         "experimental": false,
@@ -14583,7 +14583,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -14638,7 +14638,7 @@
           "BodyStructure"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Observation_Body_Structure",
         "status": "active",
         "experimental": false,
@@ -14672,7 +14672,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -14729,7 +14729,7 @@
           "DocumentReference"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Read_Procedure_Report",
         "status": "active",
         "experimental": false,
@@ -14763,7 +14763,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -14820,7 +14820,7 @@
           "missing"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Imaging_Study_Series_ConvolutionalKernel",
         "status": "active",
         "experimental": false,
@@ -14854,7 +14854,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -14913,7 +14913,7 @@
           "le"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Bildgebung_Imaging_Study_Series_Slice_Thickness",
         "status": "active",
         "experimental": false,
@@ -14947,7 +14947,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -14999,7 +14999,7 @@
           "DocumentReference"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Meta_DocumentReference_Attachment_Creation",
         "status": "active",
         "description": "Suchparameter für DocumentReference.content.attachment.creation",
@@ -15033,7 +15033,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -15085,7 +15085,7 @@
           "DocumentReference"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Meta_DocumentReference_Document_Status",
         "status": "active",
         "description": "Suchparameter für DocumentReference.docStatus",
@@ -15119,7 +15119,7 @@
                 },
                 {
                   "url": "version",
-                  "valueString": "2027.0.0-ballot.rc1"
+                  "valueString": "2027.0.0-ballot.rc3"
                 },
                 {
                   "url": "uri",
@@ -15171,7 +15171,7 @@
           "DocumentReference"
         ],
         "publisher": "Medizininformatik Initiative",
-        "version": "2027.0.0-ballot.rc1",
+        "version": "2027.0.0-ballot.rc3",
         "name": "MII_SP_Meta_DocumentReference_NLP_Processing_Status",
         "status": "active",
         "description": "Suchparameter für DocumentReference.extension[nlp-processing-status].valueCodeableConcept",

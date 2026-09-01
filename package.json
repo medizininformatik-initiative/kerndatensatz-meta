@@ -1,6 +1,6 @@
 {
   "name": "de.medizininformatikinitiative.kerndatensatz.meta",
-  "version": "2027.0.0-ballot.rc1",
+  "version": "2027.0.0-ballot.rc3",
   "type": "IG",
   "description": "The Meta module contains foundational artifacts used by all other MII implementation guides.",
   "author": "juliansass",

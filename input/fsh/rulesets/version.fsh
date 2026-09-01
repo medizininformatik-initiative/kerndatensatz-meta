@@ -1,11 +1,11 @@
 // switch version of all conformance resources here
 RuleSet: Version
-* version = "2027.0.0-ballot.rc1"
+* version = "2027.0.0-ballot.rc3"
 * extension[+].url = $artifact-versionAlgorithm
 * extension[=].valueCoding = $version-algorithm#semver "SemVer"
 
 RuleSet: PR_CS_VS_Version
-* ^version = "2027.0.0-ballot.rc1"
+* ^version = "2027.0.0-ballot.rc3"
 * ^extension[+].url = $artifact-versionAlgorithm
 * ^extension[=].valueCoding = $version-algorithm#semver "SemVer"
 
@@ -18,7 +18,7 @@ RuleSet: CRMIPackageSource
 * meta.extension[=].extension[+].url = "packageId"
 * meta.extension[=].extension[=].valueId = "de.medizininformatikinitiative.kerndatensatz.meta"
 * meta.extension[=].extension[+].url = "version"
-* meta.extension[=].extension[=].valueString = "2027.0.0-ballot.rc1"
+* meta.extension[=].extension[=].valueString = "2027.0.0-ballot.rc3"
 * meta.extension[=].extension[+].url = "uri"
 * meta.extension[=].extension[=].valueUri = "https://www.medizininformatik-initiative.de/fhir/modul-meta"
 
@@ -27,7 +27,7 @@ RuleSet: CRMIPackageSourceDefinitionalResource
 * ^meta.extension[=].extension[+].url = "packageId"
 * ^meta.extension[=].extension[=].valueId = "de.medizininformatikinitiative.kerndatensatz.meta"
 * ^meta.extension[=].extension[+].url = "version"
-* ^meta.extension[=].extension[=].valueString = "2027.0.0-ballot.rc1"
+* ^meta.extension[=].extension[=].valueString = "2027.0.0-ballot.rc3"
 * ^meta.extension[=].extension[+].url = "uri"
 * ^meta.extension[=].extension[=].valueUri = "https://www.medizininformatik-initiative.de/fhir/modul-meta"
 

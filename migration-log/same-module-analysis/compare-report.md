@@ -15,7 +15,7 @@ _Migrations-/Zustandstreue eines EINEN Moduls über mehrere Stände: Identitäts
 | packageId | de.medizininformatikinitiative.kerndatensatz.meta | de.medizininformatikinitiative.kerndatensatz.meta | ✓ identisch |
 | name | MII_IG_Meta | MII_IG_Meta | ✓ identisch |
 | title | MII IG Meta | MII IG Meta | ✓ identisch |
-| version | 2026.0.0 | 2027.0.0-ballot.rc1 | ⚠ DIVERGIERT |
+| version | 2026.0.0 | 2027.0.0-ballot.rc3 | ⚠ DIVERGIERT |
 | status | active | active | ✓ identisch |
 | fhirVersion | 4.0.1 | 4.0.1 | ✓ identisch |
 | license | CC-BY-4.0 | CC-BY-4.0 | ✓ identisch |

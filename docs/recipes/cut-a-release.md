@@ -53,7 +53,7 @@ publication ready for a human to promote. **No SemVer tag, no Release Please.**
 
 | Symptom | Cause | Fix |
 | --- | --- | --- |
-| Workflow did not trigger | Tag does not match `vYYYY.n.n` with an optional prerelease suffix | Use a tag such as `v2027.0.0` or `v2027.0.0-ballot.rc1` |
+| Workflow did not trigger | Tag does not match `vYYYY.n.n` with an optional prerelease suffix | Use a tag such as `v2027.0.0` or `v2027.0.0-ballot.rc3` |
 | `convention-check` red on the release branch: M8 | The scaffold's demonstration page is still present | Remove it — the check's message lists every file; the list is also in [render existing artifacts](render-existing-artifacts.md) step 4 |
 | `convention-check` red on the release branch: M9 | Optional (0..1) pages still carry their `OPTIONAL-PAGE` banner | Decide each one — keep (delete the banner in both languages) or remove per [optional-pages.md](../optional-pages.md) |
 | `convention-check` red on the release branch: M11 | A scaffold `ILLUSTRATIVE-EXAMPLE` block is still present (the *Person* example on `security-and-privacy.md`) | Delete the example box + its marker comment in both languages; write the module's own aspects or adopt the section's default text |

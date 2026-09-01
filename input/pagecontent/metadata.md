@@ -16,7 +16,7 @@ metadata:
 | Approval date | `2026-08-31` |
 | Effective period | starts in `2027` |
 | Knowledge capability | `shareable`, `publishable` |
-| Package source | `de.medizininformatikinitiative.kerndatensatz.meta` at `2027.0.0-ballot.rc1` |
+| Package source | `de.medizininformatikinitiative.kerndatensatz.meta` at `2027.0.0-ballot.rc3` |
 | Version algorithm | `semver`, applied to the SemVer-compatible CalVer representation |
 | Purpose and usage | computable publication, discovery, validation, versioning, and consistent application of the Meta module |
 | Topic | NCI Thesaurus `C80260` |
