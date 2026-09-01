@@ -38,6 +38,20 @@ on:
         required: false
         type: string
         default: main
+      preload_package_cache:
+        description: >-
+          Seed the FHIR package cache from the fhir-package-store (cache-store branch) and mount it
+          into the SUSHI / IG Publisher containers. Needed for modules whose dependencies ship WITHOUT
+          snapshots (e.g. de.gematik.isik) - SUSHI cannot import such parents and aborts. OFF by default
+          so modules that resolve everything from packages.fhir.org keep the fast path.
+        required: false
+        type: boolean
+        default: false
+      package_cache_ref:
+        description: Branch of medizininformatik-initiative/fhir-package-store carrying the prebuilt .fhir cache.
+        required: false
+        type: string
+        default: cache-store
     secrets:
       CDS_DEV_CLIENT_CERT:
         description: Base64 client certificate for the CDS dev terminology server (mTLS).
@@ -70,6 +84,45 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: ${{ inputs.ref }}
+
+      # Some dependencies are published WITHOUT snapshots (measured 2026-09-01:
+      # de.gematik.isik#6.0.0 ships 0 of 326 StructureDefinitions with a snapshot).
+      # SUSHI cannot import such a parent and aborts, which also takes the IG
+      # Publisher down. The MII-wide remedy is the fhir-package-store: its
+      # cache-store branch carries a .fhir cache including snapshot rebuilds.
+      # Same pattern as kerndatensatzmodul-intensivmedizin/ig-publisher.yml.
+      - name: Load FHIR package cache from the fhir-package-store
+        if: ${{ inputs.preload_package_cache }}
+        uses: actions/checkout@v4
+        with:
+          repository: medizininformatik-initiative/fhir-package-store
+          ref: ${{ inputs.package_cache_ref }}
+          path: .fhir-package-store
+          persist-credentials: false
+
+      - name: Move the package cache into ~/.fhir
+        if: ${{ inputs.preload_package_cache }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p ~/.fhir/packages
+          cp -r .fhir-package-store/packages/* ~/.fhir/packages/
+          rm -rf .fhir-package-store
+          ls ~/.fhir/packages | head -20
+
+      # The build steps run in a container, so a seeded runner cache only takes
+      # effect when it is mounted. Empty when the preload is off, so the image
+      # keeps using its own /root/.fhir.
+      - name: Determine the package cache mount
+        id: cache_mount
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ "${{ inputs.preload_package_cache }}" = "true" ]; then
+            echo "args=-v ${HOME}/.fhir:/root/.fhir" >> "${GITHUB_OUTPUT}"
+          else
+            echo "args=" >> "${GITHUB_OUTPUT}"
+          fi
 
       - name: Install Graphviz
         run: |
@@ -125,7 +178,7 @@ jobs:
       - name: Run SUSHI
         id: sushi
         continue-on-error: true
-        run: docker run --rm --network host -v $PWD:/workspace -v /usr/bin/dot:/usr/local/bin/dot:ro -v /usr/lib/x86_64-linux-gnu:/usr/host/lib:ro -e LD_LIBRARY_PATH="/usr/host/lib:$LD_LIBRARY_PATH" -w /workspace ghcr.io/gefyra/ig-publisher-with-snapshot-support:latest sushi .
+        run: docker run --rm --network host ${{ steps.cache_mount.outputs.args }} -v $PWD:/workspace -v /usr/bin/dot:/usr/local/bin/dot:ro -v /usr/lib/x86_64-linux-gnu:/usr/host/lib:ro -e LD_LIBRARY_PATH="/usr/host/lib:$LD_LIBRARY_PATH" -w /workspace ghcr.io/gefyra/ig-publisher-with-snapshot-support:latest sushi .
 
       - name: Note SUSHI result
         if: steps.sushi.outcome == 'failure'
@@ -138,7 +191,7 @@ jobs:
         id: igbuild
         continue-on-error: true
         run: |
-          docker run --rm --network host -v $PWD:/workspace -v /usr/bin/dot:/usr/local/bin/dot:ro -v /usr/lib/x86_64-linux-gnu:/usr/host/lib:ro -e LD_LIBRARY_PATH="/usr/host/lib:$LD_LIBRARY_PATH" -w /workspace ghcr.io/gefyra/ig-publisher-with-snapshot-support:latest sh -c "igpublisher -ig ${{ inputs.ig_ini }} -tx ${{ inputs.tx_server }}"
+          docker run --rm --network host ${{ steps.cache_mount.outputs.args }} -v $PWD:/workspace -v /usr/bin/dot:/usr/local/bin/dot:ro -v /usr/lib/x86_64-linux-gnu:/usr/host/lib:ro -e LD_LIBRARY_PATH="/usr/host/lib:$LD_LIBRARY_PATH" -w /workspace ghcr.io/gefyra/ig-publisher-with-snapshot-support:latest sh -c "igpublisher -ig ${{ inputs.ig_ini }} -tx ${{ inputs.tx_server }}"
 
       - name: Cleanup NGINX
         if: always()
