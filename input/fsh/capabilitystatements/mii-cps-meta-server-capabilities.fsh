@@ -10,9 +10,23 @@ Title: "MII CapabilityStatement Meta Server Capabilities"
 Description: "Migration-generated proposal describing the resource types and search parameters published by the Meta module. Review before use as a normative capability statement."
 * insert Version
 * insert SP_Publisher
+* insert LicenseCodeableCCBY40Instance
+* insert CRMIShareableCapabilityStatement
+* insert CRMIPublishableCapabilityStatement
+* insert CRMIKnowledgeCapabilitiesCapabilityStatement
+* insert CRMIVersionPolicyStrictInstance
+* insert CRMIPackageSource
+* insert CRMIArtifactUsageDraftMetaCapabilityStatement
+* insert CRMIApprovalDateInstance(2026-08-31)
+* insert CRMIResourceEffectivePeriodInstance
+* insert CRMIArtifactTopicInstance(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, C80260)
+* insert CRMIArtifactContributorsInstance
+* name = "MII_CPS_Meta_Server_Capabilities"
 * status = #draft
 * experimental = true
 * date = "2026-08-31"
+* jurisdiction = urn:iso:std:iso:3166#DE "Germany"
+* purpose = "Define the SearchParameter support described by the MII Meta module for implementations of the MII Core Data Set."
 * kind = #requirements
 * fhirVersion = #4.0.1
 * format[+] = #json

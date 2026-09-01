@@ -96,6 +96,30 @@
     {
       "id" : "ImplementationGuide.definition.resource.name",
       "context" : "ImplementationGuide.definition.resource.name",
+      "source" : "MII Meta SearchParameter Collection Bundle",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.description",
+      "context" : "ImplementationGuide.definition.resource.description",
+      "source" : "Collection bundle containing the SearchParameter resources published by the MII Meta module.",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.name",
+      "context" : "ImplementationGuide.definition.resource.name",
+      "source" : "MII Meta SearchParameter Transaction Bundle",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.description",
+      "context" : "ImplementationGuide.definition.resource.description",
+      "source" : "Transaction bundle containing the SearchParameter resources published by the MII Meta module for convenient import into a FHIR server.",
+      "target" : null
+    },
+    {
+      "id" : "ImplementationGuide.definition.resource.name",
+      "context" : "ImplementationGuide.definition.resource.name",
       "source" : "MII PR Meta SearchParameter",
       "target" : null
     },
@@ -103,18 +127,6 @@
       "id" : "ImplementationGuide.definition.resource.description",
       "context" : "ImplementationGuide.definition.resource.description",
       "source" : "Das Profil legt die Mindestanforderungen fest, die SearchParameter-Ressourcen im Kerndatensatz erfüllen müssen.",
-      "target" : null
-    },
-    {
-      "id" : "ImplementationGuide.definition.resource.name",
-      "context" : "ImplementationGuide.definition.resource.name",
-      "source" : "mii-exa-meta-searchparam-collection-bundle",
-      "target" : null
-    },
-    {
-      "id" : "ImplementationGuide.definition.resource.name",
-      "context" : "ImplementationGuide.definition.resource.name",
-      "source" : "mii-exa-meta-searchparam-transaction-bundle",
       "target" : null
     },
     {

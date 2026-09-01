@@ -9,7 +9,7 @@ Usage: #definition
 * name = "MII_SP_Meta_Encounter_ServiceType"
 * status = #active
 * experimental = false
-* date = "2024-10-08"
+* date = "2026-09-01"
 * description = "Suchparameter für Encounter.serviceType"
 * code = #service-type
 * base = #Encounter 

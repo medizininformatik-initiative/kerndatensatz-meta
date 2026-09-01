@@ -53,7 +53,16 @@ Description: "Medizininformatik-Initiative Standorte"
 * insert Publisher
 * insert PR_CS_VS_Version
 * insert LicenseCodeableCCBY40
-* ^date = "2026-05-18"
+* insert CRMIShareableCodeSystem
+* insert CRMIPublishableCodeSystem
+* insert CRMIKnowledgeCapabilitiesCodeSystem
+* insert CRMIVersionPolicyStrict
+* insert CRMIPackageSourceDefinitionalResource
+* insert CRMIApprovalDate(2026-08-31)
+* insert CRMIResourceEffectivePeriod
+* insert CRMIArtifactTopic(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, C80260)
+* insert CRMIArtifactContributors
+* ^date = "2026-09-01"
 * ^status = #active
 * ^caseSensitive = true
 * ^compositional = false

@@ -9,7 +9,7 @@ Usage: #definition
 * name = "MII_SP_Meta_Procedure_Durchfuehrungsabsicht"
 * status = #active
 * experimental = false
-* date = "2024-04-24"
+* date = "2026-09-01"
 * description = "Suchparameter für Procedure.extension:Durchfuehrungsabsicht"
 * code = #durchfuehrungsabsicht
 * base = #Procedure

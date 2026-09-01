@@ -10,7 +10,7 @@ Usage: #definition
 * name = "MII_SP_Meta_Consent_ProvisionCodePeriod"
 * status = #active
 * experimental = false
-* date = "2024-10-17"
+* date = "2026-09-01"
 * description = "Composite-Suche nach Zeitraum (period) einer bestimmten, durch einen Code definierten, Provision."
 * code = #mii-provision-provision-code-period
 * base = #Consent

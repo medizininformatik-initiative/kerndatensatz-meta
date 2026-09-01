@@ -8,7 +8,7 @@ Usage: #definition
 * name = "MII_SP_Meta_Procedure_OPS_Seitenlokalisation"
 * status = #active
 * experimental = false
-* date = "2025-10-21"
+* date = "2026-09-01"
 * description = "Suchparameter für Procedure.code.coding:ops.extension:Seitenlokalisation"
 * code = #ops-seitenlokalisation
 * base = #Procedure

@@ -27,6 +27,26 @@ extension are not declared. The guide-level licence remains `CC-BY-4.0`, and
 the module's canonical artifacts retain their existing codeable licence
 metadata.
 
+### Resource-level coverage
+
+The Meta module applies the Basis module's CRMI publication pattern to the
+resource types that both modules contain:
+
+| Meta artifact | CRMI metadata applied |
+| --- | --- |
+| MII SearchParameter profile | CRMI shareable and publishable StructureDefinition profiles; knowledge capabilities; version algorithm and package policy; package source; usage; approval and effective dates; topic; contributors; CRMI licence |
+| Deprecated MII licence extension | The same StructureDefinition metadata, with usage directing implementers to the CRMI License extension |
+| MII site CodeSystem | CRMI shareable and publishable CodeSystem profiles; knowledge capabilities; version algorithm and package policy; package source; approval and effective dates; topic; contributors; CRMI licence |
+| Meta CapabilityStatement | CRMI shareable and publishable CapabilityStatement profiles; knowledge capabilities; version algorithm and package policy; package source; draft-specific usage; approval and effective dates; topic; contributors; CRMI licence |
+| SearchParameter resources | MII SearchParameter profile; CRMI licence; version algorithm |
+| SearchParameter collection and transaction bundles | Package source |
+| Expansion manifest | CRMI Manifest Parameters profile |
+
+The Basis module also applies CRMI metadata to logical models and ValueSets.
+Meta defines neither resource type, so no Basis clinical or terminology
+artifacts are duplicated here. SearchParameter resources are specific to Meta;
+Basis provides no directly comparable SearchParameter implementation.
+
 ### Manifest and reproducibility
 
 Canonical references are pinned with `pin-canonicals: pin-all`. Terminology

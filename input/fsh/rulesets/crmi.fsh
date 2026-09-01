@@ -24,11 +24,11 @@
 
 RuleSet: CRMIVersionPolicyStrict
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy"
-* ^extension[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes#package "Package"
+* ^extension[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0#package "Package"
 
 RuleSet: CRMIVersionPolicyStrictInstance
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy"
-* extension[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes#package "Package"
+* extension[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0#package "Package"
 
 // ── Copyright label ──────────────────────────────────────────────────────────
 // basis notes that there is currently no resource type in the module where
@@ -147,6 +147,14 @@ RuleSet: CRMIArtifactUsageExtension
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/artifact-usage"
 * ^extension[=].valueMarkdown = "Use this extension to exchange data for content of the corresponding Medical Informatics Initiative logical model that is not represented in the FHIR core resource structure."
 
+RuleSet: CRMIArtifactUsageSearchParameterProfile
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/artifact-usage"
+* ^extension[=].valueMarkdown = "Use this profile as the baseline for SearchParameter resources published as part of the Medical Informatics Initiative Core Data Set. It defines the minimum metadata and identifier requirements that those SearchParameter resources must meet."
+
+RuleSet: CRMIArtifactUsageDeprecatedLicenseExtension
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/artifact-usage"
+* ^extension[=].valueMarkdown = "Do not use this deprecated extension for new artifacts. Use the CRMI License extension (http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license) instead."
+
 // ── CapabilityStatement ──────────────────────────────────────────────────────
 
 RuleSet: CRMIShareableCapabilityStatement
@@ -164,6 +172,10 @@ RuleSet: CRMIKnowledgeCapabilitiesCapabilityStatement
 RuleSet: CRMIArtifactUsageCapabilityStatement
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/artifact-usage"
 * extension[=].valueMarkdown = "Use this CapabilityStatement to determine the minimum RESTful server capabilities required for a system that implements the corresponding module of the Medical Informatics Initiative core dataset. It lists the FHIR resource types and MII profiles that SHALL be supported, together with required interactions, supported formats, and search parameters for read and search access. Systems claiming conformance to the module are expected to implement the listed capabilities according to the stated conformance expectations."
+
+RuleSet: CRMIArtifactUsageDraftMetaCapabilityStatement
+* extension[+].url = "http://hl7.org/fhir/StructureDefinition/artifact-usage"
+* extension[=].valueMarkdown = "Use this draft CapabilityStatement to inspect the resource types and custom SearchParameters published by the MII Meta module. It is a migration-generated proposal and does not establish normative server support expectations until it has been reviewed and approved."
 
 // ── CodeSystem ───────────────────────────────────────────────────────────────
 

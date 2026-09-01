@@ -10,8 +10,12 @@ RuleSet: AddCollectionEntry(resource)
 
 Instance: mii-exa-meta-searchparam-transaction-bundle
 InstanceOf: Bundle
+Usage: #example
+Title: "MII Meta SearchParameter Transaction Bundle"
+Description: "Transaction bundle containing the SearchParameter resources published by the MII Meta module for convenient import into a FHIR server."
+* insert CRMIPackageSource
 * type = #transaction
-* timestamp = "2025-11-24T10:51:00+01:00"
+* timestamp = "2026-09-01T11:09:00+02:00"
 // Person
 * insert AddTransactionEntry(mii-sp-meta-patient-adresszusatz)
 * insert AddTransactionEntry(mii-sp-meta-patient-assignerpid)
@@ -200,8 +204,12 @@ InstanceOf: Bundle
 
 Instance: mii-exa-meta-searchparam-collection-bundle
 InstanceOf: Bundle
+Usage: #example
+Title: "MII Meta SearchParameter Collection Bundle"
+Description: "Collection bundle containing the SearchParameter resources published by the MII Meta module."
+* insert CRMIPackageSource
 * type = #collection
-* timestamp = "2025-11-24T10:51:00+01:00"
+* timestamp = "2026-09-01T11:09:00+02:00"
 // Person
 * insert AddCollectionEntry(mii-sp-meta-patient-adresszusatz)
 * insert AddCollectionEntry(mii-sp-meta-patient-assignerpid)

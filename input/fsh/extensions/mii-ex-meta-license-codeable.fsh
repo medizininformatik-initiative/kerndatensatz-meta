@@ -8,7 +8,18 @@ Description: """
 * insert Publisher
 * insert PR_CS_VS_Version
 * insert LicenseCodeableCCBY40
-* ^date = "2024-10-17"
+* insert CRMIShareableStructureDefinition
+* insert CRMIPublishableStructureDefinition
+* insert CRMIKnowledgeCapabilitiesStructureDefinition
+* insert CRMIVersionPolicyStrict
+* insert CRMIPackageSourceDefinitionalResource
+* insert CRMIArtifactUsageDeprecatedLicenseExtension
+* insert CRMIApprovalDate(2026-08-31)
+* insert CRMIResourceEffectivePeriod
+* insert CRMIArtifactTopic(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, C80260)
+* insert CRMIArtifactContributors
+* ^date = "2026-09-01"
+* ^experimental = false
 * insert ExtensionContext(Element)
 * value[x] only CodeableConcept
 * valueCodeableConcept from http://hl7.org/fhir/ValueSet/spdx-license (preferred)
