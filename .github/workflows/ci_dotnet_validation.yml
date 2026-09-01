@@ -20,12 +20,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           ref: ${{ inputs.ref }}
       - name: Firely.Terminal (GitHub Actions)
         id: firely-terminal
-        uses: FirelyTeam/firely-terminal-pipeline@v0.6.7
+        uses: FirelyTeam/firely-terminal-pipeline@v0.8.24
         with:
           PATH_TO_CONFORMANCE_RESOURCES: fsh-generated/resources
           PATH_TO_EXAMPLES: fsh-generated/resources
@@ -43,7 +43,7 @@ jobs:
 
       - name: Add & Commit
         if: github.event_name == 'pull_request'
-        uses: EndBug/add-and-commit@v9
+        uses: EndBug/add-and-commit@v11
         with:
           committer_name: GitHub Actions Bot
           committer_email: ActionBot@github.com

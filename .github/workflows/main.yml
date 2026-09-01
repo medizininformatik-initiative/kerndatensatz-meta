@@ -42,7 +42,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         
       - name: Prepare version
         id: prep-version
@@ -51,7 +51,7 @@ jobs:
           echo "version=${VERSION}" >> $GITHUB_OUTPUT
           
       - name: Release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           name: "${{ steps.prep-version.outputs.version }}"
           draft: true
@@ -77,7 +77,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Post release to Zulip
-        uses: zulip/github-actions-zulip/send-message@v1
+        uses: zulip/github-actions-zulip/send-message@v2
         with:
           api-key: ${{ secrets.ZULIP_API_KEY }}
           email: "kds-github-bot@mii.zulipchat.com"
