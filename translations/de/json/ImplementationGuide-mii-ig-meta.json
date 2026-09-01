@@ -2214,12 +2214,6 @@
     {
       "id" : "ImplementationGuide.definition.page.title",
       "context" : "ImplementationGuide.definition.page.title",
-      "source" : "Search Parameters",
-      "target" : "Suchparameter"
-    },
-    {
-      "id" : "ImplementationGuide.definition.page.title",
-      "context" : "ImplementationGuide.definition.page.title",
       "source" : "Logical Models",
       "target" : "Logische Modelle"
     },

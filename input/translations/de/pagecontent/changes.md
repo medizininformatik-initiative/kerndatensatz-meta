@@ -30,7 +30,7 @@
 **Datum:** 21.10.2025
 
 * `Added`: `SearchParameter`-Ressource für Procedure OPS-Seitenlokalisation.
-  Siehe: [Kerndatensatz Suchparameter](search-parameters.html)
+  Siehe: [Kerndatensatz Suchparameter](artifacts.html#2)
 
 ### Version 2025.0.1
 
@@ -40,7 +40,7 @@
   Medizininformatik-Initiative Standorte aktualisiert. Siehe:
   [Medizininformatik-Initiative Standorte](CodeSystem-mii-cs-meta-diz-standorte.html)
 * `Added`: `SearchParameter`-Ressourcen der Erweiterungsmodule Bildgebung und
-  Dokument. Siehe: [Kerndatensatz Suchparameter](search-parameters.html)
+  Dokument. Siehe: [Kerndatensatz Suchparameter](artifacts.html#2)
 
 ### Version 2025.0.0
 
@@ -50,7 +50,7 @@
   Profil soll nicht mehr verwendet werden.
 * SearchParameter-Ressourcen aus Basis- und Erweiterungsmodulen werden nun
   zentral über das Meta-Modul veröffentlicht. Siehe:
-  [Liste Kerndatensatz Suchparameter](search-parameters.html)
+  [Liste Kerndatensatz Suchparameter](artifacts.html#2)
 * `MII_PR_Meta_SearchParameter`-Profil hinzugefügt. Dieses enthält die
   Mindestanforderungen, die Suchparameter in der MII erfüllen müssen.
 * `MII_EX_Meta_License_Codeable`-Extension hinzugefügt. Diese Extension kann

@@ -318,8 +318,6 @@ pages:
     title: Extensions
   capability-statements.md:
     title: Capability Statements
-  search-parameters.md:
-    title: Search Parameters
   logical-models.md:
     title: Logical Models
   code-systems.md:

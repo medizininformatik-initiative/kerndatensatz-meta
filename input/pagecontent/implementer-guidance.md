@@ -10,7 +10,8 @@ When implementing SearchParameters:
   [MII SearchParameter profile](StructureDefinition-mii-pr-meta-searchparameter.html)
   as the baseline. It defines the minimum requirements that SearchParameter
   resources published as part of the MII Core Data Set must meet.
-* Review the [search parameter list](search-parameters.html) and the
+* Review the
+  [search parameter list](artifacts.html#2) and the
   [Meta CapabilityStatement](capability-statements.html) to identify additional
   custom search parameters defined for the MII Core Data Set.
 * For convenient bulk import into a FHIR server, use the SearchParameter

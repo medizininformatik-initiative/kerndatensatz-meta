@@ -1,12 +1,13 @@
 # Narrative routing review
 
-Status: **approved 2026-08-31; recommended routes applied to `page-map.tsv`**
+Status: **approved 2026-08-31; SearchParameter page decision superseded 2026-09-01**
 
 Approved decisions:
 
 - Routes: recommended corrected routes.
-- M9: keep Extensions, Search Parameters, Code Systems, and Metadata Overview;
-  remove Operations, Value Sets, and Researcher Guidance.
+- M9: keep Extensions, Code Systems, and Metadata Overview; remove Operations,
+  Value Sets, Researcher Guidance, and the standalone Search Parameters page.
+  Link directly to the generated Artifacts Summary SearchParameter section.
 - M11: adopt the bilingual default text.
 - CapabilityStatement: generate the artifact-derived proposal.
 
@@ -25,7 +26,7 @@ contents.
 | `MII-IG-Meta/Technische-Implementierung/CodeSystem-MII-Standorte.page.md` | `input/intro-notes/CodeSystem-mii-cs-meta-diz-standorte-intro.md` | Narrative for one CodeSystem. |
 | `MII-IG-Meta/Technische-Implementierung/Extension-Lizenzbedingungen.page.md` | `input/intro-notes/StructureDefinition-mii-ex-meta-license-codeable-intro.md` | Narrative for one Extension; the generated `code-systems.md` route is semantically wrong. |
 | `MII-IG-Meta/Technische-Implementierung/Profil-SearchParameter.page.md` | `input/intro-notes/StructureDefinition-mii-pr-meta-searchparameter-intro.md` | Narrative for one profile. |
-| `MII-IG-Meta/Technische-Implementierung/Liste-Kerndatensatz-Suchparameter/Index.page.md` | `input/pagecontent/search-parameters.md` | Catalogue-level SearchParameter guidance. |
+| `MII-IG-Meta/Technische-Implementierung/Liste-Kerndatensatz-Suchparameter/Index.page.md` | `RETIRED` | Its generated catalogue is superseded by `artifacts.html#2`. |
 | `input/pagecontent/index.md` (`index.md` in the map) | `RETIRED` | Obsolete one-line starter stub, superseded by the authoritative guide index. |
 | `ImplementationGuide-Common/**` | `RETIRED` | Shared Simplifier styles, superseded by the Publisher template; retain files until Gate D. |
 | `MedizininformatikInitiative-ImplementationGuide-Template/**` | `RETIRED` | Obsolete generic Simplifier guide tree; retain files until Gate D. |
@@ -35,7 +36,7 @@ contents.
 | Page | Evidence | Recommendation |
 | --- | --- | --- |
 | Extensions | 1 generated Extension | Keep |
-| Search Parameters | 170 generated SearchParameters | Keep |
+| Search Parameters | 170 generated SearchParameters | Remove standalone page; link to the generated Artifacts Summary section |
 | Code Systems | 1 generated CodeSystem | Keep |
 | Operations | 0 generated Operations | Remove |
 | Value Sets | 0 generated ValueSets | Remove |

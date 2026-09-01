@@ -29,7 +29,7 @@
 **Date:** 2025-10-21
 
 * **Added:** A `SearchParameter` resource for the Procedure OPS laterality;
-  see [Core Data Set search parameters](search-parameters.html).
+  see [Core Data Set search parameters](artifacts.html#2).
 
 ### Version 2025.0.1
 
@@ -38,7 +38,7 @@
 * **Changed:** Updated the `MII_CS_Meta_DIZ_Standorte` CodeSystem resource;
   see [Medical Informatics Initiative sites](CodeSystem-mii-cs-meta-diz-standorte.html).
 * **Added:** `SearchParameter` resources from the Imaging and Document
-  extension modules; see [Core Data Set search parameters](search-parameters.html).
+  extension modules; see [Core Data Set search parameters](artifacts.html#2).
 
 ### Version 2025.0.0
 
@@ -48,7 +48,7 @@
   longer be used.
 * **Changed:** SearchParameter resources from base and extension modules are
   now published centrally through the Meta module; see the
-  [search parameter list](search-parameters.html).
+  [search parameter list](artifacts.html#2).
 * **Added:** The `MII_PR_Meta_SearchParameter` profile with the minimum
   requirements for MII search parameters.
 * **Added:** The `MII_EX_Meta_License_Codeable` extension for providing

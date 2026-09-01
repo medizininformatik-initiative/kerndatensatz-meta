@@ -1842,11 +1842,6 @@ msgstr "CapabilityStatements"
 
 # ImplementationGuide.definition.page.title
 #: ImplementationGuide.definition.page.title
-msgid "Search Parameters"
-msgstr "Suchparameter"
-
-# ImplementationGuide.definition.page.title
-#: ImplementationGuide.definition.page.title
 msgid "Logical Models"
 msgstr "Logische Modelle"
 

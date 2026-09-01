@@ -2584,13 +2584,6 @@ The extension is a R4-compatible version of the FHIR for FAIR R4B IG Licence Ter
              <notes>
                <note id="n1">ImplementationGuide.definition.page.title</note>
              </notes>
-        <source>Search Parameters</source>
-        <target>Suchparameter</target>
-      </trans-unit>
-      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.page.title">
-             <notes>
-               <note id="n1">ImplementationGuide.definition.page.title</note>
-             </notes>
         <source>Logical Models</source>
         <target>Logische Modelle</target>
       </trans-unit>

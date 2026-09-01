@@ -10,7 +10,8 @@ Bei der Implementierung von Suchparametern:
   [MII-SearchParameter-Profil](StructureDefinition-mii-pr-meta-searchparameter.html)
   als Grundlage. Es definiert die Mindestanforderungen, die im
   MII-Kerndatensatz veröffentlichte SearchParameter-Ressourcen erfüllen müssen.
-* Prüfen Sie die [Suchparameterliste](search-parameters.html) und das
+* Prüfen Sie die
+  [Suchparameterliste](artifacts.html#2) und das
   [CapabilityStatement des Meta-Moduls](capability-statements.html), um die
   zusätzlich für den MII-Kerndatensatz definierten benutzerdefinierten
   Suchparameter zu ermitteln.
