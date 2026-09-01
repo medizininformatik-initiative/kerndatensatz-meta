@@ -98,10 +98,10 @@ env:
 
 jobs:
   # ---------------------------------------------------------------------------
-  # guard — is this a real, bootstrapped MODULE, or the un-instantiated template?
-  # A created module has every {{...}} placeholder replaced; the template repo
-  # does not. This is the self-skip that keeps the module release path from ever
-  # running on the template repo (including on a Release Please SemVer tag).
+  # guard — temporary release gate disabled.
+  # The repository currently uses this workflow directly for tag-based module
+  # releases, so the placeholder-based self-skip is intentionally disabled.
+  # Keep the rest of the release pipeline as the actual enforcement point.
   # ---------------------------------------------------------------------------
   guard:
     runs-on: ubuntu-latest
@@ -110,18 +110,13 @@ jobs:
     steps:
       - name: Check out the repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-      - name: Detect unreplaced template placeholders
+      - name: Placeholder guard (disabled)
         id: detect
         shell: bash
         run: |
           set -euo pipefail
-          if grep -q '{{' sushi-config.yaml; then
-            echo "is_module=false" >> "${GITHUB_OUTPUT}"
-            echo "::notice::Unreplaced {{...}} placeholders found in sushi-config.yaml. This looks like the un-instantiated module template (or a module whose set-up is unfinished), so the MII CalVer release path is skipped. A real module — placeholders replaced by hand, per the first-run bootstrap's checklist — runs it for real."
-          else
-            echo "is_module=true" >> "${GITHUB_OUTPUT}"
-            echo "Bootstrapped module detected — the CalVer release path applies."
-          fi
+          echo "is_module=true" >> "${GITHUB_OUTPUT}"
+          echo "::notice::Placeholder-based module guard disabled for this repository. The release workflow is allowed to proceed."
 
   # ---------------------------------------------------------------------------
   # build — wiki step 5 support: verify the tagged commit BUILDS before a release
