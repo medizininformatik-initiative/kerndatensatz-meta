@@ -4,10 +4,7 @@
 # (And include comments like this justifying why)
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
 
-# Imported from kerndatensatz-basis (main). Temporary: the terminology server
-# used for publication currently has an incomplete expansion for
-# http://hl7.org/fhir/ValueSet/all-languages, which affects every bilingual
-# (de/en) module built from this template.
+# Temporary: the terminology server used for publication currently has an incomplete expansion for http://hl7.org/fhir/ValueSet/all-languages.
 The System URI could not be determined for the code 'de' in the ValueSet 'http://hl7.org/fhir/ValueSet/all-languages|4.0.1'
 The System URI could not be determined for the code 'de-DE' in the ValueSet 'http://hl7.org/fhir/ValueSet/all-languages|4.0.1'
 The System URI could not be determined for the code 'en' in the ValueSet 'http://hl7.org/fhir/ValueSet/all-languages|4.0.1'

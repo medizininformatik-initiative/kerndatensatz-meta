@@ -1,7 +1,7 @@
 <!-- markdownlint-disable MD041 -->
 
 
-#### Version 2027.0.0-ballot.rc1
+### Version 2027.0.0-ballot.rc1
 
 **Datum:** 2026-08-31
 
@@ -11,13 +11,13 @@
 * **Hinzugefügt:** Ein während der Migration erzeugtes, zu prüfendes
   CapabilityStatement im Status `draft`.
 
-#### Version 2026.0.0
+### Version 2026.0.0
 
 **Datum:** 24.11.2025
 
 * `Added`: Weitere `SearchParameter`-Ressourcen für `ImagingStudy`
 
-#### Version 2025.0.3
+### Version 2025.0.3
 
 **Datum:** 04.11.2025
 
@@ -25,14 +25,14 @@
   `Specimen.collection.bodysite` wurde `retired`, da der Suchparameter bereits
   Bestandteil des FHIR-Core-Standards ist.
 
-#### Version 2025.0.2
+### Version 2025.0.2
 
 **Datum:** 21.10.2025
 
 * `Added`: `SearchParameter`-Ressource für Procedure OPS-Seitenlokalisation.
   Siehe: [Kerndatensatz Suchparameter](search-parameters.html)
 
-#### Version 2025.0.1
+### Version 2025.0.1
 
 **Datum:** 07.10.2025
 
@@ -42,7 +42,7 @@
 * `Added`: `SearchParameter`-Ressourcen der Erweiterungsmodule Bildgebung und
   Dokument. Siehe: [Kerndatensatz Suchparameter](search-parameters.html)
 
-#### Version 2025.0.0
+### Version 2025.0.0
 
 **Datum:** 03.12.2024
 

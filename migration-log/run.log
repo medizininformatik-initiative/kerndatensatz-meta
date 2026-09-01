@@ -678,3 +678,25 @@ Text the migration WROTE, not carried. Each row renders as a highlighted box on 
 2026-08-31T20:17:20Z  INFO   5.6  convention-check  start  cmd=`node scripts/convention-check.mjs --release`  raw_log=migration-log/convention-check.log prev_raw_log=migration-log/convention-check.prev.log
 2026-08-31T20:17:20Z  INFO   5.6  convention-check  done  cmd=`node scripts/convention-check.mjs --release`  exit=0 raw_log=migration-log/convention-check.log raw_log_lines=19
 2026-08-31T20:33:35Z  INFO   D  language-guard-clarification  report=migration-log/migration-report.md source_language=de target_default=en meaning=provenance-not-runtime-default publication=false
+2026-09-01T06:39:42Z  INFO   5.4  heading-hierarchy  normalized=46 headings languages=en,de all_subsections=h3 manual_security_ordinals_removed=6 parity=pass tests=107
+2026-09-01T06:51:15Z  INFO   5.4  deprecated-license-extension-callout  files=input/intro-notes/StructureDefinition-mii-ex-meta-license-codeable-intro.md,input/translations/de/intro-notes/StructureDefinition-mii-ex-meta-license-codeable-intro.md replacement=https://hl7.org/fhir/uv/crmi/en/StructureDefinition-crmi-license.html style=ig-highlight-orange artifact_unchanged=true checks=pass
+2026-09-01T07:32:46Z  INFO   5.4  implementer-guidance-searchparameters  languages=en,de profile=minimum-requirements list=linked capabilitystatement=linked examples=collection,transaction bundle_claim=bulk-import bundle_coverage=168/170 all-claim-withheld missing=mii-sp-meta-condition-evidence-detail,mii-sp-meta-specimen-collection-body-site checks=pass
+2026-09-01T07:34:24Z  INFO   7  sushi-bundle-update  start  cmd=`npx --yes fsh-sushi@3.20.1 .`  raw_log=migration-log/sushi-bundle-update.log
+2026-09-01T07:35:35Z  ERROR  7  sushi-bundle-update  failed  cmd=`npx --yes fsh-sushi@3.20.1 .`  exit=1 raw_log=migration-log/sushi-bundle-update.log raw_log_lines=11
+    The exit status is preserved and returned -- this step did NOT meet its
+    acceptance criterion. Read migration-log/sushi-bundle-update.log, then either fix and re-run or take it
+    to the report's decision queue (spec §10.3).
+2026-09-01T07:36:20Z  INFO   7  sushi-bundle-update  start  cmd=`env npm_config_offline=true npx --yes fsh-sushi@3.20.1 .`  raw_log=migration-log/sushi-bundle-update.log prev_raw_log=migration-log/sushi-bundle-update.prev.log
+2026-09-01T07:36:21Z  ERROR  7  sushi-bundle-update  failed  cmd=`env npm_config_offline=true npx --yes fsh-sushi@3.20.1 .`  exit=1 raw_log=migration-log/sushi-bundle-update.log raw_log_lines=4
+    The exit status is preserved and returned -- this step did NOT meet its
+    acceptance criterion. Read migration-log/sushi-bundle-update.log, then either fix and re-run or take it
+    to the report's decision queue (spec §10.3).
+2026-09-01T07:37:11Z  INFO   7  sushi-bundle-update  start  cmd=`npx --offline --yes fsh-sushi@3.20.1 .`  raw_log=migration-log/sushi-bundle-update.log prev_raw_log=migration-log/sushi-bundle-update.prev.log
+2026-09-01T07:37:11Z  ERROR  7  sushi-bundle-update  failed  cmd=`npx --offline --yes fsh-sushi@3.20.1 .`  exit=1 raw_log=migration-log/sushi-bundle-update.log raw_log_lines=4
+    The exit status is preserved and returned -- this step did NOT meet its
+    acceptance criterion. Read migration-log/sushi-bundle-update.log, then either fix and re-run or take it
+    to the report's decision queue (spec §10.3).
+2026-09-01T07:37:31Z  INFO   7  sushi-bundle-update  start  cmd=`npx --yes fsh-sushi@3.20.1 .`  raw_log=migration-log/sushi-bundle-update.log prev_raw_log=migration-log/sushi-bundle-update.prev.log
+2026-09-01T07:37:41Z  INFO   7  sushi-bundle-update  done  cmd=`npx --yes fsh-sushi@3.20.1 .`  exit=0 raw_log=migration-log/sushi-bundle-update.log raw_log_lines=43
+2026-09-01T07:38:31Z  INFO   7  sushi-bundle-update  resolved: pinned_sushi=3.20.1 exit=0 errors=0 warnings=0 initial_fetch_attempts=restricted/offline
+2026-09-01T07:38:31Z  INFO   5.4  implementer-guidance-searchparameters  resolved: active_searchparameters=169 collection_entries=169 transaction_entries=169 retired_excluded=1 all_active_claim=true languages=en,de

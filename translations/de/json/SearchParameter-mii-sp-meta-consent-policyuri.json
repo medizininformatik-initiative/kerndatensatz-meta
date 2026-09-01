@@ -4,12 +4,6 @@
   "languages" : [{
     "targetLang" : "de",
     "entries" : [{
-      "id" : "Coding.display",
-      "context" : "Coding.display",
-      "source" : "Creative Commons Attribution 4.0 International",
-      "target" : null
-    },
-    {
       "id" : "SearchParameter.name",
       "context" : "SearchParameter.name",
       "source" : "MII_SP_Meta_Consent_PolicyUri",

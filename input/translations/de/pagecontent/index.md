@@ -17,13 +17,13 @@ MII-Implementierungsleitfäden verwendet werden.
 | Realm | DE |
 
 
-## Impressum
+### Impressum
 
 Dieser Leitfaden ist im Rahmen der Medizininformatik-Initiative erstellt worden
 und unterliegt per Governance-Prozess dem Abstimmungsverfahren des
 Interoperabilitätsforums und der Technischen Komitees von HL7 Deutschland e. V.
 
-## Ansprechpartner
+### Ansprechpartner
 
 * Julian Saß, Berlin Institute of Health at Charité (BIH)
 * Karoline Buckow, TMF – Technologie- und Methodenplattform
@@ -37,11 +37,11 @@ Anmerkungen und Kritik werden in Form von 'Issues' auf
 [GitHub](https://github.com/medizininformatik-initiative/kerndatensatz-meta/issues)
 gern entgegengenommen.
 
-## Autoren (in alphabetischer Reihenfolge)
+### Autoren (in alphabetischer Reihenfolge)
 
 * Julian Saß, Berlin Institute of Health at Charité (BIH)
 
-## Copyright-Hinweis und Nutzungshinweise
+### Copyright-Hinweis und Nutzungshinweise
 
 © 2019+ TMF e. V., Charlottenstraße 42, 10117 Berlin.
 
@@ -55,7 +55,7 @@ Einige verwendete Codesysteme werden von anderen Organisationen herausgegeben
 und gepflegt. Es gilt das Copyright der dort jeweils aufgeführten Herausgeber
 (Publisher).
 
-## Disclaimer
+### Disclaimer
 
 Der Inhalt dieses Dokuments ist öffentlich. Zu beachten ist, dass Teile dieses
 Dokuments auf FHIR Version R4 beruhen, für die das Copyright von HL7

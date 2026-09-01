@@ -14,7 +14,7 @@ Allgemeine Anforderungen stehen in der FHIR-Kernspezifikation —
 wiederholt sie nicht; sie verlinkt den übergreifenden Datenschutzrahmen und nennt,
 was **für dieses Modul spezifisch** ist.
 
-#### 1. Das übergreifende Datenschutzkonzept
+### Das übergreifende Datenschutzkonzept
 
 Das
 [übergreifende Datenschutzkonzept der Medizininformatik-Initiative](https://www.medizininformatik-initiative.de/de/datenschutzkonzept)
@@ -27,7 +27,7 @@ Analysen, Daten- und Bioproben-Bereitstellung). Alles, was dieses Modul
 spezifiziert, bewegt sich innerhalb dieses Rahmens — dieser Leitfaden fügt
 keinen eigenen Verarbeitungszweck hinzu.
 
-#### 2. De-Identifikation, Minimierung und Pseudonymisierung (DIMP)
+### De-Identifikation, Minimierung und Pseudonymisierung (DIMP)
 
 Wie Daten, die ein Datenintegrationszentrum verlassen, praktisch
 de-identifiziert werden, spezifiziert
@@ -40,7 +40,7 @@ Daten *vor* Anwendung von DIMP; welche Elemente eine konkrete
 Datenbereitstellung erreicht, entscheidet je Projekt die DIMP-Konfiguration,
 nicht dieser Leitfaden.
 
-#### 3. Modul-spezifische Aspekte
+### Modul-spezifische Aspekte
 
 > Über den oben verlinkten übergreifenden Rahmen hinaus — das übergreifende
 > Datenschutzkonzept, den ihm zugrunde liegenden Broad Consent und DIMP —

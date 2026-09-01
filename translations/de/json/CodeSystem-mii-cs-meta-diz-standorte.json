@@ -4,12 +4,6 @@
   "languages" : [{
     "targetLang" : "de",
     "entries" : [{
-      "id" : "Coding.display",
-      "context" : "Coding.display",
-      "source" : "Creative Commons Attribution 4.0 International",
-      "target" : null
-    },
-    {
       "id" : "CodeSystem.name",
       "context" : "CodeSystem.name",
       "source" : "MII_CS_Meta_DIZ_Standorte",

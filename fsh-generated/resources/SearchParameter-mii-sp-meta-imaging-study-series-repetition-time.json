@@ -2,6 +2,12 @@
   "resourceType": "SearchParameter",
   "id": "mii-sp-meta-imaging-study-series-repetition-time",
   "meta": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+        "valueCode": "CC-BY-4.0"
+      }
+    ],
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
     ]
@@ -15,20 +21,6 @@
           "value": "https://www.medizininformatik-initiative.de"
         }
       ]
-    }
-  ],
-  "extension": [
-    {
-      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "code": "CC-BY-4.0",
-            "system": "http://hl7.org/fhir/spdx-license",
-            "display": "Creative Commons Attribution 4.0 International"
-          }
-        ]
-      }
     }
   ],
   "base": [

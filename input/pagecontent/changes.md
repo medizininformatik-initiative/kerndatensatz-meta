@@ -1,7 +1,7 @@
 <!-- markdownlint-disable MD041 -->
 
 
-#### Version 2027.0.0-ballot.rc1
+### Version 2027.0.0-ballot.rc1
 
 **Date:** 2026-08-31
 
@@ -10,13 +10,13 @@
   identities.
 * **Added:** A migration-generated draft CapabilityStatement for review.
 
-#### Version 2026.0.0
+### Version 2026.0.0
 
 **Date:** 2025-11-24
 
 * **Added:** Further `SearchParameter` resources for `ImagingStudy`.
 
-#### Version 2025.0.3
+### Version 2025.0.3
 
 **Date:** 2025-11-04
 
@@ -24,14 +24,14 @@
   `Specimen.collection.bodySite` was retired because the search parameter is
   already part of FHIR Core.
 
-#### Version 2025.0.2
+### Version 2025.0.2
 
 **Date:** 2025-10-21
 
 * **Added:** A `SearchParameter` resource for the Procedure OPS laterality;
   see [Core Data Set search parameters](search-parameters.html).
 
-#### Version 2025.0.1
+### Version 2025.0.1
 
 **Date:** 2025-10-07
 
@@ -40,7 +40,7 @@
 * **Added:** `SearchParameter` resources from the Imaging and Document
   extension modules; see [Core Data Set search parameters](search-parameters.html).
 
-#### Version 2025.0.0
+### Version 2025.0.0
 
 **Date:** 2024-12-03
 

@@ -1,20 +1,14 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mii-pr-meta-searchparameter",
-  "extension": [
-    {
-      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "code": "CC-BY-4.0",
-            "system": "http://hl7.org/fhir/spdx-license",
-            "display": "Creative Commons Attribution 4.0 International"
-          }
-        ]
+  "meta": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+        "valueCode": "CC-BY-4.0"
       }
-    }
-  ],
+    ]
+  },
   "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter",
   "version": "2027.0.0-ballot.rc1",
   "name": "MII_PR_Meta_SearchParameter",

@@ -1,6 +1,6 @@
 <!-- markdownlint-disable MD041 -->
 
-## Version scheme
+### Version scheme
 
 The Meta module uses the KDS calendar-versioning scheme in a SemVer-compatible
 form: `YYYY.MINOR.PATCH[-label]`. The current version is
@@ -14,21 +14,21 @@ form: `YYYY.MINOR.PATCH[-label]`. The current version is
 Stable releases can be compared using the three numeric components. No ordering
 is inferred among labels.
 
-## Artifact versions
+### Artifact versions
 
 FHIR artifacts in a release carry the guide and package version. The computable
 metadata declares the `semver` version algorithm, package source, and manifest
 parameters; see [Metadata Overview](metadata.html). This release does not
 declare `artifact-versionPolicy`.
 
-## Release process
+### Release process
 
 Releases follow the
 [MII Module Release Workflow](https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Module-Release-Workflow).
 The [Changelog](changes.html) records the changes of each version. The source
 guide provides no module-specific support window or deprecation policy.
 
-## Version comparison
+### Version comparison
 
 From the second formal IG Publisher publication onward, a machine-generated
 comparison can supplement the changelog. It requires a publication history at

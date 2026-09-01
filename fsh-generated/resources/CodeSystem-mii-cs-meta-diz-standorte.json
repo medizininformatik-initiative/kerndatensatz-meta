@@ -1622,6 +1622,12 @@
   "meta": {
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ],
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+        "valueCode": "CC-BY-4.0"
+      }
     ]
   },
   "valueSet": "https://www.medizininformatik-initiative.de/fhir/core/ValueSet/core-location-identifier",
@@ -1638,20 +1644,6 @@
     }
   ],
   "version": "2027.0.0-ballot.rc1",
-  "extension": [
-    {
-      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "code": "CC-BY-4.0",
-            "system": "http://hl7.org/fhir/spdx-license",
-            "display": "Creative Commons Attribution 4.0 International"
-          }
-        ]
-      }
-    }
-  ],
   "date": "2026-05-18",
   "caseSensitive": true,
   "compositional": false,

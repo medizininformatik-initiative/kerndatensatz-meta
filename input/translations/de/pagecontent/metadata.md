@@ -4,7 +4,7 @@ Diese Seite beschreibt die maschinenlesbaren Metadaten des Meta-Moduls. Die
 Metadaten unterstützen Auffindbarkeit, Validierung, Governance, Versionierung
 und Nachnutzung der FHIR-Artefakte des Leitfadens.
 
-## CRMI-Konformität
+### CRMI-Konformität
 
 Der erzeugte ImplementationGuide beansprucht die CRMI-Profile für
 verteilbare, veröffentlichbare und maschinenlesbare ImplementationGuides aus
@@ -27,7 +27,7 @@ maschinenlesbare Lizenz-Extension sind nicht deklariert. Die Lizenz des
 Leitfadens bleibt `CC-BY-4.0`; die kanonischen Artefakte des Moduls behalten ihre
 bisherigen maschinenlesbaren Lizenzmetadaten.
 
-## Manifest und Reproduzierbarkeit
+### Manifest und Reproduzierbarkeit
 
 Kanonische Referenzen werden mit `pin-canonicals: pin-all` gepinnt. Die
 Terminologie-Expansion verwendet das
@@ -40,7 +40,7 @@ Das Manifest pinnt derzeit:
 * SNOMED CT International Edition `20260701`;
 * `artifact-version-policy-codes` Version `3.0.0`.
 
-## Metadaten prüfen und nachnutzen
+### Metadaten prüfen und nachnutzen
 
 Die vollständigen maschinenlesbaren Metadaten stehen in den erzeugten JSON- und
 XML-Darstellungen der Artefakte sowie im

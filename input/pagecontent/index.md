@@ -16,13 +16,13 @@ guides.
 | Realm | DE |
 
 
-## Legal notice
+### Legal notice
 
 This guide was created within the Medical Informatics Initiative and is subject
 to the governance voting process of the Interoperability Forum and the
 Technical Committees of HL7 Germany.
 
-## Contacts
+### Contacts
 
 * Julian Saß, Berlin Institute of Health at Charité (BIH)
 * Karoline Buckow, TMF – Technology and Methods Platform for Networked Medical
@@ -33,11 +33,11 @@ Questions about this publication may be asked at
 Comments and criticism are welcome as
 [GitHub issues](https://github.com/medizininformatik-initiative/kerndatensatz-meta/issues).
 
-## Authors
+### Authors
 
 * Julian Saß, Berlin Institute of Health at Charité (BIH)
 
-## Copyright and licence
+### Copyright and licence
 
 © 2019+ TMF e. V., Charlottenstraße 42, 10117 Berlin.
 
@@ -47,7 +47,7 @@ For the rights governing the underlying FHIR technology, see the FHIR base
 specification. Some code systems are issued and maintained by other
 organisations; the copyright of the publisher named there applies.
 
-## Disclaimer
+### Disclaimer
 
 The contents of this document are public. Parts of it are based on FHIR R4,
 whose copyright is held by HL7 International. Although this publication was

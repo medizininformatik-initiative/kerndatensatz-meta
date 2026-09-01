@@ -15,7 +15,7 @@
 
 This page links the downloadable artifacts of the **Meta** module.
 
-#### Package file
+### Package file
 
 The package file is an NPM-format FHIR package used by most FHIR tooling. It
 contains all value sets, profiles, extensions and the list of pages and URLs of
@@ -28,20 +28,20 @@ the FHIR documentation on
 
 * [Package (compressed folder)](../package.tgz){::download="true"}
 
-#### Downloadable copy of this guide
+### Downloadable copy of this guide
 
 A downloadable copy of the rendered guide, for hosting locally:
 
 * [Downloadable copy (compressed folder)](../full-ig.zip)
 
-#### Examples
+### Examples
 
 All examples of this guide:
 
 * [XML (compressed folder)](../examples.xml.zip)
 * [JSON (compressed folder)](../examples.json.zip)
 
-#### Consolidated CSV and Excel representations of the profiles
+### Consolidated CSV and Excel representations of the profiles
 
 The profile information of the whole guide in a single CSV or Excel file —
 useful for testers and analysts who want to review element properties across
@@ -50,18 +50,18 @@ profiles in one table:
 * [CSV (compressed folder)](../csvs.zip)
 * [Excel (compressed folder)](../excels.zip)
 
-#### Schematrons
+### Schematrons
 
 * [Schematrons (compressed folder)](../schematrons.zip)
 
-#### ImplementationGuide resource
+### ImplementationGuide resource
 
 The `ImplementationGuide` resource carries the technical details of this
 publication, including its dependencies and publication parameters.
 
 * [MII Meta ImplementationGuide resource](ImplementationGuide-mii-ig-meta.html)
 
-#### Version history
+### Version history
 
 Earlier versions and the detailed change history are on the
 [Versioning](version-history.html) and [Changelog](changes.html) pages.

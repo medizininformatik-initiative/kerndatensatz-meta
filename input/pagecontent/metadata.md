@@ -4,7 +4,7 @@ This page describes the computable metadata of the Meta module. The metadata
 supports discovery, validation, governance, versioning, and reuse of the
 guide's FHIR artifacts.
 
-## CRMI conformance
+### CRMI conformance
 
 The generated ImplementationGuide claims the CRMI shareable, publishable, and
 computable ImplementationGuide profiles from
@@ -27,7 +27,7 @@ extension are not declared. The guide-level licence remains `CC-BY-4.0`, and
 the module's canonical artifacts retain their existing codeable licence
 metadata.
 
-## Manifest and reproducibility
+### Manifest and reproducibility
 
 Canonical references are pinned with `pin-canonicals: pin-all`. Terminology
 expansion uses the
@@ -40,7 +40,7 @@ The manifest currently pins:
 * SNOMED CT International Edition `20260701`;
 * `artifact-version-policy-codes` version `3.0.0`.
 
-## Inspecting and reusing metadata
+### Inspecting and reusing metadata
 
 The complete machine-readable metadata is available in the generated JSON and
 XML representations of each artifact and in the
