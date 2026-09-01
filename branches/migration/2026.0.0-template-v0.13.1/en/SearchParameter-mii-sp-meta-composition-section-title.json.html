@@ -70,8 +70,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"17.12"}
-    h3,h4,h5,h6{--heading-prefix:"17.12"}</style>
+    <style type="text/css">h2{--heading-prefix:"16.12"}
+    h3,h4,h5,h6{--heading-prefix:"16.12"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -200,6 +200,9 @@
        validator — it injects a marker anchor into the menu (rendered as an
        EMPTY menu entry) and logs a broken-link ERROR on every page's QA.
        Full analysis: docs/page-structure.md, "Datasets and Descriptions".
+     - "Search Parameters" points at the generated Artifacts Summary section.
+       Its named AnchorJS fragment is language-dependent and invisible to the
+       Publisher link validator, so the link uses the shared static #2 anchor.
      - The four Conformance entries point at the KDS-wide conformance rules of
        the Meta module (kerndatensatz-meta). INTERIM: the Meta module has no
        published IG rendering yet (only a CI build with no conformance pages),
@@ -237,7 +240,7 @@
       <li><a href="profiles.html">Profiles</a></li>
       <li><a href="extensions.html">Extensions</a></li>
       <li><a href="capability-statements.html">Capability Statements</a></li>
-      <li><a href="search-parameters.html">Search Parameters</a></li>
+      <li><a href="artifacts.html#2">Search Parameters</a></li>
       <li><a href="logical-models.html">Logical Models</a></li>
       <li><a href="code-systems.html">Code Systems</a></li>
       <li><a href="examples.html">Examples</a></li>
@@ -377,6 +380,29 @@
   "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter">resourceType</a>" : "SearchParameter",
   "<a href="http://hl7.org/fhir/R4/resource.html#SearchParameter.id">id</a>" : "mii-sp-meta-composition-section-title",
   "<a href="http://hl7.org/fhir/R4/resource.html#SearchParameter.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Meta.extension">extension</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCode</a>" : "CC-BY-4.0"
+      },
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Extension.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "packageId",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueId</a>" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "version",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "2027.0.0-ballot.rc1"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "uri",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueUri</a>" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/package-source"
+      }
+    ],
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
       <a href="StructureDefinition-mii-pr-meta-searchparameter.html" style="color: Maroon">&#x1F517;</a> "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
     ]
@@ -388,13 +414,22 @@
   },
   "<a href="http://hl7.org/fhir/R4/domainresource.html#SearchParameter.extension">extension</a>" : [
     {
-      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCoding</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://hl7.org/fhir/version-algorithm",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "semver",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "SemVer"
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
       "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCodeableConcept</a>" : {
         "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
           {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://hl7.org/fhir/spdx-license",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "CC-BY-4.0",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Creative Commons Attribution 4.0 International"
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.version">version</a>" : "3.0.0",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "package",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Package"
           }
         ]
       }
@@ -471,7 +506,7 @@
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de">NUM-DIZ</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.meta#2027.0.0-ballot.rc1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Mon, Aug 31, 2026 20:52+0000">2026-08-31</span>
+          Generated <span title="Tue, Sep 1, 2026 10:12+0000">2026-09-01</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

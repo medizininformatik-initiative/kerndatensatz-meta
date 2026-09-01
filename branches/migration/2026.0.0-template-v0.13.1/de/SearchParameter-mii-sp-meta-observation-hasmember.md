@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-hasmember | *Version*:2027.0.0-ballot.rc1 |
-| Active Stand: 2024-10-24 | *Maschinenlesbarer Name*:MII_SP_Meta_Observation_hasMember |
+| Active Stand: 2026-09-01 | *Maschinenlesbarer Name*:MII_SP_Meta_Observation_hasMember |
 
  
 SearchParameter for Observation.hasMember 
@@ -23,16 +23,44 @@ SearchParameter for Observation.hasMember
   "resourceType" : "SearchParameter",
   "id" : "mii-sp-meta-observation-hasmember",
   "meta" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+      "valueCode" : "CC-BY-4.0"
+    },
+    {
+      "extension" : [{
+        "url" : "packageId",
+        "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+      },
+      {
+        "url" : "version",
+        "valueString" : "2027.0.0-ballot.rc1"
+      },
+      {
+        "url" : "uri",
+        "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+      }],
+      "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+    }],
     "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
   },
   "extension" : [{
-    "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
     "valueCodeableConcept" : {
       "coding" : [{
-        "system" : "http://hl7.org/fhir/spdx-license",
-        "code" : "CC-BY-4.0",
-        "display" : "Creative Commons Attribution 4.0 International"
+        "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+        "version" : "3.0.0",
+        "code" : "package",
+        "display" : "Package"
       }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+    "valueCoding" : {
+      "system" : "http://hl7.org/fhir/version-algorithm",
+      "code" : "semver",
+      "display" : "SemVer"
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-hasmember",
@@ -40,7 +68,7 @@ SearchParameter for Observation.hasMember
   "name" : "MII_SP_Meta_Observation_hasMember",
   "status" : "active",
   "experimental" : false,
-  "date" : "2024-10-24",
+  "date" : "2026-09-01",
   "publisher" : "NUM-DIZ",
   "_publisher" : {
     "extension" : [{

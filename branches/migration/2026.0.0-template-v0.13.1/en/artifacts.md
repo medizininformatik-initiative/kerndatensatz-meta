@@ -288,10 +288,10 @@ These define new code systems used by systems conforming to this implementation 
 
 These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.
 
-| |
-| :--- |
-| [ mii-exa-meta-searchparam-collection-bundle  ](Bundle-mii-exa-meta-searchparam-collection-bundle.md) |
-| [ mii-exa-meta-searchparam-transaction-bundle  ](Bundle-mii-exa-meta-searchparam-transaction-bundle.md) |
+| | |
+| :--- | :--- |
+| [ MII Meta SearchParameter Collection Bundle  ](Bundle-mii-exa-meta-searchparam-collection-bundle.md) | Collection bundle containing the SearchParameter resources published by the MII Meta module. |
+| [ MII Meta SearchParameter Transaction Bundle  ](Bundle-mii-exa-meta-searchparam-transaction-bundle.md) | Transaction bundle containing the SearchParameter resources published by the MII Meta module for convenient import into a FHIR server. |
 
 ### Other 
 

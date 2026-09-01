@@ -11,7 +11,6 @@
 * [Guidance for Implementers](en/implementer-guidance.md)
 * [Profiles](en/profiles.md)
 * [Artifacts Summary](en/artifacts.md)
-* [Search Parameters](en/search-parameters.md)
 * [Translation Information](en/translationinfo.md)
 * [Changelog](en/changes.md)
 * [Logical Models](en/logical-models.md)

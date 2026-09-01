@@ -2,6 +2,25 @@
   "resourceType" : "SearchParameter",
   "id" : "mii-sp-meta-imaging-study-series-tracer-exposure-time",
   "meta" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+      "valueCode" : "CC-BY-4.0"
+    },
+    {
+      "extension" : [{
+        "url" : "packageId",
+        "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+      },
+      {
+        "url" : "version",
+        "valueString" : "2027.0.0-ballot.rc1"
+      },
+      {
+        "url" : "uri",
+        "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+      }],
+      "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+    }],
     "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
   },
   "text" : {
@@ -9,12 +28,21 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-imaging-study-series-tracer-exposure-time</b></p><a name=\"mii-sp-meta-imaging-study-series-tracer-exposure-time\"> </a><a name=\"hcmii-sp-meta-imaging-study-series-tracer-exposure-time\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><h2>MII_SP_Bildgebung_Imaging_Study_Series_Tracer_Exposure_Time</h2><p>Parameter <code>tracer-exposure-time</code>:<code>quantity</code></p><div><p>Suchparameter für ImagingStudy.series.tracerExposureTime</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/imagingstudy.html\">ImagingStudy</a></td></tr><tr><td>Expression</td><td><code>ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt').extension('tracerExposureTime').value | ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm').extension('tracerExposureTime').value</code></td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: It's up to the server whether the parameter may repeat in order to specify multiple values that must all be true</li><li>multipleOr: It's up to the server whether the parameter can have multiple values (separated by comma) where at least one must be true</li></ul></td></tr><tr><td>Comparators</td><td>Allowed: eq, gt, lt, ge, le</td></tr></table></div><div xml:lang=\"de\" lang=\"de\"><hr/><p><b>German</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-imaging-study-series-tracer-exposure-time</b></p><a name=\"de-mii-sp-meta-imaging-study-series-tracer-exposure-time\"> </a><a name=\"de-hcmii-sp-meta-imaging-study-series-tracer-exposure-time\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><h2>MII_SP_Bildgebung_Imaging_Study_Series_Tracer_Exposure_Time</h2><p>Parameter <code>tracer-exposure-time</code>:<code>quantity</code></p><div><p>Suchparameter für ImagingStudy.series.tracerExposureTime</p>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/imagingstudy.html\">ImagingStudy</a></td></tr><tr><td>Expression</td><td><code>ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt').extension('tracerExposureTime').value | ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm').extension('tracerExposureTime').value</code></td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: It's up to the server whether the parameter may repeat in order to specify multiple values that must all be true</li><li>multipleOr: It's up to the server whether the parameter can have multiple values (separated by comma) where at least one must be true</li></ul></td></tr><tr><td>Comparators</td><td>Allowed: eq, gt, lt, ge, le</td></tr></table></div></div>"
   },
   "extension" : [{
-    "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+    "valueCoding" : {
+      "system" : "http://hl7.org/fhir/version-algorithm",
+      "code" : "semver",
+      "display" : "SemVer"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
     "valueCodeableConcept" : {
       "coding" : [{
-        "system" : "http://hl7.org/fhir/spdx-license",
-        "code" : "CC-BY-4.0",
-        "display" : "Creative Commons Attribution 4.0 International"
+        "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+        "version" : "3.0.0",
+        "code" : "package",
+        "display" : "Package"
       }]
     }
   }],

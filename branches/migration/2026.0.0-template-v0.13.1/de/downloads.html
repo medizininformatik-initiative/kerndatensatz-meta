@@ -67,8 +67,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"11"}
-    h3,h4,h5,h6{--heading-prefix:"11"}</style>
+    <style type="text/css">h2{--heading-prefix:"10"}
+    h3,h4,h5,h6{--heading-prefix:"10"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -207,7 +207,7 @@
       <li><a href="profiles.html">Profile</a></li>
       <li><a href="extensions.html">Extensions</a></li>
       <li><a href="capability-statements.html">CapabilityStatements</a></li>
-      <li><a href="search-parameters.html">Suchparameter</a></li>
+      <li><a href="artifacts.html#2">Suchparameter</a></li>
       <li><a href="logical-models.html">Logische Modelle</a></li>
       <li><a href="code-systems.html">CodeSystems</a></li>
       <li><a href="examples.html">Beispiele</a></li>
@@ -294,16 +294,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#paketdatei" id="markdown-toc-paketdatei">Paketdatei</a></li>
+  <li><a href="#herunterladbare-kopie-dieses-leitfadens" id="markdown-toc-herunterladbare-kopie-dieses-leitfadens">Herunterladbare Kopie dieses Leitfadens</a></li>
+  <li><a href="#beispiele" id="markdown-toc-beispiele">Beispiele</a></li>
+  <li><a href="#konsolidierte-csv--und-excel-darstellungen-der-profile" id="markdown-toc-konsolidierte-csv--und-excel-darstellungen-der-profile">Konsolidierte CSV- und Excel-Darstellungen der Profile</a></li>
+  <li><a href="#schematrons" id="markdown-toc-schematrons">Schematrons</a></li>
+  <li><a href="#implementationguide-ressource" id="markdown-toc-implementationguide-ressource">ImplementationGuide-Ressource</a></li>
+  <li><a href="#versionshistorie" id="markdown-toc-versionshistorie">Versionshistorie</a></li>
+</ul>
+
 </div>
-
-<p style="border:var(--translation-box-border);background-color:var(--translation-background-color);padding: 5px 5px 5px 5px;">
-
-Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde.  Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie <a href="translationinfo.html">hier</a>.
-
-</p>
-
 <!-- markdownlint-disable MD041 -->
 
 <!-- Deutsche Übersetzung der Standardsprachseite input/pagecontent/downloads.md
@@ -321,7 +323,7 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
 <p>Diese Seite verlinkt die herunterladbaren Artefakte des Moduls
 <strong>Meta</strong>.</p>
 
-<h4 id="paketdatei">Paketdatei</h4>
+<h3 id="paketdatei">Paketdatei</h3>
 
 <p>Die Paketdatei ist ein FHIR-Paket im NPM-Format, wie es die meisten
 FHIR-Werkzeuge verwenden. Sie enthält alle ValueSets, Profile, Extensions sowie
@@ -336,7 +338,7 @@ um eine konforme Umsetzung zu bauen — siehe die FHIR-Dokumentation zur
   <li><a href="../package.tgz">Paket (komprimierter Ordner)</a></li>
 </ul>
 
-<h4 id="herunterladbare-kopie-dieses-leitfadens">Herunterladbare Kopie dieses Leitfadens</h4>
+<h3 id="herunterladbare-kopie-dieses-leitfadens">Herunterladbare Kopie dieses Leitfadens</h3>
 
 <p>Eine herunterladbare Fassung des gerenderten Leitfadens für den lokalen Betrieb:</p>
 
@@ -344,7 +346,7 @@ um eine konforme Umsetzung zu bauen — siehe die FHIR-Dokumentation zur
   <li><a href="../full-ig.zip">Herunterladbare Kopie (komprimierter Ordner)</a></li>
 </ul>
 
-<h4 id="beispiele">Beispiele</h4>
+<h3 id="beispiele">Beispiele</h3>
 
 <p>Alle Beispiele dieses Leitfadens:</p>
 
@@ -353,7 +355,7 @@ um eine konforme Umsetzung zu bauen — siehe die FHIR-Dokumentation zur
   <li><a href="../examples.json.zip">JSON (komprimierter Ordner)</a></li>
 </ul>
 
-<h4 id="konsolidierte-csv--und-excel-darstellungen-der-profile">Konsolidierte CSV- und Excel-Darstellungen der Profile</h4>
+<h3 id="konsolidierte-csv--und-excel-darstellungen-der-profile">Konsolidierte CSV- und Excel-Darstellungen der Profile</h3>
 
 <p>Die Profilinformationen des gesamten Leitfadens in einer einzigen CSV- oder
 Excel-Datei — nützlich für Testende und Analysierende, die Element-Eigenschaften
@@ -364,13 +366,13 @@ profilübergreifend in einer Tabelle sichten wollen:</p>
   <li><a href="../excels.zip">Excel (komprimierter Ordner)</a></li>
 </ul>
 
-<h4 id="schematrons">Schematrons</h4>
+<h3 id="schematrons">Schematrons</h3>
 
 <ul>
   <li><a href="../schematrons.zip">Schematrons (komprimierter Ordner)</a></li>
 </ul>
 
-<h4 id="implementationguide-ressource">ImplementationGuide-Ressource</h4>
+<h3 id="implementationguide-ressource">ImplementationGuide-Ressource</h3>
 
 <p>Die <code class="language-plaintext highlighter-rouge">ImplementationGuide</code>-Ressource trägt die technischen Details dieser
 Veröffentlichung einschließlich ihrer Abhängigkeiten und
@@ -380,7 +382,7 @@ Veröffentlichungsparameter.</p>
   <li><a href="ImplementationGuide-mii-ig-meta.html">MII-Meta-ImplementationGuide-Ressource</a></li>
 </ul>
 
-<h4 id="versionshistorie">Versionshistorie</h4>
+<h3 id="versionshistorie">Versionshistorie</h3>
 
 <p>Frühere Versionen und die ausführliche Änderungshistorie stehen auf den Seiten
 <a href="version-history.html">Versionierung</a> und
@@ -411,7 +413,7 @@ Veröffentlichungsparameter.</p>
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de">NUM-DIZ</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.meta#2027.0.0-ballot.rc1 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Mon, Aug 31, 2026 20:52+0000">2026-08-31</span>
+          Erstellt <span title="Tue, Sep 1, 2026 10:12+0000">2026-09-01</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

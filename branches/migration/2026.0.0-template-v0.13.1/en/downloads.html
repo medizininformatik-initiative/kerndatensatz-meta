@@ -67,8 +67,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"11"}
-    h3,h4,h5,h6{--heading-prefix:"11"}</style>
+    <style type="text/css">h2{--heading-prefix:"10"}
+    h3,h4,h5,h6{--heading-prefix:"10"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -197,6 +197,9 @@
        validator — it injects a marker anchor into the menu (rendered as an
        EMPTY menu entry) and logs a broken-link ERROR on every page's QA.
        Full analysis: docs/page-structure.md, "Datasets and Descriptions".
+     - "Search Parameters" points at the generated Artifacts Summary section.
+       Its named AnchorJS fragment is language-dependent and invisible to the
+       Publisher link validator, so the link uses the shared static #2 anchor.
      - The four Conformance entries point at the KDS-wide conformance rules of
        the Meta module (kerndatensatz-meta). INTERIM: the Meta module has no
        published IG rendering yet (only a CI build with no conformance pages),
@@ -234,7 +237,7 @@
       <li><a href="profiles.html">Profiles</a></li>
       <li><a href="extensions.html">Extensions</a></li>
       <li><a href="capability-statements.html">Capability Statements</a></li>
-      <li><a href="search-parameters.html">Search Parameters</a></li>
+      <li><a href="artifacts.html#2">Search Parameters</a></li>
       <li><a href="logical-models.html">Logical Models</a></li>
       <li><a href="code-systems.html">Code Systems</a></li>
       <li><a href="examples.html">Examples</a></li>
@@ -322,10 +325,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
-</div>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#package-file" id="markdown-toc-package-file">Package file</a></li>
+  <li><a href="#downloadable-copy-of-this-guide" id="markdown-toc-downloadable-copy-of-this-guide">Downloadable copy of this guide</a></li>
+  <li><a href="#examples" id="markdown-toc-examples">Examples</a></li>
+  <li><a href="#consolidated-csv-and-excel-representations-of-the-profiles" id="markdown-toc-consolidated-csv-and-excel-representations-of-the-profiles">Consolidated CSV and Excel representations of the profiles</a></li>
+  <li><a href="#schematrons" id="markdown-toc-schematrons">Schematrons</a></li>
+  <li><a href="#implementationguide-resource" id="markdown-toc-implementationguide-resource">ImplementationGuide resource</a></li>
+  <li><a href="#version-history" id="markdown-toc-version-history">Version history</a></li>
+</ul>
 
+</div>
 <!-- markdownlint-disable MD041 -->
 
 <!-- Default-language (English) page. Ported from kerndatensatz-basis
@@ -342,7 +353,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>This page links the downloadable artifacts of the <strong>Meta</strong> module.</p>
 
-<h4 id="package-file">Package file</h4>
+<h3 id="package-file">Package file</h3>
 
 <p>The package file is an NPM-format FHIR package used by most FHIR tooling. It
 contains all value sets, profiles, extensions and the list of pages and URLs of
@@ -357,7 +368,7 @@ the FHIR documentation on
   <li><a href="../package.tgz">Package (compressed folder)</a></li>
 </ul>
 
-<h4 id="downloadable-copy-of-this-guide">Downloadable copy of this guide</h4>
+<h3 id="downloadable-copy-of-this-guide">Downloadable copy of this guide</h3>
 
 <p>A downloadable copy of the rendered guide, for hosting locally:</p>
 
@@ -365,7 +376,7 @@ the FHIR documentation on
   <li><a href="../full-ig.zip">Downloadable copy (compressed folder)</a></li>
 </ul>
 
-<h4 id="examples">Examples</h4>
+<h3 id="examples">Examples</h3>
 
 <p>All examples of this guide:</p>
 
@@ -374,7 +385,7 @@ the FHIR documentation on
   <li><a href="../examples.json.zip">JSON (compressed folder)</a></li>
 </ul>
 
-<h4 id="consolidated-csv-and-excel-representations-of-the-profiles">Consolidated CSV and Excel representations of the profiles</h4>
+<h3 id="consolidated-csv-and-excel-representations-of-the-profiles">Consolidated CSV and Excel representations of the profiles</h3>
 
 <p>The profile information of the whole guide in a single CSV or Excel file —
 useful for testers and analysts who want to review element properties across
@@ -385,13 +396,13 @@ profiles in one table:</p>
   <li><a href="../excels.zip">Excel (compressed folder)</a></li>
 </ul>
 
-<h4 id="schematrons">Schematrons</h4>
+<h3 id="schematrons">Schematrons</h3>
 
 <ul>
   <li><a href="../schematrons.zip">Schematrons (compressed folder)</a></li>
 </ul>
 
-<h4 id="implementationguide-resource">ImplementationGuide resource</h4>
+<h3 id="implementationguide-resource">ImplementationGuide resource</h3>
 
 <p>The <code class="language-plaintext highlighter-rouge">ImplementationGuide</code> resource carries the technical details of this
 publication, including its dependencies and publication parameters.</p>
@@ -400,7 +411,7 @@ publication, including its dependencies and publication parameters.</p>
   <li><a href="ImplementationGuide-mii-ig-meta.html">MII Meta ImplementationGuide resource</a></li>
 </ul>
 
-<h4 id="version-history">Version history</h4>
+<h3 id="version-history">Version history</h3>
 
 <p>Earlier versions and the detailed change history are on the
 <a href="version-history.html">Versioning</a> and <a href="changes.html">Changelog</a> pages.</p>
@@ -430,7 +441,7 @@ publication, including its dependencies and publication parameters.</p>
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de">NUM-DIZ</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.meta#2027.0.0-ballot.rc1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Mon, Aug 31, 2026 20:52+0000">2026-08-31</span>
+          Generated <span title="Tue, Sep 1, 2026 10:12+0000">2026-09-01</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

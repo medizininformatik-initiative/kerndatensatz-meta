@@ -916,23 +916,13 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/mii-pr-meta-searchparameter"/>
-      </reference>
-      <name value="MII PR Meta SearchParameter"/>
-      <description value="Das Profil legt die Mindestanforderungen fest, die SearchParameter-Ressourcen im Kerndatensatz erfüllen müssen."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Bundle"/>
       </extension>
       <reference>
         <reference value="Bundle/mii-exa-meta-searchparam-collection-bundle"/>
       </reference>
-      <name value="mii-exa-meta-searchparam-collection-bundle"/>
+      <name value="MII Meta SearchParameter Collection Bundle"/>
+      <description value="Collection bundle containing the SearchParameter resources published by the MII Meta module."/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -942,8 +932,20 @@
       <reference>
         <reference value="Bundle/mii-exa-meta-searchparam-transaction-bundle"/>
       </reference>
-      <name value="mii-exa-meta-searchparam-transaction-bundle"/>
+      <name value="MII Meta SearchParameter Transaction Bundle"/>
+      <description value="Transaction bundle containing the SearchParameter resources published by the MII Meta module for convenient import into a FHIR server."/>
       <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mii-pr-meta-searchparameter"/>
+      </reference>
+      <name value="MII PR Meta SearchParameter"/>
+      <description value="Das Profil legt die Mindestanforderungen fest, die SearchParameter-Ressourcen im Kerndatensatz erfüllen müssen."/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2894,14 +2896,6 @@
         </extension>
         <nameUrl value="capability-statements.html"/>
         <title value="Capability Statements"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="search-parameters.html"/>
-        </extension>
-        <nameUrl value="search-parameters.html"/>
-        <title value="Search Parameters"/>
         <generation value="markdown"/>
       </page>
       <page>

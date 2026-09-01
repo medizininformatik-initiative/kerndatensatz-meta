@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-referencerange-low | *Version*:2027.0.0-ballot.rc1 |
-| Active Stand: 2024-10-08 | *Maschinenlesbarer Name*:MII_SP_Meta_Observation_ReferenceRange_Low |
+| Active Stand: 2026-09-01 | *Maschinenlesbarer Name*:MII_SP_Meta_Observation_ReferenceRange_Low |
 
  
 Suchparameter für Observation.referenceRange.low 
@@ -23,15 +23,43 @@ Suchparameter für Observation.referenceRange.low
   "resourceType" : "SearchParameter",
   "id" : "mii-sp-meta-observation-referencerange-low",
   "meta" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+      "valueCode" : "CC-BY-4.0"
+    },
+    {
+      "extension" : [{
+        "url" : "packageId",
+        "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+      },
+      {
+        "url" : "version",
+        "valueString" : "2027.0.0-ballot.rc1"
+      },
+      {
+        "url" : "uri",
+        "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+      }],
+      "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+    }],
     "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
   },
   "extension" : [{
-    "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+    "valueCoding" : {
+      "system" : "http://hl7.org/fhir/version-algorithm",
+      "code" : "semver",
+      "display" : "SemVer"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
     "valueCodeableConcept" : {
       "coding" : [{
-        "system" : "http://hl7.org/fhir/spdx-license",
-        "code" : "CC-BY-4.0",
-        "display" : "Creative Commons Attribution 4.0 International"
+        "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+        "version" : "3.0.0",
+        "code" : "package",
+        "display" : "Package"
       }]
     }
   }],
@@ -40,7 +68,7 @@ Suchparameter für Observation.referenceRange.low
   "name" : "MII_SP_Meta_Observation_ReferenceRange_Low",
   "status" : "active",
   "experimental" : false,
-  "date" : "2024-10-08",
+  "date" : "2026-09-01",
   "publisher" : "NUM-DIZ",
   "_publisher" : {
     "extension" : [{

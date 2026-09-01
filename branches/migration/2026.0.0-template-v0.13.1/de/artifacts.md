@@ -290,10 +290,10 @@ Diese definieren neue CodeSysteme, die von Systemen verwendet werden, die mit di
 
 Dies sind Beispielinstanzen, die zeigen, wie Daten aussehen könnten, die von Systemen produziert und konsumiert werden, die mit diesem Implementierungsleitfaden konform sind.
 
-| |
-| :--- |
-| [ mii-exa-meta-searchparam-collection-bundle  ](Bundle-mii-exa-meta-searchparam-collection-bundle.md) |
-| [ mii-exa-meta-searchparam-transaction-bundle  ](Bundle-mii-exa-meta-searchparam-transaction-bundle.md) |
+| | |
+| :--- | :--- |
+| [ MII Meta SearchParameter Collection Bundle  ](Bundle-mii-exa-meta-searchparam-collection-bundle.md) | Collection bundle containing the SearchParameter resources published by the MII Meta module. |
+| [ MII Meta SearchParameter Transaction Bundle  ](Bundle-mii-exa-meta-searchparam-transaction-bundle.md) | Transaction bundle containing the SearchParameter resources published by the MII Meta module for convenient import into a FHIR server. |
 
 ### Sonstige 
 

@@ -3,6 +3,20 @@
 <SearchParameter xmlns="http://hl7.org/fhir">
   <id value="mii-sp-meta-medication-ingredient-strength-numerator"/>
   <meta>
+    <extension url="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license">
+      <valueCode value="CC-BY-4.0"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/package-source">
+      <extension url="packageId">
+        <valueId value="de.medizininformatikinitiative.kerndatensatz.meta"/>
+      </extension>
+      <extension url="version">
+        <valueString value="2027.0.0-ballot.rc1"/>
+      </extension>
+      <extension url="uri">
+        <valueUri value="https://www.medizininformatik-initiative.de/fhir/modul-meta"/>
+      </extension>
+    </extension>
     <profile value="https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"/>
   </meta>
   <text>
@@ -10,12 +24,20 @@
 </div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R4/medication.html">Medication</a></td></tr><tr><td>Expression</td><td><code>Medication.ingredient.strength.numerator</code></td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: It's up to the server whether the parameter may repeat in order to specify multiple values that must all be true</li><li>multipleOr: It's up to the server whether the parameter can have multiple values (separated by comma) where at least one must be true</li></ul></td></tr><tr><td>Comparators</td><td>Allowed: eq, gt, lt, ge, le</td></tr></table></div><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: SearchParameter mii-sp-meta-medication-ingredient-strength-numerator</b></p><a name="de-mii-sp-meta-medication-ingredient-strength-numerator"> </a><a name="de-hcmii-sp-meta-medication-ingredient-strength-numerator"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-meta-searchparameter.html">MII PR Meta SearchParameter</a></p></div><h2>MII_SP_Meta_Medication_Ingredient_Strength_Numerator</h2><p>Parameter <code>ingredient-strength-numerator</code>:<code>quantity</code></p><div><p>Suchparameter für Medication.ingredient.strength.numerator</p>
 </div><table class="grid"><tr><td>Resource</td><td><a href="http://hl7.org/fhir/R4/medication.html">Medication</a></td></tr><tr><td>Expression</td><td><code>Medication.ingredient.strength.numerator</code></td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: It's up to the server whether the parameter may repeat in order to specify multiple values that must all be true</li><li>multipleOr: It's up to the server whether the parameter can have multiple values (separated by comma) where at least one must be true</li></ul></td></tr><tr><td>Comparators</td><td>Allowed: eq, gt, lt, ge, le</td></tr></table></div></div>
   </text>
-  <extension url="https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable">
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm">
+    <valueCoding>
+      <system value="http://hl7.org/fhir/version-algorithm"/>
+      <code value="semver"/>
+      <display value="SemVer"/>
+    </valueCoding>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy">
     <valueCodeableConcept>
       <coding>
-        <system value="http://hl7.org/fhir/spdx-license"/>
-        <code value="CC-BY-4.0"/>
-        <display value="Creative Commons Attribution 4.0 International"/>
+        <system value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes"/>
+        <version value="3.0.0"/>
+        <code value="package"/>
+        <display value="Package"/>
       </coding>
     </valueCodeableConcept>
   </extension>
@@ -24,7 +46,7 @@
   <name value="MII_SP_Meta_Medication_Ingredient_Strength_Numerator"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2024-10-08"/>
+  <date value="2026-09-01"/>
   <publisher value="NUM-DIZ">
     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
       <extension url="lang">

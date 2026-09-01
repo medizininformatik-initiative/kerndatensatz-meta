@@ -68,8 +68,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"17.174"}
-    h3,h4,h5,h6{--heading-prefix:"17.174"}</style>
+    <style type="text/css">h2{--heading-prefix:"16.174"}
+    h3,h4,h5,h6{--heading-prefix:"16.174"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -198,6 +198,9 @@
        validator — it injects a marker anchor into the menu (rendered as an
        EMPTY menu entry) and logs a broken-link ERROR on every page's QA.
        Full analysis: docs/page-structure.md, "Datasets and Descriptions".
+     - "Search Parameters" points at the generated Artifacts Summary section.
+       Its named AnchorJS fragment is language-dependent and invisible to the
+       Publisher link validator, so the link uses the shared static #2 anchor.
      - The four Conformance entries point at the KDS-wide conformance rules of
        the Meta module (kerndatensatz-meta). INTERIM: the Meta module has no
        published IG rendering yet (only a CI build with no conformance pages),
@@ -235,7 +238,7 @@
       <li><a href="profiles.html">Profiles</a></li>
       <li><a href="extensions.html">Extensions</a></li>
       <li><a href="capability-statements.html">Capability Statements</a></li>
-      <li><a href="search-parameters.html">Search Parameters</a></li>
+      <li><a href="artifacts.html#2">Search Parameters</a></li>
       <li><a href="logical-models.html">Logical Models</a></li>
       <li><a href="code-systems.html">Code Systems</a></li>
       <li><a href="examples.html">Examples</a></li>
@@ -368,7 +371,7 @@
           
 
             as of 
-2026-05-18
+2026-09-01
 
           
         
@@ -422,7 +425,7 @@ XML representations.</p>
 
 
   <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated"><p class="res-header-id"></p><a name="mii-cs-meta-diz-standorte"> </a><a name="hcmii-cs-meta-diz-standorte"> </a>
-<div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"></p><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></p></div><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p>
+<div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"></p><p style="margin-bottom: 0px">Profiles: <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a>, <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-shareablecodesystem.html">CRMI Shareable CodeSystem</a>, <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-publishablecodesystem.html">CRMI Publishable CodeSystem</a></p></div><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p>
 <table class="grid" data-fhir="generated"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr>
 <tr><td>consortium</td>
 <td>consortium</td>
@@ -1244,7 +1247,7 @@ XML representations.</p>
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de">NUM-DIZ</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.meta#2027.0.0-ballot.rc1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Mon, Aug 31, 2026 20:52+0000">2026-08-31</span>
+          Generated <span title="Tue, Sep 1, 2026 10:12+0000">2026-09-01</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

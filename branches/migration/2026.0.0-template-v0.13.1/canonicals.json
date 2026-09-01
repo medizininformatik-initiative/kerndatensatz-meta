@@ -9,7 +9,8 @@
   "id" : "mii-cps-meta-server-capabilities",
   "type" : "CapabilityStatement",
   "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/CapabilityStatement/mii-cps-meta-server-capabilities",
-  "version" : "2027.0.0-ballot.rc1"
+  "version" : "2027.0.0-ballot.rc1",
+  "name" : "MII_CPS_Meta_Server_Capabilities"
 },
 {
   "id" : "mii-ig-meta",

@@ -67,8 +67,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"14"}
-    h3,h4,h5,h6{--heading-prefix:"14"}</style>
+    <style type="text/css">h2{--heading-prefix:"13"}
+    h3,h4,h5,h6{--heading-prefix:"13"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -207,7 +207,7 @@
       <li><a href="profiles.html">Profile</a></li>
       <li><a href="extensions.html">Extensions</a></li>
       <li><a href="capability-statements.html">CapabilityStatements</a></li>
-      <li><a href="search-parameters.html">Suchparameter</a></li>
+      <li><a href="artifacts.html#2">Suchparameter</a></li>
       <li><a href="logical-models.html">Logische Modelle</a></li>
       <li><a href="code-systems.html">CodeSystems</a></li>
       <li><a href="examples.html">Beispiele</a></li>
@@ -294,19 +294,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#versionsschema" id="markdown-toc-versionsschema">Versionsschema</a></li>
+  <li><a href="#artefakt-versionen" id="markdown-toc-artefakt-versionen">Artefakt-Versionen</a></li>
+  <li><a href="#release-prozess" id="markdown-toc-release-prozess">Release-Prozess</a></li>
+  <li><a href="#versionsvergleich" id="markdown-toc-versionsvergleich">Versionsvergleich</a></li>
+</ul>
+
 </div>
-
-<p style="border:var(--translation-box-border);background-color:var(--translation-background-color);padding: 5px 5px 5px 5px;">
-
-Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde.  Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie <a href="translationinfo.html">hier</a>.
-
-</p>
-
 <!-- markdownlint-disable MD041 -->
 
-<h2 id="versionsschema">Versionsschema</h2>
+<h3 id="versionsschema">Versionsschema</h3>
 
 <p>Das Meta-Modul verwendet das KDS-Schema der Kalender-Versionierung in einer
 SemVer-kompatiblen Form: <code class="language-plaintext highlighter-rouge">JJJJ.MINOR.PATCH[-label]</code>. Die aktuelle Version ist
@@ -323,7 +322,7 @@ SemVer-kompatiblen Form: <code class="language-plaintext highlighter-rouge">JJJJ
 <p>Stabile Releases lassen sich anhand der drei numerischen Bestandteile
 vergleichen. Zwischen Labels wird keine Reihenfolge abgeleitet.</p>
 
-<h2 id="artefakt-versionen">Artefakt-Versionen</h2>
+<h3 id="artefakt-versionen">Artefakt-Versionen</h3>
 
 <p>FHIR-Artefakte eines Releases tragen die Version des Leitfadens und des Pakets.
 Die maschinenlesbaren Metadaten deklarieren den Versionsalgorithmus <code class="language-plaintext highlighter-rouge">semver</code>,
@@ -331,7 +330,7 @@ die Paketquelle und Manifest-Parameter; siehe
 <a href="metadata.html">Metadaten-Übersicht</a>. Dieses Release deklariert keine
 <code class="language-plaintext highlighter-rouge">artifact-versionPolicy</code>.</p>
 
-<h2 id="release-prozess">Release-Prozess</h2>
+<h3 id="release-prozess">Release-Prozess</h3>
 
 <p>Releases folgen dem
 <a href="https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Module-Release-Workflow">MII Module Release Workflow</a>.
@@ -339,7 +338,7 @@ Die <a href="changes.html">Änderungshistorie</a> dokumentiert die Änderungen j
 Die Quelle enthält keinen modulspezifischen Unterstützungszeitraum und keine
 eigene Abkündigungsrichtlinie.</p>
 
-<h2 id="versionsvergleich">Versionsvergleich</h2>
+<h3 id="versionsvergleich">Versionsvergleich</h3>
 
 <p>Ab der zweiten formalen IG-Publisher-Publikation kann ein maschinell erzeugter
 Vergleich die Änderungshistorie ergänzen. Voraussetzung sind eine
@@ -372,7 +371,7 @@ deaktiviert.</p>
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de">NUM-DIZ</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.meta#2027.0.0-ballot.rc1 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Mon, Aug 31, 2026 20:52+0000">2026-08-31</span>
+          Erstellt <span title="Tue, Sep 1, 2026 10:12+0000">2026-09-01</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

@@ -67,8 +67,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"17.173"}
-    h3,h4,h5,h6{--heading-prefix:"17.173"}</style>
+    <style type="text/css">h2{--heading-prefix:"16.173"}
+    h3,h4,h5,h6{--heading-prefix:"16.173"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -207,7 +207,7 @@
       <li><a href="profiles.html">Profile</a></li>
       <li><a href="extensions.html">Extensions</a></li>
       <li><a href="capability-statements.html">CapabilityStatements</a></li>
-      <li><a href="search-parameters.html">Suchparameter</a></li>
+      <li><a href="artifacts.html#2">Suchparameter</a></li>
       <li><a href="logical-models.html">Logische Modelle</a></li>
       <li><a href="code-systems.html">CodeSystems</a></li>
       <li><a href="examples.html">Beispiele</a></li>
@@ -358,7 +358,7 @@
           
 
             Stand: 
-2024-10-17
+2026-09-01
 
           
         
@@ -400,10 +400,18 @@ Element ID:     <code>
 
 <!-- markdownlint-disable MD041 -->
 
-<p>Diese Extension kann verwendet werden, um maschinenverarbeitbare
-Lizenzinformationen über das von dieser Ressource beschriebene Artefakt
-bereitzustellen. Die Erweiterung ist eine R4-kompatible Version der FHIR for
-FAIR R4B IG
+<blockquote class="ig-highlight ig-highlight-orange">
+  <p><strong>Veraltet — nicht mehr verwenden</strong></p>
+
+  <p>Die Extension MII EX Meta License Codeable ist veraltet und SOLL NICHT mehr
+verwendet werden. Stattdessen SOLL die
+<a href="https://hl7.org/fhir/uv/crmi/en/StructureDefinition-crmi-license.html">CRMI License Extension</a>
+verwendet werden.</p>
+</blockquote>
+
+<p>Diese Extension wurde eingeführt, um maschinenverarbeitbare
+Lizenzinformationen über das von einer Ressource beschriebene Artefakt
+bereitzustellen. Sie ist eine R4-kompatible Version der FHIR for FAIR R4B IG
 <a href="https://hl7.org/fhir/uv/fhir-for-fair/STU1/StructureDefinition-licenceCodeable.html">Licence Terms as CodeableConcept-Extension</a>.</p>
 
 
@@ -415,7 +423,7 @@ FAIR R4B IG
   <p><b>Usage info</b></p>
   <p><b>Usages:</b></p>
 <ul>
- <li>Examples for this Extension: <a href="Bundle-mii-exa-meta-searchparam-collection-bundle.html">Bundle/mii-exa-meta-searchparam-collection-bundle</a>, <a href="Bundle-mii-exa-meta-searchparam-transaction-bundle.html">Bundle/mii-exa-meta-searchparam-transaction-bundle</a>, <a href="CodeSystem-mii-cs-meta-diz-standorte.html">MII_CS_Meta_DIZ_Standorte</a>, <a href="SearchParameter-mii-sp-meta-adverseevent-encounter.html">MII_SP_Meta_AdverseEvent_Encounter</a><span id="rr_ex" onClick="document.getElementById('rr_ex').innerHTML = document.getElementById('rr2_ex').innerHTML">... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 46 more</span></span><span id="rr2_ex" style="display: none">, <a href="SearchParameter-mii-sp-meta-adverseevent-suspectentity-instance.html">MII_SP_Meta_AdverseEvent_SuspectEntity_Instance</a>, <a href="SearchParameter-mii-sp-meta-body-structure-location-qualifier.html">MII_SP_Bildgebung_Koerperstruktur_Location_Qualifier</a>, <a href="SearchParameter-mii-sp-meta-careplan-addresses.html">MII_SP_Meta_CarePlan_Addresses</a>, <a href="SearchParameter-mii-sp-meta-careplan-contributor.html">MII_SP_Meta_CarePlan_Contributor</a>, <a href="SearchParameter-mii-sp-meta-careplan-created.html">MII_SP_Meta_CarePlan_Created</a>, <a href="SearchParameter-mii-sp-meta-composition-attester-mode.html">MII_SP_Meta_Composition_Attester_Mode</a>, <a href="SearchParameter-mii-sp-meta-composition-custodian.html">MII_SP_Meta_Composition_Custodian</a>, <a href="SearchParameter-mii-sp-meta-composition-relatesto-code.html">MII_SP_Meta_Composition_RelatesTo_Code</a>, <a href="SearchParameter-mii-sp-meta-composition-section-author.html">MII_SP_Bildgebung_Composition_Section_Author</a>, <a href="SearchParameter-mii-sp-meta-composition-section-title.html">MII_SP_Bildgebung_Composition_Section_Title</a>, <a href="SearchParameter-mii-sp-meta-condition-evidence-detail.html">MII_SP_Meta_Condition_Evidence_Detail</a>, <a href="SearchParameter-mii-sp-meta-condition-icd10gm-diagnosesicherheit.html">MII_SP_Meta_Condition_ICD10GM_Diagnosesicherheit</a>, <a href="SearchParameter-mii-sp-meta-condition-icd10gm-mehrfachcodierung.html">MII_SP_Meta_Condition_ICD10GM_Mehrfachcodierung</a>, <a href="SearchParameter-mii-sp-meta-condition-icd10gm-seitenlokalisation.html">MII_SP_Meta_Condition_ICD10GM_Seitenlokalisation</a>, <a href="SearchParameter-mii-sp-meta-condition-verification-status.html">MII_SP_Meta_Condition_Verification_Status</a>, <a href="SearchParameter-mii-sp-meta-consent-policyuri.html">MII_SP_Meta_Consent_PolicyUri</a>, <a href="SearchParameter-mii-sp-meta-consent-provisioncode.html">MII_SP_Meta_Consent_ProvisionCode</a>, <a href="SearchParameter-mii-sp-meta-consent-provisioncodeperiod.html">MII_SP_Meta_Consent_ProvisionCodePeriod</a>, <a href="SearchParameter-mii-sp-meta-consent-provisioncodetype.html">MII_SP_Meta_Consent_ProvisionCodeType</a>, <a href="SearchParameter-mii-sp-meta-consent-provisionperiod.html">MII_SP_Meta_Consent_ProvisionPeriod</a>, <a href="SearchParameter-mii-sp-meta-consent-provisiontype.html">MII_SP_Meta_Consent_ProvisionType</a>, <a href="SearchParameter-mii-sp-meta-description.html">MII_SP_Bildgebung_Description</a>, <a href="SearchParameter-mii-sp-meta-device-property-type.html">MII_SP_Meta_Device_Property_Type</a>, <a href="SearchParameter-mii-sp-meta-devicemetric-source.html">MII_SP_Meta_DeviceMetric_Source</a>, <a href="SearchParameter-mii-sp-meta-diagnostic-report-conclusion.html">MII_SP_Bildgebung_Diagnostic_Report_Conclusion</a>, <a href="SearchParameter-mii-sp-meta-diagnosticreport-imagingstudy.html">MII_SP_Meta_DiagnosticReport_ImagingStudy</a>, <a href="SearchParameter-mii-sp-meta-documentreference-attachment-size.html">MII_SP_Meta_DocumentReference_Attachment_Size</a>, <a href="SearchParameter-mii-sp-meta-documentreference-attachment-title.html">MII_SP_Meta_DocumentReference_Attachment_Title</a>, <a href="SearchParameter-mii-sp-meta-dokument-documentreference-attachment-creation.html">MII_SP_Meta_DocumentReference_Attachment_Creation</a>, <a href="SearchParameter-mii-sp-meta-dokument-documentreference-doc-status.html">MII_SP_Meta_DocumentReference_Document_Status</a>, <a href="SearchParameter-mii-sp-meta-dokument-documentreference-nlp-processing-status.html">MII_SP_Meta_DocumentReference_NLP_Processing_Status</a>, <a href="SearchParameter-mii-sp-meta-encounter-aufnahmegrund-drittestelle.html">MII_SP_Meta_Encounter_Aufnahmegrund_DritteStelle</a>, <a href="SearchParameter-mii-sp-meta-encounter-aufnahmegrund-ersteundzweitestelle.html">MII_SP_Meta_Encounter_Aufnahmegrund_ErsteUndZweiteStelle</a>, <a href="SearchParameter-mii-sp-meta-encounter-aufnahmegrund-viertestelle.html">MII_SP_Meta_Encounter_Aufnahmegrund_VierteStelle</a>, <a href="SearchParameter-mii-sp-meta-encounter-diagnosis-use.html">MII_SP_Meta_Encounter_DiagnosisUse</a>, <a href="SearchParameter-mii-sp-meta-encounter-entlassungsgrund-drittestelle.html">MII_SP_Meta_Encounter_Entlassungsgrund_DritteStelle</a>, <a href="SearchParameter-mii-sp-meta-encounter-entlassungsgrund-ersteundzweitestelle.html">MII_SP_Meta_Encounter_Entlassungsgrund_ErsteUndZweiteStelle</a>, <a href="SearchParameter-mii-sp-meta-encounter-hospitalization-admitsource.html">MII_SP_Meta_Encounter_Hospitalization_AdmitSource</a>, <a href="SearchParameter-mii-sp-meta-encounter-location-physical-type.html">MII_SP_Meta_Encounter_Location_PhysicalType</a>, <a href="SearchParameter-mii-sp-meta-encounter-servicetype.html">MII_SP_Meta_Encounter_ServiceType</a>, <a href="SearchParameter-mii-sp-meta-evidencevariable-characteristic-description.html">MII_SP_Meta_EvidenceVariable_Characteristic_Description</a>, <a href="SearchParameter-mii-sp-meta-familymemberhistory-reasoncode.html">MII_SP_Meta_FamilyMemberHistory_ReasonCode</a>, <a href="SearchParameter-mii-sp-meta-familymemberhistory-reasonreference.html">MII_SP_Meta_FamilyMemberHistory_ReasonReference</a>, <a href="SearchParameter-mii-sp-meta-imaging-study-bildgebungsgrund.html">MII_SP_Bildgebung_Imaging_Study_Bildgebungsgrund</a>, <a href="SearchParameter-mii-sp-meta-imaging-study-instance-burned-in-annotation.html">MII_SP_Bildgebung_Imaging_Study_Instance_Burned_In_Annotation</a> and <a href="SearchParameter-mii-sp-meta-imaging-study-instance-image-type.html">MII_SP_Bildgebung_Imaging_Study_Instance_Image_Type</a></span></li>
+ <li>This Extension is not used by any profiles in this Specification</li>
 </ul>
 <p>You can also check for <a href="https://packages2.fhir.org/xig/resource/de.medizininformatikinitiative.kerndatensatz.meta|current/StructureDefinition/StructureDefinition-mii-ex-meta-license-codeable.json">usages in the FHIR IG Statistics</a></p>
 
@@ -482,7 +490,7 @@ The extension is a R4-compatible version of the FHIR for FAIR R4B IG Licence Ter
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Value of extension</span><br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://hl7.org/fhir/R4/valueset-spdx-license.html" title="http://hl7.org/fhir/ValueSet/spdx-license" class="binding">SPDXLicense</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // f15d0360-a984-4588-8732-82894d82bec0
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 2ba3e871-eb5c-448e-8e35-f97557901d05
 document.getElementById('cbmii-ex-meta-license-codeableD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('mii-ex-meta-license-codeableD'), 'binding', document.getElementById('cbmii-ex-meta-license-codeableD-binding').checked, document.getElementById('ppmii-ex-meta-license-codeableD'));
 document.getElementById('cbmii-ex-meta-license-codeableD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -573,7 +581,7 @@ The extension is a R4-compatible version of the FHIR for FAIR R4B IG Licence Ter
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value of extension<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://hl7.org/fhir/R4/valueset-spdx-license.html" title="http://hl7.org/fhir/ValueSet/spdx-license" class="binding">SPDXLicense</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // f15d0360-a984-4588-8732-82894d82bec0
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 2ba3e871-eb5c-448e-8e35-f97557901d05
 document.getElementById('cbmii-ex-meta-license-codeableS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('mii-ex-meta-license-codeableS'), 'binding', document.getElementById('cbmii-ex-meta-license-codeableS-binding').checked, document.getElementById('ppmii-ex-meta-license-codeableS'));
 document.getElementById('cbmii-ex-meta-license-codeableS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -755,7 +763,7 @@ The extension is a R4-compatible version of the FHIR for FAIR R4B IG Licence Ter
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Value of extension</span><br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://hl7.org/fhir/R4/valueset-spdx-license.html" title="http://hl7.org/fhir/ValueSet/spdx-license" class="binding">SPDXLicense</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // f15d0360-a984-4588-8732-82894d82bec0
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 2ba3e871-eb5c-448e-8e35-f97557901d05
 document.getElementById('cbmii-ex-meta-license-codeableDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('mii-ex-meta-license-codeableDA'), 'binding', document.getElementById('cbmii-ex-meta-license-codeableDA-binding').checked, document.getElementById('ppmii-ex-meta-license-codeableDA'));
 document.getElementById('cbmii-ex-meta-license-codeableDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -842,7 +850,7 @@ The extension is a R4-compatible version of the FHIR for FAIR R4B IG Licence Ter
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value of extension<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://hl7.org/fhir/R4/valueset-spdx-license.html" title="http://hl7.org/fhir/ValueSet/spdx-license" class="binding">SPDXLicense</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // f15d0360-a984-4588-8732-82894d82bec0
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 2ba3e871-eb5c-448e-8e35-f97557901d05
 document.getElementById('cbmii-ex-meta-license-codeableSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('mii-ex-meta-license-codeableSA'), 'binding', document.getElementById('cbmii-ex-meta-license-codeableSA-binding').checked, document.getElementById('ppmii-ex-meta-license-codeableSA'));
 document.getElementById('cbmii-ex-meta-license-codeableSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1022,7 +1030,7 @@ The extension is a R4-compatible version of the FHIR for FAIR R4B IG Licence Ter
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de">NUM-DIZ</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.meta#2027.0.0-ballot.rc1 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Mon, Aug 31, 2026 20:52+0000">2026-08-31</span>
+          Erstellt <span title="Tue, Sep 1, 2026 10:12+0000">2026-09-01</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

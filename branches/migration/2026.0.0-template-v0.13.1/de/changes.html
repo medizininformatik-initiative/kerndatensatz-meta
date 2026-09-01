@@ -67,8 +67,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"12"}
-    h3,h4,h5,h6{--heading-prefix:"12"}</style>
+    <style type="text/css">h2{--heading-prefix:"11"}
+    h3,h4,h5,h6{--heading-prefix:"11"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -207,7 +207,7 @@
       <li><a href="profiles.html">Profile</a></li>
       <li><a href="extensions.html">Extensions</a></li>
       <li><a href="capability-statements.html">CapabilityStatements</a></li>
-      <li><a href="search-parameters.html">Suchparameter</a></li>
+      <li><a href="artifacts.html#2">Suchparameter</a></li>
       <li><a href="logical-models.html">Logische Modelle</a></li>
       <li><a href="code-systems.html">CodeSystems</a></li>
       <li><a href="examples.html">Beispiele</a></li>
@@ -294,31 +294,33 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
-</div>
-
-<p style="border:var(--translation-box-border);background-color:var(--translation-background-color);padding: 5px 5px 5px 5px;">
-
-Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde.  Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie <a href="translationinfo.html">hier</a>.
-
-</p>
-
-<!-- markdownlint-disable MD041 -->
-
-<h4 id="version-202700-ballotrc1">Version 2027.0.0-ballot.rc1</h4>
-
-<p><strong>Datum:</strong> 2026-08-31</p>
-
-<ul>
-  <li><strong>Geändert:</strong> Publikationsworkflow und Narrativ von Simplifier auf den HL7 IG
-Publisher migriert; die Identitäten der veröffentlichten FHIR-Artefakte
-wurden beibehalten.</li>
-  <li><strong>Hinzugefügt:</strong> Ein während der Migration erzeugtes, zu prüfendes
-CapabilityStatement im Status <code class="language-plaintext highlighter-rouge">draft</code>.</li>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#version-202700-ballot" id="markdown-toc-version-202700-ballot">Version 2027.0.0-ballot</a></li>
+  <li><a href="#version-202600" id="markdown-toc-version-202600">Version 2026.0.0</a></li>
+  <li><a href="#version-202503" id="markdown-toc-version-202503">Version 2025.0.3</a></li>
+  <li><a href="#version-202502" id="markdown-toc-version-202502">Version 2025.0.2</a></li>
+  <li><a href="#version-202501" id="markdown-toc-version-202501">Version 2025.0.1</a></li>
+  <li><a href="#version-202500" id="markdown-toc-version-202500">Version 2025.0.0</a></li>
 </ul>
 
-<h4 id="version-202600">Version 2026.0.0</h4>
+</div>
+<!-- markdownlint-disable MD041 -->
+
+<h3 id="version-202700-ballot">Version 2027.0.0-ballot</h3>
+
+<p><strong>Datum:</strong> 01.09.2026</p>
+
+<ul>
+  <li><strong>Added:</strong> Abhängigkeit <code class="language-plaintext highlighter-rouge">hl7.terminology.r4</code>: <code class="language-plaintext highlighter-rouge">7.1.0</code></li>
+  <li><strong>Added:</strong> Abhängigkeit <code class="language-plaintext highlighter-rouge">hl7.fhir.uv.extensions.r4</code>: <code class="language-plaintext highlighter-rouge">5.2.0</code></li>
+  <li><strong>Added:</strong> Abhängigkeit <code class="language-plaintext highlighter-rouge">hl7.fhir.uv.crmi</code>: <code class="language-plaintext highlighter-rouge">2.0.0</code></li>
+  <li><strong>Added:</strong> Die Ressourcen enthalten nun CRMI-basierte
+Artefaktmetadaten.</li>
+  <li><strong>Added:</strong> Das Modul enthält nun eine CapabilityStatement-Ressource.</li>
+</ul>
+
+<h3 id="version-202600">Version 2026.0.0</h3>
 
 <p><strong>Datum:</strong> 24.11.2025</p>
 
@@ -326,7 +328,7 @@ CapabilityStatement im Status <code class="language-plaintext highlighter-rouge"
   <li><code class="language-plaintext highlighter-rouge">Added</code>: Weitere <code class="language-plaintext highlighter-rouge">SearchParameter</code>-Ressourcen für <code class="language-plaintext highlighter-rouge">ImagingStudy</code></li>
 </ul>
 
-<h4 id="version-202503">Version 2025.0.3</h4>
+<h3 id="version-202503">Version 2025.0.3</h3>
 
 <p><strong>Datum:</strong> 04.11.2025</p>
 
@@ -336,16 +338,16 @@ CapabilityStatement im Status <code class="language-plaintext highlighter-rouge"
 Bestandteil des FHIR-Core-Standards ist.</li>
 </ul>
 
-<h4 id="version-202502">Version 2025.0.2</h4>
+<h3 id="version-202502">Version 2025.0.2</h3>
 
 <p><strong>Datum:</strong> 21.10.2025</p>
 
 <ul>
   <li><code class="language-plaintext highlighter-rouge">Added</code>: <code class="language-plaintext highlighter-rouge">SearchParameter</code>-Ressource für Procedure OPS-Seitenlokalisation.
-Siehe: <a href="search-parameters.html">Kerndatensatz Suchparameter</a></li>
+Siehe: <a href="artifacts.html#2">Kerndatensatz Suchparameter</a></li>
 </ul>
 
-<h4 id="version-202501">Version 2025.0.1</h4>
+<h3 id="version-202501">Version 2025.0.1</h3>
 
 <p><strong>Datum:</strong> 07.10.2025</p>
 
@@ -354,10 +356,10 @@ Siehe: <a href="search-parameters.html">Kerndatensatz Suchparameter</a></li>
 Medizininformatik-Initiative Standorte aktualisiert. Siehe:
 <a href="CodeSystem-mii-cs-meta-diz-standorte.html">Medizininformatik-Initiative Standorte</a></li>
   <li><code class="language-plaintext highlighter-rouge">Added</code>: <code class="language-plaintext highlighter-rouge">SearchParameter</code>-Ressourcen der Erweiterungsmodule Bildgebung und
-Dokument. Siehe: <a href="search-parameters.html">Kerndatensatz Suchparameter</a></li>
+Dokument. Siehe: <a href="artifacts.html#2">Kerndatensatz Suchparameter</a></li>
 </ul>
 
-<h4 id="version-202500">Version 2025.0.0</h4>
+<h3 id="version-202500">Version 2025.0.0</h3>
 
 <p><strong>Datum:</strong> 03.12.2024</p>
 
@@ -366,7 +368,7 @@ Dokument. Siehe: <a href="search-parameters.html">Kerndatensatz Suchparameter</a
 Profil soll nicht mehr verwendet werden.</li>
   <li>SearchParameter-Ressourcen aus Basis- und Erweiterungsmodulen werden nun
 zentral über das Meta-Modul veröffentlicht. Siehe:
-<a href="search-parameters.html">Liste Kerndatensatz Suchparameter</a></li>
+<a href="artifacts.html#2">Liste Kerndatensatz Suchparameter</a></li>
   <li><code class="language-plaintext highlighter-rouge">MII_PR_Meta_SearchParameter</code>-Profil hinzugefügt. Dieses enthält die
 Mindestanforderungen, die Suchparameter in der MII erfüllen müssen.</li>
   <li><code class="language-plaintext highlighter-rouge">MII_EX_Meta_License_Codeable</code>-Extension hinzugefügt. Diese Extension kann
@@ -399,7 +401,7 @@ Kerndatensatz veröffentlichte Artefakte bereitzustellen.</li>
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de">NUM-DIZ</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.meta#2027.0.0-ballot.rc1 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Mon, Aug 31, 2026 20:52+0000">2026-08-31</span>
+          Erstellt <span title="Tue, Sep 1, 2026 10:12+0000">2026-09-01</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

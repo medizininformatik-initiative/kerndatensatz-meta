@@ -67,8 +67,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"13"}
-    h3,h4,h5,h6{--heading-prefix:"13"}</style>
+    <style type="text/css">h2{--heading-prefix:"12"}
+    h3,h4,h5,h6{--heading-prefix:"12"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -207,7 +207,7 @@
       <li><a href="profiles.html">Profile</a></li>
       <li><a href="extensions.html">Extensions</a></li>
       <li><a href="capability-statements.html">CapabilityStatements</a></li>
-      <li><a href="search-parameters.html">Suchparameter</a></li>
+      <li><a href="artifacts.html#2">Suchparameter</a></li>
       <li><a href="logical-models.html">Logische Modelle</a></li>
       <li><a href="code-systems.html">CodeSystems</a></li>
       <li><a href="examples.html">Beispiele</a></li>
@@ -294,23 +294,22 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#crmi-konformität" id="markdown-toc-crmi-konformität">CRMI-Konformität</a></li>
+  <li><a href="#abdeckung-auf-ressourcenebene" id="markdown-toc-abdeckung-auf-ressourcenebene">Abdeckung auf Ressourcenebene</a></li>
+  <li><a href="#manifest-und-reproduzierbarkeit" id="markdown-toc-manifest-und-reproduzierbarkeit">Manifest und Reproduzierbarkeit</a></li>
+  <li><a href="#metadaten-prüfen-und-nachnutzen" id="markdown-toc-metadaten-prüfen-und-nachnutzen">Metadaten prüfen und nachnutzen</a></li>
+</ul>
+
 </div>
-
-<p style="border:var(--translation-box-border);background-color:var(--translation-background-color);padding: 5px 5px 5px 5px;">
-
-Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde.  Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie <a href="translationinfo.html">hier</a>.
-
-</p>
-
 <!-- markdownlint-disable MD041 -->
 
 <p>Diese Seite beschreibt die maschinenlesbaren Metadaten des Meta-Moduls. Die
 Metadaten unterstützen Auffindbarkeit, Validierung, Governance, Versionierung
 und Nachnutzung der FHIR-Artefakte des Leitfadens.</p>
 
-<h2 id="crmi-konformität">CRMI-Konformität</h2>
+<h3 id="crmi-konformität">CRMI-Konformität</h3>
 
 <p>Der erzeugte ImplementationGuide beansprucht die CRMI-Profile für
 verteilbare, veröffentlichbare und maschinenlesbare ImplementationGuides aus
@@ -365,7 +364,57 @@ maschinenlesbare Lizenz-Extension sind nicht deklariert. Die Lizenz des
 Leitfadens bleibt <code class="language-plaintext highlighter-rouge">CC-BY-4.0</code>; die kanonischen Artefakte des Moduls behalten ihre
 bisherigen maschinenlesbaren Lizenzmetadaten.</p>
 
-<h2 id="manifest-und-reproduzierbarkeit">Manifest und Reproduzierbarkeit</h2>
+<h3 id="abdeckung-auf-ressourcenebene">Abdeckung auf Ressourcenebene</h3>
+
+<p>Das Meta-Modul wendet das CRMI-Publikationsmuster des Basismoduls auf die
+Ressourcentypen an, die in beiden Modulen vorkommen:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Meta-Artefakt</th>
+      <th>Angewendete CRMI-Metadaten</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MII-SearchParameter-Profil</td>
+      <td>CRMI-Profile für verteilbare und veröffentlichbare StructureDefinitions; Wissensfähigkeiten; Versionsalgorithmus und Paket-Versionsrichtlinie; Paketquelle; Nutzungshinweis; Freigabe- und Geltungsdatum; Thema; Beitragende; CRMI-Lizenz</td>
+    </tr>
+    <tr>
+      <td>Veraltete MII-Lizenz-Extension</td>
+      <td>Dieselben StructureDefinition-Metadaten, mit einem Nutzungshinweis auf die CRMI License Extension</td>
+    </tr>
+    <tr>
+      <td>MII-Standorte-CodeSystem</td>
+      <td>CRMI-Profile für verteilbare und veröffentlichbare CodeSystems; Wissensfähigkeiten; Versionsalgorithmus und Paket-Versionsrichtlinie; Paketquelle; Freigabe- und Geltungsdatum; Thema; Beitragende; CRMI-Lizenz</td>
+    </tr>
+    <tr>
+      <td>Meta-CapabilityStatement</td>
+      <td>CRMI-Profile für verteilbare und veröffentlichbare CapabilityStatements; Wissensfähigkeiten; Versionsalgorithmus und Paket-Versionsrichtlinie; Paketquelle; entwurfsspezifischer Nutzungshinweis; Freigabe- und Geltungsdatum; Thema; Beitragende; CRMI-Lizenz</td>
+    </tr>
+    <tr>
+      <td>SearchParameter-Ressourcen</td>
+      <td>MII-SearchParameter-Profil; CRMI-Lizenz; Versionsalgorithmus</td>
+    </tr>
+    <tr>
+      <td>SearchParameter-Collection- und Transaction-Bundles</td>
+      <td>Paketquelle</td>
+    </tr>
+    <tr>
+      <td>Expansionsmanifest</td>
+      <td>CRMI Manifest Parameters-Profil</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Das Basismodul versieht außerdem logische Modelle und ValueSets mit
+CRMI-Metadaten. Meta definiert keine Ressourcen dieser Typen; daher werden hier
+keine klinischen oder terminologischen Artefakte des Basismoduls dupliziert.
+SearchParameter-Ressourcen sind dagegen Meta-spezifisch; das Basismodul enthält
+keine unmittelbar vergleichbare SearchParameter-Implementierung.</p>
+
+<h3 id="manifest-und-reproduzierbarkeit">Manifest und Reproduzierbarkeit</h3>
 
 <p>Kanonische Referenzen werden mit <code class="language-plaintext highlighter-rouge">pin-canonicals: pin-all</code> gepinnt. Die
 Terminologie-Expansion verwendet das
@@ -380,7 +429,7 @@ ImplementationGuide über <code class="language-plaintext highlighter-rouge">cqf
   <li><code class="language-plaintext highlighter-rouge">artifact-version-policy-codes</code> Version <code class="language-plaintext highlighter-rouge">3.0.0</code>.</li>
 </ul>
 
-<h2 id="metadaten-prüfen-und-nachnutzen">Metadaten prüfen und nachnutzen</h2>
+<h3 id="metadaten-prüfen-und-nachnutzen">Metadaten prüfen und nachnutzen</h3>
 
 <p>Die vollständigen maschinenlesbaren Metadaten stehen in den erzeugten JSON- und
 XML-Darstellungen der Artefakte sowie im
@@ -412,7 +461,7 @@ XML-Darstellungen der Artefakte sowie im
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de">NUM-DIZ</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.meta#2027.0.0-ballot.rc1 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Mon, Aug 31, 2026 20:52+0000">2026-08-31</span>
+          Erstellt <span title="Tue, Sep 1, 2026 10:12+0000">2026-09-01</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

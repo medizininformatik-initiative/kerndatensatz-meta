@@ -1279,22 +1279,6 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-mii-pr-meta-searchparameter.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/mii-pr-meta-searchparameter"
-      },
-      "name" : "MII PR Meta SearchParameter",
-      "description" : "Das Profil legt die Mindestanforderungen fest, die SearchParameter-Ressourcen im Kerndatensatz erfüllen müssen.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Bundle"
       },
       {
@@ -1304,7 +1288,8 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
       "reference" : {
         "reference" : "Bundle/mii-exa-meta-searchparam-collection-bundle"
       },
-      "name" : "mii-exa-meta-searchparam-collection-bundle",
+      "name" : "MII Meta SearchParameter Collection Bundle",
+      "description" : "Collection bundle containing the SearchParameter resources published by the MII Meta module.",
       "exampleBoolean" : true
     },
     {
@@ -1319,8 +1304,25 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
       "reference" : {
         "reference" : "Bundle/mii-exa-meta-searchparam-transaction-bundle"
       },
-      "name" : "mii-exa-meta-searchparam-transaction-bundle",
+      "name" : "MII Meta SearchParameter Transaction Bundle",
+      "description" : "Transaction bundle containing the SearchParameter resources published by the MII Meta module for convenient import into a FHIR server.",
       "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-mii-pr-meta-searchparameter.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mii-pr-meta-searchparameter"
+      },
+      "name" : "MII PR Meta SearchParameter",
+      "description" : "Das Profil legt die Mindestanforderungen fest, die SearchParameter-Ressourcen im Kerndatensatz erfüllen müssen.",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -4248,28 +4250,6 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
             {
               "url" : "content",
               "valueString" : "CapabilityStatements"
-            }],
-            "url" : "http://hl7.org/fhir/StructureDefinition/translation"
-          }]
-        },
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "search-parameters.html"
-        }],
-        "nameUrl" : "search-parameters.html",
-        "title" : "Search Parameters",
-        "_title" : {
-          "extension" : [{
-            "extension" : [{
-              "url" : "lang",
-              "valueCode" : "de"
-            },
-            {
-              "url" : "content",
-              "valueString" : "Suchparameter"
             }],
             "url" : "http://hl7.org/fhir/StructureDefinition/translation"
           }]

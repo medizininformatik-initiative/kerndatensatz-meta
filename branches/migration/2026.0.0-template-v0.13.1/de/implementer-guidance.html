@@ -207,7 +207,7 @@
       <li><a href="profiles.html">Profile</a></li>
       <li><a href="extensions.html">Extensions</a></li>
       <li><a href="capability-statements.html">CapabilityStatements</a></li>
-      <li><a href="search-parameters.html">Suchparameter</a></li>
+      <li><a href="artifacts.html#2">Suchparameter</a></li>
       <li><a href="logical-models.html">Logische Modelle</a></li>
       <li><a href="code-systems.html">CodeSystems</a></li>
       <li><a href="examples.html">Beispiele</a></li>
@@ -310,6 +310,24 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
 Quelle für Validierung und Implementierung. Die erzeugten Artefaktseiten stellen
 die normativen JSON- und XML-Darstellungen bereit.</p>
 
+<p>Bei der Implementierung von Suchparametern:</p>
+
+<ul>
+  <li>Verwenden Sie das
+<a href="StructureDefinition-mii-pr-meta-searchparameter.html">MII-SearchParameter-Profil</a>
+als Grundlage. Es definiert die Mindestanforderungen, die im
+MII-Kerndatensatz veröffentlichte SearchParameter-Ressourcen erfüllen müssen.</li>
+  <li>Prüfen Sie die
+<a href="artifacts.html#2">Suchparameterliste</a> und das
+<a href="capability-statements.html">CapabilityStatement des Meta-Moduls</a>, um die
+zusätzlich für den MII-Kerndatensatz definierten benutzerdefinierten
+Suchparameter zu ermitteln.</li>
+  <li>Für den gebündelten Import in einen FHIR-Server stehen auf der Seite
+<a href="examples.html">Beispiele</a> ein SearchParameter-Collection-Bundle und ein
+SearchParameter-Transaction-Bundle bereit. Beide Bundles enthalten sämtliche
+aktiven SearchParameter-Ressourcen, die dieses Modul veröffentlicht.</li>
+</ul>
+
 
 
 
@@ -335,7 +353,7 @@ die normativen JSON- und XML-Darstellungen bereit.</p>
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de">NUM-DIZ</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.meta#2027.0.0-ballot.rc1 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Mon, Aug 31, 2026 20:52+0000">2026-08-31</span>
+          Erstellt <span title="Tue, Sep 1, 2026 10:12+0000">2026-09-01</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

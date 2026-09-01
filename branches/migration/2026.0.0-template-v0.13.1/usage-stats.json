@@ -22,34 +22,66 @@
   },
   "usage": {
     "http://hl7.org/fhir/StructureDefinition/artifact-author": [
-      "ImplementationGuide"
+      "CapabilityStatement",
+      "CodeSystem",
+      "ImplementationGuide",
+      "StructureDefinition"
     ],
     "http://hl7.org/fhir/StructureDefinition/artifact-editor": [
-      "ImplementationGuide"
+      "CapabilityStatement",
+      "CodeSystem",
+      "ImplementationGuide",
+      "StructureDefinition"
     ],
     "http://hl7.org/fhir/StructureDefinition/artifact-endorser": [
-      "ImplementationGuide"
+      "CapabilityStatement",
+      "CodeSystem",
+      "ImplementationGuide",
+      "StructureDefinition"
     ],
     "http://hl7.org/fhir/StructureDefinition/artifact-purpose": [
       "ImplementationGuide"
     ],
     "http://hl7.org/fhir/StructureDefinition/artifact-reviewer": [
-      "ImplementationGuide"
+      "CapabilityStatement",
+      "CodeSystem",
+      "ImplementationGuide",
+      "StructureDefinition"
     ],
     "http://hl7.org/fhir/StructureDefinition/artifact-topic": [
-      "ImplementationGuide"
+      "CapabilityStatement",
+      "CodeSystem",
+      "ImplementationGuide",
+      "StructureDefinition"
     ],
     "http://hl7.org/fhir/StructureDefinition/artifact-usage": [
-      "ImplementationGuide"
+      "CapabilityStatement",
+      "ImplementationGuide",
+      "StructureDefinition"
     ],
     "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm": [
-      "ImplementationGuide"
+      "Bundle.entry.resource",
+      "CapabilityStatement",
+      "CodeSystem",
+      "ImplementationGuide",
+      "SearchParameter",
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy": [
+      "Bundle.entry.resource",
+      "CapabilityStatement",
+      "CodeSystem",
+      "SearchParameter",
+      "StructureDefinition"
     ],
     "http://hl7.org/fhir/StructureDefinition/cqf-expansionParameters": [
       "ImplementationGuide"
     ],
     "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability": [
-      "ImplementationGuide"
+      "CapabilityStatement",
+      "CodeSystem",
+      "ImplementationGuide",
+      "StructureDefinition"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
@@ -64,13 +96,25 @@
       "StructureDefinition.snapshot.element.binding"
     ],
     "http://hl7.org/fhir/StructureDefinition/package-source": [
-      "ImplementationGuide"
+      "Bundle.entry.resource.meta",
+      "Bundle.meta",
+      "CapabilityStatement.meta",
+      "CodeSystem.meta",
+      "ImplementationGuide",
+      "SearchParameter.meta",
+      "StructureDefinition.meta"
     ],
     "http://hl7.org/fhir/StructureDefinition/resource-approvalDate": [
-      "ImplementationGuide"
+      "CapabilityStatement",
+      "CodeSystem",
+      "ImplementationGuide",
+      "StructureDefinition"
     ],
     "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod": [
-      "ImplementationGuide"
+      "CapabilityStatement",
+      "CodeSystem",
+      "ImplementationGuide",
+      "StructureDefinition"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
@@ -105,11 +149,12 @@
     "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
       "StructureDefinition.snapshot"
     ],
-    "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable": [
-      "Bundle.entry.resource",
-      "CodeSystem",
-      "SearchParameter",
-      "StructureDefinition"
+    "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license": [
+      "Bundle.entry.resource.meta",
+      "CapabilityStatement.meta",
+      "CodeSystem.meta",
+      "SearchParameter.meta",
+      "StructureDefinition.meta"
     ]
   }
 }

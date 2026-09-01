@@ -67,8 +67,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"12"}
-    h3,h4,h5,h6{--heading-prefix:"12"}</style>
+    <style type="text/css">h2{--heading-prefix:"11"}
+    h3,h4,h5,h6{--heading-prefix:"11"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -197,6 +197,9 @@
        validator — it injects a marker anchor into the menu (rendered as an
        EMPTY menu entry) and logs a broken-link ERROR on every page's QA.
        Full analysis: docs/page-structure.md, "Datasets and Descriptions".
+     - "Search Parameters" points at the generated Artifacts Summary section.
+       Its named AnchorJS fragment is language-dependent and invisible to the
+       Publisher link validator, so the link uses the shared static #2 anchor.
      - The four Conformance entries point at the KDS-wide conformance rules of
        the Meta module (kerndatensatz-meta). INTERIM: the Meta module has no
        published IG rendering yet (only a CI build with no conformance pages),
@@ -234,7 +237,7 @@
       <li><a href="profiles.html">Profiles</a></li>
       <li><a href="extensions.html">Extensions</a></li>
       <li><a href="capability-statements.html">Capability Statements</a></li>
-      <li><a href="search-parameters.html">Search Parameters</a></li>
+      <li><a href="artifacts.html#2">Search Parameters</a></li>
       <li><a href="logical-models.html">Logical Models</a></li>
       <li><a href="code-systems.html">Code Systems</a></li>
       <li><a href="examples.html">Examples</a></li>
@@ -322,24 +325,32 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
-</div>
-
-<!-- markdownlint-disable MD041 -->
-
-<h4 id="version-202700-ballotrc1">Version 2027.0.0-ballot.rc1</h4>
-
-<p><strong>Date:</strong> 2026-08-31</p>
-
-<ul>
-  <li><strong>Changed:</strong> Migrated the publication workflow and narrative from Simplifier
-to the HL7 IG Publisher while retaining the published FHIR artifact
-identities.</li>
-  <li><strong>Added:</strong> A migration-generated draft CapabilityStatement for review.</li>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#version-202700-ballot" id="markdown-toc-version-202700-ballot">Version 2027.0.0-ballot</a></li>
+  <li><a href="#version-202600" id="markdown-toc-version-202600">Version 2026.0.0</a></li>
+  <li><a href="#version-202503" id="markdown-toc-version-202503">Version 2025.0.3</a></li>
+  <li><a href="#version-202502" id="markdown-toc-version-202502">Version 2025.0.2</a></li>
+  <li><a href="#version-202501" id="markdown-toc-version-202501">Version 2025.0.1</a></li>
+  <li><a href="#version-202500" id="markdown-toc-version-202500">Version 2025.0.0</a></li>
 </ul>
 
-<h4 id="version-202600">Version 2026.0.0</h4>
+</div>
+<!-- markdownlint-disable MD041 -->
+
+<h3 id="version-202700-ballot">Version 2027.0.0-ballot</h3>
+
+<p><strong>Date:</strong> 2026-09-01</p>
+
+<ul>
+  <li><strong>Added:</strong> Dependency <code class="language-plaintext highlighter-rouge">hl7.terminology.r4</code>: <code class="language-plaintext highlighter-rouge">7.1.0</code></li>
+  <li><strong>Added:</strong> Dependency <code class="language-plaintext highlighter-rouge">hl7.fhir.uv.extensions.r4</code>: <code class="language-plaintext highlighter-rouge">5.2.0</code></li>
+  <li><strong>Added:</strong> Dependency <code class="language-plaintext highlighter-rouge">hl7.fhir.uv.crmi</code>: <code class="language-plaintext highlighter-rouge">2.0.0</code></li>
+  <li><strong>Added:</strong> Resources contain CRMI-based artifact metadata</li>
+  <li><strong>Added:</strong> the module now contains a CapabilityStatement resource</li>
+</ul>
+
+<h3 id="version-202600">Version 2026.0.0</h3>
 
 <p><strong>Date:</strong> 2025-11-24</p>
 
@@ -347,7 +358,7 @@ identities.</li>
   <li><strong>Added:</strong> Further <code class="language-plaintext highlighter-rouge">SearchParameter</code> resources for <code class="language-plaintext highlighter-rouge">ImagingStudy</code>.</li>
 </ul>
 
-<h4 id="version-202503">Version 2025.0.3</h4>
+<h3 id="version-202503">Version 2025.0.3</h3>
 
 <p><strong>Date:</strong> 2025-11-04</p>
 
@@ -357,16 +368,16 @@ identities.</li>
 already part of FHIR Core.</li>
 </ul>
 
-<h4 id="version-202502">Version 2025.0.2</h4>
+<h3 id="version-202502">Version 2025.0.2</h3>
 
 <p><strong>Date:</strong> 2025-10-21</p>
 
 <ul>
   <li><strong>Added:</strong> A <code class="language-plaintext highlighter-rouge">SearchParameter</code> resource for the Procedure OPS laterality;
-see <a href="search-parameters.html">Core Data Set search parameters</a>.</li>
+see <a href="artifacts.html#2">Core Data Set search parameters</a>.</li>
 </ul>
 
-<h4 id="version-202501">Version 2025.0.1</h4>
+<h3 id="version-202501">Version 2025.0.1</h3>
 
 <p><strong>Date:</strong> 2025-10-07</p>
 
@@ -374,10 +385,10 @@ see <a href="search-parameters.html">Core Data Set search parameters</a>.</li>
   <li><strong>Changed:</strong> Updated the <code class="language-plaintext highlighter-rouge">MII_CS_Meta_DIZ_Standorte</code> CodeSystem resource;
 see <a href="CodeSystem-mii-cs-meta-diz-standorte.html">Medical Informatics Initiative sites</a>.</li>
   <li><strong>Added:</strong> <code class="language-plaintext highlighter-rouge">SearchParameter</code> resources from the Imaging and Document
-extension modules; see <a href="search-parameters.html">Core Data Set search parameters</a>.</li>
+extension modules; see <a href="artifacts.html#2">Core Data Set search parameters</a>.</li>
 </ul>
 
-<h4 id="version-202500">Version 2025.0.0</h4>
+<h3 id="version-202500">Version 2025.0.0</h3>
 
 <p><strong>Date:</strong> 2024-12-03</p>
 
@@ -386,7 +397,7 @@ extension modules; see <a href="search-parameters.html">Core Data Set search par
 longer be used.</li>
   <li><strong>Changed:</strong> SearchParameter resources from base and extension modules are
 now published centrally through the Meta module; see the
-<a href="search-parameters.html">search parameter list</a>.</li>
+<a href="artifacts.html#2">search parameter list</a>.</li>
   <li><strong>Added:</strong> The <code class="language-plaintext highlighter-rouge">MII_PR_Meta_SearchParameter</code> profile with the minimum
 requirements for MII search parameters.</li>
   <li><strong>Added:</strong> The <code class="language-plaintext highlighter-rouge">MII_EX_Meta_License_Codeable</code> extension for providing
@@ -418,7 +429,7 @@ machine-processable licence information for published artifacts.</li>
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de">NUM-DIZ</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.meta#2027.0.0-ballot.rc1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Mon, Aug 31, 2026 20:52+0000">2026-08-31</span>
+          Generated <span title="Tue, Sep 1, 2026 10:12+0000">2026-09-01</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.
