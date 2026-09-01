@@ -30,7 +30,7 @@
         },
         {
           "url": "version",
-          "valueString": "2027.0.0-ballot.rc1"
+          "valueString": "2027.0.0-ballot.rc3"
         },
         {
           "url": "uri",
@@ -143,7 +143,7 @@
     }
   ],
   "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/ImplementationGuide/mii-ig-meta",
-  "version": "2027.0.0-ballot.rc1",
+  "version": "2027.0.0-ballot.rc3",
   "name": "MII_IG_Meta",
   "title": "MII IG Meta",
   "status": "active",
