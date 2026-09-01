@@ -1,0 +1,85 @@
+{
+  "codeSystems" : [{
+    "url" : "http://hl7.org/fhir/publication-status",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "PublicationStatus",
+    "title" : "PublicationStatus",
+    "description" : "The lifecycle status of an artifact.",
+    "oids" : ["2.16.840.1.113883.4.642.4.4"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-publication-status.html" : "PublicationStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/resource-types",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "ResourceType",
+    "title" : "ResourceType",
+    "description" : "One of the resource types defined as part of this version of FHIR.",
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType"
+  },
+  {
+    "url" : "http://hl7.org/fhir/search-comparator",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "SearchComparator",
+    "title" : "SearchComparator",
+    "description" : "What Search Comparator Codes are supported in search.",
+    "oids" : ["2.16.840.1.113883.4.642.4.638"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-search-comparator.html" : "SearchComparator"
+  },
+  {
+    "url" : "http://hl7.org/fhir/search-modifier-code",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "SearchModifierCode",
+    "title" : "SearchModifierCode",
+    "description" : "A supported modifier for a search parameter.",
+    "oids" : ["2.16.840.1.113883.4.642.4.640"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-search-modifier-code.html" : "SearchModifierCode"
+  },
+  {
+    "url" : "http://hl7.org/fhir/search-param-type",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "SearchParamType",
+    "title" : "SearchParamType",
+    "description" : "Data types allowed to be used for search parameters.",
+    "oids" : ["2.16.840.1.113883.4.642.4.12"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-search-param-type.html" : "SearchParamType"
+  },
+  {
+    "url" : "http://hl7.org/fhir/search-xpath-usage",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "XPathUsageType",
+    "title" : "XPathUsageType",
+    "description" : "How a search parameter relates to the set of elements returned by evaluating its xpath query.",
+    "oids" : ["2.16.840.1.113883.4.642.4.636"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-search-xpath-usage.html" : "XPathUsageType"
+  },
+  {
+    "url" : "http://hl7.org/fhir/spdx-license",
+    "version" : "84728b7",
+    "status" : "draft",
+    "name" : "SPDXLicense",
+    "title" : "SPDXLicense",
+    "description" : "The license that applies to an Implementation Guide (using an SPDX license Identifiers, or 'not-open-source'). The binding is required but new SPDX license Identifiers are allowed to be used (https://spdx.org/licenses/).",
+    "oids" : ["2.16.840.1.113883.4.642.4.1027"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-spdx-license.html" : "SPDXLicense"
+  }]
+}

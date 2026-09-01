@@ -1,0 +1,8 @@
+URL,Version,Status,OIDs,Name,Title,Description,Used
+http://hl7.org/fhir/publication-status,4.0.1,active,"2.16.840.1.113883.4.642.4.4",PublicationStatus,PublicationStatus,"The lifecycle status of an artifact.","ValueSet/publication-status"
+http://hl7.org/fhir/resource-types,4.0.1,active,,ResourceType,ResourceType,"One of the resource types defined as part of this version of FHIR.","ValueSet/resource-types"
+http://hl7.org/fhir/search-comparator,4.0.1,draft,"2.16.840.1.113883.4.642.4.638",SearchComparator,SearchComparator,"What Search Comparator Codes are supported in search.","ValueSet/search-comparator"
+http://hl7.org/fhir/search-modifier-code,4.0.1,draft,"2.16.840.1.113883.4.642.4.640",SearchModifierCode,SearchModifierCode,"A supported modifier for a search parameter.","ValueSet/search-modifier-code"
+http://hl7.org/fhir/search-param-type,4.0.1,active,"2.16.840.1.113883.4.642.4.12",SearchParamType,SearchParamType,"Data types allowed to be used for search parameters.","ValueSet/search-param-type"
+http://hl7.org/fhir/search-xpath-usage,4.0.1,draft,"2.16.840.1.113883.4.642.4.636",XPathUsageType,XPathUsageType,"How a search parameter relates to the set of elements returned by evaluating its xpath query.","ValueSet/search-xpath-usage"
+http://hl7.org/fhir/spdx-license,84728b7,draft,"2.16.840.1.113883.4.642.4.1027",SPDXLicense,SPDXLicense,"The license that applies to an Implementation Guide (using an SPDX license Identifiers, or 'not-open-source'). The binding is required but new SPDX license Identifiers are allowed to be used (https://spdx.org/licenses/).","ValueSet/spdx-license"
