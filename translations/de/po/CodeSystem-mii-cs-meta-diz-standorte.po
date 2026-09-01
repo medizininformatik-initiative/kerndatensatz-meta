@@ -1,9 +1,4 @@
 
-# Coding.display
-#: Coding.display
-msgid "Creative Commons Attribution 4.0 International"
-msgstr ""
-
 # CodeSystem.name
 #: CodeSystem.name
 msgid "MII_CS_Meta_DIZ_Standorte"

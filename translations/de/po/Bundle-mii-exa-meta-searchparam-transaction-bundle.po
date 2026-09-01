@@ -1,9 +1,4 @@
 
-# Coding.display
-#: Coding.display
-msgid "Creative Commons Attribution 4.0 International"
-msgstr ""
-
 # SearchParameter.name
 #: SearchParameter.name
 msgid "MII_SP_Meta_Person_Adresszusatz"
@@ -1057,6 +1052,16 @@ msgstr ""
 # SearchParameter.description
 #: SearchParameter.description
 msgid "SearchParameter for Condition.verificationStatus"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_Condition_Evidence_Detail"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "SearchParameter for Condition.evidence.detail"
 msgstr ""
 
 # SearchParameter.name

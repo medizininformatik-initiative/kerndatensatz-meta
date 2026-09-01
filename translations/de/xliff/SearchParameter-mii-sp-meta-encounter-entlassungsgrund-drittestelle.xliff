@@ -3,13 +3,6 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
   <file source-language="en" target-language="de" id="SearchParameter-mii-sp-meta-encounter-entlassungsgrund-drittestelle" original="Resource SearchParameter-mii-sp-meta-encounter-entlassungsgrund-drittestelle" datatype="KEYVALUEJSON">
     <body>
-      <trans-unit id="SearchParameter-mii-sp-meta-encounter-entlassungsgrund-drittestelle" resname="Coding.display">
-             <notes>
-               <note id="n1">Coding.display</note>
-             </notes>
-        <source>Creative Commons Attribution 4.0 International</source>
-        <target></target>
-      </trans-unit>
       <trans-unit id="SearchParameter-mii-sp-meta-encounter-entlassungsgrund-drittestelle" resname="SearchParameter.name">
              <notes>
                <note id="n1">SearchParameter.name</note>

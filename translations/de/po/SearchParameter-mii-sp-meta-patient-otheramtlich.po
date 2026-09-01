@@ -1,9 +1,4 @@
 
-# Coding.display
-#: Coding.display
-msgid "Creative Commons Attribution 4.0 International"
-msgstr ""
-
 # SearchParameter.name
 #: SearchParameter.name
 msgid "MII_SP_Meta_Patient_OtherAmtlich"
