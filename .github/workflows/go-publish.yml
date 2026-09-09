@@ -653,10 +653,18 @@ jobs:
             }' > site/publish-setup.json
           touch site/.nojekyll
 
+          # IG Publisher 2.x refuses -go-publish without a package-registry.json
+          # in the webroot; on a first publication none exists yet, so let the
+          # pinned Publisher generate it for the empty website.
+          java -jar "${RUNNER_TEMP}/publisher.jar" \
+            -generate-package-registry "${GITHUB_WORKSPACE}/site"
+          test -s site/package-registry.json
+
           {
             echo "### First-publication webroot seeded"
             echo
             echo "- Generated publish-setup.json for ${PUBLICATION_BASE}"
+            echo "- Generated package-registry.json"
           } >> "${GITHUB_STEP_SUMMARY}"
 
       - name: Prepare publication workspace
