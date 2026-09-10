@@ -848,6 +848,81 @@
     }
   },
   {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-condition-asserted-date",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-condition-asserted-date",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "language" : "en",
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-condition-asserted-date\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-condition-asserted-date</b></p><a name=\"mii-sp-meta-condition-asserted-date\"> </a><a name=\"hcmii-sp-meta-condition-asserted-date\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-condition-asserted-date.html\">MII_SP_Meta_Condition_Asserted_Date</a></p><p><b>version</b>: 2027.0.0-ballot</p><p><b>name</b>: MII_SP_Meta_Condition_Asserted_Date</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-10</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für Condition.extension:assertedDate (Standardextension http://hl7.org/fhir/StructureDefinition/condition-assertedDate)</p>\n</div><p><b>code</b>: asserted-date</p><p><b>base</b>: Condition</p><p><b>type</b>: Date/DateTime</p><p><b>expression</b>: Condition.extension.where(url = 'http://hl7.org/fhir/StructureDefinition/condition-assertedDate').value</p></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-asserted-date",
+      "version" : "2027.0.0-ballot",
+      "name" : "MII_SP_Meta_Condition_Asserted_Date",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-10",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für Condition.extension:assertedDate (Standardextension http://hl7.org/fhir/StructureDefinition/condition-assertedDate)",
+      "code" : "asserted-date",
+      "base" : ["Condition"],
+      "type" : "date",
+      "expression" : "Condition.extension.where(url = 'http://hl7.org/fhir/StructureDefinition/condition-assertedDate').value"
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "SearchParameter/mii-sp-meta-condition-asserted-date"
+    }
+  },
+  {
     "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-condition-icd10gm-diagnosesicherheit",
     "resource" : {
       "resourceType" : "SearchParameter",

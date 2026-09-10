@@ -70,8 +70,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"16.175"}
-    h3,h4,h5,h6{--heading-prefix:"16.175"}</style>
+    <style type="text/css">h2{--heading-prefix:"16.176"}
+    h3,h4,h5,h6{--heading-prefix:"16.176"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -1176,6 +1176,82 @@
         &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;string&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.expression">expression</a>
                     <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patient.address.line.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName').value&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter">SearchParameter</a>&gt;
+    &lt;/resource&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-condition-asserted-date&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter">SearchParameter</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/resource.html#SearchParameter.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;mii-sp-meta-condition-asserted-date&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/resource.html#SearchParameter.meta">meta</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Meta.extension">extension</a>
+                     <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license&quot;&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;CC-BY-4.0&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Meta.extension">extension</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Meta.extension">extension</a>
+                     <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/package-source&quot;&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;packageId&quot;&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueId</a>
+                       <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;de.medizininformatikinitiative.kerndatensatz.meta&quot;/&gt;
+            &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Extension.extension">extension</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;version&quot;&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;2027.0.0-ballot&quot;/&gt;
+            &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Extension.extension">extension</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Extension.extension">extension</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;uri&quot;&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueUri</a>
+                        <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://www.medizininformatik-initiative.de/fhir/modul-meta&quot;/&gt;
+            &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Extension.extension">extension</a>&gt;
+          &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Meta.extension">extension</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/resource.html#SearchParameter.meta">meta</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/resource.html#SearchParameter.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;de&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/domainresource.html#SearchParameter.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;extensions&quot;/&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/domainresource.html#SearchParameter.text">text</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/domainresource.html#SearchParameter.extension">extension</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCoding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/version-algorithm&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;semver&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;SemVer&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCoding</a>&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/domainresource.html#SearchParameter.extension">extension</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/domainresource.html#SearchParameter.extension">extension</a>
+                   <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy&quot;&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCodeableConcept</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                      <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;3.0.0&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;package&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Package&quot;/&gt;
+            &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+          &lt;/<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCodeableConcept</a>&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/domainresource.html#SearchParameter.extension">extension</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.url">url</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-asserted-date&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;2027.0.0-ballot&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;MII_SP_Meta_Condition_Asserted_Date&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.experimental">experimental</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2026-09-10&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Medizininformatik Initiative&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.contact">contact</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;url&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;https://www.medizininformatik-initiative.de&quot;/&gt;
+          &lt;/<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+        &lt;/<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.contact">contact</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.description">description</a>
+                     <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Suchparameter für Condition.extension:assertedDate (Standardextension http://hl7.org/fhir/StructureDefinition/condition-assertedDate)&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;asserted-date&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.base">base</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Condition&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;date&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.expression">expression</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Condition.extension.where(url = 'http://hl7.org/fhir/StructureDefinition/condition-assertedDate').value&quot;/&gt;
       &lt;/<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter">SearchParameter</a>&gt;
     &lt;/resource&gt;
   &lt;/<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
@@ -13581,7 +13657,7 @@
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de">NUM-DIZ</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.meta#2027.0.0-ballot basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Thu, Sep 10, 2026 09:23+0000">2026-09-10</span>
+          Erstellt <span title="Thu, Sep 10, 2026 09:48+0000">2026-09-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

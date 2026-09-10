@@ -70,8 +70,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"16.176"}
-    h3,h4,h5,h6{--heading-prefix:"16.176"}</style>
+    <style type="text/css">h2{--heading-prefix:"16.177"}
+    h3,h4,h5,h6{--heading-prefix:"16.177"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -1346,6 +1346,96 @@
       "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request">request</a>" : {
         "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.method">method</a>" : "PUT",
         "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.url">url</a>" : "SearchParameter/mii-sp-meta-patient-strasse"
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-condition-asserted-date",
+      "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/searchparameter.html">resourceType</a>" : "SearchParameter",
+        "<a href="http://hl7.org/fhir/R4/resource.html#SearchParameter.id">id</a>" : "mii-sp-meta-condition-asserted-date",
+        "<a href="http://hl7.org/fhir/R4/resource.html#SearchParameter.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Meta.extension">extension</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCode</a>" : "CC-BY-4.0"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Extension.extension">extension</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "packageId",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueId</a>" : "de.medizininformatikinitiative.kerndatensatz.meta"
+                },
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "version",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "2027.0.0-ballot"
+                },
+                {
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "uri",
+                  "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueUri</a>" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/package-source"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-mii-pr-meta-searchparameter.html" style="color: Maroon">&#x1F517;</a> "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/resource.html#SearchParameter.language">language</a>" : "de",
+        "<a href="http://hl7.org/fhir/R4/domainresource.html#SearchParameter.text">text</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions"
+        },
+        "<a href="http://hl7.org/fhir/R4/domainresource.html#SearchParameter.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCoding</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://hl7.org/fhir/version-algorithm",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "semver",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "SemVer"
+            }
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCodeableConcept</a>" : {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.version">version</a>" : "3.0.0",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "package",
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Package"
+                }
+              ]
+            }
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.url">url</a>" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-asserted-date",
+        "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.version">version</a>" : "2027.0.0-ballot",
+        "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.name">name</a>" : "MII_SP_Meta_Condition_Asserted_Date",
+        "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.status">status</a>" : "active",
+        "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.experimental">experimental</a>" : false,
+        "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.date">date</a>" : "2026-09-10",
+        "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.publisher">publisher</a>" : "Medizininformatik Initiative",
+        "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.contact">contact</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "https://www.medizininformatik-initiative.de"
+              }
+            ]
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.description">description</a>" : "Suchparameter für Condition.extension:assertedDate (Standardextension http://hl7.org/fhir/StructureDefinition/condition-assertedDate)",
+        "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.code">code</a>" : "asserted-date",
+        "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.base">base</a>" : [
+          "Condition"
+        ],
+        "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.type">type</a>" : "date",
+        "<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.expression">expression</a>" : "Condition.extension.where(url = 'http://hl7.org/fhir/StructureDefinition/condition-assertedDate').value"
+      },
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request">request</a>" : {
+        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.method">method</a>" : "PUT",
+        "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.request.url">url</a>" : "SearchParameter/mii-sp-meta-condition-asserted-date"
       }
     },
     {
@@ -16221,7 +16311,7 @@
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de">NUM-DIZ</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.meta#2027.0.0-ballot basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Thu, Sep 10, 2026 09:23+0000">2026-09-10</span>
+          Erstellt <span title="Thu, Sep 10, 2026 09:48+0000">2026-09-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

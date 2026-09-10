@@ -34,6 +34,7 @@ Diese definieren die Eigenschaften, nach denen ein RESTful-Server durchsucht wer
 | [ mii-sp-meta-composition-relatesto-code  ](SearchParameter-mii-sp-meta-composition-relatesto-code.md) | SearchParameter for Composition.relatesTo.code |
 | [ mii-sp-meta-composition-section-author  ](SearchParameter-mii-sp-meta-composition-section-author.md) | Suchparameter für Composition.section.author |
 | [ mii-sp-meta-composition-section-title  ](SearchParameter-mii-sp-meta-composition-section-title.md) | Suchparameter für Composition.section.title |
+| [ mii-sp-meta-condition-asserted-date  ](SearchParameter-mii-sp-meta-condition-asserted-date.md) | Suchparameter für Condition.extension:assertedDate (Standardextension http://hl7.org/fhir/StructureDefinition/condition-assertedDate) |
 | [ mii-sp-meta-condition-evidence-detail  ](SearchParameter-mii-sp-meta-condition-evidence-detail.md) | SearchParameter for Condition.evidence.detail |
 | [ mii-sp-meta-condition-icd10gm-diagnosesicherheit  ](SearchParameter-mii-sp-meta-condition-icd10gm-diagnosesicherheit.md) | Suchparameter für Condition.code.coding:icd10-gm.extension:Diagnosesicherheit |
 | [ mii-sp-meta-condition-icd10gm-mehrfachcodierung  ](SearchParameter-mii-sp-meta-condition-icd10gm-mehrfachcodierung.md) | Suchparameter für Condition.code.coding:icd10-gm.extension:Mehrfachcodierungs-Kennzeichen |

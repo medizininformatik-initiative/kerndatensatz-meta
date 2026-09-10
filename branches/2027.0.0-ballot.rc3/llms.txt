@@ -59,6 +59,7 @@
 * [MII_SP_Meta_Composition_RelatesTo_Code](en/SearchParameter-mii-sp-meta-composition-relatesto-code.md)
 * [MII_SP_Bildgebung_Composition_Section_Author](en/SearchParameter-mii-sp-meta-composition-section-author.md)
 * [MII_SP_Bildgebung_Composition_Section_Title](en/SearchParameter-mii-sp-meta-composition-section-title.md)
+* [MII_SP_Meta_Condition_Asserted_Date](en/SearchParameter-mii-sp-meta-condition-asserted-date.md)
 * [MII_SP_Meta_Condition_Evidence_Detail](en/SearchParameter-mii-sp-meta-condition-evidence-detail.md)
 * [MII_SP_Meta_Condition_ICD10GM_Diagnosesicherheit](en/SearchParameter-mii-sp-meta-condition-icd10gm-diagnosesicherheit.md)
 * [MII_SP_Meta_Condition_ICD10GM_Mehrfachcodierung](en/SearchParameter-mii-sp-meta-condition-icd10gm-mehrfachcodierung.md)

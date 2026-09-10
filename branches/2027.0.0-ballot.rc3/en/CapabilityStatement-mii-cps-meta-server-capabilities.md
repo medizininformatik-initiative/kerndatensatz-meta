@@ -276,6 +276,11 @@ Migration-generated proposal describing the resource types and search parameters
     {
       "type" : "Condition",
       "searchParam" : [{
+        "name" : "asserted-date",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-asserted-date",
+        "type" : "date"
+      },
+      {
         "name" : "evidence-detail",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-evidence-detail",
         "type" : "reference"

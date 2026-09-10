@@ -1395,6 +1395,18 @@
         "valueString" : "SearchParameter"
       }],
       "reference" : {
+        "reference" : "SearchParameter/mii-sp-meta-condition-asserted-date"
+      },
+      "name" : "mii-sp-meta-condition-asserted-date",
+      "description" : "Suchparameter für Condition.extension:assertedDate (Standardextension http://hl7.org/fhir/StructureDefinition/condition-assertedDate)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      }],
+      "reference" : {
         "reference" : "SearchParameter/mii-sp-meta-condition-evidence-detail"
       },
       "name" : "mii-sp-meta-condition-evidence-detail",

@@ -1083,6 +1083,17 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
+        <reference value="SearchParameter/mii-sp-meta-condition-asserted-date"/>
+      </reference>
+      <name value="mii-sp-meta-condition-asserted-date"/>
+      <description value="Suchparameter für Condition.extension:assertedDate (Standardextension http://hl7.org/fhir/StructureDefinition/condition-assertedDate)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
         <reference value="SearchParameter/mii-sp-meta-condition-evidence-detail"/>
       </reference>
       <name value="mii-sp-meta-condition-evidence-detail"/>

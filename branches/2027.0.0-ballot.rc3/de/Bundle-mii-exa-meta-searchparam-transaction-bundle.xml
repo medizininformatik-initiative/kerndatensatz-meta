@@ -768,6 +768,74 @@
     </request>
   </entry>
   <entry>
+    <fullUrl value="https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-condition-asserted-date"/>
+    <resource>
+      <SearchParameter>
+        <id value="mii-sp-meta-condition-asserted-date"/>
+        <meta>
+          <extension url="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license">
+            <valueCode value="CC-BY-4.0"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/package-source">
+            <extension url="packageId">
+              <valueId value="de.medizininformatikinitiative.kerndatensatz.meta"/>
+            </extension>
+            <extension url="version">
+              <valueString value="2027.0.0-ballot"/>
+            </extension>
+            <extension url="uri">
+              <valueUri value="https://www.medizininformatik-initiative.de/fhir/modul-meta"/>
+            </extension>
+          </extension>
+          <profile value="https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"/>
+        </meta>
+        <language value="de"/>
+        <text>
+          <status value="extensions"/>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm">
+          <valueCoding>
+            <system value="http://hl7.org/fhir/version-algorithm"/>
+            <code value="semver"/>
+            <display value="SemVer"/>
+          </valueCoding>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes"/>
+              <version value="3.0.0"/>
+              <code value="package"/>
+              <display value="Package"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <url value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-asserted-date"/>
+        <version value="2027.0.0-ballot"/>
+        <name value="MII_SP_Meta_Condition_Asserted_Date"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2026-09-10"/>
+        <publisher value="Medizininformatik Initiative"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.medizininformatik-initiative.de"/>
+          </telecom>
+        </contact>
+        <description value="Suchparameter für Condition.extension:assertedDate (Standardextension http://hl7.org/fhir/StructureDefinition/condition-assertedDate)"/>
+        <code value="asserted-date"/>
+        <base value="Condition"/>
+        <type value="date"/>
+        <expression value="Condition.extension.where(url = 'http://hl7.org/fhir/StructureDefinition/condition-assertedDate').value"/>
+      </SearchParameter>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="SearchParameter/mii-sp-meta-condition-asserted-date"/>
+    </request>
+  </entry>
+  <entry>
     <fullUrl value="https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-condition-icd10gm-diagnosesicherheit"/>
     <resource>
       <SearchParameter>

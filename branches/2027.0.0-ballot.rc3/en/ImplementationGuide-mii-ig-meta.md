@@ -1522,6 +1522,22 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "SearchParameter-mii-sp-meta-condition-asserted-date.html"
+      }],
+      "reference" : {
+        "reference" : "SearchParameter/mii-sp-meta-condition-asserted-date"
+      },
+      "name" : "mii-sp-meta-condition-asserted-date",
+      "description" : "Suchparameter für Condition.extension:assertedDate (Standardextension http://hl7.org/fhir/StructureDefinition/condition-assertedDate)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "SearchParameter"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
         "valueUri" : "SearchParameter-mii-sp-meta-condition-evidence-detail.html"
       }],
       "reference" : {

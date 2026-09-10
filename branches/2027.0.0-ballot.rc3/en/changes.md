@@ -7,8 +7,9 @@
 
 ### Version 2027.0.0-ballot
 
-**Date:** 2026-09-01
+**Date:** 2026-09-10
 
+* **Added:** A `SearchParameter` resource `asserted-date` for `Condition.extension:assertedDate` (standard extension `condition-assertedDate`), used by the base Diagnose profile and the Oncology and MTB modules; see [Core Data Set search parameters](artifacts.md#2).
 * **Added:** Dependency `hl7.terminology.r4`: `7.1.0`
 * **Added:** Dependency `hl7.fhir.uv.extensions.r4`: `5.2.0`
 * **Added:** Dependency `hl7.fhir.uv.crmi`: `2.0.0`
