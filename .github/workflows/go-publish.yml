@@ -534,6 +534,22 @@ jobs:
               docker logs publication-nginx
               exit 1
             fi
+            # The build -go-publish spawns internally goes through the
+            # Publisher's ManagedWebAccess SSRF protection, which refuses
+            # plain-http terminology URLs unless the server is declared with
+            # allowHttp/allowPrivateNetwork in ~/.fhir/fhir-settings.json.
+            mkdir -p "${HOME}/.fhir"
+            jq -n '{
+              "servers": [
+                {
+                  "url": "http://127.0.0.1:8090/fhir",
+                  "type": "fhir",
+                  "allowHttp": true,
+                  "allowPrivateNetwork": true
+                }
+              ]
+            }' > "${HOME}/.fhir/fhir-settings.json"
+
             echo "tx_url=http://127.0.0.1:8090/fhir" >> "${GITHUB_OUTPUT}"
             echo "Terminology: SU-TermServ via client-certificate proxy" >> "${GITHUB_STEP_SUMMARY}"
           else
