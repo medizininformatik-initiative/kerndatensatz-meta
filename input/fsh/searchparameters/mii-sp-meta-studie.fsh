@@ -10,7 +10,7 @@ Usage: #definition
 * status = #active
 * description = "Suchparameter für DocumentReference.content.attachment.title"
 * experimental = false
-* date = "2024-10-17"
+* date = "2026-09-01"
 * code = #title
 * base = #DocumentReference
 * type = #string
@@ -28,7 +28,7 @@ Usage: #definition
 * status = #active
 * description = "Suchparameter für DocumentReference.content.attachment.size"
 * experimental = false
-* date = "2024-10-17"
+* date = "2026-09-01"
 * code = #size
 * base = #DocumentReference
 * type = #number
@@ -46,7 +46,7 @@ Usage: #definition
 * status = #active
 * description = "Suchparameter für EvidenceVariable.characteristic.description"
 * experimental = false
-* date = "2024-10-17"
+* date = "2026-09-01"
 * code = #characteristicDescription
 * base = #EvidenceVariable
 * type = #string
@@ -64,7 +64,7 @@ Usage: #definition
 * status = #active
 * description = "Suchparameter für Library.extension:QuellRegister"
 * experimental = false
-* date = "2024-10-17"
+* date = "2026-09-01"
 * code = #quellregister
 * base = #Library
 * type = #token
@@ -82,7 +82,7 @@ Usage: #definition
 * status = #active
 * description = "Suchparameter für Library.relatedArtifact.document.url"
 * experimental = false
-* date = "2024-10-17"
+* date = "2026-09-01"
 * code = #relatedArtifactUrl
 * base = #Library
 * type = #uri
@@ -100,7 +100,7 @@ Usage: #definition
 * status = #active
 * description = "Suchparameter für ResearchStudy.arm.name"
 * experimental = false
-* date = "2024-10-17"
+* date = "2026-09-01"
 * code = #armName
 * base = #ResearchStudy
 * type = #string
@@ -118,7 +118,7 @@ Usage: #definition
 * status = #active
 * description = "Suchparameter für ResearchStudy.extension:label"
 * experimental = false
-* date = "2024-10-17"
+* date = "2026-09-01"
 * code = #label
 * base = #ResearchStudy
 * type = #string
@@ -136,7 +136,7 @@ Usage: #definition
 * status = #active
 * description = "Suchparameter für ResearchStudy.extension:Akronym"
 * experimental = false
-* date = "2024-10-17"
+* date = "2026-09-01"
 * code = #akronym
 * base = #ResearchStudy
 * type = #string
@@ -154,7 +154,7 @@ Usage: #definition
 * status = #active
 * description = "Suchparameter für ResearchStudy.extension:Finanzierung"
 * experimental = false
-* date = "2024-10-17"
+* date = "2026-09-01"
 * code = #finanzierung
 * base = #ResearchStudy
 * type = #string
@@ -172,7 +172,7 @@ Usage: #definition
 * status = #active
 * description = "Suchparameter für ResearchStudy.extension:Studienregister"
 * experimental = false
-* date = "2024-10-17"
+* date = "2026-09-01"
 * code = #studienregister
 * base = #ResearchStudy
 * type = #reference
@@ -190,7 +190,7 @@ Usage: #definition
 * status = #active
 * description = "Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstand-datum"
 * experimental = false
-* date = "2024-10-17"
+* date = "2026-09-01"
 * code = #rekrutierungsstand-datum
 * base = #ResearchStudy
 * type = #date
@@ -208,7 +208,7 @@ Usage: #definition
 * status = #active
 * description = "Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstand-genauigkeit"
 * experimental = false
-* date = "2024-10-17"
+* date = "2026-09-01"
 * code = #rekrutierungsstand-genauigkeit
 * base = #ResearchStudy
 * type = #string
@@ -226,7 +226,7 @@ Usage: #definition
 * status = #active
 * description = "Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstand"
 * experimental = false
-* date = "2024-10-17"
+* date = "2026-09-01"
 * code = #rekrutierungsstand
 * base = #ResearchStudy
 * type = #number
@@ -244,7 +244,7 @@ Usage: #definition
 * status = #active
 * description = "Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsziel"
 * experimental = false
-* date = "2024-10-17"
+* date = "2026-09-01"
 * code = #rekrutierungsziel
 * base = #ResearchStudy
 * type = #number
@@ -262,7 +262,7 @@ Usage: #definition
 * status = #active
 * description = "Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstart"
 * experimental = false
-* date = "2024-10-17"
+* date = "2026-09-01"
 * code = #rekrutierungsstart
 * base = #ResearchStudy
 * type = #date

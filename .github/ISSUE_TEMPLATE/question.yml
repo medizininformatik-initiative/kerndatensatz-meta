@@ -1,0 +1,37 @@
+# Issue form: questions about USING this template repository.
+# General FHIR/profiling questions are redirected to the community channels
+# (see config.yml contact links) — they reach more experts there.
+name: Question
+description: A question about using this template repository (not general FHIR/profiling help).
+title: "question: "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        **Is this the right place?** General FHIR / IG / profiling questions get
+        better and faster answers on [chat.fhir.org](https://chat.fhir.org)
+        (stream `german/mi-initiative`) or the MII Zulip
+        ([mii.zulipchat.com](https://mii.zulipchat.com/), stream
+        `MII-Kerndatensatz`). Use this form for questions specific to **this
+        template repository**.
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: What are you trying to achieve, and what have you tried or read already (README, docs/, recipes)?
+    validations:
+      required: false
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I checked the README and searched existing issues.
+          required: true

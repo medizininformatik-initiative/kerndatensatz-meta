@@ -1,0 +1,86 @@
+// Dev container for an MII KDS module IG (and for this template repo itself).
+//
+// Aligned with the MII meta wiki page "Dev Container ‐ IG Publisher"
+// (https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki):
+// same model — a `.devcontainer/devcontainer.json` (no Dockerfile; the wiki
+// treats one as optional and its reference variant does not use one), one
+// container image that bundles SUSHI plus every IG-Publisher dependency, a
+// bind mount of the host's `~/.fhir` package cache, and the IG Publisher jar
+// NOT baked into the image (it is fetched, pinned, by the CI workflows and
+// the recipe — see docs/recipes/first-build-in-devcontainer.md — so the
+// dependency checker governs its version).
+//
+// Deviation from the wiki, on purpose: the wiki's prebuilt image
+// `ghcr.io/cybernop/vscode-ig-publisher` only exists up to tag
+// `sushi-3.0.0-beta.2` (registry re-checked 2026-07-22), which cannot satisfy
+// this repo's fixed-version policy (current SUSHI pin below). We therefore
+// keep the wiki's approach but realize it with the digest-pinned
+// devcontainers Java base image plus pinned features and tools.
+//
+// Why this file is byte-for-byte aligned (same digest, same pins) with the
+// sibling `ig-template-mii-kds` dev container: the template package and the
+// modules built from it must agree on the toolchain. Two dev containers
+// drifting apart (different Java/SUSHI/Jekyll) is a maintenance trap — a
+// module would build here and fail there. When bumping a pin, bump it in
+// BOTH repos in the same sweep (the dependency checker watches both).
+{
+  "name": "MII KDS Module IG",
+
+  // Java 17 base image, pinned by digest (fixed-versions policy). The tag is
+  // kept for human readability; the digest wins. Digest re-verified
+  // 2026-07-22 via the MCR registry API for
+  // mcr.microsoft.com/devcontainers/java:17-bookworm — identical to the
+  // ig-template-mii-kds pin.
+  "image": "mcr.microsoft.com/devcontainers/java:17-bookworm@sha256:de66e20d753fafbba2b811ed62ea0b163941eab2d050c3150ca54e4627b8f1cc",
+
+  // Features pinned to exact versions (not the floating ":1"/":2" majors).
+  "features": {
+    // Node.js for SUSHI. 22.23.1 = latest Node 22 (nodejs.org, re-verified
+    // 2026-07-22).
+    "ghcr.io/devcontainers/features/node:2.1.0": {
+      "version": "22.23.1"
+    },
+    // Ruby for Jekyll (required by the IG Publisher). 3.3.12 = latest 3.3.x
+    // patch (cache.ruby-lang.org, re-verified 2026-07-22); built via
+    // ruby-build, so the first container build compiles Ruby from source
+    // (takes a few minutes).
+    "ghcr.io/devcontainers/features/ruby:2.0.0": {
+      "version": "3.3.12"
+    }
+  },
+
+  // Share the host's FHIR package cache with the container, exactly as the
+  // wiki page prescribes. Why: dependency packages (the KDS module
+  // dependencies, base profiles, the MII IG template package) are cached
+  // once on the host instead of being re-downloaded on every container
+  // rebuild.
+  "mounts": [
+    "source=${localEnv:HOME}${localEnv:USERPROFILE}/.fhir,target=/home/vscode/.fhir,type=bind"
+  ],
+
+  // Toolchain installs, all pinned:
+  // - fsh-sushi 3.20.1 = latest release on npm (re-verified 2026-08-19)
+  // NOTE on Node/Ruby: the features below pin EXACT versions for container
+  // reproducibility, while CI deliberately floats the patch level
+  // (setup-node "22", setup-ruby "3.3") — on divergence, CI wins.
+  // - jekyll 4.4.1 = latest release on rubygems.org (re-verified 2026-08-19)
+  // - graphviz from the Debian bookworm repo (apt; used by the IG Publisher
+  //   to render diagrams)
+  // The IG Publisher jar is deliberately NOT installed here: the CI
+  // workflows and the first-build recipe fetch it pinned to an exact
+  // version, keeping this container decoupled from publisher releases.
+  "postCreateCommand": "npm install -g fsh-sushi@3.20.1 && gem install jekyll -v 4.4.1 && sudo apt-get update && sudo apt-get install -y graphviz",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        // FSH language support (syntax highlighting, snippets).
+        "MITRE-Health.vscode-language-fsh",
+        // YAML support (sushi-config.yaml, workflows).
+        "redhat.vscode-yaml"
+      ]
+    }
+  },
+
+  "remoteUser": "vscode"
+}

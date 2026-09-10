@@ -10,7 +10,7 @@ Usage: #definition
 * name = "MII_SP_Meta_Consent_ProvisionCode"
 * status = #active
 * experimental = false
-* date = "2024-10-17"
+* date = "2026-09-01"
 * description = "Suche im Code der Provison"
 * code = #mii-provision-provision-code
 * base = #Consent

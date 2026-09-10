@@ -8,7 +8,7 @@ Usage: #definition
 * name = "MII_SP_Meta_Encounter_Aufnahmegrund_ErsteUndZweiteStelle"
 * status = #active
 * experimental = false
-* date = "2025-07-14"
+* date = "2026-09-01"
 * description = "Suchparameter für Encounter.extension:Aufnahmegrund.extension:ErsteUndZweiteStelle"
 * code = #aufnahmegrund-ersteundzweitestelle
 * base = #Encounter 
@@ -25,7 +25,7 @@ Usage: #definition
 * name = "MII_SP_Meta_Encounter_Aufnahmegrund_DritteStelle"
 * status = #active
 * experimental = false
-* date = "2025-07-14"
+* date = "2026-09-01"
 * description = "Suchparameter für Encounter.extension:Aufnahmegrund.extension:DritteStelle"
 * code = #aufnahmegrund-drittestelle
 * base = #Encounter 
@@ -42,7 +42,7 @@ Usage: #definition
 * name = "MII_SP_Meta_Encounter_Aufnahmegrund_VierteStelle"
 * status = #active
 * experimental = false
-* date = "2025-07-14"
+* date = "2026-09-01"
 * description = "Suchparameter für Encounter.extension:Aufnahmegrund.extension:VierteStelle"
 * code = #aufnahmegrund-viertestelle
 * base = #Encounter 

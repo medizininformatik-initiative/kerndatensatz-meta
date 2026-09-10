@@ -8,7 +8,7 @@ Usage: #definition
 * name = "MII_SP_Meta_Encounter_Entlassungsgrund_ErsteUndZweiteStelle"
 * status = #active
 * experimental = false
-* date = "2025-07-21"
+* date = "2026-09-01"
 * description = "Suchparameter für Encounter.hospitalization.dischargeDisposition.extension:Entlassungsgrund.extension:ErsteUndZweiteStelle"
 * code = #entlassungsgrund-ersteundzweitestelle
 * base = #Encounter 
@@ -25,7 +25,7 @@ Usage: #definition
 * name = "MII_SP_Meta_Encounter_Entlassungsgrund_DritteStelle"
 * status = #active
 * experimental = false
-* date = "2025-07-21"
+* date = "2026-09-01"
 * description = "Suchparameter für Encounter.hospitalization.dischargeDisposition.extension:Entlassungsgrund.extension:DritteStelle"
 * code = #entlassungsgrund-drittestelle
 * base = #Encounter 

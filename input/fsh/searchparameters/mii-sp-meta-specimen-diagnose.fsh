@@ -7,7 +7,7 @@ Usage: #definition
 * insert LicenseCodeableCCBY40Instance
 * insert SP_Profile
 * name = "MII_SP_Meta_Specimen_Diagnose"
-* date = "2024-10-08"
+* date = "2026-09-01"
 * status = #active
 * experimental = true
 * description = "Suchparameter für die Extension Diagnose am Profil Bioprobe"

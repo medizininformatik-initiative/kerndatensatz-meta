@@ -10,8 +10,12 @@ RuleSet: AddCollectionEntry(resource)
 
 Instance: mii-exa-meta-searchparam-transaction-bundle
 InstanceOf: Bundle
+Usage: #example
+Title: "MII Meta SearchParameter Transaction Bundle"
+Description: "Transaction bundle containing the SearchParameter resources published by the MII Meta module for convenient import into a FHIR server."
+* insert CRMIPackageSource
 * type = #transaction
-* timestamp = "2025-11-24T10:51:00+01:00"
+* timestamp = "2026-09-01T11:09:00+02:00"
 // Person
 * insert AddTransactionEntry(mii-sp-meta-patient-adresszusatz)
 * insert AddTransactionEntry(mii-sp-meta-patient-assignerpid)
@@ -25,6 +29,7 @@ InstanceOf: Bundle
 * insert AddTransactionEntry(mii-sp-meta-patient-stadtteil)
 * insert AddTransactionEntry(mii-sp-meta-patient-strasse)
 // Diagnose
+* insert AddTransactionEntry(mii-sp-meta-condition-asserted-date)
 * insert AddTransactionEntry(mii-sp-meta-condition-icd10gm-diagnosesicherheit)
 * insert AddTransactionEntry(mii-sp-meta-condition-icd10gm-mehrfachcodierung)
 * insert AddTransactionEntry(mii-sp-meta-condition-icd10gm-seitenlokalisation)
@@ -127,7 +132,7 @@ InstanceOf: Bundle
 * insert AddTransactionEntry(mii-sp-meta-researchstudy-rekrutierungsstart)
 // Onko
 * insert AddTransactionEntry(mii-sp-meta-condition-verification-status)
-//* insert AddTransactionEntry(mii-sp-meta-condition-evidence) // not working
+* insert AddTransactionEntry(mii-sp-meta-condition-evidence-detail)
 * insert AddTransactionEntry(mii-sp-meta-observation-hasmember)
 * insert AddTransactionEntry(mii-sp-meta-procedure-complication)
 * insert AddTransactionEntry(mii-sp-meta-procedure-outcome)
@@ -200,8 +205,12 @@ InstanceOf: Bundle
 
 Instance: mii-exa-meta-searchparam-collection-bundle
 InstanceOf: Bundle
+Usage: #example
+Title: "MII Meta SearchParameter Collection Bundle"
+Description: "Collection bundle containing the SearchParameter resources published by the MII Meta module."
+* insert CRMIPackageSource
 * type = #collection
-* timestamp = "2025-11-24T10:51:00+01:00"
+* timestamp = "2026-09-01T11:09:00+02:00"
 // Person
 * insert AddCollectionEntry(mii-sp-meta-patient-adresszusatz)
 * insert AddCollectionEntry(mii-sp-meta-patient-assignerpid)
@@ -215,6 +224,7 @@ InstanceOf: Bundle
 * insert AddCollectionEntry(mii-sp-meta-patient-stadtteil)
 * insert AddCollectionEntry(mii-sp-meta-patient-strasse)
 // Diagnose
+* insert AddCollectionEntry(mii-sp-meta-condition-asserted-date)
 * insert AddCollectionEntry(mii-sp-meta-condition-icd10gm-diagnosesicherheit)
 * insert AddCollectionEntry(mii-sp-meta-condition-icd10gm-mehrfachcodierung)
 * insert AddCollectionEntry(mii-sp-meta-condition-icd10gm-seitenlokalisation)
@@ -318,7 +328,7 @@ InstanceOf: Bundle
 * insert AddCollectionEntry(mii-sp-meta-researchstudy-rekrutierungsstart)
 // Onko
 * insert AddCollectionEntry(mii-sp-meta-condition-verification-status)
-// * insert AddCollectionEntry(mii-sp-meta-condition-evidence) // not working
+* insert AddCollectionEntry(mii-sp-meta-condition-evidence-detail)
 * insert AddCollectionEntry(mii-sp-meta-observation-hasmember)
 * insert AddCollectionEntry(mii-sp-meta-procedure-complication)
 * insert AddCollectionEntry(mii-sp-meta-procedure-outcome)

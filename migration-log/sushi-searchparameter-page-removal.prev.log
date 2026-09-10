@@ -1,0 +1,4 @@
+npm error code ENOTCACHED
+npm error request to https://registry.npmjs.org/fsh-sushi failed: cache mode is 'only-if-cached' but no cached response is available.
+npm error Log files were not written due to an error writing to the directory: /Users/julian/.npm/_logs
+npm error You can rerun the command with `--loglevel=verbose` to see the logs in your terminal

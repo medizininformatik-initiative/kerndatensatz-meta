@@ -1,0 +1,59 @@
+# Dependabot (monitoring layer A — standard ecosystems only).
+# Weekly update PRs against dev; minor/patch grouped to limit PR noise.
+# Dependabot does NOT understand FHIR packages, the IG Publisher jar, or the
+# IG templates (de.medizininformatikinitiative.template / fhir2.base.template)
+# — those are watched by layer B (.github/workflows/dependency-check.yml).
+# See docs/maintenance.md. A module created from this template inherits this
+# file unchanged.
+#
+# There is no vars.ENABLE_* toggle for Dependabot: it is switched by this
+# file's presence and the repository's Dependabot settings, not by a job `if:`.
+version: 2
+updates:
+  # GitHub Actions used in .github/workflows/ (all pinned to commit SHAs;
+  # Dependabot updates the SHA and the trailing version comment together).
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: weekly
+      day: monday
+    target-branch: dev # updates land on the integration branch, never on main
+    groups:
+      actions:
+        patterns: ["*"]
+
+  # npm — the publication scripts (scripts/*.mjs) are dependency-free today,
+  # but a root package.json may land with them. Until a manifest exists,
+  # Dependabot logs a non-fatal "no manifest found" error for this entry and
+  # continues with the other entries — safe to ship ahead of the file.
+  # Do NOT point this at a FHIR package manifest (e.g. a vendored
+  # ig-template/package/package.json): its dependencies are FHIR packages
+  # that do not exist on npmjs — Dependabot would misread them.
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: weekly
+      day: monday
+    target-branch: dev
+
+  # Dev container (.devcontainer/devcontainer.json). It is image-only — no
+  # Dockerfile — so the `docker` ecosystem (which reads Dockerfiles) would
+  # find nothing; the `devcontainers` ecosystem is the right one. It updates
+  # the pinned FEATURE versions in devcontainer.json. It does NOT bump the
+  # digest-pinned base image or the tool pins in postCreateCommand — those
+  # are bumped manually; the weekly base-image security scan (layer C) is
+  # the signal. See docs/maintenance.md.
+  - package-ecosystem: devcontainers
+    directory: "/"
+    schedule:
+      interval: weekly
+      day: monday
+    target-branch: dev
+
+  # bundler — enable when a Gemfile (Jekyll) is committed at the repo root.
+  # - package-ecosystem: bundler
+  #   directory: "/"
+  #   schedule:
+  #     interval: weekly
+  #     day: monday
+  #   target-branch: dev

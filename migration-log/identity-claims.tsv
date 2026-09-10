@@ -1,0 +1,33 @@
+2026-08-31T11:44:28Z	packageId	P	package/package.json	de.medizininformatikinitiative.kerndatensatz.meta	2.1	package-identity
+2026-08-31T11:44:28Z	version	P	package/package.json	2026.0.0	2.1	package-identity
+2026-08-31T11:44:28Z	description	P	package/package.json	Medizininformatik Initiative - Modul Meta	2.1	package-identity
+2026-08-31T11:44:28Z	fhirVersions	P	package/package.json	["4.0.1"]	2.1	package-identity
+2026-08-31T11:44:28Z	jurisdiction	P	package/package.json	http://unstats.un.org/unsd/methods/m49/m49.htm#276	2.1	package-identity
+2026-08-31T11:44:28Z	title	P	package/package.json	MII IG Meta	2.1	package-identity
+2026-08-31T11:44:28Z	license	P	package/package.json	CC-BY-4.0	2.1	package-identity
+2026-08-31T11:44:28Z	homepage	P	package/package.json	https://www.medizininformatik-initiative.de/	2.1	package-identity
+2026-08-31T11:44:28Z	dependency:hl7.fhir.r4.core	P	package/package.json (source pin)	4.0.1	2.1	package-identity
+2026-08-31T11:44:49Z	title	R	README.md first heading	Medizininformatik Initiative - Kerndatensatz - Meta	2.1	repo-identity
+2026-08-31T11:44:49Z	license	R	LICENSE (text matched)	CC-BY-4.0	2.1	repo-identity
+2026-08-31T11:44:49Z	description	R	GitHub repository description	Kerndatensatz Medizininformatik Initiative	2.1	repo-identity
+2026-08-31T11:44:49Z	license	R	GitHub license.spdx_id	CC-BY-4.0	2.1	repo-identity
+2026-08-31T11:45:30Z	id	C	sushi-config.yaml	mii-ig-meta	2.1	read-identity
+2026-08-31T11:45:30Z	canonical	C	sushi-config.yaml	https://www.medizininformatik-initiative.de/fhir/modul-meta	2.1	read-identity
+2026-08-31T11:45:30Z	packageId	C	sushi-config.yaml	de.medizininformatikinitiative.kerndatensatz.meta	2.1	read-identity
+2026-08-31T11:45:30Z	version	C	sushi-config.yaml	2026.0.0	2.1	read-identity
+2026-08-31T11:45:30Z	name	C	sushi-config.yaml	MII_IG_Meta	2.1	read-identity
+2026-08-31T11:45:31Z	title	C	sushi-config.yaml	MII IG Meta	2.1	read-identity
+2026-08-31T11:45:31Z	status	C	sushi-config.yaml	active	2.1	read-identity
+2026-08-31T11:45:31Z	license	C	sushi-config.yaml	CC-BY-4.0	2.1	read-identity
+2026-08-31T11:45:31Z	releaseLabel	C	sushi-config.yaml	ci-build	2.1	read-identity
+2026-08-31T11:45:31Z	publisher	C	sushi-config.yaml	Medizininformatik Initiative	2.1	read-identity
+2026-08-31T11:45:31Z	fhirVersions	C	sushi-config.yaml	["4.0.1"]	2.1	read-identity
+2026-08-31T11:45:31Z	description	C	sushi-config.yaml	Das Modul Meta enthält Basisartefakte für alle weiteren MII-IGs.	2.1	read-identity
+2026-08-31T11:45:31Z	copyrightYear	C	sushi-config.yaml	2019+	2.1	read-identity
+2026-08-31T11:45:31Z	packageId	J	package.json:name	de.medizininformatikinitiative.kerndatensatz.meta	2.1	read-identity
+2026-08-31T11:45:31Z	version	J	package.json	2026.0.0	2.1	read-identity
+2026-08-31T11:45:31Z	canonical	J	package.json	https://www.medizininformatik-initiative.de/fhir/modul-meta	2.1	read-identity
+2026-08-31T11:45:31Z	title	J	package.json	MII IG Meta	2.1	read-identity
+2026-08-31T11:45:32Z	license	J	package.json	CC-BY-4.0	2.1	read-identity
+2026-08-31T11:45:32Z	description	J	package.json	Medizininformatik Initiative - Kerndatensatz Meta	2.1	read-identity
+2026-08-31T11:45:32Z	publisher	I	fsh-generated/resources/ImplementationGuide-mii-ig-meta.json	Medizininformatik Initiative	2.1	read-identity

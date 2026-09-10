@@ -1,0 +1,46 @@
+
+# A natural language name identifying the structure definition. This name should be usable as an identifier for the module by machine processing applications such as code generation.
+#: StructureDefinition.name
+msgid "MII_PR_Meta_SearchParameter"
+msgstr "MII_PR_Meta_SearchParameter"
+
+# A short, descriptive, user-friendly title for the structure definition.
+#: StructureDefinition.title
+msgid "MII PR Meta SearchParameter"
+msgstr "MII PR Meta SearchParameter"
+
+# The name of the organization or individual responsible for the release and ongoing maintenance of the structure definition.
+#: StructureDefinition.publisher
+msgid "NUM-DIZ"
+msgstr "NUM-DIZ"
+
+# The name of an individual to contact.
+#: StructureDefinition.contact.name
+msgid "NUM-DIZ"
+msgstr "NUM-DIZ"
+
+# A name for the specification that is being mapped to.
+#: StructureDefinition.mapping.v2/name
+msgid "HL7 v2 Mapping"
+msgstr "HL7 v2 Mapping"
+
+# A name for the specification that is being mapped to.
+#: StructureDefinition.mapping.workflow/name
+msgid "Workflow Pattern"
+msgstr "Workflow Pattern"
+
+# A name for the specification that is being mapped to.
+#: StructureDefinition.mapping.w5/name
+msgid "FiveWs Pattern Mapping"
+msgstr "FiveWs Pattern Mapping"
+
+# A name for the specification that is being mapped to.
+#: StructureDefinition.mapping.objimpl/name
+msgid "Object Implementation Information"
+msgstr "Object Implementation Information"
+
+# Text that can be used to describe the constraint in messages identifying that the constraint has been violated.
+#: StructureDefinition.element.SearchParameter.code/constraint
+msgid "In SearchParameter.code DÜRFEN NICHT folgende Zeichen enthalten sein: Leerzeichen, `.`, `$`, `|`."
+msgstr "In SearchParameter.code DÜRFEN NICHT folgende Zeichen enthalten sein: Leerzeichen, `.`, `$`, `|`."
+

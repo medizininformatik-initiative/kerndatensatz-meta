@@ -1,0 +1,18 @@
+# Routes issue creation: forms below + external support channels.
+# Why blank issues are disabled: the forms and contact links steer novices to
+# the right channel (usage questions belong on Zulip, not in the tracker) and
+# ensure bug reports arrive with reproduction details.
+blank_issues_enabled: false
+contact_links:
+  - name: FHIR / IG / profiling question (public HL7 FHIR Zulip)
+    url: https://chat.fhir.org
+    about: >-
+      Ask in the stream "german/mi-initiative" — the channel the MII KDS IGs
+      direct questions to. Anyone can create a free account. Search existing
+      threads first.
+  - name: MII-internal KDS coordination (MII Zulip)
+    url: https://mii.zulipchat.com/
+    about: >-
+      The MII's own chat, e.g. the "MII-Kerndatensatz" stream. Register at the
+      org URL; if access must be granted, request it from the MII
+      Geschäftsstelle (office@medizininformatik-initiative.de).

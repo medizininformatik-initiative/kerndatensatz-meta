@@ -1,0 +1,36 @@
+
+# Coding.display
+#: Coding.display
+msgid "SemVer"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Package"
+msgstr ""
+
+# SearchParameter.name
+#: SearchParameter.name
+msgid "MII_SP_Meta_ResearchStudy_Finanzierung"
+msgstr ""
+
+# SearchParameter.publisher
+#: SearchParameter.publisher
+msgid "NUM-DIZ"
+msgstr "NUM-DIZ"
+
+# ContactDetail.name
+#: ContactDetail.name
+msgid "NUM-DIZ"
+msgstr ""
+
+# SearchParameter.description
+#: SearchParameter.description
+msgid "Suchparameter für ResearchStudy.extension:Finanzierung"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Germany"
+msgstr ""
+

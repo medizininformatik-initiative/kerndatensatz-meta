@@ -1,0 +1,79 @@
+# This workflow publishes the SUSHI-generated FHIR resources to a separate branch
+# so they can be inspected in Simplifier. It does not publish an NPM package.
+
+name: Publish FSH Generated Resources
+
+on:
+  push:
+    branches:
+      - main
+      - 'release/**'
+      - publish-fsh-generated
+  workflow_dispatch:
+
+jobs:
+  publish-fsh-output:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Install SUSHI
+        run: npm install -g fsh-sushi@latest
+      
+      - name: Run SUSHI
+        run: sushi .
+      
+      - name: Create/Update fsh-generated branch
+        run: |
+          # Store the current branch and generated files location
+          CURRENT_BRANCH="${{ github.ref_name }}"
+          CURRENT_SHA="${{ github.sha }}"
+          
+          # Copy generated files to a temporary location
+          mkdir -p /tmp/fsh-output
+          cp -r fsh-generated /tmp/fsh-output/
+          cp package.json /tmp/fsh-output/
+          
+          # Configure git
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Fetch all branches
+          git fetch origin
+          
+          # Create or switch to fsh-generated branch (orphan if new)
+          if git rev-parse --verify origin/fsh-generated >/dev/null 2>&1; then
+            git checkout --track origin/fsh-generated
+            # Remove all files
+            git rm -rf . 2>/dev/null || true
+            find . -maxdepth 1 ! -name '.git' ! -name '.' -exec rm -rf {} + 2>/dev/null || true
+          else
+            git checkout --orphan fsh-generated
+            # Remove all files from staging and working directory
+            git rm -rf . 2>/dev/null || true
+            find . -maxdepth 1 ! -name '.git' ! -name '.' -exec rm -rf {} + 2>/dev/null || true
+          fi
+          
+          # Copy the generated files from temp location
+          cp -r /tmp/fsh-output/fsh-generated .
+          cp /tmp/fsh-output/package.json .
+          
+          # Add and commit
+          git add -A
+          
+          # Only commit if there are changes
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update FHIR resources from ${CURRENT_BRANCH} @ ${CURRENT_SHA}"
+            git push origin fsh-generated
+          fi

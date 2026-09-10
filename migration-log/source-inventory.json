@@ -1,0 +1,2181 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-08-31T11:49:07Z",
+  "source": {
+    "repositoryUrl": "https://github.com/medizininformatik-initiative/kerndatensatz-meta",
+    "renderedGuideUrl": "https://simplifier.net/guide/mii-ig-modul-meta-2025",
+    "sourceBranch": "v2027-ballot",
+    "sourceCommit": "1db2e534704d92e5ee0cde663ce3e7ccd8825fa7",
+    "migrationBranch": "migration/2026.0.0-template-v0.13.1",
+    "shape": "A",
+    "state": "hybrid",
+    "projectRoot": "."
+  },
+  "target": {
+    "moduleTemplate": "v0.13.1",
+    "moduleTemplateCommit": "61b02b504c9a48d12493b91ffb5e14fe4256429d",
+    "igTemplateLatestRelease": "v1.3.4"
+  },
+  "identity": {
+    "id": "mii-ig-meta",
+    "canonical": "https://www.medizininformatik-initiative.de/fhir/modul-meta",
+    "packageId": "de.medizininformatikinitiative.kerndatensatz.meta",
+    "name": "MII_IG_Meta",
+    "title": "MII IG Meta",
+    "version": "2026.0.0",
+    "calver": true,
+    "status": "active",
+    "fhirVersion": "4.0.1",
+    "license": "CC-BY-4.0",
+    "publisher": "Medizininformatik Initiative"
+  },
+  "artifacts": {
+    "count": 175,
+    "basis": "fsh-generated/fsh-index.txt cross-checked against fsh-generated/resources JSON",
+    "declaredCounts": {
+      "profiles": 1,
+      "extensions": 1,
+      "valuesets": 0,
+      "codesystems": 1,
+      "logicals": 0,
+      "capabilitystatements": 0,
+      "questionnaires": 0,
+      "searchparameters": 167,
+      "operations": 0,
+      "examples": 5,
+      "rulesets": 21,
+      "invariants": 1,
+      "mappings": 0,
+      "total": 175,
+      "other_total": 0
+    },
+    "generatedCounts": {
+      "profiles": 1,
+      "extensions": 1,
+      "valuesets": 0,
+      "codesystems": 1,
+      "logicals": 0,
+      "capabilitystatements": 0,
+      "questionnaires": 0,
+      "searchparameters": 170,
+      "operations": 0,
+      "examples": 2
+    },
+    "generatedCrosscheckMismatches": {
+      "searchparameters": {
+        "declared": 167,
+        "generated": 170
+      },
+      "examples": {
+        "declared": 5,
+        "generated": 2
+      }
+    },
+    "entries": [
+      {
+        "resourceType": "Bundle",
+        "id": "mii-exa-meta-searchparam-collection-bundle",
+        "url": null,
+        "name": "mii-exa-meta-searchparam-collection-bundle",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bundle.fsh",
+        "sourceLines": "201 - 390",
+        "generatedPath": "fsh-generated/resources/Bundle-mii-exa-meta-searchparam-collection-bundle.json"
+      },
+      {
+        "resourceType": "Bundle",
+        "id": "mii-exa-meta-searchparam-transaction-bundle",
+        "url": null,
+        "name": "mii-exa-meta-searchparam-transaction-bundle",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bundle.fsh",
+        "sourceLines": "11 - 199",
+        "generatedPath": "fsh-generated/resources/Bundle-mii-exa-meta-searchparam-transaction-bundle.json"
+      },
+      {
+        "resourceType": "CodeSystem",
+        "id": "mii-cs-meta-diz-standorte",
+        "url": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+        "name": "MII_CS_Meta_DIZ_Standorte",
+        "fshKind": "CodeSystem",
+        "sourcePath": "input/fsh/codesystems/mii-cs-meta-diz-standorte.fsh",
+        "sourceLines": "45 - 454",
+        "generatedPath": "fsh-generated/resources/CodeSystem-mii-cs-meta-diz-standorte.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-adverseevent-encounter",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-adverseevent-encounter",
+        "name": "mii-sp-meta-adverseevent-encounter",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-onko.fsh",
+        "sourceLines": "300 - 315",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-adverseevent-encounter.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-adverseevent-suspectentity-instance",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-adverseevent-suspectentity-instance",
+        "name": "mii-sp-meta-adverseevent-suspectentity-instance",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-onko.fsh",
+        "sourceLines": "283 - 298",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-adverseevent-suspectentity-instance.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-body-structure-location-qualifier",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-body-structure-location-qualifier",
+        "name": "mii-sp-meta-body-structure-location-qualifier",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "44 - 67",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-body-structure-location-qualifier.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-careplan-addresses",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-careplan-addresses",
+        "name": "mii-sp-meta-careplan-addresses",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-onko.fsh",
+        "sourceLines": "381 - 396",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-careplan-addresses.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-careplan-contributor",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-careplan-contributor",
+        "name": "mii-sp-meta-careplan-contributor",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-onko.fsh",
+        "sourceLines": "364 - 379",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-careplan-contributor.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-careplan-created",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-careplan-created",
+        "name": "mii-sp-meta-careplan-created",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-onko.fsh",
+        "sourceLines": "347 - 362",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-careplan-created.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-composition-attester-mode",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-composition-attester-mode",
+        "name": "mii-sp-meta-composition-attester-mode",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-patho.fsh",
+        "sourceLines": "259 - 274",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-composition-attester-mode.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-composition-custodian",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-composition-custodian",
+        "name": "mii-sp-meta-composition-custodian",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-patho.fsh",
+        "sourceLines": "276 - 291",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-composition-custodian.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-composition-relatesto-code",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-composition-relatesto-code",
+        "name": "mii-sp-meta-composition-relatesto-code",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-patho.fsh",
+        "sourceLines": "293 - 308",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-composition-relatesto-code.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-composition-section-author",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-composition-section-author",
+        "name": "mii-sp-meta-composition-section-author",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "91 - 108",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-composition-section-author.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-composition-section-title",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-composition-section-title",
+        "name": "mii-sp-meta-composition-section-title",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "70 - 89",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-composition-section-title.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-condition-evidence-detail",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-evidence-detail",
+        "name": "mii-sp-meta-condition-evidence-detail",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-onko.fsh",
+        "sourceLines": "21 - 37",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-condition-evidence-detail.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-condition-icd10gm-diagnosesicherheit",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-icd10gm-diagnosesicherheit",
+        "name": "mii-sp-meta-condition-icd10gm-diagnosesicherheit",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-condition-icd10gm-diagnosesicherheit.fsh",
+        "sourceLines": "1 - 17",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-condition-icd10gm-diagnosesicherheit.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-condition-icd10gm-mehrfachcodierung",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-icd10gm-mehrfachcodierung",
+        "name": "mii-sp-meta-condition-icd10gm-mehrfachcodierung",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-condition-icd10gm-mehrfachcodierung.fsh",
+        "sourceLines": "1 - 17",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-condition-icd10gm-mehrfachcodierung.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-condition-icd10gm-seitenlokalisation",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-icd10gm-seitenlokalisation",
+        "name": "mii-sp-meta-condition-icd10gm-seitenlokalisation",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-condition-icd10gm-seitenlokalisation.fsh",
+        "sourceLines": "1 - 17",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-condition-icd10gm-seitenlokalisation.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-condition-verification-status",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-verification-status",
+        "name": "mii-sp-meta-condition-verification-status",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-onko.fsh",
+        "sourceLines": "4 - 19",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-condition-verification-status.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-consent-policyuri",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-policyuri",
+        "name": "mii-sp-meta-consent-policyuri",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-consent-policyuri.fsh",
+        "sourceLines": "1 - 20",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-consent-policyuri.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-consent-provisioncode",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-provisioncode",
+        "name": "mii-sp-meta-consent-provisioncode",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-consent-provisioncode.fsh",
+        "sourceLines": "1 - 20",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-consent-provisioncode.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-consent-provisioncodeperiod",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-provisioncodeperiod",
+        "name": "mii-sp-meta-consent-provisioncodeperiod",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-consent-provisioncodeperiod.fsh",
+        "sourceLines": "1 - 22",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-consent-provisioncodeperiod.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-consent-provisioncodetype",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-provisioncodetype",
+        "name": "mii-sp-meta-consent-provisioncodetype",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-consent-provisioncodetype.fsh",
+        "sourceLines": "1 - 22",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-consent-provisioncodetype.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-consent-provisionperiod",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-provisionperiod",
+        "name": "mii-sp-meta-consent-provisionperiod",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-consent-provisionperiod.fsh",
+        "sourceLines": "1 - 20",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-consent-provisionperiod.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-consent-provisiontype",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-provisiontype",
+        "name": "mii-sp-meta-consent-provisiontype",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-consent-provisiontype.fsh",
+        "sourceLines": "1 - 20",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-consent-provisiontype.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-description",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-description",
+        "name": "mii-sp-meta-description",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "21 - 41",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-description.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-device-property-type",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-device-property-type",
+        "name": "mii-sp-meta-device-property-type",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-device-property-type.fsh",
+        "sourceLines": "1 - 17",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-device-property-type.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-devicemetric-source",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-devicemetric-source",
+        "name": "mii-sp-meta-devicemetric-source",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-devicemetric-source.fsh",
+        "sourceLines": "1 - 17",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-devicemetric-source.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-diagnostic-report-conclusion",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-diagnostic-report-conclusion",
+        "name": "mii-sp-meta-diagnostic-report-conclusion",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "111 - 130",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-diagnostic-report-conclusion.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-diagnosticreport-imagingstudy",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-diagnosticreport-imagingstudy",
+        "name": "mii-sp-meta-diagnosticreport-imagingstudy",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-patho.fsh",
+        "sourceLines": "238 - 254",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-diagnosticreport-imagingstudy.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-documentreference-attachment-size",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-documentreference-attachment-size",
+        "name": "mii-sp-meta-documentreference-attachment-size",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-studie.fsh",
+        "sourceLines": "19 - 35",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-documentreference-attachment-size.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-documentreference-attachment-title",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-documentreference-attachment-title",
+        "name": "mii-sp-meta-documentreference-attachment-title",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-studie.fsh",
+        "sourceLines": "1 - 17",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-documentreference-attachment-title.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-dokument-documentreference-attachment-creation",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-dokument-documentreference-attachment-creation",
+        "name": "mii-sp-meta-dokument-documentreference-attachment-creation",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-dokument.fsh",
+        "sourceLines": "1 - 17",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-dokument-documentreference-attachment-creation.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-dokument-documentreference-doc-status",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-dokument-documentreference-doc-status",
+        "name": "mii-sp-meta-dokument-documentreference-doc-status",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-dokument.fsh",
+        "sourceLines": "19 - 35",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-dokument-documentreference-doc-status.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-dokument-documentreference-nlp-processing-status",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-dokument-documentreference-nlp-processing-status",
+        "name": "mii-sp-meta-dokument-documentreference-nlp-processing-status",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-dokument.fsh",
+        "sourceLines": "37 - 53",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-dokument-documentreference-nlp-processing-status.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-encounter-aufnahmegrund-drittestelle",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-aufnahmegrund-drittestelle",
+        "name": "mii-sp-meta-encounter-aufnahmegrund-drittestelle",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-encounter-aufnahmegrund.fsh",
+        "sourceLines": "18 - 33",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-encounter-aufnahmegrund-drittestelle.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-encounter-aufnahmegrund-ersteundzweitestelle",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-aufnahmegrund-ersteundzweitestelle",
+        "name": "mii-sp-meta-encounter-aufnahmegrund-ersteundzweitestelle",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-encounter-aufnahmegrund.fsh",
+        "sourceLines": "1 - 16",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-encounter-aufnahmegrund-ersteundzweitestelle.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-encounter-aufnahmegrund-viertestelle",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-aufnahmegrund-viertestelle",
+        "name": "mii-sp-meta-encounter-aufnahmegrund-viertestelle",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-encounter-aufnahmegrund.fsh",
+        "sourceLines": "35 - 50",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-encounter-aufnahmegrund-viertestelle.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-encounter-diagnosis-use",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-diagnosis-use",
+        "name": "mii-sp-meta-encounter-diagnosis-use",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-encounter-diagnosis-use.fsh",
+        "sourceLines": "1 - 17",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-encounter-diagnosis-use.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-encounter-entlassungsgrund-drittestelle",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-entlassungsgrund-drittestelle",
+        "name": "mii-sp-meta-encounter-entlassungsgrund-drittestelle",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-encounter-entlassungsgrund.fsh",
+        "sourceLines": "18 - 33",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-encounter-entlassungsgrund-drittestelle.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-encounter-entlassungsgrund-ersteundzweitestelle",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-entlassungsgrund-ersteundzweitestelle",
+        "name": "mii-sp-meta-encounter-entlassungsgrund-ersteundzweitestelle",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-encounter-entlassungsgrund.fsh",
+        "sourceLines": "1 - 16",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-encounter-entlassungsgrund-ersteundzweitestelle.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-encounter-hospitalization-admitsource",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-hospitalization-admitsource",
+        "name": "mii-sp-meta-encounter-hospitalization-admitsource",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-encounter-hospitalization-admitsource.fsh",
+        "sourceLines": "1 - 17",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-encounter-hospitalization-admitsource.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-encounter-location-physical-type",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-location-physical-type",
+        "name": "mii-sp-meta-encounter-location-physical-type",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-encounter-location-physical-type.fsh",
+        "sourceLines": "1 - 17",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-encounter-location-physical-type.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-encounter-servicetype",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-servicetype",
+        "name": "mii-sp-meta-encounter-servicetype",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-encounter-servicetype.fsh",
+        "sourceLines": "1 - 17",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-encounter-servicetype.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-evidencevariable-characteristic-description",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-evidencevariable-characteristic-description",
+        "name": "mii-sp-meta-evidencevariable-characteristic-description",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-studie.fsh",
+        "sourceLines": "37 - 53",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-evidencevariable-characteristic-description.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-familymemberhistory-reasoncode",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-familymemberhistory-reasoncode",
+        "name": "mii-sp-meta-familymemberhistory-reasoncode",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-molgen.fsh",
+        "sourceLines": "97 - 113",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-familymemberhistory-reasoncode.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-familymemberhistory-reasonreference",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-familymemberhistory-reasonreference",
+        "name": "mii-sp-meta-familymemberhistory-reasonreference",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-molgen.fsh",
+        "sourceLines": "115 - 137",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-familymemberhistory-reasonreference.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-imaging-study-bildgebungsgrund",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-bildgebungsgrund",
+        "name": "mii-sp-meta-imaging-study-bildgebungsgrund",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "155 - 174",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-imaging-study-bildgebungsgrund.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-imaging-study-instance-burned-in-annotation",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-instance-burned-in-annotation",
+        "name": "mii-sp-meta-imaging-study-instance-burned-in-annotation",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "1107 - 1130",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-imaging-study-instance-burned-in-annotation.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-imaging-study-instance-image-type",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-instance-image-type",
+        "name": "mii-sp-meta-imaging-study-instance-image-type",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "1082 - 1105",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-imaging-study-instance-image-type.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-imaging-study-instance-number",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-instance-number",
+        "name": "mii-sp-meta-imaging-study-instance-number",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "1132 - 1153",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-imaging-study-instance-number.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-imaging-study-instance-pixel-x",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-instance-pixel-x",
+        "name": "mii-sp-meta-imaging-study-instance-pixel-x",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "1013 - 1034",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-imaging-study-instance-pixel-x.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-imaging-study-instance-pixel-y",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-instance-pixel-y",
+        "name": "mii-sp-meta-imaging-study-instance-pixel-y",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "1036 - 1057",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-imaging-study-instance-pixel-y.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-imaging-study-instance-slice-thickness",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-instance-slice-thickness",
+        "name": "mii-sp-meta-imaging-study-instance-slice-thickness",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "1059 - 1080",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-imaging-study-instance-slice-thickness.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-imaging-study-modality-body-site",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-modality-body-site",
+        "name": "mii-sp-meta-imaging-study-modality-body-site",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "133 - 153",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-imaging-study-modality-body-site.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-imaging-study-modality",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-modality",
+        "name": "mii-sp-meta-imaging-study-modality",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "176 - 199",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-imaging-study-modality.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-imaging-study-number-instances",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-number-instances",
+        "name": "mii-sp-meta-imaging-study-number-instances",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "246 - 267",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-imaging-study-number-instances.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-imaging-study-number-series",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-number-series",
+        "name": "mii-sp-meta-imaging-study-number-series",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "223 - 244",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-imaging-study-number-series.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-imaging-study-procedure-reference",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-procedure-reference",
+        "name": "mii-sp-meta-imaging-study-procedure-reference",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "269 - 286",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-imaging-study-procedure-reference.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-imaging-study-series-contrast-bolus-details",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-contrast-bolus-details",
+        "name": "mii-sp-meta-imaging-study-series-contrast-bolus-details",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "904 - 922",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-imaging-study-series-contrast-bolus-details.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-imaging-study-series-contrast-bolus",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-contrast-bolus",
+        "name": "mii-sp-meta-imaging-study-series-contrast-bolus",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "879 - 902",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-imaging-study-series-contrast-bolus.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-imaging-study-series-convolutional-kernel",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-convolutional-kernel",
+        "name": "mii-sp-meta-imaging-study-series-convolutional-kernel",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "288 - 307",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-imaging-study-series-convolutional-kernel.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-imaging-study-series-ctdi-volume",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-ctdi-volume",
+        "name": "mii-sp-meta-imaging-study-series-ctdi-volume",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "309 - 330",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-imaging-study-series-ctdi-volume.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-imaging-study-series-echo-time",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-echo-time",
+        "name": "mii-sp-meta-imaging-study-series-echo-time",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "522 - 543",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-imaging-study-series-echo-time.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-imaging-study-series-exposure-time",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-exposure-time",
+        "name": "mii-sp-meta-imaging-study-series-exposure-time",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "332 - 353",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-imaging-study-series-exposure-time.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-imaging-study-series-exposure",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-exposure",
+        "name": "mii-sp-meta-imaging-study-series-exposure",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "355 - 376",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-imaging-study-series-exposure.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-imaging-study-series-flip-angle",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-flip-angle",
+        "name": "mii-sp-meta-imaging-study-series-flip-angle",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "591 - 612",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-imaging-study-series-flip-angle.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-imaging-study-series-inversion-time",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-inversion-time",
+        "name": "mii-sp-meta-imaging-study-series-inversion-time",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "568 - 589",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-imaging-study-series-inversion-time.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-imaging-study-series-kvp",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-kvp",
+        "name": "mii-sp-meta-imaging-study-series-kvp",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "401 - 422",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-imaging-study-series-kvp.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-imaging-study-series-laterality",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-laterality",
+        "name": "mii-sp-meta-imaging-study-series-laterality",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "970 - 993",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-imaging-study-series-laterality.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-imaging-study-series-magnetic-field-strength",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-magnetic-field-strength",
+        "name": "mii-sp-meta-imaging-study-series-magnetic-field-strength",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "449 - 470",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-imaging-study-series-magnetic-field-strength.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-imaging-study-series-number",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-number",
+        "name": "mii-sp-meta-imaging-study-series-number",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "947 - 968",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-imaging-study-series-number.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-imaging-study-series-pulse-frequency",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-pulse-frequency",
+        "name": "mii-sp-meta-imaging-study-series-pulse-frequency",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "831 - 852",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-imaging-study-series-pulse-frequency.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-imaging-study-series-radionuclide-half-life",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-radionuclide-half-life",
+        "name": "mii-sp-meta-imaging-study-series-radionuclide-half-life",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "735 - 756",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-imaging-study-series-radionuclide-half-life.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-imaging-study-series-radionuclide-total-dose",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-radionuclide-total-dose",
+        "name": "mii-sp-meta-imaging-study-series-radionuclide-total-dose",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "712 - 733",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-imaging-study-series-radionuclide-total-dose.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-imaging-study-series-radionuclide",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-radionuclide",
+        "name": "mii-sp-meta-imaging-study-series-radionuclide",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "639 - 662",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-imaging-study-series-radionuclide.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-imaging-study-series-radiopharmaceutical",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-radiopharmaceutical",
+        "name": "mii-sp-meta-imaging-study-series-radiopharmaceutical",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "614 - 637",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-imaging-study-series-radiopharmaceutical.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-imaging-study-series-repetition-time",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-repetition-time",
+        "name": "mii-sp-meta-imaging-study-series-repetition-time",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "545 - 566",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-imaging-study-series-repetition-time.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-imaging-study-series-scanning-sequence-variant",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-scanning-sequence-variant",
+        "name": "mii-sp-meta-imaging-study-series-scanning-sequence-variant",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "497 - 520",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-imaging-study-series-scanning-sequence-variant.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-imaging-study-series-scanning-sequence",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-scanning-sequence",
+        "name": "mii-sp-meta-imaging-study-series-scanning-sequence",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "472 - 495",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-imaging-study-series-scanning-sequence.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-imaging-study-series-series-type",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-series-type",
+        "name": "mii-sp-meta-imaging-study-series-series-type",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "758 - 781",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-imaging-study-series-series-type.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-imaging-study-series-slice-thickness",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-slice-thickness",
+        "name": "mii-sp-meta-imaging-study-series-slice-thickness",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "924 - 945",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-imaging-study-series-slice-thickness.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-imaging-study-series-started",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-started",
+        "name": "mii-sp-meta-imaging-study-series-started",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "995 - 1011",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-imaging-study-series-started.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-imaging-study-series-tracer-exposure-time",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-tracer-exposure-time",
+        "name": "mii-sp-meta-imaging-study-series-tracer-exposure-time",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "664 - 685",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-imaging-study-series-tracer-exposure-time.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-imaging-study-series-transducer-frequency",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-transducer-frequency",
+        "name": "mii-sp-meta-imaging-study-series-transducer-frequency",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "808 - 829",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-imaging-study-series-transducer-frequency.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-imaging-study-series-transducer-type",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-transducer-type",
+        "name": "mii-sp-meta-imaging-study-series-transducer-type",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "783 - 806",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-imaging-study-series-transducer-type.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-imaging-study-series-ultrasound-color",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-ultrasound-color",
+        "name": "mii-sp-meta-imaging-study-series-ultrasound-color",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "854 - 877",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-imaging-study-series-ultrasound-color.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-imaging-study-series-units",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-units",
+        "name": "mii-sp-meta-imaging-study-series-units",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "687 - 710",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-imaging-study-series-units.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-imaging-study-series-view-position",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-view-position",
+        "name": "mii-sp-meta-imaging-study-series-view-position",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "424 - 447",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-imaging-study-series-view-position.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-imaging-study-series-xray-tube-current",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-xray-tube-current",
+        "name": "mii-sp-meta-imaging-study-series-xray-tube-current",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "378 - 399",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-imaging-study-series-xray-tube-current.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-library-quellregister",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-library-quellregister",
+        "name": "mii-sp-meta-library-quellregister",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-studie.fsh",
+        "sourceLines": "55 - 71",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-library-quellregister.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-library-relatedartifact-url",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-library-relatedartifact-url",
+        "name": "mii-sp-meta-library-relatedartifact-url",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-studie.fsh",
+        "sourceLines": "73 - 89",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-library-relatedartifact-url.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-media-partof",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-media-partof",
+        "name": "mii-sp-meta-media-partof",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-patho.fsh",
+        "sourceLines": "313 - 328",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-media-partof.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-medication-dosage-dosequantity",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-dosequantity",
+        "name": "mii-sp-meta-medication-dosage-dosequantity",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-medication.fsh",
+        "sourceLines": "212 - 235",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-medication-dosage-dosequantity.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-medication-dosage-doserange-high",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange-high",
+        "name": "mii-sp-meta-medication-dosage-doserange-high",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-medication.fsh",
+        "sourceLines": "165 - 187",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-medication-dosage-doserange-high.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-medication-dosage-doserange-low",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange-low",
+        "name": "mii-sp-meta-medication-dosage-doserange-low",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-medication.fsh",
+        "sourceLines": "141 - 163",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-medication-dosage-doserange-low.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-medication-dosage-doserange",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange",
+        "name": "mii-sp-meta-medication-dosage-doserange",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-medication.fsh",
+        "sourceLines": "189 - 210",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-medication-dosage-doserange.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-medication-dosage-ratequantity",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-ratequantity",
+        "name": "mii-sp-meta-medication-dosage-ratequantity",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-medication.fsh",
+        "sourceLines": "308 - 331",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-medication-dosage-ratequantity.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-medication-dosage-raterange-high",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange-high",
+        "name": "mii-sp-meta-medication-dosage-raterange-high",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-medication.fsh",
+        "sourceLines": "261 - 283",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-medication-dosage-raterange-high.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-medication-dosage-raterange-low",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange-low",
+        "name": "mii-sp-meta-medication-dosage-raterange-low",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-medication.fsh",
+        "sourceLines": "237 - 259",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-medication-dosage-raterange-low.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-medication-dosage-raterange",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange",
+        "name": "mii-sp-meta-medication-dosage-raterange",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-medication.fsh",
+        "sourceLines": "285 - 306",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-medication-dosage-raterange.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-medication-dosage-rateratio-denominator",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-denominator",
+        "name": "mii-sp-meta-medication-dosage-rateratio-denominator",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-medication.fsh",
+        "sourceLines": "376 - 399",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-medication-dosage-rateratio-denominator.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-medication-dosage-rateratio-numerator",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-numerator",
+        "name": "mii-sp-meta-medication-dosage-rateratio-numerator",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-medication.fsh",
+        "sourceLines": "351 - 374",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-medication-dosage-rateratio-numerator.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-medication-dosage-rateratio",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio",
+        "name": "mii-sp-meta-medication-dosage-rateratio",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-medication.fsh",
+        "sourceLines": "401 - 423",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-medication-dosage-rateratio.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-medication-dosage-route",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-route",
+        "name": "mii-sp-meta-medication-dosage-route",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-medication.fsh",
+        "sourceLines": "116 - 139",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-medication-dosage-route.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-medication-dosage-site",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-site",
+        "name": "mii-sp-meta-medication-dosage-site",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-medication.fsh",
+        "sourceLines": "91 - 114",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-medication-dosage-site.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-medication-ingredient-strength-denominator",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength-denominator",
+        "name": "mii-sp-meta-medication-ingredient-strength-denominator",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-medication.fsh",
+        "sourceLines": "24 - 45",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-medication-ingredient-strength-denominator.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-medication-ingredient-strength-numerator",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength-numerator",
+        "name": "mii-sp-meta-medication-ingredient-strength-numerator",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-medication.fsh",
+        "sourceLines": "1 - 22",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-medication-ingredient-strength-numerator.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-medication-ingredient-strength",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength",
+        "name": "mii-sp-meta-medication-ingredient-strength",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-medication.fsh",
+        "sourceLines": "47 - 67",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-medication-ingredient-strength.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-medication-list-mode",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-list-mode",
+        "name": "mii-sp-meta-medication-list-mode",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-medication.fsh",
+        "sourceLines": "333 - 349",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-medication-list-mode.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-medication-partof",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-partof",
+        "name": "mii-sp-meta-medication-partof",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-medication.fsh",
+        "sourceLines": "425 - 446",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-medication-partof.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-medication-reasonreference",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-reasonreference",
+        "name": "mii-sp-meta-medication-reasonreference",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-medication.fsh",
+        "sourceLines": "69 - 89",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-medication-reasonreference.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-observation-body-structure",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-body-structure",
+        "name": "mii-sp-meta-observation-body-structure",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "1206 - 1223",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-observation-body-structure.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-observation-bodysite",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-bodysite",
+        "name": "mii-sp-meta-observation-bodysite",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-patho.fsh",
+        "sourceLines": "126 - 141",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-observation-bodysite.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-observation-component-interpretation",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-component-interpretation",
+        "name": "mii-sp-meta-observation-component-interpretation",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-observation-component-interpretation.fsh",
+        "sourceLines": "1 - 17",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-observation-component-interpretation.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-observation-encounter",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-encounter",
+        "name": "mii-sp-meta-observation-encounter",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-onko.fsh",
+        "sourceLines": "433 - 448",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-observation-encounter.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-observation-focus",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-focus",
+        "name": "mii-sp-meta-observation-focus",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-onko.fsh",
+        "sourceLines": "416 - 431",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-observation-focus.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-observation-hasmember",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-hasmember",
+        "name": "mii-sp-meta-observation-hasmember",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-onko.fsh",
+        "sourceLines": "63 - 78",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-observation-hasmember.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-observation-interpretation",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-interpretation",
+        "name": "mii-sp-meta-observation-interpretation",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-observation-interpretation.fsh",
+        "sourceLines": "1 - 17",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-observation-interpretation.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-observation-issued",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-issued",
+        "name": "mii-sp-meta-observation-issued",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-observation-issued.fsh",
+        "sourceLines": "1 - 17",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-observation-issued.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-observation-referencerange-high",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-referencerange-high",
+        "name": "mii-sp-meta-observation-referencerange-high",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-observation-referencerange.fsh",
+        "sourceLines": "41 - 57",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-observation-referencerange-high.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-observation-referencerange-low",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-referencerange-low",
+        "name": "mii-sp-meta-observation-referencerange-low",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-observation-referencerange.fsh",
+        "sourceLines": "23 - 39",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-observation-referencerange-low.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-observation-referencerange",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-referencerange",
+        "name": "mii-sp-meta-observation-referencerange",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-observation-referencerange.fsh",
+        "sourceLines": "1 - 21",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-observation-referencerange.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-observation-series-uid",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-series-uid",
+        "name": "mii-sp-meta-observation-series-uid",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "1156 - 1179",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-observation-series-uid.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-observation-sop-instance-uid",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-sop-instance-uid",
+        "name": "mii-sp-meta-observation-sop-instance-uid",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "1181 - 1204",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-observation-sop-instance-uid.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-observation-value-ratio-denominator",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-value-ratio-denominator",
+        "name": "mii-sp-meta-observation-value-ratio-denominator",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-patho.fsh",
+        "sourceLines": "182 - 198",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-observation-value-ratio-denominator.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-observation-value-ratio-numerator",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-value-ratio-numerator",
+        "name": "mii-sp-meta-observation-value-ratio-numerator",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-patho.fsh",
+        "sourceLines": "164 - 180",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-observation-value-ratio-numerator.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-observation-value-ratio",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-value-ratio",
+        "name": "mii-sp-meta-observation-value-ratio",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-patho.fsh",
+        "sourceLines": "143 - 162",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-observation-value-ratio.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-patient-adresszusatz",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-adresszusatz",
+        "name": "mii-sp-meta-patient-adresszusatz",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-patient-adresszusatz.fsh",
+        "sourceLines": "1 - 17",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-patient-adresszusatz.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-patient-assignerpid",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-assignerpid",
+        "name": "mii-sp-meta-patient-assignerpid",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-patient-assignerpid.fsh",
+        "sourceLines": "1 - 17",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-patient-assignerpid.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-patient-gemeindeschluessel",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-gemeindeschluessel",
+        "name": "mii-sp-meta-patient-gemeindeschluessel",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-patient-gemeindeschluessel.fsh",
+        "sourceLines": "1 - 17",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-patient-gemeindeschluessel.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-patient-hausnummer",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-hausnummer",
+        "name": "mii-sp-meta-patient-hausnummer",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-patient-hausnummer.fsh",
+        "sourceLines": "1 - 17",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-patient-hausnummer.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-patient-otheramtlich",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-otheramtlich",
+        "name": "mii-sp-meta-patient-otheramtlich",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-patient-otheramtlich.fsh",
+        "sourceLines": "1 - 17",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-patient-otheramtlich.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-patient-postfach",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-postfach",
+        "name": "mii-sp-meta-patient-postfach",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-patient-postfach.fsh",
+        "sourceLines": "1 - 17",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-patient-postfach.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-patient-prefix",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-prefix",
+        "name": "mii-sp-meta-patient-prefix",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-patient-prefix.fsh",
+        "sourceLines": "1 - 17",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-patient-prefix.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-patient-prefixqualifier",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-prefixqualifier",
+        "name": "mii-sp-meta-patient-prefixqualifier",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-patient-prefixqualifier.fsh",
+        "sourceLines": "1 - 17",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-patient-prefixqualifier.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-patient-stadtteil",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-stadtteil",
+        "name": "mii-sp-meta-patient-stadtteil",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-patient-stadtteil.fsh",
+        "sourceLines": "1 - 17",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-patient-stadtteil.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-patient-strasse",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-strasse",
+        "name": "mii-sp-meta-patient-strasse",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-patient-strasse.fsh",
+        "sourceLines": "1 - 17",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-patient-strasse.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-procedure-bodysite",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-bodysite",
+        "name": "mii-sp-meta-procedure-bodysite",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-procedure-bodysite.fsh",
+        "sourceLines": "1 - 17",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-procedure-bodysite.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-procedure-complication",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-complication",
+        "name": "mii-sp-meta-procedure-complication",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-onko.fsh",
+        "sourceLines": "123 - 138",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-procedure-complication.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-procedure-dokumentationsdatum",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-dokumentationsdatum",
+        "name": "mii-sp-meta-procedure-dokumentationsdatum",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-procedure-dokumentationsdatum.fsh",
+        "sourceLines": "1 - 17",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-procedure-dokumentationsdatum.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-procedure-durchfuehrungsabsicht",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-durchfuehrungsabsicht",
+        "name": "mii-sp-meta-procedure-durchfuehrungsabsicht",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-procedure-durchfuehrungsabsicht.fsh",
+        "sourceLines": "1 - 17",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-procedure-durchfuehrungsabsicht.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-procedure-ops-seitenlokalisation",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-ops-seitenlokalisation",
+        "name": "mii-sp-meta-procedure-ops-seitenlokalisation",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-procedure-seitenlokalisation.fsh",
+        "sourceLines": "1 - 16",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-procedure-ops-seitenlokalisation.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-procedure-outcome",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-outcome",
+        "name": "mii-sp-meta-procedure-outcome",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-onko.fsh",
+        "sourceLines": "263 - 278",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-procedure-outcome.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-procedure-recorder",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-recorder",
+        "name": "mii-sp-meta-procedure-recorder",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-procedure-recorder.fsh",
+        "sourceLines": "1 - 21",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-procedure-recorder.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-read-proc-report",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-read-proc-report",
+        "name": "mii-sp-meta-read-proc-report",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "1226 - 1245",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-read-proc-report.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-reason-reference",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-reason-reference",
+        "name": "mii-sp-meta-reason-reference",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "201 - 221",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-reason-reference.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-researchstudy-akronym",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-akronym",
+        "name": "mii-sp-meta-researchstudy-akronym",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-studie.fsh",
+        "sourceLines": "127 - 143",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-researchstudy-akronym.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-researchstudy-arm-name",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-arm-name",
+        "name": "mii-sp-meta-researchstudy-arm-name",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-studie.fsh",
+        "sourceLines": "91 - 107",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-researchstudy-arm-name.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-researchstudy-finanzierung",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-finanzierung",
+        "name": "mii-sp-meta-researchstudy-finanzierung",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-studie.fsh",
+        "sourceLines": "145 - 161",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-researchstudy-finanzierung.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-researchstudy-label",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-label",
+        "name": "mii-sp-meta-researchstudy-label",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-studie.fsh",
+        "sourceLines": "109 - 125",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-researchstudy-label.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-researchstudy-rekrutierungsstand-datum",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-rekrutierungsstand-datum",
+        "name": "mii-sp-meta-researchstudy-rekrutierungsstand-datum",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-studie.fsh",
+        "sourceLines": "181 - 197",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-researchstudy-rekrutierungsstand-datum.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-researchstudy-rekrutierungsstand-genauigkeit",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-rekrutierungsstand-genauigkeit",
+        "name": "mii-sp-meta-researchstudy-rekrutierungsstand-genauigkeit",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-studie.fsh",
+        "sourceLines": "199 - 215",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-researchstudy-rekrutierungsstand-genauigkeit.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-researchstudy-rekrutierungsstand",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-rekrutierungsstand",
+        "name": "mii-sp-meta-researchstudy-rekrutierungsstand",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-studie.fsh",
+        "sourceLines": "217 - 233",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-researchstudy-rekrutierungsstand.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-researchstudy-rekrutierungsstart",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-rekrutierungsstart",
+        "name": "mii-sp-meta-researchstudy-rekrutierungsstart",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-studie.fsh",
+        "sourceLines": "253 - 269",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-researchstudy-rekrutierungsstart.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-researchstudy-rekrutierungsziel",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-rekrutierungsziel",
+        "name": "mii-sp-meta-researchstudy-rekrutierungsziel",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-studie.fsh",
+        "sourceLines": "235 - 251",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-researchstudy-rekrutierungsziel.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-researchstudy-studienregister",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-studienregister",
+        "name": "mii-sp-meta-researchstudy-studienregister",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-studie.fsh",
+        "sourceLines": "163 - 179",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-researchstudy-studienregister.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-researchsubject-consent",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchsubject-consent",
+        "name": "mii-sp-meta-researchsubject-consent",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-researchsubject-consent.fsh",
+        "sourceLines": "1 - 18",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-researchsubject-consent.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-servicerequest-reasoncode",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-servicerequest-reasoncode",
+        "name": "mii-sp-meta-servicerequest-reasoncode",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-molgen.fsh",
+        "sourceLines": "1 - 17",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-servicerequest-reasoncode.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-servicerequest-reasonreference",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-servicerequest-reasonreference",
+        "name": "mii-sp-meta-servicerequest-reasonreference",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-molgen.fsh",
+        "sourceLines": "19 - 39",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-servicerequest-reasonreference.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-servicerequest-supportinginfo",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-servicerequest-supportinginfo",
+        "name": "mii-sp-meta-servicerequest-supportinginfo",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-patho.fsh",
+        "sourceLines": "218 - 233",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-servicerequest-supportinginfo.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-specimen-collection-body-site",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-collection-body-site",
+        "name": "mii-sp-meta-specimen-collection-body-site",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-patho.fsh",
+        "sourceLines": "38 - 53",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-specimen-collection-body-site.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-specimen-collection-method",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-collection-method",
+        "name": "mii-sp-meta-specimen-collection-method",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-patho.fsh",
+        "sourceLines": "21 - 36",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-specimen-collection-method.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-specimen-container-additive",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-container-additive",
+        "name": "mii-sp-meta-specimen-container-additive",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-patho.fsh",
+        "sourceLines": "106 - 121",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-specimen-container-additive.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-specimen-diagnose",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-diagnose",
+        "name": "mii-sp-meta-specimen-diagnose",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-specimen-diagnose.fsh",
+        "sourceLines": "1 - 19",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-specimen-diagnose.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-specimen-processing-additive",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-processing-additive",
+        "name": "mii-sp-meta-specimen-processing-additive",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-patho.fsh",
+        "sourceLines": "72 - 87",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-specimen-processing-additive.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-specimen-processing-date",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-processing-date",
+        "name": "mii-sp-meta-specimen-processing-date",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-patho.fsh",
+        "sourceLines": "89 - 104",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-specimen-processing-date.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-specimen-processing-procedure",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-processing-procedure",
+        "name": "mii-sp-meta-specimen-processing-procedure",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-patho.fsh",
+        "sourceLines": "55 - 70",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-specimen-processing-procedure.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-specimen-request",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-request",
+        "name": "mii-sp-meta-specimen-request",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-patho.fsh",
+        "sourceLines": "4 - 19",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-specimen-request.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-supporting-info",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-supporting-info",
+        "name": "mii-sp-meta-supporting-info",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-bildgebung.fsh",
+        "sourceLines": "1 - 19",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-supporting-info.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-task-for",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-task-for",
+        "name": "mii-sp-meta-task-for",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-molgen.fsh",
+        "sourceLines": "78 - 95",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-task-for.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-task-reasoncode",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-task-reasoncode",
+        "name": "mii-sp-meta-task-reasoncode",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-molgen.fsh",
+        "sourceLines": "41 - 57",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-task-reasoncode.json"
+      },
+      {
+        "resourceType": "SearchParameter",
+        "id": "mii-sp-meta-task-reasonreference",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-task-reasonreference",
+        "name": "mii-sp-meta-task-reasonreference",
+        "fshKind": "Instance",
+        "sourcePath": "input/fsh/searchparameters/mii-sp-meta-molgen.fsh",
+        "sourceLines": "59 - 76",
+        "generatedPath": "fsh-generated/resources/SearchParameter-mii-sp-meta-task-reasonreference.json"
+      },
+      {
+        "resourceType": "StructureDefinition",
+        "id": "mii-ex-meta-license-codeable",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+        "name": "MII_EX_Meta_License_Codeable",
+        "fshKind": "Extension",
+        "sourcePath": "input/fsh/extensions/mii-ex-meta-license-codeable.fsh",
+        "sourceLines": "1 - 14",
+        "generatedPath": "fsh-generated/resources/StructureDefinition-mii-ex-meta-license-codeable.json"
+      },
+      {
+        "resourceType": "StructureDefinition",
+        "id": "mii-pr-meta-searchparameter",
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter",
+        "name": "MII_PR_Meta_SearchParameter",
+        "fshKind": "Profile",
+        "sourcePath": "input/fsh/profiles/MII_PR_Meta_SearchParameter.fsh",
+        "sourceLines": "1 - 16",
+        "generatedPath": "fsh-generated/resources/StructureDefinition-mii-pr-meta-searchparameter.json"
+      }
+    ]
+  },
+  "narrative": {
+    "language": "de",
+    "authoritative": {
+      "tree": "implementation-guides/ImplementationGuide-2025",
+      "guideTitle": "MII IG Meta v2026",
+      "guideVersion": "2026.0.0",
+      "pages": [
+        {
+          "sourcePath": "implementation-guides/ImplementationGuide-2025/MII-IG-Meta/Index.page.md",
+          "words": 280,
+          "stub": false
+        },
+        {
+          "sourcePath": "implementation-guides/ImplementationGuide-2025/MII-IG-Meta/Release-notes.page.md",
+          "words": 163,
+          "stub": false
+        },
+        {
+          "sourcePath": "implementation-guides/ImplementationGuide-2025/MII-IG-Meta/Technische-Implementierung/CodeSystem-MII-Standorte.page.md",
+          "words": 35,
+          "stub": false
+        },
+        {
+          "sourcePath": "implementation-guides/ImplementationGuide-2025/MII-IG-Meta/Technische-Implementierung/Extension-Lizenzbedingungen.page.md",
+          "words": 119,
+          "stub": false
+        },
+        {
+          "sourcePath": "implementation-guides/ImplementationGuide-2025/MII-IG-Meta/Technische-Implementierung/Index.page.md",
+          "words": 3,
+          "stub": true
+        },
+        {
+          "sourcePath": "implementation-guides/ImplementationGuide-2025/MII-IG-Meta/Technische-Implementierung/Liste-Kerndatensatz-Suchparameter/Index.page.md",
+          "words": 64,
+          "stub": false
+        },
+        {
+          "sourcePath": "implementation-guides/ImplementationGuide-2025/MII-IG-Meta/Technische-Implementierung/Profil-SearchParameter.page.md",
+          "words": 125,
+          "stub": false
+        }
+      ],
+      "reason": "module-specific authored Markdown; version matches source identity; newer module content than the generic template tree and pagecontent stub"
+    },
+    "otherTrees": [
+      {
+        "tree": "implementation-guides/MedizininformatikInitiative-ImplementationGuide-Template",
+        "guideTitle": "Medizininformatik Initiative - ImplementationGuide - Template 2023+",
+        "guideVersion": "2.0",
+        "pages": [
+          {
+            "sourcePath": "implementation-guides/MedizininformatikInitiative-ImplementationGuide-Template/MII-IG-Modul--Modul/AnwendungsflleInformationsmodell/BeschreibungvonSzenarienfrdieAnwendungderModule.page.md",
+            "words": 17,
+            "stub": true
+          },
+          {
+            "sourcePath": "implementation-guides/MedizininformatikInitiative-ImplementationGuide-Template/MII-IG-Modul--Modul/AnwendungsflleInformationsmodell/Datenstzeinkl.Beschreibungen.page.md",
+            "words": 15,
+            "stub": true
+          },
+          {
+            "sourcePath": "implementation-guides/MedizininformatikInitiative-ImplementationGuide-Template/MII-IG-Modul--Modul/AnwendungsflleInformationsmodell/Index.page.md",
+            "words": 13,
+            "stub": true
+          },
+          {
+            "sourcePath": "implementation-guides/MedizininformatikInitiative-ImplementationGuide-Template/MII-IG-Modul--Modul/AnwendungsflleInformationsmodell/UML.page.md",
+            "words": 7,
+            "stub": true
+          },
+          {
+            "sourcePath": "implementation-guides/MedizininformatikInitiative-ImplementationGuide-Template/MII-IG-Modul--Modul/BeschreibungModulModul.page.md",
+            "words": 15,
+            "stub": true
+          },
+          {
+            "sourcePath": "implementation-guides/MedizininformatikInitiative-ImplementationGuide-Template/MII-IG-Modul--Modul/HinweisTemplate.page.md",
+            "words": 4,
+            "stub": true
+          },
+          {
+            "sourcePath": "implementation-guides/MedizininformatikInitiative-ImplementationGuide-Template/MII-IG-Modul--Modul/Index.page.md",
+            "words": 268,
+            "stub": false
+          },
+          {
+            "sourcePath": "implementation-guides/MedizininformatikInitiative-ImplementationGuide-Template/MII-IG-Modul--Modul/KontextimGesamtprojektBezgezuanderenModulen.page.md",
+            "words": 12,
+            "stub": true
+          },
+          {
+            "sourcePath": "implementation-guides/MedizininformatikInitiative-ImplementationGuide-Template/MII-IG-Modul--Modul/Referenzen.page.md",
+            "words": 12,
+            "stub": true
+          },
+          {
+            "sourcePath": "implementation-guides/MedizininformatikInitiative-ImplementationGuide-Template/MII-IG-Modul--Modul/Release-notes.page.md",
+            "words": 29,
+            "stub": false
+          },
+          {
+            "sourcePath": "implementation-guides/MedizininformatikInitiative-ImplementationGuide-Template/MII-IG-Modul--Modul/TechnischeImplementierung/CapabilityStatement.page.md",
+            "words": 7,
+            "stub": true
+          },
+          {
+            "sourcePath": "implementation-guides/MedizininformatikInitiative-ImplementationGuide-Template/MII-IG-Modul--Modul/TechnischeImplementierung/Conformance.page.md",
+            "words": 494,
+            "stub": false
+          },
+          {
+            "sourcePath": "implementation-guides/MedizininformatikInitiative-ImplementationGuide-Template/MII-IG-Modul--Modul/TechnischeImplementierung/FHIRProfile/FHIR-Profil--Ressourcentyp.page.md",
+            "words": 28,
+            "stub": false
+          },
+          {
+            "sourcePath": "implementation-guides/MedizininformatikInitiative-ImplementationGuide-Template/MII-IG-Modul--Modul/TechnischeImplementierung/FHIRProfile/Index.page.md",
+            "words": 657,
+            "stub": false
+          },
+          {
+            "sourcePath": "implementation-guides/MedizininformatikInitiative-ImplementationGuide-Template/MII-IG-Modul--Modul/TechnischeImplementierung/Index.page.md",
+            "words": 12,
+            "stub": true
+          },
+          {
+            "sourcePath": "implementation-guides/MedizininformatikInitiative-ImplementationGuide-Template/MII-IG-Modul--Modul/TechnischeImplementierung/Terminologien.page.md",
+            "words": 13,
+            "stub": true
+          }
+        ],
+        "disposition": "historical generic template; retain unchanged until Gate D, then retire"
+      },
+      {
+        "tree": "implementation-guides/ImplementationGuide-Common",
+        "pages": [],
+        "disposition": "shared style assets; retain until references are transferred and Gate D approves retirement"
+      },
+      {
+        "tree": "input/pagecontent",
+        "pages": [
+          {
+            "path": "input/pagecontent/index.md",
+            "words": 17,
+            "kind": "target",
+            "stub": true
+          }
+        ],
+        "disposition": "older Publisher stub; superseded by authoritative guide tree, retained until Gate D"
+      }
+    ],
+    "renderedGuide": {
+      "key": "mii-ig-modul-meta-2025",
+      "publishedVersion": null,
+      "currentPreviewOnly": true,
+      "pageLinksObserved": 12,
+      "disposition": "not harvested; mutable current preview is a Gate B cross-check blocker",
+      "versionEvidenceUrl": "https://simplifier.net/published-guide/mii-ig-modul-meta-2025/versions"
+    }
+  },
+  "canonicalSpace": {
+    "canonical": "https://www.medizininformatik-initiative.de/fhir/modul-meta",
+    "package_json_canonical": "https://www.medizininformatik-initiative.de/fhir/modul-meta",
+    "config_contradiction": false,
+    "out_of_space_count": 1,
+    "out_of_space": [
+      {
+        "type": "CodeSystem",
+        "id": "mii-cs-meta-diz-standorte",
+        "url": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"
+      }
+    ],
+    "id_url_mismatch": [],
+    "special_url_prediction": 1,
+    "example_org": []
+  },
+  "dependencyHealth": {
+    "old_style_packages": [],
+    "tho_pinned_directly": false,
+    "extensions_pinned_directly": false,
+    "injection_risk": true,
+    "external_parents": [],
+    "dependency_block_present": false,
+    "dependency_block_unparsed": false
+  },
+  "licenceEvidence": {
+    "evidence": [
+      {
+        "source": "sushi-config.yaml/package.json",
+        "value": "CC-BY-4.0"
+      },
+      {
+        "source": "LICENSE",
+        "value": "Attribution 4.0 International"
+      }
+    ],
+    "declared_anywhere": true,
+    "contradictory": true,
+    "distinct_values": [
+      "attribution4.0international",
+      "cc-by-4.0"
+    ]
+  },
+  "qaBaseline": {
+    "staleTreeOutput": {
+      "source": "output/qa.json",
+      "errs": 3,
+      "warnings": 268,
+      "date": "Mon, 24 Nov, 2025 10:08:52 +0100"
+    },
+    "freshIsolatedBuild": {
+      "sourceCommit": "1db2e534704d92e5ee0cde663ce3e7ccd8825fa7",
+      "publisher": "2.3.2",
+      "sushi": "3.20.0",
+      "java": "17.0.2",
+      "errs": 3,
+      "warnings": 269,
+      "info": 524,
+      "brokenLinks": 0,
+      "qaJson": "migration-log/source-qa-baseline.json",
+      "qaText": "migration-log/source-qa-baseline.txt"
+    }
+  },
+  "directives": {
+    "count": 48,
+    "unknownCount": 1,
+    "source": "migration-log/preflight-analysis.json"
+  },
+  "placeholderCensus": {
+    "files": 1138,
+    "sourceNarrativeFiles": 15,
+    "generatedBuildFiles": 1122,
+    "auditFiles": 1,
+    "configPlaceholders": 0,
+    "excluded": [
+      ".git",
+      ".github"
+    ]
+  },
+  "topLevelDisposition": [
+    {
+      "path": ".DS_Store",
+      "proposal": "retire"
+    },
+    {
+      "path": ".github",
+      "proposal": "reconcile with template workflows; preserve domain-specific validation and SearchParameter tests"
+    },
+    {
+      "path": ".gitignore",
+      "proposal": "merge with template generated-artifact policy"
+    },
+    {
+      "path": "LICENSE",
+      "proposal": "retain verbatim; verify CC-BY-4.0"
+    },
+    {
+      "path": "README.md",
+      "proposal": "retain and update migration/build instructions"
+    },
+    {
+      "path": "_gencontinuous.bat",
+      "proposal": "retire after Gate D"
+    },
+    {
+      "path": "_gencontinuous.sh",
+      "proposal": "retire after Gate D"
+    },
+    {
+      "path": "_genonce.bat",
+      "proposal": "retire after Gate D"
+    },
+    {
+      "path": "_genonce.sh",
+      "proposal": "retire after Gate D"
+    },
+    {
+      "path": "_updatePublisher.bat",
+      "proposal": "retire after Gate D"
+    },
+    {
+      "path": "_updatePublisher.sh",
+      "proposal": "retire after Gate D"
+    },
+    {
+      "path": "advisor.json",
+      "proposal": "inspect and retain unless superseded by target validation"
+    },
+    {
+      "path": "datentypen-profile",
+      "proposal": "retain as historical source pending explicit Gate A/D disposition"
+    },
+    {
+      "path": "fsh-generated",
+      "proposal": "retain through comparison; adopt template ignore/regeneration policy after fidelity proof"
+    },
+    {
+      "path": "helper-scripts",
+      "proposal": "retain domain scripts; retire Simplifier-only link repair after Gate D"
+    },
+    {
+      "path": "ig",
+      "proposal": "inventory assets and transfer only referenced material"
+    },
+    {
+      "path": "images",
+      "proposal": "retain contributor-documentation images"
+    },
+    {
+      "path": "implementation-guides",
+      "proposal": "authoritative source plus retirement set; do not delete before Gate D"
+    },
+    {
+      "path": "input",
+      "proposal": "retain FSH structure; replace narrative scaffold in place"
+    },
+    {
+      "path": "input-cache",
+      "proposal": "generated build cache; retire/ignore"
+    },
+    {
+      "path": "output",
+      "proposal": "generated stale build output; replace with fresh evidence then ignore"
+    },
+    {
+      "path": "package.json",
+      "proposal": "retain identity and synchronize dependencies"
+    },
+    {
+      "path": "qc",
+      "proposal": "retain and reconcile with target QC workflows"
+    },
+    {
+      "path": "renovate.json",
+      "proposal": "merge with template dependency policy"
+    },
+    {
+      "path": "sushi-config.yaml",
+      "proposal": "preserve source identity while adding template/i18n/CRMI settings"
+    },
+    {
+      "path": "temp",
+      "proposal": "generated Publisher scratch; retire/ignore"
+    },
+    {
+      "path": "template",
+      "proposal": "generated extracted base template; retire/ignore"
+    },
+    {
+      "path": "ig.ini",
+      "proposal": "replace base template reference with MII IG template URL; preserve IG resource id"
+    }
+  ]
+}

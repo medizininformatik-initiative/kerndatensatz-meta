@@ -9,7 +9,7 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Supporting_Info"
 * status = #active
 * experimental = false
-* date = "2025-11-06"
+* date = "2026-09-01"
 * description = "Suchparameter für CarePlan.supportingInfo | DiagnosticReport.extension.supportingInfo"
 * code = #supporting-info
 * base[+] = #CarePlan
@@ -29,7 +29,7 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Description"
 * status = #active
 * experimental = false
-* date = "2025-11-06"
+* date = "2026-09-01"
 * description = "Suchparameter für CarePlan.description | ImagingStudy.description | ImagingStudy.series.description"
 * code = #description
 * base[+] = #CarePlan
@@ -52,7 +52,7 @@ Usage: #definition
 * name = "MII_SP_Bildgebung_Koerperstruktur_Location_Qualifier"
 * status = #active
 * experimental = false
-* date = "2025-11-06"
+* date = "2026-09-01"
 * description = "Suchparameter für BodyStructure.locationQualifier"
 * code = #location-qualifier
 * base = #BodyStructure

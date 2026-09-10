@@ -1,0 +1,16 @@
+Home => Startseite
+Guidance => Anleitung
+Guidance for Implementers => Anleitung für Implementierende
+UML Diagrams => UML-Diagramme
+Security and Privacy => Sicherheit und Datenschutz
+Capability Statements => CapabilityStatements
+Search Parameters => Suchparameter
+Logical Models => Logische Modelle
+Code Systems => CodeSystems
+Examples => Beispiele
+Changelog => Änderungshistorie
+Metadata Overview => Metadaten-Übersicht
+Versioning => Versionierung
+Translation Information => Hinweise zur Übersetzung
+MII ImplementationGuide Resource => MII ImplementationGuide Ressource
+Table of Contents => Inhaltsverzeichnis
