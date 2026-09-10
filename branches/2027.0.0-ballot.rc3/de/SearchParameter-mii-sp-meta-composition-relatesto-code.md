@@ -1,4 +1,4 @@
-# mii-sp-meta-composition-relatesto-code - MII IG Meta v2027.0.0-ballot.rc3
+# mii-sp-meta-composition-relatesto-code - MII IG Meta v2027.0.0-ballot
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-composition-relatesto-code | *Version*:2027.0.0-ballot.rc3 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-composition-relatesto-code | *Version*:2027.0.0-ballot |
 | Active Stand: 2026-09-01 | *Maschinenlesbarer Name*:MII_SP_Meta_Composition_RelatesTo_Code |
 
  
@@ -34,7 +34,7 @@ SearchParameter for Composition.relatesTo.code
       },
       {
         "url" : "version",
-        "valueString" : "2027.0.0-ballot.rc3"
+        "valueString" : "2027.0.0-ballot"
       },
       {
         "url" : "uri",
@@ -64,7 +64,7 @@ SearchParameter for Composition.relatesTo.code
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-composition-relatesto-code",
-  "version" : "2027.0.0-ballot.rc3",
+  "version" : "2027.0.0-ballot",
   "name" : "MII_SP_Meta_Composition_RelatesTo_Code",
   "status" : "active",
   "experimental" : false,

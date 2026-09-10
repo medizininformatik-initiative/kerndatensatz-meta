@@ -11,7 +11,7 @@
         <valueId value="de.medizininformatikinitiative.kerndatensatz.meta"/>
       </extension>
       <extension url="version">
-        <valueString value="2027.0.0-ballot.rc3"/>
+        <valueString value="2027.0.0-ballot"/>
       </extension>
       <extension url="uri">
         <valueUri value="https://www.medizininformatik-initiative.de/fhir/modul-meta"/>
@@ -42,7 +42,7 @@
     </valueCodeableConcept>
   </extension>
   <url value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-composition-section-author"/>
-  <version value="2027.0.0-ballot.rc3"/>
+  <version value="2027.0.0-ballot"/>
   <name value="MII_SP_Bildgebung_Composition_Section_Author"/>
   <status value="active"/>
   <experimental value="false"/>

@@ -1,4 +1,4 @@
-# mii-sp-meta-diagnostic-report-conclusion - MII IG Meta v2027.0.0-ballot.rc3
+# mii-sp-meta-diagnostic-report-conclusion - MII IG Meta v2027.0.0-ballot
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-diagnostic-report-conclusion | *Version*:2027.0.0-ballot.rc3 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-diagnostic-report-conclusion | *Version*:2027.0.0-ballot |
 | Active Stand: 2025-11-06 | *Maschinenlesbarer Name*:MII_SP_Bildgebung_Diagnostic_Report_Conclusion |
 
  
@@ -34,7 +34,7 @@ Suchparameter für DiagnosticReport.conclusion
       },
       {
         "url" : "version",
-        "valueString" : "2027.0.0-ballot.rc3"
+        "valueString" : "2027.0.0-ballot"
       },
       {
         "url" : "uri",
@@ -64,7 +64,7 @@ Suchparameter für DiagnosticReport.conclusion
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-diagnostic-report-conclusion",
-  "version" : "2027.0.0-ballot.rc3",
+  "version" : "2027.0.0-ballot",
   "name" : "MII_SP_Bildgebung_Diagnostic_Report_Conclusion",
   "status" : "active",
   "experimental" : false,

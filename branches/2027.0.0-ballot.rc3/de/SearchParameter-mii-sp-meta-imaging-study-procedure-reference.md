@@ -1,4 +1,4 @@
-# mii-sp-meta-imaging-study-procedure-reference - MII IG Meta v2027.0.0-ballot.rc3
+# mii-sp-meta-imaging-study-procedure-reference - MII IG Meta v2027.0.0-ballot
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-procedure-reference | *Version*:2027.0.0-ballot.rc3 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-procedure-reference | *Version*:2027.0.0-ballot |
 | Active Stand: 2025-11-06 | *Maschinenlesbarer Name*:MII_SP_Bildgebung_Imaging_Study_Procedure_Reference |
 
  
@@ -34,7 +34,7 @@ Suchparameter für ImagingStudy.procedureReference
       },
       {
         "url" : "version",
-        "valueString" : "2027.0.0-ballot.rc3"
+        "valueString" : "2027.0.0-ballot"
       },
       {
         "url" : "uri",
@@ -64,7 +64,7 @@ Suchparameter für ImagingStudy.procedureReference
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-procedure-reference",
-  "version" : "2027.0.0-ballot.rc3",
+  "version" : "2027.0.0-ballot",
   "name" : "MII_SP_Bildgebung_Imaging_Study_Procedure_Reference",
   "status" : "active",
   "experimental" : false,

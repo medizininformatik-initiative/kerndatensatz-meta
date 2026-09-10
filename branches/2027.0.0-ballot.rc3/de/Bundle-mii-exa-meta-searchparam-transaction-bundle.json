@@ -9,7 +9,7 @@
       },
       {
         "url" : "version",
-        "valueString" : "2027.0.0-ballot.rc3"
+        "valueString" : "2027.0.0-ballot"
       },
       {
         "url" : "uri",
@@ -38,7 +38,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -72,7 +72,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-adresszusatz",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Person_Adresszusatz",
       "status" : "active",
       "experimental" : false,
@@ -112,7 +112,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -146,7 +146,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-assignerpid",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Patient_AssignerPID",
       "status" : "active",
       "experimental" : false,
@@ -186,7 +186,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -220,7 +220,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchsubject-consent",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_ResearchSubject_Consent",
       "status" : "active",
       "experimental" : false,
@@ -261,7 +261,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -295,7 +295,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-gemeindeschluessel",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Patient_Gemeindeschluessel",
       "status" : "active",
       "experimental" : false,
@@ -335,7 +335,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -369,7 +369,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-hausnummer",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Patient_Hausnummer",
       "status" : "active",
       "experimental" : false,
@@ -409,7 +409,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -443,7 +443,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-otheramtlich",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Patient_OtherAmtlich",
       "status" : "active",
       "experimental" : false,
@@ -483,7 +483,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -517,7 +517,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-postfach",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Patient_Postfach",
       "status" : "active",
       "experimental" : false,
@@ -557,7 +557,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -591,7 +591,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-prefix",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Patient_Prefix",
       "status" : "active",
       "experimental" : false,
@@ -631,7 +631,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -665,7 +665,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-prefixqualifier",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Patient_PrefixQualifier",
       "status" : "active",
       "experimental" : false,
@@ -705,7 +705,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -739,7 +739,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-stadtteil",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Patient_Stadtteil",
       "status" : "active",
       "experimental" : false,
@@ -779,7 +779,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -813,7 +813,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-strasse",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Patient_Strasse",
       "status" : "active",
       "experimental" : false,
@@ -853,7 +853,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -887,7 +887,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-icd10gm-diagnosesicherheit",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Condition_ICD10GM_Diagnosesicherheit",
       "status" : "active",
       "experimental" : false,
@@ -927,7 +927,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -961,7 +961,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-icd10gm-mehrfachcodierung",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Condition_ICD10GM_Mehrfachcodierung",
       "status" : "active",
       "experimental" : false,
@@ -1001,7 +1001,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -1035,7 +1035,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-icd10gm-seitenlokalisation",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Condition_ICD10GM_Seitenlokalisation",
       "status" : "active",
       "experimental" : false,
@@ -1075,7 +1075,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -1109,7 +1109,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-bodysite",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Procedure_BodySite",
       "status" : "active",
       "experimental" : false,
@@ -1149,7 +1149,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -1183,7 +1183,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-dokumentationsdatum",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Procedure_Dokumentationsdatum",
       "status" : "active",
       "experimental" : false,
@@ -1223,7 +1223,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -1257,7 +1257,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-durchfuehrungsabsicht",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Procedure_Durchfuehrungsabsicht",
       "status" : "active",
       "experimental" : false,
@@ -1297,7 +1297,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -1331,7 +1331,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-ops-seitenlokalisation",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Procedure_OPS_Seitenlokalisation",
       "status" : "active",
       "experimental" : false,
@@ -1371,7 +1371,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -1405,7 +1405,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-diagnosis-use",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Encounter_DiagnosisUse",
       "status" : "active",
       "experimental" : false,
@@ -1445,7 +1445,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -1479,7 +1479,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-hospitalization-admitsource",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Encounter_Hospitalization_AdmitSource",
       "status" : "active",
       "experimental" : false,
@@ -1519,7 +1519,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -1553,7 +1553,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-location-physical-type",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Encounter_Location_PhysicalType",
       "status" : "active",
       "experimental" : false,
@@ -1593,7 +1593,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -1627,7 +1627,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-servicetype",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Encounter_ServiceType",
       "status" : "active",
       "experimental" : false,
@@ -1667,7 +1667,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -1701,7 +1701,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-aufnahmegrund-ersteundzweitestelle",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Encounter_Aufnahmegrund_ErsteUndZweiteStelle",
       "status" : "active",
       "experimental" : false,
@@ -1741,7 +1741,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -1775,7 +1775,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-aufnahmegrund-drittestelle",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Encounter_Aufnahmegrund_DritteStelle",
       "status" : "active",
       "experimental" : false,
@@ -1815,7 +1815,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -1849,7 +1849,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-aufnahmegrund-viertestelle",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Encounter_Aufnahmegrund_VierteStelle",
       "status" : "active",
       "experimental" : false,
@@ -1889,7 +1889,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -1923,7 +1923,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-entlassungsgrund-ersteundzweitestelle",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Encounter_Entlassungsgrund_ErsteUndZweiteStelle",
       "status" : "active",
       "experimental" : false,
@@ -1963,7 +1963,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -1997,7 +1997,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-entlassungsgrund-drittestelle",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Encounter_Entlassungsgrund_DritteStelle",
       "status" : "active",
       "experimental" : false,
@@ -2037,7 +2037,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -2071,7 +2071,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength-numerator",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Medication_Ingredient_Strength_Numerator",
       "status" : "active",
       "experimental" : false,
@@ -2116,7 +2116,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -2150,7 +2150,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength-denominator",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Medication_Ingredient_Strength_Denominator",
       "status" : "active",
       "experimental" : false,
@@ -2195,7 +2195,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -2229,7 +2229,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Medication_Ingredient_Strength",
       "status" : "active",
       "experimental" : false,
@@ -2277,7 +2277,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -2311,7 +2311,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-reasonreference",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Medication_ReasonReference",
       "status" : "active",
       "experimental" : false,
@@ -2355,7 +2355,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -2389,7 +2389,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-site",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Medication_Dosage_Site",
       "status" : "active",
       "experimental" : false,
@@ -2436,7 +2436,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -2470,7 +2470,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-route",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Medication_Dosage_Route",
       "status" : "active",
       "experimental" : false,
@@ -2517,7 +2517,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -2551,7 +2551,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange-low",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Medication_Dosage_DoseRangeLow",
       "status" : "active",
       "experimental" : false,
@@ -2597,7 +2597,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -2631,7 +2631,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange-high",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Medication_Dosage_DoseRangeHigh",
       "status" : "active",
       "experimental" : false,
@@ -2677,7 +2677,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -2711,7 +2711,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Medication_Dosage_DoseRange",
       "status" : "active",
       "experimental" : false,
@@ -2760,7 +2760,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -2794,7 +2794,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-dosequantity",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Medication_Dosage_DoseQuantity",
       "status" : "active",
       "experimental" : false,
@@ -2841,7 +2841,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -2875,7 +2875,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-numerator",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Medication_Dosage_RateRatioNumerator",
       "status" : "active",
       "experimental" : false,
@@ -2922,7 +2922,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -2956,7 +2956,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-denominator",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Medication_Dosage_RateRatioDenominator",
       "status" : "active",
       "experimental" : false,
@@ -3003,7 +3003,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -3037,7 +3037,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Medication_Dosage_RateRatio",
       "status" : "active",
       "experimental" : false,
@@ -3087,7 +3087,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -3121,7 +3121,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange-low",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Medication_Dosage_RateRangeLow",
       "status" : "active",
       "experimental" : false,
@@ -3167,7 +3167,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -3201,7 +3201,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange-high",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Medication_Dosage_RateRangeHigh",
       "status" : "active",
       "experimental" : false,
@@ -3247,7 +3247,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -3281,7 +3281,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Medication_Dosage_RateRange",
       "status" : "active",
       "experimental" : false,
@@ -3330,7 +3330,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -3364,7 +3364,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-ratequantity",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Medication_Dosage_RateQuantity",
       "status" : "active",
       "experimental" : false,
@@ -3411,7 +3411,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -3445,7 +3445,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-list-mode",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Medication_List_Mode",
       "status" : "active",
       "experimental" : false,
@@ -3485,7 +3485,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -3519,7 +3519,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-partof",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Medication_PartOf",
       "status" : "active",
       "experimental" : false,
@@ -3561,7 +3561,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -3599,7 +3599,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-policyuri",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Consent_PolicyUri",
       "status" : "active",
       "experimental" : false,
@@ -3641,7 +3641,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -3675,7 +3675,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-provisioncode",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Consent_ProvisionCode",
       "status" : "active",
       "experimental" : false,
@@ -3717,7 +3717,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -3751,7 +3751,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-provisioncodeperiod",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Consent_ProvisionCodePeriod",
       "status" : "active",
       "experimental" : false,
@@ -3799,7 +3799,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -3833,7 +3833,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-provisioncodetype",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Consent_ProvisionCodeType",
       "status" : "active",
       "experimental" : false,
@@ -3881,7 +3881,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -3915,7 +3915,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-provisionperiod",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Consent_ProvisionPeriod",
       "status" : "active",
       "experimental" : false,
@@ -3957,7 +3957,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -3991,7 +3991,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-provisiontype",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Consent_ProvisionType",
       "status" : "active",
       "experimental" : false,
@@ -4033,7 +4033,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -4067,7 +4067,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-diagnose",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Specimen_Diagnose",
       "status" : "active",
       "experimental" : true,
@@ -4109,7 +4109,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -4143,7 +4143,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-interpretation",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Observation_Interpretation",
       "status" : "active",
       "experimental" : false,
@@ -4183,7 +4183,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -4217,7 +4217,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-servicerequest-reasoncode",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_ServiceRequest_ReasonCode",
       "status" : "active",
       "experimental" : false,
@@ -4257,7 +4257,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -4291,7 +4291,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-servicerequest-reasonreference",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_ServiceRequest_ReasonReference",
       "status" : "active",
       "experimental" : false,
@@ -4335,7 +4335,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -4369,7 +4369,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-task-reasoncode",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Task_ReasonCode",
       "status" : "active",
       "experimental" : false,
@@ -4409,7 +4409,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -4443,7 +4443,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-task-reasonreference",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Task_ReasonReference",
       "status" : "active",
       "experimental" : false,
@@ -4484,7 +4484,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -4518,7 +4518,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-task-for",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Task_For",
       "status" : "active",
       "experimental" : false,
@@ -4559,7 +4559,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -4593,7 +4593,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-familymemberhistory-reasoncode",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_FamilyMemberHistory_ReasonCode",
       "status" : "active",
       "experimental" : false,
@@ -4633,7 +4633,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -4667,7 +4667,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-familymemberhistory-reasonreference",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_FamilyMemberHistory_ReasonReference",
       "status" : "active",
       "experimental" : false,
@@ -4713,7 +4713,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -4747,7 +4747,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-request",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Specimen_Request",
       "status" : "active",
       "experimental" : false,
@@ -4787,7 +4787,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -4821,7 +4821,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-collection-method",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Specimen_Collection_Method",
       "status" : "active",
       "experimental" : false,
@@ -4861,7 +4861,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -4895,7 +4895,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-processing-procedure",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Specimen_Processing_Procedure",
       "status" : "active",
       "experimental" : false,
@@ -4935,7 +4935,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -4969,7 +4969,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-processing-additive",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Specimen_Processing_Additive",
       "status" : "active",
       "experimental" : false,
@@ -5009,7 +5009,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -5043,7 +5043,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-processing-date",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Specimen_Processing_Date",
       "status" : "active",
       "experimental" : false,
@@ -5083,7 +5083,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -5117,7 +5117,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-container-additive",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Specimen_Container_Additive",
       "status" : "active",
       "experimental" : false,
@@ -5157,7 +5157,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -5191,7 +5191,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-value-ratio",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Observation_Value_Ratio",
       "status" : "active",
       "experimental" : false,
@@ -5239,7 +5239,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -5273,7 +5273,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-value-ratio-numerator",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Observation_Value_Ratio_Numerator",
       "status" : "active",
       "experimental" : false,
@@ -5313,7 +5313,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -5347,7 +5347,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-value-ratio-denominator",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Observation_Value_Ratio_Denominator",
       "status" : "active",
       "experimental" : false,
@@ -5387,7 +5387,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -5421,7 +5421,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-servicerequest-supportinginfo",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_ServiceRequest_SupportingInfo",
       "status" : "active",
       "experimental" : false,
@@ -5461,7 +5461,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -5495,7 +5495,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-diagnosticreport-imagingstudy",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_DiagnosticReport_ImagingStudy",
       "status" : "active",
       "experimental" : false,
@@ -5536,7 +5536,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -5570,7 +5570,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-composition-attester-mode",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Composition_Attester_Mode",
       "status" : "active",
       "experimental" : false,
@@ -5610,7 +5610,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -5644,7 +5644,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-composition-custodian",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Composition_Custodian",
       "status" : "active",
       "experimental" : false,
@@ -5684,7 +5684,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -5718,7 +5718,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-composition-relatesto-code",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Composition_RelatesTo_Code",
       "status" : "active",
       "experimental" : false,
@@ -5758,7 +5758,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -5792,7 +5792,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-media-partof",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Media_PartOf",
       "status" : "active",
       "experimental" : false,
@@ -5832,7 +5832,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -5866,7 +5866,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-device-property-type",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Device_Property_Type",
       "status" : "active",
       "experimental" : false,
@@ -5906,7 +5906,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -5940,7 +5940,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-devicemetric-source",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_DeviceMetric_Source",
       "status" : "active",
       "experimental" : false,
@@ -5980,7 +5980,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -6014,7 +6014,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-bodysite",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Observation_BodySite",
       "status" : "active",
       "experimental" : false,
@@ -6054,7 +6054,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -6088,7 +6088,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-component-interpretation",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Observation_Component_Interpretation",
       "status" : "active",
       "experimental" : false,
@@ -6128,7 +6128,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -6162,7 +6162,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-referencerange",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Observation_ReferenceRange",
       "status" : "active",
       "experimental" : false,
@@ -6210,7 +6210,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -6244,7 +6244,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-referencerange-low",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Observation_ReferenceRange_Low",
       "status" : "active",
       "experimental" : false,
@@ -6284,7 +6284,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -6318,7 +6318,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-referencerange-high",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Observation_ReferenceRange_High",
       "status" : "active",
       "experimental" : false,
@@ -6358,7 +6358,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -6392,7 +6392,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-issued",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Observation_Issued",
       "status" : "active",
       "experimental" : false,
@@ -6432,7 +6432,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -6466,7 +6466,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-recorder",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Procedure_Recorder",
       "status" : "active",
       "experimental" : false,
@@ -6510,7 +6510,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -6544,7 +6544,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-documentreference-attachment-title",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_DocumentReference_Attachment_Title",
       "status" : "active",
       "experimental" : false,
@@ -6584,7 +6584,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -6618,7 +6618,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-documentreference-attachment-size",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_DocumentReference_Attachment_Size",
       "status" : "active",
       "experimental" : false,
@@ -6658,7 +6658,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -6692,7 +6692,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-evidencevariable-characteristic-description",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_EvidenceVariable_Characteristic_Description",
       "status" : "active",
       "experimental" : false,
@@ -6732,7 +6732,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -6766,7 +6766,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-library-quellregister",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Library_Quellregister",
       "status" : "active",
       "experimental" : false,
@@ -6806,7 +6806,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -6840,7 +6840,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-library-relatedartifact-url",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Library_RelatedArtifact_Url",
       "status" : "active",
       "experimental" : false,
@@ -6880,7 +6880,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -6914,7 +6914,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-arm-name",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_ResearchStudy_Arm_Name",
       "status" : "active",
       "experimental" : false,
@@ -6954,7 +6954,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -6988,7 +6988,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-label",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_ResearchStudy_Label",
       "status" : "active",
       "experimental" : false,
@@ -7028,7 +7028,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -7062,7 +7062,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-akronym",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_ResearchStudy_Akronym",
       "status" : "active",
       "experimental" : false,
@@ -7102,7 +7102,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -7136,7 +7136,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-finanzierung",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_ResearchStudy_Finanzierung",
       "status" : "active",
       "experimental" : false,
@@ -7176,7 +7176,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -7210,7 +7210,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-studienregister",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_ResearchStudy_Studienregister",
       "status" : "active",
       "experimental" : false,
@@ -7250,7 +7250,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -7284,7 +7284,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-rekrutierungsstand-datum",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_ResearchStudy_RekrutierungsstandDatum",
       "status" : "active",
       "experimental" : false,
@@ -7324,7 +7324,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -7358,7 +7358,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-rekrutierungsstand-genauigkeit",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_ResearchStudy_RekrutierungsstandGenauigkeit",
       "status" : "active",
       "experimental" : false,
@@ -7398,7 +7398,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -7432,7 +7432,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-rekrutierungsstand",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_ResearchStudy_Rekrutierungsstand",
       "status" : "active",
       "experimental" : false,
@@ -7472,7 +7472,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -7506,7 +7506,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-rekrutierungsziel",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_ResearchStudy_Rekrutierungsziel",
       "status" : "active",
       "experimental" : false,
@@ -7546,7 +7546,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -7580,7 +7580,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-rekrutierungsstart",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_ResearchStudy_Rekrutierungsstart",
       "status" : "active",
       "experimental" : false,
@@ -7620,7 +7620,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -7654,7 +7654,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-verification-status",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Condition_Verification_Status",
       "status" : "active",
       "experimental" : false,
@@ -7694,7 +7694,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -7728,7 +7728,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-evidence-detail",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Condition_Evidence_Detail",
       "status" : "active",
       "experimental" : false,
@@ -7769,7 +7769,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -7803,7 +7803,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-hasmember",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Observation_hasMember",
       "status" : "active",
       "experimental" : false,
@@ -7843,7 +7843,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -7877,7 +7877,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-complication",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Procedure_Complication",
       "status" : "active",
       "experimental" : false,
@@ -7917,7 +7917,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -7951,7 +7951,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-outcome",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Procedure_Outcome",
       "status" : "active",
       "experimental" : false,
@@ -7991,7 +7991,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -8025,7 +8025,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-adverseevent-suspectentity-instance",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_AdverseEvent_SuspectEntity_Instance",
       "status" : "active",
       "experimental" : false,
@@ -8065,7 +8065,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -8099,7 +8099,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-adverseevent-encounter",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_AdverseEvent_Encounter",
       "status" : "active",
       "experimental" : false,
@@ -8139,7 +8139,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -8173,7 +8173,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-careplan-created",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_CarePlan_Created",
       "status" : "active",
       "experimental" : false,
@@ -8213,7 +8213,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -8247,7 +8247,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-careplan-contributor",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_CarePlan_Contributor",
       "status" : "active",
       "experimental" : false,
@@ -8287,7 +8287,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -8321,7 +8321,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-careplan-addresses",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_CarePlan_Addresses",
       "status" : "active",
       "experimental" : false,
@@ -8361,7 +8361,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -8395,7 +8395,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-focus",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Observation_Focus",
       "status" : "active",
       "experimental" : false,
@@ -8435,7 +8435,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -8469,7 +8469,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-encounter",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_Observation_Encounter",
       "status" : "active",
       "experimental" : false,
@@ -8509,7 +8509,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -8543,7 +8543,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-supporting-info",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Supporting_Info",
       "status" : "active",
       "experimental" : false,
@@ -8585,7 +8585,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -8619,7 +8619,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-description",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Description",
       "status" : "active",
       "experimental" : false,
@@ -8663,7 +8663,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -8697,7 +8697,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-body-structure-location-qualifier",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Koerperstruktur_Location_Qualifier",
       "status" : "active",
       "experimental" : false,
@@ -8744,7 +8744,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -8778,7 +8778,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-composition-section-title",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Composition_Section_Title",
       "status" : "active",
       "experimental" : false,
@@ -8821,7 +8821,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -8855,7 +8855,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-composition-section-author",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Composition_Section_Author",
       "status" : "active",
       "experimental" : false,
@@ -8896,7 +8896,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -8930,7 +8930,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-diagnostic-report-conclusion",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Diagnostic_Report_Conclusion",
       "status" : "active",
       "experimental" : false,
@@ -8973,7 +8973,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -9007,7 +9007,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-modality-body-site",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Imaging_Study_Modality_Body_Site",
       "status" : "active",
       "experimental" : false,
@@ -9055,7 +9055,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -9089,7 +9089,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-bildgebungsgrund",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Imaging_Study_Bildgebungsgrund",
       "status" : "active",
       "experimental" : false,
@@ -9132,7 +9132,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -9166,7 +9166,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-modality",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Imaging_Study_Modality",
       "status" : "active",
       "experimental" : false,
@@ -9213,7 +9213,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -9247,7 +9247,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-reason-reference",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Reason_Reference",
       "status" : "active",
       "experimental" : false,
@@ -9291,7 +9291,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -9325,7 +9325,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-number-series",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Imaging_Study_Number_Series",
       "status" : "active",
       "experimental" : false,
@@ -9370,7 +9370,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -9404,7 +9404,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-number-instances",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Imaging_Study_Number_Instances",
       "status" : "active",
       "experimental" : false,
@@ -9449,7 +9449,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -9483,7 +9483,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-procedure-reference",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Imaging_Study_Procedure_Reference",
       "status" : "active",
       "experimental" : false,
@@ -9524,7 +9524,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -9558,7 +9558,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-ctdi-volume",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Imaging_Study_Series_CTDI_Volume",
       "status" : "active",
       "experimental" : false,
@@ -9603,7 +9603,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -9637,7 +9637,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-exposure-time",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Imaging_Study_Series_Exposure_Time",
       "status" : "active",
       "experimental" : false,
@@ -9682,7 +9682,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -9716,7 +9716,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-exposure",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Imaging_Study_Series_Exposure",
       "status" : "active",
       "experimental" : false,
@@ -9761,7 +9761,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -9795,7 +9795,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-xray-tube-current",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Imaging_Study_Series_xRay_Tube_Current",
       "status" : "active",
       "experimental" : false,
@@ -9840,7 +9840,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -9874,7 +9874,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-kvp",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Imaging_Study_Series_KVP",
       "status" : "active",
       "experimental" : false,
@@ -9919,7 +9919,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -9953,7 +9953,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-view-position",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Imaging_Study_Series_View_Position",
       "status" : "active",
       "experimental" : false,
@@ -10000,7 +10000,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -10034,7 +10034,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-magnetic-field-strength",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Imaging_Study_Series_Magnetic_Field_Strength",
       "status" : "active",
       "experimental" : false,
@@ -10079,7 +10079,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -10113,7 +10113,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-scanning-sequence",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Imaging_Study_Series_Scanning_Sequence",
       "status" : "active",
       "experimental" : false,
@@ -10160,7 +10160,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -10194,7 +10194,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-scanning-sequence-variant",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Imaging_Study_Series_Scanning_Sequence_Variant",
       "status" : "active",
       "experimental" : false,
@@ -10241,7 +10241,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -10275,7 +10275,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-echo-time",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Imaging_Study_Series_Echo_Time",
       "status" : "active",
       "experimental" : false,
@@ -10320,7 +10320,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -10354,7 +10354,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-repetition-time",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Imaging_Study_Series_Repetition_Time",
       "status" : "active",
       "experimental" : false,
@@ -10399,7 +10399,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -10433,7 +10433,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-inversion-time",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Imaging_Study_Series_Inversion_Time",
       "status" : "active",
       "experimental" : false,
@@ -10478,7 +10478,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -10512,7 +10512,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-flip-angle",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Imaging_Study_Series_Flip_Angle",
       "status" : "active",
       "experimental" : false,
@@ -10557,7 +10557,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -10591,7 +10591,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-radiopharmaceutical",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Imaging_Study_Radiopharmaceutical",
       "status" : "active",
       "experimental" : false,
@@ -10638,7 +10638,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -10672,7 +10672,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-radionuclide",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Imaging_Study_Radionuclide",
       "status" : "active",
       "experimental" : false,
@@ -10719,7 +10719,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -10753,7 +10753,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-tracer-exposure-time",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Imaging_Study_Series_Tracer_Exposure_Time",
       "status" : "active",
       "experimental" : false,
@@ -10798,7 +10798,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -10832,7 +10832,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-units",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Imaging_Study_Series_Units",
       "status" : "active",
       "experimental" : false,
@@ -10879,7 +10879,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -10913,7 +10913,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-radionuclide-total-dose",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Imaging_Study_Series_Radionuclide_Total_Dose",
       "status" : "active",
       "experimental" : false,
@@ -10958,7 +10958,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -10992,7 +10992,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-radionuclide-half-life",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Imaging_Study_Series_Radionuclide_Half_Life",
       "status" : "active",
       "experimental" : false,
@@ -11037,7 +11037,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -11071,7 +11071,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-series-type",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Imaging_Study_Series_Series_Type",
       "status" : "active",
       "experimental" : false,
@@ -11118,7 +11118,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -11152,7 +11152,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-transducer-type",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Imaging_Study_Series_Transducer_Type",
       "status" : "active",
       "experimental" : false,
@@ -11199,7 +11199,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -11233,7 +11233,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-transducer-frequency",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Imaging_Study_Series_Transducer_Frequency",
       "status" : "active",
       "experimental" : false,
@@ -11278,7 +11278,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -11312,7 +11312,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-pulse-frequency",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Imaging_Study_Series_Pulse_Frequency",
       "status" : "active",
       "experimental" : false,
@@ -11357,7 +11357,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -11391,7 +11391,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-ultrasound-color",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Imaging_Study_Series_Ultrasound_Color",
       "status" : "active",
       "experimental" : false,
@@ -11438,7 +11438,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -11472,7 +11472,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-contrast-bolus",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Imaging_Study_Series_Contrast_Bolus",
       "status" : "active",
       "experimental" : false,
@@ -11519,7 +11519,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -11553,7 +11553,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-contrast-bolus-details",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Imaging_Study_Contrast_Bolus_Details",
       "status" : "active",
       "experimental" : false,
@@ -11595,7 +11595,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -11629,7 +11629,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-number",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Imaging_Study_Series_Number",
       "status" : "active",
       "experimental" : false,
@@ -11674,7 +11674,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -11708,7 +11708,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-laterality",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Imaging_Study_Series_Laterality",
       "status" : "active",
       "experimental" : false,
@@ -11755,7 +11755,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -11789,7 +11789,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-started",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Imaging_Study_Series_Started",
       "status" : "active",
       "experimental" : false,
@@ -11829,7 +11829,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -11863,7 +11863,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-instance-pixel-x",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Imaging_Study_Instance_Pixel_Spacing_X",
       "status" : "active",
       "experimental" : false,
@@ -11908,7 +11908,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -11942,7 +11942,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-instance-pixel-y",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Imaging_Study_Instance_Pixel_Spacing_Y",
       "status" : "active",
       "experimental" : false,
@@ -11987,7 +11987,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -12021,7 +12021,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-instance-slice-thickness",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Imaging_Study_Instance_Slice_Thickness",
       "status" : "active",
       "experimental" : false,
@@ -12066,7 +12066,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -12100,7 +12100,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-instance-image-type",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Imaging_Study_Instance_Image_Type",
       "status" : "active",
       "experimental" : false,
@@ -12147,7 +12147,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -12181,7 +12181,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-instance-burned-in-annotation",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Imaging_Study_Instance_Burned_In_Annotation",
       "status" : "active",
       "experimental" : false,
@@ -12228,7 +12228,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -12262,7 +12262,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-instance-number",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Imaging_Study_Instance_Number",
       "status" : "active",
       "experimental" : false,
@@ -12307,7 +12307,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -12341,7 +12341,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-series-uid",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Observation_Series_UID",
       "status" : "active",
       "experimental" : false,
@@ -12388,7 +12388,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -12422,7 +12422,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-sop-instance-uid",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Observation_SOP_Instance_UID",
       "status" : "active",
       "experimental" : false,
@@ -12469,7 +12469,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -12503,7 +12503,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-body-structure",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Observation_Body_Structure",
       "status" : "active",
       "experimental" : false,
@@ -12544,7 +12544,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -12578,7 +12578,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-read-proc-report",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Read_Procedure_Report",
       "status" : "active",
       "experimental" : false,
@@ -12621,7 +12621,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -12655,7 +12655,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-convolutional-kernel",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Imaging_Study_Series_ConvolutionalKernel",
       "status" : "active",
       "experimental" : false,
@@ -12698,7 +12698,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -12732,7 +12732,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-slice-thickness",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Bildgebung_Imaging_Study_Series_Slice_Thickness",
       "status" : "active",
       "experimental" : false,
@@ -12777,7 +12777,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -12811,7 +12811,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-dokument-documentreference-attachment-creation",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_DocumentReference_Attachment_Creation",
       "status" : "active",
       "experimental" : false,
@@ -12851,7 +12851,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -12885,7 +12885,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-dokument-documentreference-doc-status",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_DocumentReference_Document_Status",
       "status" : "active",
       "experimental" : false,
@@ -12925,7 +12925,7 @@
           },
           {
             "url" : "version",
-            "valueString" : "2027.0.0-ballot.rc3"
+            "valueString" : "2027.0.0-ballot"
           },
           {
             "url" : "uri",
@@ -12959,7 +12959,7 @@
         }
       }],
       "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-dokument-documentreference-nlp-processing-status",
-      "version" : "2027.0.0-ballot.rc3",
+      "version" : "2027.0.0-ballot",
       "name" : "MII_SP_Meta_DocumentReference_NLP_Processing_Status",
       "status" : "active",
       "experimental" : false,

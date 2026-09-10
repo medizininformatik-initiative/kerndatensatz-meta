@@ -1,4 +1,4 @@
-# CapabilityStatements - MII IG Meta v2027.0.0-ballot.rc3
+# CapabilityStatements - MII IG Meta v2027.0.0-ballot
 
 * [**Inhaltsverzeichnis**](toc.md)
 * **CapabilityStatements**

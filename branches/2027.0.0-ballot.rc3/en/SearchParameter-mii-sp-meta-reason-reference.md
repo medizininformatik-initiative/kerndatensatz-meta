@@ -1,4 +1,4 @@
-# mii-sp-meta-reason-reference - MII IG Meta v2027.0.0-ballot.rc3
+# mii-sp-meta-reason-reference - MII IG Meta v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-reason-reference | *Version*:2027.0.0-ballot.rc3 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-reason-reference | *Version*:2027.0.0-ballot |
 | Active as of 2025-11-06 | *Computable Name*:MII_SP_Bildgebung_Reason_Reference |
 
  
@@ -34,7 +34,7 @@ Suchparameter für ImagingStudy.reasonReference
       },
       {
         "url" : "version",
-        "valueString" : "2027.0.0-ballot.rc3"
+        "valueString" : "2027.0.0-ballot"
       },
       {
         "url" : "uri",
@@ -64,7 +64,7 @@ Suchparameter für ImagingStudy.reasonReference
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-reason-reference",
-  "version" : "2027.0.0-ballot.rc3",
+  "version" : "2027.0.0-ballot",
   "name" : "MII_SP_Bildgebung_Reason_Reference",
   "status" : "active",
   "experimental" : false,

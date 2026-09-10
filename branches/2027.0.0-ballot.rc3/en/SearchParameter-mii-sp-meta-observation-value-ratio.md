@@ -1,4 +1,4 @@
-# mii-sp-meta-observation-value-ratio - MII IG Meta v2027.0.0-ballot.rc3
+# mii-sp-meta-observation-value-ratio - MII IG Meta v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-value-ratio | *Version*:2027.0.0-ballot.rc3 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-value-ratio | *Version*:2027.0.0-ballot |
 | Active as of 2026-09-01 | *Computable Name*:MII_SP_Meta_Observation_Value_Ratio |
 
  
@@ -34,7 +34,7 @@ SearchParameter for Observation.valueRatio
       },
       {
         "url" : "version",
-        "valueString" : "2027.0.0-ballot.rc3"
+        "valueString" : "2027.0.0-ballot"
       },
       {
         "url" : "uri",
@@ -64,7 +64,7 @@ SearchParameter for Observation.valueRatio
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-value-ratio",
-  "version" : "2027.0.0-ballot.rc3",
+  "version" : "2027.0.0-ballot",
   "name" : "MII_SP_Meta_Observation_Value_Ratio",
   "status" : "active",
   "experimental" : false,

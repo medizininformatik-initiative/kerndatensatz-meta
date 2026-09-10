@@ -1,4 +1,4 @@
-# mii-sp-meta-specimen-processing-additive - MII IG Meta v2027.0.0-ballot.rc3
+# mii-sp-meta-specimen-processing-additive - MII IG Meta v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-processing-additive | *Version*:2027.0.0-ballot.rc3 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-processing-additive | *Version*:2027.0.0-ballot |
 | Active as of 2026-09-01 | *Computable Name*:MII_SP_Meta_Specimen_Processing_Additive |
 
  
@@ -34,7 +34,7 @@ SearchParameter for Specimen.processing.additive
       },
       {
         "url" : "version",
-        "valueString" : "2027.0.0-ballot.rc3"
+        "valueString" : "2027.0.0-ballot"
       },
       {
         "url" : "uri",
@@ -64,7 +64,7 @@ SearchParameter for Specimen.processing.additive
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-processing-additive",
-  "version" : "2027.0.0-ballot.rc3",
+  "version" : "2027.0.0-ballot",
   "name" : "MII_SP_Meta_Specimen_Processing_Additive",
   "status" : "active",
   "experimental" : false,

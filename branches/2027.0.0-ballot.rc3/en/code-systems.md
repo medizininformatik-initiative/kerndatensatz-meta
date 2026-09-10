@@ -1,4 +1,4 @@
-# Code Systems - MII IG Meta v2027.0.0-ballot.rc3
+# Code Systems - MII IG Meta v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * **Code Systems**

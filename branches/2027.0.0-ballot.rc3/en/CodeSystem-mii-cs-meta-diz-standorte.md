@@ -1,4 +1,4 @@
-# MII CS Meta DIZ Standorte - MII IG Meta v2027.0.0-ballot.rc3
+# MII CS Meta DIZ Standorte - MII IG Meta v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier | *Version*:2027.0.0-ballot.rc3 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier | *Version*:2027.0.0-ballot |
 | Active as of 2026-09-01 | *Computable Name*:MII_CS_Meta_DIZ_Standorte |
 | **Copyright/Legal**: Medizininformatik-Initiative | |
 
@@ -45,7 +45,7 @@ This Code system is referenced in the definition of the following value sets:
       },
       {
         "url" : "version",
-        "valueString" : "2027.0.0-ballot.rc3"
+        "valueString" : "2027.0.0-ballot"
       },
       {
         "url" : "uri",
@@ -86,7 +86,7 @@ This Code system is referenced in the definition of the following value sets:
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/resource-approvalDate",
-    "valueDate" : "2026-08-31"
+    "valueDate" : "2026-09-10"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
@@ -159,7 +159,7 @@ This Code system is referenced in the definition of the following value sets:
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
-  "version" : "2027.0.0-ballot.rc3",
+  "version" : "2027.0.0-ballot",
   "name" : "MII_CS_Meta_DIZ_Standorte",
   "title" : "MII CS Meta DIZ Standorte",
   "status" : "active",

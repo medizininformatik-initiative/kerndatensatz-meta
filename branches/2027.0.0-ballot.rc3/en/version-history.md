@@ -1,4 +1,4 @@
-# Versioning - MII IG Meta v2027.0.0-ballot.rc3
+# Versioning - MII IG Meta v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * **Versioning**
@@ -7,7 +7,7 @@
 
 ### Version scheme
 
-The Meta module uses the KDS calendar-versioning scheme in a SemVer-compatible form: `YYYY.MINOR.PATCH[-label]`. The current version is `2027.0.0-ballot.rc3`.
+The Meta module uses the KDS calendar-versioning scheme in a SemVer-compatible form: `YYYY.MINOR.PATCH[-label]`. The current version is `2027.0.0-ballot`.
 
 * `YYYY` is the year in which the guide applies and is intended to be used.
 * `MINOR` is incremented for non-breaking additions and refinements.

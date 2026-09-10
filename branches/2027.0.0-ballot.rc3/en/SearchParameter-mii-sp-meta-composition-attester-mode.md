@@ -1,4 +1,4 @@
-# mii-sp-meta-composition-attester-mode - MII IG Meta v2027.0.0-ballot.rc3
+# mii-sp-meta-composition-attester-mode - MII IG Meta v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-composition-attester-mode | *Version*:2027.0.0-ballot.rc3 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-composition-attester-mode | *Version*:2027.0.0-ballot |
 | Active as of 2026-09-01 | *Computable Name*:MII_SP_Meta_Composition_Attester_Mode |
 
  
@@ -34,7 +34,7 @@ SearchParameter for Composition.attester.mode
       },
       {
         "url" : "version",
-        "valueString" : "2027.0.0-ballot.rc3"
+        "valueString" : "2027.0.0-ballot"
       },
       {
         "url" : "uri",
@@ -64,7 +64,7 @@ SearchParameter for Composition.attester.mode
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-composition-attester-mode",
-  "version" : "2027.0.0-ballot.rc3",
+  "version" : "2027.0.0-ballot",
   "name" : "MII_SP_Meta_Composition_Attester_Mode",
   "status" : "active",
   "experimental" : false,

@@ -1,4 +1,4 @@
-# MII CapabilityStatement Meta Server Capabilities - MII IG Meta v2027.0.0-ballot.rc3
+# MII CapabilityStatement Meta Server Capabilities - MII IG Meta v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/modul-meta/CapabilityStatement/mii-cps-meta-server-capabilities | *Version*:2027.0.0-ballot.rc3 |
-| Draft as of 2026-08-31 | *Computable Name*:MII_CPS_Meta_Server_Capabilities |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/modul-meta/CapabilityStatement/mii-cps-meta-server-capabilities | *Version*:2027.0.0-ballot |
+| Draft as of 2026-09-10 | *Computable Name*:MII_CPS_Meta_Server_Capabilities |
 
  
 Migration-generated proposal describing the resource types and search parameters published by the Meta module. Review before use as a normative capability statement. 
@@ -36,7 +36,7 @@ Migration-generated proposal describing the resource types and search parameters
       },
       {
         "url" : "version",
-        "valueString" : "2027.0.0-ballot.rc3"
+        "valueString" : "2027.0.0-ballot"
       },
       {
         "url" : "uri",
@@ -80,7 +80,7 @@ Migration-generated proposal describing the resource types and search parameters
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/resource-approvalDate",
-    "valueDate" : "2026-08-31"
+    "valueDate" : "2026-09-10"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
@@ -153,12 +153,12 @@ Migration-generated proposal describing the resource types and search parameters
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/CapabilityStatement/mii-cps-meta-server-capabilities",
-  "version" : "2027.0.0-ballot.rc3",
+  "version" : "2027.0.0-ballot",
   "name" : "MII_CPS_Meta_Server_Capabilities",
   "title" : "MII CapabilityStatement Meta Server Capabilities",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-08-31",
+  "date" : "2026-09-10",
   "publisher" : "NUM-DIZ",
   "_publisher" : {
     "extension" : [{
@@ -192,7 +192,7 @@ Migration-generated proposal describing the resource types and search parameters
   "kind" : "requirements",
   "fhirVersion" : "4.0.1",
   "format" : ["json", "xml"],
-  "implementationGuide" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/ImplementationGuide/mii-ig-meta|2027.0.0-ballot.rc3"],
+  "implementationGuide" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/ImplementationGuide/mii-ig-meta|2027.0.0-ballot"],
   "rest" : [{
     "mode" : "server",
     "documentation" : "Proposal derived from the module's published SearchParameter definitions; support expectations require module-team review.",
@@ -1176,7 +1176,7 @@ Migration-generated proposal describing the resource types and search parameters
     },
     {
       "type" : "SearchParameter",
-      "supportedProfile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter|2027.0.0-ballot.rc3"]
+      "supportedProfile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter|2027.0.0-ballot"]
     },
     {
       "type" : "ServiceRequest",

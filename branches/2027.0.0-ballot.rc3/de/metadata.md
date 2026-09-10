@@ -1,4 +1,4 @@
-# Metadaten-Übersicht - MII IG Meta v2027.0.0-ballot.rc3
+# Metadaten-Übersicht - MII IG Meta v2027.0.0-ballot
 
 * [**Inhaltsverzeichnis**](toc.md)
 * **Metadaten-Übersicht**
@@ -16,7 +16,7 @@ Der erzeugte ImplementationGuide beansprucht die CRMI-Profile für verteilbare, 
 | Freigabedatum | `2026-08-31` |
 | Geltungszeitraum | beginnt`2027` |
 | Wissensfähigkeit | `shareable`,`publishable` |
-| Paketquelle | `de.medizininformatikinitiative.kerndatensatz.meta`in`2027.0.0-ballot.rc3` |
+| Paketquelle | `de.medizininformatikinitiative.kerndatensatz.meta`in`2027.0.0-ballot` |
 | Versionsalgorithmus | `semver`, angewendet auf die SemVer-kompatible CalVer-Darstellung |
 | Zweck und Verwendung | maschinenlesbare Publikation, Auffindbarkeit, Validierung, Versionierung und konsistente Anwendung des Meta-Moduls |
 | Thema | NCI Thesaurus`C80260` |

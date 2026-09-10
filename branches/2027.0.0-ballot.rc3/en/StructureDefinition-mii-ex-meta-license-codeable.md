@@ -1,4 +1,4 @@
-# MII EX Meta License Codeable - MII IG Meta v2027.0.0-ballot.rc3
+# MII EX Meta License Codeable - MII IG Meta v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable | *Version*:2027.0.0-ballot.rc3 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable | *Version*:2027.0.0-ballot |
 | Active as of 2026-09-01 | *Computable Name*:MII_EX_Meta_License_Codeable |
 
 This extension may be used to provide machine-processable license information about the set of data described by this resource. The extension is a R4-compatible version of the FHIR for FAIR R4B IG Licence Terms as CodeableConcept extension.
@@ -55,7 +55,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-ex-meta-licen
       },
       {
         "url" : "version",
-        "valueString" : "2027.0.0-ballot.rc3"
+        "valueString" : "2027.0.0-ballot"
       },
       {
         "url" : "uri",
@@ -99,7 +99,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-ex-meta-licen
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/resource-approvalDate",
-    "valueDate" : "2026-08-31"
+    "valueDate" : "2026-09-10"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
@@ -172,7 +172,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-ex-meta-licen
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
-  "version" : "2027.0.0-ballot.rc3",
+  "version" : "2027.0.0-ballot",
   "name" : "MII_EX_Meta_License_Codeable",
   "title" : "MII EX Meta License Codeable",
   "status" : "active",

@@ -1,4 +1,4 @@
-# Translation Information - MII IG Meta v2027.0.0-ballot.rc3
+# Translation Information - MII IG Meta v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * **Translation Information**

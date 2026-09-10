@@ -1,4 +1,4 @@
-# mii-sp-meta-observation-sop-instance-uid - MII IG Meta v2027.0.0-ballot.rc3
+# mii-sp-meta-observation-sop-instance-uid - MII IG Meta v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-sop-instance-uid | *Version*:2027.0.0-ballot.rc3 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-sop-instance-uid | *Version*:2027.0.0-ballot |
 | Active as of 2025-11-06 | *Computable Name*:MII_SP_Bildgebung_Observation_SOP_Instance_UID |
 
  
@@ -34,7 +34,7 @@ Suchparameter für Observation.sopInstanceUID
       },
       {
         "url" : "version",
-        "valueString" : "2027.0.0-ballot.rc3"
+        "valueString" : "2027.0.0-ballot"
       },
       {
         "url" : "uri",
@@ -64,7 +64,7 @@ Suchparameter für Observation.sopInstanceUID
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-sop-instance-uid",
-  "version" : "2027.0.0-ballot.rc3",
+  "version" : "2027.0.0-ballot",
   "name" : "MII_SP_Bildgebung_Observation_SOP_Instance_UID",
   "status" : "active",
   "experimental" : false,

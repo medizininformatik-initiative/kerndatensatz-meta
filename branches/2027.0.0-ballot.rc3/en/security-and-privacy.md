@@ -1,4 +1,4 @@
-# Security and Privacy - MII IG Meta v2027.0.0-ballot.rc3
+# Security and Privacy - MII IG Meta v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * **Security and Privacy**

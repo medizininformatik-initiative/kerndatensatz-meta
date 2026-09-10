@@ -1,4 +1,4 @@
-# MII PR Meta SearchParameter - MII IG Meta v2027.0.0-ballot.rc3
+# MII PR Meta SearchParameter - MII IG Meta v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter | *Version*:2027.0.0-ballot.rc3 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter | *Version*:2027.0.0-ballot |
 | Active as of 2026-09-01 | *Computable Name*:MII_PR_Meta_SearchParameter |
 
  
@@ -53,7 +53,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-meta-searc
       },
       {
         "url" : "version",
-        "valueString" : "2027.0.0-ballot.rc3"
+        "valueString" : "2027.0.0-ballot"
       },
       {
         "url" : "uri",
@@ -97,7 +97,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-meta-searc
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/resource-approvalDate",
-    "valueDate" : "2026-08-31"
+    "valueDate" : "2026-09-10"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
@@ -170,7 +170,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-meta-searc
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter",
-  "version" : "2027.0.0-ballot.rc3",
+  "version" : "2027.0.0-ballot",
   "name" : "MII_PR_Meta_SearchParameter",
   "title" : "MII PR Meta SearchParameter",
   "status" : "active",

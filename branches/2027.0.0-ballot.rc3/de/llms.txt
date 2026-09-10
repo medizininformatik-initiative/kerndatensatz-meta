@@ -1,4 +1,4 @@
-# de.medizininformatikinitiative.kerndatensatz.meta#2027.0.0-ballot.rc3: MII IG Meta(de)
+# de.medizininformatikinitiative.kerndatensatz.meta#2027.0.0-ballot: MII IG Meta(de)
 
 ## Pages
 

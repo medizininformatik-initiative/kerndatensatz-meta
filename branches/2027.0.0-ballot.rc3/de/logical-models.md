@@ -1,4 +1,4 @@
-# Logische Modelle - MII IG Meta v2027.0.0-ballot.rc3
+# Logische Modelle - MII IG Meta v2027.0.0-ballot
 
 * [**Inhaltsverzeichnis**](toc.md)
 * **Logische Modelle**

@@ -1,4 +1,4 @@
-# Versionierung - MII IG Meta v2027.0.0-ballot.rc3
+# Versionierung - MII IG Meta v2027.0.0-ballot
 
 * [**Inhaltsverzeichnis**](toc.md)
 * **Versionierung**
@@ -7,7 +7,7 @@
 
 ### Versionsschema
 
-Das Meta-Modul verwendet das KDS-Schema der Kalender-Versionierung in einer SemVer-kompatiblen Form: `JJJJ.MINOR.PATCH[-label]`. Die aktuelle Version ist `2027.0.0-ballot.rc3`.
+Das Meta-Modul verwendet das KDS-Schema der Kalender-Versionierung in einer SemVer-kompatiblen Form: `JJJJ.MINOR.PATCH[-label]`. Die aktuelle Version ist `2027.0.0-ballot`.
 
 * `JJJJ` ist das Jahr, in dem der Leitfaden gilt und genutzt werden soll.
 * `MINOR` wird für nicht brechende Ergänzungen und Präzisierungen erhöht.

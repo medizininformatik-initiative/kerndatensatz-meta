@@ -1,4 +1,4 @@
-# Home - MII IG Meta v2027.0.0-ballot.rc3
+# Home - MII IG Meta v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * **Home**
@@ -7,8 +7,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/modul-meta/ImplementationGuide/mii-ig-meta | *Version*:2027.0.0-ballot.rc3 |
-| Active as of 2026-08-31 | *Computable Name*:MII_IG_Meta |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/modul-meta/ImplementationGuide/mii-ig-meta | *Version*:2027.0.0-ballot |
+| Active as of 2026-09-10 | *Computable Name*:MII_IG_Meta |
 
 This specification describes the FHIR representation of the Medical Informatics Initiative (MII) Core Data Set module **Meta**. It describes the module's use cases and the associated FHIR profiles and terminology resources in their binding form.
 
@@ -17,7 +17,7 @@ The module contains foundational artifacts used by all other MII implementation 
 | | |
 | :--- | :--- |
 | Date | 2026-08-31 |
-| Version | `2027.0.0-ballot.rc3` |
+| Version | `2027.0.0-ballot` |
 | Status | active |
 | Realm | DE |
 

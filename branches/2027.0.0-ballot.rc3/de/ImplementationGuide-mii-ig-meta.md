@@ -1,4 +1,4 @@
-# MII ImplementationGuide Ressource - MII IG Meta v2027.0.0-ballot.rc3
+# MII ImplementationGuide Ressource - MII IG Meta v2027.0.0-ballot
 
 * [**Inhaltsverzeichnis**](toc.md)
 * **MII ImplementationGuide Ressource**
@@ -54,7 +54,7 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
   "language" : "en",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/resource-approvalDate",
-    "valueDate" : "2026-08-31"
+    "valueDate" : "2026-09-10"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
@@ -71,7 +71,7 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
     },
     {
       "url" : "version",
-      "valueString" : "2027.0.0-ballot.rc3"
+      "valueString" : "2027.0.0-ballot"
     },
     {
       "url" : "uri",
@@ -171,12 +171,12 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/ImplementationGuide/mii-ig-meta",
-  "version" : "2027.0.0-ballot.rc3",
+  "version" : "2027.0.0-ballot",
   "name" : "MII_IG_Meta",
   "title" : "MII IG Meta",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-31",
+  "date" : "2026-09-10",
   "publisher" : "NUM-DIZ",
   "_publisher" : {
     "extension" : [{

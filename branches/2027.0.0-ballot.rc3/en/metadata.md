@@ -1,4 +1,4 @@
-# Metadata Overview - MII IG Meta v2027.0.0-ballot.rc3
+# Metadata Overview - MII IG Meta v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * **Metadata Overview**
@@ -16,7 +16,7 @@ The generated ImplementationGuide claims the CRMI shareable, publishable, and co
 | Approval date | `2026-08-31` |
 | Effective period | starts in`2027` |
 | Knowledge capability | `shareable`,`publishable` |
-| Package source | `de.medizininformatikinitiative.kerndatensatz.meta`at`2027.0.0-ballot.rc3` |
+| Package source | `de.medizininformatikinitiative.kerndatensatz.meta`at`2027.0.0-ballot` |
 | Version algorithm | `semver`, applied to the SemVer-compatible CalVer representation |
 | Purpose and usage | computable publication, discovery, validation, versioning, and consistent application of the Meta module |
 | Topic | NCI Thesaurus`C80260` |

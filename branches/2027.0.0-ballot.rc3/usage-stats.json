@@ -1,6 +1,6 @@
 {
   "package": "de.medizininformatikinitiative.kerndatensatz.meta",
-  "version": "2027.0.0-ballot.rc3",
+  "version": "2027.0.0-ballot",
   "fhirVersion": "4.0.1",
   "jurisdiction": "DE",
   "extensions": [

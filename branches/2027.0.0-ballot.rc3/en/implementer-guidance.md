@@ -1,4 +1,4 @@
-# Guidance for Implementers - MII IG Meta v2027.0.0-ballot.rc3
+# Guidance for Implementers - MII IG Meta v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Guidance**](guidance.md)

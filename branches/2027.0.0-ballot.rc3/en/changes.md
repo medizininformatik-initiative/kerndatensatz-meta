@@ -1,4 +1,4 @@
-# Changelog - MII IG Meta v2027.0.0-ballot.rc3
+# Changelog - MII IG Meta v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * **Changelog**
