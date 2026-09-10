@@ -1,0 +1,130 @@
+{
+  "codeSystems" : [{
+    "url" : "http://hl7.org/fhir/ValueSet/jurisdiction",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "Jurisdiction ValueSet",
+    "title" : "Jurisdiction",
+    "description" : "This value set defines a base set of codes for country, country subdivision and region    for indicating where a resource is intended to be used.   \r\n   \r\n   Note: The codes for countries and country subdivisions are taken from    [ISO 3166](https://www.iso.org/iso-3166-country-codes.html)    while the codes for \"supra-national\" regions are from    [UN Standard country or area codes for statistical use (M49)](http://unstats.un.org/unsd/methods/m49/m49.htm).",
+    "systems" : ["http://unstats.un.org/unsd/methods/m49/m49.htm",
+    "urn:iso:std:iso:3166",
+    "urn:iso:std:iso:3166:-2"],
+    "oids" : ["2.16.840.1.113883.4.642.3.48"],
+    "sources" : ["2.16.840.1.113883.4.642.3.48"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-meta-searchparameter.html" : "MII PR Meta SearchParameter"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/languages",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "CommonLanguages",
+    "title" : "Common Languages",
+    "description" : "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)",
+    "systems" : ["urn:ietf:bcp:47"],
+    "oids" : ["2.16.840.1.113883.4.642.3.20"],
+    "sources" : ["2.16.840.1.113883.4.642.3.20"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-meta-searchparameter.html" : "MII PR Meta SearchParameter"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/publication-status",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "PublicationStatus",
+    "title" : "PublicationStatus",
+    "description" : "The lifecycle status of an artifact.",
+    "systems" : ["http://hl7.org/fhir/publication-status"],
+    "oids" : ["2.16.840.1.113883.4.642.3.3"],
+    "sources" : ["2.16.840.1.113883.4.642.3.3"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-meta-searchparameter.html" : "MII PR Meta SearchParameter"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/resource-types",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "ResourceType",
+    "title" : "ResourceType",
+    "description" : "One of the resource types defined as part of this version of FHIR.",
+    "systems" : ["http://hl7.org/fhir/resource-types"],
+    "oids" : ["2.16.840.1.113883.4.642.3.27"],
+    "sources" : ["2.16.840.1.113883.4.642.3.27"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-meta-searchparameter.html" : "MII PR Meta SearchParameter"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/search-comparator",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "SearchComparator",
+    "title" : "SearchComparator",
+    "description" : "What Search Comparator Codes are supported in search.",
+    "systems" : ["http://hl7.org/fhir/search-comparator"],
+    "oids" : ["2.16.840.1.113883.4.642.3.637"],
+    "sources" : ["2.16.840.1.113883.4.642.3.637"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-meta-searchparameter.html" : "MII PR Meta SearchParameter"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/search-modifier-code",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "SearchModifierCode",
+    "title" : "SearchModifierCode",
+    "description" : "A supported modifier for a search parameter.",
+    "systems" : ["http://hl7.org/fhir/search-modifier-code"],
+    "oids" : ["2.16.840.1.113883.4.642.3.639"],
+    "sources" : ["2.16.840.1.113883.4.642.3.639"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-meta-searchparameter.html" : "MII PR Meta SearchParameter"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/search-param-type",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "SearchParamType",
+    "title" : "SearchParamType",
+    "description" : "Data types allowed to be used for search parameters.",
+    "systems" : ["http://hl7.org/fhir/search-param-type"],
+    "oids" : ["2.16.840.1.113883.4.642.3.11"],
+    "sources" : ["2.16.840.1.113883.4.642.3.11"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-meta-searchparameter.html" : "MII PR Meta SearchParameter"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/search-xpath-usage",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "XPathUsageType",
+    "title" : "XPathUsageType",
+    "description" : "How a search parameter relates to the set of elements returned by evaluating its xpath query.",
+    "systems" : ["http://hl7.org/fhir/search-xpath-usage"],
+    "oids" : ["2.16.840.1.113883.4.642.3.635"],
+    "sources" : ["2.16.840.1.113883.4.642.3.635"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-meta-searchparameter.html" : "MII PR Meta SearchParameter"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/spdx-license",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "SPDXLicense",
+    "title" : "SPDXLicense",
+    "description" : "The license that applies to an Implementation Guide (using an SPDX license Identifiers, or 'not-open-source'). The binding is required but new SPDX license Identifiers are allowed to be used (https://spdx.org/licenses/).",
+    "systems" : ["http://hl7.org/fhir/spdx-license"],
+    "oids" : ["2.16.840.1.113883.4.642.3.1026"],
+    "sources" : ["2.16.840.1.113883.4.642.3.1026"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-ex-meta-license-codeable.html" : "MII EX Meta License Codeable"
+  }]
+}
