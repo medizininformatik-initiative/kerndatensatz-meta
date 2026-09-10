@@ -78,6 +78,9 @@ Description: "Migration-generated proposal describing the resource types and sea
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-composition-section-title"
 * rest[0].resource[=].searchParam[=].type = #string
 * rest[0].resource[+].type = #Condition
+* rest[0].resource[=].searchParam[+].name = "asserted-date"
+* rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-asserted-date"
+* rest[0].resource[=].searchParam[=].type = #date
 * rest[0].resource[=].searchParam[+].name = "evidence-detail"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-evidence-detail"
 * rest[0].resource[=].searchParam[=].type = #reference

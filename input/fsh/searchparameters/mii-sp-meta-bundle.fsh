@@ -29,6 +29,7 @@ Description: "Transaction bundle containing the SearchParameter resources publis
 * insert AddTransactionEntry(mii-sp-meta-patient-stadtteil)
 * insert AddTransactionEntry(mii-sp-meta-patient-strasse)
 // Diagnose
+* insert AddTransactionEntry(mii-sp-meta-condition-asserted-date)
 * insert AddTransactionEntry(mii-sp-meta-condition-icd10gm-diagnosesicherheit)
 * insert AddTransactionEntry(mii-sp-meta-condition-icd10gm-mehrfachcodierung)
 * insert AddTransactionEntry(mii-sp-meta-condition-icd10gm-seitenlokalisation)
@@ -223,6 +224,7 @@ Description: "Collection bundle containing the SearchParameter resources publish
 * insert AddCollectionEntry(mii-sp-meta-patient-stadtteil)
 * insert AddCollectionEntry(mii-sp-meta-patient-strasse)
 // Diagnose
+* insert AddCollectionEntry(mii-sp-meta-condition-asserted-date)
 * insert AddCollectionEntry(mii-sp-meta-condition-icd10gm-diagnosesicherheit)
 * insert AddCollectionEntry(mii-sp-meta-condition-icd10gm-mehrfachcodierung)
 * insert AddCollectionEntry(mii-sp-meta-condition-icd10gm-seitenlokalisation)
