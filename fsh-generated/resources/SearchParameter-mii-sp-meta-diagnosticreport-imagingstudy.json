@@ -15,7 +15,7 @@
           },
           {
             "url": "version",
-            "valueString": "2027.0.0-ballot.rc3"
+            "valueString": "2027.0.0-ballot"
           },
           {
             "url": "uri",
@@ -69,7 +69,7 @@
   "target": [
     "ImagingStudy"
   ],
-  "version": "2027.0.0-ballot.rc3",
+  "version": "2027.0.0-ballot",
   "publisher": "Medizininformatik Initiative",
   "date": "2026-09-01",
   "name": "MII_SP_Meta_DiagnosticReport_ImagingStudy",

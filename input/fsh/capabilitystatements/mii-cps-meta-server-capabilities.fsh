@@ -17,21 +17,21 @@ Description: "Migration-generated proposal describing the resource types and sea
 * insert CRMIVersionPolicyStrictInstance
 * insert CRMIPackageSource
 * insert CRMIArtifactUsageDraftMetaCapabilityStatement
-* insert CRMIApprovalDateInstance(2026-08-31)
+* insert CRMIApprovalDateInstance(2026-09-10)
 * insert CRMIResourceEffectivePeriodInstance
 * insert CRMIArtifactTopicInstance(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, C80260)
 * insert CRMIArtifactContributorsInstance
 * name = "MII_CPS_Meta_Server_Capabilities"
 * status = #draft
 * experimental = true
-* date = "2026-08-31"
+* date = "2026-09-10"
 * jurisdiction = urn:iso:std:iso:3166#DE "Germany"
 * purpose = "Define the SearchParameter support described by the MII Meta module for implementations of the MII Core Data Set."
 * kind = #requirements
 * fhirVersion = #4.0.1
 * format[+] = #json
 * format[+] = #xml
-* implementationGuide[+] = "https://www.medizininformatik-initiative.de/fhir/modul-meta/ImplementationGuide/mii-ig-meta|2027.0.0-ballot.rc3"
+* implementationGuide[+] = "https://www.medizininformatik-initiative.de/fhir/modul-meta/ImplementationGuide/mii-ig-meta|2027.0.0-ballot"
 * rest[0].mode = #server
 * rest[0].documentation = "Proposal derived from the module's published SearchParameter definitions; support expectations require module-team review."
 * rest[0].resource[+].type = #AdverseEvent
@@ -601,7 +601,7 @@ Description: "Migration-generated proposal describing the resource types and sea
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchsubject-consent"
 * rest[0].resource[=].searchParam[=].type = #reference
 * rest[0].resource[+].type = #SearchParameter
-* rest[0].resource[=].supportedProfile[+] = "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter|2027.0.0-ballot.rc3"
+* rest[0].resource[=].supportedProfile[+] = "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter|2027.0.0-ballot"
 * rest[0].resource[+].type = #ServiceRequest
 * rest[0].resource[=].searchParam[+].name = "reason-code"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-servicerequest-reasoncode"

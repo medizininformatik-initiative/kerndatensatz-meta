@@ -15,7 +15,7 @@
           },
           {
             "url": "version",
-            "valueString": "2027.0.0-ballot.rc3"
+            "valueString": "2027.0.0-ballot"
           },
           {
             "url": "uri",
@@ -70,7 +70,7 @@
     "Patient"
   ],
   "publisher": "Medizininformatik Initiative",
-  "version": "2027.0.0-ballot.rc3",
+  "version": "2027.0.0-ballot",
   "name": "MII_SP_Meta_Task_For",
   "status": "active",
   "experimental": false,

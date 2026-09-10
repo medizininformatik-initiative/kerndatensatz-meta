@@ -15,7 +15,7 @@
           },
           {
             "url": "version",
-            "valueString": "2027.0.0-ballot.rc3"
+            "valueString": "2027.0.0-ballot"
           },
           {
             "url": "uri",
@@ -73,7 +73,7 @@
     "DocumentReference"
   ],
   "publisher": "Medizininformatik Initiative",
-  "version": "2027.0.0-ballot.rc3",
+  "version": "2027.0.0-ballot",
   "name": "MII_SP_Meta_ServiceRequest_ReasonReference",
   "status": "active",
   "experimental": false,

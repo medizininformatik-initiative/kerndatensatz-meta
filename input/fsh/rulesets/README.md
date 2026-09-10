@@ -58,7 +58,7 @@ IG until you do:
 | `2026` | `version.fsh` (`resource-effectivePeriod.start`) |
 | `2019` | `crmi.fsh` (`artifact-copyrightLabel`) |
 | `julian.sass@charite.de` | `crmi.fsh` (`artifact-author`) |
-| `2026-08-31` | passed in at the call site: `insert CRMIApprovalDate(2026-08-31)` |
+| `2026-09-10` | passed in at the call site: `insert CRMIApprovalDate(2026-09-10)` |
 | `C80260` | passed in at the call site: `insert CRMIArtifactTopic(…, C80260)` |
 
 `input/fsh/profiles/example-patient.fsh` and

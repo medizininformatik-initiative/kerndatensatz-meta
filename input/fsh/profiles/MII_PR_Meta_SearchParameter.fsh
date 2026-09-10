@@ -12,7 +12,7 @@ Description: "Das Profil legt die Mindestanforderungen fest, die SearchParameter
 * insert CRMIVersionPolicyStrict
 * insert CRMIPackageSourceDefinitionalResource
 * insert CRMIArtifactUsageSearchParameterProfile
-* insert CRMIApprovalDate(2026-08-31)
+* insert CRMIApprovalDate(2026-09-10)
 * insert CRMIResourceEffectivePeriod
 * insert CRMIArtifactTopic(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, C80260)
 * insert CRMIArtifactContributors

@@ -92,7 +92,7 @@ description: "The Meta module contains foundational artifacts used by all other 
 status: active # draft | active | retired | unknown
 # MII modules use CalVer YYYY.n.n (e.g. 2026.0.1) per the MII Module Release
 # Workflow — NOT SemVer. Only the template tooling repos use SemVer.
-version: "2027.0.0-ballot.rc3"
+version: "2027.0.0-ballot"
 # packageId pattern per the MII naming convention:
 # de.medizininformatikinitiative.kerndatensatz.<slug> (for example,
 # kerndatensatz-basis uses de.medizininformatikinitiative.kerndatensatz.base).
@@ -102,7 +102,7 @@ copyrightYear: "2019+"
 releaseLabel: ci-build
 license: CC-BY-4.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 # Must equal the publication date; go-publish.yml validates this.
-date: "2026-08-31"
+date: "2026-09-10"
 jurisdiction: urn:iso:std:iso:3166#DE "Germany" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 # NUM-DIZ takes over IG development and maintenance when MII funding ends
 # (end-2026), so NUM-DIZ is the publisher shown in the footer's
@@ -137,7 +137,7 @@ extension:
   # Date this release was approved by whoever governs the module
   # (for example, kerndatensatz-basis records 2024-03-07).
   - url: http://hl7.org/fhir/StructureDefinition/resource-approvalDate
-    valueDate: "2026-08-31"
+    valueDate: "2026-09-10"
   - url: http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability
     valueCode: shareable
   - url: http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability
@@ -154,7 +154,7 @@ extension:
       - url: packageId
         valueId: de.medizininformatikinitiative.kerndatensatz.meta
       - url: version
-        valueString: "2027.0.0-ballot.rc3"
+        valueString: "2027.0.0-ballot"
       - url: uri
         valueUri: https://www.medizininformatik-initiative.de/fhir/modul-meta
   # Year this release sequence became effective
