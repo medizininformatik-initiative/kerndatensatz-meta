@@ -1,0 +1,21 @@
+{
+  "packages" : [{
+    "path" : "package-list.json",
+    "package-id" : "de.medizininformatikinitiative.kerndatensatz.meta",
+    "title" : "MII IG Meta",
+    "canonical" : "https://www.medizininformatik-initiative.de/fhir/modul-meta",
+    "category" : "Research",
+    "ci-build" : "https://medizininformatik-initiative.github.io/kerndatensatz-meta/branches/dev/",
+    "version-count" : 1,
+    "latest" : {
+      "version" : "2027.0.0-ballot",
+      "date" : "2026-09-10",
+      "path" : "https://medizininformatik-initiative.github.io/kerndatensatz-meta/2027.0.0-ballot"
+    },
+    "milestone" : {
+      "version" : "2027.0.0-ballot",
+      "date" : "2026-09-10",
+      "path" : "https://medizininformatik-initiative.github.io/kerndatensatz-meta/2027.0.0-ballot"
+    }
+  }]
+}

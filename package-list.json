@@ -1,0 +1,24 @@
+{
+  "list" : [{
+    "version" : "current",
+    "path" : "https://medizininformatik-initiative.github.io/kerndatensatz-meta/branches/dev/",
+    "status" : "ci-build",
+    "sequence" : "ci-build",
+    "desc" : "Continuous Integration Build (latest in version control) - Content subject to frequent changes"
+  },
+  {
+    "version" : "2027.0.0-ballot",
+    "path" : "https://medizininformatik-initiative.github.io/kerndatensatz-meta/2027.0.0-ballot",
+    "status" : "release",
+    "sequence" : "2027",
+    "fhirversion" : "4.0.1",
+    "date" : "2026-09-10",
+    "current" : true,
+    "desc" : "Meta module ballot release 2027.0.0-ballot."
+  }],
+  "package-id" : "de.medizininformatikinitiative.kerndatensatz.meta",
+  "canonical" : "https://www.medizininformatik-initiative.de/fhir/modul-meta",
+  "title" : "MII IG Meta",
+  "category" : "Research",
+  "introduction" : "The Meta module contains foundational artifacts used by all other MII implementation guides."
+}

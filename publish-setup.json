@@ -1,0 +1,21 @@
+{
+  "canonical-mismatch": true,
+  "website": {
+    "style": "fhir.layout",
+    "url": "https://medizininformatik-initiative.github.io/kerndatensatz-meta",
+    "server": "cloud",
+    "org": "Medical Informatics Initiative (MII)",
+    "clone-xml-json": false
+  },
+  "feeds": {
+    "package": "package-feed.xml",
+    "publication": "publication-feed.xml"
+  },
+  "layout-rules": [
+    {
+      "npm": "de.medizininformatikinitiative.kerndatensatz.meta",
+      "canonical": "https://www.medizininformatik-initiative.de/fhir/modul-meta",
+      "destination": "/"
+    }
+  ]
+}

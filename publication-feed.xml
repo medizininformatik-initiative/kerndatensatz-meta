@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:fhir="http://hl7.org/fhir/feed" version="2.0">
+  <channel>
+    <title>MII Meta Module — publication feed</title>
+    <link>https://medizininformatik-initiative.github.io/kerndatensatz-meta</link>
+    <description>MII Meta Module — publication feed</description>
+    <atom:link href="https://medizininformatik-initiative.github.io/kerndatensatz-meta/publication-feed.xml" rel="self" type="application/rss+xml"/>
+    <generator>MII module go-publish bootstrap</generator>
+    <lastBuildDate>Thu, 10 Sep 2026 12:37:47 +0000</lastBuildDate>
+    <pubDate>Thu, 10 Sep 2026 12:37:47 +0000</pubDate>
+  
+    <item>
+      <title>MII IG Meta version 2027.0.0-ballot</title>
+      <description>Meta module ballot release 2027.0.0-ballot.</description>
+      <link>https://medizininformatik-initiative.github.io/kerndatensatz-meta/2027.0.0-ballot/index.html</link>
+      <guid isPermaLink="true">https://medizininformatik-initiative.github.io/kerndatensatz-meta/2027.0.0-ballot/index.html</guid>
+      <dc:creator>Medical Informatics Initiative (MII)</dc:creator>
+      <fhir:version>4.0.1</fhir:version>
+      <fhir:kind>IG</fhir:kind>
+      <pubDate>Thu, 10 Sep 2026 12:37:47 +0000</pubDate>
+      <fhir:details>Publication run at 10/09/2026 by runner using Version 2.3.2 (Git# 04466d0486ed). Built 2026-08-13T02:20:51.957Z (28 days old) source id Unknown (todo)</fhir:details>
+    </item></channel>
+</rss>
