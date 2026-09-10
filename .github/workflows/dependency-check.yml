@@ -1,0 +1,110 @@
+# Dependency version check (monitoring layer B — the FHIR/IG-specific pins
+# Dependabot cannot see: de.medizininformatikinitiative.template,
+# fhir2.base.template, the FHIR package dependencies, IG Publisher, SUSHI,
+# Jekyll. Dependabot has no FHIR-package ecosystem and cannot parse
+# sushi-config.yaml — this workflow IS the coverage for those pins, including
+# the THO/Extensions-Pack lockstep with meta via scripts/meta-pin-drift.mjs).
+#
+# Purpose:   run scripts/check-updates.mjs and surface version drift as ONE
+#            continuously-updated tracking issue ("Dependency status <YYYYWww>",
+#            label: dependencies). Proposes only — never bumps anything itself.
+#            A module created from this template inherits this workflow
+#            unchanged (see docs/maintenance.md).
+# Triggers:  schedule (Mondays 06:00 UTC) + workflow_dispatch. There is no
+#            "mode" input: only the tracking-issue path exists. A PR-per-drift
+#            path is sketched at the bottom of this file; add the input, the
+#            steps and the `contents: write` / `pull-requests: write`
+#            permissions together when it is implemented.
+# Toggle:    vars.ENABLE_DEPENDENCY_CHECK — ON by default; set the repo variable
+#            to 'false' to skip the job (it then shows as "skipped", not failed).
+# Human-gated: every proposed bump. A human reviews the changelog, updates the
+#            pin, recomputes the IG Publisher jar SHA-256, and merges via PR to
+#            dev (docs/recipes/review-a-dependency-update.md). Nothing here
+#            auto-merges or auto-floats a version.
+name: Dependency version check
+
+on:
+  schedule:
+    - cron: "0 6 * * 1" # Mondays 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  issues: write # upsert the tracking issue — the only write this job performs
+
+concurrency:
+  group: dependency-check
+  cancel-in-progress: false
+
+jobs:
+  check:
+    if: ${{ vars.ENABLE_DEPENDENCY_CHECK != 'false' }} # toggle: ON by default
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: "22"
+
+      - name: Run checker
+        id: check
+        env:
+          # Authenticated GitHub API lookups avoid the anonymous rate limit.
+          GITHUB_TOKEN: ${{ github.token }}
+        # The checker always exits 0 — drift is reported in the file (and in
+        # the has_updates output), never via the exit code.
+        run: node scripts/check-updates.mjs --format=markdown > drift.md
+
+      - name: Meta pin drift (THO + Extensions Pack)
+        # The IG Publisher injects the LATEST THO/extensions release when a
+        # module does not pin them DIRECTLY (its auto-add guard reads only
+        # this IG's own dependsOn — PublisherIGLoader, verified at the pinned
+        # release). The module therefore pins both; this step warns when the
+        # pins drift from what the PINNED meta package ships. Meta is
+        # resolved via the FHIR package registries with the npm protocol
+        # (packages.fhir.org, fallback packages.simplifier.net) — never from
+        # a repo or an IG download page. Warning only — never fails the run;
+        # the section lands in the same tracking issue as the drift report.
+        run: |
+          node scripts/meta-pin-drift.mjs --markdown-out meta-drift.md
+          cat meta-drift.md >> drift.md
+
+      - name: Upload drift report
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: drift-report
+          path: drift.md
+
+      - name: Upsert tracking issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        # One open, continuously-updated issue instead of many stale ones:
+        # an unreviewed PR accumulates merge conflicts and rots; a single
+        # tracking issue stays readable when maintenance is intermittent.
+        run: |
+          set -euo pipefail
+          week="$(date -u +%GW%V)"
+          title="Dependency status ${week}"
+          existing="$(gh issue list --repo "$GITHUB_REPOSITORY" \
+            --label dependencies --state open \
+            --json number --jq '.[0].number // empty')"
+          if [ -n "${existing}" ]; then
+            gh issue edit "${existing}" --repo "$GITHUB_REPOSITORY" \
+              --title "${title}" --body-file drift.md
+          else
+            gh issue create --repo "$GITHUB_REPOSITORY" \
+              --title "${title}" --label dependencies --body-file drift.md
+          fi
+
+      # ---------------------------------------------------------------------
+      # PR mode — NOT IMPLEMENTED, sketch only. To add it: reinstate a `mode`
+      # dispatch input, grant `contents: write` + `pull-requests: write`, and
+      # for each drifted artifact create a branch off dev, apply the
+      # single-line pin bump (for the IG Publisher also download the jar and
+      # recompute its SHA-256 next to the version — never one without the
+      # other), and open ONE PR per artifact targeting dev with the changelog
+      # link in the body, e.g. with
+      #   peter-evans/create-pull-request@<PIN_SHA> # vX.Y.Z (pin when adopting)
+      # NEVER auto-merge: the PR is a proposal; a human reviews and merges it
+      # (docs/recipes/review-a-dependency-update.md).
+      # ---------------------------------------------------------------------

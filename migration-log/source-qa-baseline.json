@@ -1,0 +1,19 @@
+{
+  "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/ImplementationGuide/mii-ig-meta",
+  "name" : "MII_IG_Meta",
+  "title" : "MII IG Meta",
+  "description" : "Das Modul Meta enthält Basisartefakte für alle weiteren MII-IGs.",
+  "status" : "active",
+  "package-id" : "de.medizininformatikinitiative.kerndatensatz.meta",
+  "ig-ver" : "2026.0.0",
+  "date" : "Mon, 31 Aug, 2026 13:55:56 +0200",
+  "dateISO8601" : "2026-08-31T13:55:56+02:00",
+  "errs" : 3,
+  "warnings" : 269,
+  "hints" : 524,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 1949893096
+}

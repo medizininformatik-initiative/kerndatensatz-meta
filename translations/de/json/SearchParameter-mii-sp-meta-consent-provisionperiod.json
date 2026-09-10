@@ -1,0 +1,49 @@
+{
+  "id" : "SearchParameter-mii-sp-meta-consent-provisionperiod",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "SemVer",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Package",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Consent_ProvisionPeriod",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.publisher",
+      "context" : "SearchParameter.publisher",
+      "source" : "NUM-DIZ",
+      "target" : "NUM-DIZ"
+    },
+    {
+      "id" : "ContactDetail.name",
+      "context" : "ContactDetail.name",
+      "source" : "NUM-DIZ",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suche im Zeitraum der Provision. Dieser Suchparameter bezieht sich explizit auf die zweite Verschachtelungsebene von provison.",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Germany",
+      "target" : null
+    }]
+  }]
+}

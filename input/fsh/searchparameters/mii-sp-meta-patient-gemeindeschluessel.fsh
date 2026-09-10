@@ -9,7 +9,7 @@ Usage: #definition
 * name = "MII_SP_Meta_Patient_Gemeindeschluessel"
 * status = #active
 * experimental = false
-* date = "2024-10-07"
+* date = "2026-09-01"
 * description = "Suchparameter für Patient.address.city.extension:gemeindeschluessel"
 * code = #gemeindeschluessel
 * base = #Patient

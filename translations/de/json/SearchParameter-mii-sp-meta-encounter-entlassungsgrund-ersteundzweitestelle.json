@@ -1,0 +1,49 @@
+{
+  "id" : "SearchParameter-mii-sp-meta-encounter-entlassungsgrund-ersteundzweitestelle",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "SemVer",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Package",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.name",
+      "context" : "SearchParameter.name",
+      "source" : "MII_SP_Meta_Encounter_Entlassungsgrund_ErsteUndZweiteStelle",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.publisher",
+      "context" : "SearchParameter.publisher",
+      "source" : "NUM-DIZ",
+      "target" : "NUM-DIZ"
+    },
+    {
+      "id" : "ContactDetail.name",
+      "context" : "ContactDetail.name",
+      "source" : "NUM-DIZ",
+      "target" : null
+    },
+    {
+      "id" : "SearchParameter.description",
+      "context" : "SearchParameter.description",
+      "source" : "Suchparameter für Encounter.hospitalization.dischargeDisposition.extension:Entlassungsgrund.extension:ErsteUndZweiteStelle",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Germany",
+      "target" : null
+    }]
+  }]
+}

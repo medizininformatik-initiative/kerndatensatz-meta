@@ -9,7 +9,7 @@ Usage: #definition
 * name = "MII_SP_Meta_Procedure_Recorder"
 * status = #active
 * experimental = false
-* date = "2025-10-06"
+* date = "2026-09-01"
 * description = "Suchparameter für Procedure.recorder"
 * code = #recorder
 * base = #Procedure

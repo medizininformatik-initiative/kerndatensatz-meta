@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="de" id="Parameters-mii-param-meta-manifest" original="Resource Parameters-mii-param-meta-manifest" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="Parameters-mii-param-meta-manifest" resname="Parameters.parameter.name">
+             <notes>
+               <note id="n1">Parameters.parameter.name</note>
+             </notes>
+        <source>system-version</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Parameters-mii-param-meta-manifest" resname="Parameters.parameter.name">
+             <notes>
+               <note id="n1">Parameters.parameter.name</note>
+             </notes>
+        <source>default-canonical-version</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Parameters-mii-param-meta-manifest" resname="Parameters.parameter.name">
+             <notes>
+               <note id="n1">Parameters.parameter.name</note>
+             </notes>
+        <source>default-valueset-version</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

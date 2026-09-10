@@ -1,0 +1,50 @@
+info  Running SUSHI v3.20.0 (implements FHIR Shorthand specification v3.0.0)
+info  Arguments:
+info    /Users/julian/git/kerndatensatz-meta
+info  Unable to determine the latest version of sushi: spawnSync /bin/sh ETIMEDOUT
+info  Attempting fallback to determine version of sushi.
+warn  Unable to determine the latest version of sushi: getaddrinfo ENOTFOUND registry.npmjs.org
+info  No output path specified. Output to .
+info  Using configuration file: /Users/julian/git/kerndatensatz-meta/sushi-config.yaml
+info  Importing FSH text...
+info  Preprocessed 65 documents with 48 aliases.
+info  Imported 3 definitions and 173 instances.
+info  Loaded virtual package sushi-r5forR4#1.0.0 with 7 resources
+warn  Failed to load automatically-provided hl7.fhir.uv.tools.r4#latest
+info  Loaded hl7.terminology.r4#7.1.0 with 4103 resources
+info  Loaded hl7.fhir.uv.crmi#2.0.0 with 123 resources
+info  Loaded hl7.fhir.r4.core#4.0.1 with 4581 resources
+info  Loaded hl7.fhir.uv.extensions.r4#5.2.0 with 759 resources
+info  Found 1 non-JSON / non-XML file(s) in directory: /Users/julian/git/kerndatensatz-meta/input/resources. Only resource files with JSON or XML extensions are supported. To see the skipped files in the logs, use debug logging.
+info  Loaded virtual package sushi-local#LOCAL with 1 resources
+info  Converting FSH to FHIR resources...
+info  Converted 2 FHIR StructureDefinitions.
+info  Converted 1 FHIR CodeSystems.
+info  Converted 173 FHIR instances.
+info  Exporting FHIR resources as JSON...
+info  Exported 176 FHIR resources as JSON.
+info  Assembling Implementation Guide sources...
+info  Generated ImplementationGuide-mii-ig-meta.json
+info  Assembled Implementation Guide sources; ready for IG Publisher.
+info  The _build script hosted at https://github.com/HL7/ig-publisher-scripts is useful for downloading and running the IG Publisher.
+
+========================= SUSHI RESULTS ===========================
+|  -------------------------------------------------------------  |
+| |    Profiles   |  Extensions  |   Logicals   |   Resources   | |
+| |-------------------------------------------------------------| |
+| |       1       |      1       |      0       |       0       | |
+|  -------------------------------------------------------------  |
+|  -------------------------------------------------------------  |
+| |      ValueSets     |    CodeSystems    |     Instances      | |
+| |-------------------------------------------------------------| |
+| |         0          |         1         |        173         | |
+|  -------------------------------------------------------------  |
+|                                                                 |
+===================================================================
+| You seem to be casting about.          0 Errors      2 Warnings |
+===================================================================
+|   SUSHI cannot determine if it is running the latest version.   |
+|   To see a listing of releases, including the latest, visit:    |
+|             https://github.com/FHIR/sushi/releases              |
+===================================================================
+

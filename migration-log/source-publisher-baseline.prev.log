@@ -1,0 +1,103 @@
+FHIR IG Publisher Version 2.3.2 (Git# 04466d0486ed). Built 2026-08-13T02:20:51.957Z (18 days old)   
+Detected Java version: 17.0.2 from /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home on Mac OS X/aarch64 (64bit). 6144MB available
+dir = /private/tmp/kerndatensatz-meta-source-baseline.CD9uWM, path = /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home/bin:/usr/local/bin:/usr/bin:/bin
+Parameters: -ig ig.ini -tx https://tx.fhir.org -fhir-settings /tmp/kerndatensatz-meta-source-baseline.CD9uWM/.github/fhir-settings.json -no-sushi
+Character encoding = UTF-8 / UTF-8                                                                  
+Start Clock @ Monday, 31 August 2026 at 13:54:41 Central European Summer Time (2026-08-31T13:54:41+02:00)
+                                                                                                    
+Build FHIR IG from /private/tmp/kerndatensatz-meta-source-baseline.CD9uWM/ig.ini                     (00:00.022 / 00:00.023, 57Mb)
+No FHIR settings file at /tmp/kerndatensatz-meta-source-baseline.CD9uWM/.github/fhir-settings.json; using defaults (no API keys or npm path) (00:00.001 / 00:00.024, 58Mb)
+Package Cache: /Users/julian/.fhir/packages                                                          (00:00.002 / 00:00.027, 58Mb)
+Root directory: /private/tmp/kerndatensatz-meta-source-baseline.CD9uWM                               (00:00.010 / 00:00.037, 58Mb)
+Unable to load IG as an r5 IG - try R4 (property code is a class com.google.gson.JsonPrimitive looking for an object) (00:00.299 / 00:00.337, 32Mb)
+Load Template from fhir.base.template#current                                                        (00:00.279 / 00:00.616, 27Mb)
+[33mThis content depends on fhir.base.template which is no longer considered secure to use
+[0;39m[33mSee Security notification at https://www.fhir.org/guides/security-notices/2026-03-npm-dependencies.html
+[0;39mScanning directory: /private/tmp/kerndatensatz-meta-source-baseline.CD9uWM/template
+======================================================================
+Terminology Cache is at /private/tmp/kerndatensatz-meta-source-baseline.CD9uWM/input-cache/txcache. 0 files in cache (00:03.931 / 00:04.548, 238Mb)
+Core Package hl7.fhir.r4.core#4.0.1                                                                  (00:00.000 / 00:04.548, 238Mb)
+Running Terminology Log: /var/folders/lt/qjkx9tgd2qj9q6t1cx44d77h0000gp/T/ohfu-fhir-ig-4570308789505761772.html
+Connect to Terminology Server at https://tx.fhir.org                                                 (00:02.856 / 00:07.405, 509Mb)
+[39mLoad Package hl7.fhir.pubpack#0.2.5
+[0;39m[39mLoad Package hl7.fhir.xver-extensions#0.1.0
+[0;39m[39mLoad Package hl7.terminology.r4#7.3.0
+[0;39m[39mLoad Package hl7.fhir.uv.extensions.r4#5.3.0
+[0;39m[39mLoad Package hl7.fhir.uv.tools.r4#1.1.2
+[0;39mLoad R5 Specials
+Initialization complete                                                                              (00:05.445 / 00:12.850, 412Mb)
+Load IG                                                                                              (00:00.000 / 00:12.851, 412Mb)
+Load Content                                                                                         (00:00.006 / 00:12.857, 412Mb)
+Using en-US as the default narrative language. (no language information in Implementation Guide)     (00:00.028 / 00:12.885, 422Mb)
+Process Loaded Resources                                                                             (00:00.244 / 00:13.129, 419Mb)
+Generating Snapshots                                                                                 (00:00.361 / 00:13.491, 411Mb)
+
+Signing Certificate: RSA key for Subject: OU=IG Publisher, L=Ann Arbor, CN=hl7.org, O=HL7, ST=Missouri, C=us from: OU=IG Publisher, L=Ann Arbor, CN=hl7.org, O=HL7, ST=Missouri, C=us
+Fetch https://www.medizininformatik-initiative.de/fhir/modul-meta/package-list.json for version check (00:00.331 / 00:13.822, 335Mb)
+Checking Language                                                                                    (00:00.265 / 00:14.087, 343Mb)
+Load Dependency Info                                                                                 (00:00.003 / 00:14.091, 343Mb)
+Load Info                                                                                            (00:00.001 / 00:14.092, 343Mb)
+Load Paths                                                                                           (00:00.000 / 00:14.092, 345Mb)
+Check R4 / R4B                                                                                       (00:00.000 / 00:14.093, 345Mb)
+Assign Comparison Ids                                                                                (00:00.051 / 00:14.144, 389Mb)
+Propagating status                                                                                   (00:00.000 / 00:14.144, 389Mb)
+Generating Narratives                                                                                (00:00.000 / 00:14.145, 389Mb)
+Validating Conformance Resources                                                                     (00:00.538 / 00:14.683, 364Mb)
+Check profiles & code systems                                                                        (00:06.416 / 00:21.099, 615Mb)
+Check realm rules                                                                                    (00:00.001 / 00:21.101, 615Mb)
+Previous Version Comparison                                                                          (00:00.000 / 00:21.101, 615Mb)
+.. loaded. Process                                                                                   (00:00.000 / 00:21.102, 615Mb)
+finish previous version comparison                                                                   (00:00.000 / 00:21.102, 615Mb)
+finish ipa version                                                                                   (00:00.000 / 00:21.103, 615Mb)
+finish ips version                                                                                   (00:00.000 / 00:21.103, 615Mb)
+comparisons done                                                                                     (00:00.000 / 00:21.104, 615Mb)
+Checking for Bundles to sign                                                                         (00:00.011 / 00:21.115, 617Mb)
+Validating Resources                                                                                 (00:00.000 / 00:21.115, 617Mb)
+Processing Provenance Records                                                                        (00:01.546 / 00:22.662, 626Mb)
+Generating Outputs in /private/tmp/kerndatensatz-meta-source-baseline.CD9uWM/output                  (00:00.000 / 00:22.662, 626Mb)
+Warning @ Git URL is not a valid URl. Source: git remote origin url
+Generate Native Outputs                                                                              (00:00.207 / 00:22.870, 650Mb)
+Run Template                                                                                         (00:04.264 / 00:27.134, 1006Mb)
+Generate HTML Outputs                                                                                (00:02.714 / 00:29.849, 1Gb)
+Generate Spreadsheets                                                                                (00:02.073 / 00:31.922, 606Mb)
+Generate Summaries                                                                                   (00:01.082 / 00:33.005, 726Mb)
+Generating Summary Outputs                                                                           (00:00.001 / 00:33.006, 726Mb)
+DB Cumulative Time invested: 00:00:00.121
+Sending Usage Stats to Server                                                                        (00:03.004 / 00:36.010, 1Gb)
+## Memory (MB): Use = 1398, Free = 1049, Total = 2448, Max = 6144                                    (00:00.002 / 00:36.013, 1Gb)
+Reclaiming memory...                                                                                 (00:00.000 / 00:36.013, 1Gb)
+Generating combined package                                                                          (00:00.010 / 00:36.023, 1Gb)
+Error generating combined package: /private/tmp/kerndatensatz-meta-source-baseline.CD9uWM/output/package.tgz (No such file or directory) (00:00.004 / 00:36.028, 1Gb)
+## Memory (MB): Use = 472, Free = 1167, Total = 1640, Max = 6144                                     (00:00.125 / 00:36.153, 474Mb)
+Run jekyll: jekyll build --destination "/private/tmp/kerndatensatz-meta-source-baseline.CD9uWM/output" (in folder /private/tmp/kerndatensatz-meta-source-baseline.CD9uWM/temp/pages) (00:00.009 / 00:36.163, 475Mb)
+Troubleshooting Note: usual cases for Jekyll to fail are:                                            (00:00.005 / 00:36.168, 476Mb)
+* A failure to produce a fragment that is already logged in the output above                         (00:00.000 / 00:36.169, 476Mb)
+* A reference to a manually edited file that hasn't been provided                                    (00:00.000 / 00:36.169, 476Mb)
+Jekyll has failed. Complete output from running Jekyll:                                              (00:00.005 / 00:36.174, 477Mb)
+Note: Check that Jekyll is installed correctly                                                       (00:00.000 / 00:36.174, 477Mb)
+Publishing Content Failed: Cannot run program "jekyll" (in directory "/private/tmp/kerndatensatz-meta-source-baseline.CD9uWM/temp/pages"): error=2, No such file or directory (00:00.018 / 00:36.193, 481Mb)
+                                                                                                     (00:00.000 / 00:36.193, 481Mb)
+Use -? to get command line help                                                                      (00:00.000 / 00:36.193, 481Mb)
+                                                                                                     (00:00.000 / 00:36.194, 481Mb)
+Stack Dump (for debugging):                                                                          (00:00.000 / 00:36.194, 481Mb)
+java.io.IOException: Cannot run program "jekyll" (in directory "/private/tmp/kerndatensatz-meta-source-baseline.CD9uWM/temp/pages"): error=2, No such file or directory
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1143)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at java.base/java.lang.Runtime.exec(Runtime.java:594)
+	at org.apache.commons.exec.launcher.Java13CommandLauncher.exec(Java13CommandLauncher.java:61)
+	at org.apache.commons.exec.DefaultExecutor.launch(DefaultExecutor.java:279)
+	at org.apache.commons.exec.DefaultExecutor.executeInternal(DefaultExecutor.java:336)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:166)
+	at org.apache.commons.exec.DefaultExecutor.execute(DefaultExecutor.java:153)
+	at org.hl7.fhir.igtools.publisher.PublisherGenerator.runJekyll(PublisherGenerator.java:4020)
+	at org.hl7.fhir.igtools.publisher.PublisherGenerator.runTool(PublisherGenerator.java:3907)
+	at org.hl7.fhir.igtools.publisher.PublisherGenerator.generate(PublisherGenerator.java:425)
+	at org.hl7.fhir.igtools.publisher.Publisher.createIg(Publisher.java:422)
+	at org.hl7.fhir.igtools.publisher.Publisher.execute(Publisher.java:226)
+	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:1602)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:314)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:244)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1110)
+	... 13 more

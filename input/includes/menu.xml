@@ -1,0 +1,86 @@
+<!-- Menu in the IG's DEFAULT language (English).
+     The IG Publisher renders the navigation from this file. To translate it,
+     ship a per-language copy at input/translations/<lang>/includes/menu.xml —
+     this is the mechanism the HL7 reference IG FHIR/multi-lang-test-ig uses and
+     the ONLY way to get a TRANSLATED menu: the `menu:` property in
+     sushi-config.yaml generates a single menu.xml that cannot be translated.
+     Rules: keep the href targets identical across languages; dropdown parents
+     must link to a REAL page (href="#" is rejected by the template's menu QA);
+     only one sub-menu level is supported.
+
+     STRUCTURE: this menu implements the TF-KDS-agreed module menu (see
+     docs/page-structure.md for the full structure with cardinalities).
+     Entries marked OPTIONAL (0..1) below may be removed per module — the
+     removal procedure per entry is in docs/optional-pages.md in this
+     repository. Entries without a marker are mandatory (1..1).
+
+     LINK-ONLY ENTRIES (no page of their own):
+     - "Datasets and Descriptions" points at the Logical Models page
+       (logical-models.html) — the module's datasets ARE its logical models.
+       NEITHER Artifacts-Summary anchor is usable for the TF-KDS "Sec.
+       15.0.2" target: the numeric #2 is POSITIONAL (grouping index — wrong
+       section whenever the artifact mix differs from the full standard set),
+       and the browser-generated NAMED AnchorJS anchor
+       (#structures-logical-models) is invisible to the IG Publisher's link
+       validator — it injects a marker anchor into the menu (rendered as an
+       EMPTY menu entry) and logs a broken-link ERROR on every page's QA.
+       Full analysis: docs/page-structure.md, "Datasets and Descriptions".
+     - "Search Parameters" points at the generated Artifacts Summary section.
+       Its named AnchorJS fragment is language-dependent and invisible to the
+       Publisher link validator, so the link uses the shared static #2 anchor.
+     - The four Conformance entries point at the KDS-wide conformance rules of
+       the Meta module (kerndatensatz-meta). INTERIM: the Meta module has no
+       published IG rendering yet (only a CI build with no conformance pages),
+       so these link to the authoritative meta-wiki sections; switch them to
+       the Meta IG's menu entries once a stable rendering exists (Gate item in
+       docs/page-structure.md). -->
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">Home</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="guidance.html" class="dropdown-toggle">Guidance<b class="caret"> </b></a>
+    <ul class="dropdown-menu">
+      <li><a href="guidance.html">Guidance</a></li>
+      <li><a href="implementer-guidance.html">Guidance for Implementers</a></li>
+      <!-- link-only entry: Logical-Models section of the Artifacts Summary (see header note) -->
+      <li><a href="logical-models.html">Datasets and Descriptions</a></li>
+      <li><a href="uml-diagrams.html">UML Diagrams</a></li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <!-- The parent and the first four entries link to the KDS-wide conformance
+         rules of the Meta module (INTERIM: meta-wiki; see header note). -->
+    <a data-toggle="dropdown" href="https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance" class="dropdown-toggle">Conformance<b class="caret"> </b></a>
+    <ul class="dropdown-menu">
+      <li><a href="https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance">Conformance</a></li>
+      <li><a href="https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance#anforderungsdokumentation">General Requirements</a></li>
+      <li><a href="https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance#must-support-ms">Must Support</a></li>
+      <li><a href="https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance#fehlende-daten">Handling Missing Data</a></li>
+      <li><a href="security-and-privacy.html">Security and Privacy</a></li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="artifacts.html" class="dropdown-toggle">Artifacts<b class="caret"> </b></a>
+    <ul class="dropdown-menu">
+      <li><a href="artifacts.html">Artifacts Summary</a></li>
+      <li><a href="profiles.html">Profiles</a></li>
+      <li><a href="extensions.html">Extensions</a></li>
+      <li><a href="capability-statements.html">Capability Statements</a></li>
+      <li><a href="artifacts.html#2">Search Parameters</a></li>
+      <li><a href="logical-models.html">Logical Models</a></li>
+      <li><a href="code-systems.html">Code Systems</a></li>
+      <li><a href="examples.html">Examples</a></li>
+    </ul>
+  </li>
+  <li><a href="downloads.html">Downloads</a></li>
+  <li><a href="changes.html">Changelog</a></li>
+  <li class="dropdown">
+    <!-- The parent deliberately links the MANDATORY child (Versioning): the
+         Metadata Overview page is optional, and a parent pointing at it would
+         have to be re-targeted when that page is removed. -->
+    <a data-toggle="dropdown" href="version-history.html" class="dropdown-toggle">Metadata<b class="caret"> </b></a>
+    <ul class="dropdown-menu">
+      <li><a href="metadata.html">Metadata Overview</a></li>
+      <li><a href="version-history.html">Versioning</a></li>
+    </ul>
+  </li>
+</ul>

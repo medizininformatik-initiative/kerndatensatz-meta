@@ -1,0 +1,2458 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="de" id="Bundle-mii-exa-meta-searchparam-transaction-bundle" original="Resource Bundle-mii-exa-meta-searchparam-transaction-bundle" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>SemVer</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Package</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Person_Adresszusatz</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.publisher">
+             <notes>
+               <note id="n1">SearchParameter.publisher</note>
+             </notes>
+        <source>Medizininformatik Initiative</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für Patient.address.line.extension:Adresszusatz</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Patient_AssignerPID</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für Patient.identifier.assigner.identifier</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_ResearchSubject_Consent</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ResearchSubject.consent</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Patient_Gemeindeschluessel</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für Patient.address.city.extension:gemeindeschluessel</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Patient_Hausnummer</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für Patient.address.line.extension:Hausnummer</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Patient_OtherAmtlich</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für Patient.gender.extension:other-amtlich</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Patient_Postfach</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für Patient.address.line.extension:Postfach</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Patient_Prefix</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für Patient.name.prefix</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Patient_PrefixQualifier</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für Patient.name.prefix.extension:prefix-qualifier</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Patient_Stadtteil</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für Patient.address.extension:Stadtteil</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Patient_Strasse</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für Patient.address.line.extension:Strasse</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Condition_ICD10GM_Diagnosesicherheit</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für Condition.code.coding:icd10-gm.extension:Diagnosesicherheit</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Condition_ICD10GM_Mehrfachcodierung</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für Condition.code.coding:icd10-gm.extension:Mehrfachcodierungs-Kennzeichen</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Condition_ICD10GM_Seitenlokalisation</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für Condition.code.coding:icd10-gm.extension:Seitenlokalisation</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Procedure_BodySite</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für Procedure.bodySite</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Procedure_Dokumentationsdatum</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für Procedure.extension:Dokumentationsdatum</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Procedure_Durchfuehrungsabsicht</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für Procedure.extension:Durchfuehrungsabsicht</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Procedure_OPS_Seitenlokalisation</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für Procedure.code.coding:ops.extension:Seitenlokalisation</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Encounter_DiagnosisUse</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für Encounter.diagnosis.use</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Encounter_Hospitalization_AdmitSource</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für Encounter.hospitalization.admitSource</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Encounter_Location_PhysicalType</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für Encounter.location.physicalType</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Encounter_ServiceType</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für Encounter.serviceType</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Encounter_Aufnahmegrund_ErsteUndZweiteStelle</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für Encounter.extension:Aufnahmegrund.extension:ErsteUndZweiteStelle</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Encounter_Aufnahmegrund_DritteStelle</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für Encounter.extension:Aufnahmegrund.extension:DritteStelle</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Encounter_Aufnahmegrund_VierteStelle</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für Encounter.extension:Aufnahmegrund.extension:VierteStelle</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Encounter_Entlassungsgrund_ErsteUndZweiteStelle</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für Encounter.hospitalization.dischargeDisposition.extension:Entlassungsgrund.extension:ErsteUndZweiteStelle</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Encounter_Entlassungsgrund_DritteStelle</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für Encounter.hospitalization.dischargeDisposition.extension:Entlassungsgrund.extension:DritteStelle</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Medication_Ingredient_Strength_Numerator</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für Medication.ingredient.strength.numerator</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Medication_Ingredient_Strength_Denominator</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für Medication.ingredient.strength.denominator</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Medication_Ingredient_Strength</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für Medication.ingredient.strength</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.component.expression">
+             <notes>
+               <note id="n1">SearchParameter.component.expression</note>
+             </notes>
+        <source>numerator</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.component.expression">
+             <notes>
+               <note id="n1">SearchParameter.component.expression</note>
+             </notes>
+        <source>denominator</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Medication_ReasonReference</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für (MedicationAdministration|MedicationStatement).reasonReference</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Medication_Dosage_Site</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für (MedicationAdministration|MedicationStatement).dosage.site | MedicationRequest.dosageInstruction.site</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Medication_Dosage_Route</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für (MedicationAdministration|MedicationStatement).dosage.route | MedicationRequest.dosageInstruction.route</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Medication_Dosage_DoseRangeLow</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für MedicationStatement.dosage.doseAndRate.doseRange.low | MedicationRequest.dosageInstruction.doseAndRate.doseRange.low</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Medication_Dosage_DoseRangeHigh</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für MedicationStatement.dosage.doseAndRate.doseRange.high | MedicationRequest.dosageInstruction.doseAndRate.doseRange.high</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Medication_Dosage_DoseRange</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für MedicationStatement.dosage.doseAndRate.doseRange | MedicationRequest.dosageInstruction.doseAndRate.doseRange</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.component.expression">
+             <notes>
+               <note id="n1">SearchParameter.component.expression</note>
+             </notes>
+        <source>low</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.component.expression">
+             <notes>
+               <note id="n1">SearchParameter.component.expression</note>
+             </notes>
+        <source>high</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Medication_Dosage_DoseQuantity</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für MedicationStatement.dosage.doseAndRate.doseQuantity | MedicationRequest.dosageInstruction.doseAndRate.doseQuantity | MedicationAdministration.dosage.dose</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Medication_Dosage_RateRatioNumerator</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für MedicationStatement.dosage.doseAndRate.rateRatio.numerator | MedicationAdministration.dosage.rate.ofType(Ratio).numerator | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio).numerator</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Medication_Dosage_RateRatioDenominator</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für MedicationStatement.dosage.doseAndRate.rateRatio.denominator | MedicationAdministration.dosage.rate.ofType(Ratio).denominator | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio).denominator</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Medication_Dosage_RateRatio</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>MedicationStatement.dosage.doseAndRate.rate.ofType(Ratio) | MedicationAdministration.dosage.rate.ofType(Ratio) | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Medication_Dosage_RateRangeLow</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für MedicationStatement.dosage.doseAndRate.rateRange.low | MedicationRequest.dosageInstruction.doseAndRate.rateRange.low</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Medication_Dosage_RateRangeHigh</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für MedicationStatement.dosage.doseAndRate.rateRange.high | MedicationRequest.dosageInstruction.doseAndRate.rateRange.high</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Medication_Dosage_RateRange</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für MedicationStatement.dosage.doseAndRate.rateRange | MedicationRequest.dosageInstruction.doseAndRate.rateRange</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Medication_Dosage_RateQuantity</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für MedicationStatement.dosage.doseAndRate.rateQuantity | MedicationAdministration.dosage.rateQuantity | MedicationRequest.dosageInstruction.doseAndRate.rateQuantity</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Medication_List_Mode</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für List.mode</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Medication_PartOf</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für (MedicationAdministration|MedicationStatement).partOf</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Consent_PolicyUri</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suche in der Policy URI (versionsspezifische Policy / Broad Consent)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Consent_ProvisionCode</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suche im Code der Provison</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Consent_ProvisionCodePeriod</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Composite-Suche nach Zeitraum (period) einer bestimmten, durch einen Code definierten, Provision.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.component.expression">
+             <notes>
+               <note id="n1">SearchParameter.component.expression</note>
+             </notes>
+        <source>code</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.component.expression">
+             <notes>
+               <note id="n1">SearchParameter.component.expression</note>
+             </notes>
+        <source>period</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Consent_ProvisionCodeType</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Composite-Suche nach Typ (type) einer bestimmten, durch einen Code definierten, Provision.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.component.expression">
+             <notes>
+               <note id="n1">SearchParameter.component.expression</note>
+             </notes>
+        <source>type</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Consent_ProvisionPeriod</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suche im Zeitraum der Provision. Dieser Suchparameter bezieht sich explizit auf die zweite Verschachtelungsebene von provison.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Consent_ProvisionType</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suche im Typ der Provison (permit, deny).</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Specimen_Diagnose</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für die Extension Diagnose am Profil Bioprobe</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.chain">
+             <notes>
+               <note id="n1">SearchParameter.chain</note>
+             </notes>
+        <source>*</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Observation_Interpretation</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für Observation.interpretation</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_ServiceRequest_ReasonCode</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ServiceRequest.reasonCode</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_ServiceRequest_ReasonReference</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ServiceRequest.reasonReference</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Task_ReasonCode</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für Task.reasonCode</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Task_ReasonReference</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für Task.reasonReference</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Task_For</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für Task.for</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_FamilyMemberHistory_ReasonCode</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für FamilyMemberHistory.reasonCode</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_FamilyMemberHistory_ReasonReference</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für FamilyMemberHistory.reasonReference</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Specimen_Request</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>SearchParameter for Specimen.request</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Specimen_Collection_Method</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>SearchParameter for Specimen.collection.method</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Specimen_Processing_Procedure</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>SearchParameter for Specimen.processing.procedure</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Specimen_Processing_Additive</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>SearchParameter for Specimen.processing.additive</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Specimen_Processing_Date</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>SearchParameter for Specimen.processing.time</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Specimen_Container_Additive</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>SearchParameter for Specimen.container.additive</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Observation_Value_Ratio</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>SearchParameter for Observation.valueRatio</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Observation_Value_Ratio_Numerator</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>SearchParameter for Observation.valueRatio.numerator</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Observation_Value_Ratio_Denominator</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>SearchParameter for Observation.valueRatio.denominator</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_ServiceRequest_SupportingInfo</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>SearchParameter for ServiceRequest.supportingInfo</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_DiagnosticReport_ImagingStudy</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>SearchParameter for DiagnosticReport.imagingStudy</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Composition_Attester_Mode</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>SearchParameter for Composition.attester.mode</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Composition_Custodian</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>SearchParameter for Composition.custodian</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Composition_RelatesTo_Code</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>SearchParameter for Composition.relatesTo.code</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Media_PartOf</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>SearchParameter for Media.partOf</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Device_Property_Type</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für Device.property.type</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_DeviceMetric_Source</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für DeviceMetric.source</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Observation_BodySite</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>SearchParameter for Observation.bodySite</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Observation_Component_Interpretation</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für Observation.component.interpretation</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Observation_ReferenceRange</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für Observation.referenceRange</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Observation_ReferenceRange_Low</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für Observation.referenceRange.low</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Observation_ReferenceRange_High</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für Observation.referenceRange.high</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Observation_Issued</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für Observation.issued</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Procedure_Recorder</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für Procedure.recorder</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_DocumentReference_Attachment_Title</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für DocumentReference.content.attachment.title</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_DocumentReference_Attachment_Size</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für DocumentReference.content.attachment.size</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_EvidenceVariable_Characteristic_Description</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für EvidenceVariable.characteristic.description</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Library_Quellregister</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für Library.extension:QuellRegister</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Library_RelatedArtifact_Url</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für Library.relatedArtifact.document.url</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_ResearchStudy_Arm_Name</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ResearchStudy.arm.name</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_ResearchStudy_Label</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ResearchStudy.extension:label</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_ResearchStudy_Akronym</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ResearchStudy.extension:Akronym</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_ResearchStudy_Finanzierung</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ResearchStudy.extension:Finanzierung</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_ResearchStudy_Studienregister</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ResearchStudy.extension:Studienregister</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_ResearchStudy_RekrutierungsstandDatum</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstand-datum</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_ResearchStudy_RekrutierungsstandGenauigkeit</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstand-genauigkeit</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_ResearchStudy_Rekrutierungsstand</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstand</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_ResearchStudy_Rekrutierungsziel</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsziel</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_ResearchStudy_Rekrutierungsstart</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstart</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Condition_Verification_Status</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>SearchParameter for Condition.verificationStatus</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Condition_Evidence_Detail</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>SearchParameter for Condition.evidence.detail</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Observation_hasMember</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>SearchParameter for Observation.hasMember</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Procedure_Complication</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>SearchParameter for Procedure.complication</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Procedure_Outcome</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>SearchParameter for Procedure.outcome</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_AdverseEvent_SuspectEntity_Instance</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>SearchParameter for AdverseEvent.suspectEntity.instance</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_AdverseEvent_Encounter</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>SearchParameter for AdverseEvent.encounter</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_CarePlan_Created</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>SearchParameter for CarePlan.created</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_CarePlan_Contributor</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>SearchParameter for CarePlan.contributor</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_CarePlan_Addresses</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>SearchParameter for CarePlan.addresses</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Observation_Focus</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>SearchParameter for Observation.focus</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_Observation_Encounter</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>SearchParameter for Observation.encounter</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Supporting_Info</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für CarePlan.supportingInfo | DiagnosticReport.extension.supportingInfo</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Description</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für CarePlan.description | ImagingStudy.description | ImagingStudy.series.description</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Koerperstruktur_Location_Qualifier</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für BodyStructure.locationQualifier</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Composition_Section_Title</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für Composition.section.title</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Composition_Section_Author</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für Composition.section.author</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Diagnostic_Report_Conclusion</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für DiagnosticReport.conclusion</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Imaging_Study_Modality_Body_Site</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.modality and ImagingStudy.series.bodySite</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.component.expression">
+             <notes>
+               <note id="n1">SearchParameter.component.expression</note>
+             </notes>
+        <source>modality</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.component.expression">
+             <notes>
+               <note id="n1">SearchParameter.component.expression</note>
+             </notes>
+        <source>bodysite</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Imaging_Study_Bildgebungsgrund</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.Extension.Bildgebungsgrund</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Imaging_Study_Modality</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.modality</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Reason_Reference</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.reasonReference</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Imaging_Study_Number_Series</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.numberOfSeries</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Imaging_Study_Number_Instances</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Imaging_Study_Procedure_Reference</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.procedureReference</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Imaging_Study_Series_CTDI_Volume</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.extension.CTDIvolume</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Imaging_Study_Series_Exposure_Time</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.extension.exposureTime</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Imaging_Study_Series_Exposure</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.extension.exposure</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Imaging_Study_Series_xRay_Tube_Current</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.extension.xRayTubeCurrent</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Imaging_Study_Series_KVP</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.extension.kvp</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Imaging_Study_Series_View_Position</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.extension.viewPosition</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Imaging_Study_Series_Magnetic_Field_Strength</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.extension.magneticFieldStrength</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Imaging_Study_Series_Scanning_Sequence</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.extension.scanningSequence</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Imaging_Study_Series_Scanning_Sequence_Variant</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.extension.scanningSequenceVariant</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Imaging_Study_Series_Echo_Time</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.extension.echoTime</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Imaging_Study_Series_Repetition_Time</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.extension.repetitionTime</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Imaging_Study_Series_Inversion_Time</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.extension.inversionTime</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Imaging_Study_Series_Flip_Angle</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.extension.flipAngle</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Imaging_Study_Radiopharmaceutical</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.extension.radiopharmaceutical</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Imaging_Study_Radionuclide</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.extension.radionuclide</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Imaging_Study_Series_Tracer_Exposure_Time</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.tracerExposureTime</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Imaging_Study_Series_Units</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.extension.units</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Imaging_Study_Series_Radionuclide_Total_Dose</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.extension.radionuclideTotalDose</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Imaging_Study_Series_Radionuclide_Half_Life</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.extension.radionuclideHalfLife</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Imaging_Study_Series_Series_Type</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>ImagingStudy.series.extension.seriesType</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Imaging_Study_Series_Transducer_Type</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>ImagingStudy.series.extension.transducerType</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Imaging_Study_Series_Transducer_Frequency</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.extension.transducerFrequency</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Imaging_Study_Series_Pulse_Frequency</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.extension.pulseRepetitionFrequency</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Imaging_Study_Series_Ultrasound_Color</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>ImagingStudy.series.extension.ultrasoundPresent</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Imaging_Study_Series_Contrast_Bolus</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.extension.contrastBolus</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Imaging_Study_Contrast_Bolus_Details</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.extension.contrastBolusDetails</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Imaging_Study_Series_Number</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.number</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Imaging_Study_Series_Laterality</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.laterality</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Imaging_Study_Series_Started</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.started</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Imaging_Study_Instance_Pixel_Spacing_X</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.instance.extension.pixelSpacingX</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Imaging_Study_Instance_Pixel_Spacing_Y</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.instance.extension.pixelSpacingY</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Imaging_Study_Instance_Slice_Thickness</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.instance.extension.sliceThickness</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Imaging_Study_Instance_Image_Type</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.instance.extension.imageType</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Imaging_Study_Instance_Burned_In_Annotation</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.instance.extension.burnedInAnnotation</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Imaging_Study_Instance_Number</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.instance.number</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Observation_Series_UID</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für Observation.extension.seriesUID</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Observation_SOP_Instance_UID</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für Observation.sopInstanceUID</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Observation_Body_Structure</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für Observation.bodyStructure</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Read_Procedure_Report</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ReadProcedure.report</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Imaging_Study_Series_ConvolutionalKernel</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.extension.convolutionalKernel</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Bildgebung_Imaging_Study_Series_Slice_Thickness</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.extension.sliceThickness</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_DocumentReference_Attachment_Creation</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für DocumentReference.content.attachment.creation</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_DocumentReference_Document_Status</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für DocumentReference.docStatus</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
+             <notes>
+               <note id="n1">SearchParameter.name</note>
+             </notes>
+        <source>MII_SP_Meta_DocumentReference_NLP_Processing_Status</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.description">
+             <notes>
+               <note id="n1">SearchParameter.description</note>
+             </notes>
+        <source>Suchparameter für DocumentReference.extension[nlp-processing-status].valueCodeableConcept</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

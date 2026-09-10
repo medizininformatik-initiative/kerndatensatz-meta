@@ -1,7 +1,9 @@
+Alias: $spdx-license = http://hl7.org/fhir/spdx-license
+
 RuleSet: LicenseCodeableCCBY40
-* ^extension[+].url = "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable"
-* ^extension[=].valueCodeableConcept = $spdx-license#CC-BY-4.0 "Creative Commons Attribution 4.0 International"
+* ^meta.extension[+].url = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license"
+* ^meta.extension[=].valueCode = #CC-BY-4.0
 
 RuleSet: LicenseCodeableCCBY40Instance
-* extension[+].url = "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable"
-* extension[=].valueCodeableConcept = $spdx-license#CC-BY-4.0 "Creative Commons Attribution 4.0 International"
+* meta.extension[+].url = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license"
+* meta.extension[=].valueCode = #CC-BY-4.0

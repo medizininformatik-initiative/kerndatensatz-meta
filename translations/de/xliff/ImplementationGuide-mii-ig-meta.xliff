@@ -1,0 +1,2662 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="de" id="ImplementationGuide-mii-ig-meta" original="Resource ImplementationGuide-mii-ig-meta" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">ContactDetail.name</note>
+             </notes>
+        <source>Taskforce Core Data Set</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">ContactDetail.name</note>
+             </notes>
+        <source>Interoperability Working Group</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">ContactDetail.name</note>
+             </notes>
+        <source>National Steering Committee</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.name">
+             <notes>
+               <note id="n1">ImplementationGuide.name</note>
+             </notes>
+        <source>MII_IG_Meta</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.title">
+             <notes>
+               <note id="n1">ImplementationGuide.title</note>
+             </notes>
+        <source>MII IG Meta</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.publisher">
+             <notes>
+               <note id="n1">ImplementationGuide.publisher</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target>NUM-DIZ</target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">ContactDetail.name</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.description">
+             <notes>
+               <note id="n1">ImplementationGuide.description</note>
+             </notes>
+        <source>The Meta module contains foundational artifacts used by all other MII implementation guides.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Germany</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>MII CapabilityStatement Meta Server Capabilities</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Migration-generated proposal describing the resource types and search parameters published by the Meta module. Review before use as a normative capability statement.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>MII CS Meta DIZ Standorte</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Medizininformatik-Initiative Standorte</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>MII EX Meta License Codeable</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>This extension may be used to provide machine-processable license information about the set of data described by this resource.
+The extension is a R4-compatible version of the FHIR for FAIR R4B IG Licence Terms as CodeableConcept extension.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>MII Meta SearchParameter Collection Bundle</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Collection bundle containing the SearchParameter resources published by the MII Meta module.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>MII Meta SearchParameter Transaction Bundle</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Transaction bundle containing the SearchParameter resources published by the MII Meta module for convenient import into a FHIR server.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>MII PR Meta SearchParameter</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Das Profil legt die Mindestanforderungen fest, die SearchParameter-Ressourcen im Kerndatensatz erfüllen müssen.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-param-meta-manifest</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-adverseevent-encounter</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>SearchParameter for AdverseEvent.encounter</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-adverseevent-suspectentity-instance</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>SearchParameter for AdverseEvent.suspectEntity.instance</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-body-structure-location-qualifier</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für BodyStructure.locationQualifier</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-careplan-addresses</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>SearchParameter for CarePlan.addresses</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-careplan-contributor</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>SearchParameter for CarePlan.contributor</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-careplan-created</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>SearchParameter for CarePlan.created</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-composition-attester-mode</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>SearchParameter for Composition.attester.mode</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-composition-custodian</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>SearchParameter for Composition.custodian</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-composition-relatesto-code</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>SearchParameter for Composition.relatesTo.code</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-composition-section-author</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für Composition.section.author</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-composition-section-title</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für Composition.section.title</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-condition-evidence-detail</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>SearchParameter for Condition.evidence.detail</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-condition-icd10gm-diagnosesicherheit</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für Condition.code.coding:icd10-gm.extension:Diagnosesicherheit</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-condition-icd10gm-mehrfachcodierung</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für Condition.code.coding:icd10-gm.extension:Mehrfachcodierungs-Kennzeichen</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-condition-icd10gm-seitenlokalisation</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für Condition.code.coding:icd10-gm.extension:Seitenlokalisation</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-condition-verification-status</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>SearchParameter for Condition.verificationStatus</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-consent-policyuri</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suche in der Policy URI (versionsspezifische Policy / Broad Consent)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-consent-provisioncode</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suche im Code der Provison</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-consent-provisioncodeperiod</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Composite-Suche nach Zeitraum (period) einer bestimmten, durch einen Code definierten, Provision.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-consent-provisioncodetype</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Composite-Suche nach Typ (type) einer bestimmten, durch einen Code definierten, Provision.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-consent-provisionperiod</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suche im Zeitraum der Provision. Dieser Suchparameter bezieht sich explizit auf die zweite Verschachtelungsebene von provison.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-consent-provisiontype</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suche im Typ der Provison (permit, deny).</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-description</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für CarePlan.description | ImagingStudy.description | ImagingStudy.series.description</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-device-property-type</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für Device.property.type</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-devicemetric-source</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für DeviceMetric.source</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-diagnostic-report-conclusion</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für DiagnosticReport.conclusion</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-diagnosticreport-imagingstudy</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>SearchParameter for DiagnosticReport.imagingStudy</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-documentreference-attachment-size</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für DocumentReference.content.attachment.size</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-documentreference-attachment-title</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für DocumentReference.content.attachment.title</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-dokument-documentreference-attachment-creation</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für DocumentReference.content.attachment.creation</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-dokument-documentreference-doc-status</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für DocumentReference.docStatus</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-dokument-documentreference-nlp-processing-status</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für DocumentReference.extension[nlp-processing-status].valueCodeableConcept</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-encounter-aufnahmegrund-drittestelle</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für Encounter.extension:Aufnahmegrund.extension:DritteStelle</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-encounter-aufnahmegrund-ersteundzweitestelle</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für Encounter.extension:Aufnahmegrund.extension:ErsteUndZweiteStelle</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-encounter-aufnahmegrund-viertestelle</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für Encounter.extension:Aufnahmegrund.extension:VierteStelle</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-encounter-diagnosis-use</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für Encounter.diagnosis.use</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-encounter-entlassungsgrund-drittestelle</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für Encounter.hospitalization.dischargeDisposition.extension:Entlassungsgrund.extension:DritteStelle</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-encounter-entlassungsgrund-ersteundzweitestelle</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für Encounter.hospitalization.dischargeDisposition.extension:Entlassungsgrund.extension:ErsteUndZweiteStelle</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-encounter-hospitalization-admitsource</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für Encounter.hospitalization.admitSource</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-encounter-location-physical-type</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für Encounter.location.physicalType</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-encounter-servicetype</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für Encounter.serviceType</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-evidencevariable-characteristic-description</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für EvidenceVariable.characteristic.description</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-familymemberhistory-reasoncode</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für FamilyMemberHistory.reasonCode</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-familymemberhistory-reasonreference</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für FamilyMemberHistory.reasonReference</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-imaging-study-bildgebungsgrund</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.Extension.Bildgebungsgrund</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-imaging-study-instance-burned-in-annotation</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.instance.extension.burnedInAnnotation</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-imaging-study-instance-image-type</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.instance.extension.imageType</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-imaging-study-instance-number</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.instance.number</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-imaging-study-instance-pixel-x</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.instance.extension.pixelSpacingX</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-imaging-study-instance-pixel-y</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.instance.extension.pixelSpacingY</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-imaging-study-instance-slice-thickness</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.instance.extension.sliceThickness</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-imaging-study-modality</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.modality</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-imaging-study-modality-body-site</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.modality and ImagingStudy.series.bodySite</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-imaging-study-number-instances</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.numberOfSeries</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-imaging-study-number-series</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-imaging-study-procedure-reference</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.procedureReference</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-imaging-study-series-contrast-bolus</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.extension.contrastBolus</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-imaging-study-series-contrast-bolus-details</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.extension.contrastBolusDetails</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-imaging-study-series-convolutional-kernel</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.extension.convolutionalKernel</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-imaging-study-series-ctdi-volume</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.extension.CTDIvolume</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-imaging-study-series-echo-time</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.extension.echoTime</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-imaging-study-series-exposure</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.extension.exposure</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-imaging-study-series-exposure-time</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.extension.exposureTime</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-imaging-study-series-flip-angle</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.extension.flipAngle</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-imaging-study-series-inversion-time</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.extension.inversionTime</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-imaging-study-series-kvp</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.extension.kvp</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-imaging-study-series-laterality</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.laterality</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-imaging-study-series-magnetic-field-strength</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.extension.magneticFieldStrength</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-imaging-study-series-number</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.number</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-imaging-study-series-pulse-frequency</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.extension.pulseRepetitionFrequency</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-imaging-study-series-radionuclide</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.extension.radionuclide</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-imaging-study-series-radionuclide-half-life</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.extension.radionuclideHalfLife</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-imaging-study-series-radionuclide-total-dose</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.extension.radionuclideTotalDose</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-imaging-study-series-radiopharmaceutical</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.extension.radiopharmaceutical</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-imaging-study-series-repetition-time</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.extension.repetitionTime</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-imaging-study-series-scanning-sequence</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.extension.scanningSequence</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-imaging-study-series-scanning-sequence-variant</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.extension.scanningSequenceVariant</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-imaging-study-series-series-type</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>ImagingStudy.series.extension.seriesType</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-imaging-study-series-slice-thickness</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.extension.sliceThickness</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-imaging-study-series-started</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.started</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-imaging-study-series-tracer-exposure-time</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.tracerExposureTime</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-imaging-study-series-transducer-frequency</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.extension.transducerFrequency</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-imaging-study-series-transducer-type</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>ImagingStudy.series.extension.transducerType</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-imaging-study-series-ultrasound-color</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>ImagingStudy.series.extension.ultrasoundPresent</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-imaging-study-series-units</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.extension.units</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-imaging-study-series-view-position</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.extension.viewPosition</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-imaging-study-series-xray-tube-current</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.series.extension.xRayTubeCurrent</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-library-quellregister</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für Library.extension:QuellRegister</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-library-relatedartifact-url</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für Library.relatedArtifact.document.url</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-media-partof</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>SearchParameter for Media.partOf</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-medication-dosage-dosequantity</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für MedicationStatement.dosage.doseAndRate.doseQuantity | MedicationRequest.dosageInstruction.doseAndRate.doseQuantity | MedicationAdministration.dosage.dose</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-medication-dosage-doserange</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für MedicationStatement.dosage.doseAndRate.doseRange | MedicationRequest.dosageInstruction.doseAndRate.doseRange</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-medication-dosage-doserange-high</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für MedicationStatement.dosage.doseAndRate.doseRange.high | MedicationRequest.dosageInstruction.doseAndRate.doseRange.high</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-medication-dosage-doserange-low</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für MedicationStatement.dosage.doseAndRate.doseRange.low | MedicationRequest.dosageInstruction.doseAndRate.doseRange.low</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-medication-dosage-ratequantity</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für MedicationStatement.dosage.doseAndRate.rateQuantity | MedicationAdministration.dosage.rateQuantity | MedicationRequest.dosageInstruction.doseAndRate.rateQuantity</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-medication-dosage-raterange</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für MedicationStatement.dosage.doseAndRate.rateRange | MedicationRequest.dosageInstruction.doseAndRate.rateRange</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-medication-dosage-raterange-high</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für MedicationStatement.dosage.doseAndRate.rateRange.high | MedicationRequest.dosageInstruction.doseAndRate.rateRange.high</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-medication-dosage-raterange-low</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für MedicationStatement.dosage.doseAndRate.rateRange.low | MedicationRequest.dosageInstruction.doseAndRate.rateRange.low</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-medication-dosage-rateratio</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>MedicationStatement.dosage.doseAndRate.rate.ofType(Ratio) | MedicationAdministration.dosage.rate.ofType(Ratio) | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-medication-dosage-rateratio-denominator</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für MedicationStatement.dosage.doseAndRate.rateRatio.denominator | MedicationAdministration.dosage.rate.ofType(Ratio).denominator | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio).denominator</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-medication-dosage-rateratio-numerator</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für MedicationStatement.dosage.doseAndRate.rateRatio.numerator | MedicationAdministration.dosage.rate.ofType(Ratio).numerator | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio).numerator</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-medication-dosage-route</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für (MedicationAdministration|MedicationStatement).dosage.route | MedicationRequest.dosageInstruction.route</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-medication-dosage-site</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für (MedicationAdministration|MedicationStatement).dosage.site | MedicationRequest.dosageInstruction.site</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-medication-ingredient-strength</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für Medication.ingredient.strength</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-medication-ingredient-strength-denominator</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für Medication.ingredient.strength.denominator</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-medication-ingredient-strength-numerator</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für Medication.ingredient.strength.numerator</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-medication-list-mode</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für List.mode</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-medication-partof</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für (MedicationAdministration|MedicationStatement).partOf</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-medication-reasonreference</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für (MedicationAdministration|MedicationStatement).reasonReference</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-observation-body-structure</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für Observation.bodyStructure</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-observation-bodysite</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>SearchParameter for Observation.bodySite</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-observation-component-interpretation</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für Observation.component.interpretation</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-observation-encounter</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>SearchParameter for Observation.encounter</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-observation-focus</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>SearchParameter for Observation.focus</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-observation-hasmember</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>SearchParameter for Observation.hasMember</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-observation-interpretation</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für Observation.interpretation</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-observation-issued</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für Observation.issued</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-observation-referencerange</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für Observation.referenceRange</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-observation-referencerange-high</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für Observation.referenceRange.high</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-observation-referencerange-low</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für Observation.referenceRange.low</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-observation-series-uid</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für Observation.extension.seriesUID</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-observation-sop-instance-uid</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für Observation.sopInstanceUID</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-observation-value-ratio</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>SearchParameter for Observation.valueRatio</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-observation-value-ratio-denominator</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>SearchParameter for Observation.valueRatio.denominator</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-observation-value-ratio-numerator</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>SearchParameter for Observation.valueRatio.numerator</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-patient-adresszusatz</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für Patient.address.line.extension:Adresszusatz</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-patient-assignerpid</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für Patient.identifier.assigner.identifier</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-patient-gemeindeschluessel</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für Patient.address.city.extension:gemeindeschluessel</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-patient-hausnummer</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für Patient.address.line.extension:Hausnummer</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-patient-otheramtlich</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für Patient.gender.extension:other-amtlich</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-patient-postfach</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für Patient.address.line.extension:Postfach</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-patient-prefix</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für Patient.name.prefix</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-patient-prefixqualifier</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für Patient.name.prefix.extension:prefix-qualifier</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-patient-stadtteil</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für Patient.address.extension:Stadtteil</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-patient-strasse</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für Patient.address.line.extension:Strasse</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-procedure-bodysite</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für Procedure.bodySite</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-procedure-complication</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>SearchParameter for Procedure.complication</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-procedure-dokumentationsdatum</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für Procedure.extension:Dokumentationsdatum</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-procedure-durchfuehrungsabsicht</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für Procedure.extension:Durchfuehrungsabsicht</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-procedure-ops-seitenlokalisation</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für Procedure.code.coding:ops.extension:Seitenlokalisation</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-procedure-outcome</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>SearchParameter for Procedure.outcome</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-procedure-recorder</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für Procedure.recorder</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-read-proc-report</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ReadProcedure.report</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-reason-reference</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ImagingStudy.reasonReference</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-researchstudy-akronym</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ResearchStudy.extension:Akronym</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-researchstudy-arm-name</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ResearchStudy.arm.name</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-researchstudy-finanzierung</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ResearchStudy.extension:Finanzierung</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-researchstudy-label</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ResearchStudy.extension:label</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-researchstudy-rekrutierungsstand</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstand</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-researchstudy-rekrutierungsstand-datum</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstand-datum</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-researchstudy-rekrutierungsstand-genauigkeit</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstand-genauigkeit</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-researchstudy-rekrutierungsstart</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstart</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-researchstudy-rekrutierungsziel</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsziel</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-researchstudy-studienregister</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ResearchStudy.extension:Studienregister</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-researchsubject-consent</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ResearchSubject.consent</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-servicerequest-reasoncode</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ServiceRequest.reasonCode</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-servicerequest-reasonreference</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für ServiceRequest.reasonReference</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-servicerequest-supportinginfo</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>SearchParameter for ServiceRequest.supportingInfo</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-specimen-collection-body-site</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>SearchParameter for Specimen.collection.bodySite</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-specimen-collection-method</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>SearchParameter for Specimen.collection.method</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-specimen-container-additive</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>SearchParameter for Specimen.container.additive</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-specimen-diagnose</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für die Extension Diagnose am Profil Bioprobe</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-specimen-processing-additive</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>SearchParameter for Specimen.processing.additive</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-specimen-processing-date</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>SearchParameter for Specimen.processing.time</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-specimen-processing-procedure</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>SearchParameter for Specimen.processing.procedure</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-specimen-request</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>SearchParameter for Specimen.request</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-supporting-info</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für CarePlan.supportingInfo | DiagnosticReport.extension.supportingInfo</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-task-for</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für Task.for</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-task-reasoncode</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für Task.reasonCode</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-sp-meta-task-reasonreference</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Suchparameter für Task.reasonReference</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Table of Contents</source>
+        <target>Inhaltsverzeichnis</target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Home</source>
+        <target>Startseite</target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Guidance</source>
+        <target>Anleitung</target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Guidance for Implementers</source>
+        <target>Anleitung für Implementierende</target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>UML Diagrams</source>
+        <target>UML-Diagramme</target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Security and Privacy</source>
+        <target>Sicherheit und Datenschutz</target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Profiles</source>
+        <target>Profile</target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Extensions</source>
+        <target>Extensions</target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Capability Statements</source>
+        <target>CapabilityStatements</target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Logical Models</source>
+        <target>Logische Modelle</target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Code Systems</source>
+        <target>CodeSystems</target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Examples</source>
+        <target>Beispiele</target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Downloads</source>
+        <target>Downloads</target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Changelog</source>
+        <target>Änderungshistorie</target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Metadata Overview</source>
+        <target>Metadaten-Übersicht</target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Versioning</source>
+        <target>Versionierung</target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>MII ImplementationGuide Resource</source>
+        <target>MII ImplementationGuide Ressource</target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Translation Information</source>
+        <target>Hinweise zur Übersetzung</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

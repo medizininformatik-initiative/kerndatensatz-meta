@@ -9,7 +9,7 @@ Usage: #definition
 * name = "MII_SP_Meta_Condition_ICD10GM_Mehrfachcodierung"
 * status = #active
 * experimental = false
-* date = "2024-10-08"
+* date = "2026-09-01"
 * description = "Suchparameter für Condition.code.coding:icd10-gm.extension:Mehrfachcodierungs-Kennzeichen"
 * code = #icd10gm-mehrfachcodierung
 * base = #Condition

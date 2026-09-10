@@ -1,0 +1,99 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="de" id="CapabilityStatement-mii-cps-meta-server-capabilities" original="Resource CapabilityStatement-mii-cps-meta-server-capabilities" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="CapabilityStatement-mii-cps-meta-server-capabilities" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>SemVer</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CapabilityStatement-mii-cps-meta-server-capabilities" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Package</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CapabilityStatement-mii-cps-meta-server-capabilities" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">ContactDetail.name</note>
+             </notes>
+        <source>Taskforce Core Data Set</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CapabilityStatement-mii-cps-meta-server-capabilities" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">ContactDetail.name</note>
+             </notes>
+        <source>Interoperability Working Group</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CapabilityStatement-mii-cps-meta-server-capabilities" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">ContactDetail.name</note>
+             </notes>
+        <source>National Steering Committee</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CapabilityStatement-mii-cps-meta-server-capabilities" resname="CapabilityStatement.name">
+             <notes>
+               <note id="n1">CapabilityStatement.name</note>
+             </notes>
+        <source>MII_CPS_Meta_Server_Capabilities</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CapabilityStatement-mii-cps-meta-server-capabilities" resname="CapabilityStatement.title">
+             <notes>
+               <note id="n1">CapabilityStatement.title</note>
+             </notes>
+        <source>MII CapabilityStatement Meta Server Capabilities</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CapabilityStatement-mii-cps-meta-server-capabilities" resname="CapabilityStatement.publisher">
+             <notes>
+               <note id="n1">CapabilityStatement.publisher</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target>NUM-DIZ</target>
+      </trans-unit>
+      <trans-unit id="CapabilityStatement-mii-cps-meta-server-capabilities" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">ContactDetail.name</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CapabilityStatement-mii-cps-meta-server-capabilities" resname="CapabilityStatement.description">
+             <notes>
+               <note id="n1">CapabilityStatement.description</note>
+             </notes>
+        <source>Migration-generated proposal describing the resource types and search parameters published by the Meta module. Review before use as a normative capability statement.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CapabilityStatement-mii-cps-meta-server-capabilities" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Germany</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CapabilityStatement-mii-cps-meta-server-capabilities" resname="CapabilityStatement.purpose">
+             <notes>
+               <note id="n1">CapabilityStatement.purpose</note>
+             </notes>
+        <source>Define the SearchParameter support described by the MII Meta module for implementations of the MII Core Data Set.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CapabilityStatement-mii-cps-meta-server-capabilities" resname="CapabilityStatement.rest.documentation">
+             <notes>
+               <note id="n1">CapabilityStatement.rest.documentation</note>
+             </notes>
+        <source>Proposal derived from the module's published SearchParameter definitions; support expectations require module-team review.</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
