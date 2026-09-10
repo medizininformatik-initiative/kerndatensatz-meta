@@ -1,0 +1,73 @@
+# =============================================================================
+# announce-release.yml — manueller Zulip-Announce für ein publiziertes Release
+#
+# Warum: das `release published`-Event führt Workflows vom DEFAULT-Branch aus.
+# Solange module-release.yml (mit dem notify_zulip-Job) noch nicht auf dem
+# Default-Branch liegt (dev→master-Promotion ausstehend), feuert die
+# Ankündigung dort nie. Dieser Workflow holt das Release per Tag und postet
+# dieselbe Nachricht wie module-release.yml notify_zulip — manuell dispatcht.
+# Nach der Promotion von module-release.yml auf den Default-Branch kann diese
+# Datei entfernt werden.
+#
+# Pinning: dieselbe zulip-Action-Version/SHA wie module-release.yml.
+# =============================================================================
+name: Announce release on MII Zulip (manual)
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Tag des publizierten Releases (z.B. v2027.0.0-ballot)"
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  announce:
+    if: ${{ vars.ENABLE_ZULIP_ANNOUNCE != 'false' }}
+    runs-on: ubuntu-latest
+    env:
+      ZULIP_API_KEY: ${{ secrets.ZULIP_API_KEY }}
+    steps:
+      - name: Fetch release by tag
+        id: rel
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ inputs.tag }}
+        run: |
+          set -euo pipefail
+          gh api "repos/${GITHUB_REPOSITORY}/releases/tags/${TAG}" > release.json
+          if [[ "$(jq -r '.draft' release.json)" == "true" ]]; then
+            echo "::error::Release ${TAG} ist noch ein Draft — erst publishen."
+            exit 1
+          fi
+          {
+            echo "html_url=$(jq -r '.html_url' release.json)"
+            echo "body<<RELEASE_BODY_EOF"
+            jq -r '.body' release.json
+            echo "RELEASE_BODY_EOF"
+          } >> "${GITHUB_OUTPUT}"
+
+      - name: Announce the release on the MII Zulip (skipped if no key)
+        if: ${{ env.ZULIP_API_KEY != '' }}
+        uses: zulip/github-actions-zulip/send-message@f675f2b4eb2a95fae974215476dcb7ad8dfeff6b # v2.0.2
+        with:
+          api-key: ${{ env.ZULIP_API_KEY }}
+          email: "kds-github-bot@mii.zulipchat.com"
+          organization-url: "https://mii.zulipchat.com/"
+          type: "stream"
+          to: "MII-Kerndatensatz"
+          topic: "Releases"
+          content: |
+            **New Release:** `${{ inputs.tag }}`
+            **Repository:** `${{ github.repository }}`
+
+            ${{ steps.rel.outputs.body }}
+
+            🔗 [View on GitHub](${{ steps.rel.outputs.html_url }})
+
+      - name: Skip notice when ZULIP_API_KEY is absent
+        if: ${{ env.ZULIP_API_KEY == '' }}
+        run: echo "::notice::ZULIP_API_KEY not set — skipping MII announcement."
