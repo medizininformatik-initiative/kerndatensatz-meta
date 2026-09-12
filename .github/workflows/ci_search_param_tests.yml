@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v7
       - name: Create Search Param Bundle
         run: .github/workflows/search-param-test/create-search-param-bundle.sh
       - name: Run Blaze
