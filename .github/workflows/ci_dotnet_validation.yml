@@ -25,7 +25,7 @@ jobs:
           ref: ${{ inputs.ref }}
       - name: Firely.Terminal (GitHub Actions)
         id: firely-terminal
-        uses: FirelyTeam/firely-terminal-pipeline@v0.6.7
+        uses: FirelyTeam/firely-terminal-pipeline@v0.8.25
         with:
           PATH_TO_CONFORMANCE_RESOURCES: fsh-generated/resources
           PATH_TO_EXAMPLES: fsh-generated/resources
