@@ -131,7 +131,7 @@ jobs:
       # Microsoft Build of OpenJDK (the base image's default) — fine for a Java
       # program the container merely runs; CI (Temurin) is the reference.
       - name: Set up Java (for the IG Publisher)
-        uses: actions/setup-java@b6effb05e454b25005698d916606bdc6ffcbf961 # v5.7.0
+        uses: actions/setup-java@de7274f081f381c8f8158605e0321c36c376e2e6 # v6.0.1
         with:
           distribution: temurin
           java-version: "17"
@@ -512,7 +512,7 @@ jobs:
     steps:
       - name: Deploy Pages artifact
         id: deployment
-        uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128 # v5.0.0
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
 
   announce:
     name: Report preview URL
