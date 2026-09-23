@@ -27,7 +27,10 @@ darüber hinaus den Inhalt der Spezifikation und die einschlägigen Profile kenn
 um eine konforme Umsetzung zu bauen — siehe die FHIR-Dokumentation zur
 [Validierung von Profilen und Ressourcen](http://hl7.org/fhir/R4/validation.html).
 
-* [Paket (komprimierter Ordner)](../package.tgz){::download="true"}
+* [Paket (komprimierter Ordner)](../de.medizininformatikinitiative.kerndatensatz.meta.tgz){::download="true"} — dieselbe Datei, nach dem Paket benannt und
+  damit auch auf der Festplatte noch zuzuordnen
+* [`package.tgz`](../package.tgz){::download="true"} — der konventionelle
+  Name; FHIR-Werkzeuge lösen Pakete unter diesem Pfad auf
 
 ### Herunterladbare Kopie dieses Leitfadens
 

@@ -26,7 +26,10 @@ content and the applicable profiles to build a conformant implementation — see
 the FHIR documentation on
 [validating profiles and resources](http://hl7.org/fhir/R4/validation.html).
 
-* [Package (compressed folder)](../package.tgz){::download="true"}
+* [Package (compressed folder)](../de.medizininformatikinitiative.kerndatensatz.meta.tgz){::download="true"} — same file, named after the package so it stays
+  identifiable once it is on your disk
+* [`package.tgz`](../package.tgz){::download="true"} — the conventional
+  name; FHIR tooling resolves packages under this path
 
 ### Downloadable copy of this guide
 
