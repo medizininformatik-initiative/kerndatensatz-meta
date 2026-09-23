@@ -12,7 +12,7 @@
 # the local package cache (~/.fhir/packages/<packageId>#<version>). This
 # module's packages are not on packages.fhir.org, so the cache must be seeded
 # from somewhere this repository controls: the GitHub Release assets —
-# module-release.yml attaches package.tgz to every release for exactly this
+# module-release.yml attaches the package to every release for exactly this
 # purpose.
 #
 # Behaviour:
@@ -80,17 +80,25 @@ for v in ${versions}; do
     echo "seed-comparison-cache: ${pkg_id}#${v} already cached."
     continue
   fi
-  echo "seed-comparison-cache: fetching package.tgz of release v${v} from ${repo} ..."
+  echo "seed-comparison-cache: fetching the package of release v${v} from ${repo} ..."
   release_json="$(curl -fsSL ${auth[@]+"${auth[@]}"} \
       "https://api.github.com/repos/${repo}/releases/tags/v${v}" 2>/dev/null || true)"
   asset_url=""
   if [ -n "${release_json}" ]; then
+    # Prefer the asset named after the package itself; fall back to the
+    # generic package.tgz, which is all that older releases carry.
     asset_url="$(printf '%s' "${release_json}" \
-      | python3 -c "import json,sys; d=json.load(sys.stdin); print(next((a['url'] for a in d.get('assets',[]) if a['name']=='package.tgz'), ''))" \
-      2>/dev/null || true)"
+      | PKG_ID="${pkg_id}" python3 -c "
+import json, os, sys
+assets = json.load(sys.stdin).get('assets', [])
+pkg = os.environ['PKG_ID']
+named = [a for a in assets if a['name'].startswith(pkg + '-') and a['name'].endswith('.tgz')]
+generic = [a for a in assets if a['name'] == 'package.tgz']
+print((named or generic or [{'url': ''}])[0]['url'])
+" 2>/dev/null || true)"
   fi
   if [ -z "${asset_url}" ]; then
-    echo "::warning::seed-comparison-cache: release v${v} has no package.tgz asset — the comparison page will report the version as unavailable. Attach package.tgz to the release (module-release.yml does this automatically for new releases)."
+    echo "::warning::seed-comparison-cache: release v${v} carries no package asset — the comparison page will report the version as unavailable. Attach the package to the release (module-release.yml does this automatically for new releases)."
     continue
   fi
   tmp="$(mktemp -d)"
