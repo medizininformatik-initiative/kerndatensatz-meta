@@ -1,0 +1,1706 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="mii-cs-meta-diz-standorte"/>
+  <meta>
+    <extension url="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license">
+      <valueCode value="CC-BY-4.0"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/package-source">
+      <extension url="packageId">
+        <valueId value="de.medizininformatikinitiative.kerndatensatz.meta"/>
+      </extension>
+      <extension url="version">
+        <valueString value="2027.0.0-ballot.rc3"/>
+      </extension>
+      <extension url="uri">
+        <valueUri value="https://www.medizininformatik-initiative.de/fhir/modul-meta"/>
+      </extension>
+    </extension>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem"/>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"/>
+  </meta>
+  <language value="de"/>
+  <text>
+    <status value="generated"/><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: CodeSystem mii-cs-meta-diz-standorte</b></p><a name="de-mii-cs-meta-diz-standorte"> </a><a name="de-hcmii-cs-meta-diz-standorte"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a>, <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-shareablecodesystem.html">CRMI Shareable CodeSystem</a>, <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-publishablecodesystem.html">CRMI Publishable CodeSystem</a></p></div><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class="grid"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>consortium</td><td>consortium</td><td>https://www.medizininformatik-initiative.de/de/konsortien</td><td>string</td><td/></tr><tr><td>uri</td><td>uri</td><td>https://www.medizininformatik-initiative.de/de/konsortien/datenintegrationszentren</td><td>string</td><td/></tr><tr><td>status</td><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td/></tr><tr><td>deprecationDate</td><td>deprecationDate</td><td>http://hl7.org/fhir/concept-properties#deprecationDate</td><td>dateTime</td><td/></tr><tr><td>retirementDate</td><td>retirementDate</td><td>http://hl7.org/fhir/concept-properties#retirementDate</td><td>dateTime</td><td/></tr><tr><td>dataManagement</td><td>dataManagement</td><td/><td>boolean</td><td>Datenmanagementstelle (true / false)</td></tr><tr><td>contract</td><td>contract</td><td/><td>string</td><td>Teilnahmerahmenvertrag (Version)</td></tr><tr><td>dic</td><td>dic</td><td/><td>boolean</td><td>Datenintegrationszentrum (true / false)</td></tr><tr><td>abbreviation</td><td>abbreviation</td><td/><td>string</td><td>Abkürzung (Kürzel)</td></tr><tr><td>replaces</td><td>replaces</td><td/><td>code</td><td>ersetzt (alter Code)</td></tr><tr><td>replacedBy</td><td>replacedBy</td><td/><td>code</td><td>ersetzt durch (neuer Code)</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>Deprecated</b></td><td><b>consortium</b></td><td><b>uri</b></td><td><b>status</b></td><td><b>deprecationDate</b></td><td><b>dataManagement</b></td><td><b>contract</b></td><td><b>dic</b></td><td><b>abbreviation</b></td><td><b>replaces</b></td><td><b>replacedBy</b></td></tr><tr><td style="white-space:nowrap">UKA<a name="de-mii-cs-meta-diz-standorte-UKA"> </a></td><td>Uniklinik RWTH Aachen</td><td>Aachen</td><td/><td>SMITH</td><td>ukaachen.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UKA</td><td/><td/></tr><tr><td style="white-space:nowrap">UKAU<a name="de-mii-cs-meta-diz-standorte-UKAU"> </a></td><td>Universitätsklinikum Augsburg</td><td>Augsburg</td><td/><td>DIFUTURE</td><td>uk-augsburg.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UKAU</td><td/><td/></tr><tr><td style="white-space:nowrap">Charité<a name="de-mii-cs-meta-diz-standorte-Charit.233"> </a></td><td>Charité - Universitätsmedizin Berlin</td><td>Berlin</td><td/><td>HiGHmed</td><td>charite.de</td><td>active</td><td/><td>true</td><td>V6.15</td><td>true</td><td>Charité</td><td/><td/></tr><tr><td style="white-space:nowrap">VIV<a name="de-mii-cs-meta-diz-standorte-VIV"> </a></td><td>Vivantes Netzwerk für Gesundheit GmbH</td><td>Berlin</td><td/><td>HiGHmed</td><td>vivantes.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>VIV</td><td/><td/></tr><tr><td style="white-space:nowrap">UKOWL<a name="de-mii-cs-meta-diz-standorte-UKOWL"> </a></td><td>Universität Bielefeld / Universitätsklinikum OWL</td><td>Bielefeld</td><td/><td>HiGHmed</td><td>ukowl.de</td><td>active</td><td/><td/><td>V6.14</td><td>true</td><td>UKOWL</td><td/><td/></tr><tr><td style="white-space:nowrap">UKRUB<a name="de-mii-cs-meta-diz-standorte-UKRUB"> </a></td><td>Universitätsklinikum der Ruhr-Universität Bochum</td><td>Bochum</td><td/><td>SMITH</td><td>rub.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UKRUB</td><td/><td/></tr><tr><td style="white-space:nowrap">UKB<a name="de-mii-cs-meta-diz-standorte-UKB"> </a></td><td>Universitätsklinikum Bonn</td><td>Bonn</td><td/><td>SMITH</td><td>ukbonn.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UKB</td><td/><td/></tr><tr style="background-color: #ffeeee"><td style="white-space:nowrap">KC<a name="de-mii-cs-meta-diz-standorte-KC"> </a></td><td>Klinikum Chemnitz</td><td>Chemnitz</td><td>Deprecated</td><td>MIRACUM</td><td>klinikumchemnitz.de</td><td>deprecated</td><td>2024-03-01</td><td/><td/><td/><td/><td/><td>KCH</td></tr><tr><td style="white-space:nowrap">KCH<a name="de-mii-cs-meta-diz-standorte-KCH"> </a></td><td>Klinikum Chemnitz</td><td>Chemnitz</td><td/><td>MIRACUM</td><td>klinikumchemnitz.de</td><td>active</td><td/><td/><td>V6.14</td><td>true</td><td>KCH</td><td>KC</td><td/></tr><tr style="background-color: #ffeeee"><td style="white-space:nowrap">CTK<a name="de-mii-cs-meta-diz-standorte-CTK"> </a></td><td>Carl-Thiem-Klinikum Cottbus</td><td>Cottbus</td><td>Deprecated</td><td>HiGHmed</td><td>ctk.de</td><td>deprecated</td><td>2024-07-03</td><td/><td/><td/><td/><td/><td>MUL-CT</td></tr><tr><td style="white-space:nowrap">MUL-CT<a name="de-mii-cs-meta-diz-standorte-MUL-CT"> </a></td><td>Medizinische Universität Lausitz - Carl Thiem</td><td>Cottbus</td><td/><td>HiGHmed</td><td>mul-ct.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>MUL-CT</td><td>CTK</td><td/></tr><tr><td style="white-space:nowrap">UKDD<a name="de-mii-cs-meta-diz-standorte-UKDD"> </a></td><td>Universitätsklinikum Carl Gustav Carus Dresden</td><td>Dresden</td><td/><td>MIRACUM</td><td>ukdd.de</td><td>active</td><td/><td>true</td><td>V6.15</td><td>true</td><td>UKDD</td><td/><td/></tr><tr><td style="white-space:nowrap">UKD<a name="de-mii-cs-meta-diz-standorte-UKD"> </a></td><td>Universitätsklinikum Düsseldorf</td><td>Düsseldorf</td><td/><td>SMITH</td><td>uniklinik-duesseldorf.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UKD</td><td/><td/></tr><tr><td style="white-space:nowrap">UKEr<a name="de-mii-cs-meta-diz-standorte-UKEr"> </a></td><td>Universitätsklinikum Erlangen</td><td>Erlangen</td><td/><td>MIRACUM</td><td>www.uk-erlangen.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UKEr</td><td/><td/></tr><tr><td style="white-space:nowrap">UME<a name="de-mii-cs-meta-diz-standorte-UME"> </a></td><td>Universitätsklinikum Essen</td><td>Essen</td><td/><td>SMITH</td><td>uk-essen.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UME</td><td/><td/></tr><tr><td style="white-space:nowrap">UKF<a name="de-mii-cs-meta-diz-standorte-UKF"> </a></td><td>Universitätsklinikum Frankfurt</td><td>Frankfurt</td><td/><td>MIRACUM</td><td>unimedizin-ffm.de</td><td>active</td><td/><td/><td>V6.14</td><td>true</td><td>UKF</td><td/><td/></tr><tr><td style="white-space:nowrap">UKFR<a name="de-mii-cs-meta-diz-standorte-UKFR"> </a></td><td>Universitätsklinikum Freiburg</td><td>Freiburg</td><td/><td>MIRACUM</td><td>uniklinik-freiburg.de</td><td>active</td><td/><td/><td>V6.14</td><td>true</td><td>UKFR</td><td/><td/></tr><tr><td style="white-space:nowrap">UKGI<a name="de-mii-cs-meta-diz-standorte-UKGI"> </a></td><td>Universitätsklinikum Gießen</td><td>Gießen</td><td/><td>MIRACUM</td><td>uni-giessen.de</td><td>active</td><td/><td>true</td><td>V6.15</td><td>true</td><td>UKGI</td><td/><td/></tr><tr><td style="white-space:nowrap">UMG<a name="de-mii-cs-meta-diz-standorte-UMG"> </a></td><td>Universitätsmedizin Göttingen</td><td>Göttingen</td><td/><td>HiGHmed</td><td>umg.eu</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UMG</td><td/><td/></tr><tr><td style="white-space:nowrap">UMG-DMS<a name="de-mii-cs-meta-diz-standorte-UMG-DMS"> </a></td><td>Universitätsmedizin Göttingen - DMS</td><td>Göttingen</td><td/><td>HiGHmed</td><td>dms.umg.eu</td><td>active</td><td/><td>true</td><td>V6.15</td><td/><td>UMG-DMS</td><td/><td/></tr><tr><td style="white-space:nowrap">UKG<a name="de-mii-cs-meta-diz-standorte-UKG"> </a></td><td>Universitätsmedizin Greifswald</td><td>Greifswald</td><td/><td>MIRACUM</td><td>www.medizin.uni-greifswald.de</td><td>active</td><td/><td/><td>V6.14</td><td>true</td><td>UKG</td><td/><td/></tr><tr><td style="white-space:nowrap">UKH<a name="de-mii-cs-meta-diz-standorte-UKH"> </a></td><td>Universitätsklinikum Halle (Saale)</td><td>Halle (Saale)</td><td/><td>SMITH</td><td>uk-halle.de</td><td>active</td><td/><td>true</td><td>V6.15</td><td>true</td><td>UKH</td><td/><td/></tr><tr><td style="white-space:nowrap">UKE<a name="de-mii-cs-meta-diz-standorte-UKE"> </a></td><td>Universitätsklinikum Hamburg-Eppendorf</td><td>Hamburg</td><td/><td>SMITH</td><td>uke.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UKE</td><td/><td/></tr><tr><td style="white-space:nowrap">MHH<a name="de-mii-cs-meta-diz-standorte-MHH"> </a></td><td>Medizinische Hochschule Hannover</td><td>Hannover</td><td/><td>HiGHmed</td><td>mh-hannover.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>MHH</td><td/><td/></tr><tr><td style="white-space:nowrap">UKHD<a name="de-mii-cs-meta-diz-standorte-UKHD"> </a></td><td>Universitätsklinikum Heidelberg</td><td>Heidelberg</td><td/><td>HiGHmed</td><td>ukhd.de</td><td>active</td><td/><td>true</td><td>V6.15</td><td>true</td><td>UKHD</td><td/><td/></tr><tr><td style="white-space:nowrap">UKJ<a name="de-mii-cs-meta-diz-standorte-UKJ"> </a></td><td>Universitätsklinikum Jena</td><td>Jena</td><td/><td>SMITH</td><td>uniklinikum-jena.de</td><td>active</td><td/><td/><td>V6.14</td><td>true</td><td>UKJ</td><td/><td/></tr><tr><td style="white-space:nowrap">UKK<a name="de-mii-cs-meta-diz-standorte-UKK"> </a></td><td>Universitätsklinikum Köln</td><td>Köln</td><td/><td>HiGHmed</td><td>uk-koeln.de</td><td>active</td><td/><td>true</td><td>V6.15</td><td>true</td><td>UKK</td><td/><td/></tr><tr><td style="white-space:nowrap">UKL<a name="de-mii-cs-meta-diz-standorte-UKL"> </a></td><td>Universitätsklinikum Leipzig</td><td>Leipzig</td><td/><td>SMITH</td><td>uniklinikum-leipzig.de</td><td>active</td><td/><td>true</td><td>V6.15</td><td>true</td><td>UKL</td><td/><td/></tr><tr><td style="white-space:nowrap">UL<a name="de-mii-cs-meta-diz-standorte-UL"> </a></td><td>Universität Leipzig</td><td>Leipzig</td><td/><td>SMITH</td><td>uniklinikum-leipzig.de</td><td>active</td><td/><td/><td>V6.15</td><td/><td>UL</td><td/><td/></tr><tr><td style="white-space:nowrap">UMMD<a name="de-mii-cs-meta-diz-standorte-UMMD"> </a></td><td>Universitätsklinikum Magdeburg</td><td>Magdeburg</td><td/><td>MIRACUM</td><td>www.med.uni-magdeburg.de</td><td>active</td><td/><td/><td>V6.14</td><td>true</td><td>UMMD</td><td/><td/></tr><tr><td style="white-space:nowrap">UM<a name="de-mii-cs-meta-diz-standorte-UM"> </a></td><td>Universitätsmedizin der Johannes Gutenberg-Universität Mainz</td><td>Mainz</td><td/><td>MIRACUM</td><td>unimedizin-mainz.de</td><td>active</td><td/><td/><td>V6.14</td><td>true</td><td>UM</td><td/><td/></tr><tr><td style="white-space:nowrap">UMM<a name="de-mii-cs-meta-diz-standorte-UMM"> </a></td><td>Universitätsklinikum Mannheim</td><td>Mannheim</td><td/><td>MIRACUM</td><td>umm.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UMM</td><td/><td/></tr><tr><td style="white-space:nowrap">UKMR<a name="de-mii-cs-meta-diz-standorte-UKMR"> </a></td><td>Universitätsklinikum Marburg</td><td>Marburg</td><td/><td>MIRACUM</td><td>uni-marburg.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UKMR</td><td/><td/></tr><tr><td style="white-space:nowrap">KUM<a name="de-mii-cs-meta-diz-standorte-KUM"> </a></td><td>Klinikum der Universität München (LMU)</td><td>München</td><td/><td>DIFUTURE</td><td>lmu-klinikum.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>KUM</td><td/><td/></tr><tr><td style="white-space:nowrap">MRI<a name="de-mii-cs-meta-diz-standorte-MRI"> </a></td><td>Klinikum rechts der Isar (TUM)</td><td>München</td><td/><td>DIFUTURE</td><td>mri.tum.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>MRI</td><td/><td/></tr><tr><td style="white-space:nowrap">UKM<a name="de-mii-cs-meta-diz-standorte-UKM"> </a></td><td>Universitätsklinikum Münster</td><td>Münster</td><td/><td>HiGHmed</td><td>ukm.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UKM</td><td/><td/></tr><tr style="background-color: #ffeeee"><td style="white-space:nowrap">UOL<a name="de-mii-cs-meta-diz-standorte-UOL"> </a></td><td>Carl von Ossietzky Universität Oldenburg</td><td>Oldenburg</td><td>Deprecated</td><td>HiGHmed</td><td/><td>deprecated</td><td>2024-10-23</td><td/><td/><td/><td/><td/><td>UMO</td></tr><tr><td style="white-space:nowrap">UMO<a name="de-mii-cs-meta-diz-standorte-UMO"> </a></td><td>Carl von Ossietzky Universität Oldenburg</td><td>Oldenburg</td><td/><td>HiGHmed</td><td>uol.de</td><td>active</td><td/><td/><td>V6.14</td><td>true</td><td>UMO</td><td>UOL</td><td/></tr><tr><td style="white-space:nowrap">UKR<a name="de-mii-cs-meta-diz-standorte-UKR"> </a></td><td>Universitätsklinikum Regensburg</td><td>Regensburg</td><td/><td>DIFUTURE</td><td>ukr.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UKR</td><td/><td/></tr><tr><td style="white-space:nowrap">UMR<a name="de-mii-cs-meta-diz-standorte-UMR"> </a></td><td>Universitätsmedizin Rostock</td><td>Rostock</td><td/><td>SMITH</td><td>med.uni-rostock.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UMR</td><td/><td/></tr><tr style="background-color: #ffeeee"><td style="white-space:nowrap">UKS<a name="de-mii-cs-meta-diz-standorte-UKS"> </a></td><td>Universitätsklinikum des Saarlandes</td><td>Saarbrücken / Homburg</td><td>Deprecated</td><td>DIFUTURE</td><td>uks.eu</td><td>deprecated</td><td>2024-10-15</td><td/><td/><td/><td/><td/><td>UdS</td></tr><tr><td style="white-space:nowrap">UdS<a name="de-mii-cs-meta-diz-standorte-UdS"> </a></td><td>Universität des Saarlandes, Medizinische Fakultät</td><td>Saarbrücken / Homburg</td><td/><td>DIFUTURE</td><td>med.uni-saarland.de</td><td>active</td><td/><td/><td>V6.14</td><td>true</td><td>UdS</td><td>UKS</td><td/></tr><tr><td style="white-space:nowrap">UKSH<a name="de-mii-cs-meta-diz-standorte-UKSH"> </a></td><td>Universitätsklinikum Schleswig-Holstein</td><td>Schleswig-Holstein</td><td/><td>HiGHmed</td><td>uksh.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UKSH</td><td/><td/></tr><tr><td style="white-space:nowrap">BHC<a name="de-mii-cs-meta-diz-standorte-BHC"> </a></td><td>Bosch Health Campus</td><td>Stuttgart</td><td/><td>HiGHmed</td><td>rbk.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>BHC</td><td/><td/></tr><tr><td style="white-space:nowrap">UKT<a name="de-mii-cs-meta-diz-standorte-UKT"> </a></td><td>Universitätsklinikum Tübingen</td><td>Tübingen</td><td/><td>DIFUTURE</td><td>medizin.uni-tuebingen.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UKT</td><td/><td/></tr><tr><td style="white-space:nowrap">UKU<a name="de-mii-cs-meta-diz-standorte-UKU"> </a></td><td>Universitätsklinikum Ulm</td><td>Ulm</td><td/><td>DIFUTURE</td><td>uniklinik-ulm.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UKU</td><td/><td/></tr><tr><td style="white-space:nowrap">UKW<a name="de-mii-cs-meta-diz-standorte-UKW"> </a></td><td>Universitätsklinikum Würzburg</td><td>Würzburg</td><td/><td>HiGHmed</td><td>ukw.de</td><td>active</td><td/><td>true</td><td>V6.15</td><td>true</td><td>UKW</td><td/><td/></tr><tr style="background-color: #ffeeee"><td style="white-space:nowrap">HUKW<a name="de-mii-cs-meta-diz-standorte-HUKW"> </a></td><td>Universität Witten/Herdecke</td><td>Witten / Herdecke</td><td>Deprecated</td><td>NA</td><td/><td>deprecated</td><td>2024-07-09</td><td/><td/><td/><td/><td/><td/></tr><tr><td style="white-space:nowrap">FDPG<a name="de-mii-cs-meta-diz-standorte-FDPG"> </a></td><td>Forschungsdatenportal für Gesundheit</td><td/><td/><td>MII</td><td>forschen-fuer-gesundheit.de</td><td>active</td><td/><td>true</td><td>V6.14</td><td/><td>FDPG</td><td/><td/></tr><tr><td style="white-space:nowrap">HiGHmed<a name="de-mii-cs-meta-diz-standorte-HiGHmed"> </a></td><td>HiGHmed e.V.</td><td>Heidelberg</td><td/><td>MII</td><td>highmed.org</td><td>active</td><td/><td>true</td><td>V6.15</td><td/><td>HiGHmed</td><td/><td/></tr><tr><td style="white-space:nowrap">HHN<a name="de-mii-cs-meta-diz-standorte-HHN"> </a></td><td>Hochschule Heilbronn</td><td>Heilbronn</td><td/><td>MII</td><td>hs-heilbronn.de</td><td>active</td><td/><td/><td>V6.14</td><td/><td>HHN</td><td/><td/></tr><tr><td style="white-space:nowrap">CRR<a name="de-mii-cs-meta-diz-standorte-CRR"> </a></td><td>Zentrale Plattform NUM</td><td/><td/><td>NUM</td><td>num-codex.de</td><td>active</td><td/><td/><td/><td/><td>CRR</td><td/><td/></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm">
+    <valueCoding>
+      <system value="http://hl7.org/fhir/version-algorithm"/>
+      <code value="semver"/>
+      <display value="SemVer"/>
+    </valueCoding>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability">
+    <valueCode value="shareable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability">
+    <valueCode value="publishable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes"/>
+        <version value="3.0.0"/>
+        <code value="package"/>
+        <display value="Package"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/resource-approvalDate">
+    <valueDate value="2026-08-31"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+    <valuePeriod>
+      <start value="2027"/>
+    </valuePeriod>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-topic">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
+        <code value="C80260"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-author">
+    <valueContactDetail>
+      <telecom>
+        <system value="email"/>
+        <value value="julian.sass@charite.de"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-editor">
+    <valueContactDetail>
+      <name value="Taskforce Core Data Set"/>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-reviewer">
+    <valueContactDetail>
+      <name value="Interoperability Working Group"/>
+      <telecom>
+        <system value="url"/>
+        <value value="https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-reviewer">
+    <valueContactDetail>
+      <name value="National Steering Committee"/>
+      <telecom>
+        <system value="url"/>
+        <value value="https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-endorser">
+    <valueContactDetail>
+      <name value="Interoperability Working Group"/>
+      <telecom>
+        <system value="url"/>
+        <value value="https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-endorser">
+    <valueContactDetail>
+      <name value="National Steering Committee"/>
+      <telecom>
+        <system value="url"/>
+        <value value="https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <url value="https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"/>
+  <version value="2027.0.0-ballot.rc3"/>
+  <name value="MII_CS_Meta_DIZ_Standorte"/>
+  <title value="MII CS Meta DIZ Standorte"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-09-01"/>
+  <publisher value="NUM-DIZ"/>
+  <contact>
+    <name value="NUM-DIZ"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+    </telecom>
+  </contact>
+  <description value="Medizininformatik-Initiative Standorte"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Medizininformatik-Initiative"/>
+  <caseSensitive value="true"/>
+  <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/ValueSet/core-location-identifier"/>
+  <compositional value="false"/>
+  <content value="complete"/>
+  <count value="52"/>
+  <property>
+    <code value="consortium"/>
+    <uri value="https://www.medizininformatik-initiative.de/de/konsortien"/>
+    <type value="string"/>
+  </property>
+  <property>
+    <code value="uri"/>
+    <uri value="https://www.medizininformatik-initiative.de/de/konsortien/datenintegrationszentren"/>
+    <type value="string"/>
+  </property>
+  <property>
+    <code value="status"/>
+    <uri value="http://hl7.org/fhir/concept-properties#status"/>
+    <type value="code"/>
+  </property>
+  <property>
+    <code value="deprecationDate"/>
+    <uri value="http://hl7.org/fhir/concept-properties#deprecationDate"/>
+    <type value="dateTime"/>
+  </property>
+  <property>
+    <code value="retirementDate"/>
+    <uri value="http://hl7.org/fhir/concept-properties#retirementDate"/>
+    <type value="dateTime"/>
+  </property>
+  <property>
+    <code value="dataManagement"/>
+    <description value="Datenmanagementstelle (true / false)"/>
+    <type value="boolean"/>
+  </property>
+  <property>
+    <code value="contract"/>
+    <description value="Teilnahmerahmenvertrag (Version)"/>
+    <type value="string"/>
+  </property>
+  <property>
+    <code value="dic"/>
+    <description value="Datenintegrationszentrum (true / false)"/>
+    <type value="boolean"/>
+  </property>
+  <property>
+    <code value="abbreviation"/>
+    <description value="Abkürzung (Kürzel)"/>
+    <type value="string"/>
+  </property>
+  <property>
+    <code value="replaces"/>
+    <description value="ersetzt (alter Code)"/>
+    <type value="code"/>
+  </property>
+  <property>
+    <code value="replacedBy"/>
+    <description value="ersetzt durch (neuer Code)"/>
+    <type value="code"/>
+  </property>
+  <concept>
+    <code value="UKA"/>
+    <display value="Uniklinik RWTH Aachen"/>
+    <definition value="Aachen"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="SMITH"/>
+    </property>
+    <property>
+      <code value="uri"/>
+      <valueString value="ukaachen.de"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="contract"/>
+      <valueString value="V6.15"/>
+    </property>
+    <property>
+      <code value="abbreviation"/>
+      <valueString value="UKA"/>
+    </property>
+    <property>
+      <code value="dic"/>
+      <valueBoolean value="true"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="UKAU"/>
+    <display value="Universitätsklinikum Augsburg"/>
+    <definition value="Augsburg"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="DIFUTURE"/>
+    </property>
+    <property>
+      <code value="uri"/>
+      <valueString value="uk-augsburg.de"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="contract"/>
+      <valueString value="V6.15"/>
+    </property>
+    <property>
+      <code value="abbreviation"/>
+      <valueString value="UKAU"/>
+    </property>
+    <property>
+      <code value="dic"/>
+      <valueBoolean value="true"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="Charité"/>
+    <display value="Charité - Universitätsmedizin Berlin"/>
+    <definition value="Berlin"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="HiGHmed"/>
+    </property>
+    <property>
+      <code value="uri"/>
+      <valueString value="charite.de"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="dataManagement"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="contract"/>
+      <valueString value="V6.15"/>
+    </property>
+    <property>
+      <code value="abbreviation"/>
+      <valueString value="Charité"/>
+    </property>
+    <property>
+      <code value="dic"/>
+      <valueBoolean value="true"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="VIV"/>
+    <display value="Vivantes Netzwerk für Gesundheit GmbH"/>
+    <definition value="Berlin"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="HiGHmed"/>
+    </property>
+    <property>
+      <code value="uri"/>
+      <valueString value="vivantes.de"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="contract"/>
+      <valueString value="V6.15"/>
+    </property>
+    <property>
+      <code value="abbreviation"/>
+      <valueString value="VIV"/>
+    </property>
+    <property>
+      <code value="dic"/>
+      <valueBoolean value="true"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="UKOWL"/>
+    <display value="Universität Bielefeld / Universitätsklinikum OWL"/>
+    <definition value="Bielefeld"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="HiGHmed"/>
+    </property>
+    <property>
+      <code value="uri"/>
+      <valueString value="ukowl.de"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="contract"/>
+      <valueString value="V6.14"/>
+    </property>
+    <property>
+      <code value="abbreviation"/>
+      <valueString value="UKOWL"/>
+    </property>
+    <property>
+      <code value="dic"/>
+      <valueBoolean value="true"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="UKRUB"/>
+    <display value="Universitätsklinikum der Ruhr-Universität Bochum"/>
+    <definition value="Bochum"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="SMITH"/>
+    </property>
+    <property>
+      <code value="uri"/>
+      <valueString value="rub.de"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="contract"/>
+      <valueString value="V6.15"/>
+    </property>
+    <property>
+      <code value="abbreviation"/>
+      <valueString value="UKRUB"/>
+    </property>
+    <property>
+      <code value="dic"/>
+      <valueBoolean value="true"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="UKB"/>
+    <display value="Universitätsklinikum Bonn"/>
+    <definition value="Bonn"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="SMITH"/>
+    </property>
+    <property>
+      <code value="uri"/>
+      <valueString value="ukbonn.de"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="contract"/>
+      <valueString value="V6.15"/>
+    </property>
+    <property>
+      <code value="abbreviation"/>
+      <valueString value="UKB"/>
+    </property>
+    <property>
+      <code value="dic"/>
+      <valueBoolean value="true"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="KC"/>
+    <display value="Klinikum Chemnitz"/>
+    <definition value="Chemnitz"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="MIRACUM"/>
+    </property>
+    <property>
+      <code value="uri"/>
+      <valueString value="klinikumchemnitz.de"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="deprecated"/>
+    </property>
+    <property>
+      <code value="replacedBy"/>
+      <valueCode value="KCH"/>
+    </property>
+    <property>
+      <code value="deprecationDate"/>
+      <valueDateTime value="2024-03-01"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="KCH"/>
+    <display value="Klinikum Chemnitz"/>
+    <definition value="Chemnitz"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="MIRACUM"/>
+    </property>
+    <property>
+      <code value="uri"/>
+      <valueString value="klinikumchemnitz.de"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="contract"/>
+      <valueString value="V6.14"/>
+    </property>
+    <property>
+      <code value="replaces"/>
+      <valueCode value="KC"/>
+    </property>
+    <property>
+      <code value="abbreviation"/>
+      <valueString value="KCH"/>
+    </property>
+    <property>
+      <code value="dic"/>
+      <valueBoolean value="true"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="CTK"/>
+    <display value="Carl-Thiem-Klinikum Cottbus"/>
+    <definition value="Cottbus"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="HiGHmed"/>
+    </property>
+    <property>
+      <code value="uri"/>
+      <valueString value="ctk.de"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="deprecated"/>
+    </property>
+    <property>
+      <code value="replacedBy"/>
+      <valueCode value="MUL-CT"/>
+    </property>
+    <property>
+      <code value="deprecationDate"/>
+      <valueDateTime value="2024-07-03"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="MUL-CT"/>
+    <display value="Medizinische Universität Lausitz - Carl Thiem"/>
+    <definition value="Cottbus"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="HiGHmed"/>
+    </property>
+    <property>
+      <code value="uri"/>
+      <valueString value="mul-ct.de"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="contract"/>
+      <valueString value="V6.15"/>
+    </property>
+    <property>
+      <code value="replaces"/>
+      <valueCode value="CTK"/>
+    </property>
+    <property>
+      <code value="abbreviation"/>
+      <valueString value="MUL-CT"/>
+    </property>
+    <property>
+      <code value="dic"/>
+      <valueBoolean value="true"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="UKDD"/>
+    <display value="Universitätsklinikum Carl Gustav Carus Dresden"/>
+    <definition value="Dresden"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="MIRACUM"/>
+    </property>
+    <property>
+      <code value="uri"/>
+      <valueString value="ukdd.de"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="dataManagement"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="contract"/>
+      <valueString value="V6.15"/>
+    </property>
+    <property>
+      <code value="abbreviation"/>
+      <valueString value="UKDD"/>
+    </property>
+    <property>
+      <code value="dic"/>
+      <valueBoolean value="true"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="UKD"/>
+    <display value="Universitätsklinikum Düsseldorf"/>
+    <definition value="Düsseldorf"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="SMITH"/>
+    </property>
+    <property>
+      <code value="uri"/>
+      <valueString value="uniklinik-duesseldorf.de"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="contract"/>
+      <valueString value="V6.15"/>
+    </property>
+    <property>
+      <code value="abbreviation"/>
+      <valueString value="UKD"/>
+    </property>
+    <property>
+      <code value="dic"/>
+      <valueBoolean value="true"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="UKEr"/>
+    <display value="Universitätsklinikum Erlangen"/>
+    <definition value="Erlangen"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="MIRACUM"/>
+    </property>
+    <property>
+      <code value="uri"/>
+      <valueString value="www.uk-erlangen.de"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="contract"/>
+      <valueString value="V6.15"/>
+    </property>
+    <property>
+      <code value="abbreviation"/>
+      <valueString value="UKEr"/>
+    </property>
+    <property>
+      <code value="dic"/>
+      <valueBoolean value="true"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="UME"/>
+    <display value="Universitätsklinikum Essen"/>
+    <definition value="Essen"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="SMITH"/>
+    </property>
+    <property>
+      <code value="uri"/>
+      <valueString value="uk-essen.de"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="contract"/>
+      <valueString value="V6.15"/>
+    </property>
+    <property>
+      <code value="abbreviation"/>
+      <valueString value="UME"/>
+    </property>
+    <property>
+      <code value="dic"/>
+      <valueBoolean value="true"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="UKF"/>
+    <display value="Universitätsklinikum Frankfurt"/>
+    <definition value="Frankfurt"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="MIRACUM"/>
+    </property>
+    <property>
+      <code value="uri"/>
+      <valueString value="unimedizin-ffm.de"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="contract"/>
+      <valueString value="V6.14"/>
+    </property>
+    <property>
+      <code value="abbreviation"/>
+      <valueString value="UKF"/>
+    </property>
+    <property>
+      <code value="dic"/>
+      <valueBoolean value="true"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="UKFR"/>
+    <display value="Universitätsklinikum Freiburg"/>
+    <definition value="Freiburg"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="MIRACUM"/>
+    </property>
+    <property>
+      <code value="uri"/>
+      <valueString value="uniklinik-freiburg.de"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="contract"/>
+      <valueString value="V6.14"/>
+    </property>
+    <property>
+      <code value="abbreviation"/>
+      <valueString value="UKFR"/>
+    </property>
+    <property>
+      <code value="dic"/>
+      <valueBoolean value="true"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="UKGI"/>
+    <display value="Universitätsklinikum Gießen"/>
+    <definition value="Gießen"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="MIRACUM"/>
+    </property>
+    <property>
+      <code value="uri"/>
+      <valueString value="uni-giessen.de"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="dataManagement"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="contract"/>
+      <valueString value="V6.15"/>
+    </property>
+    <property>
+      <code value="abbreviation"/>
+      <valueString value="UKGI"/>
+    </property>
+    <property>
+      <code value="dic"/>
+      <valueBoolean value="true"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="UMG"/>
+    <display value="Universitätsmedizin Göttingen"/>
+    <definition value="Göttingen"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="HiGHmed"/>
+    </property>
+    <property>
+      <code value="uri"/>
+      <valueString value="umg.eu"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="contract"/>
+      <valueString value="V6.15"/>
+    </property>
+    <property>
+      <code value="abbreviation"/>
+      <valueString value="UMG"/>
+    </property>
+    <property>
+      <code value="dic"/>
+      <valueBoolean value="true"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="UMG-DMS"/>
+    <display value="Universitätsmedizin Göttingen - DMS"/>
+    <definition value="Göttingen"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="HiGHmed"/>
+    </property>
+    <property>
+      <code value="uri"/>
+      <valueString value="dms.umg.eu"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="dataManagement"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="contract"/>
+      <valueString value="V6.15"/>
+    </property>
+    <property>
+      <code value="abbreviation"/>
+      <valueString value="UMG-DMS"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="UKG"/>
+    <display value="Universitätsmedizin Greifswald"/>
+    <definition value="Greifswald"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="MIRACUM"/>
+    </property>
+    <property>
+      <code value="uri"/>
+      <valueString value="www.medizin.uni-greifswald.de"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="contract"/>
+      <valueString value="V6.14"/>
+    </property>
+    <property>
+      <code value="abbreviation"/>
+      <valueString value="UKG"/>
+    </property>
+    <property>
+      <code value="dic"/>
+      <valueBoolean value="true"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="UKH"/>
+    <display value="Universitätsklinikum Halle (Saale)"/>
+    <definition value="Halle (Saale)"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="SMITH"/>
+    </property>
+    <property>
+      <code value="uri"/>
+      <valueString value="uk-halle.de"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="dataManagement"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="contract"/>
+      <valueString value="V6.15"/>
+    </property>
+    <property>
+      <code value="abbreviation"/>
+      <valueString value="UKH"/>
+    </property>
+    <property>
+      <code value="dic"/>
+      <valueBoolean value="true"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="UKE"/>
+    <display value="Universitätsklinikum Hamburg-Eppendorf"/>
+    <definition value="Hamburg"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="SMITH"/>
+    </property>
+    <property>
+      <code value="uri"/>
+      <valueString value="uke.de"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="contract"/>
+      <valueString value="V6.15"/>
+    </property>
+    <property>
+      <code value="abbreviation"/>
+      <valueString value="UKE"/>
+    </property>
+    <property>
+      <code value="dic"/>
+      <valueBoolean value="true"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="MHH"/>
+    <display value="Medizinische Hochschule Hannover"/>
+    <definition value="Hannover"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="HiGHmed"/>
+    </property>
+    <property>
+      <code value="uri"/>
+      <valueString value="mh-hannover.de"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="contract"/>
+      <valueString value="V6.15"/>
+    </property>
+    <property>
+      <code value="abbreviation"/>
+      <valueString value="MHH"/>
+    </property>
+    <property>
+      <code value="dic"/>
+      <valueBoolean value="true"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="UKHD"/>
+    <display value="Universitätsklinikum Heidelberg"/>
+    <definition value="Heidelberg"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="HiGHmed"/>
+    </property>
+    <property>
+      <code value="uri"/>
+      <valueString value="ukhd.de"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="dataManagement"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="contract"/>
+      <valueString value="V6.15"/>
+    </property>
+    <property>
+      <code value="abbreviation"/>
+      <valueString value="UKHD"/>
+    </property>
+    <property>
+      <code value="dic"/>
+      <valueBoolean value="true"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="UKJ"/>
+    <display value="Universitätsklinikum Jena"/>
+    <definition value="Jena"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="SMITH"/>
+    </property>
+    <property>
+      <code value="uri"/>
+      <valueString value="uniklinikum-jena.de"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="contract"/>
+      <valueString value="V6.14"/>
+    </property>
+    <property>
+      <code value="abbreviation"/>
+      <valueString value="UKJ"/>
+    </property>
+    <property>
+      <code value="dic"/>
+      <valueBoolean value="true"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="UKK"/>
+    <display value="Universitätsklinikum Köln"/>
+    <definition value="Köln"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="HiGHmed"/>
+    </property>
+    <property>
+      <code value="uri"/>
+      <valueString value="uk-koeln.de"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="dataManagement"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="contract"/>
+      <valueString value="V6.15"/>
+    </property>
+    <property>
+      <code value="abbreviation"/>
+      <valueString value="UKK"/>
+    </property>
+    <property>
+      <code value="dic"/>
+      <valueBoolean value="true"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="UKL"/>
+    <display value="Universitätsklinikum Leipzig"/>
+    <definition value="Leipzig"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="SMITH"/>
+    </property>
+    <property>
+      <code value="uri"/>
+      <valueString value="uniklinikum-leipzig.de"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="dataManagement"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="contract"/>
+      <valueString value="V6.15"/>
+    </property>
+    <property>
+      <code value="abbreviation"/>
+      <valueString value="UKL"/>
+    </property>
+    <property>
+      <code value="dic"/>
+      <valueBoolean value="true"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="UL"/>
+    <display value="Universität Leipzig"/>
+    <definition value="Leipzig"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="SMITH"/>
+    </property>
+    <property>
+      <code value="uri"/>
+      <valueString value="uniklinikum-leipzig.de"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="contract"/>
+      <valueString value="V6.15"/>
+    </property>
+    <property>
+      <code value="abbreviation"/>
+      <valueString value="UL"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="UMMD"/>
+    <display value="Universitätsklinikum Magdeburg"/>
+    <definition value="Magdeburg"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="MIRACUM"/>
+    </property>
+    <property>
+      <code value="uri"/>
+      <valueString value="www.med.uni-magdeburg.de"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="contract"/>
+      <valueString value="V6.14"/>
+    </property>
+    <property>
+      <code value="abbreviation"/>
+      <valueString value="UMMD"/>
+    </property>
+    <property>
+      <code value="dic"/>
+      <valueBoolean value="true"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="UM"/>
+    <display value="Universitätsmedizin der Johannes Gutenberg-Universität Mainz"/>
+    <definition value="Mainz"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="MIRACUM"/>
+    </property>
+    <property>
+      <code value="uri"/>
+      <valueString value="unimedizin-mainz.de"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="contract"/>
+      <valueString value="V6.14"/>
+    </property>
+    <property>
+      <code value="abbreviation"/>
+      <valueString value="UM"/>
+    </property>
+    <property>
+      <code value="dic"/>
+      <valueBoolean value="true"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="UMM"/>
+    <display value="Universitätsklinikum Mannheim"/>
+    <definition value="Mannheim"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="MIRACUM"/>
+    </property>
+    <property>
+      <code value="uri"/>
+      <valueString value="umm.de"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="contract"/>
+      <valueString value="V6.15"/>
+    </property>
+    <property>
+      <code value="abbreviation"/>
+      <valueString value="UMM"/>
+    </property>
+    <property>
+      <code value="dic"/>
+      <valueBoolean value="true"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="UKMR"/>
+    <display value="Universitätsklinikum Marburg"/>
+    <definition value="Marburg"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="MIRACUM"/>
+    </property>
+    <property>
+      <code value="uri"/>
+      <valueString value="uni-marburg.de"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="contract"/>
+      <valueString value="V6.15"/>
+    </property>
+    <property>
+      <code value="abbreviation"/>
+      <valueString value="UKMR"/>
+    </property>
+    <property>
+      <code value="dic"/>
+      <valueBoolean value="true"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="KUM"/>
+    <display value="Klinikum der Universität München (LMU)"/>
+    <definition value="München"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="DIFUTURE"/>
+    </property>
+    <property>
+      <code value="uri"/>
+      <valueString value="lmu-klinikum.de"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="contract"/>
+      <valueString value="V6.15"/>
+    </property>
+    <property>
+      <code value="abbreviation"/>
+      <valueString value="KUM"/>
+    </property>
+    <property>
+      <code value="dic"/>
+      <valueBoolean value="true"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="MRI"/>
+    <display value="Klinikum rechts der Isar (TUM)"/>
+    <definition value="München"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="DIFUTURE"/>
+    </property>
+    <property>
+      <code value="uri"/>
+      <valueString value="mri.tum.de"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="contract"/>
+      <valueString value="V6.15"/>
+    </property>
+    <property>
+      <code value="abbreviation"/>
+      <valueString value="MRI"/>
+    </property>
+    <property>
+      <code value="dic"/>
+      <valueBoolean value="true"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="UKM"/>
+    <display value="Universitätsklinikum Münster"/>
+    <definition value="Münster"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="HiGHmed"/>
+    </property>
+    <property>
+      <code value="uri"/>
+      <valueString value="ukm.de"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="contract"/>
+      <valueString value="V6.15"/>
+    </property>
+    <property>
+      <code value="abbreviation"/>
+      <valueString value="UKM"/>
+    </property>
+    <property>
+      <code value="dic"/>
+      <valueBoolean value="true"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="UOL"/>
+    <display value="Carl von Ossietzky Universität Oldenburg"/>
+    <definition value="Oldenburg"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="HiGHmed"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="deprecated"/>
+    </property>
+    <property>
+      <code value="replacedBy"/>
+      <valueCode value="UMO"/>
+    </property>
+    <property>
+      <code value="deprecationDate"/>
+      <valueDateTime value="2024-10-23"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="UMO"/>
+    <display value="Carl von Ossietzky Universität Oldenburg"/>
+    <definition value="Oldenburg"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="HiGHmed"/>
+    </property>
+    <property>
+      <code value="uri"/>
+      <valueString value="uol.de"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="contract"/>
+      <valueString value="V6.14"/>
+    </property>
+    <property>
+      <code value="replaces"/>
+      <valueCode value="UOL"/>
+    </property>
+    <property>
+      <code value="abbreviation"/>
+      <valueString value="UMO"/>
+    </property>
+    <property>
+      <code value="dic"/>
+      <valueBoolean value="true"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="UKR"/>
+    <display value="Universitätsklinikum Regensburg"/>
+    <definition value="Regensburg"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="DIFUTURE"/>
+    </property>
+    <property>
+      <code value="uri"/>
+      <valueString value="ukr.de"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="contract"/>
+      <valueString value="V6.15"/>
+    </property>
+    <property>
+      <code value="abbreviation"/>
+      <valueString value="UKR"/>
+    </property>
+    <property>
+      <code value="dic"/>
+      <valueBoolean value="true"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="UMR"/>
+    <display value="Universitätsmedizin Rostock"/>
+    <definition value="Rostock"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="SMITH"/>
+    </property>
+    <property>
+      <code value="uri"/>
+      <valueString value="med.uni-rostock.de"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="contract"/>
+      <valueString value="V6.15"/>
+    </property>
+    <property>
+      <code value="abbreviation"/>
+      <valueString value="UMR"/>
+    </property>
+    <property>
+      <code value="dic"/>
+      <valueBoolean value="true"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="UKS"/>
+    <display value="Universitätsklinikum des Saarlandes"/>
+    <definition value="Saarbrücken / Homburg"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="DIFUTURE"/>
+    </property>
+    <property>
+      <code value="uri"/>
+      <valueString value="uks.eu"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="deprecated"/>
+    </property>
+    <property>
+      <code value="replacedBy"/>
+      <valueCode value="UdS"/>
+    </property>
+    <property>
+      <code value="deprecationDate"/>
+      <valueDateTime value="2024-10-15"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="UdS"/>
+    <display value="Universität des Saarlandes, Medizinische Fakultät"/>
+    <definition value="Saarbrücken / Homburg"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="DIFUTURE"/>
+    </property>
+    <property>
+      <code value="uri"/>
+      <valueString value="med.uni-saarland.de"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="contract"/>
+      <valueString value="V6.14"/>
+    </property>
+    <property>
+      <code value="replaces"/>
+      <valueCode value="UKS"/>
+    </property>
+    <property>
+      <code value="abbreviation"/>
+      <valueString value="UdS"/>
+    </property>
+    <property>
+      <code value="dic"/>
+      <valueBoolean value="true"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="UKSH"/>
+    <display value="Universitätsklinikum Schleswig-Holstein"/>
+    <definition value="Schleswig-Holstein"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="HiGHmed"/>
+    </property>
+    <property>
+      <code value="uri"/>
+      <valueString value="uksh.de"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="contract"/>
+      <valueString value="V6.15"/>
+    </property>
+    <property>
+      <code value="abbreviation"/>
+      <valueString value="UKSH"/>
+    </property>
+    <property>
+      <code value="dic"/>
+      <valueBoolean value="true"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="BHC"/>
+    <display value="Bosch Health Campus"/>
+    <definition value="Stuttgart"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="HiGHmed"/>
+    </property>
+    <property>
+      <code value="uri"/>
+      <valueString value="rbk.de"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="contract"/>
+      <valueString value="V6.15"/>
+    </property>
+    <property>
+      <code value="abbreviation"/>
+      <valueString value="BHC"/>
+    </property>
+    <property>
+      <code value="dic"/>
+      <valueBoolean value="true"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="UKT"/>
+    <display value="Universitätsklinikum Tübingen"/>
+    <definition value="Tübingen"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="DIFUTURE"/>
+    </property>
+    <property>
+      <code value="uri"/>
+      <valueString value="medizin.uni-tuebingen.de"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="contract"/>
+      <valueString value="V6.15"/>
+    </property>
+    <property>
+      <code value="abbreviation"/>
+      <valueString value="UKT"/>
+    </property>
+    <property>
+      <code value="dic"/>
+      <valueBoolean value="true"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="UKU"/>
+    <display value="Universitätsklinikum Ulm"/>
+    <definition value="Ulm"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="DIFUTURE"/>
+    </property>
+    <property>
+      <code value="uri"/>
+      <valueString value="uniklinik-ulm.de"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="contract"/>
+      <valueString value="V6.15"/>
+    </property>
+    <property>
+      <code value="abbreviation"/>
+      <valueString value="UKU"/>
+    </property>
+    <property>
+      <code value="dic"/>
+      <valueBoolean value="true"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="UKW"/>
+    <display value="Universitätsklinikum Würzburg"/>
+    <definition value="Würzburg"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="HiGHmed"/>
+    </property>
+    <property>
+      <code value="uri"/>
+      <valueString value="ukw.de"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="dataManagement"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="contract"/>
+      <valueString value="V6.15"/>
+    </property>
+    <property>
+      <code value="abbreviation"/>
+      <valueString value="UKW"/>
+    </property>
+    <property>
+      <code value="dic"/>
+      <valueBoolean value="true"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="HUKW"/>
+    <display value="Universität Witten/Herdecke"/>
+    <definition value="Witten / Herdecke"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="NA"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="deprecated"/>
+    </property>
+    <property>
+      <code value="deprecationDate"/>
+      <valueDateTime value="2024-07-09"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="FDPG"/>
+    <display value="Forschungsdatenportal für Gesundheit"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="MII"/>
+    </property>
+    <property>
+      <code value="uri"/>
+      <valueString value="forschen-fuer-gesundheit.de"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="dataManagement"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="contract"/>
+      <valueString value="V6.14"/>
+    </property>
+    <property>
+      <code value="abbreviation"/>
+      <valueString value="FDPG"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="HiGHmed"/>
+    <display value="HiGHmed e.V."/>
+    <definition value="Heidelberg"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="MII"/>
+    </property>
+    <property>
+      <code value="uri"/>
+      <valueString value="highmed.org"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="dataManagement"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="contract"/>
+      <valueString value="V6.15"/>
+    </property>
+    <property>
+      <code value="abbreviation"/>
+      <valueString value="HiGHmed"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="HHN"/>
+    <display value="Hochschule Heilbronn"/>
+    <definition value="Heilbronn"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="MII"/>
+    </property>
+    <property>
+      <code value="uri"/>
+      <valueString value="hs-heilbronn.de"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="contract"/>
+      <valueString value="V6.14"/>
+    </property>
+    <property>
+      <code value="abbreviation"/>
+      <valueString value="HHN"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="CRR"/>
+    <display value="Zentrale Plattform NUM"/>
+    <property>
+      <code value="consortium"/>
+      <valueString value="NUM"/>
+    </property>
+    <property>
+      <code value="uri"/>
+      <valueString value="num-codex.de"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="abbreviation"/>
+      <valueString value="CRR"/>
+    </property>
+  </concept>
+</CodeSystem>

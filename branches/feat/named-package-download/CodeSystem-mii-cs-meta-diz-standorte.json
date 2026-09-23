@@ -1,0 +1,1736 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "mii-cs-meta-diz-standorte",
+  "meta" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+      "valueCode" : "CC-BY-4.0"
+    },
+    {
+      "extension" : [{
+        "url" : "packageId",
+        "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+      },
+      {
+        "url" : "version",
+        "valueString" : "2027.0.0-ballot.rc3"
+      },
+      {
+        "url" : "uri",
+        "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+      }],
+      "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+    }],
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem",
+    "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecodesystem",
+    "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem mii-cs-meta-diz-standorte</b></p><a name=\"mii-cs-meta-diz-standorte\"> </a><a name=\"hcmii-cs-meta-diz-standorte\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html\">Shareable CodeSystem</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-shareablecodesystem.html\">CRMI Shareable CodeSystem</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-publishablecodesystem.html\">CRMI Publishable CodeSystem</a></p></div><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>consortium</td><td>consortium</td><td>https://www.medizininformatik-initiative.de/de/konsortien</td><td>string</td><td/></tr><tr><td>uri</td><td>uri</td><td>https://www.medizininformatik-initiative.de/de/konsortien/datenintegrationszentren</td><td>string</td><td/></tr><tr><td>status</td><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td/></tr><tr><td>deprecationDate</td><td>deprecationDate</td><td>http://hl7.org/fhir/concept-properties#deprecationDate</td><td>dateTime</td><td/></tr><tr><td>retirementDate</td><td>retirementDate</td><td>http://hl7.org/fhir/concept-properties#retirementDate</td><td>dateTime</td><td/></tr><tr><td>dataManagement</td><td>dataManagement</td><td/><td>boolean</td><td>Datenmanagementstelle (true / false)</td></tr><tr><td>contract</td><td>contract</td><td/><td>string</td><td>Teilnahmerahmenvertrag (Version)</td></tr><tr><td>dic</td><td>dic</td><td/><td>boolean</td><td>Datenintegrationszentrum (true / false)</td></tr><tr><td>abbreviation</td><td>abbreviation</td><td/><td>string</td><td>Abkürzung (Kürzel)</td></tr><tr><td>replaces</td><td>replaces</td><td/><td>code</td><td>ersetzt (alter Code)</td></tr><tr><td>replacedBy</td><td>replacedBy</td><td/><td>code</td><td>ersetzt durch (neuer Code)</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>Deprecated</b></td><td><b>consortium</b></td><td><b>uri</b></td><td><b>status</b></td><td><b>deprecationDate</b></td><td><b>dataManagement</b></td><td><b>contract</b></td><td><b>dic</b></td><td><b>abbreviation</b></td><td><b>replaces</b></td><td><b>replacedBy</b></td></tr><tr><td style=\"white-space:nowrap\">UKA<a name=\"mii-cs-meta-diz-standorte-UKA\"> </a></td><td>Uniklinik RWTH Aachen</td><td>Aachen</td><td/><td>SMITH</td><td>ukaachen.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UKA</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UKAU<a name=\"mii-cs-meta-diz-standorte-UKAU\"> </a></td><td>Universitätsklinikum Augsburg</td><td>Augsburg</td><td/><td>DIFUTURE</td><td>uk-augsburg.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UKAU</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">Charité<a name=\"mii-cs-meta-diz-standorte-Charit.233\"> </a></td><td>Charité - Universitätsmedizin Berlin</td><td>Berlin</td><td/><td>HiGHmed</td><td>charite.de</td><td>active</td><td/><td>true</td><td>V6.15</td><td>true</td><td>Charité</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">VIV<a name=\"mii-cs-meta-diz-standorte-VIV\"> </a></td><td>Vivantes Netzwerk für Gesundheit GmbH</td><td>Berlin</td><td/><td>HiGHmed</td><td>vivantes.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>VIV</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UKOWL<a name=\"mii-cs-meta-diz-standorte-UKOWL\"> </a></td><td>Universität Bielefeld / Universitätsklinikum OWL</td><td>Bielefeld</td><td/><td>HiGHmed</td><td>ukowl.de</td><td>active</td><td/><td/><td>V6.14</td><td>true</td><td>UKOWL</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UKRUB<a name=\"mii-cs-meta-diz-standorte-UKRUB\"> </a></td><td>Universitätsklinikum der Ruhr-Universität Bochum</td><td>Bochum</td><td/><td>SMITH</td><td>rub.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UKRUB</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UKB<a name=\"mii-cs-meta-diz-standorte-UKB\"> </a></td><td>Universitätsklinikum Bonn</td><td>Bonn</td><td/><td>SMITH</td><td>ukbonn.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UKB</td><td/><td/></tr><tr style=\"background-color: #ffeeee\"><td style=\"white-space:nowrap\">KC<a name=\"mii-cs-meta-diz-standorte-KC\"> </a></td><td>Klinikum Chemnitz</td><td>Chemnitz</td><td>Deprecated</td><td>MIRACUM</td><td>klinikumchemnitz.de</td><td>deprecated</td><td>2024-03-01</td><td/><td/><td/><td/><td/><td>KCH</td></tr><tr><td style=\"white-space:nowrap\">KCH<a name=\"mii-cs-meta-diz-standorte-KCH\"> </a></td><td>Klinikum Chemnitz</td><td>Chemnitz</td><td/><td>MIRACUM</td><td>klinikumchemnitz.de</td><td>active</td><td/><td/><td>V6.14</td><td>true</td><td>KCH</td><td>KC</td><td/></tr><tr style=\"background-color: #ffeeee\"><td style=\"white-space:nowrap\">CTK<a name=\"mii-cs-meta-diz-standorte-CTK\"> </a></td><td>Carl-Thiem-Klinikum Cottbus</td><td>Cottbus</td><td>Deprecated</td><td>HiGHmed</td><td>ctk.de</td><td>deprecated</td><td>2024-07-03</td><td/><td/><td/><td/><td/><td>MUL-CT</td></tr><tr><td style=\"white-space:nowrap\">MUL-CT<a name=\"mii-cs-meta-diz-standorte-MUL-CT\"> </a></td><td>Medizinische Universität Lausitz - Carl Thiem</td><td>Cottbus</td><td/><td>HiGHmed</td><td>mul-ct.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>MUL-CT</td><td>CTK</td><td/></tr><tr><td style=\"white-space:nowrap\">UKDD<a name=\"mii-cs-meta-diz-standorte-UKDD\"> </a></td><td>Universitätsklinikum Carl Gustav Carus Dresden</td><td>Dresden</td><td/><td>MIRACUM</td><td>ukdd.de</td><td>active</td><td/><td>true</td><td>V6.15</td><td>true</td><td>UKDD</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UKD<a name=\"mii-cs-meta-diz-standorte-UKD\"> </a></td><td>Universitätsklinikum Düsseldorf</td><td>Düsseldorf</td><td/><td>SMITH</td><td>uniklinik-duesseldorf.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UKD</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UKEr<a name=\"mii-cs-meta-diz-standorte-UKEr\"> </a></td><td>Universitätsklinikum Erlangen</td><td>Erlangen</td><td/><td>MIRACUM</td><td>www.uk-erlangen.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UKEr</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UME<a name=\"mii-cs-meta-diz-standorte-UME\"> </a></td><td>Universitätsklinikum Essen</td><td>Essen</td><td/><td>SMITH</td><td>uk-essen.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UME</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UKF<a name=\"mii-cs-meta-diz-standorte-UKF\"> </a></td><td>Universitätsklinikum Frankfurt</td><td>Frankfurt</td><td/><td>MIRACUM</td><td>unimedizin-ffm.de</td><td>active</td><td/><td/><td>V6.14</td><td>true</td><td>UKF</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UKFR<a name=\"mii-cs-meta-diz-standorte-UKFR\"> </a></td><td>Universitätsklinikum Freiburg</td><td>Freiburg</td><td/><td>MIRACUM</td><td>uniklinik-freiburg.de</td><td>active</td><td/><td/><td>V6.14</td><td>true</td><td>UKFR</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UKGI<a name=\"mii-cs-meta-diz-standorte-UKGI\"> </a></td><td>Universitätsklinikum Gießen</td><td>Gießen</td><td/><td>MIRACUM</td><td>uni-giessen.de</td><td>active</td><td/><td>true</td><td>V6.15</td><td>true</td><td>UKGI</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UMG<a name=\"mii-cs-meta-diz-standorte-UMG\"> </a></td><td>Universitätsmedizin Göttingen</td><td>Göttingen</td><td/><td>HiGHmed</td><td>umg.eu</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UMG</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UMG-DMS<a name=\"mii-cs-meta-diz-standorte-UMG-DMS\"> </a></td><td>Universitätsmedizin Göttingen - DMS</td><td>Göttingen</td><td/><td>HiGHmed</td><td>dms.umg.eu</td><td>active</td><td/><td>true</td><td>V6.15</td><td/><td>UMG-DMS</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UKG<a name=\"mii-cs-meta-diz-standorte-UKG\"> </a></td><td>Universitätsmedizin Greifswald</td><td>Greifswald</td><td/><td>MIRACUM</td><td>www.medizin.uni-greifswald.de</td><td>active</td><td/><td/><td>V6.14</td><td>true</td><td>UKG</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UKH<a name=\"mii-cs-meta-diz-standorte-UKH\"> </a></td><td>Universitätsklinikum Halle (Saale)</td><td>Halle (Saale)</td><td/><td>SMITH</td><td>uk-halle.de</td><td>active</td><td/><td>true</td><td>V6.15</td><td>true</td><td>UKH</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UKE<a name=\"mii-cs-meta-diz-standorte-UKE\"> </a></td><td>Universitätsklinikum Hamburg-Eppendorf</td><td>Hamburg</td><td/><td>SMITH</td><td>uke.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UKE</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">MHH<a name=\"mii-cs-meta-diz-standorte-MHH\"> </a></td><td>Medizinische Hochschule Hannover</td><td>Hannover</td><td/><td>HiGHmed</td><td>mh-hannover.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>MHH</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UKHD<a name=\"mii-cs-meta-diz-standorte-UKHD\"> </a></td><td>Universitätsklinikum Heidelberg</td><td>Heidelberg</td><td/><td>HiGHmed</td><td>ukhd.de</td><td>active</td><td/><td>true</td><td>V6.15</td><td>true</td><td>UKHD</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UKJ<a name=\"mii-cs-meta-diz-standorte-UKJ\"> </a></td><td>Universitätsklinikum Jena</td><td>Jena</td><td/><td>SMITH</td><td>uniklinikum-jena.de</td><td>active</td><td/><td/><td>V6.14</td><td>true</td><td>UKJ</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UKK<a name=\"mii-cs-meta-diz-standorte-UKK\"> </a></td><td>Universitätsklinikum Köln</td><td>Köln</td><td/><td>HiGHmed</td><td>uk-koeln.de</td><td>active</td><td/><td>true</td><td>V6.15</td><td>true</td><td>UKK</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UKL<a name=\"mii-cs-meta-diz-standorte-UKL\"> </a></td><td>Universitätsklinikum Leipzig</td><td>Leipzig</td><td/><td>SMITH</td><td>uniklinikum-leipzig.de</td><td>active</td><td/><td>true</td><td>V6.15</td><td>true</td><td>UKL</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UL<a name=\"mii-cs-meta-diz-standorte-UL\"> </a></td><td>Universität Leipzig</td><td>Leipzig</td><td/><td>SMITH</td><td>uniklinikum-leipzig.de</td><td>active</td><td/><td/><td>V6.15</td><td/><td>UL</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UMMD<a name=\"mii-cs-meta-diz-standorte-UMMD\"> </a></td><td>Universitätsklinikum Magdeburg</td><td>Magdeburg</td><td/><td>MIRACUM</td><td>www.med.uni-magdeburg.de</td><td>active</td><td/><td/><td>V6.14</td><td>true</td><td>UMMD</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UM<a name=\"mii-cs-meta-diz-standorte-UM\"> </a></td><td>Universitätsmedizin der Johannes Gutenberg-Universität Mainz</td><td>Mainz</td><td/><td>MIRACUM</td><td>unimedizin-mainz.de</td><td>active</td><td/><td/><td>V6.14</td><td>true</td><td>UM</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UMM<a name=\"mii-cs-meta-diz-standorte-UMM\"> </a></td><td>Universitätsklinikum Mannheim</td><td>Mannheim</td><td/><td>MIRACUM</td><td>umm.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UMM</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UKMR<a name=\"mii-cs-meta-diz-standorte-UKMR\"> </a></td><td>Universitätsklinikum Marburg</td><td>Marburg</td><td/><td>MIRACUM</td><td>uni-marburg.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UKMR</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">KUM<a name=\"mii-cs-meta-diz-standorte-KUM\"> </a></td><td>Klinikum der Universität München (LMU)</td><td>München</td><td/><td>DIFUTURE</td><td>lmu-klinikum.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>KUM</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">MRI<a name=\"mii-cs-meta-diz-standorte-MRI\"> </a></td><td>Klinikum rechts der Isar (TUM)</td><td>München</td><td/><td>DIFUTURE</td><td>mri.tum.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>MRI</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UKM<a name=\"mii-cs-meta-diz-standorte-UKM\"> </a></td><td>Universitätsklinikum Münster</td><td>Münster</td><td/><td>HiGHmed</td><td>ukm.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UKM</td><td/><td/></tr><tr style=\"background-color: #ffeeee\"><td style=\"white-space:nowrap\">UOL<a name=\"mii-cs-meta-diz-standorte-UOL\"> </a></td><td>Carl von Ossietzky Universität Oldenburg</td><td>Oldenburg</td><td>Deprecated</td><td>HiGHmed</td><td/><td>deprecated</td><td>2024-10-23</td><td/><td/><td/><td/><td/><td>UMO</td></tr><tr><td style=\"white-space:nowrap\">UMO<a name=\"mii-cs-meta-diz-standorte-UMO\"> </a></td><td>Carl von Ossietzky Universität Oldenburg</td><td>Oldenburg</td><td/><td>HiGHmed</td><td>uol.de</td><td>active</td><td/><td/><td>V6.14</td><td>true</td><td>UMO</td><td>UOL</td><td/></tr><tr><td style=\"white-space:nowrap\">UKR<a name=\"mii-cs-meta-diz-standorte-UKR\"> </a></td><td>Universitätsklinikum Regensburg</td><td>Regensburg</td><td/><td>DIFUTURE</td><td>ukr.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UKR</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UMR<a name=\"mii-cs-meta-diz-standorte-UMR\"> </a></td><td>Universitätsmedizin Rostock</td><td>Rostock</td><td/><td>SMITH</td><td>med.uni-rostock.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UMR</td><td/><td/></tr><tr style=\"background-color: #ffeeee\"><td style=\"white-space:nowrap\">UKS<a name=\"mii-cs-meta-diz-standorte-UKS\"> </a></td><td>Universitätsklinikum des Saarlandes</td><td>Saarbrücken / Homburg</td><td>Deprecated</td><td>DIFUTURE</td><td>uks.eu</td><td>deprecated</td><td>2024-10-15</td><td/><td/><td/><td/><td/><td>UdS</td></tr><tr><td style=\"white-space:nowrap\">UdS<a name=\"mii-cs-meta-diz-standorte-UdS\"> </a></td><td>Universität des Saarlandes, Medizinische Fakultät</td><td>Saarbrücken / Homburg</td><td/><td>DIFUTURE</td><td>med.uni-saarland.de</td><td>active</td><td/><td/><td>V6.14</td><td>true</td><td>UdS</td><td>UKS</td><td/></tr><tr><td style=\"white-space:nowrap\">UKSH<a name=\"mii-cs-meta-diz-standorte-UKSH\"> </a></td><td>Universitätsklinikum Schleswig-Holstein</td><td>Schleswig-Holstein</td><td/><td>HiGHmed</td><td>uksh.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UKSH</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">BHC<a name=\"mii-cs-meta-diz-standorte-BHC\"> </a></td><td>Bosch Health Campus</td><td>Stuttgart</td><td/><td>HiGHmed</td><td>rbk.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>BHC</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UKT<a name=\"mii-cs-meta-diz-standorte-UKT\"> </a></td><td>Universitätsklinikum Tübingen</td><td>Tübingen</td><td/><td>DIFUTURE</td><td>medizin.uni-tuebingen.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UKT</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UKU<a name=\"mii-cs-meta-diz-standorte-UKU\"> </a></td><td>Universitätsklinikum Ulm</td><td>Ulm</td><td/><td>DIFUTURE</td><td>uniklinik-ulm.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UKU</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UKW<a name=\"mii-cs-meta-diz-standorte-UKW\"> </a></td><td>Universitätsklinikum Würzburg</td><td>Würzburg</td><td/><td>HiGHmed</td><td>ukw.de</td><td>active</td><td/><td>true</td><td>V6.15</td><td>true</td><td>UKW</td><td/><td/></tr><tr style=\"background-color: #ffeeee\"><td style=\"white-space:nowrap\">HUKW<a name=\"mii-cs-meta-diz-standorte-HUKW\"> </a></td><td>Universität Witten/Herdecke</td><td>Witten / Herdecke</td><td>Deprecated</td><td>NA</td><td/><td>deprecated</td><td>2024-07-09</td><td/><td/><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">FDPG<a name=\"mii-cs-meta-diz-standorte-FDPG\"> </a></td><td>Forschungsdatenportal für Gesundheit</td><td/><td/><td>MII</td><td>forschen-fuer-gesundheit.de</td><td>active</td><td/><td>true</td><td>V6.14</td><td/><td>FDPG</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">HiGHmed<a name=\"mii-cs-meta-diz-standorte-HiGHmed\"> </a></td><td>HiGHmed e.V.</td><td>Heidelberg</td><td/><td>MII</td><td>highmed.org</td><td>active</td><td/><td>true</td><td>V6.15</td><td/><td>HiGHmed</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">HHN<a name=\"mii-cs-meta-diz-standorte-HHN\"> </a></td><td>Hochschule Heilbronn</td><td>Heilbronn</td><td/><td>MII</td><td>hs-heilbronn.de</td><td>active</td><td/><td/><td>V6.14</td><td/><td>HHN</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">CRR<a name=\"mii-cs-meta-diz-standorte-CRR\"> </a></td><td>Zentrale Plattform NUM</td><td/><td/><td>NUM</td><td>num-codex.de</td><td>active</td><td/><td/><td/><td/><td>CRR</td><td/><td/></tr></table></div><div xml:lang=\"de\" lang=\"de\"><hr/><p><b>German</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem mii-cs-meta-diz-standorte</b></p><a name=\"de-mii-cs-meta-diz-standorte\"> </a><a name=\"de-hcmii-cs-meta-diz-standorte\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html\">Shareable CodeSystem</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-shareablecodesystem.html\">CRMI Shareable CodeSystem</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-publishablecodesystem.html\">CRMI Publishable CodeSystem</a></p></div><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>consortium</td><td>consortium</td><td>https://www.medizininformatik-initiative.de/de/konsortien</td><td>string</td><td/></tr><tr><td>uri</td><td>uri</td><td>https://www.medizininformatik-initiative.de/de/konsortien/datenintegrationszentren</td><td>string</td><td/></tr><tr><td>status</td><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td/></tr><tr><td>deprecationDate</td><td>deprecationDate</td><td>http://hl7.org/fhir/concept-properties#deprecationDate</td><td>dateTime</td><td/></tr><tr><td>retirementDate</td><td>retirementDate</td><td>http://hl7.org/fhir/concept-properties#retirementDate</td><td>dateTime</td><td/></tr><tr><td>dataManagement</td><td>dataManagement</td><td/><td>boolean</td><td>Datenmanagementstelle (true / false)</td></tr><tr><td>contract</td><td>contract</td><td/><td>string</td><td>Teilnahmerahmenvertrag (Version)</td></tr><tr><td>dic</td><td>dic</td><td/><td>boolean</td><td>Datenintegrationszentrum (true / false)</td></tr><tr><td>abbreviation</td><td>abbreviation</td><td/><td>string</td><td>Abkürzung (Kürzel)</td></tr><tr><td>replaces</td><td>replaces</td><td/><td>code</td><td>ersetzt (alter Code)</td></tr><tr><td>replacedBy</td><td>replacedBy</td><td/><td>code</td><td>ersetzt durch (neuer Code)</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>Deprecated</b></td><td><b>consortium</b></td><td><b>uri</b></td><td><b>status</b></td><td><b>deprecationDate</b></td><td><b>dataManagement</b></td><td><b>contract</b></td><td><b>dic</b></td><td><b>abbreviation</b></td><td><b>replaces</b></td><td><b>replacedBy</b></td></tr><tr><td style=\"white-space:nowrap\">UKA<a name=\"de-mii-cs-meta-diz-standorte-UKA\"> </a></td><td>Uniklinik RWTH Aachen</td><td>Aachen</td><td/><td>SMITH</td><td>ukaachen.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UKA</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UKAU<a name=\"de-mii-cs-meta-diz-standorte-UKAU\"> </a></td><td>Universitätsklinikum Augsburg</td><td>Augsburg</td><td/><td>DIFUTURE</td><td>uk-augsburg.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UKAU</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">Charité<a name=\"de-mii-cs-meta-diz-standorte-Charit.233\"> </a></td><td>Charité - Universitätsmedizin Berlin</td><td>Berlin</td><td/><td>HiGHmed</td><td>charite.de</td><td>active</td><td/><td>true</td><td>V6.15</td><td>true</td><td>Charité</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">VIV<a name=\"de-mii-cs-meta-diz-standorte-VIV\"> </a></td><td>Vivantes Netzwerk für Gesundheit GmbH</td><td>Berlin</td><td/><td>HiGHmed</td><td>vivantes.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>VIV</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UKOWL<a name=\"de-mii-cs-meta-diz-standorte-UKOWL\"> </a></td><td>Universität Bielefeld / Universitätsklinikum OWL</td><td>Bielefeld</td><td/><td>HiGHmed</td><td>ukowl.de</td><td>active</td><td/><td/><td>V6.14</td><td>true</td><td>UKOWL</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UKRUB<a name=\"de-mii-cs-meta-diz-standorte-UKRUB\"> </a></td><td>Universitätsklinikum der Ruhr-Universität Bochum</td><td>Bochum</td><td/><td>SMITH</td><td>rub.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UKRUB</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UKB<a name=\"de-mii-cs-meta-diz-standorte-UKB\"> </a></td><td>Universitätsklinikum Bonn</td><td>Bonn</td><td/><td>SMITH</td><td>ukbonn.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UKB</td><td/><td/></tr><tr style=\"background-color: #ffeeee\"><td style=\"white-space:nowrap\">KC<a name=\"de-mii-cs-meta-diz-standorte-KC\"> </a></td><td>Klinikum Chemnitz</td><td>Chemnitz</td><td>Deprecated</td><td>MIRACUM</td><td>klinikumchemnitz.de</td><td>deprecated</td><td>2024-03-01</td><td/><td/><td/><td/><td/><td>KCH</td></tr><tr><td style=\"white-space:nowrap\">KCH<a name=\"de-mii-cs-meta-diz-standorte-KCH\"> </a></td><td>Klinikum Chemnitz</td><td>Chemnitz</td><td/><td>MIRACUM</td><td>klinikumchemnitz.de</td><td>active</td><td/><td/><td>V6.14</td><td>true</td><td>KCH</td><td>KC</td><td/></tr><tr style=\"background-color: #ffeeee\"><td style=\"white-space:nowrap\">CTK<a name=\"de-mii-cs-meta-diz-standorte-CTK\"> </a></td><td>Carl-Thiem-Klinikum Cottbus</td><td>Cottbus</td><td>Deprecated</td><td>HiGHmed</td><td>ctk.de</td><td>deprecated</td><td>2024-07-03</td><td/><td/><td/><td/><td/><td>MUL-CT</td></tr><tr><td style=\"white-space:nowrap\">MUL-CT<a name=\"de-mii-cs-meta-diz-standorte-MUL-CT\"> </a></td><td>Medizinische Universität Lausitz - Carl Thiem</td><td>Cottbus</td><td/><td>HiGHmed</td><td>mul-ct.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>MUL-CT</td><td>CTK</td><td/></tr><tr><td style=\"white-space:nowrap\">UKDD<a name=\"de-mii-cs-meta-diz-standorte-UKDD\"> </a></td><td>Universitätsklinikum Carl Gustav Carus Dresden</td><td>Dresden</td><td/><td>MIRACUM</td><td>ukdd.de</td><td>active</td><td/><td>true</td><td>V6.15</td><td>true</td><td>UKDD</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UKD<a name=\"de-mii-cs-meta-diz-standorte-UKD\"> </a></td><td>Universitätsklinikum Düsseldorf</td><td>Düsseldorf</td><td/><td>SMITH</td><td>uniklinik-duesseldorf.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UKD</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UKEr<a name=\"de-mii-cs-meta-diz-standorte-UKEr\"> </a></td><td>Universitätsklinikum Erlangen</td><td>Erlangen</td><td/><td>MIRACUM</td><td>www.uk-erlangen.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UKEr</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UME<a name=\"de-mii-cs-meta-diz-standorte-UME\"> </a></td><td>Universitätsklinikum Essen</td><td>Essen</td><td/><td>SMITH</td><td>uk-essen.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UME</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UKF<a name=\"de-mii-cs-meta-diz-standorte-UKF\"> </a></td><td>Universitätsklinikum Frankfurt</td><td>Frankfurt</td><td/><td>MIRACUM</td><td>unimedizin-ffm.de</td><td>active</td><td/><td/><td>V6.14</td><td>true</td><td>UKF</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UKFR<a name=\"de-mii-cs-meta-diz-standorte-UKFR\"> </a></td><td>Universitätsklinikum Freiburg</td><td>Freiburg</td><td/><td>MIRACUM</td><td>uniklinik-freiburg.de</td><td>active</td><td/><td/><td>V6.14</td><td>true</td><td>UKFR</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UKGI<a name=\"de-mii-cs-meta-diz-standorte-UKGI\"> </a></td><td>Universitätsklinikum Gießen</td><td>Gießen</td><td/><td>MIRACUM</td><td>uni-giessen.de</td><td>active</td><td/><td>true</td><td>V6.15</td><td>true</td><td>UKGI</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UMG<a name=\"de-mii-cs-meta-diz-standorte-UMG\"> </a></td><td>Universitätsmedizin Göttingen</td><td>Göttingen</td><td/><td>HiGHmed</td><td>umg.eu</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UMG</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UMG-DMS<a name=\"de-mii-cs-meta-diz-standorte-UMG-DMS\"> </a></td><td>Universitätsmedizin Göttingen - DMS</td><td>Göttingen</td><td/><td>HiGHmed</td><td>dms.umg.eu</td><td>active</td><td/><td>true</td><td>V6.15</td><td/><td>UMG-DMS</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UKG<a name=\"de-mii-cs-meta-diz-standorte-UKG\"> </a></td><td>Universitätsmedizin Greifswald</td><td>Greifswald</td><td/><td>MIRACUM</td><td>www.medizin.uni-greifswald.de</td><td>active</td><td/><td/><td>V6.14</td><td>true</td><td>UKG</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UKH<a name=\"de-mii-cs-meta-diz-standorte-UKH\"> </a></td><td>Universitätsklinikum Halle (Saale)</td><td>Halle (Saale)</td><td/><td>SMITH</td><td>uk-halle.de</td><td>active</td><td/><td>true</td><td>V6.15</td><td>true</td><td>UKH</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UKE<a name=\"de-mii-cs-meta-diz-standorte-UKE\"> </a></td><td>Universitätsklinikum Hamburg-Eppendorf</td><td>Hamburg</td><td/><td>SMITH</td><td>uke.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UKE</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">MHH<a name=\"de-mii-cs-meta-diz-standorte-MHH\"> </a></td><td>Medizinische Hochschule Hannover</td><td>Hannover</td><td/><td>HiGHmed</td><td>mh-hannover.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>MHH</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UKHD<a name=\"de-mii-cs-meta-diz-standorte-UKHD\"> </a></td><td>Universitätsklinikum Heidelberg</td><td>Heidelberg</td><td/><td>HiGHmed</td><td>ukhd.de</td><td>active</td><td/><td>true</td><td>V6.15</td><td>true</td><td>UKHD</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UKJ<a name=\"de-mii-cs-meta-diz-standorte-UKJ\"> </a></td><td>Universitätsklinikum Jena</td><td>Jena</td><td/><td>SMITH</td><td>uniklinikum-jena.de</td><td>active</td><td/><td/><td>V6.14</td><td>true</td><td>UKJ</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UKK<a name=\"de-mii-cs-meta-diz-standorte-UKK\"> </a></td><td>Universitätsklinikum Köln</td><td>Köln</td><td/><td>HiGHmed</td><td>uk-koeln.de</td><td>active</td><td/><td>true</td><td>V6.15</td><td>true</td><td>UKK</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UKL<a name=\"de-mii-cs-meta-diz-standorte-UKL\"> </a></td><td>Universitätsklinikum Leipzig</td><td>Leipzig</td><td/><td>SMITH</td><td>uniklinikum-leipzig.de</td><td>active</td><td/><td>true</td><td>V6.15</td><td>true</td><td>UKL</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UL<a name=\"de-mii-cs-meta-diz-standorte-UL\"> </a></td><td>Universität Leipzig</td><td>Leipzig</td><td/><td>SMITH</td><td>uniklinikum-leipzig.de</td><td>active</td><td/><td/><td>V6.15</td><td/><td>UL</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UMMD<a name=\"de-mii-cs-meta-diz-standorte-UMMD\"> </a></td><td>Universitätsklinikum Magdeburg</td><td>Magdeburg</td><td/><td>MIRACUM</td><td>www.med.uni-magdeburg.de</td><td>active</td><td/><td/><td>V6.14</td><td>true</td><td>UMMD</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UM<a name=\"de-mii-cs-meta-diz-standorte-UM\"> </a></td><td>Universitätsmedizin der Johannes Gutenberg-Universität Mainz</td><td>Mainz</td><td/><td>MIRACUM</td><td>unimedizin-mainz.de</td><td>active</td><td/><td/><td>V6.14</td><td>true</td><td>UM</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UMM<a name=\"de-mii-cs-meta-diz-standorte-UMM\"> </a></td><td>Universitätsklinikum Mannheim</td><td>Mannheim</td><td/><td>MIRACUM</td><td>umm.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UMM</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UKMR<a name=\"de-mii-cs-meta-diz-standorte-UKMR\"> </a></td><td>Universitätsklinikum Marburg</td><td>Marburg</td><td/><td>MIRACUM</td><td>uni-marburg.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UKMR</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">KUM<a name=\"de-mii-cs-meta-diz-standorte-KUM\"> </a></td><td>Klinikum der Universität München (LMU)</td><td>München</td><td/><td>DIFUTURE</td><td>lmu-klinikum.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>KUM</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">MRI<a name=\"de-mii-cs-meta-diz-standorte-MRI\"> </a></td><td>Klinikum rechts der Isar (TUM)</td><td>München</td><td/><td>DIFUTURE</td><td>mri.tum.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>MRI</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UKM<a name=\"de-mii-cs-meta-diz-standorte-UKM\"> </a></td><td>Universitätsklinikum Münster</td><td>Münster</td><td/><td>HiGHmed</td><td>ukm.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UKM</td><td/><td/></tr><tr style=\"background-color: #ffeeee\"><td style=\"white-space:nowrap\">UOL<a name=\"de-mii-cs-meta-diz-standorte-UOL\"> </a></td><td>Carl von Ossietzky Universität Oldenburg</td><td>Oldenburg</td><td>Deprecated</td><td>HiGHmed</td><td/><td>deprecated</td><td>2024-10-23</td><td/><td/><td/><td/><td/><td>UMO</td></tr><tr><td style=\"white-space:nowrap\">UMO<a name=\"de-mii-cs-meta-diz-standorte-UMO\"> </a></td><td>Carl von Ossietzky Universität Oldenburg</td><td>Oldenburg</td><td/><td>HiGHmed</td><td>uol.de</td><td>active</td><td/><td/><td>V6.14</td><td>true</td><td>UMO</td><td>UOL</td><td/></tr><tr><td style=\"white-space:nowrap\">UKR<a name=\"de-mii-cs-meta-diz-standorte-UKR\"> </a></td><td>Universitätsklinikum Regensburg</td><td>Regensburg</td><td/><td>DIFUTURE</td><td>ukr.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UKR</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UMR<a name=\"de-mii-cs-meta-diz-standorte-UMR\"> </a></td><td>Universitätsmedizin Rostock</td><td>Rostock</td><td/><td>SMITH</td><td>med.uni-rostock.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UMR</td><td/><td/></tr><tr style=\"background-color: #ffeeee\"><td style=\"white-space:nowrap\">UKS<a name=\"de-mii-cs-meta-diz-standorte-UKS\"> </a></td><td>Universitätsklinikum des Saarlandes</td><td>Saarbrücken / Homburg</td><td>Deprecated</td><td>DIFUTURE</td><td>uks.eu</td><td>deprecated</td><td>2024-10-15</td><td/><td/><td/><td/><td/><td>UdS</td></tr><tr><td style=\"white-space:nowrap\">UdS<a name=\"de-mii-cs-meta-diz-standorte-UdS\"> </a></td><td>Universität des Saarlandes, Medizinische Fakultät</td><td>Saarbrücken / Homburg</td><td/><td>DIFUTURE</td><td>med.uni-saarland.de</td><td>active</td><td/><td/><td>V6.14</td><td>true</td><td>UdS</td><td>UKS</td><td/></tr><tr><td style=\"white-space:nowrap\">UKSH<a name=\"de-mii-cs-meta-diz-standorte-UKSH\"> </a></td><td>Universitätsklinikum Schleswig-Holstein</td><td>Schleswig-Holstein</td><td/><td>HiGHmed</td><td>uksh.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UKSH</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">BHC<a name=\"de-mii-cs-meta-diz-standorte-BHC\"> </a></td><td>Bosch Health Campus</td><td>Stuttgart</td><td/><td>HiGHmed</td><td>rbk.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>BHC</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UKT<a name=\"de-mii-cs-meta-diz-standorte-UKT\"> </a></td><td>Universitätsklinikum Tübingen</td><td>Tübingen</td><td/><td>DIFUTURE</td><td>medizin.uni-tuebingen.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UKT</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UKU<a name=\"de-mii-cs-meta-diz-standorte-UKU\"> </a></td><td>Universitätsklinikum Ulm</td><td>Ulm</td><td/><td>DIFUTURE</td><td>uniklinik-ulm.de</td><td>active</td><td/><td/><td>V6.15</td><td>true</td><td>UKU</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">UKW<a name=\"de-mii-cs-meta-diz-standorte-UKW\"> </a></td><td>Universitätsklinikum Würzburg</td><td>Würzburg</td><td/><td>HiGHmed</td><td>ukw.de</td><td>active</td><td/><td>true</td><td>V6.15</td><td>true</td><td>UKW</td><td/><td/></tr><tr style=\"background-color: #ffeeee\"><td style=\"white-space:nowrap\">HUKW<a name=\"de-mii-cs-meta-diz-standorte-HUKW\"> </a></td><td>Universität Witten/Herdecke</td><td>Witten / Herdecke</td><td>Deprecated</td><td>NA</td><td/><td>deprecated</td><td>2024-07-09</td><td/><td/><td/><td/><td/><td/></tr><tr><td style=\"white-space:nowrap\">FDPG<a name=\"de-mii-cs-meta-diz-standorte-FDPG\"> </a></td><td>Forschungsdatenportal für Gesundheit</td><td/><td/><td>MII</td><td>forschen-fuer-gesundheit.de</td><td>active</td><td/><td>true</td><td>V6.14</td><td/><td>FDPG</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">HiGHmed<a name=\"de-mii-cs-meta-diz-standorte-HiGHmed\"> </a></td><td>HiGHmed e.V.</td><td>Heidelberg</td><td/><td>MII</td><td>highmed.org</td><td>active</td><td/><td>true</td><td>V6.15</td><td/><td>HiGHmed</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">HHN<a name=\"de-mii-cs-meta-diz-standorte-HHN\"> </a></td><td>Hochschule Heilbronn</td><td>Heilbronn</td><td/><td>MII</td><td>hs-heilbronn.de</td><td>active</td><td/><td/><td>V6.14</td><td/><td>HHN</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">CRR<a name=\"de-mii-cs-meta-diz-standorte-CRR\"> </a></td><td>Zentrale Plattform NUM</td><td/><td/><td>NUM</td><td>num-codex.de</td><td>active</td><td/><td/><td/><td/><td>CRR</td><td/><td/></tr></table></div></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+    "valueCoding" : {
+      "system" : "http://hl7.org/fhir/version-algorithm",
+      "code" : "semver",
+      "display" : "SemVer"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+    "valueCode" : "shareable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+    "valueCode" : "publishable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+        "version" : "3.0.0",
+        "code" : "package",
+        "display" : "Package"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/resource-approvalDate",
+    "valueDate" : "2026-08-31"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+    "valuePeriod" : {
+      "start" : "2027"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-topic",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "code" : "C80260"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-author",
+    "valueContactDetail" : {
+      "telecom" : [{
+        "system" : "email",
+        "value" : "julian.sass@charite.de"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-editor",
+    "valueContactDetail" : {
+      "name" : "Taskforce Core Data Set"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-reviewer",
+    "valueContactDetail" : {
+      "name" : "Interoperability Working Group",
+      "telecom" : [{
+        "system" : "url",
+        "value" : "https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-reviewer",
+    "valueContactDetail" : {
+      "name" : "National Steering Committee",
+      "telecom" : [{
+        "system" : "url",
+        "value" : "https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-endorser",
+    "valueContactDetail" : {
+      "name" : "Interoperability Working Group",
+      "telecom" : [{
+        "system" : "url",
+        "value" : "https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-endorser",
+    "valueContactDetail" : {
+      "name" : "National Steering Committee",
+      "telecom" : [{
+        "system" : "url",
+        "value" : "https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"
+      }]
+    }
+  }],
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+  "version" : "2027.0.0-ballot.rc3",
+  "name" : "MII_CS_Meta_DIZ_Standorte",
+  "title" : "MII CS Meta DIZ Standorte",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-09-01",
+  "publisher" : "NUM-DIZ",
+  "_publisher" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "lang",
+        "valueCode" : "de"
+      },
+      {
+        "url" : "content",
+        "valueString" : "NUM-DIZ"
+      }],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    }]
+  },
+  "contact" : [{
+    "name" : "NUM-DIZ",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.netzwerk-universitaetsmedizin.de"
+    }]
+  }],
+  "description" : "Medizininformatik-Initiative Standorte",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "copyright" : "Medizininformatik-Initiative",
+  "caseSensitive" : true,
+  "valueSet" : "https://www.medizininformatik-initiative.de/fhir/core/ValueSet/core-location-identifier",
+  "compositional" : false,
+  "content" : "complete",
+  "count" : 52,
+  "property" : [{
+    "code" : "consortium",
+    "uri" : "https://www.medizininformatik-initiative.de/de/konsortien",
+    "type" : "string"
+  },
+  {
+    "code" : "uri",
+    "uri" : "https://www.medizininformatik-initiative.de/de/konsortien/datenintegrationszentren",
+    "type" : "string"
+  },
+  {
+    "code" : "status",
+    "uri" : "http://hl7.org/fhir/concept-properties#status",
+    "type" : "code"
+  },
+  {
+    "code" : "deprecationDate",
+    "uri" : "http://hl7.org/fhir/concept-properties#deprecationDate",
+    "type" : "dateTime"
+  },
+  {
+    "code" : "retirementDate",
+    "uri" : "http://hl7.org/fhir/concept-properties#retirementDate",
+    "type" : "dateTime"
+  },
+  {
+    "code" : "dataManagement",
+    "description" : "Datenmanagementstelle (true / false)",
+    "type" : "boolean"
+  },
+  {
+    "code" : "contract",
+    "description" : "Teilnahmerahmenvertrag (Version)",
+    "type" : "string"
+  },
+  {
+    "code" : "dic",
+    "description" : "Datenintegrationszentrum (true / false)",
+    "type" : "boolean"
+  },
+  {
+    "code" : "abbreviation",
+    "description" : "Abkürzung (Kürzel)",
+    "type" : "string"
+  },
+  {
+    "code" : "replaces",
+    "description" : "ersetzt (alter Code)",
+    "type" : "code"
+  },
+  {
+    "code" : "replacedBy",
+    "description" : "ersetzt durch (neuer Code)",
+    "type" : "code"
+  }],
+  "concept" : [{
+    "code" : "UKA",
+    "display" : "Uniklinik RWTH Aachen",
+    "definition" : "Aachen",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "SMITH"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "ukaachen.de"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "contract",
+      "valueString" : "V6.15"
+    },
+    {
+      "code" : "abbreviation",
+      "valueString" : "UKA"
+    },
+    {
+      "code" : "dic",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "UKAU",
+    "display" : "Universitätsklinikum Augsburg",
+    "definition" : "Augsburg",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "DIFUTURE"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "uk-augsburg.de"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "contract",
+      "valueString" : "V6.15"
+    },
+    {
+      "code" : "abbreviation",
+      "valueString" : "UKAU"
+    },
+    {
+      "code" : "dic",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "Charité",
+    "display" : "Charité - Universitätsmedizin Berlin",
+    "definition" : "Berlin",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "HiGHmed"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "charite.de"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "dataManagement",
+      "valueBoolean" : true
+    },
+    {
+      "code" : "contract",
+      "valueString" : "V6.15"
+    },
+    {
+      "code" : "abbreviation",
+      "valueString" : "Charité"
+    },
+    {
+      "code" : "dic",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "VIV",
+    "display" : "Vivantes Netzwerk für Gesundheit GmbH",
+    "definition" : "Berlin",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "HiGHmed"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "vivantes.de"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "contract",
+      "valueString" : "V6.15"
+    },
+    {
+      "code" : "abbreviation",
+      "valueString" : "VIV"
+    },
+    {
+      "code" : "dic",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "UKOWL",
+    "display" : "Universität Bielefeld / Universitätsklinikum OWL",
+    "definition" : "Bielefeld",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "HiGHmed"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "ukowl.de"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "contract",
+      "valueString" : "V6.14"
+    },
+    {
+      "code" : "abbreviation",
+      "valueString" : "UKOWL"
+    },
+    {
+      "code" : "dic",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "UKRUB",
+    "display" : "Universitätsklinikum der Ruhr-Universität Bochum",
+    "definition" : "Bochum",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "SMITH"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "rub.de"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "contract",
+      "valueString" : "V6.15"
+    },
+    {
+      "code" : "abbreviation",
+      "valueString" : "UKRUB"
+    },
+    {
+      "code" : "dic",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "UKB",
+    "display" : "Universitätsklinikum Bonn",
+    "definition" : "Bonn",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "SMITH"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "ukbonn.de"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "contract",
+      "valueString" : "V6.15"
+    },
+    {
+      "code" : "abbreviation",
+      "valueString" : "UKB"
+    },
+    {
+      "code" : "dic",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "KC",
+    "display" : "Klinikum Chemnitz",
+    "definition" : "Chemnitz",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "MIRACUM"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "klinikumchemnitz.de"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "deprecated"
+    },
+    {
+      "code" : "replacedBy",
+      "valueCode" : "KCH"
+    },
+    {
+      "code" : "deprecationDate",
+      "valueDateTime" : "2024-03-01"
+    }]
+  },
+  {
+    "code" : "KCH",
+    "display" : "Klinikum Chemnitz",
+    "definition" : "Chemnitz",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "MIRACUM"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "klinikumchemnitz.de"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "contract",
+      "valueString" : "V6.14"
+    },
+    {
+      "code" : "replaces",
+      "valueCode" : "KC"
+    },
+    {
+      "code" : "abbreviation",
+      "valueString" : "KCH"
+    },
+    {
+      "code" : "dic",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "CTK",
+    "display" : "Carl-Thiem-Klinikum Cottbus",
+    "definition" : "Cottbus",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "HiGHmed"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "ctk.de"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "deprecated"
+    },
+    {
+      "code" : "replacedBy",
+      "valueCode" : "MUL-CT"
+    },
+    {
+      "code" : "deprecationDate",
+      "valueDateTime" : "2024-07-03"
+    }]
+  },
+  {
+    "code" : "MUL-CT",
+    "display" : "Medizinische Universität Lausitz - Carl Thiem",
+    "definition" : "Cottbus",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "HiGHmed"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "mul-ct.de"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "contract",
+      "valueString" : "V6.15"
+    },
+    {
+      "code" : "replaces",
+      "valueCode" : "CTK"
+    },
+    {
+      "code" : "abbreviation",
+      "valueString" : "MUL-CT"
+    },
+    {
+      "code" : "dic",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "UKDD",
+    "display" : "Universitätsklinikum Carl Gustav Carus Dresden",
+    "definition" : "Dresden",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "MIRACUM"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "ukdd.de"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "dataManagement",
+      "valueBoolean" : true
+    },
+    {
+      "code" : "contract",
+      "valueString" : "V6.15"
+    },
+    {
+      "code" : "abbreviation",
+      "valueString" : "UKDD"
+    },
+    {
+      "code" : "dic",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "UKD",
+    "display" : "Universitätsklinikum Düsseldorf",
+    "definition" : "Düsseldorf",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "SMITH"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "uniklinik-duesseldorf.de"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "contract",
+      "valueString" : "V6.15"
+    },
+    {
+      "code" : "abbreviation",
+      "valueString" : "UKD"
+    },
+    {
+      "code" : "dic",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "UKEr",
+    "display" : "Universitätsklinikum Erlangen",
+    "definition" : "Erlangen",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "MIRACUM"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "www.uk-erlangen.de"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "contract",
+      "valueString" : "V6.15"
+    },
+    {
+      "code" : "abbreviation",
+      "valueString" : "UKEr"
+    },
+    {
+      "code" : "dic",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "UME",
+    "display" : "Universitätsklinikum Essen",
+    "definition" : "Essen",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "SMITH"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "uk-essen.de"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "contract",
+      "valueString" : "V6.15"
+    },
+    {
+      "code" : "abbreviation",
+      "valueString" : "UME"
+    },
+    {
+      "code" : "dic",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "UKF",
+    "display" : "Universitätsklinikum Frankfurt",
+    "definition" : "Frankfurt",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "MIRACUM"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "unimedizin-ffm.de"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "contract",
+      "valueString" : "V6.14"
+    },
+    {
+      "code" : "abbreviation",
+      "valueString" : "UKF"
+    },
+    {
+      "code" : "dic",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "UKFR",
+    "display" : "Universitätsklinikum Freiburg",
+    "definition" : "Freiburg",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "MIRACUM"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "uniklinik-freiburg.de"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "contract",
+      "valueString" : "V6.14"
+    },
+    {
+      "code" : "abbreviation",
+      "valueString" : "UKFR"
+    },
+    {
+      "code" : "dic",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "UKGI",
+    "display" : "Universitätsklinikum Gießen",
+    "definition" : "Gießen",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "MIRACUM"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "uni-giessen.de"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "dataManagement",
+      "valueBoolean" : true
+    },
+    {
+      "code" : "contract",
+      "valueString" : "V6.15"
+    },
+    {
+      "code" : "abbreviation",
+      "valueString" : "UKGI"
+    },
+    {
+      "code" : "dic",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "UMG",
+    "display" : "Universitätsmedizin Göttingen",
+    "definition" : "Göttingen",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "HiGHmed"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "umg.eu"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "contract",
+      "valueString" : "V6.15"
+    },
+    {
+      "code" : "abbreviation",
+      "valueString" : "UMG"
+    },
+    {
+      "code" : "dic",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "UMG-DMS",
+    "display" : "Universitätsmedizin Göttingen - DMS",
+    "definition" : "Göttingen",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "HiGHmed"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "dms.umg.eu"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "dataManagement",
+      "valueBoolean" : true
+    },
+    {
+      "code" : "contract",
+      "valueString" : "V6.15"
+    },
+    {
+      "code" : "abbreviation",
+      "valueString" : "UMG-DMS"
+    }]
+  },
+  {
+    "code" : "UKG",
+    "display" : "Universitätsmedizin Greifswald",
+    "definition" : "Greifswald",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "MIRACUM"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "www.medizin.uni-greifswald.de"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "contract",
+      "valueString" : "V6.14"
+    },
+    {
+      "code" : "abbreviation",
+      "valueString" : "UKG"
+    },
+    {
+      "code" : "dic",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "UKH",
+    "display" : "Universitätsklinikum Halle (Saale)",
+    "definition" : "Halle (Saale)",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "SMITH"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "uk-halle.de"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "dataManagement",
+      "valueBoolean" : true
+    },
+    {
+      "code" : "contract",
+      "valueString" : "V6.15"
+    },
+    {
+      "code" : "abbreviation",
+      "valueString" : "UKH"
+    },
+    {
+      "code" : "dic",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "UKE",
+    "display" : "Universitätsklinikum Hamburg-Eppendorf",
+    "definition" : "Hamburg",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "SMITH"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "uke.de"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "contract",
+      "valueString" : "V6.15"
+    },
+    {
+      "code" : "abbreviation",
+      "valueString" : "UKE"
+    },
+    {
+      "code" : "dic",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "MHH",
+    "display" : "Medizinische Hochschule Hannover",
+    "definition" : "Hannover",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "HiGHmed"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "mh-hannover.de"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "contract",
+      "valueString" : "V6.15"
+    },
+    {
+      "code" : "abbreviation",
+      "valueString" : "MHH"
+    },
+    {
+      "code" : "dic",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "UKHD",
+    "display" : "Universitätsklinikum Heidelberg",
+    "definition" : "Heidelberg",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "HiGHmed"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "ukhd.de"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "dataManagement",
+      "valueBoolean" : true
+    },
+    {
+      "code" : "contract",
+      "valueString" : "V6.15"
+    },
+    {
+      "code" : "abbreviation",
+      "valueString" : "UKHD"
+    },
+    {
+      "code" : "dic",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "UKJ",
+    "display" : "Universitätsklinikum Jena",
+    "definition" : "Jena",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "SMITH"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "uniklinikum-jena.de"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "contract",
+      "valueString" : "V6.14"
+    },
+    {
+      "code" : "abbreviation",
+      "valueString" : "UKJ"
+    },
+    {
+      "code" : "dic",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "UKK",
+    "display" : "Universitätsklinikum Köln",
+    "definition" : "Köln",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "HiGHmed"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "uk-koeln.de"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "dataManagement",
+      "valueBoolean" : true
+    },
+    {
+      "code" : "contract",
+      "valueString" : "V6.15"
+    },
+    {
+      "code" : "abbreviation",
+      "valueString" : "UKK"
+    },
+    {
+      "code" : "dic",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "UKL",
+    "display" : "Universitätsklinikum Leipzig",
+    "definition" : "Leipzig",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "SMITH"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "uniklinikum-leipzig.de"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "dataManagement",
+      "valueBoolean" : true
+    },
+    {
+      "code" : "contract",
+      "valueString" : "V6.15"
+    },
+    {
+      "code" : "abbreviation",
+      "valueString" : "UKL"
+    },
+    {
+      "code" : "dic",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "UL",
+    "display" : "Universität Leipzig",
+    "definition" : "Leipzig",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "SMITH"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "uniklinikum-leipzig.de"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "contract",
+      "valueString" : "V6.15"
+    },
+    {
+      "code" : "abbreviation",
+      "valueString" : "UL"
+    }]
+  },
+  {
+    "code" : "UMMD",
+    "display" : "Universitätsklinikum Magdeburg",
+    "definition" : "Magdeburg",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "MIRACUM"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "www.med.uni-magdeburg.de"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "contract",
+      "valueString" : "V6.14"
+    },
+    {
+      "code" : "abbreviation",
+      "valueString" : "UMMD"
+    },
+    {
+      "code" : "dic",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "UM",
+    "display" : "Universitätsmedizin der Johannes Gutenberg-Universität Mainz",
+    "definition" : "Mainz",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "MIRACUM"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "unimedizin-mainz.de"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "contract",
+      "valueString" : "V6.14"
+    },
+    {
+      "code" : "abbreviation",
+      "valueString" : "UM"
+    },
+    {
+      "code" : "dic",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "UMM",
+    "display" : "Universitätsklinikum Mannheim",
+    "definition" : "Mannheim",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "MIRACUM"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "umm.de"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "contract",
+      "valueString" : "V6.15"
+    },
+    {
+      "code" : "abbreviation",
+      "valueString" : "UMM"
+    },
+    {
+      "code" : "dic",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "UKMR",
+    "display" : "Universitätsklinikum Marburg",
+    "definition" : "Marburg",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "MIRACUM"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "uni-marburg.de"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "contract",
+      "valueString" : "V6.15"
+    },
+    {
+      "code" : "abbreviation",
+      "valueString" : "UKMR"
+    },
+    {
+      "code" : "dic",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "KUM",
+    "display" : "Klinikum der Universität München (LMU)",
+    "definition" : "München",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "DIFUTURE"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "lmu-klinikum.de"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "contract",
+      "valueString" : "V6.15"
+    },
+    {
+      "code" : "abbreviation",
+      "valueString" : "KUM"
+    },
+    {
+      "code" : "dic",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "MRI",
+    "display" : "Klinikum rechts der Isar (TUM)",
+    "definition" : "München",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "DIFUTURE"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "mri.tum.de"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "contract",
+      "valueString" : "V6.15"
+    },
+    {
+      "code" : "abbreviation",
+      "valueString" : "MRI"
+    },
+    {
+      "code" : "dic",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "UKM",
+    "display" : "Universitätsklinikum Münster",
+    "definition" : "Münster",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "HiGHmed"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "ukm.de"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "contract",
+      "valueString" : "V6.15"
+    },
+    {
+      "code" : "abbreviation",
+      "valueString" : "UKM"
+    },
+    {
+      "code" : "dic",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "UOL",
+    "display" : "Carl von Ossietzky Universität Oldenburg",
+    "definition" : "Oldenburg",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "HiGHmed"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "deprecated"
+    },
+    {
+      "code" : "replacedBy",
+      "valueCode" : "UMO"
+    },
+    {
+      "code" : "deprecationDate",
+      "valueDateTime" : "2024-10-23"
+    }]
+  },
+  {
+    "code" : "UMO",
+    "display" : "Carl von Ossietzky Universität Oldenburg",
+    "definition" : "Oldenburg",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "HiGHmed"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "uol.de"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "contract",
+      "valueString" : "V6.14"
+    },
+    {
+      "code" : "replaces",
+      "valueCode" : "UOL"
+    },
+    {
+      "code" : "abbreviation",
+      "valueString" : "UMO"
+    },
+    {
+      "code" : "dic",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "UKR",
+    "display" : "Universitätsklinikum Regensburg",
+    "definition" : "Regensburg",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "DIFUTURE"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "ukr.de"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "contract",
+      "valueString" : "V6.15"
+    },
+    {
+      "code" : "abbreviation",
+      "valueString" : "UKR"
+    },
+    {
+      "code" : "dic",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "UMR",
+    "display" : "Universitätsmedizin Rostock",
+    "definition" : "Rostock",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "SMITH"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "med.uni-rostock.de"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "contract",
+      "valueString" : "V6.15"
+    },
+    {
+      "code" : "abbreviation",
+      "valueString" : "UMR"
+    },
+    {
+      "code" : "dic",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "UKS",
+    "display" : "Universitätsklinikum des Saarlandes",
+    "definition" : "Saarbrücken / Homburg",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "DIFUTURE"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "uks.eu"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "deprecated"
+    },
+    {
+      "code" : "replacedBy",
+      "valueCode" : "UdS"
+    },
+    {
+      "code" : "deprecationDate",
+      "valueDateTime" : "2024-10-15"
+    }]
+  },
+  {
+    "code" : "UdS",
+    "display" : "Universität des Saarlandes, Medizinische Fakultät",
+    "definition" : "Saarbrücken / Homburg",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "DIFUTURE"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "med.uni-saarland.de"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "contract",
+      "valueString" : "V6.14"
+    },
+    {
+      "code" : "replaces",
+      "valueCode" : "UKS"
+    },
+    {
+      "code" : "abbreviation",
+      "valueString" : "UdS"
+    },
+    {
+      "code" : "dic",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "UKSH",
+    "display" : "Universitätsklinikum Schleswig-Holstein",
+    "definition" : "Schleswig-Holstein",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "HiGHmed"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "uksh.de"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "contract",
+      "valueString" : "V6.15"
+    },
+    {
+      "code" : "abbreviation",
+      "valueString" : "UKSH"
+    },
+    {
+      "code" : "dic",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "BHC",
+    "display" : "Bosch Health Campus",
+    "definition" : "Stuttgart",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "HiGHmed"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "rbk.de"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "contract",
+      "valueString" : "V6.15"
+    },
+    {
+      "code" : "abbreviation",
+      "valueString" : "BHC"
+    },
+    {
+      "code" : "dic",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "UKT",
+    "display" : "Universitätsklinikum Tübingen",
+    "definition" : "Tübingen",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "DIFUTURE"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "medizin.uni-tuebingen.de"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "contract",
+      "valueString" : "V6.15"
+    },
+    {
+      "code" : "abbreviation",
+      "valueString" : "UKT"
+    },
+    {
+      "code" : "dic",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "UKU",
+    "display" : "Universitätsklinikum Ulm",
+    "definition" : "Ulm",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "DIFUTURE"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "uniklinik-ulm.de"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "contract",
+      "valueString" : "V6.15"
+    },
+    {
+      "code" : "abbreviation",
+      "valueString" : "UKU"
+    },
+    {
+      "code" : "dic",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "UKW",
+    "display" : "Universitätsklinikum Würzburg",
+    "definition" : "Würzburg",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "HiGHmed"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "ukw.de"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "dataManagement",
+      "valueBoolean" : true
+    },
+    {
+      "code" : "contract",
+      "valueString" : "V6.15"
+    },
+    {
+      "code" : "abbreviation",
+      "valueString" : "UKW"
+    },
+    {
+      "code" : "dic",
+      "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "HUKW",
+    "display" : "Universität Witten/Herdecke",
+    "definition" : "Witten / Herdecke",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "NA"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "deprecated"
+    },
+    {
+      "code" : "deprecationDate",
+      "valueDateTime" : "2024-07-09"
+    }]
+  },
+  {
+    "code" : "FDPG",
+    "display" : "Forschungsdatenportal für Gesundheit",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "MII"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "forschen-fuer-gesundheit.de"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "dataManagement",
+      "valueBoolean" : true
+    },
+    {
+      "code" : "contract",
+      "valueString" : "V6.14"
+    },
+    {
+      "code" : "abbreviation",
+      "valueString" : "FDPG"
+    }]
+  },
+  {
+    "code" : "HiGHmed",
+    "display" : "HiGHmed e.V.",
+    "definition" : "Heidelberg",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "MII"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "highmed.org"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "dataManagement",
+      "valueBoolean" : true
+    },
+    {
+      "code" : "contract",
+      "valueString" : "V6.15"
+    },
+    {
+      "code" : "abbreviation",
+      "valueString" : "HiGHmed"
+    }]
+  },
+  {
+    "code" : "HHN",
+    "display" : "Hochschule Heilbronn",
+    "definition" : "Heilbronn",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "MII"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "hs-heilbronn.de"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "contract",
+      "valueString" : "V6.14"
+    },
+    {
+      "code" : "abbreviation",
+      "valueString" : "HHN"
+    }]
+  },
+  {
+    "code" : "CRR",
+    "display" : "Zentrale Plattform NUM",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "NUM"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "num-codex.de"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "abbreviation",
+      "valueString" : "CRR"
+    }]
+  }]
+}
