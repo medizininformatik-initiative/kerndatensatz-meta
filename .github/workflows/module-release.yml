@@ -333,17 +333,42 @@ jobs:
       - name: Download the build (package.tgz for the release assets)
         # Attaching the package to every release is what makes the version
         # comparison of FUTURE releases work: seed-comparison-cache.sh fetches
-        # the previous version's package.tgz from exactly this asset.
+        # the previous version's package from exactly this asset.
         uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
         with:
           name: module-release-build
           path: release-assets
 
+      - name: Name the package asset after the package it contains
+        # A release asset called `package.tgz` is ambiguous the moment it
+        # leaves GitHub: every module ships one, so anyone downloading two of
+        # them has to rename before they can tell them apart. Unlike the
+        # publication webroot — where `<canonical>/<version>/package.tgz` is
+        # the FHIR convention and the path carries the identity — a release
+        # asset has no such path, so the NAME has to carry it.
+        #
+        # Both files are attached during the transition: tooling that still
+        # looks for `package.tgz` keeps working (older releases only have
+        # that name), while humans get a file they can identify.
+        id: asset
+        shell: bash
+        run: |
+          set -euo pipefail
+          meta="$(tar -xzOf release-assets/package.tgz package/package.json)"
+          id="$(printf '%s' "${meta}" | jq -er '.name')"
+          ver="$(printf '%s' "${meta}" | jq -er '.version')"
+          named="${id}-${ver}.tgz"
+          cp release-assets/package.tgz "release-assets/${named}"
+          echo "named=${named}" >> "${GITHUB_OUTPUT}"
+          echo "Package asset: ${named}"
+
       - name: Create the draft GitHub Release
         uses: softprops/action-gh-release@3d0d9888cb7fd7b750713d6e236d1fcb99157228 # v3.0.2
         with:
           name: "${{ steps.prep.outputs.version }}"
-          files: release-assets/package.tgz
+          files: |
+            release-assets/${{ steps.asset.outputs.named }}
+            release-assets/package.tgz
           draft: true
           prerelease: ${{ contains(steps.prep.outputs.version, '-') }}
           generate_release_notes: true
@@ -352,10 +377,12 @@ jobs:
 
             <!-- DELETE START -->
             This is a **draft** created automatically from the CalVer tag. The
-            module's FHIR package (`package.tgz`) is already attached — future
-            releases' version comparison fetches the previous package from this
-            asset, so leave it in place. Before publishing (wiki step 7): edit
-            these notes and remove the DELETE blocks.
+            module's FHIR package is already attached twice — once under its
+            own name (`<package-id>-<version>.tgz`, the one to hand to people)
+            and once as `package.tgz` for tooling that still expects that name.
+            Future releases' version comparison fetches the previous package
+            from these assets, so leave both in place. Before publishing
+            (wiki step 7): edit these notes and remove the DELETE blocks.
             <!-- DELETE END -->
 
             ### Changes
