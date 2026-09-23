@@ -287,6 +287,21 @@ jobs:
           test -s output/index.html
           jq empty output/qa.json
 
+          # Zusaetzliche Kopie des Pakets unter seinem eigenen Namen.
+          # output/package.tgz bleibt unveraendert: dort ist der generische
+          # Name FHIR-Konvention, weil der Pfad
+          # <canonical>/<version>/package.tgz die Identitaet traegt und
+          # Werkzeuge Pakete so aufloesen. Heruntergeladen bleibt davon aber
+          # nur der Dateiname uebrig, und der ist bei 21 Modulen identisch.
+          # Die Kopie traegt deshalb die Paket-ID — die Version nicht, die
+          # steht schon im Publikationspfad und haelt den Link auf der
+          # Downloadseite ueber Releases hinweg stabil.
+          if [ -s output/package.tgz ]; then
+            pkg_id="$(tar -xzOf output/package.tgz package/package.json | jq -er '.name')"
+            cp output/package.tgz "output/${pkg_id}.tgz"
+            echo "Named package copy: ${pkg_id}.tgz"
+          fi
+
       - name: Template-repo self-check DEMO — render the version-comparison report
         # Demonstrates what a version delta looks like and where it lives,
         # using the FHIR validator's compare command (the publisher's own
