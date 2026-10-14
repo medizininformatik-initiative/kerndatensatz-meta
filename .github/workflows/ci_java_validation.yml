@@ -208,7 +208,17 @@ jobs:
 
               UNESCPAED_IG_DEPENDENCIES=$(echo $IG_DEPENDENCIES | tr -d '"')
               
+              # validator_cli exits non-zero when it finds validation errors.
+              # Under the step's default `bash -e`, a plain command substitution
+              # aborts the step RIGHT HERE on that exit code - before the output
+              # below is echoed and before the validation-output artifact has
+              # anything to upload. Capture the exit code instead and decide at
+              # the very end: a failing validation stays a failing step, but it
+              # is no longer silent.
+              set +e
               javaValidatorOutput=$(java -jar validator_cli.jar $GITHUB_WORKSPACE/$p*.xml $GITHUB_WORKSPACE/$p*.json -version $FHIR_VERSION $INPUT_JAVA_VALIDATION_OPTIONS $UNESCPAED_IG_DEPENDENCIES $LOCAL_IG_PARAMETERS -tx http://127.0.0.1:8090/fhir)
+              javaValidatorExit=$?
+              set -e
   
               javaValidatorOutput=$(echo "$javaValidatorOutput" | sed -E "
                 s/(:[[:space:]]*)Error([[:space:]]+-)/\1${ERROR}Error${NC}\2/g;
@@ -225,6 +235,11 @@ jobs:
   
               echo -e "$javaValidatorOutput"
 
+              if [ "${javaValidatorExit}" -ne 0 ]; then
+                echo "::error::validator_cli exited with code ${javaValidatorExit} for '${p}' (exit 1 usually means validation errors - see the output above and the validation-output artifact)."
+                overallValidatorExit=1
+              fi
+
               # if echo "$javaValidatorOutput" | grep -F "*FAILURE*" > /dev/null; then
               #   echo "Validation failed with errors. Check the logs for more details."
               #   exit 1
@@ -233,6 +248,7 @@ jobs:
             done
           fi
           echo "Finished validation using Java validator ..." 
+          exit "${overallValidatorExit:-0}"
         shell: bash
         env:
           FHIR_VERSION: "4.0"
