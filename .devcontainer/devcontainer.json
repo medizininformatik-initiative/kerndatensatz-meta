@@ -37,7 +37,7 @@
   "features": {
     // Node.js for SUSHI. 22.23.1 = latest Node 22 (nodejs.org, re-verified
     // 2026-07-22).
-    "ghcr.io/devcontainers/features/node:2.1.0": {
+    "ghcr.io/devcontainers/features/node:2.1.1": {
       "version": "22.23.1"
     },
     // Ruby for Jekyll (required by the IG Publisher). 3.3.12 = latest 3.3.x
