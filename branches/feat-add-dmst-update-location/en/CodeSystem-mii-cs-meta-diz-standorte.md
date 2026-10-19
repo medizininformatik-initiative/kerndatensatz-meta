@@ -199,7 +199,7 @@ This Code system is referenced in the definition of the following value sets:
   "valueSet" : "https://www.medizininformatik-initiative.de/fhir/core/ValueSet/core-location-identifier",
   "compositional" : false,
   "content" : "complete",
-  "count" : 52,
+  "count" : 53,
   "property" : [{
     "code" : "consortium",
     "uri" : "https://www.medizininformatik-initiative.de/de/konsortien",
@@ -1582,6 +1582,31 @@ This Code system is referenced in the definition of the following value sets:
     {
       "code" : "dic",
       "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "UKT-FLAME",
+    "display" : "Universitätsklinikum Tübingen - FLAME",
+    "definition" : "Tübingen",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "MII"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "private-aim.de"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "contract",
+      "valueString" : "V6.15"
+    },
+    {
+      "code" : "abbreviation",
+      "valueString" : "UKT-FLAME"
     }]
   },
   {
