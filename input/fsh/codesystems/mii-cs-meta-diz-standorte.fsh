@@ -198,6 +198,7 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UKEr insert AddKonsortium(MIRACUM)
 * #UKEr insert AddUri(www.uk-erlangen.de)
 * #UKEr insert AddStatus(active)
+* #UKEr insert AddDatenmanagementstelle(true)
 * #UKEr insert AddTRV(V6.15)
 * #UKEr insert AddAbbreviation(UKEr)
 * #UKEr insert AddDiz(true)
