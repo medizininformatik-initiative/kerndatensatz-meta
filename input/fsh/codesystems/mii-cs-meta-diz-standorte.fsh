@@ -422,6 +422,12 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UKT insert AddTRV(V6.15)
 * #UKT insert AddAbbreviation(UKT)
 * #UKT insert AddDiz(true)
+* #UKT-FLAME "Universitätsklinikum Tübingen - FLAME" "Tübingen"
+* #UKT-FLAME insert AddKonsortium(MII)
+* #UKT-FLAME insert AddUri(private-aim.de)
+* #UKT-FLAME insert AddStatus(active)
+* #UKT-FLAME insert AddTRV(V6.15)
+* #UKT-FLAME insert AddAbbreviation(UKT-FLAME)
 * #UKU "Universitätsklinikum Ulm" "Ulm"
 * #UKU insert AddKonsortium(DIFUTURE)
 * #UKU insert AddUri(uniklinik-ulm.de)
