@@ -1,0 +1,10 @@
+{
+  "codeSystems" : [{
+    "url" : "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier",
+    "version" : "2027.0.0-ballot.rc3",
+    "status" : "active",
+    "name" : "MII_CS_Meta_DIZ_Standorte",
+    "title" : "MII CS Meta DIZ Standorte",
+    "description" : "Medizininformatik-Initiative Standorte"
+  }]
+}

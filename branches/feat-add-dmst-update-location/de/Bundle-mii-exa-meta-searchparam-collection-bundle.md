@@ -1,0 +1,12155 @@
+# MII Meta SearchParameter Collection Bundle - MII IG Meta v2027.0.0-ballot.rc3
+
+* [**Inhaltsverzeichnis**](toc.md)
+* [**Artefaktübersicht**](artifacts.md)
+* **MII Meta SearchParameter Collection Bundle**
+
+## Beispiel Bundle: MII Meta SearchParameter Collection Bundle
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Bundle",
+  "id" : "mii-exa-meta-searchparam-collection-bundle",
+  "meta" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "packageId",
+        "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+      },
+      {
+        "url" : "version",
+        "valueString" : "2027.0.0-ballot.rc3"
+      },
+      {
+        "url" : "uri",
+        "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+      }],
+      "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+    }]
+  },
+  "type" : "collection",
+  "timestamp" : "2026-09-01T11:09:00+02:00",
+  "entry" : [{
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-patient-adresszusatz",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-patient-adresszusatz",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-patient-adresszusatz\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-patient-adresszusatz</b></p><a name=\"mii-sp-meta-patient-adresszusatz\"> </a><a name=\"hcmii-sp-meta-patient-adresszusatz\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-patient-adresszusatz.html\">MII_SP_Meta_Person_Adresszusatz</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Person_Adresszusatz</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für Patient.address.line.extension:Adresszusatz</p>\n</div><p><b>code</b>: adresszusatz</p><p><b>base</b>: Patient</p><p><b>type</b>: String</p><p><b>expression</b>: Patient.address.line.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator').value</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-adresszusatz",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Person_Adresszusatz",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für Patient.address.line.extension:Adresszusatz",
+      "code" : "adresszusatz",
+      "base" : ["Patient"],
+      "type" : "string",
+      "expression" : "Patient.address.line.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator').value"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-patient-assignerpid",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-patient-assignerpid",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-patient-assignerpid\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-patient-assignerpid</b></p><a name=\"mii-sp-meta-patient-assignerpid\"> </a><a name=\"hcmii-sp-meta-patient-assignerpid\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-patient-assignerpid.html\">MII_SP_Meta_Patient_AssignerPID</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Patient_AssignerPID</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für Patient.identifier.assigner.identifier</p>\n</div><p><b>code</b>: assigner-pid</p><p><b>base</b>: Patient</p><p><b>type</b>: Token</p><p><b>expression</b>: Patient.identifier.assigner.identifier</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-assignerpid",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Patient_AssignerPID",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für Patient.identifier.assigner.identifier",
+      "code" : "assigner-pid",
+      "base" : ["Patient"],
+      "type" : "token",
+      "expression" : "Patient.identifier.assigner.identifier"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-researchsubject-consent",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-researchsubject-consent",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-researchsubject-consent\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-researchsubject-consent</b></p><a name=\"mii-sp-meta-researchsubject-consent\"> </a><a name=\"hcmii-sp-meta-researchsubject-consent\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-researchsubject-consent.html\">MII_SP_Meta_ResearchSubject_Consent</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_ResearchSubject_Consent</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ResearchSubject.consent</p>\n</div><p><b>code</b>: consent</p><p><b>base</b>: ResearchSubject</p><p><b>type</b>: Reference</p><p><b>expression</b>: ResearchSubject.consent</p><p><b>target</b>: Consent</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchsubject-consent",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_ResearchSubject_Consent",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ResearchSubject.consent",
+      "code" : "consent",
+      "base" : ["ResearchSubject"],
+      "type" : "reference",
+      "expression" : "ResearchSubject.consent",
+      "target" : ["Consent"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-patient-gemeindeschluessel",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-patient-gemeindeschluessel",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-patient-gemeindeschluessel\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-patient-gemeindeschluessel</b></p><a name=\"mii-sp-meta-patient-gemeindeschluessel\"> </a><a name=\"hcmii-sp-meta-patient-gemeindeschluessel\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-patient-gemeindeschluessel.html\">MII_SP_Meta_Patient_Gemeindeschluessel</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Patient_Gemeindeschluessel</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für Patient.address.city.extension:gemeindeschluessel</p>\n</div><p><b>code</b>: gemeindeschluessel</p><p><b>base</b>: Patient</p><p><b>type</b>: Token</p><p><b>expression</b>: Patient.address.city.extension('http://fhir.de/StructureDefinition/destatis/ags').value</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-gemeindeschluessel",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Patient_Gemeindeschluessel",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für Patient.address.city.extension:gemeindeschluessel",
+      "code" : "gemeindeschluessel",
+      "base" : ["Patient"],
+      "type" : "token",
+      "expression" : "Patient.address.city.extension('http://fhir.de/StructureDefinition/destatis/ags').value"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-patient-hausnummer",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-patient-hausnummer",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-patient-hausnummer\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-patient-hausnummer</b></p><a name=\"mii-sp-meta-patient-hausnummer\"> </a><a name=\"hcmii-sp-meta-patient-hausnummer\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-patient-hausnummer.html\">MII_SP_Meta_Patient_Hausnummer</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Patient_Hausnummer</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für Patient.address.line.extension:Hausnummer</p>\n</div><p><b>code</b>: hausnummer</p><p><b>base</b>: Patient</p><p><b>type</b>: String</p><p><b>expression</b>: Patient.address.line.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber').value</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-hausnummer",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Patient_Hausnummer",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für Patient.address.line.extension:Hausnummer",
+      "code" : "hausnummer",
+      "base" : ["Patient"],
+      "type" : "string",
+      "expression" : "Patient.address.line.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber').value"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-patient-otheramtlich",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-patient-otheramtlich",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-patient-otheramtlich\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-patient-otheramtlich</b></p><a name=\"mii-sp-meta-patient-otheramtlich\"> </a><a name=\"hcmii-sp-meta-patient-otheramtlich\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-patient-otheramtlich.html\">MII_SP_Meta_Patient_OtherAmtlich</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Patient_OtherAmtlich</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für Patient.gender.extension:other-amtlich</p>\n</div><p><b>code</b>: other-amtlich</p><p><b>base</b>: Patient</p><p><b>type</b>: Token</p><p><b>expression</b>: Patient.gender.extension('http://fhir.de/StructureDefinition/gender-amtlich-de').value</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-otheramtlich",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Patient_OtherAmtlich",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für Patient.gender.extension:other-amtlich",
+      "code" : "other-amtlich",
+      "base" : ["Patient"],
+      "type" : "token",
+      "expression" : "Patient.gender.extension('http://fhir.de/StructureDefinition/gender-amtlich-de').value"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-patient-postfach",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-patient-postfach",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-patient-postfach\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-patient-postfach</b></p><a name=\"mii-sp-meta-patient-postfach\"> </a><a name=\"hcmii-sp-meta-patient-postfach\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-patient-postfach.html\">MII_SP_Meta_Patient_Postfach</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Patient_Postfach</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für Patient.address.line.extension:Postfach</p>\n</div><p><b>code</b>: postfach</p><p><b>base</b>: Patient</p><p><b>type</b>: String</p><p><b>expression</b>: Patient.address.line.extension.where(url='http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox').value</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-postfach",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Patient_Postfach",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für Patient.address.line.extension:Postfach",
+      "code" : "postfach",
+      "base" : ["Patient"],
+      "type" : "string",
+      "expression" : "Patient.address.line.extension.where(url='http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox').value"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-patient-prefix",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-patient-prefix",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-patient-prefix\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-patient-prefix</b></p><a name=\"mii-sp-meta-patient-prefix\"> </a><a name=\"hcmii-sp-meta-patient-prefix\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-patient-prefix.html\">MII_SP_Meta_Patient_Prefix</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Patient_Prefix</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für Patient.name.prefix</p>\n</div><p><b>code</b>: prefix</p><p><b>base</b>: Patient</p><p><b>type</b>: Token</p><p><b>expression</b>: Patient.name.prefix</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-prefix",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Patient_Prefix",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für Patient.name.prefix",
+      "code" : "prefix",
+      "base" : ["Patient"],
+      "type" : "token",
+      "expression" : "Patient.name.prefix"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-patient-prefixqualifier",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-patient-prefixqualifier",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-patient-prefixqualifier\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-patient-prefixqualifier</b></p><a name=\"mii-sp-meta-patient-prefixqualifier\"> </a><a name=\"hcmii-sp-meta-patient-prefixqualifier\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-patient-prefixqualifier.html\">MII_SP_Meta_Patient_PrefixQualifier</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Patient_PrefixQualifier</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für Patient.name.prefix.extension:prefix-qualifier</p>\n</div><p><b>code</b>: prefix-qualifier</p><p><b>base</b>: Patient</p><p><b>type</b>: Token</p><p><b>expression</b>: Patient.name.prefix.extension('http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier').value</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-prefixqualifier",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Patient_PrefixQualifier",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für Patient.name.prefix.extension:prefix-qualifier",
+      "code" : "prefix-qualifier",
+      "base" : ["Patient"],
+      "type" : "token",
+      "expression" : "Patient.name.prefix.extension('http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier').value"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-patient-stadtteil",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-patient-stadtteil",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-patient-stadtteil\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-patient-stadtteil</b></p><a name=\"mii-sp-meta-patient-stadtteil\"> </a><a name=\"hcmii-sp-meta-patient-stadtteil\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-patient-stadtteil.html\">MII_SP_Meta_Patient_Stadtteil</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Patient_Stadtteil</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für Patient.address.extension:Stadtteil</p>\n</div><p><b>code</b>: stadtteil</p><p><b>base</b>: Patient</p><p><b>type</b>: String</p><p><b>expression</b>: Patient.address.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct').value</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-stadtteil",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Patient_Stadtteil",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für Patient.address.extension:Stadtteil",
+      "code" : "stadtteil",
+      "base" : ["Patient"],
+      "type" : "string",
+      "expression" : "Patient.address.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct').value"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-patient-strasse",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-patient-strasse",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-patient-strasse\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-patient-strasse</b></p><a name=\"mii-sp-meta-patient-strasse\"> </a><a name=\"hcmii-sp-meta-patient-strasse\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-patient-strasse.html\">MII_SP_Meta_Patient_Strasse</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Patient_Strasse</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für Patient.address.line.extension:Strasse</p>\n</div><p><b>code</b>: strasse</p><p><b>base</b>: Patient</p><p><b>type</b>: String</p><p><b>expression</b>: Patient.address.line.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName').value</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-strasse",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Patient_Strasse",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für Patient.address.line.extension:Strasse",
+      "code" : "strasse",
+      "base" : ["Patient"],
+      "type" : "string",
+      "expression" : "Patient.address.line.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName').value"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-condition-icd10gm-diagnosesicherheit",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-condition-icd10gm-diagnosesicherheit",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-condition-icd10gm-diagnosesicherheit\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-condition-icd10gm-diagnosesicherheit</b></p><a name=\"mii-sp-meta-condition-icd10gm-diagnosesicherheit\"> </a><a name=\"hcmii-sp-meta-condition-icd10gm-diagnosesicherheit\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-condition-icd10gm-diagnosesicherheit.html\">MII_SP_Meta_Condition_ICD10GM_Diagnosesicherheit</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Condition_ICD10GM_Diagnosesicherheit</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für Condition.code.coding:icd10-gm.extension:Diagnosesicherheit</p>\n</div><p><b>code</b>: icd10gm-diagnosesicherheit</p><p><b>base</b>: Condition</p><p><b>type</b>: Token</p><p><b>expression</b>: Condition.code.coding.extension.where(url = 'http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit').value</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-icd10gm-diagnosesicherheit",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Condition_ICD10GM_Diagnosesicherheit",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für Condition.code.coding:icd10-gm.extension:Diagnosesicherheit",
+      "code" : "icd10gm-diagnosesicherheit",
+      "base" : ["Condition"],
+      "type" : "token",
+      "expression" : "Condition.code.coding.extension.where(url = 'http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit').value"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-condition-icd10gm-mehrfachcodierung",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-condition-icd10gm-mehrfachcodierung",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-condition-icd10gm-mehrfachcodierung\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-condition-icd10gm-mehrfachcodierung</b></p><a name=\"mii-sp-meta-condition-icd10gm-mehrfachcodierung\"> </a><a name=\"hcmii-sp-meta-condition-icd10gm-mehrfachcodierung\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-condition-icd10gm-mehrfachcodierung.html\">MII_SP_Meta_Condition_ICD10GM_Mehrfachcodierung</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Condition_ICD10GM_Mehrfachcodierung</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für Condition.code.coding:icd10-gm.extension:Mehrfachcodierungs-Kennzeichen</p>\n</div><p><b>code</b>: icd10gm-mehrfachcodierung</p><p><b>base</b>: Condition</p><p><b>type</b>: Token</p><p><b>expression</b>: Condition.code.coding.extension.where(url = 'http://fhir.de/StructureDefinition/icd-10-gm-mehrfachcodierungs-kennzeichen').value</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-icd10gm-mehrfachcodierung",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Condition_ICD10GM_Mehrfachcodierung",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für Condition.code.coding:icd10-gm.extension:Mehrfachcodierungs-Kennzeichen",
+      "code" : "icd10gm-mehrfachcodierung",
+      "base" : ["Condition"],
+      "type" : "token",
+      "expression" : "Condition.code.coding.extension.where(url = 'http://fhir.de/StructureDefinition/icd-10-gm-mehrfachcodierungs-kennzeichen').value"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-condition-icd10gm-seitenlokalisation",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-condition-icd10gm-seitenlokalisation",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-condition-icd10gm-seitenlokalisation\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-condition-icd10gm-seitenlokalisation</b></p><a name=\"mii-sp-meta-condition-icd10gm-seitenlokalisation\"> </a><a name=\"hcmii-sp-meta-condition-icd10gm-seitenlokalisation\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-condition-icd10gm-seitenlokalisation.html\">MII_SP_Meta_Condition_ICD10GM_Seitenlokalisation</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Condition_ICD10GM_Seitenlokalisation</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für Condition.code.coding:icd10-gm.extension:Seitenlokalisation</p>\n</div><p><b>code</b>: icd10gm-seitenlokalisation</p><p><b>base</b>: Condition</p><p><b>type</b>: Token</p><p><b>expression</b>: Condition.code.coding.extension.where(url = 'http://fhir.de/StructureDefinition/seitenlokalisation').value</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-icd10gm-seitenlokalisation",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Condition_ICD10GM_Seitenlokalisation",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für Condition.code.coding:icd10-gm.extension:Seitenlokalisation",
+      "code" : "icd10gm-seitenlokalisation",
+      "base" : ["Condition"],
+      "type" : "token",
+      "expression" : "Condition.code.coding.extension.where(url = 'http://fhir.de/StructureDefinition/seitenlokalisation').value"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-procedure-bodysite",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-procedure-bodysite",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-procedure-bodysite\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-procedure-bodysite</b></p><a name=\"mii-sp-meta-procedure-bodysite\"> </a><a name=\"hcmii-sp-meta-procedure-bodysite\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-procedure-bodysite.html\">MII_SP_Meta_Procedure_BodySite</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Procedure_BodySite</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für Procedure.bodySite</p>\n</div><p><b>code</b>: bodySite</p><p><b>base</b>: Procedure</p><p><b>type</b>: Token</p><p><b>expression</b>: Procedure.bodySite</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-bodysite",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Procedure_BodySite",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für Procedure.bodySite",
+      "code" : "bodySite",
+      "base" : ["Procedure"],
+      "type" : "token",
+      "expression" : "Procedure.bodySite"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-procedure-dokumentationsdatum",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-procedure-dokumentationsdatum",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-procedure-dokumentationsdatum\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-procedure-dokumentationsdatum</b></p><a name=\"mii-sp-meta-procedure-dokumentationsdatum\"> </a><a name=\"hcmii-sp-meta-procedure-dokumentationsdatum\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-procedure-dokumentationsdatum.html\">MII_SP_Meta_Procedure_Dokumentationsdatum</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Procedure_Dokumentationsdatum</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für Procedure.extension:Dokumentationsdatum</p>\n</div><p><b>code</b>: dokumentationsdatum</p><p><b>base</b>: Procedure</p><p><b>type</b>: Date/DateTime</p><p><b>expression</b>: Procedure.extension('http://fhir.de/StructureDefinition/ProzedurDokumentationsdatum').value</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-dokumentationsdatum",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Procedure_Dokumentationsdatum",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für Procedure.extension:Dokumentationsdatum",
+      "code" : "dokumentationsdatum",
+      "base" : ["Procedure"],
+      "type" : "date",
+      "expression" : "Procedure.extension('http://fhir.de/StructureDefinition/ProzedurDokumentationsdatum').value"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-procedure-durchfuehrungsabsicht",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-procedure-durchfuehrungsabsicht",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-procedure-durchfuehrungsabsicht\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-procedure-durchfuehrungsabsicht</b></p><a name=\"mii-sp-meta-procedure-durchfuehrungsabsicht\"> </a><a name=\"hcmii-sp-meta-procedure-durchfuehrungsabsicht\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-procedure-durchfuehrungsabsicht.html\">MII_SP_Meta_Procedure_Durchfuehrungsabsicht</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Procedure_Durchfuehrungsabsicht</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für Procedure.extension:Durchfuehrungsabsicht</p>\n</div><p><b>code</b>: durchfuehrungsabsicht</p><p><b>base</b>: Procedure</p><p><b>type</b>: Token</p><p><b>expression</b>: Procedure.extension('https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht').value</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-durchfuehrungsabsicht",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Procedure_Durchfuehrungsabsicht",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für Procedure.extension:Durchfuehrungsabsicht",
+      "code" : "durchfuehrungsabsicht",
+      "base" : ["Procedure"],
+      "type" : "token",
+      "expression" : "Procedure.extension('https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht').value"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-procedure-ops-seitenlokalisation",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-procedure-ops-seitenlokalisation",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-procedure-ops-seitenlokalisation\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-procedure-ops-seitenlokalisation</b></p><a name=\"mii-sp-meta-procedure-ops-seitenlokalisation\"> </a><a name=\"hcmii-sp-meta-procedure-ops-seitenlokalisation\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-procedure-ops-seitenlokalisation.html\">MII_SP_Meta_Procedure_OPS_Seitenlokalisation</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Procedure_OPS_Seitenlokalisation</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für Procedure.code.coding:ops.extension:Seitenlokalisation</p>\n</div><p><b>code</b>: ops-seitenlokalisation</p><p><b>base</b>: Procedure</p><p><b>type</b>: Token</p><p><b>expression</b>: Procedure.code.coding.extension.where(url = 'http://fhir.de/StructureDefinition/seitenlokalisation').value</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-ops-seitenlokalisation",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Procedure_OPS_Seitenlokalisation",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für Procedure.code.coding:ops.extension:Seitenlokalisation",
+      "code" : "ops-seitenlokalisation",
+      "base" : ["Procedure"],
+      "type" : "token",
+      "expression" : "Procedure.code.coding.extension.where(url = 'http://fhir.de/StructureDefinition/seitenlokalisation').value"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-encounter-diagnosis-use",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-encounter-diagnosis-use",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-encounter-diagnosis-use\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-encounter-diagnosis-use</b></p><a name=\"mii-sp-meta-encounter-diagnosis-use\"> </a><a name=\"hcmii-sp-meta-encounter-diagnosis-use\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-encounter-diagnosis-use.html\">MII_SP_Meta_Encounter_DiagnosisUse</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Encounter_DiagnosisUse</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für Encounter.diagnosis.use</p>\n</div><p><b>code</b>: diagnosis-use</p><p><b>base</b>: Encounter</p><p><b>type</b>: Token</p><p><b>expression</b>: Encounter.diagnosis.use</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-diagnosis-use",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Encounter_DiagnosisUse",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für Encounter.diagnosis.use",
+      "code" : "diagnosis-use",
+      "base" : ["Encounter"],
+      "type" : "token",
+      "expression" : "Encounter.diagnosis.use"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-encounter-hospitalization-admitsource",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-encounter-hospitalization-admitsource",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-encounter-hospitalization-admitsource\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-encounter-hospitalization-admitsource</b></p><a name=\"mii-sp-meta-encounter-hospitalization-admitsource\"> </a><a name=\"hcmii-sp-meta-encounter-hospitalization-admitsource\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-encounter-hospitalization-admitsource.html\">MII_SP_Meta_Encounter_Hospitalization_AdmitSource</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Encounter_Hospitalization_AdmitSource</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für Encounter.hospitalization.admitSource</p>\n</div><p><b>code</b>: hospitalization-admitsource</p><p><b>base</b>: Encounter</p><p><b>type</b>: Token</p><p><b>expression</b>: Encounter.hospitalization.admitSource</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-hospitalization-admitsource",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Encounter_Hospitalization_AdmitSource",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für Encounter.hospitalization.admitSource",
+      "code" : "hospitalization-admitsource",
+      "base" : ["Encounter"],
+      "type" : "token",
+      "expression" : "Encounter.hospitalization.admitSource"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-encounter-location-physical-type",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-encounter-location-physical-type",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-encounter-location-physical-type\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-encounter-location-physical-type</b></p><a name=\"mii-sp-meta-encounter-location-physical-type\"> </a><a name=\"hcmii-sp-meta-encounter-location-physical-type\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-encounter-location-physical-type.html\">MII_SP_Meta_Encounter_Location_PhysicalType</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Encounter_Location_PhysicalType</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für Encounter.location.physicalType</p>\n</div><p><b>code</b>: location-physical-type</p><p><b>base</b>: Encounter</p><p><b>type</b>: Token</p><p><b>expression</b>: Encounter.location.physicalType</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-location-physical-type",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Encounter_Location_PhysicalType",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für Encounter.location.physicalType",
+      "code" : "location-physical-type",
+      "base" : ["Encounter"],
+      "type" : "token",
+      "expression" : "Encounter.location.physicalType"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-encounter-servicetype",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-encounter-servicetype",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-encounter-servicetype\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-encounter-servicetype</b></p><a name=\"mii-sp-meta-encounter-servicetype\"> </a><a name=\"hcmii-sp-meta-encounter-servicetype\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-encounter-servicetype.html\">MII_SP_Meta_Encounter_ServiceType</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Encounter_ServiceType</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für Encounter.serviceType</p>\n</div><p><b>code</b>: service-type</p><p><b>base</b>: Encounter</p><p><b>type</b>: Token</p><p><b>expression</b>: Encounter.serviceType</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-servicetype",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Encounter_ServiceType",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für Encounter.serviceType",
+      "code" : "service-type",
+      "base" : ["Encounter"],
+      "type" : "token",
+      "expression" : "Encounter.serviceType"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-encounter-aufnahmegrund-ersteundzweitestelle",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-encounter-aufnahmegrund-ersteundzweitestelle",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-encounter-aufnahmegrund-ersteundzweitestelle\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-encounter-aufnahmegrund-ersteundzweitestelle</b></p><a name=\"mii-sp-meta-encounter-aufnahmegrund-ersteundzweitestelle\"> </a><a name=\"hcmii-sp-meta-encounter-aufnahmegrund-ersteundzweitestelle\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-encounter-aufnahmegrund-ersteundzweitestelle.html\">MII_SP_Meta_Encounter_Aufnahmegrund_ErsteUndZweiteStelle</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Encounter_Aufnahmegrund_ErsteUndZweiteStelle</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für Encounter.extension:Aufnahmegrund.extension:ErsteUndZweiteStelle</p>\n</div><p><b>code</b>: aufnahmegrund-ersteundzweitestelle</p><p><b>base</b>: Encounter</p><p><b>type</b>: Token</p><p><b>expression</b>: Encounter.extension.where(url = 'http://fhir.de/StructureDefinition/Aufnahmegrund').extension.where(url = 'ErsteUndZweiteStelle').value</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-aufnahmegrund-ersteundzweitestelle",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Encounter_Aufnahmegrund_ErsteUndZweiteStelle",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für Encounter.extension:Aufnahmegrund.extension:ErsteUndZweiteStelle",
+      "code" : "aufnahmegrund-ersteundzweitestelle",
+      "base" : ["Encounter"],
+      "type" : "token",
+      "expression" : "Encounter.extension.where(url = 'http://fhir.de/StructureDefinition/Aufnahmegrund').extension.where(url = 'ErsteUndZweiteStelle').value"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-encounter-aufnahmegrund-drittestelle",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-encounter-aufnahmegrund-drittestelle",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-encounter-aufnahmegrund-drittestelle\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-encounter-aufnahmegrund-drittestelle</b></p><a name=\"mii-sp-meta-encounter-aufnahmegrund-drittestelle\"> </a><a name=\"hcmii-sp-meta-encounter-aufnahmegrund-drittestelle\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-encounter-aufnahmegrund-drittestelle.html\">MII_SP_Meta_Encounter_Aufnahmegrund_DritteStelle</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Encounter_Aufnahmegrund_DritteStelle</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für Encounter.extension:Aufnahmegrund.extension:DritteStelle</p>\n</div><p><b>code</b>: aufnahmegrund-drittestelle</p><p><b>base</b>: Encounter</p><p><b>type</b>: Token</p><p><b>expression</b>: Encounter.extension.where(url = 'http://fhir.de/StructureDefinition/Aufnahmegrund').extension.where(url = 'DritteStelle').value</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-aufnahmegrund-drittestelle",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Encounter_Aufnahmegrund_DritteStelle",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für Encounter.extension:Aufnahmegrund.extension:DritteStelle",
+      "code" : "aufnahmegrund-drittestelle",
+      "base" : ["Encounter"],
+      "type" : "token",
+      "expression" : "Encounter.extension.where(url = 'http://fhir.de/StructureDefinition/Aufnahmegrund').extension.where(url = 'DritteStelle').value"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-encounter-aufnahmegrund-viertestelle",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-encounter-aufnahmegrund-viertestelle",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-encounter-aufnahmegrund-viertestelle\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-encounter-aufnahmegrund-viertestelle</b></p><a name=\"mii-sp-meta-encounter-aufnahmegrund-viertestelle\"> </a><a name=\"hcmii-sp-meta-encounter-aufnahmegrund-viertestelle\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-encounter-aufnahmegrund-viertestelle.html\">MII_SP_Meta_Encounter_Aufnahmegrund_VierteStelle</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Encounter_Aufnahmegrund_VierteStelle</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für Encounter.extension:Aufnahmegrund.extension:VierteStelle</p>\n</div><p><b>code</b>: aufnahmegrund-viertestelle</p><p><b>base</b>: Encounter</p><p><b>type</b>: Token</p><p><b>expression</b>: Encounter.extension.where(url = 'http://fhir.de/StructureDefinition/Aufnahmegrund').extension.where(url = 'VierteStelle').value</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-aufnahmegrund-viertestelle",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Encounter_Aufnahmegrund_VierteStelle",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für Encounter.extension:Aufnahmegrund.extension:VierteStelle",
+      "code" : "aufnahmegrund-viertestelle",
+      "base" : ["Encounter"],
+      "type" : "token",
+      "expression" : "Encounter.extension.where(url = 'http://fhir.de/StructureDefinition/Aufnahmegrund').extension.where(url = 'VierteStelle').value"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-encounter-entlassungsgrund-ersteundzweitestelle",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-encounter-entlassungsgrund-ersteundzweitestelle",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-encounter-entlassungsgrund-ersteundzweitestelle\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-encounter-entlassungsgrund-ersteundzweitestelle</b></p><a name=\"mii-sp-meta-encounter-entlassungsgrund-ersteundzweitestelle\"> </a><a name=\"hcmii-sp-meta-encounter-entlassungsgrund-ersteundzweitestelle\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-encounter-entlassungsgrund-ersteundzweitestelle.html\">MII_SP_Meta_Encounter_Entlassungsgrund_ErsteUndZweiteStelle</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Encounter_Entlassungsgrund_ErsteUndZweiteStelle</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für Encounter.hospitalization.dischargeDisposition.extension:Entlassungsgrund.extension:ErsteUndZweiteStelle</p>\n</div><p><b>code</b>: entlassungsgrund-ersteundzweitestelle</p><p><b>base</b>: Encounter</p><p><b>type</b>: Token</p><p><b>expression</b>: Encounter.hospitalization.dischargeDisposition.extension.where(url = 'http://fhir.de/StructureDefinition/Entlassungsgrund').extension.where(url = 'ErsteUndZweiteStelle').value</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-entlassungsgrund-ersteundzweitestelle",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Encounter_Entlassungsgrund_ErsteUndZweiteStelle",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für Encounter.hospitalization.dischargeDisposition.extension:Entlassungsgrund.extension:ErsteUndZweiteStelle",
+      "code" : "entlassungsgrund-ersteundzweitestelle",
+      "base" : ["Encounter"],
+      "type" : "token",
+      "expression" : "Encounter.hospitalization.dischargeDisposition.extension.where(url = 'http://fhir.de/StructureDefinition/Entlassungsgrund').extension.where(url = 'ErsteUndZweiteStelle').value"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-encounter-entlassungsgrund-drittestelle",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-encounter-entlassungsgrund-drittestelle",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-encounter-entlassungsgrund-drittestelle\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-encounter-entlassungsgrund-drittestelle</b></p><a name=\"mii-sp-meta-encounter-entlassungsgrund-drittestelle\"> </a><a name=\"hcmii-sp-meta-encounter-entlassungsgrund-drittestelle\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-encounter-entlassungsgrund-drittestelle.html\">MII_SP_Meta_Encounter_Entlassungsgrund_DritteStelle</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Encounter_Entlassungsgrund_DritteStelle</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für Encounter.hospitalization.dischargeDisposition.extension:Entlassungsgrund.extension:DritteStelle</p>\n</div><p><b>code</b>: entlassungsgrund-drittestelle</p><p><b>base</b>: Encounter</p><p><b>type</b>: Token</p><p><b>expression</b>: Encounter.hospitalization.dischargeDisposition.extension.where(url = 'http://fhir.de/StructureDefinition/Entlassungsgrund').extension.where(url = 'DritteStelle').value</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-entlassungsgrund-drittestelle",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Encounter_Entlassungsgrund_DritteStelle",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für Encounter.hospitalization.dischargeDisposition.extension:Entlassungsgrund.extension:DritteStelle",
+      "code" : "entlassungsgrund-drittestelle",
+      "base" : ["Encounter"],
+      "type" : "token",
+      "expression" : "Encounter.hospitalization.dischargeDisposition.extension.where(url = 'http://fhir.de/StructureDefinition/Entlassungsgrund').extension.where(url = 'DritteStelle').value"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-medication-ingredient-strength-numerator",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-medication-ingredient-strength-numerator",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-medication-ingredient-strength-numerator\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-medication-ingredient-strength-numerator</b></p><a name=\"mii-sp-meta-medication-ingredient-strength-numerator\"> </a><a name=\"hcmii-sp-meta-medication-ingredient-strength-numerator\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-medication-ingredient-strength-numerator.html\">MII_SP_Meta_Medication_Ingredient_Strength_Numerator</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Medication_Ingredient_Strength_Numerator</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für Medication.ingredient.strength.numerator</p>\n</div><p><b>code</b>: ingredient-strength-numerator</p><p><b>base</b>: Medication</p><p><b>type</b>: Quantity</p><p><b>expression</b>: Medication.ingredient.strength.numerator</p><p><b>comparator</b>: Equals, Greater Than, Less Than, Greater or Equals, Less of Equal</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength-numerator",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Medication_Ingredient_Strength_Numerator",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für Medication.ingredient.strength.numerator",
+      "code" : "ingredient-strength-numerator",
+      "base" : ["Medication"],
+      "type" : "quantity",
+      "expression" : "Medication.ingredient.strength.numerator",
+      "comparator" : ["eq", "gt", "lt", "ge", "le"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-medication-ingredient-strength-denominator",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-medication-ingredient-strength-denominator",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-medication-ingredient-strength-denominator\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-medication-ingredient-strength-denominator</b></p><a name=\"mii-sp-meta-medication-ingredient-strength-denominator\"> </a><a name=\"hcmii-sp-meta-medication-ingredient-strength-denominator\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-medication-ingredient-strength-denominator.html\">MII_SP_Meta_Medication_Ingredient_Strength_Denominator</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Medication_Ingredient_Strength_Denominator</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für Medication.ingredient.strength.denominator</p>\n</div><p><b>code</b>: ingredient-strength-denominator</p><p><b>base</b>: Medication</p><p><b>type</b>: Quantity</p><p><b>expression</b>: Medication.ingredient.strength.denominator</p><p><b>comparator</b>: Equals, Greater Than, Less Than, Greater or Equals, Less of Equal</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength-denominator",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Medication_Ingredient_Strength_Denominator",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für Medication.ingredient.strength.denominator",
+      "code" : "ingredient-strength-denominator",
+      "base" : ["Medication"],
+      "type" : "quantity",
+      "expression" : "Medication.ingredient.strength.denominator",
+      "comparator" : ["eq", "gt", "lt", "ge", "le"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-medication-ingredient-strength",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-medication-ingredient-strength",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-medication-ingredient-strength\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-medication-ingredient-strength</b></p><a name=\"mii-sp-meta-medication-ingredient-strength\"> </a><a name=\"hcmii-sp-meta-medication-ingredient-strength\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-medication-ingredient-strength.html\">MII_SP_Meta_Medication_Ingredient_Strength</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Medication_Ingredient_Strength</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für Medication.ingredient.strength</p>\n</div><p><b>code</b>: ingredient-strength</p><p><b>base</b>: Medication</p><p><b>type</b>: Composite</p><p><b>expression</b>: Medication.ingredient.strength</p><blockquote><p><b>component</b></p><p><b>definition</b>: <a href=\"SearchParameter-mii-sp-meta-medication-ingredient-strength-numerator.html\">MII_SP_Meta_Medication_Ingredient_Strength_Numerator</a></p><p><b>expression</b>: numerator</p></blockquote><blockquote><p><b>component</b></p><p><b>definition</b>: <a href=\"SearchParameter-mii-sp-meta-medication-ingredient-strength-denominator.html\">MII_SP_Meta_Medication_Ingredient_Strength_Denominator</a></p><p><b>expression</b>: denominator</p></blockquote></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Medication_Ingredient_Strength",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für Medication.ingredient.strength",
+      "code" : "ingredient-strength",
+      "base" : ["Medication"],
+      "type" : "composite",
+      "expression" : "Medication.ingredient.strength",
+      "component" : [{
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength-numerator",
+        "expression" : "numerator"
+      },
+      {
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength-denominator",
+        "expression" : "denominator"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-medication-reasonreference",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-medication-reasonreference",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-medication-reasonreference\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-medication-reasonreference</b></p><a name=\"mii-sp-meta-medication-reasonreference\"> </a><a name=\"hcmii-sp-meta-medication-reasonreference\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-medication-reasonreference.html\">MII_SP_Meta_Medication_ReasonReference</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Medication_ReasonReference</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für (MedicationAdministration|MedicationStatement).reasonReference</p>\n</div><p><b>code</b>: reason-reference</p><p><b>base</b>: MedicationStatement, MedicationAdministration</p><p><b>type</b>: Reference</p><p><b>expression</b>: MedicationAdministration.reasonReference | MedicationStatement.reasonReference</p><p><b>target</b>: Condition, Observation, DiagnosticReport</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-reasonreference",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Medication_ReasonReference",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für (MedicationAdministration|MedicationStatement).reasonReference",
+      "code" : "reason-reference",
+      "base" : ["MedicationStatement", "MedicationAdministration"],
+      "type" : "reference",
+      "expression" : "MedicationAdministration.reasonReference | MedicationStatement.reasonReference",
+      "target" : ["Condition", "Observation", "DiagnosticReport"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-medication-dosage-site",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-medication-dosage-site",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-medication-dosage-site\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-medication-dosage-site</b></p><a name=\"mii-sp-meta-medication-dosage-site\"> </a><a name=\"hcmii-sp-meta-medication-dosage-site\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-medication-dosage-site.html\">MII_SP_Meta_Medication_Dosage_Site</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Medication_Dosage_Site</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für (MedicationAdministration|MedicationStatement).dosage.site | MedicationRequest.dosageInstruction.site</p>\n</div><p><b>code</b>: dosage-site</p><p><b>base</b>: MedicationStatement, MedicationAdministration, MedicationRequest</p><p><b>type</b>: Token</p><p><b>expression</b>: MedicationAdministration.dosage.site | MedicationStatement.dosage.site | MedicationRequest.dosageInstruction.site</p><p><b>modifier</b>: Text, In, Not In, Below, Above</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-site",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Medication_Dosage_Site",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für (MedicationAdministration|MedicationStatement).dosage.site | MedicationRequest.dosageInstruction.site",
+      "code" : "dosage-site",
+      "base" : ["MedicationStatement",
+      "MedicationAdministration",
+      "MedicationRequest"],
+      "type" : "token",
+      "expression" : "MedicationAdministration.dosage.site | MedicationStatement.dosage.site | MedicationRequest.dosageInstruction.site",
+      "modifier" : ["text", "in", "not-in", "below", "above"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-medication-dosage-route",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-medication-dosage-route",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-medication-dosage-route\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-medication-dosage-route</b></p><a name=\"mii-sp-meta-medication-dosage-route\"> </a><a name=\"hcmii-sp-meta-medication-dosage-route\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-medication-dosage-route.html\">MII_SP_Meta_Medication_Dosage_Route</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Medication_Dosage_Route</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für (MedicationAdministration|MedicationStatement).dosage.route | MedicationRequest.dosageInstruction.route</p>\n</div><p><b>code</b>: dosage-route</p><p><b>base</b>: MedicationStatement, MedicationAdministration, MedicationRequest</p><p><b>type</b>: Token</p><p><b>expression</b>: MedicationAdministration.dosage.route | MedicationStatement.dosage.route | MedicationRequest.dosageInstruction.route</p><p><b>modifier</b>: Text, In, Not In, Below, Above</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-route",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Medication_Dosage_Route",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für (MedicationAdministration|MedicationStatement).dosage.route | MedicationRequest.dosageInstruction.route",
+      "code" : "dosage-route",
+      "base" : ["MedicationStatement",
+      "MedicationAdministration",
+      "MedicationRequest"],
+      "type" : "token",
+      "expression" : "MedicationAdministration.dosage.route | MedicationStatement.dosage.route | MedicationRequest.dosageInstruction.route",
+      "modifier" : ["text", "in", "not-in", "below", "above"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-medication-dosage-doserange-low",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-medication-dosage-doserange-low",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-medication-dosage-doserange-low\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-medication-dosage-doserange-low</b></p><a name=\"mii-sp-meta-medication-dosage-doserange-low\"> </a><a name=\"hcmii-sp-meta-medication-dosage-doserange-low\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-medication-dosage-doserange-low.html\">MII_SP_Meta_Medication_Dosage_DoseRangeLow</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Medication_Dosage_DoseRangeLow</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für MedicationStatement.dosage.doseAndRate.doseRange.low | MedicationRequest.dosageInstruction.doseAndRate.doseRange.low</p>\n</div><p><b>code</b>: doserange-low</p><p><b>base</b>: MedicationStatement, MedicationRequest</p><p><b>type</b>: Quantity</p><p><b>expression</b>: MedicationStatement.dosage.doseAndRate.dose.ofType(Range).low | MedicationRequest.dosageInstruction.doseAndRate.dose.ofType(Range).low</p><p><b>comparator</b>: Equals, Greater Than, Less Than, Greater or Equals, Less of Equal</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange-low",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Medication_Dosage_DoseRangeLow",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für MedicationStatement.dosage.doseAndRate.doseRange.low | MedicationRequest.dosageInstruction.doseAndRate.doseRange.low",
+      "code" : "doserange-low",
+      "base" : ["MedicationStatement", "MedicationRequest"],
+      "type" : "quantity",
+      "expression" : "MedicationStatement.dosage.doseAndRate.dose.ofType(Range).low | MedicationRequest.dosageInstruction.doseAndRate.dose.ofType(Range).low",
+      "comparator" : ["eq", "gt", "lt", "ge", "le"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-medication-dosage-doserange-high",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-medication-dosage-doserange-high",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-medication-dosage-doserange-high\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-medication-dosage-doserange-high</b></p><a name=\"mii-sp-meta-medication-dosage-doserange-high\"> </a><a name=\"hcmii-sp-meta-medication-dosage-doserange-high\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-medication-dosage-doserange-high.html\">MII_SP_Meta_Medication_Dosage_DoseRangeHigh</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Medication_Dosage_DoseRangeHigh</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für MedicationStatement.dosage.doseAndRate.doseRange.high | MedicationRequest.dosageInstruction.doseAndRate.doseRange.high</p>\n</div><p><b>code</b>: doserange-high</p><p><b>base</b>: MedicationStatement, MedicationRequest</p><p><b>type</b>: Quantity</p><p><b>expression</b>: MedicationStatement.dosage.doseAndRate.dose.ofType(Range).high | MedicationRequest.dosageInstruction.doseAndRate.dose.ofType(Range).high</p><p><b>comparator</b>: Equals, Greater Than, Less Than, Greater or Equals, Less of Equal</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange-high",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Medication_Dosage_DoseRangeHigh",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für MedicationStatement.dosage.doseAndRate.doseRange.high | MedicationRequest.dosageInstruction.doseAndRate.doseRange.high",
+      "code" : "doserange-high",
+      "base" : ["MedicationStatement", "MedicationRequest"],
+      "type" : "quantity",
+      "expression" : "MedicationStatement.dosage.doseAndRate.dose.ofType(Range).high | MedicationRequest.dosageInstruction.doseAndRate.dose.ofType(Range).high",
+      "comparator" : ["eq", "gt", "lt", "ge", "le"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-medication-dosage-doserange",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-medication-dosage-doserange",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-medication-dosage-doserange\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-medication-dosage-doserange</b></p><a name=\"mii-sp-meta-medication-dosage-doserange\"> </a><a name=\"hcmii-sp-meta-medication-dosage-doserange\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-medication-dosage-doserange.html\">MII_SP_Meta_Medication_Dosage_DoseRange</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Medication_Dosage_DoseRange</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für MedicationStatement.dosage.doseAndRate.doseRange | MedicationRequest.dosageInstruction.doseAndRate.doseRange</p>\n</div><p><b>code</b>: doserange</p><p><b>base</b>: MedicationStatement, MedicationRequest</p><p><b>type</b>: Composite</p><p><b>expression</b>: MedicationStatement.dosage.doseAndRate.dose.ofType(Range) | MedicationRequest.dosageInstruction.doseAndRate.dose.ofType(Range)</p><blockquote><p><b>component</b></p><p><b>definition</b>: <a href=\"SearchParameter-mii-sp-meta-medication-dosage-doserange-low.html\">MII_SP_Meta_Medication_Dosage_DoseRangeLow</a></p><p><b>expression</b>: low</p></blockquote><blockquote><p><b>component</b></p><p><b>definition</b>: <a href=\"SearchParameter-mii-sp-meta-medication-dosage-doserange-high.html\">MII_SP_Meta_Medication_Dosage_DoseRangeHigh</a></p><p><b>expression</b>: high</p></blockquote></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Medication_Dosage_DoseRange",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für MedicationStatement.dosage.doseAndRate.doseRange | MedicationRequest.dosageInstruction.doseAndRate.doseRange",
+      "code" : "doserange",
+      "base" : ["MedicationStatement", "MedicationRequest"],
+      "type" : "composite",
+      "expression" : "MedicationStatement.dosage.doseAndRate.dose.ofType(Range) | MedicationRequest.dosageInstruction.doseAndRate.dose.ofType(Range)",
+      "component" : [{
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange-low",
+        "expression" : "low"
+      },
+      {
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange-high",
+        "expression" : "high"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-medication-dosage-dosequantity",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-medication-dosage-dosequantity",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-medication-dosage-dosequantity\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-medication-dosage-dosequantity</b></p><a name=\"mii-sp-meta-medication-dosage-dosequantity\"> </a><a name=\"hcmii-sp-meta-medication-dosage-dosequantity\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-medication-dosage-dosequantity.html\">MII_SP_Meta_Medication_Dosage_DoseQuantity</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Medication_Dosage_DoseQuantity</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für MedicationStatement.dosage.doseAndRate.doseQuantity | MedicationRequest.dosageInstruction.doseAndRate.doseQuantity | MedicationAdministration.dosage.dose</p>\n</div><p><b>code</b>: dose-quantity</p><p><b>base</b>: MedicationStatement, MedicationRequest, MedicationAdministration</p><p><b>type</b>: Quantity</p><p><b>expression</b>: MedicationStatement.dosage.doseAndRate.dose.ofType(Quantity) | MedicationRequest.dosageInstruction.doseAndRate.dose.ofType(Quantity) | MedicationAdministration.dosage.dose</p><p><b>comparator</b>: Equals, Greater Than, Less Than, Greater or Equals, Less of Equal</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-dosequantity",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Medication_Dosage_DoseQuantity",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für MedicationStatement.dosage.doseAndRate.doseQuantity | MedicationRequest.dosageInstruction.doseAndRate.doseQuantity | MedicationAdministration.dosage.dose",
+      "code" : "dose-quantity",
+      "base" : ["MedicationStatement",
+      "MedicationRequest",
+      "MedicationAdministration"],
+      "type" : "quantity",
+      "expression" : "MedicationStatement.dosage.doseAndRate.dose.ofType(Quantity) | MedicationRequest.dosageInstruction.doseAndRate.dose.ofType(Quantity) | MedicationAdministration.dosage.dose",
+      "comparator" : ["eq", "gt", "lt", "ge", "le"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-medication-dosage-rateratio-numerator",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-medication-dosage-rateratio-numerator",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-medication-dosage-rateratio-numerator\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-medication-dosage-rateratio-numerator</b></p><a name=\"mii-sp-meta-medication-dosage-rateratio-numerator\"> </a><a name=\"hcmii-sp-meta-medication-dosage-rateratio-numerator\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-medication-dosage-rateratio-numerator.html\">MII_SP_Meta_Medication_Dosage_RateRatioNumerator</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Medication_Dosage_RateRatioNumerator</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für MedicationStatement.dosage.doseAndRate.rateRatio.numerator | MedicationAdministration.dosage.rate.ofType(Ratio).numerator | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio).numerator</p>\n</div><p><b>code</b>: rateratio-numerator</p><p><b>base</b>: MedicationStatement, MedicationAdministration, MedicationRequest</p><p><b>type</b>: Quantity</p><p><b>expression</b>: MedicationStatement.dosage.doseAndRate.rate.ofType(Ratio).numerator | MedicationAdministration.dosage.rate.ofType(Ratio).numerator | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio).numerator</p><p><b>comparator</b>: Equals, Greater Than, Less Than, Greater or Equals, Less of Equal</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-numerator",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Medication_Dosage_RateRatioNumerator",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für MedicationStatement.dosage.doseAndRate.rateRatio.numerator | MedicationAdministration.dosage.rate.ofType(Ratio).numerator | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio).numerator",
+      "code" : "rateratio-numerator",
+      "base" : ["MedicationStatement",
+      "MedicationAdministration",
+      "MedicationRequest"],
+      "type" : "quantity",
+      "expression" : "MedicationStatement.dosage.doseAndRate.rate.ofType(Ratio).numerator | MedicationAdministration.dosage.rate.ofType(Ratio).numerator | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio).numerator",
+      "comparator" : ["eq", "gt", "lt", "ge", "le"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-medication-dosage-rateratio-denominator",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-medication-dosage-rateratio-denominator",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-medication-dosage-rateratio-denominator\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-medication-dosage-rateratio-denominator</b></p><a name=\"mii-sp-meta-medication-dosage-rateratio-denominator\"> </a><a name=\"hcmii-sp-meta-medication-dosage-rateratio-denominator\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-medication-dosage-rateratio-denominator.html\">MII_SP_Meta_Medication_Dosage_RateRatioDenominator</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Medication_Dosage_RateRatioDenominator</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für MedicationStatement.dosage.doseAndRate.rateRatio.denominator | MedicationAdministration.dosage.rate.ofType(Ratio).denominator | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio).denominator</p>\n</div><p><b>code</b>: rateratio-denominator</p><p><b>base</b>: MedicationStatement, MedicationAdministration, MedicationRequest</p><p><b>type</b>: Quantity</p><p><b>expression</b>: MedicationStatement.dosage.doseAndRate.rate.ofType(Ratio).denominator | MedicationAdministration.dosage.rate.ofType(Ratio).denominator | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio).denominator</p><p><b>comparator</b>: Equals, Greater Than, Less Than, Greater or Equals, Less of Equal</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-denominator",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Medication_Dosage_RateRatioDenominator",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für MedicationStatement.dosage.doseAndRate.rateRatio.denominator | MedicationAdministration.dosage.rate.ofType(Ratio).denominator | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio).denominator",
+      "code" : "rateratio-denominator",
+      "base" : ["MedicationStatement",
+      "MedicationAdministration",
+      "MedicationRequest"],
+      "type" : "quantity",
+      "expression" : "MedicationStatement.dosage.doseAndRate.rate.ofType(Ratio).denominator | MedicationAdministration.dosage.rate.ofType(Ratio).denominator | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio).denominator",
+      "comparator" : ["eq", "gt", "lt", "ge", "le"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-medication-dosage-rateratio",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-medication-dosage-rateratio",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-medication-dosage-rateratio\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-medication-dosage-rateratio</b></p><a name=\"mii-sp-meta-medication-dosage-rateratio\"> </a><a name=\"hcmii-sp-meta-medication-dosage-rateratio\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-medication-dosage-rateratio.html\">MII_SP_Meta_Medication_Dosage_RateRatio</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Medication_Dosage_RateRatio</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>MedicationStatement.dosage.doseAndRate.rate.ofType(Ratio) | MedicationAdministration.dosage.rate.ofType(Ratio) | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio)</p>\n</div><p><b>code</b>: rateratio</p><p><b>base</b>: MedicationStatement, MedicationAdministration, MedicationRequest</p><p><b>type</b>: Composite</p><p><b>expression</b>: MedicationStatement.dosage.doseAndRate.rate.ofType(Ratio) | MedicationAdministration.dosage.rate.ofType(Ratio) | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio)</p><blockquote><p><b>component</b></p><p><b>definition</b>: <a href=\"SearchParameter-mii-sp-meta-medication-dosage-rateratio-numerator.html\">MII_SP_Meta_Medication_Dosage_RateRatioNumerator</a></p><p><b>expression</b>: numerator</p></blockquote><blockquote><p><b>component</b></p><p><b>definition</b>: <a href=\"SearchParameter-mii-sp-meta-medication-dosage-rateratio-denominator.html\">MII_SP_Meta_Medication_Dosage_RateRatioDenominator</a></p><p><b>expression</b>: denominator</p></blockquote></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Medication_Dosage_RateRatio",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "MedicationStatement.dosage.doseAndRate.rate.ofType(Ratio) | MedicationAdministration.dosage.rate.ofType(Ratio) | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio)",
+      "code" : "rateratio",
+      "base" : ["MedicationStatement",
+      "MedicationAdministration",
+      "MedicationRequest"],
+      "type" : "composite",
+      "expression" : "MedicationStatement.dosage.doseAndRate.rate.ofType(Ratio) | MedicationAdministration.dosage.rate.ofType(Ratio) | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio)",
+      "component" : [{
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-numerator",
+        "expression" : "numerator"
+      },
+      {
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-denominator",
+        "expression" : "denominator"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-medication-dosage-raterange-low",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-medication-dosage-raterange-low",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-medication-dosage-raterange-low\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-medication-dosage-raterange-low</b></p><a name=\"mii-sp-meta-medication-dosage-raterange-low\"> </a><a name=\"hcmii-sp-meta-medication-dosage-raterange-low\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-medication-dosage-raterange-low.html\">MII_SP_Meta_Medication_Dosage_RateRangeLow</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Medication_Dosage_RateRangeLow</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für MedicationStatement.dosage.doseAndRate.rateRange.low | MedicationRequest.dosageInstruction.doseAndRate.rateRange.low</p>\n</div><p><b>code</b>: raterange-low</p><p><b>base</b>: MedicationStatement, MedicationRequest</p><p><b>type</b>: Quantity</p><p><b>expression</b>: MedicationStatement.dosage.doseAndRate.rate.ofType(Range).low | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Range).low</p><p><b>comparator</b>: Equals, Greater Than, Less Than, Greater or Equals, Less of Equal</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange-low",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Medication_Dosage_RateRangeLow",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für MedicationStatement.dosage.doseAndRate.rateRange.low | MedicationRequest.dosageInstruction.doseAndRate.rateRange.low",
+      "code" : "raterange-low",
+      "base" : ["MedicationStatement", "MedicationRequest"],
+      "type" : "quantity",
+      "expression" : "MedicationStatement.dosage.doseAndRate.rate.ofType(Range).low | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Range).low",
+      "comparator" : ["eq", "gt", "lt", "ge", "le"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-medication-dosage-raterange-high",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-medication-dosage-raterange-high",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-medication-dosage-raterange-high\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-medication-dosage-raterange-high</b></p><a name=\"mii-sp-meta-medication-dosage-raterange-high\"> </a><a name=\"hcmii-sp-meta-medication-dosage-raterange-high\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-medication-dosage-raterange-high.html\">MII_SP_Meta_Medication_Dosage_RateRangeHigh</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Medication_Dosage_RateRangeHigh</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für MedicationStatement.dosage.doseAndRate.rateRange.high | MedicationRequest.dosageInstruction.doseAndRate.rateRange.high</p>\n</div><p><b>code</b>: raterange-high</p><p><b>base</b>: MedicationStatement, MedicationRequest</p><p><b>type</b>: Quantity</p><p><b>expression</b>: MedicationStatement.dosage.doseAndRate.rate.ofType(Range).high | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Range).high</p><p><b>comparator</b>: Equals, Greater Than, Less Than, Greater or Equals, Less of Equal</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange-high",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Medication_Dosage_RateRangeHigh",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für MedicationStatement.dosage.doseAndRate.rateRange.high | MedicationRequest.dosageInstruction.doseAndRate.rateRange.high",
+      "code" : "raterange-high",
+      "base" : ["MedicationStatement", "MedicationRequest"],
+      "type" : "quantity",
+      "expression" : "MedicationStatement.dosage.doseAndRate.rate.ofType(Range).high | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Range).high",
+      "comparator" : ["eq", "gt", "lt", "ge", "le"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-medication-dosage-raterange",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-medication-dosage-raterange",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-medication-dosage-raterange\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-medication-dosage-raterange</b></p><a name=\"mii-sp-meta-medication-dosage-raterange\"> </a><a name=\"hcmii-sp-meta-medication-dosage-raterange\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-medication-dosage-raterange.html\">MII_SP_Meta_Medication_Dosage_RateRange</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Medication_Dosage_RateRange</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für MedicationStatement.dosage.doseAndRate.rateRange | MedicationRequest.dosageInstruction.doseAndRate.rateRange</p>\n</div><p><b>code</b>: raterange</p><p><b>base</b>: MedicationStatement, MedicationRequest</p><p><b>type</b>: Composite</p><p><b>expression</b>: MedicationStatement.dosage.doseAndRate.rate.ofType(Range) | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Range)</p><blockquote><p><b>component</b></p><p><b>definition</b>: <a href=\"SearchParameter-mii-sp-meta-medication-dosage-raterange-low.html\">MII_SP_Meta_Medication_Dosage_RateRangeLow</a></p><p><b>expression</b>: low</p></blockquote><blockquote><p><b>component</b></p><p><b>definition</b>: <a href=\"SearchParameter-mii-sp-meta-medication-dosage-raterange-high.html\">MII_SP_Meta_Medication_Dosage_RateRangeHigh</a></p><p><b>expression</b>: high</p></blockquote></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Medication_Dosage_RateRange",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für MedicationStatement.dosage.doseAndRate.rateRange | MedicationRequest.dosageInstruction.doseAndRate.rateRange",
+      "code" : "raterange",
+      "base" : ["MedicationStatement", "MedicationRequest"],
+      "type" : "composite",
+      "expression" : "MedicationStatement.dosage.doseAndRate.rate.ofType(Range) | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Range)",
+      "component" : [{
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange-low",
+        "expression" : "low"
+      },
+      {
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange-high",
+        "expression" : "high"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-medication-dosage-ratequantity",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-medication-dosage-ratequantity",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-medication-dosage-ratequantity\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-medication-dosage-ratequantity</b></p><a name=\"mii-sp-meta-medication-dosage-ratequantity\"> </a><a name=\"hcmii-sp-meta-medication-dosage-ratequantity\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-medication-dosage-ratequantity.html\">MII_SP_Meta_Medication_Dosage_RateQuantity</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Medication_Dosage_RateQuantity</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für MedicationStatement.dosage.doseAndRate.rateQuantity | MedicationAdministration.dosage.rateQuantity | MedicationRequest.dosageInstruction.doseAndRate.rateQuantity</p>\n</div><p><b>code</b>: ratequantity</p><p><b>base</b>: MedicationStatement, MedicationAdministration, MedicationRequest</p><p><b>type</b>: Quantity</p><p><b>expression</b>: MedicationStatement.dosage.doseAndRate.rate.ofType(Quantity) | MedicationAdministration.dosage.rate.ofType(Quantity) | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Quantity)</p><p><b>comparator</b>: Equals, Greater Than, Less Than, Greater or Equals, Less of Equal</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-ratequantity",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Medication_Dosage_RateQuantity",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für MedicationStatement.dosage.doseAndRate.rateQuantity | MedicationAdministration.dosage.rateQuantity | MedicationRequest.dosageInstruction.doseAndRate.rateQuantity",
+      "code" : "ratequantity",
+      "base" : ["MedicationStatement",
+      "MedicationAdministration",
+      "MedicationRequest"],
+      "type" : "quantity",
+      "expression" : "MedicationStatement.dosage.doseAndRate.rate.ofType(Quantity) | MedicationAdministration.dosage.rate.ofType(Quantity) | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Quantity)",
+      "comparator" : ["eq", "gt", "lt", "ge", "le"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-medication-list-mode",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-medication-list-mode",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-medication-list-mode\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-medication-list-mode</b></p><a name=\"mii-sp-meta-medication-list-mode\"> </a><a name=\"hcmii-sp-meta-medication-list-mode\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-medication-list-mode.html\">MII_SP_Meta_Medication_List_Mode</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Medication_List_Mode</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für List.mode</p>\n</div><p><b>code</b>: mode</p><p><b>base</b>: List</p><p><b>type</b>: Token</p><p><b>expression</b>: List.mode</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-list-mode",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Medication_List_Mode",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für List.mode",
+      "code" : "mode",
+      "base" : ["List"],
+      "type" : "token",
+      "expression" : "List.mode"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-medication-partof",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-medication-partof",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-medication-partof\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-medication-partof</b></p><a name=\"mii-sp-meta-medication-partof\"> </a><a name=\"hcmii-sp-meta-medication-partof\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-medication-partof.html\">MII_SP_Meta_Medication_PartOf</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Medication_PartOf</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für (MedicationAdministration|MedicationStatement).partOf</p>\n</div><p><b>code</b>: part-of</p><p><b>base</b>: MedicationStatement, MedicationAdministration</p><p><b>type</b>: Reference</p><p><b>expression</b>: MedicationAdministration.partOf | MedicationStatement.partOf</p><p><b>target</b>: MedicationAdministration, Procedure, MedicationDispense, MedicationStatement, Observation</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-partof",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Medication_PartOf",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für (MedicationAdministration|MedicationStatement).partOf",
+      "code" : "part-of",
+      "base" : ["MedicationStatement", "MedicationAdministration"],
+      "type" : "reference",
+      "expression" : "MedicationAdministration.partOf | MedicationStatement.partOf",
+      "target" : ["MedicationAdministration",
+      "Procedure",
+      "MedicationDispense",
+      "MedicationStatement",
+      "Observation"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-consent-policyuri",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-consent-policyuri",
+      "meta" : {
+        "extension" : [{
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        },
+        {
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-consent-policyuri\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-consent-policyuri</b></p><a name=\"mii-sp-meta-consent-policyuri\"> </a><a name=\"hcmii-sp-meta-consent-policyuri\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-consent-policyuri.html\">MII_SP_Meta_Consent_PolicyUri</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Consent_PolicyUri</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suche in der Policy URI (versionsspezifische Policy / Broad Consent)</p>\n</div><p><b>code</b>: mii-policy-uri</p><p><b>base</b>: Consent</p><p><b>type</b>: URI</p><p><b>expression</b>: Consent.policy.uri</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-policyuri",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Consent_PolicyUri",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suche in der Policy URI (versionsspezifische Policy / Broad Consent)",
+      "code" : "mii-policy-uri",
+      "base" : ["Consent"],
+      "type" : "uri",
+      "expression" : "Consent.policy.uri",
+      "multipleOr" : true,
+      "multipleAnd" : true
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-consent-provisioncode",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-consent-provisioncode",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-consent-provisioncode\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-consent-provisioncode</b></p><a name=\"mii-sp-meta-consent-provisioncode\"> </a><a name=\"hcmii-sp-meta-consent-provisioncode\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-consent-provisioncode.html\">MII_SP_Meta_Consent_ProvisionCode</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Consent_ProvisionCode</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suche im Code der Provison</p>\n</div><p><b>code</b>: mii-provision-provision-code</p><p><b>base</b>: Consent</p><p><b>type</b>: Token</p><p><b>expression</b>: Consent.provision.provision.code</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-provisioncode",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Consent_ProvisionCode",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suche im Code der Provison",
+      "code" : "mii-provision-provision-code",
+      "base" : ["Consent"],
+      "type" : "token",
+      "expression" : "Consent.provision.provision.code",
+      "multipleOr" : true,
+      "multipleAnd" : true
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-consent-provisioncodeperiod",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-consent-provisioncodeperiod",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-consent-provisioncodeperiod\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-consent-provisioncodeperiod</b></p><a name=\"mii-sp-meta-consent-provisioncodeperiod\"> </a><a name=\"hcmii-sp-meta-consent-provisioncodeperiod\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-consent-provisioncodeperiod.html\">MII_SP_Meta_Consent_ProvisionCodePeriod</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Consent_ProvisionCodePeriod</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Composite-Suche nach Zeitraum (period) einer bestimmten, durch einen Code definierten, Provision.</p>\n</div><p><b>code</b>: mii-provision-provision-code-period</p><p><b>base</b>: Consent</p><p><b>type</b>: Composite</p><p><b>expression</b>: Consent.provision.provision</p><blockquote><p><b>component</b></p><p><b>definition</b>: <a href=\"SearchParameter-mii-sp-meta-consent-provisioncode.html\">MII_SP_Meta_Consent_ProvisionCode</a></p><p><b>expression</b>: code</p></blockquote><blockquote><p><b>component</b></p><p><b>definition</b>: <a href=\"SearchParameter-mii-sp-meta-consent-provisionperiod.html\">MII_SP_Meta_Consent_ProvisionPeriod</a></p><p><b>expression</b>: period</p></blockquote></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-provisioncodeperiod",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Consent_ProvisionCodePeriod",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Composite-Suche nach Zeitraum (period) einer bestimmten, durch einen Code definierten, Provision.",
+      "code" : "mii-provision-provision-code-period",
+      "base" : ["Consent"],
+      "type" : "composite",
+      "expression" : "Consent.provision.provision",
+      "component" : [{
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-provisioncode",
+        "expression" : "code"
+      },
+      {
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-provisionperiod",
+        "expression" : "period"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-consent-provisioncodetype",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-consent-provisioncodetype",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-consent-provisioncodetype\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-consent-provisioncodetype</b></p><a name=\"mii-sp-meta-consent-provisioncodetype\"> </a><a name=\"hcmii-sp-meta-consent-provisioncodetype\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-consent-provisioncodetype.html\">MII_SP_Meta_Consent_ProvisionCodeType</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Consent_ProvisionCodeType</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Composite-Suche nach Typ (type) einer bestimmten, durch einen Code definierten, Provision.</p>\n</div><p><b>code</b>: mii-provision-provision-code-type</p><p><b>base</b>: Consent</p><p><b>type</b>: Composite</p><p><b>expression</b>: Consent.provision.provision</p><blockquote><p><b>component</b></p><p><b>definition</b>: <a href=\"SearchParameter-mii-sp-meta-consent-provisioncode.html\">MII_SP_Meta_Consent_ProvisionCode</a></p><p><b>expression</b>: code</p></blockquote><blockquote><p><b>component</b></p><p><b>definition</b>: <a href=\"SearchParameter-mii-sp-meta-consent-provisiontype.html\">MII_SP_Meta_Consent_ProvisionType</a></p><p><b>expression</b>: type</p></blockquote></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-provisioncodetype",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Consent_ProvisionCodeType",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Composite-Suche nach Typ (type) einer bestimmten, durch einen Code definierten, Provision.",
+      "code" : "mii-provision-provision-code-type",
+      "base" : ["Consent"],
+      "type" : "composite",
+      "expression" : "Consent.provision.provision",
+      "component" : [{
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-provisioncode",
+        "expression" : "code"
+      },
+      {
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-provisiontype",
+        "expression" : "type"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-consent-provisionperiod",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-consent-provisionperiod",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-consent-provisionperiod\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-consent-provisionperiod</b></p><a name=\"mii-sp-meta-consent-provisionperiod\"> </a><a name=\"hcmii-sp-meta-consent-provisionperiod\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-consent-provisionperiod.html\">MII_SP_Meta_Consent_ProvisionPeriod</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Consent_ProvisionPeriod</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suche im Zeitraum der Provision. Dieser Suchparameter bezieht sich explizit auf die zweite Verschachtelungsebene von provison.</p>\n</div><p><b>code</b>: mii-provision-provision-period</p><p><b>base</b>: Consent</p><p><b>type</b>: Date/DateTime</p><p><b>expression</b>: Consent.provision.provision.period</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-provisionperiod",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Consent_ProvisionPeriod",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suche im Zeitraum der Provision. Dieser Suchparameter bezieht sich explizit auf die zweite Verschachtelungsebene von provison.",
+      "code" : "mii-provision-provision-period",
+      "base" : ["Consent"],
+      "type" : "date",
+      "expression" : "Consent.provision.provision.period",
+      "multipleOr" : true,
+      "multipleAnd" : true
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-consent-provisiontype",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-consent-provisiontype",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-consent-provisiontype\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-consent-provisiontype</b></p><a name=\"mii-sp-meta-consent-provisiontype\"> </a><a name=\"hcmii-sp-meta-consent-provisiontype\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-consent-provisiontype.html\">MII_SP_Meta_Consent_ProvisionType</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Consent_ProvisionType</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suche im Typ der Provison (permit, deny).</p>\n</div><p><b>code</b>: mii-provision-provision-type</p><p><b>base</b>: Consent</p><p><b>type</b>: Token</p><p><b>expression</b>: Consent.provision.provision.type</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-provisiontype",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Consent_ProvisionType",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suche im Typ der Provison (permit, deny).",
+      "code" : "mii-provision-provision-type",
+      "base" : ["Consent"],
+      "type" : "token",
+      "expression" : "Consent.provision.provision.type",
+      "multipleOr" : true,
+      "multipleAnd" : true
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-specimen-diagnose",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-specimen-diagnose",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-specimen-diagnose\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-specimen-diagnose</b></p><a name=\"mii-sp-meta-specimen-diagnose\"> </a><a name=\"hcmii-sp-meta-specimen-diagnose\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-specimen-diagnose.html\">MII_SP_Meta_Specimen_Diagnose</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Specimen_Diagnose</p><p><b>status</b>: Active</p><p><b>experimental</b>: true</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für die Extension Diagnose am Profil Bioprobe</p>\n</div><p><b>code</b>: diagnose</p><p><b>base</b>: Specimen</p><p><b>type</b>: Reference</p><p><b>expression</b>: Specimen.extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose').value</p><p><b>target</b>: Condition</p><p><b>chain</b>: *</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-diagnose",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Specimen_Diagnose",
+      "status" : "active",
+      "experimental" : true,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für die Extension Diagnose am Profil Bioprobe",
+      "code" : "diagnose",
+      "base" : ["Specimen"],
+      "type" : "reference",
+      "expression" : "Specimen.extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose').value",
+      "target" : ["Condition"],
+      "chain" : ["*"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-observation-interpretation",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-observation-interpretation",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-observation-interpretation\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-observation-interpretation</b></p><a name=\"mii-sp-meta-observation-interpretation\"> </a><a name=\"hcmii-sp-meta-observation-interpretation\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-observation-interpretation.html\">MII_SP_Meta_Observation_Interpretation</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Observation_Interpretation</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für Observation.interpretation</p>\n</div><p><b>code</b>: interpretation</p><p><b>base</b>: Observation</p><p><b>type</b>: Token</p><p><b>expression</b>: Observation.interpretation</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-interpretation",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Observation_Interpretation",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für Observation.interpretation",
+      "code" : "interpretation",
+      "base" : ["Observation"],
+      "type" : "token",
+      "expression" : "Observation.interpretation"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-servicerequest-reasoncode",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-servicerequest-reasoncode",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-servicerequest-reasoncode\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-servicerequest-reasoncode</b></p><a name=\"mii-sp-meta-servicerequest-reasoncode\"> </a><a name=\"hcmii-sp-meta-servicerequest-reasoncode\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-servicerequest-reasoncode.html\">MII_SP_Meta_ServiceRequest_ReasonCode</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_ServiceRequest_ReasonCode</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ServiceRequest.reasonCode</p>\n</div><p><b>code</b>: reason-code</p><p><b>base</b>: ServiceRequest</p><p><b>type</b>: Token</p><p><b>expression</b>: ServiceRequest.reasonCode</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-servicerequest-reasoncode",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_ServiceRequest_ReasonCode",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ServiceRequest.reasonCode",
+      "code" : "reason-code",
+      "base" : ["ServiceRequest"],
+      "type" : "token",
+      "expression" : "ServiceRequest.reasonCode"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-servicerequest-reasonreference",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-servicerequest-reasonreference",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-servicerequest-reasonreference\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-servicerequest-reasonreference</b></p><a name=\"mii-sp-meta-servicerequest-reasonreference\"> </a><a name=\"hcmii-sp-meta-servicerequest-reasonreference\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-servicerequest-reasonreference.html\">MII_SP_Meta_ServiceRequest_ReasonReference</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_ServiceRequest_ReasonReference</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ServiceRequest.reasonReference</p>\n</div><p><b>code</b>: reason-reference</p><p><b>base</b>: ServiceRequest</p><p><b>type</b>: Reference</p><p><b>expression</b>: ServiceRequest.reasonReference</p><p><b>target</b>: Condition, Observation, DiagnosticReport, DocumentReference</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-servicerequest-reasonreference",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_ServiceRequest_ReasonReference",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ServiceRequest.reasonReference",
+      "code" : "reason-reference",
+      "base" : ["ServiceRequest"],
+      "type" : "reference",
+      "expression" : "ServiceRequest.reasonReference",
+      "target" : ["Condition",
+      "Observation",
+      "DiagnosticReport",
+      "DocumentReference"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-task-reasoncode",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-task-reasoncode",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-task-reasoncode\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-task-reasoncode</b></p><a name=\"mii-sp-meta-task-reasoncode\"> </a><a name=\"hcmii-sp-meta-task-reasoncode\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-task-reasoncode.html\">MII_SP_Meta_Task_ReasonCode</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Task_ReasonCode</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für Task.reasonCode</p>\n</div><p><b>code</b>: reason-code</p><p><b>base</b>: Task</p><p><b>type</b>: Token</p><p><b>expression</b>: Task.reasonCode</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-task-reasoncode",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Task_ReasonCode",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für Task.reasonCode",
+      "code" : "reason-code",
+      "base" : ["Task"],
+      "type" : "token",
+      "expression" : "Task.reasonCode"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-task-reasonreference",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-task-reasonreference",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-task-reasonreference\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-task-reasonreference</b></p><a name=\"mii-sp-meta-task-reasonreference\"> </a><a name=\"hcmii-sp-meta-task-reasonreference\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-task-reasonreference.html\">MII_SP_Meta_Task_ReasonReference</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Task_ReasonReference</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für Task.reasonReference</p>\n</div><p><b>code</b>: reason-reference</p><p><b>base</b>: Task</p><p><b>type</b>: Reference</p><p><b>expression</b>: Task.reasonReference</p><p><b>target</b>: Observation</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-task-reasonreference",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Task_ReasonReference",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für Task.reasonReference",
+      "code" : "reason-reference",
+      "base" : ["Task"],
+      "type" : "reference",
+      "expression" : "Task.reasonReference",
+      "target" : ["Observation"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-task-for",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-task-for",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-task-for\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-task-for</b></p><a name=\"mii-sp-meta-task-for\"> </a><a name=\"hcmii-sp-meta-task-for\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-task-for.html\">MII_SP_Meta_Task_For</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Task_For</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für Task.for</p>\n</div><p><b>code</b>: for</p><p><b>base</b>: Task</p><p><b>type</b>: Reference</p><p><b>expression</b>: Task.for</p><p><b>target</b>: Patient</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-task-for",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Task_For",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für Task.for",
+      "code" : "for",
+      "base" : ["Task"],
+      "type" : "reference",
+      "expression" : "Task.for",
+      "target" : ["Patient"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-familymemberhistory-reasoncode",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-familymemberhistory-reasoncode",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-familymemberhistory-reasoncode\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-familymemberhistory-reasoncode</b></p><a name=\"mii-sp-meta-familymemberhistory-reasoncode\"> </a><a name=\"hcmii-sp-meta-familymemberhistory-reasoncode\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-familymemberhistory-reasoncode.html\">MII_SP_Meta_FamilyMemberHistory_ReasonCode</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_FamilyMemberHistory_ReasonCode</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für FamilyMemberHistory.reasonCode</p>\n</div><p><b>code</b>: reason-code</p><p><b>base</b>: FamilyMemberHistory</p><p><b>type</b>: Token</p><p><b>expression</b>: FamilyMemberHistory.reasonCode</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-familymemberhistory-reasoncode",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_FamilyMemberHistory_ReasonCode",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für FamilyMemberHistory.reasonCode",
+      "code" : "reason-code",
+      "base" : ["FamilyMemberHistory"],
+      "type" : "token",
+      "expression" : "FamilyMemberHistory.reasonCode"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-familymemberhistory-reasonreference",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-familymemberhistory-reasonreference",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-familymemberhistory-reasonreference\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-familymemberhistory-reasonreference</b></p><a name=\"mii-sp-meta-familymemberhistory-reasonreference\"> </a><a name=\"hcmii-sp-meta-familymemberhistory-reasonreference\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-familymemberhistory-reasonreference.html\">MII_SP_Meta_FamilyMemberHistory_ReasonReference</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_FamilyMemberHistory_ReasonReference</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für FamilyMemberHistory.reasonReference</p>\n</div><p><b>code</b>: reason-reference</p><p><b>base</b>: FamilyMemberHistory</p><p><b>type</b>: Reference</p><p><b>expression</b>: FamilyMemberHistory.reasonReference</p><p><b>target</b>: Condition, Observation, DiagnosticReport, DocumentReference, AllergyIntolerance, QuestionnaireResponse</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-familymemberhistory-reasonreference",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_FamilyMemberHistory_ReasonReference",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für FamilyMemberHistory.reasonReference",
+      "code" : "reason-reference",
+      "base" : ["FamilyMemberHistory"],
+      "type" : "reference",
+      "expression" : "FamilyMemberHistory.reasonReference",
+      "target" : ["Condition",
+      "Observation",
+      "DiagnosticReport",
+      "DocumentReference",
+      "AllergyIntolerance",
+      "QuestionnaireResponse"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-specimen-request",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-specimen-request",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-specimen-request\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-specimen-request</b></p><a name=\"mii-sp-meta-specimen-request\"> </a><a name=\"hcmii-sp-meta-specimen-request\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-specimen-request.html\">MII_SP_Meta_Specimen_Request</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Specimen_Request</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>SearchParameter for Specimen.request</p>\n</div><p><b>code</b>: request</p><p><b>base</b>: Specimen</p><p><b>type</b>: Reference</p><p><b>expression</b>: Specimen.request</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-request",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Specimen_Request",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "SearchParameter for Specimen.request",
+      "code" : "request",
+      "base" : ["Specimen"],
+      "type" : "reference",
+      "expression" : "Specimen.request"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-specimen-collection-method",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-specimen-collection-method",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-specimen-collection-method\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-specimen-collection-method</b></p><a name=\"mii-sp-meta-specimen-collection-method\"> </a><a name=\"hcmii-sp-meta-specimen-collection-method\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-specimen-collection-method.html\">MII_SP_Meta_Specimen_Collection_Method</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Specimen_Collection_Method</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>SearchParameter for Specimen.collection.method</p>\n</div><p><b>code</b>: collection-method</p><p><b>base</b>: Specimen</p><p><b>type</b>: Token</p><p><b>expression</b>: Specimen.collection.method</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-collection-method",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Specimen_Collection_Method",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "SearchParameter for Specimen.collection.method",
+      "code" : "collection-method",
+      "base" : ["Specimen"],
+      "type" : "token",
+      "expression" : "Specimen.collection.method"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-specimen-processing-procedure",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-specimen-processing-procedure",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-specimen-processing-procedure\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-specimen-processing-procedure</b></p><a name=\"mii-sp-meta-specimen-processing-procedure\"> </a><a name=\"hcmii-sp-meta-specimen-processing-procedure\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-specimen-processing-procedure.html\">MII_SP_Meta_Specimen_Processing_Procedure</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Specimen_Processing_Procedure</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>SearchParameter for Specimen.processing.procedure</p>\n</div><p><b>code</b>: processing-procedure</p><p><b>base</b>: Specimen</p><p><b>type</b>: Token</p><p><b>expression</b>: Specimen.processing.procedure</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-processing-procedure",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Specimen_Processing_Procedure",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "SearchParameter for Specimen.processing.procedure",
+      "code" : "processing-procedure",
+      "base" : ["Specimen"],
+      "type" : "token",
+      "expression" : "Specimen.processing.procedure"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-specimen-processing-additive",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-specimen-processing-additive",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-specimen-processing-additive\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-specimen-processing-additive</b></p><a name=\"mii-sp-meta-specimen-processing-additive\"> </a><a name=\"hcmii-sp-meta-specimen-processing-additive\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-specimen-processing-additive.html\">MII_SP_Meta_Specimen_Processing_Additive</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Specimen_Processing_Additive</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>SearchParameter for Specimen.processing.additive</p>\n</div><p><b>code</b>: processing-additive</p><p><b>base</b>: Specimen</p><p><b>type</b>: Reference</p><p><b>expression</b>: Specimen.processing.additive.ofType(Reference)</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-processing-additive",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Specimen_Processing_Additive",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "SearchParameter for Specimen.processing.additive",
+      "code" : "processing-additive",
+      "base" : ["Specimen"],
+      "type" : "reference",
+      "expression" : "Specimen.processing.additive.ofType(Reference)"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-specimen-processing-date",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-specimen-processing-date",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-specimen-processing-date\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-specimen-processing-date</b></p><a name=\"mii-sp-meta-specimen-processing-date\"> </a><a name=\"hcmii-sp-meta-specimen-processing-date\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-specimen-processing-date.html\">MII_SP_Meta_Specimen_Processing_Date</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Specimen_Processing_Date</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>SearchParameter for Specimen.processing.time</p>\n</div><p><b>code</b>: processing-date</p><p><b>base</b>: Specimen</p><p><b>type</b>: Date/DateTime</p><p><b>expression</b>: Specimen.processing.time.ofType(dateTime) | Specimen.processing.time.ofType(Period)</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-processing-date",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Specimen_Processing_Date",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "SearchParameter for Specimen.processing.time",
+      "code" : "processing-date",
+      "base" : ["Specimen"],
+      "type" : "date",
+      "expression" : "Specimen.processing.time.ofType(dateTime) | Specimen.processing.time.ofType(Period)"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-specimen-container-additive",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-specimen-container-additive",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-specimen-container-additive\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-specimen-container-additive</b></p><a name=\"mii-sp-meta-specimen-container-additive\"> </a><a name=\"hcmii-sp-meta-specimen-container-additive\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-specimen-container-additive.html\">MII_SP_Meta_Specimen_Container_Additive</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Specimen_Container_Additive</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>SearchParameter for Specimen.container.additive</p>\n</div><p><b>code</b>: container-additive</p><p><b>base</b>: Specimen</p><p><b>type</b>: Reference</p><p><b>expression</b>: (Specimen.container.additive.ofType(Reference))</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-container-additive",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Specimen_Container_Additive",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "SearchParameter for Specimen.container.additive",
+      "code" : "container-additive",
+      "base" : ["Specimen"],
+      "type" : "reference",
+      "expression" : "(Specimen.container.additive.ofType(Reference))"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-observation-value-ratio",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-observation-value-ratio",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-observation-value-ratio\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-observation-value-ratio</b></p><a name=\"mii-sp-meta-observation-value-ratio\"> </a><a name=\"hcmii-sp-meta-observation-value-ratio\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-observation-value-ratio.html\">MII_SP_Meta_Observation_Value_Ratio</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Observation_Value_Ratio</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>SearchParameter for Observation.valueRatio</p>\n</div><p><b>code</b>: value-ratio</p><p><b>base</b>: Observation</p><p><b>type</b>: Composite</p><p><b>expression</b>: Observation.value.ofType(Ratio)</p><blockquote><p><b>component</b></p><p><b>definition</b>: <a href=\"SearchParameter-mii-sp-meta-observation-value-ratio-numerator.html\">MII_SP_Meta_Observation_Value_Ratio_Numerator</a></p><p><b>expression</b>: numerator</p></blockquote><blockquote><p><b>component</b></p><p><b>definition</b>: <a href=\"SearchParameter-mii-sp-meta-observation-value-ratio-denominator.html\">MII_SP_Meta_Observation_Value_Ratio_Denominator</a></p><p><b>expression</b>: denominator</p></blockquote></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-value-ratio",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Observation_Value_Ratio",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "SearchParameter for Observation.valueRatio",
+      "code" : "value-ratio",
+      "base" : ["Observation"],
+      "type" : "composite",
+      "expression" : "Observation.value.ofType(Ratio)",
+      "component" : [{
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-value-ratio-numerator",
+        "expression" : "numerator"
+      },
+      {
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-value-ratio-denominator",
+        "expression" : "denominator"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-observation-value-ratio-numerator",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-observation-value-ratio-numerator",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-observation-value-ratio-numerator\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-observation-value-ratio-numerator</b></p><a name=\"mii-sp-meta-observation-value-ratio-numerator\"> </a><a name=\"hcmii-sp-meta-observation-value-ratio-numerator\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-observation-value-ratio-numerator.html\">MII_SP_Meta_Observation_Value_Ratio_Numerator</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Observation_Value_Ratio_Numerator</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>SearchParameter for Observation.valueRatio.numerator</p>\n</div><p><b>code</b>: value-ratio-numerator</p><p><b>base</b>: Observation</p><p><b>type</b>: Quantity</p><p><b>expression</b>: Observation.value.ofType(Ratio).numerator</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-value-ratio-numerator",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Observation_Value_Ratio_Numerator",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "SearchParameter for Observation.valueRatio.numerator",
+      "code" : "value-ratio-numerator",
+      "base" : ["Observation"],
+      "type" : "quantity",
+      "expression" : "Observation.value.ofType(Ratio).numerator"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-observation-value-ratio-denominator",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-observation-value-ratio-denominator",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-observation-value-ratio-denominator\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-observation-value-ratio-denominator</b></p><a name=\"mii-sp-meta-observation-value-ratio-denominator\"> </a><a name=\"hcmii-sp-meta-observation-value-ratio-denominator\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-observation-value-ratio-denominator.html\">MII_SP_Meta_Observation_Value_Ratio_Denominator</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Observation_Value_Ratio_Denominator</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>SearchParameter for Observation.valueRatio.denominator</p>\n</div><p><b>code</b>: value-ratio-denominator</p><p><b>base</b>: Observation</p><p><b>type</b>: Quantity</p><p><b>expression</b>: Observation.value.ofType(Ratio).denominator</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-value-ratio-denominator",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Observation_Value_Ratio_Denominator",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "SearchParameter for Observation.valueRatio.denominator",
+      "code" : "value-ratio-denominator",
+      "base" : ["Observation"],
+      "type" : "quantity",
+      "expression" : "Observation.value.ofType(Ratio).denominator"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-servicerequest-supportinginfo",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-servicerequest-supportinginfo",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-servicerequest-supportinginfo\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-servicerequest-supportinginfo</b></p><a name=\"mii-sp-meta-servicerequest-supportinginfo\"> </a><a name=\"hcmii-sp-meta-servicerequest-supportinginfo\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-servicerequest-supportinginfo.html\">MII_SP_Meta_ServiceRequest_SupportingInfo</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_ServiceRequest_SupportingInfo</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>SearchParameter for ServiceRequest.supportingInfo</p>\n</div><p><b>code</b>: supporting-info</p><p><b>base</b>: ServiceRequest</p><p><b>type</b>: Reference</p><p><b>expression</b>: ServiceRequest.supportingInfo</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-servicerequest-supportinginfo",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_ServiceRequest_SupportingInfo",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "SearchParameter for ServiceRequest.supportingInfo",
+      "code" : "supporting-info",
+      "base" : ["ServiceRequest"],
+      "type" : "reference",
+      "expression" : "ServiceRequest.supportingInfo"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-diagnosticreport-imagingstudy",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-diagnosticreport-imagingstudy",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-diagnosticreport-imagingstudy\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-diagnosticreport-imagingstudy</b></p><a name=\"mii-sp-meta-diagnosticreport-imagingstudy\"> </a><a name=\"hcmii-sp-meta-diagnosticreport-imagingstudy\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-diagnosticreport-imagingstudy.html\">MII_SP_Meta_DiagnosticReport_ImagingStudy</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_DiagnosticReport_ImagingStudy</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>SearchParameter for DiagnosticReport.imagingStudy</p>\n</div><p><b>code</b>: imaging-study</p><p><b>base</b>: DiagnosticReport</p><p><b>type</b>: Reference</p><p><b>expression</b>: DiagnosticReport.imagingStudy</p><p><b>target</b>: ImagingStudy</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-diagnosticreport-imagingstudy",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_DiagnosticReport_ImagingStudy",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "SearchParameter for DiagnosticReport.imagingStudy",
+      "code" : "imaging-study",
+      "base" : ["DiagnosticReport"],
+      "type" : "reference",
+      "expression" : "DiagnosticReport.imagingStudy",
+      "target" : ["ImagingStudy"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-composition-attester-mode",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-composition-attester-mode",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-composition-attester-mode\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-composition-attester-mode</b></p><a name=\"mii-sp-meta-composition-attester-mode\"> </a><a name=\"hcmii-sp-meta-composition-attester-mode\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-composition-attester-mode.html\">MII_SP_Meta_Composition_Attester_Mode</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Composition_Attester_Mode</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>SearchParameter for Composition.attester.mode</p>\n</div><p><b>code</b>: attester-mode</p><p><b>base</b>: Composition</p><p><b>type</b>: Token</p><p><b>expression</b>: Composition.attester.mode</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-composition-attester-mode",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Composition_Attester_Mode",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "SearchParameter for Composition.attester.mode",
+      "code" : "attester-mode",
+      "base" : ["Composition"],
+      "type" : "token",
+      "expression" : "Composition.attester.mode"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-composition-custodian",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-composition-custodian",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-composition-custodian\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-composition-custodian</b></p><a name=\"mii-sp-meta-composition-custodian\"> </a><a name=\"hcmii-sp-meta-composition-custodian\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-composition-custodian.html\">MII_SP_Meta_Composition_Custodian</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Composition_Custodian</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>SearchParameter for Composition.custodian</p>\n</div><p><b>code</b>: custodian</p><p><b>base</b>: Composition</p><p><b>type</b>: Reference</p><p><b>expression</b>: Composition.custodian</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-composition-custodian",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Composition_Custodian",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "SearchParameter for Composition.custodian",
+      "code" : "custodian",
+      "base" : ["Composition"],
+      "type" : "reference",
+      "expression" : "Composition.custodian"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-composition-relatesto-code",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-composition-relatesto-code",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-composition-relatesto-code\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-composition-relatesto-code</b></p><a name=\"mii-sp-meta-composition-relatesto-code\"> </a><a name=\"hcmii-sp-meta-composition-relatesto-code\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-composition-relatesto-code.html\">MII_SP_Meta_Composition_RelatesTo_Code</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Composition_RelatesTo_Code</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>SearchParameter for Composition.relatesTo.code</p>\n</div><p><b>code</b>: relates-to-code</p><p><b>base</b>: Composition</p><p><b>type</b>: Token</p><p><b>expression</b>: Composition.relatesTo.code</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-composition-relatesto-code",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Composition_RelatesTo_Code",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "SearchParameter for Composition.relatesTo.code",
+      "code" : "relates-to-code",
+      "base" : ["Composition"],
+      "type" : "token",
+      "expression" : "Composition.relatesTo.code"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-media-partof",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-media-partof",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-media-partof\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-media-partof</b></p><a name=\"mii-sp-meta-media-partof\"> </a><a name=\"hcmii-sp-meta-media-partof\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-media-partof.html\">MII_SP_Meta_Media_PartOf</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Media_PartOf</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>SearchParameter for Media.partOf</p>\n</div><p><b>code</b>: part-of</p><p><b>base</b>: Media</p><p><b>type</b>: Reference</p><p><b>expression</b>: Media.partOf</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-media-partof",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Media_PartOf",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "SearchParameter for Media.partOf",
+      "code" : "part-of",
+      "base" : ["Media"],
+      "type" : "reference",
+      "expression" : "Media.partOf"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-device-property-type",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-device-property-type",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-device-property-type\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-device-property-type</b></p><a name=\"mii-sp-meta-device-property-type\"> </a><a name=\"hcmii-sp-meta-device-property-type\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-device-property-type.html\">MII_SP_Meta_Device_Property_Type</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Device_Property_Type</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für Device.property.type</p>\n</div><p><b>code</b>: property-type</p><p><b>base</b>: Device</p><p><b>type</b>: Token</p><p><b>expression</b>: Device.property.type</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-device-property-type",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Device_Property_Type",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für Device.property.type",
+      "code" : "property-type",
+      "base" : ["Device"],
+      "type" : "token",
+      "expression" : "Device.property.type"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-devicemetric-source",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-devicemetric-source",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-devicemetric-source\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-devicemetric-source</b></p><a name=\"mii-sp-meta-devicemetric-source\"> </a><a name=\"hcmii-sp-meta-devicemetric-source\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-devicemetric-source.html\">MII_SP_Meta_DeviceMetric_Source</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_DeviceMetric_Source</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für DeviceMetric.source</p>\n</div><p><b>code</b>: source</p><p><b>base</b>: DeviceMetric</p><p><b>type</b>: Reference</p><p><b>expression</b>: DeviceMetric.source</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-devicemetric-source",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_DeviceMetric_Source",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für DeviceMetric.source",
+      "code" : "source",
+      "base" : ["DeviceMetric"],
+      "type" : "reference",
+      "expression" : "DeviceMetric.source"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-observation-bodysite",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-observation-bodysite",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-observation-bodysite\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-observation-bodysite</b></p><a name=\"mii-sp-meta-observation-bodysite\"> </a><a name=\"hcmii-sp-meta-observation-bodysite\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-observation-bodysite.html\">MII_SP_Meta_Observation_BodySite</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Observation_BodySite</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>SearchParameter for Observation.bodySite</p>\n</div><p><b>code</b>: body-site</p><p><b>base</b>: Observation</p><p><b>type</b>: Token</p><p><b>expression</b>: Observation.bodySite</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-bodysite",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Observation_BodySite",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "SearchParameter for Observation.bodySite",
+      "code" : "body-site",
+      "base" : ["Observation"],
+      "type" : "token",
+      "expression" : "Observation.bodySite"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-observation-referencerange",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-observation-referencerange",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-observation-referencerange\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-observation-referencerange</b></p><a name=\"mii-sp-meta-observation-referencerange\"> </a><a name=\"hcmii-sp-meta-observation-referencerange\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-observation-referencerange.html\">MII_SP_Meta_Observation_ReferenceRange</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Observation_ReferenceRange</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für Observation.referenceRange</p>\n</div><p><b>code</b>: reference-range</p><p><b>base</b>: Observation</p><p><b>type</b>: Composite</p><p><b>expression</b>: Observation.referenceRange | Observation.component.referenceRange</p><blockquote><p><b>component</b></p><p><b>definition</b>: <a href=\"SearchParameter-mii-sp-meta-observation-referencerange-high.html\">MII_SP_Meta_Observation_ReferenceRange_High</a></p><p><b>expression</b>: high</p></blockquote><blockquote><p><b>component</b></p><p><b>definition</b>: <a href=\"SearchParameter-mii-sp-meta-observation-referencerange-low.html\">MII_SP_Meta_Observation_ReferenceRange_Low</a></p><p><b>expression</b>: low</p></blockquote></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-referencerange",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Observation_ReferenceRange",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für Observation.referenceRange",
+      "code" : "reference-range",
+      "base" : ["Observation"],
+      "type" : "composite",
+      "expression" : "Observation.referenceRange | Observation.component.referenceRange",
+      "component" : [{
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-referencerange-high",
+        "expression" : "high"
+      },
+      {
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-referencerange-low",
+        "expression" : "low"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-observation-referencerange-low",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-observation-referencerange-low",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-observation-referencerange-low\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-observation-referencerange-low</b></p><a name=\"mii-sp-meta-observation-referencerange-low\"> </a><a name=\"hcmii-sp-meta-observation-referencerange-low\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-observation-referencerange-low.html\">MII_SP_Meta_Observation_ReferenceRange_Low</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Observation_ReferenceRange_Low</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für Observation.referenceRange.low</p>\n</div><p><b>code</b>: reference-range-low</p><p><b>base</b>: Observation</p><p><b>type</b>: Quantity</p><p><b>expression</b>: Observation.referenceRange.low | Observation.component.referenceRange.low</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-referencerange-low",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Observation_ReferenceRange_Low",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für Observation.referenceRange.low",
+      "code" : "reference-range-low",
+      "base" : ["Observation"],
+      "type" : "quantity",
+      "expression" : "Observation.referenceRange.low | Observation.component.referenceRange.low"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-observation-referencerange-high",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-observation-referencerange-high",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-observation-referencerange-high\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-observation-referencerange-high</b></p><a name=\"mii-sp-meta-observation-referencerange-high\"> </a><a name=\"hcmii-sp-meta-observation-referencerange-high\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-observation-referencerange-high.html\">MII_SP_Meta_Observation_ReferenceRange_High</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Observation_ReferenceRange_High</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für Observation.referenceRange.high</p>\n</div><p><b>code</b>: reference-range-high</p><p><b>base</b>: Observation</p><p><b>type</b>: Quantity</p><p><b>expression</b>: Observation.referenceRange.high | Observation.component.referenceRange.high</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-referencerange-high",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Observation_ReferenceRange_High",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für Observation.referenceRange.high",
+      "code" : "reference-range-high",
+      "base" : ["Observation"],
+      "type" : "quantity",
+      "expression" : "Observation.referenceRange.high | Observation.component.referenceRange.high"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-observation-component-interpretation",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-observation-component-interpretation",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-observation-component-interpretation\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-observation-component-interpretation</b></p><a name=\"mii-sp-meta-observation-component-interpretation\"> </a><a name=\"hcmii-sp-meta-observation-component-interpretation\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-observation-component-interpretation.html\">MII_SP_Meta_Observation_Component_Interpretation</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Observation_Component_Interpretation</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für Observation.component.interpretation</p>\n</div><p><b>code</b>: component-interpretation</p><p><b>base</b>: Observation</p><p><b>type</b>: Token</p><p><b>expression</b>: Observation.component.interpretation</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-component-interpretation",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Observation_Component_Interpretation",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für Observation.component.interpretation",
+      "code" : "component-interpretation",
+      "base" : ["Observation"],
+      "type" : "token",
+      "expression" : "Observation.component.interpretation"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-observation-issued",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-observation-issued",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-observation-issued\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-observation-issued</b></p><a name=\"mii-sp-meta-observation-issued\"> </a><a name=\"hcmii-sp-meta-observation-issued\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-observation-issued.html\">MII_SP_Meta_Observation_Issued</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Observation_Issued</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für Observation.issued</p>\n</div><p><b>code</b>: issued</p><p><b>base</b>: Observation</p><p><b>type</b>: Date/DateTime</p><p><b>expression</b>: Observation.issued</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-issued",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Observation_Issued",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für Observation.issued",
+      "code" : "issued",
+      "base" : ["Observation"],
+      "type" : "date",
+      "expression" : "Observation.issued"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-procedure-recorder",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-procedure-recorder",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-procedure-recorder\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-procedure-recorder</b></p><a name=\"mii-sp-meta-procedure-recorder\"> </a><a name=\"hcmii-sp-meta-procedure-recorder\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-procedure-recorder.html\">MII_SP_Meta_Procedure_Recorder</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Procedure_Recorder</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für Procedure.recorder</p>\n</div><p><b>code</b>: recorder</p><p><b>base</b>: Procedure</p><p><b>type</b>: Reference</p><p><b>expression</b>: Procedure.recorder</p><p><b>target</b>: PractitionerRole, Practitioner, RelatedPerson, Patient</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-recorder",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Procedure_Recorder",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für Procedure.recorder",
+      "code" : "recorder",
+      "base" : ["Procedure"],
+      "type" : "reference",
+      "expression" : "Procedure.recorder",
+      "target" : ["PractitionerRole", "Practitioner", "RelatedPerson", "Patient"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-documentreference-attachment-title",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-documentreference-attachment-title",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-documentreference-attachment-title\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-documentreference-attachment-title</b></p><a name=\"mii-sp-meta-documentreference-attachment-title\"> </a><a name=\"hcmii-sp-meta-documentreference-attachment-title\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-documentreference-attachment-title.html\">MII_SP_Meta_DocumentReference_Attachment_Title</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_DocumentReference_Attachment_Title</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für DocumentReference.content.attachment.title</p>\n</div><p><b>code</b>: title</p><p><b>base</b>: DocumentReference</p><p><b>type</b>: String</p><p><b>expression</b>: DocumentReference.content.attachment.title</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-documentreference-attachment-title",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_DocumentReference_Attachment_Title",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für DocumentReference.content.attachment.title",
+      "code" : "title",
+      "base" : ["DocumentReference"],
+      "type" : "string",
+      "expression" : "DocumentReference.content.attachment.title"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-documentreference-attachment-size",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-documentreference-attachment-size",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-documentreference-attachment-size\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-documentreference-attachment-size</b></p><a name=\"mii-sp-meta-documentreference-attachment-size\"> </a><a name=\"hcmii-sp-meta-documentreference-attachment-size\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-documentreference-attachment-size.html\">MII_SP_Meta_DocumentReference_Attachment_Size</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_DocumentReference_Attachment_Size</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für DocumentReference.content.attachment.size</p>\n</div><p><b>code</b>: size</p><p><b>base</b>: DocumentReference</p><p><b>type</b>: Number</p><p><b>expression</b>: DocumentReference.content.attachment.size</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-documentreference-attachment-size",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_DocumentReference_Attachment_Size",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für DocumentReference.content.attachment.size",
+      "code" : "size",
+      "base" : ["DocumentReference"],
+      "type" : "number",
+      "expression" : "DocumentReference.content.attachment.size"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-evidencevariable-characteristic-description",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-evidencevariable-characteristic-description",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-evidencevariable-characteristic-description\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-evidencevariable-characteristic-description</b></p><a name=\"mii-sp-meta-evidencevariable-characteristic-description\"> </a><a name=\"hcmii-sp-meta-evidencevariable-characteristic-description\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-evidencevariable-characteristic-description.html\">MII_SP_Meta_EvidenceVariable_Characteristic_Description</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_EvidenceVariable_Characteristic_Description</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für EvidenceVariable.characteristic.description</p>\n</div><p><b>code</b>: characteristicDescription</p><p><b>base</b>: EvidenceVariable</p><p><b>type</b>: String</p><p><b>expression</b>: EvidenceVariable.characteristic.description</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-evidencevariable-characteristic-description",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_EvidenceVariable_Characteristic_Description",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für EvidenceVariable.characteristic.description",
+      "code" : "characteristicDescription",
+      "base" : ["EvidenceVariable"],
+      "type" : "string",
+      "expression" : "EvidenceVariable.characteristic.description"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-library-quellregister",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-library-quellregister",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-library-quellregister\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-library-quellregister</b></p><a name=\"mii-sp-meta-library-quellregister\"> </a><a name=\"hcmii-sp-meta-library-quellregister\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-library-quellregister.html\">MII_SP_Meta_Library_Quellregister</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Library_Quellregister</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für Library.extension:QuellRegister</p>\n</div><p><b>code</b>: quellregister</p><p><b>base</b>: Library</p><p><b>type</b>: Token</p><p><b>expression</b>: Library.extension.where(url='https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-quell-register').value</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-library-quellregister",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Library_Quellregister",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für Library.extension:QuellRegister",
+      "code" : "quellregister",
+      "base" : ["Library"],
+      "type" : "token",
+      "expression" : "Library.extension.where(url='https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-quell-register').value"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-library-relatedartifact-url",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-library-relatedartifact-url",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-library-relatedartifact-url\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-library-relatedartifact-url</b></p><a name=\"mii-sp-meta-library-relatedartifact-url\"> </a><a name=\"hcmii-sp-meta-library-relatedartifact-url\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-library-relatedartifact-url.html\">MII_SP_Meta_Library_RelatedArtifact_Url</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Library_RelatedArtifact_Url</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für Library.relatedArtifact.document.url</p>\n</div><p><b>code</b>: relatedArtifactUrl</p><p><b>base</b>: Library</p><p><b>type</b>: URI</p><p><b>expression</b>: Library.relatedArtifact.document.url</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-library-relatedartifact-url",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Library_RelatedArtifact_Url",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für Library.relatedArtifact.document.url",
+      "code" : "relatedArtifactUrl",
+      "base" : ["Library"],
+      "type" : "uri",
+      "expression" : "Library.relatedArtifact.document.url"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-researchstudy-arm-name",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-researchstudy-arm-name",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-researchstudy-arm-name\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-researchstudy-arm-name</b></p><a name=\"mii-sp-meta-researchstudy-arm-name\"> </a><a name=\"hcmii-sp-meta-researchstudy-arm-name\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-researchstudy-arm-name.html\">MII_SP_Meta_ResearchStudy_Arm_Name</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_ResearchStudy_Arm_Name</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ResearchStudy.arm.name</p>\n</div><p><b>code</b>: armName</p><p><b>base</b>: ResearchStudy</p><p><b>type</b>: String</p><p><b>expression</b>: ResearchStudy.arm.name</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-arm-name",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_ResearchStudy_Arm_Name",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ResearchStudy.arm.name",
+      "code" : "armName",
+      "base" : ["ResearchStudy"],
+      "type" : "string",
+      "expression" : "ResearchStudy.arm.name"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-researchstudy-label",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-researchstudy-label",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-researchstudy-label\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-researchstudy-label</b></p><a name=\"mii-sp-meta-researchstudy-label\"> </a><a name=\"hcmii-sp-meta-researchstudy-label\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-researchstudy-label.html\">MII_SP_Meta_ResearchStudy_Label</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_ResearchStudy_Label</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ResearchStudy.extension:label</p>\n</div><p><b>code</b>: label</p><p><b>base</b>: ResearchStudy</p><p><b>type</b>: String</p><p><b>expression</b>: ResearchStudy.extension.where(url='http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.label').extension.where(url='value').value</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-label",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_ResearchStudy_Label",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ResearchStudy.extension:label",
+      "code" : "label",
+      "base" : ["ResearchStudy"],
+      "type" : "string",
+      "expression" : "ResearchStudy.extension.where(url='http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.label').extension.where(url='value').value"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-researchstudy-akronym",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-researchstudy-akronym",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-researchstudy-akronym\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-researchstudy-akronym</b></p><a name=\"mii-sp-meta-researchstudy-akronym\"> </a><a name=\"hcmii-sp-meta-researchstudy-akronym\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-researchstudy-akronym.html\">MII_SP_Meta_ResearchStudy_Akronym</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_ResearchStudy_Akronym</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ResearchStudy.extension:Akronym</p>\n</div><p><b>code</b>: akronym</p><p><b>base</b>: ResearchStudy</p><p><b>type</b>: String</p><p><b>expression</b>: ResearchStudy.extension.where(url='https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-akronym').value</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-akronym",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_ResearchStudy_Akronym",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ResearchStudy.extension:Akronym",
+      "code" : "akronym",
+      "base" : ["ResearchStudy"],
+      "type" : "string",
+      "expression" : "ResearchStudy.extension.where(url='https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-akronym').value"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-researchstudy-finanzierung",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-researchstudy-finanzierung",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-researchstudy-finanzierung\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-researchstudy-finanzierung</b></p><a name=\"mii-sp-meta-researchstudy-finanzierung\"> </a><a name=\"hcmii-sp-meta-researchstudy-finanzierung\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-researchstudy-finanzierung.html\">MII_SP_Meta_ResearchStudy_Finanzierung</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_ResearchStudy_Finanzierung</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ResearchStudy.extension:Finanzierung</p>\n</div><p><b>code</b>: finanzierung</p><p><b>base</b>: ResearchStudy</p><p><b>type</b>: String</p><p><b>expression</b>: ResearchStudy.extension.where(url='https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-finanzierung').value</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-finanzierung",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_ResearchStudy_Finanzierung",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ResearchStudy.extension:Finanzierung",
+      "code" : "finanzierung",
+      "base" : ["ResearchStudy"],
+      "type" : "string",
+      "expression" : "ResearchStudy.extension.where(url='https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-finanzierung').value"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-researchstudy-studienregister",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-researchstudy-studienregister",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-researchstudy-studienregister\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-researchstudy-studienregister</b></p><a name=\"mii-sp-meta-researchstudy-studienregister\"> </a><a name=\"hcmii-sp-meta-researchstudy-studienregister\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-researchstudy-studienregister.html\">MII_SP_Meta_ResearchStudy_Studienregister</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_ResearchStudy_Studienregister</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ResearchStudy.extension:Studienregister</p>\n</div><p><b>code</b>: studienregister</p><p><b>base</b>: ResearchStudy</p><p><b>type</b>: Reference</p><p><b>expression</b>: ResearchStudy.extension.where(url='https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-studienregister').value</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-studienregister",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_ResearchStudy_Studienregister",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ResearchStudy.extension:Studienregister",
+      "code" : "studienregister",
+      "base" : ["ResearchStudy"],
+      "type" : "reference",
+      "expression" : "ResearchStudy.extension.where(url='https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-studienregister').value"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-researchstudy-rekrutierungsstand-datum",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-researchstudy-rekrutierungsstand-datum",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-researchstudy-rekrutierungsstand-datum\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-researchstudy-rekrutierungsstand-datum</b></p><a name=\"mii-sp-meta-researchstudy-rekrutierungsstand-datum\"> </a><a name=\"hcmii-sp-meta-researchstudy-rekrutierungsstand-datum\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-researchstudy-rekrutierungsstand-datum.html\">MII_SP_Meta_ResearchStudy_RekrutierungsstandDatum</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_ResearchStudy_RekrutierungsstandDatum</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstand-datum</p>\n</div><p><b>code</b>: rekrutierungsstand-datum</p><p><b>base</b>: ResearchStudy</p><p><b>type</b>: Date/DateTime</p><p><b>expression</b>: ResearchStudy.extension.where(url='https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-rekrutierung').extension.where(url='rekrutierungsstand-datum').value</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-rekrutierungsstand-datum",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_ResearchStudy_RekrutierungsstandDatum",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstand-datum",
+      "code" : "rekrutierungsstand-datum",
+      "base" : ["ResearchStudy"],
+      "type" : "date",
+      "expression" : "ResearchStudy.extension.where(url='https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-rekrutierung').extension.where(url='rekrutierungsstand-datum').value"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-researchstudy-rekrutierungsstand-genauigkeit",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-researchstudy-rekrutierungsstand-genauigkeit",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-researchstudy-rekrutierungsstand-genauigkeit\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-researchstudy-rekrutierungsstand-genauigkeit</b></p><a name=\"mii-sp-meta-researchstudy-rekrutierungsstand-genauigkeit\"> </a><a name=\"hcmii-sp-meta-researchstudy-rekrutierungsstand-genauigkeit\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-researchstudy-rekrutierungsstand-genauigkeit.html\">MII_SP_Meta_ResearchStudy_RekrutierungsstandGenauigkeit</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_ResearchStudy_RekrutierungsstandGenauigkeit</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstand-genauigkeit</p>\n</div><p><b>code</b>: rekrutierungsstand-genauigkeit</p><p><b>base</b>: ResearchStudy</p><p><b>type</b>: String</p><p><b>expression</b>: ResearchStudy.extension.where(url='https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-rekrutierung').extension.where(url='rekrutierungsstand-genauigkeit').value</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-rekrutierungsstand-genauigkeit",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_ResearchStudy_RekrutierungsstandGenauigkeit",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstand-genauigkeit",
+      "code" : "rekrutierungsstand-genauigkeit",
+      "base" : ["ResearchStudy"],
+      "type" : "string",
+      "expression" : "ResearchStudy.extension.where(url='https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-rekrutierung').extension.where(url='rekrutierungsstand-genauigkeit').value"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-researchstudy-rekrutierungsstand",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-researchstudy-rekrutierungsstand",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-researchstudy-rekrutierungsstand\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-researchstudy-rekrutierungsstand</b></p><a name=\"mii-sp-meta-researchstudy-rekrutierungsstand\"> </a><a name=\"hcmii-sp-meta-researchstudy-rekrutierungsstand\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-researchstudy-rekrutierungsstand.html\">MII_SP_Meta_ResearchStudy_Rekrutierungsstand</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_ResearchStudy_Rekrutierungsstand</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstand</p>\n</div><p><b>code</b>: rekrutierungsstand</p><p><b>base</b>: ResearchStudy</p><p><b>type</b>: Number</p><p><b>expression</b>: ResearchStudy.extension.where(url='https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-rekrutierung').extension.where(url='rekrutierungsstand').value</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-rekrutierungsstand",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_ResearchStudy_Rekrutierungsstand",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstand",
+      "code" : "rekrutierungsstand",
+      "base" : ["ResearchStudy"],
+      "type" : "number",
+      "expression" : "ResearchStudy.extension.where(url='https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-rekrutierung').extension.where(url='rekrutierungsstand').value"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-researchstudy-rekrutierungsziel",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-researchstudy-rekrutierungsziel",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-researchstudy-rekrutierungsziel\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-researchstudy-rekrutierungsziel</b></p><a name=\"mii-sp-meta-researchstudy-rekrutierungsziel\"> </a><a name=\"hcmii-sp-meta-researchstudy-rekrutierungsziel\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-researchstudy-rekrutierungsziel.html\">MII_SP_Meta_ResearchStudy_Rekrutierungsziel</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_ResearchStudy_Rekrutierungsziel</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsziel</p>\n</div><p><b>code</b>: rekrutierungsziel</p><p><b>base</b>: ResearchStudy</p><p><b>type</b>: Number</p><p><b>expression</b>: ResearchStudy.extension.where(url='https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-rekrutierung').extension.where(url='rekrutierungsziel').value</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-rekrutierungsziel",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_ResearchStudy_Rekrutierungsziel",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsziel",
+      "code" : "rekrutierungsziel",
+      "base" : ["ResearchStudy"],
+      "type" : "number",
+      "expression" : "ResearchStudy.extension.where(url='https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-rekrutierung').extension.where(url='rekrutierungsziel').value"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-researchstudy-rekrutierungsstart",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-researchstudy-rekrutierungsstart",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-researchstudy-rekrutierungsstart\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-researchstudy-rekrutierungsstart</b></p><a name=\"mii-sp-meta-researchstudy-rekrutierungsstart\"> </a><a name=\"hcmii-sp-meta-researchstudy-rekrutierungsstart\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-researchstudy-rekrutierungsstart.html\">MII_SP_Meta_ResearchStudy_Rekrutierungsstart</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_ResearchStudy_Rekrutierungsstart</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstart</p>\n</div><p><b>code</b>: rekrutierungsstart</p><p><b>base</b>: ResearchStudy</p><p><b>type</b>: Date/DateTime</p><p><b>expression</b>: ResearchStudy.extension.where(url='https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-rekrutierung').extension.where(url='rekrutierungsstart').value</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-rekrutierungsstart",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_ResearchStudy_Rekrutierungsstart",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstart",
+      "code" : "rekrutierungsstart",
+      "base" : ["ResearchStudy"],
+      "type" : "date",
+      "expression" : "ResearchStudy.extension.where(url='https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-rekrutierung').extension.where(url='rekrutierungsstart').value"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-condition-verification-status",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-condition-verification-status",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-condition-verification-status\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-condition-verification-status</b></p><a name=\"mii-sp-meta-condition-verification-status\"> </a><a name=\"hcmii-sp-meta-condition-verification-status\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-condition-verification-status.html\">MII_SP_Meta_Condition_Verification_Status</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Condition_Verification_Status</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>SearchParameter for Condition.verificationStatus</p>\n</div><p><b>code</b>: verification-status</p><p><b>base</b>: Condition</p><p><b>type</b>: Token</p><p><b>expression</b>: Condition.verificationStatus</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-verification-status",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Condition_Verification_Status",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "SearchParameter for Condition.verificationStatus",
+      "code" : "verification-status",
+      "base" : ["Condition"],
+      "type" : "token",
+      "expression" : "Condition.verificationStatus"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-condition-evidence-detail",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-condition-evidence-detail",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-condition-evidence-detail\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-condition-evidence-detail</b></p><a name=\"mii-sp-meta-condition-evidence-detail\"> </a><a name=\"hcmii-sp-meta-condition-evidence-detail\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-condition-evidence-detail.html\">MII_SP_Meta_Condition_Evidence_Detail</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Condition_Evidence_Detail</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>SearchParameter for Condition.evidence.detail</p>\n</div><p><b>code</b>: evidence-detail</p><p><b>base</b>: Condition</p><p><b>type</b>: Reference</p><p><b>expression</b>: Condition.evidence.detail</p><p><b>target</b>: List</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-evidence-detail",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Condition_Evidence_Detail",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "SearchParameter for Condition.evidence.detail",
+      "code" : "evidence-detail",
+      "base" : ["Condition"],
+      "type" : "reference",
+      "expression" : "Condition.evidence.detail",
+      "target" : ["List"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-observation-hasmember",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-observation-hasmember",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-observation-hasmember\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-observation-hasmember</b></p><a name=\"mii-sp-meta-observation-hasmember\"> </a><a name=\"hcmii-sp-meta-observation-hasmember\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-observation-hasmember.html\">MII_SP_Meta_Observation_hasMember</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Observation_hasMember</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>SearchParameter for Observation.hasMember</p>\n</div><p><b>code</b>: has-member</p><p><b>base</b>: Observation</p><p><b>type</b>: Reference</p><p><b>expression</b>: Observation.hasMember</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-hasmember",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Observation_hasMember",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "SearchParameter for Observation.hasMember",
+      "code" : "has-member",
+      "base" : ["Observation"],
+      "type" : "reference",
+      "expression" : "Observation.hasMember"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-procedure-complication",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-procedure-complication",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-procedure-complication\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-procedure-complication</b></p><a name=\"mii-sp-meta-procedure-complication\"> </a><a name=\"hcmii-sp-meta-procedure-complication\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-procedure-complication.html\">MII_SP_Meta_Procedure_Complication</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Procedure_Complication</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>SearchParameter for Procedure.complication</p>\n</div><p><b>code</b>: complication</p><p><b>base</b>: Procedure</p><p><b>type</b>: Token</p><p><b>expression</b>: Procedure.complication</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-complication",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Procedure_Complication",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "SearchParameter for Procedure.complication",
+      "code" : "complication",
+      "base" : ["Procedure"],
+      "type" : "token",
+      "expression" : "Procedure.complication"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-procedure-outcome",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-procedure-outcome",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-procedure-outcome\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-procedure-outcome</b></p><a name=\"mii-sp-meta-procedure-outcome\"> </a><a name=\"hcmii-sp-meta-procedure-outcome\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-procedure-outcome.html\">MII_SP_Meta_Procedure_Outcome</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Procedure_Outcome</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>SearchParameter for Procedure.outcome</p>\n</div><p><b>code</b>: outcome</p><p><b>base</b>: Procedure</p><p><b>type</b>: Token</p><p><b>expression</b>: Procedure.outcome</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-outcome",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Procedure_Outcome",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "SearchParameter for Procedure.outcome",
+      "code" : "outcome",
+      "base" : ["Procedure"],
+      "type" : "token",
+      "expression" : "Procedure.outcome"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-adverseevent-suspectentity-instance",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-adverseevent-suspectentity-instance",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-adverseevent-suspectentity-instance\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-adverseevent-suspectentity-instance</b></p><a name=\"mii-sp-meta-adverseevent-suspectentity-instance\"> </a><a name=\"hcmii-sp-meta-adverseevent-suspectentity-instance\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-adverseevent-suspectentity-instance.html\">MII_SP_Meta_AdverseEvent_SuspectEntity_Instance</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_AdverseEvent_SuspectEntity_Instance</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>SearchParameter for AdverseEvent.suspectEntity.instance</p>\n</div><p><b>code</b>: instance</p><p><b>base</b>: AdverseEvent</p><p><b>type</b>: Reference</p><p><b>expression</b>: AdverseEvent.suspectEntity.instance</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-adverseevent-suspectentity-instance",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_AdverseEvent_SuspectEntity_Instance",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "SearchParameter for AdverseEvent.suspectEntity.instance",
+      "code" : "instance",
+      "base" : ["AdverseEvent"],
+      "type" : "reference",
+      "expression" : "AdverseEvent.suspectEntity.instance"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-adverseevent-encounter",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-adverseevent-encounter",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-adverseevent-encounter\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-adverseevent-encounter</b></p><a name=\"mii-sp-meta-adverseevent-encounter\"> </a><a name=\"hcmii-sp-meta-adverseevent-encounter\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-adverseevent-encounter.html\">MII_SP_Meta_AdverseEvent_Encounter</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_AdverseEvent_Encounter</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>SearchParameter for AdverseEvent.encounter</p>\n</div><p><b>code</b>: encounter</p><p><b>base</b>: AdverseEvent</p><p><b>type</b>: Reference</p><p><b>expression</b>: AdverseEvent.encounter</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-adverseevent-encounter",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_AdverseEvent_Encounter",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "SearchParameter for AdverseEvent.encounter",
+      "code" : "encounter",
+      "base" : ["AdverseEvent"],
+      "type" : "reference",
+      "expression" : "AdverseEvent.encounter"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-careplan-created",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-careplan-created",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-careplan-created\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-careplan-created</b></p><a name=\"mii-sp-meta-careplan-created\"> </a><a name=\"hcmii-sp-meta-careplan-created\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-careplan-created.html\">MII_SP_Meta_CarePlan_Created</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_CarePlan_Created</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>SearchParameter for CarePlan.created</p>\n</div><p><b>code</b>: created</p><p><b>base</b>: CarePlan</p><p><b>type</b>: Date/DateTime</p><p><b>expression</b>: CarePlan.created</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-careplan-created",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_CarePlan_Created",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "SearchParameter for CarePlan.created",
+      "code" : "created",
+      "base" : ["CarePlan"],
+      "type" : "date",
+      "expression" : "CarePlan.created"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-careplan-contributor",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-careplan-contributor",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-careplan-contributor\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-careplan-contributor</b></p><a name=\"mii-sp-meta-careplan-contributor\"> </a><a name=\"hcmii-sp-meta-careplan-contributor\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-careplan-contributor.html\">MII_SP_Meta_CarePlan_Contributor</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_CarePlan_Contributor</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>SearchParameter for CarePlan.contributor</p>\n</div><p><b>code</b>: contributor</p><p><b>base</b>: CarePlan</p><p><b>type</b>: Reference</p><p><b>expression</b>: CarePlan.contributor</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-careplan-contributor",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_CarePlan_Contributor",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "SearchParameter for CarePlan.contributor",
+      "code" : "contributor",
+      "base" : ["CarePlan"],
+      "type" : "reference",
+      "expression" : "CarePlan.contributor"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-careplan-addresses",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-careplan-addresses",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-careplan-addresses\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-careplan-addresses</b></p><a name=\"mii-sp-meta-careplan-addresses\"> </a><a name=\"hcmii-sp-meta-careplan-addresses\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-careplan-addresses.html\">MII_SP_Meta_CarePlan_Addresses</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_CarePlan_Addresses</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>SearchParameter for CarePlan.addresses</p>\n</div><p><b>code</b>: addresses</p><p><b>base</b>: CarePlan</p><p><b>type</b>: Reference</p><p><b>expression</b>: CarePlan.addresses</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-careplan-addresses",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_CarePlan_Addresses",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "SearchParameter for CarePlan.addresses",
+      "code" : "addresses",
+      "base" : ["CarePlan"],
+      "type" : "reference",
+      "expression" : "CarePlan.addresses"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-observation-focus",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-observation-focus",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-observation-focus\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-observation-focus</b></p><a name=\"mii-sp-meta-observation-focus\"> </a><a name=\"hcmii-sp-meta-observation-focus\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-observation-focus.html\">MII_SP_Meta_Observation_Focus</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Observation_Focus</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>SearchParameter for Observation.focus</p>\n</div><p><b>code</b>: focus</p><p><b>base</b>: Observation</p><p><b>type</b>: Reference</p><p><b>expression</b>: Observation.focus</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-focus",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Observation_Focus",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "SearchParameter for Observation.focus",
+      "code" : "focus",
+      "base" : ["Observation"],
+      "type" : "reference",
+      "expression" : "Observation.focus"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-observation-encounter",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-observation-encounter",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-observation-encounter\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-observation-encounter</b></p><a name=\"mii-sp-meta-observation-encounter\"> </a><a name=\"hcmii-sp-meta-observation-encounter\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-observation-encounter.html\">MII_SP_Meta_Observation_Encounter</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_Observation_Encounter</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>SearchParameter for Observation.encounter</p>\n</div><p><b>code</b>: encounter</p><p><b>base</b>: Observation</p><p><b>type</b>: Reference</p><p><b>expression</b>: Observation.encounter</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-encounter",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_Observation_Encounter",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "SearchParameter for Observation.encounter",
+      "code" : "encounter",
+      "base" : ["Observation"],
+      "type" : "reference",
+      "expression" : "Observation.encounter"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-supporting-info",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-supporting-info",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-supporting-info\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-supporting-info</b></p><a name=\"mii-sp-meta-supporting-info\"> </a><a name=\"hcmii-sp-meta-supporting-info\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-supporting-info.html\">MII_SP_Bildgebung_Supporting_Info</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Supporting_Info</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für CarePlan.supportingInfo | DiagnosticReport.extension.supportingInfo</p>\n</div><p><b>code</b>: supporting-info</p><p><b>base</b>: CarePlan, DiagnosticReport</p><p><b>type</b>: Reference</p><p><b>expression</b>: CarePlan.supportingInfo | DiagnosticReport.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo').extension('reference').value</p><p><b>target</b>: DiagnosticReport</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-supporting-info",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Supporting_Info",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für CarePlan.supportingInfo | DiagnosticReport.extension.supportingInfo",
+      "code" : "supporting-info",
+      "base" : ["CarePlan", "DiagnosticReport"],
+      "type" : "reference",
+      "expression" : "CarePlan.supportingInfo | DiagnosticReport.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.supportingInfo').extension('reference').value",
+      "target" : ["DiagnosticReport"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-description",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-description",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-description\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-description</b></p><a name=\"mii-sp-meta-description\"> </a><a name=\"hcmii-sp-meta-description\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-description.html\">MII_SP_Bildgebung_Description</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Description</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für CarePlan.description | ImagingStudy.description | ImagingStudy.series.description</p>\n</div><p><b>code</b>: description</p><p><b>base</b>: CarePlan, ImagingStudy</p><p><b>type</b>: String</p><p><b>expression</b>: CarePlan.description | ImagingStudy.description | ImagingStudy.series.description</p><p><b>modifier</b>: Contains, Exact, Missing</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-description",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Description",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für CarePlan.description | ImagingStudy.description | ImagingStudy.series.description",
+      "code" : "description",
+      "base" : ["CarePlan", "ImagingStudy"],
+      "type" : "string",
+      "expression" : "CarePlan.description | ImagingStudy.description | ImagingStudy.series.description",
+      "modifier" : ["contains", "exact", "missing"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-body-structure-location-qualifier",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-body-structure-location-qualifier",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-body-structure-location-qualifier\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-body-structure-location-qualifier</b></p><a name=\"mii-sp-meta-body-structure-location-qualifier\"> </a><a name=\"hcmii-sp-meta-body-structure-location-qualifier\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-body-structure-location-qualifier.html\">MII_SP_Bildgebung_Koerperstruktur_Location_Qualifier</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Koerperstruktur_Location_Qualifier</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für BodyStructure.locationQualifier</p>\n</div><p><b>code</b>: location-qualifier</p><p><b>base</b>: BodyStructure</p><p><b>type</b>: Token</p><p><b>expression</b>: BodyStructure.locationQualifier</p><p><b>modifier</b>: Text, Not, Above, Below, In, Not In, Missing</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-body-structure-location-qualifier",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Koerperstruktur_Location_Qualifier",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für BodyStructure.locationQualifier",
+      "code" : "location-qualifier",
+      "base" : ["BodyStructure"],
+      "type" : "token",
+      "expression" : "BodyStructure.locationQualifier",
+      "modifier" : ["text",
+      "not",
+      "above",
+      "below",
+      "in",
+      "not-in",
+      "missing"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-composition-section-title",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-composition-section-title",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-composition-section-title\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-composition-section-title</b></p><a name=\"mii-sp-meta-composition-section-title\"> </a><a name=\"hcmii-sp-meta-composition-section-title\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-composition-section-title.html\">MII_SP_Bildgebung_Composition_Section_Title</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Composition_Section_Title</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für Composition.section.title</p>\n</div><p><b>code</b>: section-title</p><p><b>base</b>: Composition</p><p><b>type</b>: String</p><p><b>expression</b>: Composition.section.title</p><p><b>modifier</b>: Contains, Exact, Missing</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-composition-section-title",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Composition_Section_Title",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für Composition.section.title",
+      "code" : "section-title",
+      "base" : ["Composition"],
+      "type" : "string",
+      "expression" : "Composition.section.title",
+      "modifier" : ["contains", "exact", "missing"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-composition-section-author",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-composition-section-author",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-composition-section-author\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-composition-section-author</b></p><a name=\"mii-sp-meta-composition-section-author\"> </a><a name=\"hcmii-sp-meta-composition-section-author\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-composition-section-author.html\">MII_SP_Bildgebung_Composition_Section_Author</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Composition_Section_Author</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für Composition.section.author</p>\n</div><p><b>code</b>: section-author</p><p><b>base</b>: Composition</p><p><b>type</b>: Reference</p><p><b>expression</b>: Composition.section.author</p><p><b>target</b>: Practitioner</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-composition-section-author",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Composition_Section_Author",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für Composition.section.author",
+      "code" : "section-author",
+      "base" : ["Composition"],
+      "type" : "reference",
+      "expression" : "Composition.section.author",
+      "target" : ["Practitioner"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-diagnostic-report-conclusion",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-diagnostic-report-conclusion",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-diagnostic-report-conclusion\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-diagnostic-report-conclusion</b></p><a name=\"mii-sp-meta-diagnostic-report-conclusion\"> </a><a name=\"hcmii-sp-meta-diagnostic-report-conclusion\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-diagnostic-report-conclusion.html\">MII_SP_Bildgebung_Diagnostic_Report_Conclusion</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Diagnostic_Report_Conclusion</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für DiagnosticReport.conclusion</p>\n</div><p><b>code</b>: conclusion-text</p><p><b>base</b>: DiagnosticReport</p><p><b>type</b>: String</p><p><b>expression</b>: DiagnosticReport.conclusion</p><p><b>modifier</b>: Contains, Exact, Missing</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-diagnostic-report-conclusion",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Diagnostic_Report_Conclusion",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für DiagnosticReport.conclusion",
+      "code" : "conclusion-text",
+      "base" : ["DiagnosticReport"],
+      "type" : "string",
+      "expression" : "DiagnosticReport.conclusion",
+      "modifier" : ["contains", "exact", "missing"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-modality-body-site",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-imaging-study-modality-body-site",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-imaging-study-modality-body-site\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-imaging-study-modality-body-site</b></p><a name=\"mii-sp-meta-imaging-study-modality-body-site\"> </a><a name=\"hcmii-sp-meta-imaging-study-modality-body-site\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-imaging-study-modality-body-site.html\">MII_SP_Bildgebung_Imaging_Study_Modality_Body_Site</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Imaging_Study_Modality_Body_Site</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ImagingStudy.series.modality and ImagingStudy.series.bodySite</p>\n</div><p><b>code</b>: modality-body-site</p><p><b>base</b>: ImagingStudy</p><p><b>type</b>: Composite</p><p><b>expression</b>: ImagingStudy.series</p><blockquote><p><b>component</b></p><p><b>definition</b>: <a href=\"http://hl7.org/fhir/SearchParameter/ImagingStudy-modality\">modality</a></p><p><b>expression</b>: modality</p></blockquote><blockquote><p><b>component</b></p><p><b>definition</b>: <a href=\"http://hl7.org/fhir/SearchParameter/ImagingStudy-bodysite\">bodysite</a></p><p><b>expression</b>: bodysite</p></blockquote></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-modality-body-site",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Imaging_Study_Modality_Body_Site",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ImagingStudy.series.modality and ImagingStudy.series.bodySite",
+      "code" : "modality-body-site",
+      "base" : ["ImagingStudy"],
+      "type" : "composite",
+      "expression" : "ImagingStudy.series",
+      "component" : [{
+        "definition" : "http://hl7.org/fhir/SearchParameter/ImagingStudy-modality",
+        "expression" : "modality"
+      },
+      {
+        "definition" : "http://hl7.org/fhir/SearchParameter/ImagingStudy-bodysite",
+        "expression" : "bodysite"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-bildgebungsgrund",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-imaging-study-bildgebungsgrund",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-imaging-study-bildgebungsgrund\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-imaging-study-bildgebungsgrund</b></p><a name=\"mii-sp-meta-imaging-study-bildgebungsgrund\"> </a><a name=\"hcmii-sp-meta-imaging-study-bildgebungsgrund\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-imaging-study-bildgebungsgrund.html\">MII_SP_Bildgebung_Imaging_Study_Bildgebungsgrund</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Imaging_Study_Bildgebungsgrund</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ImagingStudy.Extension.Bildgebungsgrund</p>\n</div><p><b>code</b>: bildgebungsgrund</p><p><b>base</b>: ImagingStudy</p><p><b>type</b>: String</p><p><b>expression</b>: ImagingStudy.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildgebungsgrund').value</p><p><b>modifier</b>: Contains, Exact, Missing</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-bildgebungsgrund",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Imaging_Study_Bildgebungsgrund",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ImagingStudy.Extension.Bildgebungsgrund",
+      "code" : "bildgebungsgrund",
+      "base" : ["ImagingStudy"],
+      "type" : "string",
+      "expression" : "ImagingStudy.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildgebungsgrund').value",
+      "modifier" : ["contains", "exact", "missing"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-modality",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-imaging-study-modality",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-imaging-study-modality\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-imaging-study-modality</b></p><a name=\"mii-sp-meta-imaging-study-modality\"> </a><a name=\"hcmii-sp-meta-imaging-study-modality\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-imaging-study-modality.html\">MII_SP_Bildgebung_Imaging_Study_Modality</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Imaging_Study_Modality</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ImagingStudy.modality</p>\n</div><p><b>code</b>: study-modality</p><p><b>base</b>: ImagingStudy</p><p><b>type</b>: Token</p><p><b>expression</b>: ImagingStudy.modality</p><p><b>modifier</b>: Text, Not, Above, Below, In, Not In, Missing</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-modality",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Imaging_Study_Modality",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ImagingStudy.modality",
+      "code" : "study-modality",
+      "base" : ["ImagingStudy"],
+      "type" : "token",
+      "expression" : "ImagingStudy.modality",
+      "modifier" : ["text",
+      "not",
+      "above",
+      "below",
+      "in",
+      "not-in",
+      "missing"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-reason-reference",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-reason-reference",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-reason-reference\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-reason-reference</b></p><a name=\"mii-sp-meta-reason-reference\"> </a><a name=\"hcmii-sp-meta-reason-reference\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-reason-reference.html\">MII_SP_Bildgebung_Reason_Reference</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Reason_Reference</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ImagingStudy.reasonReference</p>\n</div><p><b>code</b>: reason-reference</p><p><b>base</b>: ImagingStudy</p><p><b>type</b>: Reference</p><p><b>expression</b>: ImagingStudy.reasonReference</p><p><b>target</b>: Condition, Observation, DiagnosticReport, DocumentReference</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-reason-reference",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Reason_Reference",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ImagingStudy.reasonReference",
+      "code" : "reason-reference",
+      "base" : ["ImagingStudy"],
+      "type" : "reference",
+      "expression" : "ImagingStudy.reasonReference",
+      "target" : ["Condition",
+      "Observation",
+      "DiagnosticReport",
+      "DocumentReference"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-number-series",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-imaging-study-number-series",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-imaging-study-number-series\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-imaging-study-number-series</b></p><a name=\"mii-sp-meta-imaging-study-number-series\"> </a><a name=\"hcmii-sp-meta-imaging-study-number-series\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-imaging-study-number-series.html\">MII_SP_Bildgebung_Imaging_Study_Number_Series</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Imaging_Study_Number_Series</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ImagingStudy.numberOfSeries</p>\n</div><p><b>code</b>: number-series</p><p><b>base</b>: ImagingStudy</p><p><b>type</b>: Number</p><p><b>expression</b>: ImagingStudy.numberOfSeries</p><p><b>comparator</b>: Equals, Greater Than, Less Than, Greater or Equals, Less of Equal</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-number-series",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Imaging_Study_Number_Series",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ImagingStudy.numberOfSeries",
+      "code" : "number-series",
+      "base" : ["ImagingStudy"],
+      "type" : "number",
+      "expression" : "ImagingStudy.numberOfSeries",
+      "comparator" : ["eq", "gt", "lt", "ge", "le"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-number-instances",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-imaging-study-number-instances",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-imaging-study-number-instances\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-imaging-study-number-instances</b></p><a name=\"mii-sp-meta-imaging-study-number-instances\"> </a><a name=\"hcmii-sp-meta-imaging-study-number-instances\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-imaging-study-number-instances.html\">MII_SP_Bildgebung_Imaging_Study_Number_Instances</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Imaging_Study_Number_Instances</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ImagingStudy.numberOfSeries</p>\n</div><p><b>code</b>: number-instances</p><p><b>base</b>: ImagingStudy</p><p><b>type</b>: Number</p><p><b>expression</b>: ImagingStudy.numberOfInstances | ImagingStudy.series.numberOfInstances</p><p><b>comparator</b>: Equals, Greater Than, Less Than, Greater or Equals, Less of Equal</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-number-instances",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Imaging_Study_Number_Instances",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ImagingStudy.numberOfSeries",
+      "code" : "number-instances",
+      "base" : ["ImagingStudy"],
+      "type" : "number",
+      "expression" : "ImagingStudy.numberOfInstances | ImagingStudy.series.numberOfInstances",
+      "comparator" : ["eq", "gt", "lt", "ge", "le"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-procedure-reference",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-imaging-study-procedure-reference",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-imaging-study-procedure-reference\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-imaging-study-procedure-reference</b></p><a name=\"mii-sp-meta-imaging-study-procedure-reference\"> </a><a name=\"hcmii-sp-meta-imaging-study-procedure-reference\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-imaging-study-procedure-reference.html\">MII_SP_Bildgebung_Imaging_Study_Procedure_Reference</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Imaging_Study_Procedure_Reference</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ImagingStudy.procedureReference</p>\n</div><p><b>code</b>: procedure-reference</p><p><b>base</b>: ImagingStudy</p><p><b>type</b>: Reference</p><p><b>expression</b>: ImagingStudy.procedureReference</p><p><b>target</b>: Procedure</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-procedure-reference",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Imaging_Study_Procedure_Reference",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ImagingStudy.procedureReference",
+      "code" : "procedure-reference",
+      "base" : ["ImagingStudy"],
+      "type" : "reference",
+      "expression" : "ImagingStudy.procedureReference",
+      "target" : ["Procedure"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-ctdi-volume",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-imaging-study-series-ctdi-volume",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-imaging-study-series-ctdi-volume\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-imaging-study-series-ctdi-volume</b></p><a name=\"mii-sp-meta-imaging-study-series-ctdi-volume\"> </a><a name=\"hcmii-sp-meta-imaging-study-series-ctdi-volume\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-imaging-study-series-ctdi-volume.html\">MII_SP_Bildgebung_Imaging_Study_Series_CTDI_Volume</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Imaging_Study_Series_CTDI_Volume</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ImagingStudy.series.extension.CTDIvolume</p>\n</div><p><b>code</b>: ctdi-volume</p><p><b>base</b>: ImagingStudy</p><p><b>type</b>: Quantity</p><p><b>expression</b>: ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct').extension('CTDIvol').value</p><p><b>comparator</b>: Equals, Greater Than, Less Than, Greater or Equals, Less of Equal</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-ctdi-volume",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Imaging_Study_Series_CTDI_Volume",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ImagingStudy.series.extension.CTDIvolume",
+      "code" : "ctdi-volume",
+      "base" : ["ImagingStudy"],
+      "type" : "quantity",
+      "expression" : "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct').extension('CTDIvol').value",
+      "comparator" : ["eq", "gt", "lt", "ge", "le"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-exposure-time",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-imaging-study-series-exposure-time",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-imaging-study-series-exposure-time\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-imaging-study-series-exposure-time</b></p><a name=\"mii-sp-meta-imaging-study-series-exposure-time\"> </a><a name=\"hcmii-sp-meta-imaging-study-series-exposure-time\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-imaging-study-series-exposure-time.html\">MII_SP_Bildgebung_Imaging_Study_Series_Exposure_Time</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Imaging_Study_Series_Exposure_Time</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ImagingStudy.series.extension.exposureTime</p>\n</div><p><b>code</b>: exposure-time</p><p><b>base</b>: ImagingStudy</p><p><b>type</b>: Quantity</p><p><b>expression</b>: ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct').extension('exposureTime').value | ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx').extension('exposureTime').value</p><p><b>comparator</b>: Equals, Greater Than, Less Than, Greater or Equals, Less of Equal</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-exposure-time",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Imaging_Study_Series_Exposure_Time",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ImagingStudy.series.extension.exposureTime",
+      "code" : "exposure-time",
+      "base" : ["ImagingStudy"],
+      "type" : "quantity",
+      "expression" : "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct').extension('exposureTime').value | ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx').extension('exposureTime').value",
+      "comparator" : ["eq", "gt", "lt", "ge", "le"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-exposure",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-imaging-study-series-exposure",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-imaging-study-series-exposure\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-imaging-study-series-exposure</b></p><a name=\"mii-sp-meta-imaging-study-series-exposure\"> </a><a name=\"hcmii-sp-meta-imaging-study-series-exposure\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-imaging-study-series-exposure.html\">MII_SP_Bildgebung_Imaging_Study_Series_Exposure</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Imaging_Study_Series_Exposure</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ImagingStudy.series.extension.exposure</p>\n</div><p><b>code</b>: exposure</p><p><b>base</b>: ImagingStudy</p><p><b>type</b>: Quantity</p><p><b>expression</b>: ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct').extension('exposure').value | ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx').extension('exposure').value</p><p><b>comparator</b>: Equals, Greater Than, Less Than, Greater or Equals, Less of Equal</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-exposure",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Imaging_Study_Series_Exposure",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ImagingStudy.series.extension.exposure",
+      "code" : "exposure",
+      "base" : ["ImagingStudy"],
+      "type" : "quantity",
+      "expression" : "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct').extension('exposure').value | ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx').extension('exposure').value",
+      "comparator" : ["eq", "gt", "lt", "ge", "le"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-xray-tube-current",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-imaging-study-series-xray-tube-current",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-imaging-study-series-xray-tube-current\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-imaging-study-series-xray-tube-current</b></p><a name=\"mii-sp-meta-imaging-study-series-xray-tube-current\"> </a><a name=\"hcmii-sp-meta-imaging-study-series-xray-tube-current\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-imaging-study-series-xray-tube-current.html\">MII_SP_Bildgebung_Imaging_Study_Series_xRay_Tube_Current</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Imaging_Study_Series_xRay_Tube_Current</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ImagingStudy.series.extension.xRayTubeCurrent</p>\n</div><p><b>code</b>: xray-tube-current</p><p><b>base</b>: ImagingStudy</p><p><b>type</b>: Quantity</p><p><b>expression</b>: ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct').extension('xRayTubeCurrent').value | ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx').extension('xRayTubeCurrent').value</p><p><b>comparator</b>: Equals, Greater Than, Less Than, Greater or Equals, Less of Equal</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-xray-tube-current",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Imaging_Study_Series_xRay_Tube_Current",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ImagingStudy.series.extension.xRayTubeCurrent",
+      "code" : "xray-tube-current",
+      "base" : ["ImagingStudy"],
+      "type" : "quantity",
+      "expression" : "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct').extension('xRayTubeCurrent').value | ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx').extension('xRayTubeCurrent').value",
+      "comparator" : ["eq", "gt", "lt", "ge", "le"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-kvp",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-imaging-study-series-kvp",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-imaging-study-series-kvp\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-imaging-study-series-kvp</b></p><a name=\"mii-sp-meta-imaging-study-series-kvp\"> </a><a name=\"hcmii-sp-meta-imaging-study-series-kvp\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-imaging-study-series-kvp.html\">MII_SP_Bildgebung_Imaging_Study_Series_KVP</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Imaging_Study_Series_KVP</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ImagingStudy.series.extension.kvp</p>\n</div><p><b>code</b>: kvp</p><p><b>base</b>: ImagingStudy</p><p><b>type</b>: Quantity</p><p><b>expression</b>: ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct').extension('KVP').value | ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx').extension('KVP').value</p><p><b>comparator</b>: Equals, Greater Than, Less Than, Greater or Equals, Less of Equal</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-kvp",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Imaging_Study_Series_KVP",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ImagingStudy.series.extension.kvp",
+      "code" : "kvp",
+      "base" : ["ImagingStudy"],
+      "type" : "quantity",
+      "expression" : "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct').extension('KVP').value | ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx').extension('KVP').value",
+      "comparator" : ["eq", "gt", "lt", "ge", "le"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-view-position",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-imaging-study-series-view-position",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-imaging-study-series-view-position\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-imaging-study-series-view-position</b></p><a name=\"mii-sp-meta-imaging-study-series-view-position\"> </a><a name=\"hcmii-sp-meta-imaging-study-series-view-position\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-imaging-study-series-view-position.html\">MII_SP_Bildgebung_Imaging_Study_Series_View_Position</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Imaging_Study_Series_View_Position</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ImagingStudy.series.extension.viewPosition</p>\n</div><p><b>code</b>: view-position</p><p><b>base</b>: ImagingStudy</p><p><b>type</b>: Token</p><p><b>expression</b>: ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx').extension('viewPosition').value</p><p><b>modifier</b>: Text, Not, Above, Below, In, Not In, Missing</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-view-position",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Imaging_Study_Series_View_Position",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ImagingStudy.series.extension.viewPosition",
+      "code" : "view-position",
+      "base" : ["ImagingStudy"],
+      "type" : "token",
+      "expression" : "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx').extension('viewPosition').value",
+      "modifier" : ["text",
+      "not",
+      "above",
+      "below",
+      "in",
+      "not-in",
+      "missing"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-magnetic-field-strength",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-imaging-study-series-magnetic-field-strength",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-imaging-study-series-magnetic-field-strength\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-imaging-study-series-magnetic-field-strength</b></p><a name=\"mii-sp-meta-imaging-study-series-magnetic-field-strength\"> </a><a name=\"hcmii-sp-meta-imaging-study-series-magnetic-field-strength\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-imaging-study-series-magnetic-field-strength.html\">MII_SP_Bildgebung_Imaging_Study_Series_Magnetic_Field_Strength</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Imaging_Study_Series_Magnetic_Field_Strength</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ImagingStudy.series.extension.magneticFieldStrength</p>\n</div><p><b>code</b>: magnetic-field-strength</p><p><b>base</b>: ImagingStudy</p><p><b>type</b>: Quantity</p><p><b>expression</b>: ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr').extension('magneticFieldStrength').value</p><p><b>comparator</b>: Equals, Greater Than, Less Than, Greater or Equals, Less of Equal</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-magnetic-field-strength",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Imaging_Study_Series_Magnetic_Field_Strength",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ImagingStudy.series.extension.magneticFieldStrength",
+      "code" : "magnetic-field-strength",
+      "base" : ["ImagingStudy"],
+      "type" : "quantity",
+      "expression" : "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr').extension('magneticFieldStrength').value",
+      "comparator" : ["eq", "gt", "lt", "ge", "le"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-scanning-sequence",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-imaging-study-series-scanning-sequence",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-imaging-study-series-scanning-sequence\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-imaging-study-series-scanning-sequence</b></p><a name=\"mii-sp-meta-imaging-study-series-scanning-sequence\"> </a><a name=\"hcmii-sp-meta-imaging-study-series-scanning-sequence\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-imaging-study-series-scanning-sequence.html\">MII_SP_Bildgebung_Imaging_Study_Series_Scanning_Sequence</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Imaging_Study_Series_Scanning_Sequence</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ImagingStudy.series.extension.scanningSequence</p>\n</div><p><b>code</b>: scanning-sequence</p><p><b>base</b>: ImagingStudy</p><p><b>type</b>: Token</p><p><b>expression</b>: ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr').extension('scanningSequence').value</p><p><b>modifier</b>: Text, Not, Above, Below, In, Not In, Missing</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-scanning-sequence",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Imaging_Study_Series_Scanning_Sequence",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ImagingStudy.series.extension.scanningSequence",
+      "code" : "scanning-sequence",
+      "base" : ["ImagingStudy"],
+      "type" : "token",
+      "expression" : "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr').extension('scanningSequence').value",
+      "modifier" : ["text",
+      "not",
+      "above",
+      "below",
+      "in",
+      "not-in",
+      "missing"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-scanning-sequence-variant",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-imaging-study-series-scanning-sequence-variant",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-imaging-study-series-scanning-sequence-variant\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-imaging-study-series-scanning-sequence-variant</b></p><a name=\"mii-sp-meta-imaging-study-series-scanning-sequence-variant\"> </a><a name=\"hcmii-sp-meta-imaging-study-series-scanning-sequence-variant\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-imaging-study-series-scanning-sequence-variant.html\">MII_SP_Bildgebung_Imaging_Study_Series_Scanning_Sequence_Variant</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Imaging_Study_Series_Scanning_Sequence_Variant</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ImagingStudy.series.extension.scanningSequenceVariant</p>\n</div><p><b>code</b>: scanning-sequence-variant</p><p><b>base</b>: ImagingStudy</p><p><b>type</b>: Token</p><p><b>expression</b>: ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr').extension('scanningSequenceVariant').value</p><p><b>modifier</b>: Text, Not, Above, Below, In, Not In, Missing</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-scanning-sequence-variant",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Imaging_Study_Series_Scanning_Sequence_Variant",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ImagingStudy.series.extension.scanningSequenceVariant",
+      "code" : "scanning-sequence-variant",
+      "base" : ["ImagingStudy"],
+      "type" : "token",
+      "expression" : "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr').extension('scanningSequenceVariant').value",
+      "modifier" : ["text",
+      "not",
+      "above",
+      "below",
+      "in",
+      "not-in",
+      "missing"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-echo-time",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-imaging-study-series-echo-time",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-imaging-study-series-echo-time\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-imaging-study-series-echo-time</b></p><a name=\"mii-sp-meta-imaging-study-series-echo-time\"> </a><a name=\"hcmii-sp-meta-imaging-study-series-echo-time\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-imaging-study-series-echo-time.html\">MII_SP_Bildgebung_Imaging_Study_Series_Echo_Time</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Imaging_Study_Series_Echo_Time</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ImagingStudy.series.extension.echoTime</p>\n</div><p><b>code</b>: echo-time</p><p><b>base</b>: ImagingStudy</p><p><b>type</b>: Quantity</p><p><b>expression</b>: ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr').extension('echoTime').value</p><p><b>comparator</b>: Equals, Greater Than, Less Than, Greater or Equals, Less of Equal</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-echo-time",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Imaging_Study_Series_Echo_Time",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ImagingStudy.series.extension.echoTime",
+      "code" : "echo-time",
+      "base" : ["ImagingStudy"],
+      "type" : "quantity",
+      "expression" : "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr').extension('echoTime').value",
+      "comparator" : ["eq", "gt", "lt", "ge", "le"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-repetition-time",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-imaging-study-series-repetition-time",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-imaging-study-series-repetition-time\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-imaging-study-series-repetition-time</b></p><a name=\"mii-sp-meta-imaging-study-series-repetition-time\"> </a><a name=\"hcmii-sp-meta-imaging-study-series-repetition-time\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-imaging-study-series-repetition-time.html\">MII_SP_Bildgebung_Imaging_Study_Series_Repetition_Time</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Imaging_Study_Series_Repetition_Time</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ImagingStudy.series.extension.repetitionTime</p>\n</div><p><b>code</b>: repetition-time</p><p><b>base</b>: ImagingStudy</p><p><b>type</b>: Quantity</p><p><b>expression</b>: ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr').extension('repetitionTime').value</p><p><b>comparator</b>: Equals, Greater Than, Less Than, Greater or Equals, Less of Equal</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-repetition-time",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Imaging_Study_Series_Repetition_Time",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ImagingStudy.series.extension.repetitionTime",
+      "code" : "repetition-time",
+      "base" : ["ImagingStudy"],
+      "type" : "quantity",
+      "expression" : "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr').extension('repetitionTime').value",
+      "comparator" : ["eq", "gt", "lt", "ge", "le"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-inversion-time",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-imaging-study-series-inversion-time",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-imaging-study-series-inversion-time\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-imaging-study-series-inversion-time</b></p><a name=\"mii-sp-meta-imaging-study-series-inversion-time\"> </a><a name=\"hcmii-sp-meta-imaging-study-series-inversion-time\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-imaging-study-series-inversion-time.html\">MII_SP_Bildgebung_Imaging_Study_Series_Inversion_Time</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Imaging_Study_Series_Inversion_Time</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ImagingStudy.series.extension.inversionTime</p>\n</div><p><b>code</b>: inversion-time</p><p><b>base</b>: ImagingStudy</p><p><b>type</b>: Quantity</p><p><b>expression</b>: ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr').extension('inversionTime').value</p><p><b>comparator</b>: Equals, Greater Than, Less Than, Greater or Equals, Less of Equal</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-inversion-time",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Imaging_Study_Series_Inversion_Time",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ImagingStudy.series.extension.inversionTime",
+      "code" : "inversion-time",
+      "base" : ["ImagingStudy"],
+      "type" : "quantity",
+      "expression" : "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr').extension('inversionTime').value",
+      "comparator" : ["eq", "gt", "lt", "ge", "le"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-flip-angle",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-imaging-study-series-flip-angle",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-imaging-study-series-flip-angle\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-imaging-study-series-flip-angle</b></p><a name=\"mii-sp-meta-imaging-study-series-flip-angle\"> </a><a name=\"hcmii-sp-meta-imaging-study-series-flip-angle\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-imaging-study-series-flip-angle.html\">MII_SP_Bildgebung_Imaging_Study_Series_Flip_Angle</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Imaging_Study_Series_Flip_Angle</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ImagingStudy.series.extension.flipAngle</p>\n</div><p><b>code</b>: flip-angle</p><p><b>base</b>: ImagingStudy</p><p><b>type</b>: Quantity</p><p><b>expression</b>: ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr').extension('flipAngle').value</p><p><b>comparator</b>: Equals, Greater Than, Less Than, Greater or Equals, Less of Equal</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-flip-angle",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Imaging_Study_Series_Flip_Angle",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ImagingStudy.series.extension.flipAngle",
+      "code" : "flip-angle",
+      "base" : ["ImagingStudy"],
+      "type" : "quantity",
+      "expression" : "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr').extension('flipAngle').value",
+      "comparator" : ["eq", "gt", "lt", "ge", "le"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-radiopharmaceutical",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-imaging-study-series-radiopharmaceutical",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-imaging-study-series-radiopharmaceutical\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-imaging-study-series-radiopharmaceutical</b></p><a name=\"mii-sp-meta-imaging-study-series-radiopharmaceutical\"> </a><a name=\"hcmii-sp-meta-imaging-study-series-radiopharmaceutical\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-imaging-study-series-radiopharmaceutical.html\">MII_SP_Bildgebung_Imaging_Study_Radiopharmaceutical</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Imaging_Study_Radiopharmaceutical</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ImagingStudy.series.extension.radiopharmaceutical</p>\n</div><p><b>code</b>: radiopharmaceutical</p><p><b>base</b>: ImagingStudy</p><p><b>type</b>: Token</p><p><b>expression</b>: ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt').extension('radiopharmaceutical').value | ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm').extension('radiopharmaceutical').value</p><p><b>modifier</b>: Text, Not, Above, Below, In, Not In, Missing</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-radiopharmaceutical",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Imaging_Study_Radiopharmaceutical",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ImagingStudy.series.extension.radiopharmaceutical",
+      "code" : "radiopharmaceutical",
+      "base" : ["ImagingStudy"],
+      "type" : "token",
+      "expression" : "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt').extension('radiopharmaceutical').value | ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm').extension('radiopharmaceutical').value",
+      "modifier" : ["text",
+      "not",
+      "above",
+      "below",
+      "in",
+      "not-in",
+      "missing"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-radionuclide",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-imaging-study-series-radionuclide",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-imaging-study-series-radionuclide\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-imaging-study-series-radionuclide</b></p><a name=\"mii-sp-meta-imaging-study-series-radionuclide\"> </a><a name=\"hcmii-sp-meta-imaging-study-series-radionuclide\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-imaging-study-series-radionuclide.html\">MII_SP_Bildgebung_Imaging_Study_Radionuclide</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Imaging_Study_Radionuclide</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ImagingStudy.series.extension.radionuclide</p>\n</div><p><b>code</b>: radionuclide</p><p><b>base</b>: ImagingStudy</p><p><b>type</b>: Token</p><p><b>expression</b>: ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt').extension('radionuclide').value | ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm').extension('radionuclide').value</p><p><b>modifier</b>: Text, Not, Above, Below, In, Not In, Missing</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-radionuclide",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Imaging_Study_Radionuclide",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ImagingStudy.series.extension.radionuclide",
+      "code" : "radionuclide",
+      "base" : ["ImagingStudy"],
+      "type" : "token",
+      "expression" : "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt').extension('radionuclide').value | ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm').extension('radionuclide').value",
+      "modifier" : ["text",
+      "not",
+      "above",
+      "below",
+      "in",
+      "not-in",
+      "missing"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-tracer-exposure-time",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-imaging-study-series-tracer-exposure-time",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-imaging-study-series-tracer-exposure-time\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-imaging-study-series-tracer-exposure-time</b></p><a name=\"mii-sp-meta-imaging-study-series-tracer-exposure-time\"> </a><a name=\"hcmii-sp-meta-imaging-study-series-tracer-exposure-time\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-imaging-study-series-tracer-exposure-time.html\">MII_SP_Bildgebung_Imaging_Study_Series_Tracer_Exposure_Time</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Imaging_Study_Series_Tracer_Exposure_Time</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ImagingStudy.series.tracerExposureTime</p>\n</div><p><b>code</b>: tracer-exposure-time</p><p><b>base</b>: ImagingStudy</p><p><b>type</b>: Quantity</p><p><b>expression</b>: ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt').extension('tracerExposureTime').value | ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm').extension('tracerExposureTime').value</p><p><b>comparator</b>: Equals, Greater Than, Less Than, Greater or Equals, Less of Equal</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-tracer-exposure-time",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Imaging_Study_Series_Tracer_Exposure_Time",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ImagingStudy.series.tracerExposureTime",
+      "code" : "tracer-exposure-time",
+      "base" : ["ImagingStudy"],
+      "type" : "quantity",
+      "expression" : "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt').extension('tracerExposureTime').value | ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm').extension('tracerExposureTime').value",
+      "comparator" : ["eq", "gt", "lt", "ge", "le"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-units",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-imaging-study-series-units",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-imaging-study-series-units\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-imaging-study-series-units</b></p><a name=\"mii-sp-meta-imaging-study-series-units\"> </a><a name=\"hcmii-sp-meta-imaging-study-series-units\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-imaging-study-series-units.html\">MII_SP_Bildgebung_Imaging_Study_Series_Units</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Imaging_Study_Series_Units</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ImagingStudy.series.extension.units</p>\n</div><p><b>code</b>: units</p><p><b>base</b>: ImagingStudy</p><p><b>type</b>: Token</p><p><b>expression</b>: ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt').extension('units').value | ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm').extension('units').value</p><p><b>modifier</b>: Text, Not, Above, Below, In, Not In, Missing</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-units",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Imaging_Study_Series_Units",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ImagingStudy.series.extension.units",
+      "code" : "units",
+      "base" : ["ImagingStudy"],
+      "type" : "token",
+      "expression" : "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt').extension('units').value | ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm').extension('units').value",
+      "modifier" : ["text",
+      "not",
+      "above",
+      "below",
+      "in",
+      "not-in",
+      "missing"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-radionuclide-total-dose",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-imaging-study-series-radionuclide-total-dose",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-imaging-study-series-radionuclide-total-dose\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-imaging-study-series-radionuclide-total-dose</b></p><a name=\"mii-sp-meta-imaging-study-series-radionuclide-total-dose\"> </a><a name=\"hcmii-sp-meta-imaging-study-series-radionuclide-total-dose\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-imaging-study-series-radionuclide-total-dose.html\">MII_SP_Bildgebung_Imaging_Study_Series_Radionuclide_Total_Dose</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Imaging_Study_Series_Radionuclide_Total_Dose</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ImagingStudy.series.extension.radionuclideTotalDose</p>\n</div><p><b>code</b>: radionuclide-total-dose</p><p><b>base</b>: ImagingStudy</p><p><b>type</b>: Quantity</p><p><b>expression</b>: ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt').extension('radionuclideTotalDose').value | ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm').extension('radionuclideTotalDose').value</p><p><b>comparator</b>: Equals, Greater Than, Less Than, Greater or Equals, Less of Equal</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-radionuclide-total-dose",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Imaging_Study_Series_Radionuclide_Total_Dose",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ImagingStudy.series.extension.radionuclideTotalDose",
+      "code" : "radionuclide-total-dose",
+      "base" : ["ImagingStudy"],
+      "type" : "quantity",
+      "expression" : "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt').extension('radionuclideTotalDose').value | ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm').extension('radionuclideTotalDose').value",
+      "comparator" : ["eq", "gt", "lt", "ge", "le"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-radionuclide-half-life",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-imaging-study-series-radionuclide-half-life",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-imaging-study-series-radionuclide-half-life\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-imaging-study-series-radionuclide-half-life</b></p><a name=\"mii-sp-meta-imaging-study-series-radionuclide-half-life\"> </a><a name=\"hcmii-sp-meta-imaging-study-series-radionuclide-half-life\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-imaging-study-series-radionuclide-half-life.html\">MII_SP_Bildgebung_Imaging_Study_Series_Radionuclide_Half_Life</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Imaging_Study_Series_Radionuclide_Half_Life</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ImagingStudy.series.extension.radionuclideHalfLife</p>\n</div><p><b>code</b>: radionuclide-half-life</p><p><b>base</b>: ImagingStudy</p><p><b>type</b>: Quantity</p><p><b>expression</b>: ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt').extension('radionuclideHalfLife').value | ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm').extension('radionuclideHalfLife').value</p><p><b>comparator</b>: Equals, Greater Than, Less Than, Greater or Equals, Less of Equal</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-radionuclide-half-life",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Imaging_Study_Series_Radionuclide_Half_Life",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ImagingStudy.series.extension.radionuclideHalfLife",
+      "code" : "radionuclide-half-life",
+      "base" : ["ImagingStudy"],
+      "type" : "quantity",
+      "expression" : "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt').extension('radionuclideHalfLife').value | ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm').extension('radionuclideHalfLife').value",
+      "comparator" : ["eq", "gt", "lt", "ge", "le"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-series-type",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-imaging-study-series-series-type",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-imaging-study-series-series-type\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-imaging-study-series-series-type</b></p><a name=\"mii-sp-meta-imaging-study-series-series-type\"> </a><a name=\"hcmii-sp-meta-imaging-study-series-series-type\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-imaging-study-series-series-type.html\">MII_SP_Bildgebung_Imaging_Study_Series_Series_Type</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Imaging_Study_Series_Series_Type</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>ImagingStudy.series.extension.seriesType</p>\n</div><p><b>code</b>: series-type</p><p><b>base</b>: ImagingStudy</p><p><b>type</b>: Token</p><p><b>expression</b>: ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt').extension('seriesType').value</p><p><b>modifier</b>: Text, Not, Above, Below, In, Not In, Missing</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-series-type",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Imaging_Study_Series_Series_Type",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "ImagingStudy.series.extension.seriesType",
+      "code" : "series-type",
+      "base" : ["ImagingStudy"],
+      "type" : "token",
+      "expression" : "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt').extension('seriesType').value",
+      "modifier" : ["text",
+      "not",
+      "above",
+      "below",
+      "in",
+      "not-in",
+      "missing"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-transducer-type",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-imaging-study-series-transducer-type",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-imaging-study-series-transducer-type\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-imaging-study-series-transducer-type</b></p><a name=\"mii-sp-meta-imaging-study-series-transducer-type\"> </a><a name=\"hcmii-sp-meta-imaging-study-series-transducer-type\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-imaging-study-series-transducer-type.html\">MII_SP_Bildgebung_Imaging_Study_Series_Transducer_Type</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Imaging_Study_Series_Transducer_Type</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>ImagingStudy.series.extension.transducerType</p>\n</div><p><b>code</b>: transducer-type</p><p><b>base</b>: ImagingStudy</p><p><b>type</b>: Token</p><p><b>expression</b>: ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-us').extension('transducerType').value</p><p><b>modifier</b>: Text, Not, Above, Below, In, Not In, Missing</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-transducer-type",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Imaging_Study_Series_Transducer_Type",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "ImagingStudy.series.extension.transducerType",
+      "code" : "transducer-type",
+      "base" : ["ImagingStudy"],
+      "type" : "token",
+      "expression" : "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-us').extension('transducerType').value",
+      "modifier" : ["text",
+      "not",
+      "above",
+      "below",
+      "in",
+      "not-in",
+      "missing"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-transducer-frequency",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-imaging-study-series-transducer-frequency",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-imaging-study-series-transducer-frequency\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-imaging-study-series-transducer-frequency</b></p><a name=\"mii-sp-meta-imaging-study-series-transducer-frequency\"> </a><a name=\"hcmii-sp-meta-imaging-study-series-transducer-frequency\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-imaging-study-series-transducer-frequency.html\">MII_SP_Bildgebung_Imaging_Study_Series_Transducer_Frequency</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Imaging_Study_Series_Transducer_Frequency</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ImagingStudy.series.extension.transducerFrequency</p>\n</div><p><b>code</b>: transducer-frequency</p><p><b>base</b>: ImagingStudy</p><p><b>type</b>: Quantity</p><p><b>expression</b>: ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-us').extension('transducerFrequency').value</p><p><b>comparator</b>: Equals, Greater Than, Less Than, Greater or Equals, Less of Equal</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-transducer-frequency",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Imaging_Study_Series_Transducer_Frequency",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ImagingStudy.series.extension.transducerFrequency",
+      "code" : "transducer-frequency",
+      "base" : ["ImagingStudy"],
+      "type" : "quantity",
+      "expression" : "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-us').extension('transducerFrequency').value",
+      "comparator" : ["eq", "gt", "lt", "ge", "le"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-pulse-frequency",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-imaging-study-series-pulse-frequency",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-imaging-study-series-pulse-frequency\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-imaging-study-series-pulse-frequency</b></p><a name=\"mii-sp-meta-imaging-study-series-pulse-frequency\"> </a><a name=\"hcmii-sp-meta-imaging-study-series-pulse-frequency\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-imaging-study-series-pulse-frequency.html\">MII_SP_Bildgebung_Imaging_Study_Series_Pulse_Frequency</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Imaging_Study_Series_Pulse_Frequency</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ImagingStudy.series.extension.pulseRepetitionFrequency</p>\n</div><p><b>code</b>: pulse-frequency</p><p><b>base</b>: ImagingStudy</p><p><b>type</b>: Quantity</p><p><b>expression</b>: ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-us').extension('pulseRepetitionFrequency').value</p><p><b>comparator</b>: Equals, Greater Than, Less Than, Greater or Equals, Less of Equal</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-pulse-frequency",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Imaging_Study_Series_Pulse_Frequency",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ImagingStudy.series.extension.pulseRepetitionFrequency",
+      "code" : "pulse-frequency",
+      "base" : ["ImagingStudy"],
+      "type" : "quantity",
+      "expression" : "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-us').extension('pulseRepetitionFrequency').value",
+      "comparator" : ["eq", "gt", "lt", "ge", "le"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-ultrasound-color",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-imaging-study-series-ultrasound-color",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-imaging-study-series-ultrasound-color\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-imaging-study-series-ultrasound-color</b></p><a name=\"mii-sp-meta-imaging-study-series-ultrasound-color\"> </a><a name=\"hcmii-sp-meta-imaging-study-series-ultrasound-color\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-imaging-study-series-ultrasound-color.html\">MII_SP_Bildgebung_Imaging_Study_Series_Ultrasound_Color</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Imaging_Study_Series_Ultrasound_Color</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>ImagingStudy.series.extension.ultrasoundPresent</p>\n</div><p><b>code</b>: ultrasound-color</p><p><b>base</b>: ImagingStudy</p><p><b>type</b>: Token</p><p><b>expression</b>: ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-us').extension('ultrasoundPresent').value</p><p><b>modifier</b>: Text, Not, Above, Below, In, Not In, Missing</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-ultrasound-color",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Imaging_Study_Series_Ultrasound_Color",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "ImagingStudy.series.extension.ultrasoundPresent",
+      "code" : "ultrasound-color",
+      "base" : ["ImagingStudy"],
+      "type" : "token",
+      "expression" : "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-us').extension('ultrasoundPresent').value",
+      "modifier" : ["text",
+      "not",
+      "above",
+      "below",
+      "in",
+      "not-in",
+      "missing"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-contrast-bolus",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-imaging-study-series-contrast-bolus",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-imaging-study-series-contrast-bolus\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-imaging-study-series-contrast-bolus</b></p><a name=\"mii-sp-meta-imaging-study-series-contrast-bolus\"> </a><a name=\"hcmii-sp-meta-imaging-study-series-contrast-bolus\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-imaging-study-series-contrast-bolus.html\">MII_SP_Bildgebung_Imaging_Study_Series_Contrast_Bolus</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Imaging_Study_Series_Contrast_Bolus</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ImagingStudy.series.extension.contrastBolus</p>\n</div><p><b>code</b>: contrast-bolus</p><p><b>base</b>: ImagingStudy</p><p><b>type</b>: Token</p><p><b>expression</b>: ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel').extension('contrastBolus').value</p><p><b>modifier</b>: Text, Not, Above, Below, In, Not In, Missing</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-contrast-bolus",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Imaging_Study_Series_Contrast_Bolus",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ImagingStudy.series.extension.contrastBolus",
+      "code" : "contrast-bolus",
+      "base" : ["ImagingStudy"],
+      "type" : "token",
+      "expression" : "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel').extension('contrastBolus').value",
+      "modifier" : ["text",
+      "not",
+      "above",
+      "below",
+      "in",
+      "not-in",
+      "missing"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-contrast-bolus-details",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-imaging-study-series-contrast-bolus-details",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-imaging-study-series-contrast-bolus-details\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-imaging-study-series-contrast-bolus-details</b></p><a name=\"mii-sp-meta-imaging-study-series-contrast-bolus-details\"> </a><a name=\"hcmii-sp-meta-imaging-study-series-contrast-bolus-details\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-imaging-study-series-contrast-bolus-details.html\">MII_SP_Bildgebung_Imaging_Study_Contrast_Bolus_Details</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Imaging_Study_Contrast_Bolus_Details</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ImagingStudy.series.extension.contrastBolusDetails</p>\n</div><p><b>code</b>: contrast-bolus-details</p><p><b>base</b>: ImagingStudy</p><p><b>type</b>: Reference</p><p><b>expression</b>: ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel').extension('contrastBolusDetails').value</p><p><b>target</b>: MedicationStatement, MedicationAdministration</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-contrast-bolus-details",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Imaging_Study_Contrast_Bolus_Details",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ImagingStudy.series.extension.contrastBolusDetails",
+      "code" : "contrast-bolus-details",
+      "base" : ["ImagingStudy"],
+      "type" : "reference",
+      "expression" : "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel').extension('contrastBolusDetails').value",
+      "target" : ["MedicationStatement", "MedicationAdministration"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-number",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-imaging-study-series-number",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-imaging-study-series-number\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-imaging-study-series-number</b></p><a name=\"mii-sp-meta-imaging-study-series-number\"> </a><a name=\"hcmii-sp-meta-imaging-study-series-number\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-imaging-study-series-number.html\">MII_SP_Bildgebung_Imaging_Study_Series_Number</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Imaging_Study_Series_Number</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ImagingStudy.series.number</p>\n</div><p><b>code</b>: series-number</p><p><b>base</b>: ImagingStudy</p><p><b>type</b>: Number</p><p><b>expression</b>: ImagingStudy.series.number</p><p><b>comparator</b>: Equals, Greater Than, Less Than, Greater or Equals, Less of Equal</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-number",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Imaging_Study_Series_Number",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ImagingStudy.series.number",
+      "code" : "series-number",
+      "base" : ["ImagingStudy"],
+      "type" : "number",
+      "expression" : "ImagingStudy.series.number",
+      "comparator" : ["eq", "gt", "lt", "ge", "le"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-laterality",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-imaging-study-series-laterality",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-imaging-study-series-laterality\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-imaging-study-series-laterality</b></p><a name=\"mii-sp-meta-imaging-study-series-laterality\"> </a><a name=\"hcmii-sp-meta-imaging-study-series-laterality\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-imaging-study-series-laterality.html\">MII_SP_Bildgebung_Imaging_Study_Series_Laterality</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Imaging_Study_Series_Laterality</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ImagingStudy.series.laterality</p>\n</div><p><b>code</b>: series-laterality</p><p><b>base</b>: ImagingStudy</p><p><b>type</b>: Token</p><p><b>expression</b>: ImagingStudy.series.laterality</p><p><b>modifier</b>: Text, Not, Above, Below, In, Not In, Missing</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-laterality",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Imaging_Study_Series_Laterality",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ImagingStudy.series.laterality",
+      "code" : "series-laterality",
+      "base" : ["ImagingStudy"],
+      "type" : "token",
+      "expression" : "ImagingStudy.series.laterality",
+      "modifier" : ["text",
+      "not",
+      "above",
+      "below",
+      "in",
+      "not-in",
+      "missing"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-started",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-imaging-study-series-started",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-imaging-study-series-started\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-imaging-study-series-started</b></p><a name=\"mii-sp-meta-imaging-study-series-started\"> </a><a name=\"hcmii-sp-meta-imaging-study-series-started\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-imaging-study-series-started.html\">MII_SP_Bildgebung_Imaging_Study_Series_Started</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Imaging_Study_Series_Started</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ImagingStudy.series.started</p>\n</div><p><b>code</b>: series-started</p><p><b>base</b>: ImagingStudy</p><p><b>type</b>: Date/DateTime</p><p><b>expression</b>: ImagingStudy.series.started</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-started",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Imaging_Study_Series_Started",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ImagingStudy.series.started",
+      "code" : "series-started",
+      "base" : ["ImagingStudy"],
+      "type" : "date",
+      "expression" : "ImagingStudy.series.started"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-instance-pixel-x",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-imaging-study-instance-pixel-x",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-imaging-study-instance-pixel-x\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-imaging-study-instance-pixel-x</b></p><a name=\"mii-sp-meta-imaging-study-instance-pixel-x\"> </a><a name=\"hcmii-sp-meta-imaging-study-instance-pixel-x\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-imaging-study-instance-pixel-x.html\">MII_SP_Bildgebung_Imaging_Study_Instance_Pixel_Spacing_X</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Imaging_Study_Instance_Pixel_Spacing_X</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ImagingStudy.series.instance.extension.pixelSpacingX</p>\n</div><p><b>code</b>: instance-pixel-spacing-x</p><p><b>base</b>: ImagingStudy</p><p><b>type</b>: Quantity</p><p><b>expression</b>: ImagingStudy.series.instance.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details').extension('pixelSpacingX').value</p><p><b>comparator</b>: Equals, Greater Than, Less Than, Greater or Equals, Less of Equal</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-instance-pixel-x",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Imaging_Study_Instance_Pixel_Spacing_X",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ImagingStudy.series.instance.extension.pixelSpacingX",
+      "code" : "instance-pixel-spacing-x",
+      "base" : ["ImagingStudy"],
+      "type" : "quantity",
+      "expression" : "ImagingStudy.series.instance.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details').extension('pixelSpacingX').value",
+      "comparator" : ["eq", "gt", "lt", "ge", "le"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-instance-pixel-y",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-imaging-study-instance-pixel-y",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-imaging-study-instance-pixel-y\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-imaging-study-instance-pixel-y</b></p><a name=\"mii-sp-meta-imaging-study-instance-pixel-y\"> </a><a name=\"hcmii-sp-meta-imaging-study-instance-pixel-y\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-imaging-study-instance-pixel-y.html\">MII_SP_Bildgebung_Imaging_Study_Instance_Pixel_Spacing_Y</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Imaging_Study_Instance_Pixel_Spacing_Y</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ImagingStudy.series.instance.extension.pixelSpacingY</p>\n</div><p><b>code</b>: instance-pixel-spacing-y</p><p><b>base</b>: ImagingStudy</p><p><b>type</b>: Quantity</p><p><b>expression</b>: ImagingStudy.series.instance.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details').extension('pixelSpacingY').value</p><p><b>comparator</b>: Equals, Greater Than, Less Than, Greater or Equals, Less of Equal</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-instance-pixel-y",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Imaging_Study_Instance_Pixel_Spacing_Y",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ImagingStudy.series.instance.extension.pixelSpacingY",
+      "code" : "instance-pixel-spacing-y",
+      "base" : ["ImagingStudy"],
+      "type" : "quantity",
+      "expression" : "ImagingStudy.series.instance.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details').extension('pixelSpacingY').value",
+      "comparator" : ["eq", "gt", "lt", "ge", "le"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-instance-slice-thickness",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-imaging-study-instance-slice-thickness",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-imaging-study-instance-slice-thickness\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-imaging-study-instance-slice-thickness</b></p><a name=\"mii-sp-meta-imaging-study-instance-slice-thickness\"> </a><a name=\"hcmii-sp-meta-imaging-study-instance-slice-thickness\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-imaging-study-instance-slice-thickness.html\">MII_SP_Bildgebung_Imaging_Study_Instance_Slice_Thickness</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Imaging_Study_Instance_Slice_Thickness</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ImagingStudy.series.instance.extension.sliceThickness</p>\n</div><p><b>code</b>: instance-slice-thickness</p><p><b>base</b>: ImagingStudy</p><p><b>type</b>: Quantity</p><p><b>expression</b>: ImagingStudy.series.instance.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details').extension('sliceThickness').value</p><p><b>comparator</b>: Equals, Greater Than, Less Than, Greater or Equals, Less of Equal</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-instance-slice-thickness",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Imaging_Study_Instance_Slice_Thickness",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ImagingStudy.series.instance.extension.sliceThickness",
+      "code" : "instance-slice-thickness",
+      "base" : ["ImagingStudy"],
+      "type" : "quantity",
+      "expression" : "ImagingStudy.series.instance.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details').extension('sliceThickness').value",
+      "comparator" : ["eq", "gt", "lt", "ge", "le"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-instance-image-type",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-imaging-study-instance-image-type",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-imaging-study-instance-image-type\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-imaging-study-instance-image-type</b></p><a name=\"mii-sp-meta-imaging-study-instance-image-type\"> </a><a name=\"hcmii-sp-meta-imaging-study-instance-image-type\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-imaging-study-instance-image-type.html\">MII_SP_Bildgebung_Imaging_Study_Instance_Image_Type</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Imaging_Study_Instance_Image_Type</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ImagingStudy.series.instance.extension.imageType</p>\n</div><p><b>code</b>: instance-image-type</p><p><b>base</b>: ImagingStudy</p><p><b>type</b>: Token</p><p><b>expression</b>: ImagingStudy.series.instance.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details').extension('imageType').value</p><p><b>modifier</b>: Text, Not, Above, Below, In, Not In, Missing</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-instance-image-type",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Imaging_Study_Instance_Image_Type",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ImagingStudy.series.instance.extension.imageType",
+      "code" : "instance-image-type",
+      "base" : ["ImagingStudy"],
+      "type" : "token",
+      "expression" : "ImagingStudy.series.instance.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details').extension('imageType').value",
+      "modifier" : ["text",
+      "not",
+      "above",
+      "below",
+      "in",
+      "not-in",
+      "missing"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-instance-burned-in-annotation",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-imaging-study-instance-burned-in-annotation",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-imaging-study-instance-burned-in-annotation\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-imaging-study-instance-burned-in-annotation</b></p><a name=\"mii-sp-meta-imaging-study-instance-burned-in-annotation\"> </a><a name=\"hcmii-sp-meta-imaging-study-instance-burned-in-annotation\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-imaging-study-instance-burned-in-annotation.html\">MII_SP_Bildgebung_Imaging_Study_Instance_Burned_In_Annotation</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Imaging_Study_Instance_Burned_In_Annotation</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ImagingStudy.series.instance.extension.burnedInAnnotation</p>\n</div><p><b>code</b>: instance-burned-in-annotation</p><p><b>base</b>: ImagingStudy</p><p><b>type</b>: Token</p><p><b>expression</b>: ImagingStudy.series.instance.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details').extension('burnedInAnnotation').value</p><p><b>modifier</b>: Text, Not, Above, Below, In, Not In, Missing</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-instance-burned-in-annotation",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Imaging_Study_Instance_Burned_In_Annotation",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ImagingStudy.series.instance.extension.burnedInAnnotation",
+      "code" : "instance-burned-in-annotation",
+      "base" : ["ImagingStudy"],
+      "type" : "token",
+      "expression" : "ImagingStudy.series.instance.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details').extension('burnedInAnnotation').value",
+      "modifier" : ["text",
+      "not",
+      "above",
+      "below",
+      "in",
+      "not-in",
+      "missing"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-instance-number",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-imaging-study-instance-number",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-imaging-study-instance-number\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-imaging-study-instance-number</b></p><a name=\"mii-sp-meta-imaging-study-instance-number\"> </a><a name=\"hcmii-sp-meta-imaging-study-instance-number\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-imaging-study-instance-number.html\">MII_SP_Bildgebung_Imaging_Study_Instance_Number</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Imaging_Study_Instance_Number</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ImagingStudy.series.instance.number</p>\n</div><p><b>code</b>: instance-number</p><p><b>base</b>: ImagingStudy</p><p><b>type</b>: Number</p><p><b>expression</b>: ImagingStudy.series.instance.number</p><p><b>comparator</b>: Equals, Greater Than, Less Than, Greater or Equals, Less of Equal</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-instance-number",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Imaging_Study_Instance_Number",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ImagingStudy.series.instance.number",
+      "code" : "instance-number",
+      "base" : ["ImagingStudy"],
+      "type" : "number",
+      "expression" : "ImagingStudy.series.instance.number",
+      "comparator" : ["eq", "gt", "lt", "ge", "le"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-observation-series-uid",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-observation-series-uid",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-observation-series-uid\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-observation-series-uid</b></p><a name=\"mii-sp-meta-observation-series-uid\"> </a><a name=\"hcmii-sp-meta-observation-series-uid\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-observation-series-uid.html\">MII_SP_Bildgebung_Observation_Series_UID</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Observation_Series_UID</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für Observation.extension.seriesUID</p>\n</div><p><b>code</b>: series-uid</p><p><b>base</b>: Observation</p><p><b>type</b>: Token</p><p><b>expression</b>: Observation.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-series-uid').value</p><p><b>modifier</b>: Text, Not, Above, Below, In, Not In, Missing</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-series-uid",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Observation_Series_UID",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für Observation.extension.seriesUID",
+      "code" : "series-uid",
+      "base" : ["Observation"],
+      "type" : "token",
+      "expression" : "Observation.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-series-uid').value",
+      "modifier" : ["text",
+      "not",
+      "above",
+      "below",
+      "in",
+      "not-in",
+      "missing"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-observation-sop-instance-uid",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-observation-sop-instance-uid",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-observation-sop-instance-uid\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-observation-sop-instance-uid</b></p><a name=\"mii-sp-meta-observation-sop-instance-uid\"> </a><a name=\"hcmii-sp-meta-observation-sop-instance-uid\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-observation-sop-instance-uid.html\">MII_SP_Bildgebung_Observation_SOP_Instance_UID</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Observation_SOP_Instance_UID</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für Observation.sopInstanceUID</p>\n</div><p><b>code</b>: sop-instance-uid</p><p><b>base</b>: Observation</p><p><b>type</b>: Token</p><p><b>expression</b>: Observation.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-sop-instanz-uid').value</p><p><b>modifier</b>: Text, Not, Above, Below, In, Not In, Missing</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-sop-instance-uid",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Observation_SOP_Instance_UID",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für Observation.sopInstanceUID",
+      "code" : "sop-instance-uid",
+      "base" : ["Observation"],
+      "type" : "token",
+      "expression" : "Observation.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-sop-instanz-uid').value",
+      "modifier" : ["text",
+      "not",
+      "above",
+      "below",
+      "in",
+      "not-in",
+      "missing"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-observation-body-structure",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-observation-body-structure",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-observation-body-structure\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-observation-body-structure</b></p><a name=\"mii-sp-meta-observation-body-structure\"> </a><a name=\"hcmii-sp-meta-observation-body-structure\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-observation-body-structure.html\">MII_SP_Bildgebung_Observation_Body_Structure</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Observation_Body_Structure</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für Observation.bodyStructure</p>\n</div><p><b>code</b>: body-structure</p><p><b>base</b>: Observation</p><p><b>type</b>: Reference</p><p><b>expression</b>: Observation.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.bodyStructure').value</p><p><b>target</b>: BodyStructure</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-body-structure",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Observation_Body_Structure",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für Observation.bodyStructure",
+      "code" : "body-structure",
+      "base" : ["Observation"],
+      "type" : "reference",
+      "expression" : "Observation.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-Observation.bodyStructure').value",
+      "target" : ["BodyStructure"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-read-proc-report",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-read-proc-report",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-read-proc-report\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-read-proc-report</b></p><a name=\"mii-sp-meta-read-proc-report\"> </a><a name=\"hcmii-sp-meta-read-proc-report\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-read-proc-report.html\">MII_SP_Bildgebung_Read_Procedure_Report</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Read_Procedure_Report</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ReadProcedure.report</p>\n</div><p><b>code</b>: report</p><p><b>base</b>: Procedure</p><p><b>type</b>: Reference</p><p><b>expression</b>: Procedure.report</p><p><b>target</b>: DiagnosticReport, Composition, DocumentReference</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-read-proc-report",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Read_Procedure_Report",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ReadProcedure.report",
+      "code" : "report",
+      "base" : ["Procedure"],
+      "type" : "reference",
+      "expression" : "Procedure.report",
+      "target" : ["DiagnosticReport", "Composition", "DocumentReference"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-convolutional-kernel",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-imaging-study-series-convolutional-kernel",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-imaging-study-series-convolutional-kernel\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-imaging-study-series-convolutional-kernel</b></p><a name=\"mii-sp-meta-imaging-study-series-convolutional-kernel\"> </a><a name=\"hcmii-sp-meta-imaging-study-series-convolutional-kernel\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-imaging-study-series-convolutional-kernel.html\">MII_SP_Bildgebung_Imaging_Study_Series_ConvolutionalKernel</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Imaging_Study_Series_ConvolutionalKernel</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ImagingStudy.series.extension.convolutionalKernel</p>\n</div><p><b>code</b>: convolutional-kernel</p><p><b>base</b>: ImagingStudy</p><p><b>type</b>: String</p><p><b>expression</b>: ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct').extension('convolutionalKernel').value</p><p><b>modifier</b>: Contains, Exact, Missing</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-convolutional-kernel",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Imaging_Study_Series_ConvolutionalKernel",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ImagingStudy.series.extension.convolutionalKernel",
+      "code" : "convolutional-kernel",
+      "base" : ["ImagingStudy"],
+      "type" : "string",
+      "expression" : "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct').extension('convolutionalKernel').value",
+      "modifier" : ["contains", "exact", "missing"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-imaging-study-series-slice-thickness",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-imaging-study-series-slice-thickness",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-imaging-study-series-slice-thickness\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-imaging-study-series-slice-thickness</b></p><a name=\"mii-sp-meta-imaging-study-series-slice-thickness\"> </a><a name=\"hcmii-sp-meta-imaging-study-series-slice-thickness\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-imaging-study-series-slice-thickness.html\">MII_SP_Bildgebung_Imaging_Study_Series_Slice_Thickness</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Imaging_Study_Series_Slice_Thickness</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ImagingStudy.series.extension.sliceThickness</p>\n</div><p><b>code</b>: slice-thickness</p><p><b>base</b>: ImagingStudy</p><p><b>type</b>: Quantity</p><p><b>expression</b>: ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-serie-schichtdicke').value</p><p><b>comparator</b>: Equals, Greater Than, Less Than, Greater or Equals, Less of Equal</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-slice-thickness",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Bildgebung_Imaging_Study_Series_Slice_Thickness",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2025-11-06",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für ImagingStudy.series.extension.sliceThickness",
+      "code" : "slice-thickness",
+      "base" : ["ImagingStudy"],
+      "type" : "quantity",
+      "expression" : "ImagingStudy.series.extension('https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-serie-schichtdicke').value",
+      "comparator" : ["eq", "gt", "lt", "ge", "le"]
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-dokument-documentreference-attachment-creation",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-dokument-documentreference-attachment-creation",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-dokument-documentreference-attachment-creation\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-dokument-documentreference-attachment-creation</b></p><a name=\"mii-sp-meta-dokument-documentreference-attachment-creation\"> </a><a name=\"hcmii-sp-meta-dokument-documentreference-attachment-creation\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-dokument-documentreference-attachment-creation.html\">MII_SP_Meta_DocumentReference_Attachment_Creation</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_DocumentReference_Attachment_Creation</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für DocumentReference.content.attachment.creation</p>\n</div><p><b>code</b>: creation</p><p><b>base</b>: DocumentReference</p><p><b>type</b>: Date/DateTime</p><p><b>expression</b>: DocumentReference.content.attachment.creation</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-dokument-documentreference-attachment-creation",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_DocumentReference_Attachment_Creation",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für DocumentReference.content.attachment.creation",
+      "code" : "creation",
+      "base" : ["DocumentReference"],
+      "type" : "date",
+      "expression" : "DocumentReference.content.attachment.creation"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-dokument-documentreference-doc-status",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-dokument-documentreference-doc-status",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-dokument-documentreference-doc-status\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-dokument-documentreference-doc-status</b></p><a name=\"mii-sp-meta-dokument-documentreference-doc-status\"> </a><a name=\"hcmii-sp-meta-dokument-documentreference-doc-status\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-dokument-documentreference-doc-status.html\">MII_SP_Meta_DocumentReference_Document_Status</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_DocumentReference_Document_Status</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für DocumentReference.docStatus</p>\n</div><p><b>code</b>: doc-status</p><p><b>base</b>: DocumentReference</p><p><b>type</b>: Token</p><p><b>expression</b>: DocumentReference.docStatus</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-dokument-documentreference-doc-status",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_DocumentReference_Document_Status",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für DocumentReference.docStatus",
+      "code" : "doc-status",
+      "base" : ["DocumentReference"],
+      "type" : "token",
+      "expression" : "DocumentReference.docStatus"
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-dokument-documentreference-nlp-processing-status",
+    "resource" : {
+      "resourceType" : "SearchParameter",
+      "id" : "mii-sp-meta-dokument-documentreference-nlp-processing-status",
+      "meta" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+          "valueCode" : "CC-BY-4.0"
+        },
+        {
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc3"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><a name=\"SearchParameter_mii-sp-meta-dokument-documentreference-nlp-processing-status\"> </a><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter mii-sp-meta-dokument-documentreference-nlp-processing-status</b></p><a name=\"mii-sp-meta-dokument-documentreference-nlp-processing-status\"> </a><a name=\"hcmii-sp-meta-dokument-documentreference-nlp-processing-status\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href=\"http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver\">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}\">Package</span></p><p><b>url</b>: <a href=\"SearchParameter-mii-sp-meta-dokument-documentreference-nlp-processing-status.html\">MII_SP_Meta_DocumentReference_NLP_Processing_Status</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Meta_DocumentReference_NLP_Processing_Status</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href=\"https://www.medizininformatik-initiative.de\">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für DocumentReference.extension[nlp-processing-status].valueCodeableConcept</p>\n</div><p><b>code</b>: nlp-processing-status</p><p><b>base</b>: DocumentReference</p><p><b>type</b>: Token</p><p><b>expression</b>: DocumentReference.extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-dokument/StructureDefinition/mii-ex-dokument-nlp-processing-status').value</p></div></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+        "valueCoding" : {
+          "system" : "http://hl7.org/fhir/version-algorithm",
+          "code" : "semver",
+          "display" : "SemVer"
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version" : "3.0.0",
+            "code" : "package",
+            "display" : "Package"
+          }]
+        }
+      }],
+      "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-dokument-documentreference-nlp-processing-status",
+      "version" : "2027.0.0-ballot.rc3",
+      "name" : "MII_SP_Meta_DocumentReference_NLP_Processing_Status",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-01",
+      "publisher" : "Medizininformatik Initiative",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.medizininformatik-initiative.de"
+        }]
+      }],
+      "description" : "Suchparameter für DocumentReference.extension[nlp-processing-status].valueCodeableConcept",
+      "code" : "nlp-processing-status",
+      "base" : ["DocumentReference"],
+      "type" : "token",
+      "expression" : "DocumentReference.extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-dokument/StructureDefinition/mii-ex-dokument-nlp-processing-status').value"
+    }
+  }]
+}
+
+```

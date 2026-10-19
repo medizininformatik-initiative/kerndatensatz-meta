@@ -1,0 +1,3211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="mii-ig-meta"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareableimplementationguide"/>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishableimplementationguide"/>
+    <profile value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-implementationguide"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ImplementationGuide mii-ig-meta</b></p><a name="mii-ig-meta"> </a><a name="hcmii-ig-meta"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en</p><p style="margin-bottom: 0px">Profiles: <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-shareableimplementationguide.html">CRMI Shareable ImplementationGuide</a>, <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-publishableimplementationguide.html">CRMI Publishable ImplementationGuide</a>, <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-implementationguide.html">CRMI ImplementationGuide</a></p></div><h2>MII_IG_Meta</h2><p>The official URL for this implementation guide is: </p><pre>https://www.medizininformatik-initiative.de/fhir/modul-meta/ImplementationGuide/mii-ig-meta</pre><div><p>The Meta module contains foundational artifacts used by all other MII implementation guides.</p>
+</div></div><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ImplementationGuide mii-ig-meta</b></p><a name="de-mii-ig-meta"> </a><a name="de-hcmii-ig-meta"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en</p><p style="margin-bottom: 0px">Profiles: <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-shareableimplementationguide.html">CRMI Shareable ImplementationGuide</a>, <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-publishableimplementationguide.html">CRMI Publishable ImplementationGuide</a>, <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-implementationguide.html">CRMI ImplementationGuide</a></p></div><h2>MII_IG_Meta</h2><p>The official URL for this implementation guide is: </p><pre>https://www.medizininformatik-initiative.de/fhir/modul-meta/ImplementationGuide/mii-ig-meta</pre><div><p>The Meta module contains foundational artifacts used by all other MII implementation guides.</p>
+</div></div></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/resource-approvalDate">
+    <valueDate value="2026-08-31"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability">
+    <valueCode value="shareable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability">
+    <valueCode value="publishable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/package-source">
+    <extension url="packageId">
+      <valueId value="de.medizininformatikinitiative.kerndatensatz.meta"/>
+    </extension>
+    <extension url="version">
+      <valueString value="2027.0.0-ballot.rc3"/>
+    </extension>
+    <extension url="uri">
+      <valueUri value="https://www.medizininformatik-initiative.de/fhir/modul-meta"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+    <valuePeriod>
+      <start value="2027"/>
+    </valuePeriod>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-author">
+    <valueContactDetail>
+      <telecom>
+        <system value="email"/>
+        <value value="julian.sass@charite.de"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-editor">
+    <valueContactDetail>
+      <name value="Taskforce Core Data Set"/>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-reviewer">
+    <valueContactDetail>
+      <name value="Interoperability Working Group"/>
+      <telecom>
+        <system value="url"/>
+        <value value="https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-reviewer">
+    <valueContactDetail>
+      <name value="National Steering Committee"/>
+      <telecom>
+        <system value="url"/>
+        <value value="https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-endorser">
+    <valueContactDetail>
+      <name value="Interoperability Working Group"/>
+      <telecom>
+        <system value="url"/>
+        <value value="https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-endorser">
+    <valueContactDetail>
+      <name value="National Steering Committee"/>
+      <telecom>
+        <system value="url"/>
+        <value value="https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/cqf-expansionParameters">
+    <valueReference>
+      <reference value="Parameters/mii-param-meta-manifest"/>
+    </valueReference>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm">
+    <valueCoding>
+      <system value="http://hl7.org/fhir/version-algorithm"/>
+      <code value="semver"/>
+    </valueCoding>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-usage">
+    <valueMarkdown value="Use this ImplementationGuide resource as a computable definition of all the parts of the corresponding module of the Medical Informatics Initiative core data set."/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-purpose">
+    <valueMarkdown value="Provide the computable publication unit for the MII Core Dataset Meta module, enabling implementers to discover, validate, version, and apply the specification consistently."/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-topic">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
+        <code value="C80260"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <url value="https://www.medizininformatik-initiative.de/fhir/modul-meta/ImplementationGuide/mii-ig-meta"/>
+  <version value="2027.0.0-ballot.rc3"/>
+  <name value="MII_IG_Meta"/>
+  <title value="MII IG Meta"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-31"/>
+  <publisher value="NUM-DIZ">
+    <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+      <extension url="lang">
+        <valueCode value="de"/>
+      </extension>
+      <extension url="content">
+        <valueString value="NUM-DIZ"/>
+      </extension>
+    </extension>
+  </publisher>
+  <contact>
+    <name value="NUM-DIZ"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+    </telecom>
+  </contact>
+  <description value="The Meta module contains foundational artifacts used by all other MII implementation guides."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
+    </coding>
+  </jurisdiction>
+  <packageId value="de.medizininformatikinitiative.kerndatensatz.meta"/>
+  <license value="CC-BY-4.0"/>
+  <fhirVersion value="4.0.1"/>
+  <dependsOn id="hl7_fhir_uv_crmi">
+    <uri value="http://hl7.org/fhir/uv/crmi/ImplementationGuide/hl7.fhir.uv.crmi"/>
+    <packageId value="hl7.fhir.uv.crmi"/>
+    <version value="2.0.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_terminology_r4">
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology.r4"/>
+    <version value="7.1.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_uv_extensions_r4">
+    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+    <packageId value="hl7.fhir.uv.extensions.r4"/>
+    <version value="5.2.0"/>
+  </dependsOn>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2019+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="ci-build"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="i18n-default-lang"/>
+      </extension>
+      <extension url="value">
+        <valueString value="en"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="i18n-lang"/>
+      </extension>
+      <extension url="value">
+        <valueString value="de"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="translation-sources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/translations/de"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludexml"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludejson"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludettl"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludemap"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="logging"/>
+      </extension>
+      <extension url="value">
+        <valueString value="init"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="logging"/>
+      </extension>
+      <extension url="value">
+        <valueString value="progress"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="logging"/>
+      </extension>
+      <extension url="value">
+        <valueString value="context"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="logging"/>
+      </extension>
+      <extension url="value">
+        <valueString value="html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="logging"/>
+      </extension>
+      <extension url="value">
+        <valueString value="tx"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="pin-canonicals"/>
+      </extension>
+      <extension url="value">
+        <valueString value="pin-all"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-expansion-params"/>
+      </extension>
+      <extension url="value">
+        <valueString value="../../input/resources/Parameters-expansion-manifest.json"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="pin-manifest"/>
+      </extension>
+      <extension url="value">
+        <valueString value="mii-param-meta-manifest"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="suppress-mappings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/v3"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="suppress-mappings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/v3/cda"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.medizininformatik-initiative.de/fhir/modul-meta/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="wantGen-ttl"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="wantGen-ttl-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters">
+      <valueReference>
+        <reference value="Parameters/expansion-parameters"/>
+      </valueReference>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
+      <valueCode value="hl7.fhir.uv.tools.r4#1.1.2"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2019+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="ci-build"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="i18n-default-lang"/>
+      </extension>
+      <extension url="value">
+        <valueString value="en"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="i18n-lang"/>
+      </extension>
+      <extension url="value">
+        <valueString value="de"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="translation-sources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/translations/de"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="excludexml"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="excludejson"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="excludettl"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="excludemap"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="logging"/>
+      </extension>
+      <extension url="value">
+        <valueString value="init"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="logging"/>
+      </extension>
+      <extension url="value">
+        <valueString value="progress"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="logging"/>
+      </extension>
+      <extension url="value">
+        <valueString value="context"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="logging"/>
+      </extension>
+      <extension url="value">
+        <valueString value="html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="logging"/>
+      </extension>
+      <extension url="value">
+        <valueString value="tx"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="pin-canonicals"/>
+      </extension>
+      <extension url="value">
+        <valueString value="pin-all"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-expansion-params"/>
+      </extension>
+      <extension url="value">
+        <valueString value="../../input/resources/Parameters-expansion-manifest.json"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="pin-manifest"/>
+      </extension>
+      <extension url="value">
+        <valueString value="mii-param-meta-manifest"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="suppress-mappings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/v3"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="suppress-mappings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/v3/cda"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.medizininformatik-initiative.de/fhir/modul-meta/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="wantGen-ttl"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="wantGen-ttl-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/mii-cps-meta-server-capabilities"/>
+      </reference>
+      <name value="MII CapabilityStatement Meta Server Capabilities"/>
+      <description value="Migration-generated proposal describing the resource types and search parameters published by the Meta module. Review before use as a normative capability statement."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mii-cs-meta-diz-standorte"/>
+      </reference>
+      <name value="MII CS Meta DIZ Standorte"/>
+      <description value="Medizininformatik-Initiative Standorte"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mii-ex-meta-license-codeable"/>
+      </reference>
+      <name value="MII EX Meta License Codeable"/>
+      <description value="This extension may be used to provide machine-processable license information about the set of data described by this resource.&#xA;The extension is a R4-compatible version of the FHIR for FAIR R4B IG Licence Terms as CodeableConcept extension."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/mii-exa-meta-searchparam-collection-bundle"/>
+      </reference>
+      <name value="MII Meta SearchParameter Collection Bundle"/>
+      <description value="Collection bundle containing the SearchParameter resources published by the MII Meta module."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/mii-exa-meta-searchparam-transaction-bundle"/>
+      </reference>
+      <name value="MII Meta SearchParameter Transaction Bundle"/>
+      <description value="Transaction bundle containing the SearchParameter resources published by the MII Meta module for convenient import into a FHIR server."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mii-pr-meta-searchparameter"/>
+      </reference>
+      <name value="MII PR Meta SearchParameter"/>
+      <description value="Das Profil legt die Mindestanforderungen fest, die SearchParameter-Ressourcen im Kerndatensatz erfüllen müssen."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Parameters"/>
+      </extension>
+      <reference>
+        <reference value="Parameters/mii-param-meta-manifest"/>
+      </reference>
+      <name value="mii-param-meta-manifest"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-adverseevent-encounter"/>
+      </reference>
+      <name value="mii-sp-meta-adverseevent-encounter"/>
+      <description value="SearchParameter for AdverseEvent.encounter"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-adverseevent-suspectentity-instance"/>
+      </reference>
+      <name value="mii-sp-meta-adverseevent-suspectentity-instance"/>
+      <description value="SearchParameter for AdverseEvent.suspectEntity.instance"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-body-structure-location-qualifier"/>
+      </reference>
+      <name value="mii-sp-meta-body-structure-location-qualifier"/>
+      <description value="Suchparameter für BodyStructure.locationQualifier"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-careplan-addresses"/>
+      </reference>
+      <name value="mii-sp-meta-careplan-addresses"/>
+      <description value="SearchParameter for CarePlan.addresses"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-careplan-contributor"/>
+      </reference>
+      <name value="mii-sp-meta-careplan-contributor"/>
+      <description value="SearchParameter for CarePlan.contributor"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-careplan-created"/>
+      </reference>
+      <name value="mii-sp-meta-careplan-created"/>
+      <description value="SearchParameter for CarePlan.created"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-composition-attester-mode"/>
+      </reference>
+      <name value="mii-sp-meta-composition-attester-mode"/>
+      <description value="SearchParameter for Composition.attester.mode"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-composition-custodian"/>
+      </reference>
+      <name value="mii-sp-meta-composition-custodian"/>
+      <description value="SearchParameter for Composition.custodian"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-composition-relatesto-code"/>
+      </reference>
+      <name value="mii-sp-meta-composition-relatesto-code"/>
+      <description value="SearchParameter for Composition.relatesTo.code"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-composition-section-author"/>
+      </reference>
+      <name value="mii-sp-meta-composition-section-author"/>
+      <description value="Suchparameter für Composition.section.author"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-composition-section-title"/>
+      </reference>
+      <name value="mii-sp-meta-composition-section-title"/>
+      <description value="Suchparameter für Composition.section.title"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-condition-evidence-detail"/>
+      </reference>
+      <name value="mii-sp-meta-condition-evidence-detail"/>
+      <description value="SearchParameter for Condition.evidence.detail"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-condition-icd10gm-diagnosesicherheit"/>
+      </reference>
+      <name value="mii-sp-meta-condition-icd10gm-diagnosesicherheit"/>
+      <description value="Suchparameter für Condition.code.coding:icd10-gm.extension:Diagnosesicherheit"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-condition-icd10gm-mehrfachcodierung"/>
+      </reference>
+      <name value="mii-sp-meta-condition-icd10gm-mehrfachcodierung"/>
+      <description value="Suchparameter für Condition.code.coding:icd10-gm.extension:Mehrfachcodierungs-Kennzeichen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-condition-icd10gm-seitenlokalisation"/>
+      </reference>
+      <name value="mii-sp-meta-condition-icd10gm-seitenlokalisation"/>
+      <description value="Suchparameter für Condition.code.coding:icd10-gm.extension:Seitenlokalisation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-condition-verification-status"/>
+      </reference>
+      <name value="mii-sp-meta-condition-verification-status"/>
+      <description value="SearchParameter for Condition.verificationStatus"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-consent-policyuri"/>
+      </reference>
+      <name value="mii-sp-meta-consent-policyuri"/>
+      <description value="Suche in der Policy URI (versionsspezifische Policy / Broad Consent)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-consent-provisioncode"/>
+      </reference>
+      <name value="mii-sp-meta-consent-provisioncode"/>
+      <description value="Suche im Code der Provison"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-consent-provisioncodeperiod"/>
+      </reference>
+      <name value="mii-sp-meta-consent-provisioncodeperiod"/>
+      <description value="Composite-Suche nach Zeitraum (period) einer bestimmten, durch einen Code definierten, Provision."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-consent-provisioncodetype"/>
+      </reference>
+      <name value="mii-sp-meta-consent-provisioncodetype"/>
+      <description value="Composite-Suche nach Typ (type) einer bestimmten, durch einen Code definierten, Provision."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-consent-provisionperiod"/>
+      </reference>
+      <name value="mii-sp-meta-consent-provisionperiod"/>
+      <description value="Suche im Zeitraum der Provision. Dieser Suchparameter bezieht sich explizit auf die zweite Verschachtelungsebene von provison."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-consent-provisiontype"/>
+      </reference>
+      <name value="mii-sp-meta-consent-provisiontype"/>
+      <description value="Suche im Typ der Provison (permit, deny)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-description"/>
+      </reference>
+      <name value="mii-sp-meta-description"/>
+      <description value="Suchparameter für CarePlan.description | ImagingStudy.description | ImagingStudy.series.description"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-device-property-type"/>
+      </reference>
+      <name value="mii-sp-meta-device-property-type"/>
+      <description value="Suchparameter für Device.property.type"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-devicemetric-source"/>
+      </reference>
+      <name value="mii-sp-meta-devicemetric-source"/>
+      <description value="Suchparameter für DeviceMetric.source"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-diagnostic-report-conclusion"/>
+      </reference>
+      <name value="mii-sp-meta-diagnostic-report-conclusion"/>
+      <description value="Suchparameter für DiagnosticReport.conclusion"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-diagnosticreport-imagingstudy"/>
+      </reference>
+      <name value="mii-sp-meta-diagnosticreport-imagingstudy"/>
+      <description value="SearchParameter for DiagnosticReport.imagingStudy"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-documentreference-attachment-size"/>
+      </reference>
+      <name value="mii-sp-meta-documentreference-attachment-size"/>
+      <description value="Suchparameter für DocumentReference.content.attachment.size"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-documentreference-attachment-title"/>
+      </reference>
+      <name value="mii-sp-meta-documentreference-attachment-title"/>
+      <description value="Suchparameter für DocumentReference.content.attachment.title"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-dokument-documentreference-attachment-creation"/>
+      </reference>
+      <name value="mii-sp-meta-dokument-documentreference-attachment-creation"/>
+      <description value="Suchparameter für DocumentReference.content.attachment.creation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-dokument-documentreference-doc-status"/>
+      </reference>
+      <name value="mii-sp-meta-dokument-documentreference-doc-status"/>
+      <description value="Suchparameter für DocumentReference.docStatus"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-dokument-documentreference-nlp-processing-status"/>
+      </reference>
+      <name value="mii-sp-meta-dokument-documentreference-nlp-processing-status"/>
+      <description value="Suchparameter für DocumentReference.extension[nlp-processing-status].valueCodeableConcept"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-encounter-aufnahmegrund-drittestelle"/>
+      </reference>
+      <name value="mii-sp-meta-encounter-aufnahmegrund-drittestelle"/>
+      <description value="Suchparameter für Encounter.extension:Aufnahmegrund.extension:DritteStelle"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-encounter-aufnahmegrund-ersteundzweitestelle"/>
+      </reference>
+      <name value="mii-sp-meta-encounter-aufnahmegrund-ersteundzweitestelle"/>
+      <description value="Suchparameter für Encounter.extension:Aufnahmegrund.extension:ErsteUndZweiteStelle"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-encounter-aufnahmegrund-viertestelle"/>
+      </reference>
+      <name value="mii-sp-meta-encounter-aufnahmegrund-viertestelle"/>
+      <description value="Suchparameter für Encounter.extension:Aufnahmegrund.extension:VierteStelle"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-encounter-diagnosis-use"/>
+      </reference>
+      <name value="mii-sp-meta-encounter-diagnosis-use"/>
+      <description value="Suchparameter für Encounter.diagnosis.use"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-encounter-entlassungsgrund-drittestelle"/>
+      </reference>
+      <name value="mii-sp-meta-encounter-entlassungsgrund-drittestelle"/>
+      <description value="Suchparameter für Encounter.hospitalization.dischargeDisposition.extension:Entlassungsgrund.extension:DritteStelle"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-encounter-entlassungsgrund-ersteundzweitestelle"/>
+      </reference>
+      <name value="mii-sp-meta-encounter-entlassungsgrund-ersteundzweitestelle"/>
+      <description value="Suchparameter für Encounter.hospitalization.dischargeDisposition.extension:Entlassungsgrund.extension:ErsteUndZweiteStelle"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-encounter-hospitalization-admitsource"/>
+      </reference>
+      <name value="mii-sp-meta-encounter-hospitalization-admitsource"/>
+      <description value="Suchparameter für Encounter.hospitalization.admitSource"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-encounter-location-physical-type"/>
+      </reference>
+      <name value="mii-sp-meta-encounter-location-physical-type"/>
+      <description value="Suchparameter für Encounter.location.physicalType"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-encounter-servicetype"/>
+      </reference>
+      <name value="mii-sp-meta-encounter-servicetype"/>
+      <description value="Suchparameter für Encounter.serviceType"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-evidencevariable-characteristic-description"/>
+      </reference>
+      <name value="mii-sp-meta-evidencevariable-characteristic-description"/>
+      <description value="Suchparameter für EvidenceVariable.characteristic.description"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-familymemberhistory-reasoncode"/>
+      </reference>
+      <name value="mii-sp-meta-familymemberhistory-reasoncode"/>
+      <description value="Suchparameter für FamilyMemberHistory.reasonCode"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-familymemberhistory-reasonreference"/>
+      </reference>
+      <name value="mii-sp-meta-familymemberhistory-reasonreference"/>
+      <description value="Suchparameter für FamilyMemberHistory.reasonReference"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-imaging-study-bildgebungsgrund"/>
+      </reference>
+      <name value="mii-sp-meta-imaging-study-bildgebungsgrund"/>
+      <description value="Suchparameter für ImagingStudy.Extension.Bildgebungsgrund"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-imaging-study-instance-burned-in-annotation"/>
+      </reference>
+      <name value="mii-sp-meta-imaging-study-instance-burned-in-annotation"/>
+      <description value="Suchparameter für ImagingStudy.series.instance.extension.burnedInAnnotation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-imaging-study-instance-image-type"/>
+      </reference>
+      <name value="mii-sp-meta-imaging-study-instance-image-type"/>
+      <description value="Suchparameter für ImagingStudy.series.instance.extension.imageType"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-imaging-study-instance-number"/>
+      </reference>
+      <name value="mii-sp-meta-imaging-study-instance-number"/>
+      <description value="Suchparameter für ImagingStudy.series.instance.number"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-imaging-study-instance-pixel-x"/>
+      </reference>
+      <name value="mii-sp-meta-imaging-study-instance-pixel-x"/>
+      <description value="Suchparameter für ImagingStudy.series.instance.extension.pixelSpacingX"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-imaging-study-instance-pixel-y"/>
+      </reference>
+      <name value="mii-sp-meta-imaging-study-instance-pixel-y"/>
+      <description value="Suchparameter für ImagingStudy.series.instance.extension.pixelSpacingY"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-imaging-study-instance-slice-thickness"/>
+      </reference>
+      <name value="mii-sp-meta-imaging-study-instance-slice-thickness"/>
+      <description value="Suchparameter für ImagingStudy.series.instance.extension.sliceThickness"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-imaging-study-modality"/>
+      </reference>
+      <name value="mii-sp-meta-imaging-study-modality"/>
+      <description value="Suchparameter für ImagingStudy.modality"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-imaging-study-modality-body-site"/>
+      </reference>
+      <name value="mii-sp-meta-imaging-study-modality-body-site"/>
+      <description value="Suchparameter für ImagingStudy.series.modality and ImagingStudy.series.bodySite"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-imaging-study-number-instances"/>
+      </reference>
+      <name value="mii-sp-meta-imaging-study-number-instances"/>
+      <description value="Suchparameter für ImagingStudy.numberOfSeries"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-imaging-study-number-series"/>
+      </reference>
+      <name value="mii-sp-meta-imaging-study-number-series"/>
+      <description value="Suchparameter für ImagingStudy.numberOfSeries"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-imaging-study-procedure-reference"/>
+      </reference>
+      <name value="mii-sp-meta-imaging-study-procedure-reference"/>
+      <description value="Suchparameter für ImagingStudy.procedureReference"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-imaging-study-series-contrast-bolus"/>
+      </reference>
+      <name value="mii-sp-meta-imaging-study-series-contrast-bolus"/>
+      <description value="Suchparameter für ImagingStudy.series.extension.contrastBolus"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-imaging-study-series-contrast-bolus-details"/>
+      </reference>
+      <name value="mii-sp-meta-imaging-study-series-contrast-bolus-details"/>
+      <description value="Suchparameter für ImagingStudy.series.extension.contrastBolusDetails"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-imaging-study-series-convolutional-kernel"/>
+      </reference>
+      <name value="mii-sp-meta-imaging-study-series-convolutional-kernel"/>
+      <description value="Suchparameter für ImagingStudy.series.extension.convolutionalKernel"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-imaging-study-series-ctdi-volume"/>
+      </reference>
+      <name value="mii-sp-meta-imaging-study-series-ctdi-volume"/>
+      <description value="Suchparameter für ImagingStudy.series.extension.CTDIvolume"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-imaging-study-series-echo-time"/>
+      </reference>
+      <name value="mii-sp-meta-imaging-study-series-echo-time"/>
+      <description value="Suchparameter für ImagingStudy.series.extension.echoTime"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-imaging-study-series-exposure"/>
+      </reference>
+      <name value="mii-sp-meta-imaging-study-series-exposure"/>
+      <description value="Suchparameter für ImagingStudy.series.extension.exposure"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-imaging-study-series-exposure-time"/>
+      </reference>
+      <name value="mii-sp-meta-imaging-study-series-exposure-time"/>
+      <description value="Suchparameter für ImagingStudy.series.extension.exposureTime"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-imaging-study-series-flip-angle"/>
+      </reference>
+      <name value="mii-sp-meta-imaging-study-series-flip-angle"/>
+      <description value="Suchparameter für ImagingStudy.series.extension.flipAngle"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-imaging-study-series-inversion-time"/>
+      </reference>
+      <name value="mii-sp-meta-imaging-study-series-inversion-time"/>
+      <description value="Suchparameter für ImagingStudy.series.extension.inversionTime"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-imaging-study-series-kvp"/>
+      </reference>
+      <name value="mii-sp-meta-imaging-study-series-kvp"/>
+      <description value="Suchparameter für ImagingStudy.series.extension.kvp"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-imaging-study-series-laterality"/>
+      </reference>
+      <name value="mii-sp-meta-imaging-study-series-laterality"/>
+      <description value="Suchparameter für ImagingStudy.series.laterality"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-imaging-study-series-magnetic-field-strength"/>
+      </reference>
+      <name value="mii-sp-meta-imaging-study-series-magnetic-field-strength"/>
+      <description value="Suchparameter für ImagingStudy.series.extension.magneticFieldStrength"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-imaging-study-series-number"/>
+      </reference>
+      <name value="mii-sp-meta-imaging-study-series-number"/>
+      <description value="Suchparameter für ImagingStudy.series.number"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-imaging-study-series-pulse-frequency"/>
+      </reference>
+      <name value="mii-sp-meta-imaging-study-series-pulse-frequency"/>
+      <description value="Suchparameter für ImagingStudy.series.extension.pulseRepetitionFrequency"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-imaging-study-series-radionuclide"/>
+      </reference>
+      <name value="mii-sp-meta-imaging-study-series-radionuclide"/>
+      <description value="Suchparameter für ImagingStudy.series.extension.radionuclide"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-imaging-study-series-radionuclide-half-life"/>
+      </reference>
+      <name value="mii-sp-meta-imaging-study-series-radionuclide-half-life"/>
+      <description value="Suchparameter für ImagingStudy.series.extension.radionuclideHalfLife"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-imaging-study-series-radionuclide-total-dose"/>
+      </reference>
+      <name value="mii-sp-meta-imaging-study-series-radionuclide-total-dose"/>
+      <description value="Suchparameter für ImagingStudy.series.extension.radionuclideTotalDose"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-imaging-study-series-radiopharmaceutical"/>
+      </reference>
+      <name value="mii-sp-meta-imaging-study-series-radiopharmaceutical"/>
+      <description value="Suchparameter für ImagingStudy.series.extension.radiopharmaceutical"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-imaging-study-series-repetition-time"/>
+      </reference>
+      <name value="mii-sp-meta-imaging-study-series-repetition-time"/>
+      <description value="Suchparameter für ImagingStudy.series.extension.repetitionTime"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-imaging-study-series-scanning-sequence"/>
+      </reference>
+      <name value="mii-sp-meta-imaging-study-series-scanning-sequence"/>
+      <description value="Suchparameter für ImagingStudy.series.extension.scanningSequence"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-imaging-study-series-scanning-sequence-variant"/>
+      </reference>
+      <name value="mii-sp-meta-imaging-study-series-scanning-sequence-variant"/>
+      <description value="Suchparameter für ImagingStudy.series.extension.scanningSequenceVariant"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-imaging-study-series-series-type"/>
+      </reference>
+      <name value="mii-sp-meta-imaging-study-series-series-type"/>
+      <description value="ImagingStudy.series.extension.seriesType"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-imaging-study-series-slice-thickness"/>
+      </reference>
+      <name value="mii-sp-meta-imaging-study-series-slice-thickness"/>
+      <description value="Suchparameter für ImagingStudy.series.extension.sliceThickness"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-imaging-study-series-started"/>
+      </reference>
+      <name value="mii-sp-meta-imaging-study-series-started"/>
+      <description value="Suchparameter für ImagingStudy.series.started"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-imaging-study-series-tracer-exposure-time"/>
+      </reference>
+      <name value="mii-sp-meta-imaging-study-series-tracer-exposure-time"/>
+      <description value="Suchparameter für ImagingStudy.series.tracerExposureTime"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-imaging-study-series-transducer-frequency"/>
+      </reference>
+      <name value="mii-sp-meta-imaging-study-series-transducer-frequency"/>
+      <description value="Suchparameter für ImagingStudy.series.extension.transducerFrequency"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-imaging-study-series-transducer-type"/>
+      </reference>
+      <name value="mii-sp-meta-imaging-study-series-transducer-type"/>
+      <description value="ImagingStudy.series.extension.transducerType"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-imaging-study-series-ultrasound-color"/>
+      </reference>
+      <name value="mii-sp-meta-imaging-study-series-ultrasound-color"/>
+      <description value="ImagingStudy.series.extension.ultrasoundPresent"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-imaging-study-series-units"/>
+      </reference>
+      <name value="mii-sp-meta-imaging-study-series-units"/>
+      <description value="Suchparameter für ImagingStudy.series.extension.units"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-imaging-study-series-view-position"/>
+      </reference>
+      <name value="mii-sp-meta-imaging-study-series-view-position"/>
+      <description value="Suchparameter für ImagingStudy.series.extension.viewPosition"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-imaging-study-series-xray-tube-current"/>
+      </reference>
+      <name value="mii-sp-meta-imaging-study-series-xray-tube-current"/>
+      <description value="Suchparameter für ImagingStudy.series.extension.xRayTubeCurrent"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-library-quellregister"/>
+      </reference>
+      <name value="mii-sp-meta-library-quellregister"/>
+      <description value="Suchparameter für Library.extension:QuellRegister"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-library-relatedartifact-url"/>
+      </reference>
+      <name value="mii-sp-meta-library-relatedartifact-url"/>
+      <description value="Suchparameter für Library.relatedArtifact.document.url"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-media-partof"/>
+      </reference>
+      <name value="mii-sp-meta-media-partof"/>
+      <description value="SearchParameter for Media.partOf"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-medication-dosage-dosequantity"/>
+      </reference>
+      <name value="mii-sp-meta-medication-dosage-dosequantity"/>
+      <description value="Suchparameter für MedicationStatement.dosage.doseAndRate.doseQuantity | MedicationRequest.dosageInstruction.doseAndRate.doseQuantity | MedicationAdministration.dosage.dose"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-medication-dosage-doserange"/>
+      </reference>
+      <name value="mii-sp-meta-medication-dosage-doserange"/>
+      <description value="Suchparameter für MedicationStatement.dosage.doseAndRate.doseRange | MedicationRequest.dosageInstruction.doseAndRate.doseRange"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-medication-dosage-doserange-high"/>
+      </reference>
+      <name value="mii-sp-meta-medication-dosage-doserange-high"/>
+      <description value="Suchparameter für MedicationStatement.dosage.doseAndRate.doseRange.high | MedicationRequest.dosageInstruction.doseAndRate.doseRange.high"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-medication-dosage-doserange-low"/>
+      </reference>
+      <name value="mii-sp-meta-medication-dosage-doserange-low"/>
+      <description value="Suchparameter für MedicationStatement.dosage.doseAndRate.doseRange.low | MedicationRequest.dosageInstruction.doseAndRate.doseRange.low"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-medication-dosage-ratequantity"/>
+      </reference>
+      <name value="mii-sp-meta-medication-dosage-ratequantity"/>
+      <description value="Suchparameter für MedicationStatement.dosage.doseAndRate.rateQuantity | MedicationAdministration.dosage.rateQuantity | MedicationRequest.dosageInstruction.doseAndRate.rateQuantity"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-medication-dosage-raterange"/>
+      </reference>
+      <name value="mii-sp-meta-medication-dosage-raterange"/>
+      <description value="Suchparameter für MedicationStatement.dosage.doseAndRate.rateRange | MedicationRequest.dosageInstruction.doseAndRate.rateRange"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-medication-dosage-raterange-high"/>
+      </reference>
+      <name value="mii-sp-meta-medication-dosage-raterange-high"/>
+      <description value="Suchparameter für MedicationStatement.dosage.doseAndRate.rateRange.high | MedicationRequest.dosageInstruction.doseAndRate.rateRange.high"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-medication-dosage-raterange-low"/>
+      </reference>
+      <name value="mii-sp-meta-medication-dosage-raterange-low"/>
+      <description value="Suchparameter für MedicationStatement.dosage.doseAndRate.rateRange.low | MedicationRequest.dosageInstruction.doseAndRate.rateRange.low"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-medication-dosage-rateratio"/>
+      </reference>
+      <name value="mii-sp-meta-medication-dosage-rateratio"/>
+      <description value="MedicationStatement.dosage.doseAndRate.rate.ofType(Ratio) | MedicationAdministration.dosage.rate.ofType(Ratio) | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-medication-dosage-rateratio-denominator"/>
+      </reference>
+      <name value="mii-sp-meta-medication-dosage-rateratio-denominator"/>
+      <description value="Suchparameter für MedicationStatement.dosage.doseAndRate.rateRatio.denominator | MedicationAdministration.dosage.rate.ofType(Ratio).denominator | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio).denominator"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-medication-dosage-rateratio-numerator"/>
+      </reference>
+      <name value="mii-sp-meta-medication-dosage-rateratio-numerator"/>
+      <description value="Suchparameter für MedicationStatement.dosage.doseAndRate.rateRatio.numerator | MedicationAdministration.dosage.rate.ofType(Ratio).numerator | MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio).numerator"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-medication-dosage-route"/>
+      </reference>
+      <name value="mii-sp-meta-medication-dosage-route"/>
+      <description value="Suchparameter für (MedicationAdministration|MedicationStatement).dosage.route | MedicationRequest.dosageInstruction.route"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-medication-dosage-site"/>
+      </reference>
+      <name value="mii-sp-meta-medication-dosage-site"/>
+      <description value="Suchparameter für (MedicationAdministration|MedicationStatement).dosage.site | MedicationRequest.dosageInstruction.site"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-medication-ingredient-strength"/>
+      </reference>
+      <name value="mii-sp-meta-medication-ingredient-strength"/>
+      <description value="Suchparameter für Medication.ingredient.strength"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-medication-ingredient-strength-denominator"/>
+      </reference>
+      <name value="mii-sp-meta-medication-ingredient-strength-denominator"/>
+      <description value="Suchparameter für Medication.ingredient.strength.denominator"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-medication-ingredient-strength-numerator"/>
+      </reference>
+      <name value="mii-sp-meta-medication-ingredient-strength-numerator"/>
+      <description value="Suchparameter für Medication.ingredient.strength.numerator"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-medication-list-mode"/>
+      </reference>
+      <name value="mii-sp-meta-medication-list-mode"/>
+      <description value="Suchparameter für List.mode"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-medication-partof"/>
+      </reference>
+      <name value="mii-sp-meta-medication-partof"/>
+      <description value="Suchparameter für (MedicationAdministration|MedicationStatement).partOf"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-medication-reasonreference"/>
+      </reference>
+      <name value="mii-sp-meta-medication-reasonreference"/>
+      <description value="Suchparameter für (MedicationAdministration|MedicationStatement).reasonReference"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-observation-body-structure"/>
+      </reference>
+      <name value="mii-sp-meta-observation-body-structure"/>
+      <description value="Suchparameter für Observation.bodyStructure"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-observation-bodysite"/>
+      </reference>
+      <name value="mii-sp-meta-observation-bodysite"/>
+      <description value="SearchParameter for Observation.bodySite"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-observation-component-interpretation"/>
+      </reference>
+      <name value="mii-sp-meta-observation-component-interpretation"/>
+      <description value="Suchparameter für Observation.component.interpretation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-observation-encounter"/>
+      </reference>
+      <name value="mii-sp-meta-observation-encounter"/>
+      <description value="SearchParameter for Observation.encounter"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-observation-focus"/>
+      </reference>
+      <name value="mii-sp-meta-observation-focus"/>
+      <description value="SearchParameter for Observation.focus"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-observation-hasmember"/>
+      </reference>
+      <name value="mii-sp-meta-observation-hasmember"/>
+      <description value="SearchParameter for Observation.hasMember"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-observation-interpretation"/>
+      </reference>
+      <name value="mii-sp-meta-observation-interpretation"/>
+      <description value="Suchparameter für Observation.interpretation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-observation-issued"/>
+      </reference>
+      <name value="mii-sp-meta-observation-issued"/>
+      <description value="Suchparameter für Observation.issued"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-observation-referencerange"/>
+      </reference>
+      <name value="mii-sp-meta-observation-referencerange"/>
+      <description value="Suchparameter für Observation.referenceRange"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-observation-referencerange-high"/>
+      </reference>
+      <name value="mii-sp-meta-observation-referencerange-high"/>
+      <description value="Suchparameter für Observation.referenceRange.high"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-observation-referencerange-low"/>
+      </reference>
+      <name value="mii-sp-meta-observation-referencerange-low"/>
+      <description value="Suchparameter für Observation.referenceRange.low"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-observation-series-uid"/>
+      </reference>
+      <name value="mii-sp-meta-observation-series-uid"/>
+      <description value="Suchparameter für Observation.extension.seriesUID"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-observation-sop-instance-uid"/>
+      </reference>
+      <name value="mii-sp-meta-observation-sop-instance-uid"/>
+      <description value="Suchparameter für Observation.sopInstanceUID"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-observation-value-ratio"/>
+      </reference>
+      <name value="mii-sp-meta-observation-value-ratio"/>
+      <description value="SearchParameter for Observation.valueRatio"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-observation-value-ratio-denominator"/>
+      </reference>
+      <name value="mii-sp-meta-observation-value-ratio-denominator"/>
+      <description value="SearchParameter for Observation.valueRatio.denominator"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-observation-value-ratio-numerator"/>
+      </reference>
+      <name value="mii-sp-meta-observation-value-ratio-numerator"/>
+      <description value="SearchParameter for Observation.valueRatio.numerator"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-patient-adresszusatz"/>
+      </reference>
+      <name value="mii-sp-meta-patient-adresszusatz"/>
+      <description value="Suchparameter für Patient.address.line.extension:Adresszusatz"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-patient-assignerpid"/>
+      </reference>
+      <name value="mii-sp-meta-patient-assignerpid"/>
+      <description value="Suchparameter für Patient.identifier.assigner.identifier"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-patient-gemeindeschluessel"/>
+      </reference>
+      <name value="mii-sp-meta-patient-gemeindeschluessel"/>
+      <description value="Suchparameter für Patient.address.city.extension:gemeindeschluessel"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-patient-hausnummer"/>
+      </reference>
+      <name value="mii-sp-meta-patient-hausnummer"/>
+      <description value="Suchparameter für Patient.address.line.extension:Hausnummer"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-patient-otheramtlich"/>
+      </reference>
+      <name value="mii-sp-meta-patient-otheramtlich"/>
+      <description value="Suchparameter für Patient.gender.extension:other-amtlich"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-patient-postfach"/>
+      </reference>
+      <name value="mii-sp-meta-patient-postfach"/>
+      <description value="Suchparameter für Patient.address.line.extension:Postfach"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-patient-prefix"/>
+      </reference>
+      <name value="mii-sp-meta-patient-prefix"/>
+      <description value="Suchparameter für Patient.name.prefix"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-patient-prefixqualifier"/>
+      </reference>
+      <name value="mii-sp-meta-patient-prefixqualifier"/>
+      <description value="Suchparameter für Patient.name.prefix.extension:prefix-qualifier"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-patient-stadtteil"/>
+      </reference>
+      <name value="mii-sp-meta-patient-stadtteil"/>
+      <description value="Suchparameter für Patient.address.extension:Stadtteil"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-patient-strasse"/>
+      </reference>
+      <name value="mii-sp-meta-patient-strasse"/>
+      <description value="Suchparameter für Patient.address.line.extension:Strasse"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-procedure-bodysite"/>
+      </reference>
+      <name value="mii-sp-meta-procedure-bodysite"/>
+      <description value="Suchparameter für Procedure.bodySite"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-procedure-complication"/>
+      </reference>
+      <name value="mii-sp-meta-procedure-complication"/>
+      <description value="SearchParameter for Procedure.complication"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-procedure-dokumentationsdatum"/>
+      </reference>
+      <name value="mii-sp-meta-procedure-dokumentationsdatum"/>
+      <description value="Suchparameter für Procedure.extension:Dokumentationsdatum"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-procedure-durchfuehrungsabsicht"/>
+      </reference>
+      <name value="mii-sp-meta-procedure-durchfuehrungsabsicht"/>
+      <description value="Suchparameter für Procedure.extension:Durchfuehrungsabsicht"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-procedure-ops-seitenlokalisation"/>
+      </reference>
+      <name value="mii-sp-meta-procedure-ops-seitenlokalisation"/>
+      <description value="Suchparameter für Procedure.code.coding:ops.extension:Seitenlokalisation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-procedure-outcome"/>
+      </reference>
+      <name value="mii-sp-meta-procedure-outcome"/>
+      <description value="SearchParameter for Procedure.outcome"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-procedure-recorder"/>
+      </reference>
+      <name value="mii-sp-meta-procedure-recorder"/>
+      <description value="Suchparameter für Procedure.recorder"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-read-proc-report"/>
+      </reference>
+      <name value="mii-sp-meta-read-proc-report"/>
+      <description value="Suchparameter für ReadProcedure.report"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-reason-reference"/>
+      </reference>
+      <name value="mii-sp-meta-reason-reference"/>
+      <description value="Suchparameter für ImagingStudy.reasonReference"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-researchstudy-akronym"/>
+      </reference>
+      <name value="mii-sp-meta-researchstudy-akronym"/>
+      <description value="Suchparameter für ResearchStudy.extension:Akronym"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-researchstudy-arm-name"/>
+      </reference>
+      <name value="mii-sp-meta-researchstudy-arm-name"/>
+      <description value="Suchparameter für ResearchStudy.arm.name"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-researchstudy-finanzierung"/>
+      </reference>
+      <name value="mii-sp-meta-researchstudy-finanzierung"/>
+      <description value="Suchparameter für ResearchStudy.extension:Finanzierung"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-researchstudy-label"/>
+      </reference>
+      <name value="mii-sp-meta-researchstudy-label"/>
+      <description value="Suchparameter für ResearchStudy.extension:label"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-researchstudy-rekrutierungsstand"/>
+      </reference>
+      <name value="mii-sp-meta-researchstudy-rekrutierungsstand"/>
+      <description value="Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstand"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-researchstudy-rekrutierungsstand-datum"/>
+      </reference>
+      <name value="mii-sp-meta-researchstudy-rekrutierungsstand-datum"/>
+      <description value="Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstand-datum"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-researchstudy-rekrutierungsstand-genauigkeit"/>
+      </reference>
+      <name value="mii-sp-meta-researchstudy-rekrutierungsstand-genauigkeit"/>
+      <description value="Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstand-genauigkeit"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-researchstudy-rekrutierungsstart"/>
+      </reference>
+      <name value="mii-sp-meta-researchstudy-rekrutierungsstart"/>
+      <description value="Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsstart"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-researchstudy-rekrutierungsziel"/>
+      </reference>
+      <name value="mii-sp-meta-researchstudy-rekrutierungsziel"/>
+      <description value="Suchparameter für ResearchStudy.extension:Rekrutierung.extension:rekrutierungsziel"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-researchstudy-studienregister"/>
+      </reference>
+      <name value="mii-sp-meta-researchstudy-studienregister"/>
+      <description value="Suchparameter für ResearchStudy.extension:Studienregister"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-researchsubject-consent"/>
+      </reference>
+      <name value="mii-sp-meta-researchsubject-consent"/>
+      <description value="Suchparameter für ResearchSubject.consent"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-servicerequest-reasoncode"/>
+      </reference>
+      <name value="mii-sp-meta-servicerequest-reasoncode"/>
+      <description value="Suchparameter für ServiceRequest.reasonCode"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-servicerequest-reasonreference"/>
+      </reference>
+      <name value="mii-sp-meta-servicerequest-reasonreference"/>
+      <description value="Suchparameter für ServiceRequest.reasonReference"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-servicerequest-supportinginfo"/>
+      </reference>
+      <name value="mii-sp-meta-servicerequest-supportinginfo"/>
+      <description value="SearchParameter for ServiceRequest.supportingInfo"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-specimen-collection-body-site"/>
+      </reference>
+      <name value="mii-sp-meta-specimen-collection-body-site"/>
+      <description value="SearchParameter for Specimen.collection.bodySite"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-specimen-collection-method"/>
+      </reference>
+      <name value="mii-sp-meta-specimen-collection-method"/>
+      <description value="SearchParameter for Specimen.collection.method"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-specimen-container-additive"/>
+      </reference>
+      <name value="mii-sp-meta-specimen-container-additive"/>
+      <description value="SearchParameter for Specimen.container.additive"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-specimen-diagnose"/>
+      </reference>
+      <name value="mii-sp-meta-specimen-diagnose"/>
+      <description value="Suchparameter für die Extension Diagnose am Profil Bioprobe"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-specimen-processing-additive"/>
+      </reference>
+      <name value="mii-sp-meta-specimen-processing-additive"/>
+      <description value="SearchParameter for Specimen.processing.additive"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-specimen-processing-date"/>
+      </reference>
+      <name value="mii-sp-meta-specimen-processing-date"/>
+      <description value="SearchParameter for Specimen.processing.time"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-specimen-processing-procedure"/>
+      </reference>
+      <name value="mii-sp-meta-specimen-processing-procedure"/>
+      <description value="SearchParameter for Specimen.processing.procedure"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-specimen-request"/>
+      </reference>
+      <name value="mii-sp-meta-specimen-request"/>
+      <description value="SearchParameter for Specimen.request"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-supporting-info"/>
+      </reference>
+      <name value="mii-sp-meta-supporting-info"/>
+      <description value="Suchparameter für CarePlan.supportingInfo | DiagnosticReport.extension.supportingInfo"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-task-for"/>
+      </reference>
+      <name value="mii-sp-meta-task-for"/>
+      <description value="Suchparameter für Task.for"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-task-reasoncode"/>
+      </reference>
+      <name value="mii-sp-meta-task-reasoncode"/>
+      <description value="Suchparameter für Task.reasonCode"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/mii-sp-meta-task-reasonreference"/>
+      </reference>
+      <name value="mii-sp-meta-task-reasonreference"/>
+      <description value="Suchparameter für Task.reasonReference"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <page>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+        <valueUrl value="toc.html"/>
+      </extension>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents">
+        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+          <extension url="lang">
+            <valueCode value="de"/>
+          </extension>
+          <extension url="content">
+            <valueString value="Inhaltsverzeichnis"/>
+          </extension>
+        </extension>
+      </title>
+      <generation value="html"/>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="index.html"/>
+        </extension>
+        <nameUrl value="index.html"/>
+        <title value="Home">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="de"/>
+            </extension>
+            <extension url="content">
+              <valueString value="Startseite"/>
+            </extension>
+          </extension>
+        </title>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="guidance.html"/>
+        </extension>
+        <nameUrl value="guidance.html"/>
+        <title value="Guidance">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="de"/>
+            </extension>
+            <extension url="content">
+              <valueString value="Anleitung"/>
+            </extension>
+          </extension>
+        </title>
+        <generation value="markdown"/>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="implementer-guidance.html"/>
+          </extension>
+          <nameUrl value="implementer-guidance.html"/>
+          <title value="Guidance for Implementers">
+            <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+              <extension url="lang">
+                <valueCode value="de"/>
+              </extension>
+              <extension url="content">
+                <valueString value="Anleitung für Implementierende"/>
+              </extension>
+            </extension>
+          </title>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="uml-diagrams.html"/>
+          </extension>
+          <nameUrl value="uml-diagrams.html"/>
+          <title value="UML Diagrams">
+            <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+              <extension url="lang">
+                <valueCode value="de"/>
+              </extension>
+              <extension url="content">
+                <valueString value="UML-Diagramme"/>
+              </extension>
+            </extension>
+          </title>
+          <generation value="markdown"/>
+        </page>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="security-and-privacy.html"/>
+        </extension>
+        <nameUrl value="security-and-privacy.html"/>
+        <title value="Security and Privacy">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="de"/>
+            </extension>
+            <extension url="content">
+              <valueString value="Sicherheit und Datenschutz"/>
+            </extension>
+          </extension>
+        </title>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="profiles.html"/>
+        </extension>
+        <nameUrl value="profiles.html"/>
+        <title value="Profiles">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="de"/>
+            </extension>
+            <extension url="content">
+              <valueString value="Profile"/>
+            </extension>
+          </extension>
+        </title>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="extensions.html"/>
+        </extension>
+        <nameUrl value="extensions.html"/>
+        <title value="Extensions">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="de"/>
+            </extension>
+            <extension url="content">
+              <valueString value="Extensions"/>
+            </extension>
+          </extension>
+        </title>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="capability-statements.html"/>
+        </extension>
+        <nameUrl value="capability-statements.html"/>
+        <title value="Capability Statements">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="de"/>
+            </extension>
+            <extension url="content">
+              <valueString value="CapabilityStatements"/>
+            </extension>
+          </extension>
+        </title>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="logical-models.html"/>
+        </extension>
+        <nameUrl value="logical-models.html"/>
+        <title value="Logical Models">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="de"/>
+            </extension>
+            <extension url="content">
+              <valueString value="Logische Modelle"/>
+            </extension>
+          </extension>
+        </title>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="code-systems.html"/>
+        </extension>
+        <nameUrl value="code-systems.html"/>
+        <title value="Code Systems">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="de"/>
+            </extension>
+            <extension url="content">
+              <valueString value="CodeSystems"/>
+            </extension>
+          </extension>
+        </title>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="examples.html"/>
+        </extension>
+        <nameUrl value="examples.html"/>
+        <title value="Examples">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="de"/>
+            </extension>
+            <extension url="content">
+              <valueString value="Beispiele"/>
+            </extension>
+          </extension>
+        </title>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="downloads.html"/>
+        </extension>
+        <nameUrl value="downloads.html"/>
+        <title value="Downloads">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="de"/>
+            </extension>
+            <extension url="content">
+              <valueString value="Downloads"/>
+            </extension>
+          </extension>
+        </title>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="changes.html"/>
+        </extension>
+        <nameUrl value="changes.html"/>
+        <title value="Changelog">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="de"/>
+            </extension>
+            <extension url="content">
+              <valueString value="Änderungshistorie"/>
+            </extension>
+          </extension>
+        </title>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="metadata.html"/>
+        </extension>
+        <nameUrl value="metadata.html"/>
+        <title value="Metadata Overview">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="de"/>
+            </extension>
+            <extension url="content">
+              <valueString value="Metadaten-Übersicht"/>
+            </extension>
+          </extension>
+        </title>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="version-history.html"/>
+        </extension>
+        <nameUrl value="version-history.html"/>
+        <title value="Versioning">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="de"/>
+            </extension>
+            <extension url="content">
+              <valueString value="Versionierung"/>
+            </extension>
+          </extension>
+        </title>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="ImplementationGuide-mii-ig-meta.html"/>
+        </extension>
+        <nameUrl value="ImplementationGuide-mii-ig-meta.html"/>
+        <title value="MII ImplementationGuide Resource">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="de"/>
+            </extension>
+            <extension url="content">
+              <valueString value="MII ImplementationGuide Ressource"/>
+            </extension>
+          </extension>
+        </title>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="translationinfo.html"/>
+        </extension>
+        <nameUrl value="translationinfo.html"/>
+        <title value="Translation Information">
+          <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+            <extension url="lang">
+              <valueCode value="de"/>
+            </extension>
+            <extension url="content">
+              <valueString value="Hinweise zur Übersetzung"/>
+            </extension>
+          </extension>
+        </title>
+        <generation value="markdown"/>
+      </page>
+    </page>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/predefined-resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/intro-notes"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code value="path-tx-cache"/>
+      <value value="input-cache/txcache"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>
