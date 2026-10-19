@@ -62,7 +62,7 @@ Description: "Medizininformatik-Initiative Standorte"
 * insert CRMIResourceEffectivePeriod
 * insert CRMIArtifactTopic(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, C80260)
 * insert CRMIArtifactContributors
-* ^date = "2026-09-01"
+* ^date = "2026-10-19"
 * ^status = #active
 * ^caseSensitive = true
 * ^compositional = false
