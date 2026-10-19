@@ -426,6 +426,7 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UKT-FLAME insert AddKonsortium(MII)
 * #UKT-FLAME insert AddUri(private-aim.de)
 * #UKT-FLAME insert AddStatus(active)
+* #UKT-FLAME insert AddDatenmanagementstelle(true)
 * #UKT-FLAME insert AddTRV(V6.15)
 * #UKT-FLAME insert AddAbbreviation(UKT-FLAME)
 * #UKU "Universitätsklinikum Ulm" "Ulm"
