@@ -118,7 +118,7 @@
   <title value="MII CS Meta DIZ Standorte"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2026-09-01"/>
+  <date value="2026-10-19"/>
   <publisher value="NUM-DIZ">
     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
       <extension url="lang">

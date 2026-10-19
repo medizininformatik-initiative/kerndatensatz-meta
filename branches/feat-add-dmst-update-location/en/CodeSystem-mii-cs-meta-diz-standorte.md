@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier | *Version*:2027.0.0-ballot.rc3 |
-| Active as of 2026-09-01 | *Computable Name*:MII_CS_Meta_DIZ_Standorte |
+| Active as of 2026-10-19 | *Computable Name*:MII_CS_Meta_DIZ_Standorte |
 | **Copyright/Legal**: Medizininformatik-Initiative | |
 
  
@@ -164,7 +164,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "MII CS Meta DIZ Standorte",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-01",
+  "date" : "2026-10-19",
   "publisher" : "NUM-DIZ",
   "_publisher" : {
     "extension" : [{
