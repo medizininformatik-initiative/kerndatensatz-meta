@@ -657,6 +657,10 @@ This Code system is referenced in the definition of the following value sets:
       "valueCode" : "active"
     },
     {
+      "code" : "dataManagement",
+      "valueBoolean" : true
+    },
+    {
       "code" : "contract",
       "valueString" : "V6.15"
     },

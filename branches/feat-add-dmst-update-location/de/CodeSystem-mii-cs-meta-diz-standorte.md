@@ -657,6 +657,10 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
       "valueCode" : "active"
     },
     {
+      "code" : "dataManagement",
+      "valueBoolean" : true
+    },
+    {
       "code" : "contract",
       "valueString" : "V6.15"
     },
