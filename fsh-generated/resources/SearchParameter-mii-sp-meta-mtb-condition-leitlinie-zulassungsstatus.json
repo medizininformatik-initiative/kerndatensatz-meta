@@ -1,0 +1,47 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "mii-sp-meta-mtb-condition-leitlinie-zulassungsstatus",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"
+    ]
+  },
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-mtb-condition-leitlinie-zulassungsstatus",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "version": "2025.0.0",
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
+  "name": "MII_SP_Meta_Condition_Leitlinie_Zulassungsstatus",
+  "status": "draft",
+  "experimental": false,
+  "date": "2025-05-26",
+  "description": "Suchparameter für ClinicalImpression.extension[LeitlinenbehandlungStatus].extension[Zulassungsstatus].valueCodeableConcept",
+  "code": "therapielinie",
+  "base": [
+    "ClinicalImpression"
+  ],
+  "type": "token",
+  "expression": "ClinicalImpression.supportingInfo.ofType(Procedure).extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-leitlinie-dokumentation').extension.where(url='https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-ex-mtb-zulassungsstatus').value"
+}
