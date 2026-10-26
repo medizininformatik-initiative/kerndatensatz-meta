@@ -23,6 +23,28 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: ${{ inputs.ref }}
+
+      # Install the module's dependencies (from sushi-config.yaml) into the standard
+      # FHIR package cache (~/.fhir/packages) and generate snapshots for every
+      # StructureDefinition that ships without one. SUSHI (run by the Firely pipeline
+      # below) requires snapshots on parent profiles and otherwise aborts with
+      # "Structure Definition ... is missing a snapshot. Snapshot is required for import."
+      #
+      # Background: up to firely-terminal-pipeline v0.6.7 (Firely Terminal 3.3.2) the
+      # pipeline's `fhir restore` inflated every dependency, which silently covered
+      # packages without snapshots. Since the bump to v0.8.25 (Firely Terminal 3.5.0,
+      # 2026-09-14) restore no longer inflates, so modules deriving from such packages
+      # fail in SUSHI. Known case: de.gematik.isik ships 0 of 178 snapshots
+      # (Kardiologie, Intensivmedizin derive from ISiK profiles).
+      #
+      # Packages that already carry snapshots are left untouched, so this step is a
+      # no-op for every other module. Same tool gematik uses in the ISiK IG build.
+      - name: Install dependencies and generate missing snapshots
+        uses: Gefyra/fhir-pkg-tool@v0.5.0
+        with:
+          sushi-deps-file: sushi-config.yaml
+          ignore-snapshot-errors: true
+
       - name: Firely.Terminal (GitHub Actions)
         id: firely-terminal
         uses: FirelyTeam/firely-terminal-pipeline@v0.8.25
