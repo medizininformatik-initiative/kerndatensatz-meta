@@ -7796,7 +7796,7 @@
         </meta>
         <text>
           <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><a name="SearchParameter_mii-sp-meta-imaging-study-modality-body-site"> </a><p class="res-header-id"><b>Generated Narrative: SearchParameter mii-sp-meta-imaging-study-modality-body-site</b></p><a name="mii-sp-meta-imaging-study-modality-body-site"> </a><a name="hcmii-sp-meta-imaging-study-modality-body-site"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-meta-searchparameter.html">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href="http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}">Package</span></p><p><b>url</b>: <a href="SearchParameter-mii-sp-meta-imaging-study-modality-body-site.html">MII_SP_Bildgebung_Imaging_Study_Modality_Body_Site</a></p><p><b>version</b>: 2027.0.0-ballot.rc3</p><p><b>name</b>: MII_SP_Bildgebung_Imaging_Study_Modality_Body_Site</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-11-06</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href="https://www.medizininformatik-initiative.de">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für ImagingStudy.series.modality and ImagingStudy.series.bodySite</p>
-</div><p><b>code</b>: modality-body-site</p><p><b>base</b>: ImagingStudy</p><p><b>type</b>: Composite</p><p><b>expression</b>: ImagingStudy.series</p><blockquote><p><b>component</b></p><p><b>definition</b>: <a href="http://hl7.org/fhir/SearchParameter/ImagingStudy-modality">modality</a></p><p><b>expression</b>: modality</p></blockquote><blockquote><p><b>component</b></p><p><b>definition</b>: <a href="http://hl7.org/fhir/SearchParameter/ImagingStudy-bodysite">bodysite</a></p><p><b>expression</b>: bodysite</p></blockquote></div></div>
+</div><p><b>code</b>: modality-body-site</p><p><b>base</b>: ImagingStudy</p><p><b>type</b>: Composite</p><p><b>expression</b>: ImagingStudy.series</p><blockquote><p><b>component</b></p><p><b>definition</b>: <a href="http://hl7.org/fhir/SearchParameter/ImagingStudy-modality">modality</a></p><p><b>expression</b>: modality</p></blockquote><blockquote><p><b>component</b></p><p><b>definition</b>: <a href="http://hl7.org/fhir/SearchParameter/ImagingStudy-bodysite">bodysite</a></p><p><b>expression</b>: bodySite</p></blockquote></div></div>
         </text>
         <extension url="http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm">
           <valueCoding>
@@ -7839,7 +7839,7 @@
         </component>
         <component>
           <definition value="http://hl7.org/fhir/SearchParameter/ImagingStudy-bodysite"/>
-          <expression value="bodysite"/>
+          <expression value="bodySite"/>
         </component>
       </SearchParameter>
     </resource>

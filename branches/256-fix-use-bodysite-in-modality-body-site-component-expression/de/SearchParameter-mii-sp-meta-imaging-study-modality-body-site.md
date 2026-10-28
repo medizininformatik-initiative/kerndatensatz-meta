@@ -108,7 +108,7 @@ Suchparameter für ImagingStudy.series.modality and ImagingStudy.series.bodySite
   },
   {
     "definition" : "http://hl7.org/fhir/SearchParameter/ImagingStudy-bodysite",
-    "expression" : "bodysite"
+    "expression" : "bodySite"
   }]
 }
 

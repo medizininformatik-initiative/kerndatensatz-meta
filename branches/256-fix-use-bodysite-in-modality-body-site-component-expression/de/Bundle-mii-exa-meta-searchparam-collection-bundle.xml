@@ -7840,7 +7840,7 @@
         </component>
         <component>
           <definition value="http://hl7.org/fhir/SearchParameter/ImagingStudy-bodysite"/>
-          <expression value="bodysite"/>
+          <expression value="bodySite"/>
         </component>
       </SearchParameter>
     </resource>
