@@ -253,6 +253,13 @@ test_includes_resource_type "FamilyMemberHistory with _include=FamilyMemberHisto
                            "FamilyMemberHistory" "_include=FamilyMemberHistory:reason-reference" "Condition"
 
 # =========================================================
+# ImagingStudy
+# =========================================================
+# ImagingStudy.series modality-body-site
+test_at_least_one "ImagingStudy with modality-body-site=http://dicom.nema.org/resources/ontology/DCM|MR\$http://snomed.info/sct|76752008 count" \
+                  "$(search "ImagingStudy" "modality-body-site=http://dicom.nema.org/resources/ontology/DCM%7CMR%24http://snomed.info/sct%7C76752008")"
+
+# =========================================================
 # Library
 # =========================================================
 # TODO: Library quellregister
