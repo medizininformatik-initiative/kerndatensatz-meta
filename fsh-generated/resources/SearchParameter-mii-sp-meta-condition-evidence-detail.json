@@ -75,7 +75,7 @@
   "date": "2026-09-01",
   "name": "MII_SP_Meta_Condition_Evidence_Detail",
   "description": "SearchParameter for Condition.evidence.detail",
-  "status": "active",
+  "status": "retired",
   "code": "evidence-detail",
   "type": "reference",
   "expression": "Condition.evidence.detail"

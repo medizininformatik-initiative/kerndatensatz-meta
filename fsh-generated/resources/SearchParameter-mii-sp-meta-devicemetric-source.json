@@ -69,7 +69,7 @@
   "publisher": "Medizininformatik Initiative",
   "version": "2027.0.0-ballot.rc3",
   "name": "MII_SP_Meta_DeviceMetric_Source",
-  "status": "active",
+  "status": "retired",
   "experimental": false,
   "date": "2026-09-01",
   "description": "Suchparameter für DeviceMetric.source",

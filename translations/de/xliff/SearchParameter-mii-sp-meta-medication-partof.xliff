@@ -42,7 +42,7 @@
              <notes>
                <note id="n1">SearchParameter.description</note>
              </notes>
-        <source>Suchparameter für (MedicationAdministration|MedicationStatement).partOf</source>
+        <source>Suchparameter für MedicationAdministration.partOf</source>
         <target></target>
       </trans-unit>
       <trans-unit id="SearchParameter-mii-sp-meta-medication-partof" resname="Coding.display">

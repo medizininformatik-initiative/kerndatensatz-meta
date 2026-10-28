@@ -7,7 +7,7 @@ Usage: #definition
 * insert LicenseCodeableCCBY40Instance
 * insert SP_Profile
 * name = "MII_SP_Meta_DeviceMetric_Source"
-* status = #active
+* status = #retired
 * experimental = false
 * date = "2026-09-01"
 * description = "Suchparameter für DeviceMetric.source"

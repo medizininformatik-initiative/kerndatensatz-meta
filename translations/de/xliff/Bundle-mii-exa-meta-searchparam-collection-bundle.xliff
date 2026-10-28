@@ -693,7 +693,7 @@
              <notes>
                <note id="n1">SearchParameter.description</note>
              </notes>
-        <source>Suchparameter für (MedicationAdministration|MedicationStatement).partOf</source>
+        <source>Suchparameter für MedicationAdministration.partOf</source>
         <target></target>
       </trans-unit>
       <trans-unit id="Bundle-mii-exa-meta-searchparam-collection-bundle" resname="SearchParameter.name">
@@ -1162,20 +1162,6 @@
              <notes>
                <note id="n1">SearchParameter.name</note>
              </notes>
-        <source>MII_SP_Meta_DeviceMetric_Source</source>
-        <target></target>
-      </trans-unit>
-      <trans-unit id="Bundle-mii-exa-meta-searchparam-collection-bundle" resname="SearchParameter.description">
-             <notes>
-               <note id="n1">SearchParameter.description</note>
-             </notes>
-        <source>Suchparameter für DeviceMetric.source</source>
-        <target></target>
-      </trans-unit>
-      <trans-unit id="Bundle-mii-exa-meta-searchparam-collection-bundle" resname="SearchParameter.name">
-             <notes>
-               <note id="n1">SearchParameter.name</note>
-             </notes>
         <source>MII_SP_Meta_Observation_BodySite</source>
         <target></target>
       </trans-unit>
@@ -1484,48 +1470,6 @@
              <notes>
                <note id="n1">SearchParameter.name</note>
              </notes>
-        <source>MII_SP_Meta_Condition_Verification_Status</source>
-        <target></target>
-      </trans-unit>
-      <trans-unit id="Bundle-mii-exa-meta-searchparam-collection-bundle" resname="SearchParameter.description">
-             <notes>
-               <note id="n1">SearchParameter.description</note>
-             </notes>
-        <source>SearchParameter for Condition.verificationStatus</source>
-        <target></target>
-      </trans-unit>
-      <trans-unit id="Bundle-mii-exa-meta-searchparam-collection-bundle" resname="SearchParameter.name">
-             <notes>
-               <note id="n1">SearchParameter.name</note>
-             </notes>
-        <source>MII_SP_Meta_Condition_Evidence_Detail</source>
-        <target></target>
-      </trans-unit>
-      <trans-unit id="Bundle-mii-exa-meta-searchparam-collection-bundle" resname="SearchParameter.description">
-             <notes>
-               <note id="n1">SearchParameter.description</note>
-             </notes>
-        <source>SearchParameter for Condition.evidence.detail</source>
-        <target></target>
-      </trans-unit>
-      <trans-unit id="Bundle-mii-exa-meta-searchparam-collection-bundle" resname="SearchParameter.name">
-             <notes>
-               <note id="n1">SearchParameter.name</note>
-             </notes>
-        <source>MII_SP_Meta_Observation_hasMember</source>
-        <target></target>
-      </trans-unit>
-      <trans-unit id="Bundle-mii-exa-meta-searchparam-collection-bundle" resname="SearchParameter.description">
-             <notes>
-               <note id="n1">SearchParameter.description</note>
-             </notes>
-        <source>SearchParameter for Observation.hasMember</source>
-        <target></target>
-      </trans-unit>
-      <trans-unit id="Bundle-mii-exa-meta-searchparam-collection-bundle" resname="SearchParameter.name">
-             <notes>
-               <note id="n1">SearchParameter.name</note>
-             </notes>
         <source>MII_SP_Meta_Procedure_Complication</source>
         <target></target>
       </trans-unit>
@@ -1618,34 +1562,6 @@
                <note id="n1">SearchParameter.description</note>
              </notes>
         <source>SearchParameter for CarePlan.addresses</source>
-        <target></target>
-      </trans-unit>
-      <trans-unit id="Bundle-mii-exa-meta-searchparam-collection-bundle" resname="SearchParameter.name">
-             <notes>
-               <note id="n1">SearchParameter.name</note>
-             </notes>
-        <source>MII_SP_Meta_Observation_Focus</source>
-        <target></target>
-      </trans-unit>
-      <trans-unit id="Bundle-mii-exa-meta-searchparam-collection-bundle" resname="SearchParameter.description">
-             <notes>
-               <note id="n1">SearchParameter.description</note>
-             </notes>
-        <source>SearchParameter for Observation.focus</source>
-        <target></target>
-      </trans-unit>
-      <trans-unit id="Bundle-mii-exa-meta-searchparam-collection-bundle" resname="SearchParameter.name">
-             <notes>
-               <note id="n1">SearchParameter.name</note>
-             </notes>
-        <source>MII_SP_Meta_Observation_Encounter</source>
-        <target></target>
-      </trans-unit>
-      <trans-unit id="Bundle-mii-exa-meta-searchparam-collection-bundle" resname="SearchParameter.description">
-             <notes>
-               <note id="n1">SearchParameter.description</note>
-             </notes>
-        <source>SearchParameter for Observation.encounter</source>
         <target></target>
       </trans-unit>
       <trans-unit id="Bundle-mii-exa-meta-searchparam-collection-bundle" resname="SearchParameter.name">

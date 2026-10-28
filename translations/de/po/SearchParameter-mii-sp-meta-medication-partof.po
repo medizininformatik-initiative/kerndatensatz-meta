@@ -26,7 +26,7 @@ msgstr ""
 
 # SearchParameter.description
 #: SearchParameter.description
-msgid "Suchparameter für (MedicationAdministration|MedicationStatement).partOf"
+msgid "Suchparameter für MedicationAdministration.partOf"
 msgstr ""
 
 # Coding.display

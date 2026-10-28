@@ -72,7 +72,7 @@
   "date": "2026-09-01",
   "name": "MII_SP_Meta_Condition_Verification_Status",
   "description": "SearchParameter for Condition.verificationStatus",
-  "status": "active",
+  "status": "retired",
   "code": "verification-status",
   "type": "token",
   "expression": "Condition.verificationStatus"

@@ -64,15 +64,11 @@
     }
   ],
   "base": [
-    "MedicationStatement",
     "MedicationAdministration"
   ],
   "target": [
     "MedicationAdministration",
-    "Procedure",
-    "MedicationDispense",
-    "MedicationStatement",
-    "Observation"
+    "Procedure"
   ],
   "publisher": "Medizininformatik Initiative",
   "version": "2027.0.0-ballot.rc3",
@@ -80,8 +76,8 @@
   "status": "active",
   "experimental": false,
   "date": "2026-09-01",
-  "description": "Suchparameter für (MedicationAdministration|MedicationStatement).partOf",
+  "description": "Suchparameter für MedicationAdministration.partOf",
   "code": "part-of",
   "type": "reference",
-  "expression": "MedicationAdministration.partOf | MedicationStatement.partOf"
+  "expression": "MedicationAdministration.partOf"
 }

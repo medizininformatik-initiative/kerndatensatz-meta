@@ -12,7 +12,7 @@ Usage: #definition
 * date = "2026-09-01"
 * name = "MII_SP_Meta_Condition_Verification_Status"
 * description = "SearchParameter for Condition.verificationStatus"
-* status = #active 
+* status = #retired 
 * code = #verification-status
 * base = #Condition 
 * type = #token
@@ -29,7 +29,7 @@ Usage: #definition
 * date = "2026-09-01"
 * name = "MII_SP_Meta_Condition_Evidence_Detail"
 * description = "SearchParameter for Condition.evidence.detail"
-* status = #active 
+* status = #retired 
 * code = #evidence-detail
 * base = #Condition 
 * type = #reference
@@ -71,7 +71,7 @@ Usage: #definition
 * date = "2026-09-01"
 * name = "MII_SP_Meta_Observation_hasMember"
 * description = "SearchParameter for Observation.hasMember"
-* status = #active 
+* status = #retired 
 * code = #has-member
 * base = #Observation 
 * type = #reference
@@ -424,7 +424,7 @@ Usage: #definition
 * date = "2026-09-01"
 * name = "MII_SP_Meta_Observation_Focus"
 * description = "SearchParameter for Observation.focus"
-* status = #active
+* status = #retired
 * code = #focus
 * base = #Observation
 * type = #reference
@@ -441,7 +441,7 @@ Usage: #definition
 * date = "2026-09-01"
 * name = "MII_SP_Meta_Observation_Encounter"
 * description = "SearchParameter for Observation.encounter"
-* status = #active
+* status = #retired
 * code = #encounter
 * base = #Observation
 * type = #reference

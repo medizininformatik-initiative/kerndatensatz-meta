@@ -1182,7 +1182,7 @@ msgstr ""
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
-msgid "Suchparameter für (MedicationAdministration|MedicationStatement).partOf"
+msgid "Suchparameter für MedicationAdministration.partOf"
 msgstr ""
 
 # ImplementationGuide.definition.resource.name
