@@ -10055,7 +10055,7 @@
           },
           {
             "definition": "http://hl7.org/fhir/SearchParameter/ImagingStudy-bodysite",
-            "expression": "bodysite"
+            "expression": "bodySite"
           }
         ],
         "publisher": "Medizininformatik Initiative",
