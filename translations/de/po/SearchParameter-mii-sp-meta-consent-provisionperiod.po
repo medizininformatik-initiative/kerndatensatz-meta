@@ -26,7 +26,7 @@ msgstr ""
 
 # SearchParameter.description
 #: SearchParameter.description
-msgid "Suche im Zeitraum der Provision. Dieser Suchparameter bezieht sich explizit auf die zweite Verschachtelungsebene von provison."
+msgid "Suche im Zeitraum der Provision. Dieser Suchparameter bezieht sich explizit auf die zweite Verschachtelungsebene von provision."
 msgstr ""
 
 # Coding.display

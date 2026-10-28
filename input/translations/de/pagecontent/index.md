@@ -1,7 +1,7 @@
 <!-- markdownlint-disable MD041 -->
 
 Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation des
-Kerndatensatz-Moduls 'Meta' der Medizinformatik-Initative.
+Kerndatensatz-Moduls 'Meta' der Medizininformatik-Initiative.
 Im Folgenden werden die Use Cases des Moduls, sowie die dazugehörigen
 FHIR-Profile und Terminologie-Ressourcen in ihrer verbindlichen Form
 beschrieben.

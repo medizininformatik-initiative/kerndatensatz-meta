@@ -511,7 +511,7 @@ msgstr ""
 
 # SearchParameter.description
 #: SearchParameter.description
-msgid "Suche im Code der Provison"
+msgid "Suche im Code der Provision"
 msgstr ""
 
 # SearchParameter.name
@@ -556,7 +556,7 @@ msgstr ""
 
 # SearchParameter.description
 #: SearchParameter.description
-msgid "Suche im Zeitraum der Provision. Dieser Suchparameter bezieht sich explizit auf die zweite Verschachtelungsebene von provison."
+msgid "Suche im Zeitraum der Provision. Dieser Suchparameter bezieht sich explizit auf die zweite Verschachtelungsebene von provision."
 msgstr ""
 
 # SearchParameter.name
@@ -566,7 +566,7 @@ msgstr ""
 
 # SearchParameter.description
 #: SearchParameter.description
-msgid "Suche im Typ der Provison (permit, deny)."
+msgid "Suche im Typ der Provision (permit, deny)."
 msgstr ""
 
 # SearchParameter.name

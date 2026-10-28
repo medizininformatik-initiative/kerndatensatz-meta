@@ -69,7 +69,7 @@ Die bevorzugte Sprache für die Beschreibung, den Titel, sowie den Namen einer C
 * Struktur: MII `<Präfix Ressourcentyp>` `<Abkürzung Modulname>` `<Beschreibung Inhalt>` (`<zusätzliche Informationen>`)  
 Beispiel CodeSystem: 
 `MII CS Mikrobio Mikrobiologische Erreger (Bakterien, Pilze)`
-* Für ValueSets: zusätzlich [`<verwendete Terminologie (z.B. Wert aus ValueSet.compose.include.system)>`]. Bei namenslosen Terminologien weglassen (oder “Lokal”). 
+* Für ValueSets: zusätzlich [`<verwendete Terminologie (z.B. Wert aus ValueSet.compose.include.system)>`]. Bei namenlosen Terminologien weglassen (oder “Lokal”). 
 Beispiel: MII VS Mikrobio Mikrobiologische Erreger (Bakterien, Pilze) [SNOMED CT]  
 * Für ConceptMaps: zusätzlich [`<Quellterminologie> -> <Zielterminologie>`] 
 Beispiel: `MII CM Mikrobio Mikrobiologische Erreger (Bakterien, Pilze) [LOINC -> SNOMED CT]`

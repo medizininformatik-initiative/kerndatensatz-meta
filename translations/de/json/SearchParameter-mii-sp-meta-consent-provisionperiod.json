@@ -36,7 +36,7 @@
     {
       "id" : "SearchParameter.description",
       "context" : "SearchParameter.description",
-      "source" : "Suche im Zeitraum der Provision. Dieser Suchparameter bezieht sich explizit auf die zweite Verschachtelungsebene von provison.",
+      "source" : "Suche im Zeitraum der Provision. Dieser Suchparameter bezieht sich explizit auf die zweite Verschachtelungsebene von provision.",
       "target" : null
     },
     {
