@@ -1,0 +1,1231 @@
+{
+  "resourceType" : "CapabilityStatement",
+  "id" : "mii-cps-meta-server-capabilities",
+  "meta" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license",
+      "valueCode" : "CC-BY-4.0"
+    },
+    {
+      "extension" : [{
+        "url" : "packageId",
+        "valueId" : "de.medizininformatikinitiative.kerndatensatz.meta"
+      },
+      {
+        "url" : "version",
+        "valueString" : "2027.0.0-ballot.rc3"
+      },
+      {
+        "url" : "uri",
+        "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta"
+      }],
+      "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+    }],
+    "profile" : ["http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecapabilitystatement",
+    "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecapabilitystatement"]
+  },
+  "language" : "de",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xml:lang=\"de\" lang=\"de\"><hr/><p><b>German</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: CapabilityStatement mii-cps-meta-server-capabilities</b></p><a name=\"de-mii-cps-meta-server-capabilities\"> </a><a name=\"de-hcmii-cps-meta-server-capabilities\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-shareablecapabilitystatement.html\">CRMI Shareable CapabilityStatement</a>, <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-crmi-publishablecapabilitystatement.html\">CRMI Publishable CapabilityStatement</a></p></div><h2 id=\"de-title\">MII CapabilityStatement Meta Server Capabilities</h2><ul><li>Implementation Guide Version: 2027.0.0-ballot.rc3 </li><li>FHIR Version: 4.0.1 </li><li>Supported Formats: <code>json</code>, <code>xml</code></li><li>Published on: 2026-08-31 </li><li>Published by: NUM-DIZ </li></ul><blockquote class=\"impl-note\"><p><strong>Note to Implementers: FHIR Capabilities</strong></p><p>Any FHIR capability may be 'allowed' by the system unless explicitly marked as 'SHALL NOT'. A few items are marked as MAY in the Implementation Guide to highlight their potential relevance to the use case.</p></blockquote><h3 id=\"de-shallIGs\">SHALL Support the Following Implementation Guides</h3><ul><li><a href=\"index.html\">https://www.medizininformatik-initiative.de/fhir/modul-meta/ImplementationGuide/mii-ig-meta|2027.0.0-ballot.rc3</a></li></ul><h2 id=\"de-rest\">FHIR RESTful Capabilities</h2><div class=\"panel panel-default\"><div class=\"panel-heading\"><h3 id=\"de-mode1\" class=\"panel-title\">Mode: <code>server</code></h3></div><div class=\"panel-body\"><div><p>Proposal derived from the module's published SearchParameter definitions; support expectations require module-team review.</p>\n</div></div></div><h3 id=\"de-resourcesCap1\">Capabilities by Resource/Profile</h3><h4 id=\"de-resourcesSummary1\">Summary</h4><p>The summary table lists the resources that are part of this configuration, and for each resource it lists:</p><ul><li>The relevant profiles (if any)</li><li>The interactions supported by each resource (<b><span class=\"bg-info\">R</span></b>ead, <b><span class=\"bg-info\">S</span></b>earch, <b><span class=\"bg-info\">U</span></b>pdate, and <b><span class=\"bg-info\">C</span></b>reate, are always shown, while <b><span class=\"bg-info\">VR</span></b>ead, <b><span class=\"bg-info\">P</span></b>atch, <b><span class=\"bg-info\">D</span></b>elete, <b><span class=\"bg-info\">H</span></b>istory on <b><span class=\"bg-info\">I</span></b>nstance, or <b><span class=\"bg-info\">H</span></b>istory on <b><span class=\"bg-info\">T</span></b>ype are only present if at least one of the resources has support for them.</li><li><span>The required, recommended, and some optional search parameters (if any). </span></li><li>The linked resources enabled for <code>_include</code></li><li>The other resources enabled for <code>_revinclude</code></li><li>The operations on the resource (if any)</li></ul><div class=\"table-responsive\"><table class=\"table table-condensed table-hover\"><thead><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th class=\"text-center\"><b title=\"GET a resource (read interaction)\">R</b></th><th class=\"text-center\"><b title=\"GET all set of resources of the type (search interaction)\">S</b></th><th class=\"text-center\"><b title=\"PUT a new resource version (update interaction)\">U</b></th><th class=\"text-center\"><b title=\"POST a new resource (create interaction)\">C</b></th><th><b title=\"Required and recommended search parameters\">Searches</b></th><th><code><b>_include</b></code></th><th><code><b>_revinclude</b></code></th><th><b>Operations</b></th></tr></thead><tbody><tr><td><a href=\"#de-AdverseEvent1-1\">AdverseEvent</a></td><td>\u00a0</td><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td>encounter, instance</td><td/><td/><td/></tr><tr><td><a href=\"#de-BodyStructure1-2\">BodyStructure</a></td><td>\u00a0</td><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td>location-qualifier</td><td/><td/><td/></tr><tr><td><a href=\"#de-CarePlan1-3\">CarePlan</a></td><td>\u00a0</td><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td>addresses, contributor, created, description, supporting-info</td><td/><td/><td/></tr><tr><td><a href=\"#de-Composition1-4\">Composition</a></td><td>\u00a0</td><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td>attester-mode, custodian, relates-to-code, section-author, section-title</td><td/><td/><td/></tr><tr><td><a href=\"#de-Condition1-5\">Condition</a></td><td>\u00a0</td><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td>evidence-detail, icd10gm-diagnosesicherheit, icd10gm-mehrfachcodierung, icd10gm-seitenlokalisation, verification-status</td><td/><td/><td/></tr><tr><td><a href=\"#de-Consent1-6\">Consent</a></td><td>\u00a0</td><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td>mii-policy-uri, mii-provision-provision-code, mii-provision-provision-code-period, mii-provision-provision-code-type, mii-provision-provision-period, mii-provision-provision-type</td><td/><td/><td/></tr><tr><td><a href=\"#de-Device1-7\">Device</a></td><td>\u00a0</td><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td>property-type</td><td/><td/><td/></tr><tr><td><a href=\"#de-DeviceMetric1-8\">DeviceMetric</a></td><td>\u00a0</td><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td>source</td><td/><td/><td/></tr><tr><td><a href=\"#de-DiagnosticReport1-9\">DiagnosticReport</a></td><td>\u00a0</td><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td>conclusion-text, imaging-study, supporting-info</td><td/><td/><td/></tr><tr><td><a href=\"#de-DocumentReference1-10\">DocumentReference</a></td><td>\u00a0</td><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td>creation, doc-status, nlp-processing-status, size, title</td><td/><td/><td/></tr><tr><td><a href=\"#de-Encounter1-11\">Encounter</a></td><td>\u00a0</td><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td>aufnahmegrund-drittestelle, aufnahmegrund-ersteundzweitestelle, aufnahmegrund-viertestelle, diagnosis-use, entlassungsgrund-drittestelle, entlassungsgrund-ersteundzweitestelle, hospitalization-admitsource, location-physical-type, service-type</td><td/><td/><td/></tr><tr><td><a href=\"#de-EvidenceVariable1-12\">EvidenceVariable</a></td><td>\u00a0</td><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td>characteristicDescription</td><td/><td/><td/></tr><tr><td><a href=\"#de-FamilyMemberHistory1-13\">FamilyMemberHistory</a></td><td>\u00a0</td><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td>reason-code, reason-reference</td><td/><td/><td/></tr><tr><td><a href=\"#de-ImagingStudy1-14\">ImagingStudy</a></td><td>\u00a0</td><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td>bildgebungsgrund, contrast-bolus, contrast-bolus-details, convolutional-kernel, ctdi-volume, description, echo-time, exposure, exposure-time, flip-angle, instance-burned-in-annotation, instance-image-type, instance-number, instance-pixel-spacing-x, instance-pixel-spacing-y, instance-slice-thickness, inversion-time, kvp, magnetic-field-strength, modality-body-site, number-instances, number-series, procedure-reference, pulse-frequency, radionuclide, radionuclide-half-life, radionuclide-total-dose, radiopharmaceutical, reason-reference, repetition-time, scanning-sequence, scanning-sequence-variant, series-laterality, series-number, series-started, series-type, slice-thickness, study-modality, tracer-exposure-time, transducer-frequency, transducer-type, ultrasound-color, units, view-position, xray-tube-current</td><td/><td/><td/></tr><tr><td><a href=\"#de-Library1-15\">Library</a></td><td>\u00a0</td><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td>quellregister, relatedArtifactUrl</td><td/><td/><td/></tr><tr><td><a href=\"#de-List1-16\">List</a></td><td>\u00a0</td><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td>mode</td><td/><td/><td/></tr><tr><td><a href=\"#de-Media1-17\">Media</a></td><td>\u00a0</td><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td>part-of</td><td/><td/><td/></tr><tr><td><a href=\"#de-Medication1-18\">Medication</a></td><td>\u00a0</td><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td>ingredient-strength, ingredient-strength-denominator, ingredient-strength-numerator</td><td/><td/><td/></tr><tr><td><a href=\"#de-MedicationAdministration1-19\">MedicationAdministration</a></td><td>\u00a0</td><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td>dosage-route, dosage-site, dose-quantity, part-of, ratequantity, rateratio, rateratio-denominator, rateratio-numerator, reason-reference</td><td/><td/><td/></tr><tr><td><a href=\"#de-MedicationRequest1-20\">MedicationRequest</a></td><td>\u00a0</td><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td>dosage-route, dosage-site, dose-quantity, doserange, doserange-high, doserange-low, ratequantity, raterange, raterange-high, raterange-low, rateratio, rateratio-denominator, rateratio-numerator</td><td/><td/><td/></tr><tr><td><a href=\"#de-MedicationStatement1-21\">MedicationStatement</a></td><td>\u00a0</td><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td>dosage-route, dosage-site, dose-quantity, doserange, doserange-high, doserange-low, part-of, ratequantity, raterange, raterange-high, raterange-low, rateratio, rateratio-denominator, rateratio-numerator, reason-reference</td><td/><td/><td/></tr><tr><td><a href=\"#de-Observation1-22\">Observation</a></td><td>\u00a0</td><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td>body-site, body-structure, component-interpretation, encounter, focus, has-member, interpretation, issued, reference-range, reference-range-high, reference-range-low, series-uid, sop-instance-uid, value-ratio, value-ratio-denominator, value-ratio-numerator</td><td/><td/><td/></tr><tr><td><a href=\"#de-Patient1-23\">Patient</a></td><td>\u00a0</td><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td>adresszusatz, assigner-pid, gemeindeschluessel, hausnummer, other-amtlich, postfach, prefix, prefix-qualifier, stadtteil, strasse</td><td/><td/><td/></tr><tr><td><a href=\"#de-Procedure1-24\">Procedure</a></td><td>\u00a0</td><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td>bodySite, complication, dokumentationsdatum, durchfuehrungsabsicht, ops-seitenlokalisation, outcome, recorder, report</td><td/><td/><td/></tr><tr><td><a href=\"#de-ResearchStudy1-25\">ResearchStudy</a></td><td>\u00a0</td><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td>akronym, armName, finanzierung, label, rekrutierungsstand, rekrutierungsstand-datum, rekrutierungsstand-genauigkeit, rekrutierungsstart, rekrutierungsziel, studienregister</td><td/><td/><td/></tr><tr><td><a href=\"#de-ResearchSubject1-26\">ResearchSubject</a></td><td>\u00a0</td><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td>consent</td><td/><td/><td/></tr><tr><td><a href=\"#de-SearchParameter1-27\">SearchParameter</a></td><td>Supported Profiles<br/>\u00a0\u00a0<a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameterversion: 2027.0.0-ballot.rc3)</a></td><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td/><td/><td/><td/></tr><tr><td><a href=\"#de-ServiceRequest1-28\">ServiceRequest</a></td><td>\u00a0</td><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td>reason-code, reason-reference, supporting-info</td><td/><td/><td/></tr><tr><td><a href=\"#de-Specimen1-29\">Specimen</a></td><td>\u00a0</td><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td>collection-body-site, collection-method, container-additive, diagnose, processing-additive, processing-date, processing-procedure, request</td><td/><td/><td/></tr><tr><td><a href=\"#de-Task1-30\">Task</a></td><td>\u00a0</td><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td class=\"text-center\"/><td>for, reason-code, reason-reference</td><td/><td/><td/></tr></tbody></table></div><hr/><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"de-AdverseEvent1-1\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: unspecified </span>AdverseEvent</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-4\"><span class=\"lead\">Core FHIR Resource</span><br/><a href=\"http://hl7.org/fhir/R4/adverseevent.html\">AdverseEvent</a></div><div class=\"col-lg-4\"><span class=\"lead\">Reference Policy</span><br/></div><div class=\"col-lg-4\"><span class=\"lead\">Interaction summary</span><br/><ul/></div></div><p/><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-adverseevent-encounter.html\">encounter</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-adverseevent-suspectentity-instance.html\">instance</a></td><td><code>reference</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\">\u00a0</div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"de-BodyStructure1-2\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: unspecified </span>BodyStructure</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-4\"><span class=\"lead\">Core FHIR Resource</span><br/><a href=\"http://hl7.org/fhir/R4/bodystructure.html\">BodyStructure</a></div><div class=\"col-lg-4\"><span class=\"lead\">Reference Policy</span><br/></div><div class=\"col-lg-4\"><span class=\"lead\">Interaction summary</span><br/><ul/></div></div><p/><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-body-structure-location-qualifier.html\">location-qualifier</a></td><td><code>token</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\">\u00a0</div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"de-CarePlan1-3\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: unspecified </span>CarePlan</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-4\"><span class=\"lead\">Core FHIR Resource</span><br/><a href=\"http://hl7.org/fhir/R4/careplan.html\">CarePlan</a></div><div class=\"col-lg-4\"><span class=\"lead\">Reference Policy</span><br/></div><div class=\"col-lg-4\"><span class=\"lead\">Interaction summary</span><br/><ul/></div></div><p/><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-careplan-addresses.html\">addresses</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-careplan-contributor.html\">contributor</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-careplan-created.html\">created</a></td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-description.html\">description</a></td><td><code>string</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-supporting-info.html\">supporting-info</a></td><td><code>reference</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\">\u00a0</div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"de-Composition1-4\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: unspecified </span>Composition</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-4\"><span class=\"lead\">Core FHIR Resource</span><br/><a href=\"http://hl7.org/fhir/R4/composition.html\">Composition</a></div><div class=\"col-lg-4\"><span class=\"lead\">Reference Policy</span><br/></div><div class=\"col-lg-4\"><span class=\"lead\">Interaction summary</span><br/><ul/></div></div><p/><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-composition-attester-mode.html\">attester-mode</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-composition-custodian.html\">custodian</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-composition-relatesto-code.html\">relates-to-code</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-composition-section-author.html\">section-author</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-composition-section-title.html\">section-title</a></td><td><code>string</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\">\u00a0</div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"de-Condition1-5\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: unspecified </span>Condition</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-4\"><span class=\"lead\">Core FHIR Resource</span><br/><a href=\"http://hl7.org/fhir/R4/condition.html\">Condition</a></div><div class=\"col-lg-4\"><span class=\"lead\">Reference Policy</span><br/></div><div class=\"col-lg-4\"><span class=\"lead\">Interaction summary</span><br/><ul/></div></div><p/><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-condition-evidence-detail.html\">evidence-detail</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-condition-icd10gm-diagnosesicherheit.html\">icd10gm-diagnosesicherheit</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-condition-icd10gm-mehrfachcodierung.html\">icd10gm-mehrfachcodierung</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-condition-icd10gm-seitenlokalisation.html\">icd10gm-seitenlokalisation</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-condition-verification-status.html\">verification-status</a></td><td><code>token</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\">\u00a0</div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"de-Consent1-6\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: unspecified </span>Consent</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-4\"><span class=\"lead\">Core FHIR Resource</span><br/><a href=\"http://hl7.org/fhir/R4/consent.html\">Consent</a></div><div class=\"col-lg-4\"><span class=\"lead\">Reference Policy</span><br/></div><div class=\"col-lg-4\"><span class=\"lead\">Interaction summary</span><br/><ul/></div></div><p/><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-consent-policyuri.html\">mii-policy-uri</a></td><td><code>uri</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-consent-provisioncode.html\">mii-provision-provision-code</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-consent-provisioncodeperiod.html\">mii-provision-provision-code-period</a></td><td><code>composite</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-consent-provisioncodetype.html\">mii-provision-provision-code-type</a></td><td><code>composite</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-consent-provisionperiod.html\">mii-provision-provision-period</a></td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-consent-provisiontype.html\">mii-provision-provision-type</a></td><td><code>token</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\">\u00a0</div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"de-Device1-7\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: unspecified </span>Device</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-4\"><span class=\"lead\">Core FHIR Resource</span><br/><a href=\"http://hl7.org/fhir/R4/device.html\">Device</a></div><div class=\"col-lg-4\"><span class=\"lead\">Reference Policy</span><br/></div><div class=\"col-lg-4\"><span class=\"lead\">Interaction summary</span><br/><ul/></div></div><p/><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-device-property-type.html\">property-type</a></td><td><code>token</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\">\u00a0</div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"de-DeviceMetric1-8\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: unspecified </span>DeviceMetric</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-4\"><span class=\"lead\">Core FHIR Resource</span><br/><a href=\"http://hl7.org/fhir/R4/devicemetric.html\">DeviceMetric</a></div><div class=\"col-lg-4\"><span class=\"lead\">Reference Policy</span><br/></div><div class=\"col-lg-4\"><span class=\"lead\">Interaction summary</span><br/><ul/></div></div><p/><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-devicemetric-source.html\">source</a></td><td><code>reference</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\">\u00a0</div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"de-DiagnosticReport1-9\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: unspecified </span>DiagnosticReport</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-4\"><span class=\"lead\">Core FHIR Resource</span><br/><a href=\"http://hl7.org/fhir/R4/diagnosticreport.html\">DiagnosticReport</a></div><div class=\"col-lg-4\"><span class=\"lead\">Reference Policy</span><br/></div><div class=\"col-lg-4\"><span class=\"lead\">Interaction summary</span><br/><ul/></div></div><p/><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-diagnostic-report-conclusion.html\">conclusion-text</a></td><td><code>string</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-diagnosticreport-imagingstudy.html\">imaging-study</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-supporting-info.html\">supporting-info</a></td><td><code>reference</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\">\u00a0</div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"de-DocumentReference1-10\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: unspecified </span>DocumentReference</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-4\"><span class=\"lead\">Core FHIR Resource</span><br/><a href=\"http://hl7.org/fhir/R4/documentreference.html\">DocumentReference</a></div><div class=\"col-lg-4\"><span class=\"lead\">Reference Policy</span><br/></div><div class=\"col-lg-4\"><span class=\"lead\">Interaction summary</span><br/><ul/></div></div><p/><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-dokument-documentreference-attachment-creation.html\">creation</a></td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-dokument-documentreference-doc-status.html\">doc-status</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-dokument-documentreference-nlp-processing-status.html\">nlp-processing-status</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-documentreference-attachment-size.html\">size</a></td><td><code>number</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-documentreference-attachment-title.html\">title</a></td><td><code>string</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\">\u00a0</div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"de-Encounter1-11\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: unspecified </span>Encounter</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-4\"><span class=\"lead\">Core FHIR Resource</span><br/><a href=\"http://hl7.org/fhir/R4/encounter.html\">Encounter</a></div><div class=\"col-lg-4\"><span class=\"lead\">Reference Policy</span><br/></div><div class=\"col-lg-4\"><span class=\"lead\">Interaction summary</span><br/><ul/></div></div><p/><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-encounter-aufnahmegrund-drittestelle.html\">aufnahmegrund-drittestelle</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-encounter-aufnahmegrund-ersteundzweitestelle.html\">aufnahmegrund-ersteundzweitestelle</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-encounter-aufnahmegrund-viertestelle.html\">aufnahmegrund-viertestelle</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-encounter-diagnosis-use.html\">diagnosis-use</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-encounter-entlassungsgrund-drittestelle.html\">entlassungsgrund-drittestelle</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-encounter-entlassungsgrund-ersteundzweitestelle.html\">entlassungsgrund-ersteundzweitestelle</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-encounter-hospitalization-admitsource.html\">hospitalization-admitsource</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-encounter-location-physical-type.html\">location-physical-type</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-encounter-servicetype.html\">service-type</a></td><td><code>token</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\">\u00a0</div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"de-EvidenceVariable1-12\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: unspecified </span>EvidenceVariable</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-4\"><span class=\"lead\">Core FHIR Resource</span><br/><a href=\"http://hl7.org/fhir/R4/evidencevariable.html\">EvidenceVariable</a></div><div class=\"col-lg-4\"><span class=\"lead\">Reference Policy</span><br/></div><div class=\"col-lg-4\"><span class=\"lead\">Interaction summary</span><br/><ul/></div></div><p/><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-evidencevariable-characteristic-description.html\">characteristicDescription</a></td><td><code>string</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\">\u00a0</div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"de-FamilyMemberHistory1-13\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: unspecified </span>FamilyMemberHistory</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-4\"><span class=\"lead\">Core FHIR Resource</span><br/><a href=\"http://hl7.org/fhir/R4/familymemberhistory.html\">FamilyMemberHistory</a></div><div class=\"col-lg-4\"><span class=\"lead\">Reference Policy</span><br/></div><div class=\"col-lg-4\"><span class=\"lead\">Interaction summary</span><br/><ul/></div></div><p/><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-familymemberhistory-reasoncode.html\">reason-code</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-familymemberhistory-reasonreference.html\">reason-reference</a></td><td><code>reference</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\">\u00a0</div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"de-ImagingStudy1-14\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: unspecified </span>ImagingStudy</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-4\"><span class=\"lead\">Core FHIR Resource</span><br/><a href=\"http://hl7.org/fhir/R4/imagingstudy.html\">ImagingStudy</a></div><div class=\"col-lg-4\"><span class=\"lead\">Reference Policy</span><br/></div><div class=\"col-lg-4\"><span class=\"lead\">Interaction summary</span><br/><ul/></div></div><p/><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-imaging-study-bildgebungsgrund.html\">bildgebungsgrund</a></td><td><code>string</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-imaging-study-series-contrast-bolus.html\">contrast-bolus</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-imaging-study-series-contrast-bolus-details.html\">contrast-bolus-details</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-imaging-study-series-convolutional-kernel.html\">convolutional-kernel</a></td><td><code>string</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-imaging-study-series-ctdi-volume.html\">ctdi-volume</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-description.html\">description</a></td><td><code>string</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-imaging-study-series-echo-time.html\">echo-time</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-imaging-study-series-exposure.html\">exposure</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-imaging-study-series-exposure-time.html\">exposure-time</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-imaging-study-series-flip-angle.html\">flip-angle</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-imaging-study-instance-burned-in-annotation.html\">instance-burned-in-annotation</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-imaging-study-instance-image-type.html\">instance-image-type</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-imaging-study-instance-number.html\">instance-number</a></td><td><code>number</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-imaging-study-instance-pixel-x.html\">instance-pixel-spacing-x</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-imaging-study-instance-pixel-y.html\">instance-pixel-spacing-y</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-imaging-study-instance-slice-thickness.html\">instance-slice-thickness</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-imaging-study-series-inversion-time.html\">inversion-time</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-imaging-study-series-kvp.html\">kvp</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-imaging-study-series-magnetic-field-strength.html\">magnetic-field-strength</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-imaging-study-modality-body-site.html\">modality-body-site</a></td><td><code>composite</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-imaging-study-number-instances.html\">number-instances</a></td><td><code>number</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-imaging-study-number-series.html\">number-series</a></td><td><code>number</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-imaging-study-procedure-reference.html\">procedure-reference</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-imaging-study-series-pulse-frequency.html\">pulse-frequency</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-imaging-study-series-radionuclide.html\">radionuclide</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-imaging-study-series-radionuclide-half-life.html\">radionuclide-half-life</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-imaging-study-series-radionuclide-total-dose.html\">radionuclide-total-dose</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-imaging-study-series-radiopharmaceutical.html\">radiopharmaceutical</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-reason-reference.html\">reason-reference</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-imaging-study-series-repetition-time.html\">repetition-time</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-imaging-study-series-scanning-sequence.html\">scanning-sequence</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-imaging-study-series-scanning-sequence-variant.html\">scanning-sequence-variant</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-imaging-study-series-laterality.html\">series-laterality</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-imaging-study-series-number.html\">series-number</a></td><td><code>number</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-imaging-study-series-started.html\">series-started</a></td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-imaging-study-series-series-type.html\">series-type</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-imaging-study-series-slice-thickness.html\">slice-thickness</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-imaging-study-modality.html\">study-modality</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-imaging-study-series-tracer-exposure-time.html\">tracer-exposure-time</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-imaging-study-series-transducer-frequency.html\">transducer-frequency</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-imaging-study-series-transducer-type.html\">transducer-type</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-imaging-study-series-ultrasound-color.html\">ultrasound-color</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-imaging-study-series-units.html\">units</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-imaging-study-series-view-position.html\">view-position</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-imaging-study-series-xray-tube-current.html\">xray-tube-current</a></td><td><code>quantity</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\">\u00a0</div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"de-Library1-15\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: unspecified </span>Library</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-4\"><span class=\"lead\">Core FHIR Resource</span><br/><a href=\"http://hl7.org/fhir/R4/library.html\">Library</a></div><div class=\"col-lg-4\"><span class=\"lead\">Reference Policy</span><br/></div><div class=\"col-lg-4\"><span class=\"lead\">Interaction summary</span><br/><ul/></div></div><p/><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-library-quellregister.html\">quellregister</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-library-relatedartifact-url.html\">relatedArtifactUrl</a></td><td><code>uri</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\">\u00a0</div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"de-List1-16\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: unspecified </span>List</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-4\"><span class=\"lead\">Core FHIR Resource</span><br/><a href=\"http://hl7.org/fhir/R4/list.html\">List</a></div><div class=\"col-lg-4\"><span class=\"lead\">Reference Policy</span><br/></div><div class=\"col-lg-4\"><span class=\"lead\">Interaction summary</span><br/><ul/></div></div><p/><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-medication-list-mode.html\">mode</a></td><td><code>token</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\">\u00a0</div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"de-Media1-17\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: unspecified </span>Media</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-4\"><span class=\"lead\">Core FHIR Resource</span><br/><a href=\"http://hl7.org/fhir/R4/media.html\">Media</a></div><div class=\"col-lg-4\"><span class=\"lead\">Reference Policy</span><br/></div><div class=\"col-lg-4\"><span class=\"lead\">Interaction summary</span><br/><ul/></div></div><p/><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-media-partof.html\">part-of</a></td><td><code>reference</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\">\u00a0</div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"de-Medication1-18\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: unspecified </span>Medication</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-4\"><span class=\"lead\">Core FHIR Resource</span><br/><a href=\"http://hl7.org/fhir/R4/medication.html\">Medication</a></div><div class=\"col-lg-4\"><span class=\"lead\">Reference Policy</span><br/></div><div class=\"col-lg-4\"><span class=\"lead\">Interaction summary</span><br/><ul/></div></div><p/><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-medication-ingredient-strength.html\">ingredient-strength</a></td><td><code>composite</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-medication-ingredient-strength-denominator.html\">ingredient-strength-denominator</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-medication-ingredient-strength-numerator.html\">ingredient-strength-numerator</a></td><td><code>quantity</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\">\u00a0</div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"de-MedicationAdministration1-19\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: unspecified </span>MedicationAdministration</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-4\"><span class=\"lead\">Core FHIR Resource</span><br/><a href=\"http://hl7.org/fhir/R4/medicationadministration.html\">MedicationAdministration</a></div><div class=\"col-lg-4\"><span class=\"lead\">Reference Policy</span><br/></div><div class=\"col-lg-4\"><span class=\"lead\">Interaction summary</span><br/><ul/></div></div><p/><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-medication-dosage-route.html\">dosage-route</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-medication-dosage-site.html\">dosage-site</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-medication-dosage-dosequantity.html\">dose-quantity</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-medication-partof.html\">part-of</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-medication-dosage-ratequantity.html\">ratequantity</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-medication-dosage-rateratio.html\">rateratio</a></td><td><code>composite</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-medication-dosage-rateratio-denominator.html\">rateratio-denominator</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-medication-dosage-rateratio-numerator.html\">rateratio-numerator</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-medication-reasonreference.html\">reason-reference</a></td><td><code>reference</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\">\u00a0</div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"de-MedicationRequest1-20\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: unspecified </span>MedicationRequest</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-4\"><span class=\"lead\">Core FHIR Resource</span><br/><a href=\"http://hl7.org/fhir/R4/medicationrequest.html\">MedicationRequest</a></div><div class=\"col-lg-4\"><span class=\"lead\">Reference Policy</span><br/></div><div class=\"col-lg-4\"><span class=\"lead\">Interaction summary</span><br/><ul/></div></div><p/><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-medication-dosage-route.html\">dosage-route</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-medication-dosage-site.html\">dosage-site</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-medication-dosage-dosequantity.html\">dose-quantity</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-medication-dosage-doserange.html\">doserange</a></td><td><code>composite</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-medication-dosage-doserange-high.html\">doserange-high</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-medication-dosage-doserange-low.html\">doserange-low</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-medication-dosage-ratequantity.html\">ratequantity</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-medication-dosage-raterange.html\">raterange</a></td><td><code>composite</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-medication-dosage-raterange-high.html\">raterange-high</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-medication-dosage-raterange-low.html\">raterange-low</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-medication-dosage-rateratio.html\">rateratio</a></td><td><code>composite</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-medication-dosage-rateratio-denominator.html\">rateratio-denominator</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-medication-dosage-rateratio-numerator.html\">rateratio-numerator</a></td><td><code>quantity</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\">\u00a0</div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"de-MedicationStatement1-21\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: unspecified </span>MedicationStatement</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-4\"><span class=\"lead\">Core FHIR Resource</span><br/><a href=\"http://hl7.org/fhir/R4/medicationstatement.html\">MedicationStatement</a></div><div class=\"col-lg-4\"><span class=\"lead\">Reference Policy</span><br/></div><div class=\"col-lg-4\"><span class=\"lead\">Interaction summary</span><br/><ul/></div></div><p/><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-medication-dosage-route.html\">dosage-route</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-medication-dosage-site.html\">dosage-site</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-medication-dosage-dosequantity.html\">dose-quantity</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-medication-dosage-doserange.html\">doserange</a></td><td><code>composite</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-medication-dosage-doserange-high.html\">doserange-high</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-medication-dosage-doserange-low.html\">doserange-low</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-medication-partof.html\">part-of</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-medication-dosage-ratequantity.html\">ratequantity</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-medication-dosage-raterange.html\">raterange</a></td><td><code>composite</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-medication-dosage-raterange-high.html\">raterange-high</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-medication-dosage-raterange-low.html\">raterange-low</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-medication-dosage-rateratio.html\">rateratio</a></td><td><code>composite</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-medication-dosage-rateratio-denominator.html\">rateratio-denominator</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-medication-dosage-rateratio-numerator.html\">rateratio-numerator</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-medication-reasonreference.html\">reason-reference</a></td><td><code>reference</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\">\u00a0</div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"de-Observation1-22\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: unspecified </span>Observation</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-4\"><span class=\"lead\">Core FHIR Resource</span><br/><a href=\"http://hl7.org/fhir/R4/observation.html\">Observation</a></div><div class=\"col-lg-4\"><span class=\"lead\">Reference Policy</span><br/></div><div class=\"col-lg-4\"><span class=\"lead\">Interaction summary</span><br/><ul/></div></div><p/><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-observation-bodysite.html\">body-site</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-observation-body-structure.html\">body-structure</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-observation-component-interpretation.html\">component-interpretation</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-observation-encounter.html\">encounter</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-observation-focus.html\">focus</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-observation-hasmember.html\">has-member</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-observation-interpretation.html\">interpretation</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-observation-issued.html\">issued</a></td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-observation-referencerange.html\">reference-range</a></td><td><code>composite</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-observation-referencerange-high.html\">reference-range-high</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-observation-referencerange-low.html\">reference-range-low</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-observation-series-uid.html\">series-uid</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-observation-sop-instance-uid.html\">sop-instance-uid</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-observation-value-ratio.html\">value-ratio</a></td><td><code>composite</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-observation-value-ratio-denominator.html\">value-ratio-denominator</a></td><td><code>quantity</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-observation-value-ratio-numerator.html\">value-ratio-numerator</a></td><td><code>quantity</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\">\u00a0</div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"de-Patient1-23\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: unspecified </span>Patient</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-4\"><span class=\"lead\">Core FHIR Resource</span><br/><a href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a></div><div class=\"col-lg-4\"><span class=\"lead\">Reference Policy</span><br/></div><div class=\"col-lg-4\"><span class=\"lead\">Interaction summary</span><br/><ul/></div></div><p/><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-patient-adresszusatz.html\">adresszusatz</a></td><td><code>string</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-patient-assignerpid.html\">assigner-pid</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-patient-gemeindeschluessel.html\">gemeindeschluessel</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-patient-hausnummer.html\">hausnummer</a></td><td><code>string</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-patient-otheramtlich.html\">other-amtlich</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-patient-postfach.html\">postfach</a></td><td><code>string</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-patient-prefix.html\">prefix</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-patient-prefixqualifier.html\">prefix-qualifier</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-patient-stadtteil.html\">stadtteil</a></td><td><code>string</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-patient-strasse.html\">strasse</a></td><td><code>string</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\">\u00a0</div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"de-Procedure1-24\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: unspecified </span>Procedure</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-4\"><span class=\"lead\">Core FHIR Resource</span><br/><a href=\"http://hl7.org/fhir/R4/procedure.html\">Procedure</a></div><div class=\"col-lg-4\"><span class=\"lead\">Reference Policy</span><br/></div><div class=\"col-lg-4\"><span class=\"lead\">Interaction summary</span><br/><ul/></div></div><p/><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-procedure-bodysite.html\">bodySite</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-procedure-complication.html\">complication</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-procedure-dokumentationsdatum.html\">dokumentationsdatum</a></td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-procedure-durchfuehrungsabsicht.html\">durchfuehrungsabsicht</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-procedure-ops-seitenlokalisation.html\">ops-seitenlokalisation</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-procedure-outcome.html\">outcome</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-procedure-recorder.html\">recorder</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-read-proc-report.html\">report</a></td><td><code>reference</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\">\u00a0</div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"de-ResearchStudy1-25\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: unspecified </span>ResearchStudy</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-4\"><span class=\"lead\">Core FHIR Resource</span><br/><a href=\"http://hl7.org/fhir/R4/researchstudy.html\">ResearchStudy</a></div><div class=\"col-lg-4\"><span class=\"lead\">Reference Policy</span><br/></div><div class=\"col-lg-4\"><span class=\"lead\">Interaction summary</span><br/><ul/></div></div><p/><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-researchstudy-akronym.html\">akronym</a></td><td><code>string</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-researchstudy-arm-name.html\">armName</a></td><td><code>string</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-researchstudy-finanzierung.html\">finanzierung</a></td><td><code>string</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-researchstudy-label.html\">label</a></td><td><code>string</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-researchstudy-rekrutierungsstand.html\">rekrutierungsstand</a></td><td><code>number</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-researchstudy-rekrutierungsstand-datum.html\">rekrutierungsstand-datum</a></td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-researchstudy-rekrutierungsstand-genauigkeit.html\">rekrutierungsstand-genauigkeit</a></td><td><code>string</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-researchstudy-rekrutierungsstart.html\">rekrutierungsstart</a></td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-researchstudy-rekrutierungsziel.html\">rekrutierungsziel</a></td><td><code>number</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-researchstudy-studienregister.html\">studienregister</a></td><td><code>reference</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\">\u00a0</div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"de-ResearchSubject1-26\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: unspecified </span>ResearchSubject</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-4\"><span class=\"lead\">Core FHIR Resource</span><br/><a href=\"http://hl7.org/fhir/R4/researchsubject.html\">ResearchSubject</a></div><div class=\"col-lg-4\"><span class=\"lead\">Reference Policy</span><br/></div><div class=\"col-lg-4\"><span class=\"lead\">Interaction summary</span><br/><ul/></div></div><p/><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-researchsubject-consent.html\">consent</a></td><td><code>reference</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\">\u00a0</div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"de-SearchParameter1-27\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: unspecified </span>SearchParameter</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-4\"><span class=\"lead\">Core FHIR Resource</span><br/><a href=\"http://hl7.org/fhir/R4/searchparameter.html\">SearchParameter</a></div><div class=\"col-lg-4\"><span class=\"lead\">Reference Policy</span><br/></div><div class=\"col-lg-4\"><span class=\"lead\">Interaction summary</span><br/><ul/></div></div><p/><div class=\"row\"><div class=\"col-6\"><span class=\"lead\">Supported Profiles</span><p><a href=\"StructureDefinition-mii-pr-meta-searchparameter.html\">MII PR Meta SearchParameterversion: 2027.0.0-ballot.rc3)</a></p></div></div><p/></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"de-ServiceRequest1-28\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: unspecified </span>ServiceRequest</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-4\"><span class=\"lead\">Core FHIR Resource</span><br/><a href=\"http://hl7.org/fhir/R4/servicerequest.html\">ServiceRequest</a></div><div class=\"col-lg-4\"><span class=\"lead\">Reference Policy</span><br/></div><div class=\"col-lg-4\"><span class=\"lead\">Interaction summary</span><br/><ul/></div></div><p/><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-servicerequest-reasoncode.html\">reason-code</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-servicerequest-reasonreference.html\">reason-reference</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-servicerequest-supportinginfo.html\">supporting-info</a></td><td><code>reference</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\">\u00a0</div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"de-Specimen1-29\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: unspecified </span>Specimen</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-4\"><span class=\"lead\">Core FHIR Resource</span><br/><a href=\"http://hl7.org/fhir/R4/specimen.html\">Specimen</a></div><div class=\"col-lg-4\"><span class=\"lead\">Reference Policy</span><br/></div><div class=\"col-lg-4\"><span class=\"lead\">Interaction summary</span><br/><ul/></div></div><p/><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-specimen-collection-body-site.html\">collection-body-site</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-specimen-collection-method.html\">collection-method</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-specimen-container-additive.html\">container-additive</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-specimen-diagnose.html\">diagnose</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-specimen-processing-additive.html\">processing-additive</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-specimen-processing-date.html\">processing-date</a></td><td><code>date</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-specimen-processing-procedure.html\">processing-procedure</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-specimen-request.html\">request</a></td><td><code>reference</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\">\u00a0</div></div></div></div></div><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"de-Task1-30\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: unspecified </span>Task</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-4\"><span class=\"lead\">Core FHIR Resource</span><br/><a href=\"http://hl7.org/fhir/R4/task.html\">Task</a></div><div class=\"col-lg-4\"><span class=\"lead\">Reference Policy</span><br/></div><div class=\"col-lg-4\"><span class=\"lead\">Interaction summary</span><br/><ul/></div></div><p/><p/><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-task-for.html\">for</a></td><td><code>reference</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-task-reasoncode.html\">reason-code</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href=\"SearchParameter-mii-sp-meta-task-reasonreference.html\">reason-reference</a></td><td><code>reference</code></td><td><div/></td></tr></tbody></table></div><div class=\"col-lg-5\">\u00a0</div></div></div></div></div></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+    "valueCoding" : {
+      "system" : "http://hl7.org/fhir/version-algorithm",
+      "code" : "semver",
+      "display" : "SemVer"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+    "valueCode" : "shareable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+    "valueCode" : "publishable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+        "version" : "3.0.0",
+        "code" : "package",
+        "display" : "Package"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-usage",
+    "valueMarkdown" : "Use this draft CapabilityStatement to inspect the resource types and custom SearchParameters published by the MII Meta module. It is a migration-generated proposal and does not establish normative server support expectations until it has been reviewed and approved."
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/resource-approvalDate",
+    "valueDate" : "2026-08-31"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+    "valuePeriod" : {
+      "start" : "2027"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-topic",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "code" : "C80260"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-author",
+    "valueContactDetail" : {
+      "telecom" : [{
+        "system" : "email",
+        "value" : "julian.sass@charite.de"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-editor",
+    "valueContactDetail" : {
+      "name" : "Taskforce Core Data Set"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-reviewer",
+    "valueContactDetail" : {
+      "name" : "Interoperability Working Group",
+      "telecom" : [{
+        "system" : "url",
+        "value" : "https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-reviewer",
+    "valueContactDetail" : {
+      "name" : "National Steering Committee",
+      "telecom" : [{
+        "system" : "url",
+        "value" : "https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-endorser",
+    "valueContactDetail" : {
+      "name" : "Interoperability Working Group",
+      "telecom" : [{
+        "system" : "url",
+        "value" : "https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-endorser",
+    "valueContactDetail" : {
+      "name" : "National Steering Committee",
+      "telecom" : [{
+        "system" : "url",
+        "value" : "https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"
+      }]
+    }
+  }],
+  "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/CapabilityStatement/mii-cps-meta-server-capabilities",
+  "version" : "2027.0.0-ballot.rc3",
+  "name" : "MII_CPS_Meta_Server_Capabilities",
+  "title" : "MII CapabilityStatement Meta Server Capabilities",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-08-31",
+  "publisher" : "NUM-DIZ",
+  "contact" : [{
+    "name" : "NUM-DIZ",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.netzwerk-universitaetsmedizin.de"
+    }]
+  }],
+  "description" : "Migration-generated proposal describing the resource types and search parameters published by the Meta module. Review before use as a normative capability statement.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "purpose" : "Define the SearchParameter support described by the MII Meta module for implementations of the MII Core Data Set.",
+  "kind" : "requirements",
+  "fhirVersion" : "4.0.1",
+  "format" : ["json",
+  "xml"],
+  "implementationGuide" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/ImplementationGuide/mii-ig-meta|2027.0.0-ballot.rc3"],
+  "rest" : [{
+    "mode" : "server",
+    "documentation" : "Proposal derived from the module's published SearchParameter definitions; support expectations require module-team review.",
+    "resource" : [{
+      "type" : "AdverseEvent",
+      "searchParam" : [{
+        "name" : "encounter",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-adverseevent-encounter",
+        "type" : "reference"
+      },
+      {
+        "name" : "instance",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-adverseevent-suspectentity-instance",
+        "type" : "reference"
+      }]
+    },
+    {
+      "type" : "BodyStructure",
+      "searchParam" : [{
+        "name" : "location-qualifier",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-body-structure-location-qualifier",
+        "type" : "token"
+      }]
+    },
+    {
+      "type" : "CarePlan",
+      "searchParam" : [{
+        "name" : "addresses",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-careplan-addresses",
+        "type" : "reference"
+      },
+      {
+        "name" : "contributor",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-careplan-contributor",
+        "type" : "reference"
+      },
+      {
+        "name" : "created",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-careplan-created",
+        "type" : "date"
+      },
+      {
+        "name" : "description",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-description",
+        "type" : "string"
+      },
+      {
+        "name" : "supporting-info",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-supporting-info",
+        "type" : "reference"
+      }]
+    },
+    {
+      "type" : "Composition",
+      "searchParam" : [{
+        "name" : "attester-mode",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-composition-attester-mode",
+        "type" : "token"
+      },
+      {
+        "name" : "custodian",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-composition-custodian",
+        "type" : "reference"
+      },
+      {
+        "name" : "relates-to-code",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-composition-relatesto-code",
+        "type" : "token"
+      },
+      {
+        "name" : "section-author",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-composition-section-author",
+        "type" : "reference"
+      },
+      {
+        "name" : "section-title",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-composition-section-title",
+        "type" : "string"
+      }]
+    },
+    {
+      "type" : "Condition",
+      "searchParam" : [{
+        "name" : "evidence-detail",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-evidence-detail",
+        "type" : "reference"
+      },
+      {
+        "name" : "icd10gm-diagnosesicherheit",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-icd10gm-diagnosesicherheit",
+        "type" : "token"
+      },
+      {
+        "name" : "icd10gm-mehrfachcodierung",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-icd10gm-mehrfachcodierung",
+        "type" : "token"
+      },
+      {
+        "name" : "icd10gm-seitenlokalisation",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-icd10gm-seitenlokalisation",
+        "type" : "token"
+      },
+      {
+        "name" : "verification-status",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-verification-status",
+        "type" : "token"
+      }]
+    },
+    {
+      "type" : "Consent",
+      "searchParam" : [{
+        "name" : "mii-policy-uri",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-policyuri",
+        "type" : "uri"
+      },
+      {
+        "name" : "mii-provision-provision-code",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-provisioncode",
+        "type" : "token"
+      },
+      {
+        "name" : "mii-provision-provision-code-period",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-provisioncodeperiod",
+        "type" : "composite"
+      },
+      {
+        "name" : "mii-provision-provision-code-type",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-provisioncodetype",
+        "type" : "composite"
+      },
+      {
+        "name" : "mii-provision-provision-period",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-provisionperiod",
+        "type" : "date"
+      },
+      {
+        "name" : "mii-provision-provision-type",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-provisiontype",
+        "type" : "token"
+      }]
+    },
+    {
+      "type" : "Device",
+      "searchParam" : [{
+        "name" : "property-type",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-device-property-type",
+        "type" : "token"
+      }]
+    },
+    {
+      "type" : "DeviceMetric",
+      "searchParam" : [{
+        "name" : "source",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-devicemetric-source",
+        "type" : "reference"
+      }]
+    },
+    {
+      "type" : "DiagnosticReport",
+      "searchParam" : [{
+        "name" : "conclusion-text",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-diagnostic-report-conclusion",
+        "type" : "string"
+      },
+      {
+        "name" : "imaging-study",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-diagnosticreport-imagingstudy",
+        "type" : "reference"
+      },
+      {
+        "name" : "supporting-info",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-supporting-info",
+        "type" : "reference"
+      }]
+    },
+    {
+      "type" : "DocumentReference",
+      "searchParam" : [{
+        "name" : "creation",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-dokument-documentreference-attachment-creation",
+        "type" : "date"
+      },
+      {
+        "name" : "doc-status",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-dokument-documentreference-doc-status",
+        "type" : "token"
+      },
+      {
+        "name" : "nlp-processing-status",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-dokument-documentreference-nlp-processing-status",
+        "type" : "token"
+      },
+      {
+        "name" : "size",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-documentreference-attachment-size",
+        "type" : "number"
+      },
+      {
+        "name" : "title",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-documentreference-attachment-title",
+        "type" : "string"
+      }]
+    },
+    {
+      "type" : "Encounter",
+      "searchParam" : [{
+        "name" : "aufnahmegrund-drittestelle",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-aufnahmegrund-drittestelle",
+        "type" : "token"
+      },
+      {
+        "name" : "aufnahmegrund-ersteundzweitestelle",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-aufnahmegrund-ersteundzweitestelle",
+        "type" : "token"
+      },
+      {
+        "name" : "aufnahmegrund-viertestelle",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-aufnahmegrund-viertestelle",
+        "type" : "token"
+      },
+      {
+        "name" : "diagnosis-use",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-diagnosis-use",
+        "type" : "token"
+      },
+      {
+        "name" : "entlassungsgrund-drittestelle",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-entlassungsgrund-drittestelle",
+        "type" : "token"
+      },
+      {
+        "name" : "entlassungsgrund-ersteundzweitestelle",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-entlassungsgrund-ersteundzweitestelle",
+        "type" : "token"
+      },
+      {
+        "name" : "hospitalization-admitsource",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-hospitalization-admitsource",
+        "type" : "token"
+      },
+      {
+        "name" : "location-physical-type",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-location-physical-type",
+        "type" : "token"
+      },
+      {
+        "name" : "service-type",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-servicetype",
+        "type" : "token"
+      }]
+    },
+    {
+      "type" : "EvidenceVariable",
+      "searchParam" : [{
+        "name" : "characteristicDescription",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-evidencevariable-characteristic-description",
+        "type" : "string"
+      }]
+    },
+    {
+      "type" : "FamilyMemberHistory",
+      "searchParam" : [{
+        "name" : "reason-code",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-familymemberhistory-reasoncode",
+        "type" : "token"
+      },
+      {
+        "name" : "reason-reference",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-familymemberhistory-reasonreference",
+        "type" : "reference"
+      }]
+    },
+    {
+      "type" : "ImagingStudy",
+      "searchParam" : [{
+        "name" : "bildgebungsgrund",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-bildgebungsgrund",
+        "type" : "string"
+      },
+      {
+        "name" : "contrast-bolus",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-contrast-bolus",
+        "type" : "token"
+      },
+      {
+        "name" : "contrast-bolus-details",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-contrast-bolus-details",
+        "type" : "reference"
+      },
+      {
+        "name" : "convolutional-kernel",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-convolutional-kernel",
+        "type" : "string"
+      },
+      {
+        "name" : "ctdi-volume",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-ctdi-volume",
+        "type" : "quantity"
+      },
+      {
+        "name" : "description",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-description",
+        "type" : "string"
+      },
+      {
+        "name" : "echo-time",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-echo-time",
+        "type" : "quantity"
+      },
+      {
+        "name" : "exposure",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-exposure",
+        "type" : "quantity"
+      },
+      {
+        "name" : "exposure-time",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-exposure-time",
+        "type" : "quantity"
+      },
+      {
+        "name" : "flip-angle",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-flip-angle",
+        "type" : "quantity"
+      },
+      {
+        "name" : "instance-burned-in-annotation",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-instance-burned-in-annotation",
+        "type" : "token"
+      },
+      {
+        "name" : "instance-image-type",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-instance-image-type",
+        "type" : "token"
+      },
+      {
+        "name" : "instance-number",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-instance-number",
+        "type" : "number"
+      },
+      {
+        "name" : "instance-pixel-spacing-x",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-instance-pixel-x",
+        "type" : "quantity"
+      },
+      {
+        "name" : "instance-pixel-spacing-y",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-instance-pixel-y",
+        "type" : "quantity"
+      },
+      {
+        "name" : "instance-slice-thickness",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-instance-slice-thickness",
+        "type" : "quantity"
+      },
+      {
+        "name" : "inversion-time",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-inversion-time",
+        "type" : "quantity"
+      },
+      {
+        "name" : "kvp",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-kvp",
+        "type" : "quantity"
+      },
+      {
+        "name" : "magnetic-field-strength",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-magnetic-field-strength",
+        "type" : "quantity"
+      },
+      {
+        "name" : "modality-body-site",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-modality-body-site",
+        "type" : "composite"
+      },
+      {
+        "name" : "number-instances",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-number-instances",
+        "type" : "number"
+      },
+      {
+        "name" : "number-series",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-number-series",
+        "type" : "number"
+      },
+      {
+        "name" : "procedure-reference",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-procedure-reference",
+        "type" : "reference"
+      },
+      {
+        "name" : "pulse-frequency",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-pulse-frequency",
+        "type" : "quantity"
+      },
+      {
+        "name" : "radionuclide",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-radionuclide",
+        "type" : "token"
+      },
+      {
+        "name" : "radionuclide-half-life",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-radionuclide-half-life",
+        "type" : "quantity"
+      },
+      {
+        "name" : "radionuclide-total-dose",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-radionuclide-total-dose",
+        "type" : "quantity"
+      },
+      {
+        "name" : "radiopharmaceutical",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-radiopharmaceutical",
+        "type" : "token"
+      },
+      {
+        "name" : "reason-reference",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-reason-reference",
+        "type" : "reference"
+      },
+      {
+        "name" : "repetition-time",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-repetition-time",
+        "type" : "quantity"
+      },
+      {
+        "name" : "scanning-sequence",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-scanning-sequence",
+        "type" : "token"
+      },
+      {
+        "name" : "scanning-sequence-variant",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-scanning-sequence-variant",
+        "type" : "token"
+      },
+      {
+        "name" : "series-laterality",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-laterality",
+        "type" : "token"
+      },
+      {
+        "name" : "series-number",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-number",
+        "type" : "number"
+      },
+      {
+        "name" : "series-started",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-started",
+        "type" : "date"
+      },
+      {
+        "name" : "series-type",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-series-type",
+        "type" : "token"
+      },
+      {
+        "name" : "slice-thickness",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-slice-thickness",
+        "type" : "quantity"
+      },
+      {
+        "name" : "study-modality",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-modality",
+        "type" : "token"
+      },
+      {
+        "name" : "tracer-exposure-time",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-tracer-exposure-time",
+        "type" : "quantity"
+      },
+      {
+        "name" : "transducer-frequency",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-transducer-frequency",
+        "type" : "quantity"
+      },
+      {
+        "name" : "transducer-type",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-transducer-type",
+        "type" : "token"
+      },
+      {
+        "name" : "ultrasound-color",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-ultrasound-color",
+        "type" : "token"
+      },
+      {
+        "name" : "units",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-units",
+        "type" : "token"
+      },
+      {
+        "name" : "view-position",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-view-position",
+        "type" : "token"
+      },
+      {
+        "name" : "xray-tube-current",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-xray-tube-current",
+        "type" : "quantity"
+      }]
+    },
+    {
+      "type" : "Library",
+      "searchParam" : [{
+        "name" : "quellregister",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-library-quellregister",
+        "type" : "token"
+      },
+      {
+        "name" : "relatedArtifactUrl",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-library-relatedartifact-url",
+        "type" : "uri"
+      }]
+    },
+    {
+      "type" : "List",
+      "searchParam" : [{
+        "name" : "mode",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-list-mode",
+        "type" : "token"
+      }]
+    },
+    {
+      "type" : "Media",
+      "searchParam" : [{
+        "name" : "part-of",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-media-partof",
+        "type" : "reference"
+      }]
+    },
+    {
+      "type" : "Medication",
+      "searchParam" : [{
+        "name" : "ingredient-strength",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength",
+        "type" : "composite"
+      },
+      {
+        "name" : "ingredient-strength-denominator",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength-denominator",
+        "type" : "quantity"
+      },
+      {
+        "name" : "ingredient-strength-numerator",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength-numerator",
+        "type" : "quantity"
+      }]
+    },
+    {
+      "type" : "MedicationAdministration",
+      "searchParam" : [{
+        "name" : "dosage-route",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-route",
+        "type" : "token"
+      },
+      {
+        "name" : "dosage-site",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-site",
+        "type" : "token"
+      },
+      {
+        "name" : "dose-quantity",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-dosequantity",
+        "type" : "quantity"
+      },
+      {
+        "name" : "part-of",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-partof",
+        "type" : "reference"
+      },
+      {
+        "name" : "ratequantity",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-ratequantity",
+        "type" : "quantity"
+      },
+      {
+        "name" : "rateratio",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio",
+        "type" : "composite"
+      },
+      {
+        "name" : "rateratio-denominator",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-denominator",
+        "type" : "quantity"
+      },
+      {
+        "name" : "rateratio-numerator",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-numerator",
+        "type" : "quantity"
+      },
+      {
+        "name" : "reason-reference",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-reasonreference",
+        "type" : "reference"
+      }]
+    },
+    {
+      "type" : "MedicationRequest",
+      "searchParam" : [{
+        "name" : "dosage-route",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-route",
+        "type" : "token"
+      },
+      {
+        "name" : "dosage-site",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-site",
+        "type" : "token"
+      },
+      {
+        "name" : "dose-quantity",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-dosequantity",
+        "type" : "quantity"
+      },
+      {
+        "name" : "doserange",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange",
+        "type" : "composite"
+      },
+      {
+        "name" : "doserange-high",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange-high",
+        "type" : "quantity"
+      },
+      {
+        "name" : "doserange-low",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange-low",
+        "type" : "quantity"
+      },
+      {
+        "name" : "ratequantity",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-ratequantity",
+        "type" : "quantity"
+      },
+      {
+        "name" : "raterange",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange",
+        "type" : "composite"
+      },
+      {
+        "name" : "raterange-high",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange-high",
+        "type" : "quantity"
+      },
+      {
+        "name" : "raterange-low",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange-low",
+        "type" : "quantity"
+      },
+      {
+        "name" : "rateratio",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio",
+        "type" : "composite"
+      },
+      {
+        "name" : "rateratio-denominator",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-denominator",
+        "type" : "quantity"
+      },
+      {
+        "name" : "rateratio-numerator",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-numerator",
+        "type" : "quantity"
+      }]
+    },
+    {
+      "type" : "MedicationStatement",
+      "searchParam" : [{
+        "name" : "dosage-route",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-route",
+        "type" : "token"
+      },
+      {
+        "name" : "dosage-site",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-site",
+        "type" : "token"
+      },
+      {
+        "name" : "dose-quantity",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-dosequantity",
+        "type" : "quantity"
+      },
+      {
+        "name" : "doserange",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange",
+        "type" : "composite"
+      },
+      {
+        "name" : "doserange-high",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange-high",
+        "type" : "quantity"
+      },
+      {
+        "name" : "doserange-low",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange-low",
+        "type" : "quantity"
+      },
+      {
+        "name" : "part-of",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-partof",
+        "type" : "reference"
+      },
+      {
+        "name" : "ratequantity",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-ratequantity",
+        "type" : "quantity"
+      },
+      {
+        "name" : "raterange",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange",
+        "type" : "composite"
+      },
+      {
+        "name" : "raterange-high",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange-high",
+        "type" : "quantity"
+      },
+      {
+        "name" : "raterange-low",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange-low",
+        "type" : "quantity"
+      },
+      {
+        "name" : "rateratio",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio",
+        "type" : "composite"
+      },
+      {
+        "name" : "rateratio-denominator",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-denominator",
+        "type" : "quantity"
+      },
+      {
+        "name" : "rateratio-numerator",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-numerator",
+        "type" : "quantity"
+      },
+      {
+        "name" : "reason-reference",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-reasonreference",
+        "type" : "reference"
+      }]
+    },
+    {
+      "type" : "Observation",
+      "searchParam" : [{
+        "name" : "body-site",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-bodysite",
+        "type" : "token"
+      },
+      {
+        "name" : "body-structure",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-body-structure",
+        "type" : "reference"
+      },
+      {
+        "name" : "component-interpretation",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-component-interpretation",
+        "type" : "token"
+      },
+      {
+        "name" : "encounter",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-encounter",
+        "type" : "reference"
+      },
+      {
+        "name" : "focus",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-focus",
+        "type" : "reference"
+      },
+      {
+        "name" : "has-member",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-hasmember",
+        "type" : "reference"
+      },
+      {
+        "name" : "interpretation",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-interpretation",
+        "type" : "token"
+      },
+      {
+        "name" : "issued",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-issued",
+        "type" : "date"
+      },
+      {
+        "name" : "reference-range",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-referencerange",
+        "type" : "composite"
+      },
+      {
+        "name" : "reference-range-high",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-referencerange-high",
+        "type" : "quantity"
+      },
+      {
+        "name" : "reference-range-low",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-referencerange-low",
+        "type" : "quantity"
+      },
+      {
+        "name" : "series-uid",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-series-uid",
+        "type" : "token"
+      },
+      {
+        "name" : "sop-instance-uid",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-sop-instance-uid",
+        "type" : "token"
+      },
+      {
+        "name" : "value-ratio",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-value-ratio",
+        "type" : "composite"
+      },
+      {
+        "name" : "value-ratio-denominator",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-value-ratio-denominator",
+        "type" : "quantity"
+      },
+      {
+        "name" : "value-ratio-numerator",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-value-ratio-numerator",
+        "type" : "quantity"
+      }]
+    },
+    {
+      "type" : "Patient",
+      "searchParam" : [{
+        "name" : "adresszusatz",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-adresszusatz",
+        "type" : "string"
+      },
+      {
+        "name" : "assigner-pid",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-assignerpid",
+        "type" : "token"
+      },
+      {
+        "name" : "gemeindeschluessel",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-gemeindeschluessel",
+        "type" : "token"
+      },
+      {
+        "name" : "hausnummer",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-hausnummer",
+        "type" : "string"
+      },
+      {
+        "name" : "other-amtlich",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-otheramtlich",
+        "type" : "token"
+      },
+      {
+        "name" : "postfach",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-postfach",
+        "type" : "string"
+      },
+      {
+        "name" : "prefix",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-prefix",
+        "type" : "token"
+      },
+      {
+        "name" : "prefix-qualifier",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-prefixqualifier",
+        "type" : "token"
+      },
+      {
+        "name" : "stadtteil",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-stadtteil",
+        "type" : "string"
+      },
+      {
+        "name" : "strasse",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-strasse",
+        "type" : "string"
+      }]
+    },
+    {
+      "type" : "Procedure",
+      "searchParam" : [{
+        "name" : "bodySite",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-bodysite",
+        "type" : "token"
+      },
+      {
+        "name" : "complication",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-complication",
+        "type" : "token"
+      },
+      {
+        "name" : "dokumentationsdatum",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-dokumentationsdatum",
+        "type" : "date"
+      },
+      {
+        "name" : "durchfuehrungsabsicht",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-durchfuehrungsabsicht",
+        "type" : "token"
+      },
+      {
+        "name" : "ops-seitenlokalisation",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-ops-seitenlokalisation",
+        "type" : "token"
+      },
+      {
+        "name" : "outcome",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-outcome",
+        "type" : "token"
+      },
+      {
+        "name" : "recorder",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-recorder",
+        "type" : "reference"
+      },
+      {
+        "name" : "report",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-read-proc-report",
+        "type" : "reference"
+      }]
+    },
+    {
+      "type" : "ResearchStudy",
+      "searchParam" : [{
+        "name" : "akronym",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-akronym",
+        "type" : "string"
+      },
+      {
+        "name" : "armName",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-arm-name",
+        "type" : "string"
+      },
+      {
+        "name" : "finanzierung",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-finanzierung",
+        "type" : "string"
+      },
+      {
+        "name" : "label",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-label",
+        "type" : "string"
+      },
+      {
+        "name" : "rekrutierungsstand",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-rekrutierungsstand",
+        "type" : "number"
+      },
+      {
+        "name" : "rekrutierungsstand-datum",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-rekrutierungsstand-datum",
+        "type" : "date"
+      },
+      {
+        "name" : "rekrutierungsstand-genauigkeit",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-rekrutierungsstand-genauigkeit",
+        "type" : "string"
+      },
+      {
+        "name" : "rekrutierungsstart",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-rekrutierungsstart",
+        "type" : "date"
+      },
+      {
+        "name" : "rekrutierungsziel",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-rekrutierungsziel",
+        "type" : "number"
+      },
+      {
+        "name" : "studienregister",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-studienregister",
+        "type" : "reference"
+      }]
+    },
+    {
+      "type" : "ResearchSubject",
+      "searchParam" : [{
+        "name" : "consent",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchsubject-consent",
+        "type" : "reference"
+      }]
+    },
+    {
+      "type" : "SearchParameter",
+      "supportedProfile" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter|2027.0.0-ballot.rc3"]
+    },
+    {
+      "type" : "ServiceRequest",
+      "searchParam" : [{
+        "name" : "reason-code",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-servicerequest-reasoncode",
+        "type" : "token"
+      },
+      {
+        "name" : "reason-reference",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-servicerequest-reasonreference",
+        "type" : "reference"
+      },
+      {
+        "name" : "supporting-info",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-servicerequest-supportinginfo",
+        "type" : "reference"
+      }]
+    },
+    {
+      "type" : "Specimen",
+      "searchParam" : [{
+        "name" : "collection-body-site",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-collection-body-site",
+        "type" : "token"
+      },
+      {
+        "name" : "collection-method",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-collection-method",
+        "type" : "token"
+      },
+      {
+        "name" : "container-additive",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-container-additive",
+        "type" : "reference"
+      },
+      {
+        "name" : "diagnose",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-diagnose",
+        "type" : "reference"
+      },
+      {
+        "name" : "processing-additive",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-processing-additive",
+        "type" : "reference"
+      },
+      {
+        "name" : "processing-date",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-processing-date",
+        "type" : "date"
+      },
+      {
+        "name" : "processing-procedure",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-processing-procedure",
+        "type" : "token"
+      },
+      {
+        "name" : "request",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-request",
+        "type" : "reference"
+      }]
+    },
+    {
+      "type" : "Task",
+      "searchParam" : [{
+        "name" : "for",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-task-for",
+        "type" : "reference"
+      },
+      {
+        "name" : "reason-code",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-task-reasoncode",
+        "type" : "token"
+      },
+      {
+        "name" : "reason-reference",
+        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-task-reasonreference",
+        "type" : "reference"
+      }]
+    }]
+  }]
+}
