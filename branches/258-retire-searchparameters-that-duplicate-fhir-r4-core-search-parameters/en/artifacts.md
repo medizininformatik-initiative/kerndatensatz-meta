@@ -184,11 +184,7 @@ These define the properties by which a RESTful server can be searched. They can 
 | [ mii-sp-meta-medication-ingredient-strength-denominator  ](SearchParameter-mii-sp-meta-medication-ingredient-strength-denominator.md) | Suchparameter für Medication.ingredient.strength.denominator |
 | [ mii-sp-meta-medication-ingredient-strength-numerator  ](SearchParameter-mii-sp-meta-medication-ingredient-strength-numerator.md) | Suchparameter für Medication.ingredient.strength.numerator |
 | [ mii-sp-meta-medication-list-mode  ](SearchParameter-mii-sp-meta-medication-list-mode.md) | Suchparameter für List.mode |
-| [ mii-sp-meta-medication-partof  ](SearchParameter-mii-sp-meta-medication-partof.md) | 
-| | |
-| :--- | :--- |
-| Suchparameter für (MedicationAdministration | MedicationStatement).partOf |
- |
+| [ mii-sp-meta-medication-partof  ](SearchParameter-mii-sp-meta-medication-partof.md) | Suchparameter für MedicationAdministration.partOf |
 | [ mii-sp-meta-medication-reasonreference  ](SearchParameter-mii-sp-meta-medication-reasonreference.md) | 
 | | |
 | :--- | :--- |

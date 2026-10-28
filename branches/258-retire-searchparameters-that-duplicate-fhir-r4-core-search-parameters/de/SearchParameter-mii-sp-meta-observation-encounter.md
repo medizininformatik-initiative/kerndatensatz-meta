@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-encounter | *Version*:2027.0.0-ballot.rc3 |
-| Active Stand: 2026-09-01 | *Maschinenlesbarer Name*:MII_SP_Meta_Observation_Encounter |
+| Retired Stand: 2026-09-01 | *Maschinenlesbarer Name*:MII_SP_Meta_Observation_Encounter |
 
  
 SearchParameter for Observation.encounter 
@@ -66,7 +66,7 @@ SearchParameter for Observation.encounter
   "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-encounter",
   "version" : "2027.0.0-ballot.rc3",
   "name" : "MII_SP_Meta_Observation_Encounter",
-  "status" : "active",
+  "status" : "retired",
   "experimental" : false,
   "date" : "2026-09-01",
   "publisher" : "NUM-DIZ",

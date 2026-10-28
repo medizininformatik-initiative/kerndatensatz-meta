@@ -2142,7 +2142,7 @@
         <reference value="SearchParameter/mii-sp-meta-medication-partof"/>
       </reference>
       <name value="mii-sp-meta-medication-partof"/>
-      <description value="Suchparameter für (MedicationAdministration|MedicationStatement).partOf"/>
+      <description value="Suchparameter für MedicationAdministration.partOf"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

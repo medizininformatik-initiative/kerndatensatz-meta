@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-evidence-detail | *Version*:2027.0.0-ballot.rc3 |
-| Active Stand: 2026-09-01 | *Maschinenlesbarer Name*:MII_SP_Meta_Condition_Evidence_Detail |
+| Retired Stand: 2026-09-01 | *Maschinenlesbarer Name*:MII_SP_Meta_Condition_Evidence_Detail |
 
  
 SearchParameter for Condition.evidence.detail 
@@ -66,7 +66,7 @@ SearchParameter for Condition.evidence.detail
   "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-evidence-detail",
   "version" : "2027.0.0-ballot.rc3",
   "name" : "MII_SP_Meta_Condition_Evidence_Detail",
-  "status" : "active",
+  "status" : "retired",
   "experimental" : false,
   "date" : "2026-09-01",
   "publisher" : "NUM-DIZ",

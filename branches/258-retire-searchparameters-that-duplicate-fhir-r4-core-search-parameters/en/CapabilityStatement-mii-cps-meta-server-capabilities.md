@@ -277,7 +277,7 @@ Migration-generated proposal describing the resource types and search parameters
       "type" : "Condition",
       "searchParam" : [{
         "name" : "evidence-detail",
-        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-evidence-detail",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Condition-evidence-detail",
         "type" : "reference"
       },
       {
@@ -297,7 +297,7 @@ Migration-generated proposal describing the resource types and search parameters
       },
       {
         "name" : "verification-status",
-        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-verification-status",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Condition-verification-status",
         "type" : "token"
       }]
     },
@@ -346,7 +346,7 @@ Migration-generated proposal describing the resource types and search parameters
       "type" : "DeviceMetric",
       "searchParam" : [{
         "name" : "source",
-        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-devicemetric-source",
+        "definition" : "http://hl7.org/fhir/SearchParameter/DeviceMetric-source",
         "type" : "reference"
       }]
     },
@@ -890,7 +890,7 @@ Migration-generated proposal describing the resource types and search parameters
       },
       {
         "name" : "part-of",
-        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-partof",
+        "definition" : "http://hl7.org/fhir/SearchParameter/MedicationStatement-part-of",
         "type" : "reference"
       },
       {
@@ -953,17 +953,17 @@ Migration-generated proposal describing the resource types and search parameters
       },
       {
         "name" : "encounter",
-        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-encounter",
+        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-encounter",
         "type" : "reference"
       },
       {
         "name" : "focus",
-        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-focus",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Observation-focus",
         "type" : "reference"
       },
       {
         "name" : "has-member",
-        "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-hasmember",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Observation-has-member",
         "type" : "reference"
       },
       {

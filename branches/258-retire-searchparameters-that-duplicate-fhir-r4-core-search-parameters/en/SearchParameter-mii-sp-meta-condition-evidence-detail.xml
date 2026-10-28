@@ -44,7 +44,7 @@
   <url value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-evidence-detail"/>
   <version value="2027.0.0-ballot.rc3"/>
   <name value="MII_SP_Meta_Condition_Evidence_Detail"/>
-  <status value="active"/>
+  <status value="retired"/>
   <experimental value="false"/>
   <date value="2026-09-01"/>
   <publisher value="NUM-DIZ"/>

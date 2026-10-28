@@ -171,7 +171,7 @@
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-evidence-detail|2027.0.0-ballot.rc3"
+    "valueCanonical" : "http://hl7.org/fhir/SearchParameter/Condition-evidence-detail|4.0.1"
   },
   {
     "name" : "default-canonical-version",
@@ -187,7 +187,7 @@
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-verification-status|2027.0.0-ballot.rc3"
+    "valueCanonical" : "http://hl7.org/fhir/SearchParameter/Condition-verification-status|4.0.1"
   },
   {
     "name" : "default-canonical-version",
@@ -207,7 +207,7 @@
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-devicemetric-source|2027.0.0-ballot.rc3"
+    "valueCanonical" : "http://hl7.org/fhir/SearchParameter/DeviceMetric-source|4.0.1"
   },
   {
     "name" : "default-canonical-version",
@@ -519,6 +519,10 @@
   },
   {
     "name" : "default-canonical-version",
+    "valueCanonical" : "http://hl7.org/fhir/SearchParameter/MedicationStatement-part-of|4.0.1"
+  },
+  {
+    "name" : "default-canonical-version",
     "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-bodysite|2027.0.0-ballot.rc3"
   },
   {
@@ -531,15 +535,15 @@
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-encounter|2027.0.0-ballot.rc3"
+    "valueCanonical" : "http://hl7.org/fhir/SearchParameter/clinical-encounter|4.0.1"
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-focus|2027.0.0-ballot.rc3"
+    "valueCanonical" : "http://hl7.org/fhir/SearchParameter/Observation-focus|4.0.1"
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-hasmember|2027.0.0-ballot.rc3"
+    "valueCanonical" : "http://hl7.org/fhir/SearchParameter/Observation-has-member|4.0.1"
   },
   {
     "name" : "default-canonical-version",
