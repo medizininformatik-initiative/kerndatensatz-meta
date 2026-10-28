@@ -42,7 +42,7 @@
              <notes>
                <note id="n1">SearchParameter.description</note>
              </notes>
-        <source>Suche im Code der Provison</source>
+        <source>Suche im Code der Provision</source>
         <target></target>
       </trans-unit>
       <trans-unit id="SearchParameter-mii-sp-meta-consent-provisioncode" resname="Coding.display">

@@ -23,7 +23,7 @@ Datum 21.10.2025
 Datum 07.10.2025
 
 * `Changed`: `CodeSystem`-Ressource `MII_CS_Meta_DIZ_Standorte` der Medizininformatik-Initiative Standorte aktualisiert. Siehe: {{pagelink: CodeSystemMIIStandorte, text: Medizininformatik-Initiative Standorte, hint: MII_CS_Meta_DIZ_Standorte}}
-* `Added`: `SearchParameter`-Ressourcen der Erweiterungsmodule Bildgebung und Dokument. Siehe: Siehe: {{pagelink: SearchParameter, text: Kerndatensatz Suchparameter, hint: CDS-SearchParameter}}
+* `Added`: `SearchParameter`-Ressourcen der Erweiterungsmodule Bildgebung und Dokument. Siehe: {{pagelink: SearchParameter, text: Kerndatensatz Suchparameter, hint: CDS-SearchParameter}}
 
 **Version: 2025.0.0**
 

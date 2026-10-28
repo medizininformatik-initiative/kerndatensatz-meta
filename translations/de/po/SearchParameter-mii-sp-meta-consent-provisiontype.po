@@ -26,7 +26,7 @@ msgstr ""
 
 # SearchParameter.description
 #: SearchParameter.description
-msgid "Suche im Typ der Provison (permit, deny)."
+msgid "Suche im Typ der Provision (permit, deny)."
 msgstr ""
 
 # Coding.display

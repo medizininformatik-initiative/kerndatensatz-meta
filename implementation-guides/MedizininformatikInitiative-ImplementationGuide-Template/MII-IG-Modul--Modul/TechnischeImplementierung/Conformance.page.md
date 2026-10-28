@@ -29,7 +29,7 @@ Anforderungen in dieser Spezifikation werden durch folgende in Großbuchstaben g
 
 Elemente einer FHIR-Ressource können in einem Profil als mandatorisch oder [Must Support](http://hl7.org/fhir/R4/profiling.html#mustsupport) gekennzeichnet werden.
 
-- **Obligatorische Elemente** sind Elemente mit Mindestkardinalität `1` (z.B. `1..1`, `1..*`). Diese MÜSSEN grundsätzlich vorhanden sein. In Ausnahmefällen können die Werte fehlen -> in diesem Fall MUSS die Abswesenheit durch Mechanismen wie `Data-Absent-Reason Extension` dokumentiert werden (siehe [Abschnitt *Fehlende Daten*](#fehlende-daten))
+- **Obligatorische Elemente** sind Elemente mit Mindestkardinalität `1` (z.B. `1..1`, `1..*`). Diese MÜSSEN grundsätzlich vorhanden sein. In Ausnahmefällen können die Werte fehlen -> in diesem Fall MUSS die Abwesenheit durch Mechanismen wie `Data-Absent-Reason Extension` dokumentiert werden (siehe [Abschnitt *Fehlende Daten*](#fehlende-daten))
 
 - **Must Support (MS)** bei einem Element bedeutet, dass Systeme dieses Element unterstützen MÜSSEN, auch wenn die Kardinalität `0..*` lautet. **Unterstützen** heißt: Systeme MÜSSEN in der Lage sein, das Element zu befüllen, zu speichern, anzuzeigen und korrekt zu verarbeiten.
 
