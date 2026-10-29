@@ -12,13 +12,13 @@ and that validate.
   protection, not from this repository. Use obviously artificial names, e.g.
   `Max Mustermann-Testpatient`.
 - **Recommended — tag examples as test data.** kerndatensatz-basis marks its
-  examples with the test-data label `v3-ActReason#HTEST`, and this scaffold
+  examples with the test-data label `v3-ActReason#HTEST`, and this repository
   copies that via `input/fsh/rulesets/test-data-label.fsh`; it marks the
   instance as test health data wherever it travels.
 - **Recommended — do not declare `meta.profile`** unless implementers are
   genuinely expected to populate it in production (HL7's IG best-practice
   guidance). The publisher validates the example against the profile anyway (via
-  `Usage: #example` and the `profile-test-cases` harness).
+  `Usage: #example`).
 
 ## Steps
 
@@ -26,7 +26,7 @@ and that validate.
 
    ```fsh
    Instance: ExamplePatientMinimal
-   InstanceOf: MII_PR_{{MODULE_NAME}}_Patient
+   InstanceOf: MII_PR_Person_Patient   // a profile of the module the example belongs to
    Usage: #example
    Title: "Example: minimal conformant patient"
    Description: "Kleinstes konformes Beispiel …"
@@ -38,7 +38,7 @@ and that validate.
    is — the title is what readers see in the artifact list.
 3. Cover the interesting cases, not just the happy path: at minimum one example
    per profile, and ideally one that exercises **every** Must Support element and
-   every extension your module defines.
+   every extension the module defines.
 4. Explain the example where it needs explaining — either in its `Description:`
    or in the profile's notes file (see [render profiles](render-profiles.md)).
 5. Build and open the profile page: your example is listed under **Examples**.

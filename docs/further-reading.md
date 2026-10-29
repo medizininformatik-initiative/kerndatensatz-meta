@@ -1,9 +1,9 @@
 # Further reading
 
-A curated reading list of the specifications, wiki pages and tools this template
-and its modules build on. If a link moves, search its title.
+A curated reading list of the specifications, wiki pages and tools this module
+builds on. If a link moves, search its title.
 
-## MII — the rules this template and its modules follow
+## MII — the rules this module follows
 
 The [MII meta wiki](https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki)
 is authoritative; when it and this repo disagree, the wiki wins.
@@ -16,9 +16,10 @@ is authoritative; when it and this repo disagree, the wiki wins.
 - [Terminology Version Policy](https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Terminology-Version-Policy)
   — how code system versions are pinned; relevant to terminology-server choice.
 - [Module Release Workflow](https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Module-Release-Workflow)
-  — the **CalVer** release process for modules (contrast with this template's SemVer).
+  — the **CalVer** release process for modules.
 - [GitHub Reusable Validation Workflows](https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/GitHub-Reusable-Validation-Workflows)
-  — the shared CI validation the module scaffold consumes.
+  — the shared CI validation other modules call (the workflows live on this
+  repository's `master` branch).
 - [Dev Container ‐ IG Publisher](https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Dev-Container-‐-IG-Publisher)
   — the dev-container approach this repo aligns with.
 - [Release 2027](https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Release-2027)
@@ -46,12 +47,9 @@ is authoritative; when it and this repo disagree, the wiki wins.
 ## Tooling conventions
 
 - [Conventional Commits 1.0.0](https://www.conventionalcommits.org/en/v1.0.0/) — the
-  commit-message format that drives releases here (see [CONTRIBUTING.md](../CONTRIBUTING.md)).
-- [Semantic Versioning 2.0.0](https://semver.org/) — the version scheme for the
-  **template repos** (modules use CalVer).
-- [Release Please](https://github.com/googleapis/release-please) — the release
-  automation on the **template repos only**. A module never carries it; the
-  first-run bootstrap removes it. See [release.md](release.md).
+  commit-message format used here (see [CONTRIBUTING.md](../CONTRIBUTING.md)).
+- [Semantic Versioning 2.0.0](https://semver.org/) — the version scheme of the
+  MII IG template package (modules use CalVer).
 - [Development Containers](https://containers.dev/) — the dev-container standard our
   `.devcontainer/` follows.
 
@@ -60,4 +58,4 @@ is authoritative; when it and this repo disagree, the wiki wins.
 - HL7 FHIR community Zulip — <https://chat.fhir.org>, stream `german/mi-initiative`.
 - MII Zulip — <https://mii.zulipchat.com/>, stream `MII-Kerndatensatz`.
 
-See also [Getting help in the README](../README.md#getting-help).
+See also [Authors and contacts in the README](../README.md#authors-and-contacts).

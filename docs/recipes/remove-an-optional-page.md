@@ -1,7 +1,7 @@
 # Recipe: decide an optional page — remove it or keep it
 
 Seven pages of the approved MII module menu are **optional (0..1)**; every module
-lead decides each one. In the scaffold they are recognisable twice over: the menu
+lead decides each one. An undecided one is recognisable twice over: the menu
 entry carries an **`(optional)` suffix** in both languages, and the page itself
 carries an `OPTIONAL-PAGE` marker banner. The convention check (M9) fails a
 release while any decision is still open, so an undecided option cannot ship
@@ -38,7 +38,7 @@ For page `<p>` (e.g. `extensions`):
 1. Remove the ` (optional)` suffix from its menu label in **both** menu.xml files
    (and the `OPTIONAL (0..1)` comment line).
 2. Remove the `OPTIONAL-PAGE` marker banner from **both** page files.
-3. Replace the scaffold text with the module's real content — the banner-free
+3. Replace the placeholder text with the module's real content — the banner-free
    page is now mandatory content like any other.
 
 ## Expected result

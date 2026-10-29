@@ -15,7 +15,7 @@ and most of these docs come from. The repository now owns all of it.
 
 The **look** of the IG comes from a separate template package,
 [`de.medizininformatikinitiative.template`](https://github.com/medizininformatik-initiative/ig-template-mii-kds)
-This scaffold references it in `ig.ini`, in one of three forms (decision
+This module references it in `ig.ini`, in one of three forms (decision
 2026-08-28):
 
 - **Interim URL (the default today):**
@@ -31,8 +31,7 @@ This scaffold references it in `ig.ini`, in one of three forms (decision
   — a pinned `id#version` resolves through the FHIR package server only, so
   this waits on the publication decision ([#1](../../../issues/1),
   [#2](../../../issues/2)). Switch with
-  [recipes/switch-template-to-published.md](recipes/switch-template-to-published.md);
-  the vendored folder and the sync machinery dissolve then.
+  [recipes/switch-template-to-published.md](recipes/switch-template-to-published.md).
 
 > **Why the URL now:** the package has no registry entry yet, and a vendored
 > copy that builds never exercise goes stale invisibly. The URL keeps every
@@ -45,17 +44,16 @@ This scaffold references it in `ig.ini`, in one of three forms (decision
 ImplementationGuide profiles and carries the same `artifact-*` extensions as the
 reference module kerndatensatz-basis, so the module is a properly described,
 versioned, shareable publication unit. The `convention-check` job enforces the
-naming patterns (packageId, id, name, title, canonical, CalVer version). Fill
-every `{{PLACEHOLDER}}`; the comments in the file tell you what each one means.
+naming patterns (packageId, id, name, title, canonical, CalVer version).
 
 ## 4. One release mechanism
 
 The module releases with **CalVer** (`YYYY.n.n`) via the MII Module Release
-Workflow (`module-release.yml` + the human-gated `go-publish.yml`) and never with
-Release Please / SemVer — that belongs to the template tooling repositories only.
-
-> **Why one mechanism per repo:** SemVer tags fighting CalVer tags corrupt the
-> version history.
+Workflow (`module-release.yml` + the human-gated `go-publish.yml`); no other
+tool cuts versions or tags here. While package releases are still provided via
+Simplifier, `publish-fsh-generated.yml` mirrors the SUSHI output to the
+`fsh-generated` branch Simplifier syncs from — a mirror, not a second release
+path.
 
 ## 5. Page set and menu
 

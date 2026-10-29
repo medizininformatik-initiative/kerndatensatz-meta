@@ -10,17 +10,11 @@
 > core-dataset process". Do not write MII as the acting institution of a
 > present-tense sentence. (Same rule in the IG template's styleguide §6.)
 
-> **Repository links in pages.** Rendered pages link repository files through
-> the `{{GITHUB_ORG}}/{{REPO_NAME}}` placeholders (a created module links its
-> own repository from day one; the template's own demo substitutes the
-> documented self-check values, which name the target organisation — those
-> links resolve only after the move, and the IG Publisher reports them under
-> broken links in `qa.html`; CI deliberately does not gate on that count).
-> Links to `kerndatensatz-meta`/`kerndatensatz-basis` are plain URLs — those
-> repos exist today.
+> **Repository links in pages** are plain URLs
+> (`https://github.com/medizininformatik-initiative/kerndatensatz-meta/…`).
 
 **Ownership (Option A).** The KDS module IG **page structure** — which pages
-exist and the navigation menu — lives **here, in the module template**,
+exist and the navigation menu — lives **here, in this repository**,
 alongside the page content. The IG template (`ig-template-mii-kds`) is
 **presentation-only** (header, footer, CSS, logo); it does not define or own
 the page set.
@@ -28,11 +22,9 @@ the page set.
 > **Why:** this is standard FHIR practice — a template provides *presentation*,
 > an IG provides *content and structure*. It is also the simplest: everything a
 > module needs is in one place, there is nothing to sync against another repo,
-> and a module author edits the menu and pages directly.
-> *(The alternative considered was Option B — the IG template owns a canonical
-> `structure/` that modules mirror + re-sync. It was set aside because the IG
-> Publisher cannot inject a template menu automatically, so Option B would add
-> a cross-repo sync burden for no rendered difference.)*
+> and a module author edits the menu and pages directly. The IG Publisher
+> cannot inject a menu from the template, so a template-owned structure would
+> only add a cross-repo sync.
 
 ## The agreed structure
 
@@ -55,7 +47,7 @@ for the decision checklist and the per-entry removal procedure.
 | — General Requirements | 1..1 | **link-only** → Meta module (interim: `Conformance#anforderungsdokumentation`) |
 | — Must Support | 1..1 | **link-only** → Meta module (interim: `Conformance#must-support-ms`) |
 | — Handling Missing Data | 1..1 | **link-only** → Meta module (interim: `Conformance#fehlende-daten`) |
-| — Security and Privacy | 1..1 | `security-and-privacy.html` (three-stage static content: overarching data protection concept → DIMP → module-specific aspects; stage 3's CONTENT is optional — a module without own aspects adopts the section's default text, and the scaffold's highlighted *Person* example must be removed before the first release, gated by convention check M11) |
+| — Security and Privacy | 1..1 | `security-and-privacy.html` (three-stage static content: overarching data protection concept → DIMP → module-specific aspects; stage 3's CONTENT is optional — a module without own aspects adopts the section's default text) |
 | **Artifacts** | 1..1 | dropdown (parent → `artifacts.html`) |
 | — Artifacts Summary | 1..1 | `artifacts.html` (generated) |
 | — Profiles | 1..1 | `profiles.html` |
@@ -67,7 +59,6 @@ for the decision checklist and the per-entry removal procedure.
 | — Value Sets | 0..1 | `value-sets.html` |
 | — Code Systems | 0..1 | `code-systems.html` |
 | — Examples | 1..1 | `examples.html` |
-| — Rendering Artifacts (demo) | scaffold-only | `rendering-artifacts.html` — not part of the agreed structure; removed before release (convention check M8) |
 | Downloads | 1..1 | `downloads.html` |
 | Changelog | 1..1 | `changes.html` |
 | **Metadata** | 1..1 | dropdown (parent → `version-history.html` — the mandatory child, so the optional overview can be removed without re-targeting) |
@@ -98,7 +89,7 @@ the current tooling; both anchor kinds were tried and rejected:
   is the Logical-Models section only for the full standard artifact set: the
   optional Operations/Search Parameters insert Behavior groupings before it,
   a missing CapabilityStatement pulls it forward, explicit `groups:` reorder
-  freely. The scaffold's own preview rendered `#2` = Example Instances.
+  freely.
 - **The named anchor `#structures-logical-models` (DE:
   `#strukturen-logische-modelle`) exists only at runtime.** The base template
   ships AnchorJS (`anchor-hover.js` → `anchors.add()`), which slugifies the
@@ -107,13 +98,13 @@ the current tooling; both anchor kinds were tried and rejected:
   build-time anchors: it flags the menu link as a **broken-link ERROR on
   every page's QA report** (~40 repetitions) and injects a marker anchor
   (`<a name="lNNN">`) into the menu `<li>`, which Bootstrap renders as an
-  **empty menu entry**. Shipped briefly in v0.10.2, reverted on review.
+  **empty menu entry**.
 
 Should TF-KDS insist on the literal summary-section target, the durable
 route is upstream: `fhir2.base.template`'s XSLT emitting a build-time named
 anchor per grouping (e.g. `<a name="structures-logical-models">`) — then the
-validator knows it and the QA stays clean. This template must not override
-`scripts/` (styleguide §1), so that fix belongs in the base template.
+validator knows it and the QA stays clean. A module must not override the
+template's `scripts/` (styleguide §1), so that fix belongs in the base template.
 
 **The Conformance cluster → the Meta module (INTERIM meta-wiki links).** The
 KDS-wide conformance rules are maintained centrally in
@@ -140,8 +131,7 @@ sections:
 
 The agreed structure replaced the earlier combined pages. The old pages are
 **retired**, not redirected: GitHub Pages previews carry no server-side
-redirects, the scaffold's rendered output is a preview (not a published
-canonical), and stub pages would re-enter the menu QA, the `pages:` tree and
+redirects, a branch preview is not a published canonical, and stub pages would re-enter the menu QA, the `pages:` tree and
 the `.po` catalogue that the split exists to clean up. Modules that already
 **formally published** the old URLs keep those URLs alive through their own
 publication history (the publisher's versioned archive); new publications use
@@ -163,8 +153,7 @@ the new page set.
 carried the `§<id>:…§` conformance-statement markers and the `§§§` summary
 table (an IG-Publisher feature, see
 [HL7 ig-guidance](https://build.fhir.org/ig/FHIR/ig-guidance/conformance-statements.html)).
-The scaffold no longer ships marked statements — the MII-wide rules they marked
-live in the Meta module now. A module that states its *own* normative
+The MII-wide rules they marked live in the Meta module now. A module that states its *own* normative
 requirements (typically on `security-and-privacy.md` or an artifact page) may
 still mark them with `§<page>-<n>:…§` on the **English** page and render a
 table with a `§§§` paragraph; the Expectation column derives from the English

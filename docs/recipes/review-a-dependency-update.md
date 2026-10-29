@@ -6,8 +6,6 @@
 **Prerequisites.** A Dependabot PR, a checker PR, or a row in the
 `dependencies` tracking issue.
 
-This recipe applies unchanged in a module created from this template.
-
 > **Updates are proposals, never automatic**
 > ([`docs/maintenance.md`](../maintenance.md)). The human in the loop is you.
 
