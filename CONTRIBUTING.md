@@ -1,134 +1,119 @@
 # Contributing
 
-Thank you for contributing! This page explains the branching model, the commit
-convention, and — important for this repository — the difference between
-contributing **to this template** and working **in a module created from it**.
-
-## Two layers: this template vs. your module
-
-This template repository itself is maintained on a `main`/`dev` model and
-released with **SemVer via Release Please on `main`**; a module **created from**
-it is released only via the MII Module Release Workflow (**CalVer
-`YYYY.n.n`**), and the first-run bootstrap removes the Release Please files
-from the new module so the two release systems never mix. The rest of this page
-describes contributing to **this template repository**; the full operational
-model for both layers is in [`docs/workflows.md`](docs/workflows.md).
+Thank you for contributing to the MII Kerndatensatz module **Meta**! This page
+explains the branching model, the commit convention and how a change reaches a
+release. The workflows behind it are described in
+[`docs/workflows.md`](docs/workflows.md); task-shaped guides are in
+[`docs/recipes/`](docs/recipes/README.md).
 
 ## Branching model
 
 Two long-lived branches, short-lived working branches:
 
-- **`main` — stable release branch.** Always in a released, buildable state;
-  every commit on `main` corresponds to a released (or release-ready) version.
-  Protected: no direct pushes, pull requests require one approval. `main` is
-  the **default branch**, so it is what visitors and "Use this template" users
-  see first.
-  > **Why main is default:** novices should land on, and start from, the
-  > stable state — not work-in-progress.
-- **`dev` — integration branch, unstable.** Where reviewed changes accumulate
-  between releases; may be temporarily broken. Protected: changes arrive only
-  via pull request. CI preview builds run here.
-  > **Branch state:** `main` and `dev` diverged in both directions once, because
-  > some changes were merged straight into `main`. They were reconciled on
-  > 2026-08-06 and now point at the same commit. See
-  > [docs/org-move.md](docs/org-move.md#branch-state--main-and-dev-are-reconciled)
-  > for the back-merge rule that keeps it that way.
-- **`release/vYYYY.n.n` — release-preparation branches.** The `release/**`
-  name arms the convention check's strict release mode (unresolved
-  placeholders and the demonstration page fail there); see
+- **`main` — release branch.** Holds the released (or release-ready) state and
+  is the **default branch**. Changes arrive only through the `dev → main`
+  release merge. `main` is never previewed; formal publications go to the root
+  of the GitHub Pages site via `go-publish.yml`.
+- **`dev` — integration branch.** Where reviewed changes accumulate between
+  releases. Every push deploys a preview to
+  [`branches/dev/`](https://medizininformatik-initiative.github.io/kerndatensatz-meta/branches/dev/),
+  the IG's `ci-build` location.
+- **`release/vYYYY.n.n` — release-preparation branches** (optional). The
+  `release/**` name arms the convention check's strict release mode; see
   [docs/release.md](docs/release.md).
-- **`feature/*`, `change/*`, `fix/*` — short-lived working branches.** Branched
-  **off `dev`**, one focused change each, merged back into `dev` via PR, then
-  deleted. Name them descriptively (`feature/add-terminology-page`,
-  `fix/footer-contrast`).
-  > **Why short-lived off dev:** long-running branches diverge and become
-  > painful to merge; small branches keep review cheap and history legible.
+- **`feature/*`, `change/*`, `fix/*`, `chore/*` — short-lived working
+  branches.** Branched **off `dev`**, one focused change each, merged back into
+  `dev` via PR, then deleted. Every push gets its own preview under
+  `branches/<branch>/`, linked from the PR.
+- **Do not delete** `master` (reusable validation workflows other modules
+  still call), `gh-pages` (the published site) or `fsh-generated` (the
+  Simplifier mirror).
 
 ```mermaid
 gitGraph
-  commit tag: "v0.1.0"
+  commit tag: "v2026.0.0"
   branch dev
   checkout dev
   commit
-  branch feature/add-page
+  branch feature/add-search-parameter
   commit
   checkout dev
-  merge feature/add-page
+  merge feature/add-search-parameter
   commit
   checkout main
-  merge dev tag: "v0.2.0"
+  merge dev tag: "v2027.0.0-ballot"
 ```
-
-> Reads as: work happens on short-lived `feature/*` off `dev`; `dev`
-> integrates; `dev → main` is the release, tagged by Release Please on `main`.
 
 ### Flow — making one change
 
 1. Branch `feature|change|fix/<topic>` off `dev`.
 2. Commit using Conventional Commits (cheat-sheet below); open a PR
    **targeting `dev`**.
-3. On green CI + review, **squash-merge** into `dev` (one clean Conventional
-   Commit per change), delete the branch.
-4. To release: open a **`dev` → `main` PR** (the release-candidate gate, a
-   human-in-the-loop point). Merge it as a **merge commit, not a squash**, so
-   the individual Conventional Commits reach `main`. Release automation then
-   runs on `main`.
-   > **Why a merge commit for dev → main:** Release Please builds the
-   > changelog from the individual Conventional Commits on `main`. Squashing
-   > `dev → main` would collapse the changelog to one line.
+3. On green CI (preview build, SearchParameter tests, convention check) and a
+   review, **squash-merge** into `dev` and delete the branch.
+4. To release: open a **`dev` → `main` PR** (the release gate, a human
+   decision) and merge it as a **merge commit, not a squash**, so the
+   individual commits stay visible on `main`. Then tag the CalVer version —
+   see [docs/recipes/cut-a-release.md](docs/recipes/cut-a-release.md).
+
+### Back-merge rule
+
+If something has to go straight into `main` — a fix that cannot wait for the
+next release — the change is not finished until `main` has been merged back
+into `dev` (as a merge commit). Check before branching:
+
+```bash
+git fetch origin
+git log --oneline origin/dev..origin/main   # must print nothing
+```
+
+## Versions
+
+The module is released with **CalVer `YYYY.n.n`** (pre-releases such as
+`2027.0.0-ballot`) through the MII Module Release Workflow
+(`module-release.yml`, then the human-gated `go-publish.yml`). The version in
+`sushi-config.yaml`, `package.json` and `publication-request.json` must agree.
+Commit types do not compute the version — the release owner sets it.
 
 ## Conventional Commits — cheat-sheet
 
 Every commit message (and PR title, since PRs are squash-merged) follows
 [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/):
-`<type>: <short description>` — for example `feat: add terminology page`.
+`<type>: <short description>` — for example `feat: add asserted-date search parameter`.
 
-| Type | Use for | Release effect (SemVer) |
-| --- | --- | --- |
-| `feat` | A new capability | Minor bump |
-| `fix` | A bug fix | Patch bump |
-| `docs` | Documentation only | None |
-| `chore` | Maintenance (configs, housekeeping) | None |
-| `ci` | CI workflow changes | None |
-| `refactor` | Code restructuring, no behavior change | None |
-| `test` | Adding or fixing tests | None |
+| Type | Use for |
+| --- | --- |
+| `feat` | New or changed FHIR content (profile, search parameter, code system entry, page) |
+| `fix` | A correction (wrong FHIRPath expression, typo, broken link) |
+| `docs` | Maintainer documentation only |
+| `ci` | Workflow changes |
+| `build` | Toolchain pins (SUSHI, IG Publisher, Jekyll, dependencies) |
+| `chore` | Housekeeping (configs, branch merges, clean-ups) |
+| `refactor` | Restructuring without a change in the published content |
+| `test` | Adding or fixing tests (e.g. SearchParameter tests) |
 
-Breaking change: add `!` after the type (`feat!: …`) and explain the break in
-the commit body — this triggers a major bump.
-
-> **Why Conventional Commits:** the release automation reads them to compute
-> the next version and to write the changelog. A wrong type means a wrong
-> version bump.
+Mark a breaking change with `!` after the type (`feat!: …`) and explain the
+break in the commit body.
 
 ## Pull request expectations
 
 - One focused change per PR; keep diffs reviewable.
-- PRs target `dev`. `main` normally receives work only as the `dev → main`
-  release merge (plus the Release Please release commits).
-- **If something does have to go straight into `main`** — a fix that cannot wait
-  for the next release — the change is not finished until `main` has been merged
-  back into `dev`. Skipping the back-merge is what made the two branches diverge;
-  see [docs/org-move.md](docs/org-move.md#branch-state--main-and-dev-are-reconciled).
+- PRs target `dev`.
+- Every English page under `input/pagecontent/` has a German mirror with the
+  same file name under `input/translations/de/pagecontent/`; change both.
+- A new or changed SearchParameter comes with a test in
+  `.github/workflows/search-param-test/test-search.sh`.
+- Do not commit generated output (`fsh-generated/`, `output/`, `translations/`).
 - CI must be green before merge.
 - Please follow the [Code of Conduct](CODE_OF_CONDUCT.md).
-
-## Working in a module created from this template
-
-If you created a repository via "Use this template", you are working in a
-**module**, not in this template. The same branching model applies there
-(after the first-run bootstrap creates `dev` — see the README's Quickstart
-warning), but the release process is the **MII CalVer Module Release
-Workflow**, not Release Please. The module recipes are in
-[`docs/recipes/`](docs/recipes/README.md); improvements to the scaffold itself
-belong here, as PRs to this repository.
 
 ## How this relates to the MII process
 
 Everything above is **this repository's** workflow. It is not an MII rule, and
 this repository does not speak for the MII.
 
-The MII does publish rules for commenting on a Kerndatensatz module, and a
-module built from this scaffold will eventually sit inside them. They are in
+The MII does publish rules for commenting on a Kerndatensatz module, and this
+module sits inside them. They are in
 the [**KDS governance, version 4.0 (7 May 2026)**](https://www.medizininformatik-initiative.de/sites/default/files/2026-07/KDS-Governance-v4.pdf),
 adopted by the National Steering Committee and linked from the
 [MII core-data-set page](https://www.medizininformatik-initiative.de/en/medical-informatics-initiatives-core-data-set):
