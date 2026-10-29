@@ -9,6 +9,7 @@ import {
   compareVersions,
   parsePackageJsonPin,
   parseWorkflowEnvPin,
+  parseShellVarPin,
   parseSushiDependencies,
   parseIgIniTemplate,
   mergeWatchedDeps,
@@ -88,6 +89,24 @@ test("parseWorkflowEnvPin reads quoted and unquoted env pins", () => {
 test("parseWorkflowEnvPin ignores commented lines and missing keys", () => {
   assert.equal(parseWorkflowEnvPin(workflowYaml, "JEKYLL_VERSION"), null);
   assert.equal(parseWorkflowEnvPin(workflowYaml, "NOT_THERE_VERSION"), null);
+});
+
+// --- parseShellVarPin -------------------------------------------------------
+
+test("parseShellVarPin reads a quoted shell assignment", () => {
+  const sh = [
+    "#!/bin/bash -e",
+    "# BLAZECTL_VERSION=\"0.0.1\" (commented out — ignored)",
+    'MII_TESTDATA_VERSION="v2025.0.0-dev.7"',
+    'BLAZECTL_VERSION="1.1.0"',
+    'BLAZECTL_URL="https://example.org/v${BLAZECTL_VERSION}.tar.gz"',
+  ].join("\n");
+  assert.equal(parseShellVarPin(sh, "BLAZECTL_VERSION"), "1.1.0");
+  assert.equal(parseShellVarPin(sh, "MII_TESTDATA_VERSION"), "v2025.0.0-dev.7");
+});
+
+test("parseShellVarPin returns null when the variable is absent", () => {
+  assert.equal(parseShellVarPin("FOO=bar\n", "BLAZECTL_VERSION"), null);
 });
 
 // --- parseSushiDependencies -------------------------------------------------

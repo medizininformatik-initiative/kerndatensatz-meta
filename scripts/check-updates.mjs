@@ -94,6 +94,20 @@ export function parseWorkflowEnvPin(yamlText, key) {
 }
 
 /**
+ * Read a `NAME="value"` assignment from a shell script (comments ignored).
+ * Used for the SearchParameter-test pins in search-param-test/load-data.sh.
+ */
+export function parseShellVarPin(shText, name) {
+  const re = new RegExp(`^\\s*${name}=["']?([^"'\\s#]+)["']?`);
+  for (const line of shText.split("\n")) {
+    if (line.trimStart().startsWith("#")) continue;
+    const m = line.match(re);
+    if (m) return m[1];
+  }
+  return null;
+}
+
+/**
  * Parse the `dependencies:` block of a sushi-config.yaml into { id: version }.
  * Taken over from the MII KDS sample IG's scripts/check-updates.py: only pinned
  * (version starts with a digit), non-commented entries count; the block ends
@@ -287,7 +301,20 @@ const LINKS = {
   base2: "https://github.com/HL7/ig-template-base2/blob/main/package-list.json",
   template: `https://github.com/${TEMPLATE_REPO}/releases`,
   fhirPkg: (id) => `https://simplifier.net/packages/${id}`,
+  githubReleases: (repo) => `https://github.com/${repo}/releases`,
 };
+
+// Pins of the SearchParameter integration tests (search-param-tests.yml).
+// The Blaze image in blaze.yml is watched by Dependabot (docker-compose).
+const SEARCH_PARAM_TEST_SCRIPT = ".github/workflows/search-param-test/load-data.sh";
+const SEARCH_PARAM_TEST_PINS = [
+  { artifact: "blazectl", shellVar: "BLAZECTL_VERSION", repo: "samply/blazectl" },
+  {
+    artifact: "mii-testdata",
+    shellVar: "MII_TESTDATA_VERSION",
+    repo: "medizininformatik-initiative/mii-testdata",
+  },
+];
 
 const upstream = {
   igPublisher: async () =>
@@ -321,6 +348,13 @@ const upstream = {
     );
     return resolveTemplateLatest(pkgMeta, latestRelease);
   },
+  // Latest non-prerelease GitHub release tag of a repository.
+  githubLatest: async (repo) =>
+    (
+      await fetchJson(`https://api.github.com/repos/${repo}/releases/latest`, {
+        github: true,
+      })
+    ).tag_name,
   fhirPkg: async (id) => {
     const meta = await fetchJson(`https://packages.fhir.org/${id}`);
     return (
@@ -506,6 +540,20 @@ export async function collectRows() {
       latest,
       status: statusFor(dep.pinned, latest),
       link: LINKS.fhirPkg(dep.id),
+    });
+  }
+
+  // SearchParameter integration-test pins (shell variables, not workflow env).
+  const testScript = readFileIfExists(SEARCH_PARAM_TEST_SCRIPT);
+  for (const pin of SEARCH_PARAM_TEST_PINS) {
+    const pinned = testScript == null ? null : parseShellVarPin(testScript, pin.shellVar);
+    const latest = pinned == null ? null : await lookup(() => upstream.githubLatest(pin.repo));
+    rows.push({
+      artifact: pin.artifact,
+      pinned: pinned ?? `pin not found (\`${pin.shellVar}\` not set in \`${SEARCH_PARAM_TEST_SCRIPT}\`)`,
+      latest,
+      status: statusFor(pinned, latest),
+      link: LINKS.githubReleases(pin.repo),
     });
   }
 
