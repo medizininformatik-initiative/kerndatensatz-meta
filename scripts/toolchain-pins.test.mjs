@@ -18,12 +18,6 @@ const WORKFLOWS = [
   ".github/workflows/go-publish.yml",
   ".github/workflows/ig-publisher.yml",
   ".github/workflows/module-release.yml",
-  // Template-repo only — the first-run bootstrap removes it from a created
-  // module, which readIfPresent below tolerates. It matters here because the
-  // release demo is the artifact the Pages root index calls "the release": a
-  // demo rendered by a different IG Publisher than the previews it is compared
-  // against would be a silent difference in exactly that artifact.
-  ".github/workflows/release-demo.yml",
 ];
 
 const KEYS = ["PUBLISHER_VERSION", "PUBLISHER_SHA256", "SUSHI_VERSION", "JEKYLL_VERSION"];

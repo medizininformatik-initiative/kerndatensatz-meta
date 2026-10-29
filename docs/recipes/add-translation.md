@@ -7,7 +7,7 @@ contents**.
 
 **Prerequisites.**
 
-- A module that builds ([create a new module](create-a-new-module.md)).
+- A local build that works ([first build in the dev container](first-build-in-devcontainer.md)).
 - The language must be declared in `sushi-config.yaml`: listed under
   `i18n-lang`, **and** its source folder listed under the
   `translation-sources` parameter. `de` ships pre-declared:
@@ -126,9 +126,7 @@ around it here.
 
 > **Keep the template current** so you receive such fixes: with the default
 > repository-URL reference in `ig.ini` every build fetches the template's
-> released `main` automatically; if you build from the vendored offline
-> fallback, the copy in `ig-template/` is refreshed by
-> `scripts/sync-ig-template.sh` and the `sync-ig-template` workflow.
+> released `main` automatically.
 
 ---
 
@@ -212,7 +210,7 @@ git mv 'input/translations/de/ImplementationGuide-mii-ig-{{MODULE_SLUG}}.po' \
 > ImplementationGuide intro pages (`ImplementationGuide-mii-ig-{{MODULE_SLUG}}.md`
 > in `input/pagecontent/` and its German mirror) carry a placeholder in their
 > file *name* — those fail the build loudly when unrenamed
-> ([create-a-new-module.md](create-a-new-module.md) step 4 renames all three);
+> (they carry the IG id `mii-ig-meta`);
 > every other placeholder in this repository lives in file *contents* only.
 
 #### The `msgid` rule

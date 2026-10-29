@@ -1,15 +1,9 @@
 # =============================================================================
 # module-release.yml — MII CalVer module release path
 #
-# INHERITED BY MODULES: this workflow is a MODULE file. The first-run bootstrap
-# (docs/recipes/first-run-setup.md) KEEPS it in a created module — unlike the
-# template-maintenance release automation (release-please.yml / notify-zulip.yml),
-# which the bootstrap removes. A module released from this template uses THIS
-# workflow (MII CalVer `YYYY.n.n`) and NEVER Release Please. See docs/release.md.
-#
-#   The two template repos release themselves with SemVer via Release Please.
-#   The MODULES they produce release with CalVer via THIS workflow. Never mix
-#   the two on one repo — two release systems corrupt the history.
+# The Meta module releases with MII CalVer `YYYY.n.n` via THIS workflow and
+# never with Release Please / SemVer — two release systems on one repo corrupt
+# the history. See docs/release.md.
 #
 # Purpose:   Faithful, gated automation of the MII "Module Release Workflow"
 #            (kerndatensatz-meta wiki). Modelled on the reference module's

@@ -38,9 +38,9 @@ in sync:
 | `de.medizininformatikinitiative.template` | `ig.ini` → the `template =` line. Today it is the interim repository URL (follows the template's released `main` — no version pin; the checker reports it as unpinned); the endgame is `template = de.medizininformatikinitiative.template#<version>` once published — follow [`recipes/switch-template-to-published.md`](recipes/switch-template-to-published.md) |
 | `fhir2.base.template` | inside the template package (transitive) — locally only in the vendored fallback copy (`ig-template/package/package.json`) |
 | FHIR package dependencies (`de.basisprofil.r4`, `de.medizininformatikinitiative.kerndatensatz.meta`, `hl7.fhir.uv.crmi`, `hl7.fhir.uv.xver-r5.r4`, …) | `sushi-config.yaml` → `dependencies:` block |
-| IG Publisher / SUSHI / Jekyll | `env:` values (`PUBLISHER_VERSION`, `PUBLISHER_SHA256`, `SUSHI_VERSION`, `JEKYLL_VERSION`) in each build workflow — `ig-publisher.yml`, `module-release.yml`, `go-publish.yml` and (template repo only) `release-demo.yml`. A workflow cannot read another workflow's `env:`, so the four blocks are copies and must stay identical — `scripts/toolchain-pins.test.mjs` fails the build if they drift. The SUSHI-only workflows `publish-fsh-generated.yml` and `search-param-tests.yml` carry their own `SUSHI_VERSION`, held to the same value by the same test. The checker reads `go-publish.yml`. **Also sweep the copy-paste block in `docs/recipes/first-build-in-devcontainer.md`** (publisher URL + jar SHA + expected `sushi --version` output) — it is covered by no test and has gone stale before |
+| IG Publisher / SUSHI / Jekyll | `env:` values (`PUBLISHER_VERSION`, `PUBLISHER_SHA256`, `SUSHI_VERSION`, `JEKYLL_VERSION`) in each build workflow — `ig-publisher.yml`, `module-release.yml` and `go-publish.yml`. A workflow cannot read another workflow's `env:`, so the three blocks are copies and must stay identical — `scripts/toolchain-pins.test.mjs` fails the build if they drift. The SUSHI-only workflows `publish-fsh-generated.yml` and `search-param-tests.yml` carry their own `SUSHI_VERSION`, held to the same value by the same test. The checker reads `go-publish.yml`. **Also sweep the copy-paste block in `docs/recipes/first-build-in-devcontainer.md`** (publisher URL + jar SHA + expected `sushi --version` output) — it is covered by no test and has gone stale before |
 | Jekyll gem checksum | `go-publish.yml` → `JEKYLL_GEM_SHA256` (**only** there — the release path verifies the gem bytes). **Covered by no test and not watched by the checker**: a Jekyll bump that updates the four `JEKYLL_VERSION` blocks but not this checksum passes every test and then fails `go-publish` at its `gem fetch … sha256sum --check` step. Recompute with `gem fetch jekyll -v <version> && sha256sum jekyll-<version>.gem` |
-| Ruby (for Jekyll) | `ruby-version: "3.3"` in the `ruby/setup-ruby` steps of `ig-publisher.yml`, `module-release.yml` and (template repo only) `release-demo.yml`; `go-publish.yml` deliberately uses the runner's system Ruby. CI floats the patch level on purpose; the dev container exact-pins (see the dev-container row) |
+| Ruby (for Jekyll) | `ruby-version: "3.3"` in the `ruby/setup-ruby` steps of `ig-publisher.yml`, `module-release.yml`; `go-publish.yml` deliberately uses the runner's system Ruby. CI floats the patch level on purpose; the dev container exact-pins (see the dev-container row) |
 | GitHub Actions | commit-SHA pins in `.github/workflows/*.yml` (with `# vX.Y.Z` comments) |
 | Publication support repos (`HL7/fhir-ig-history-template`, `HL7/fhir-web-templates`) | commit-SHA `ref:` pins in `go-publish.yml` **only** (the two checkout steps). **Not watched by the checker** — re-resolve by hand when preparing a release; the comment at each pin records the last resolution date |
 | SU-TermServ proxy: the `medizininformatik-initiative/kerndatensatz-meta` `nginx.conf` ref **and** the nginx proxy image digest | commit-SHA / digest pins in all three build workflows — `ig-publisher.yml`, `module-release.yml`, `go-publish.yml`. Keep the three identical, for the same reason as the toolchain pins above; nothing cross-checks these. **Not watched by the checker** — re-resolve all three by hand when preparing a release |
@@ -141,12 +141,9 @@ should re-check them.
 The guards are worth more than the drift they catch, so their reach is stated
 rather than assumed.
 
-- **The `CDS_DEV_CLIENT_CERT_PASSWORD` anti-drift assertion runs on the
-  template repository only.** It lives in
-  `scripts/publication-url-consistency.template-test.mjs`, which asserts
-  un-replaced placeholders and therefore cannot run in a created module. A
-  re-introduction of the wrong secret name *inside a module* would not be
-  caught.
+- **No test guards the `CDS_DEV_CLIENT_CERT_PASSWORD` secret name** in this
+  repository (the anti-drift assertion lives in the template repository). A
+  re-introduction of a wrong secret name would not be caught.
 - **`qc/custom.rules.yaml` is not verified end to end.** The MII reusable
   validation that reads it only runs on created modules, never here, so its
   `parse` glob has not been observed against a real run. The .NET job is
@@ -169,17 +166,3 @@ rather than assumed.
   two items recorded here (report prose still German while every document here is
   English-source, and `recommendations` rows still framed as a migration) belong
   to that skill now and were carried over with it; track them there, not here.
-### Cross-repo consistency — decided, not pending
-
-This repository and the IG template share a number of documentation filenames —
-compare them with `comm -12` over `git ls-files docs` in both checkouts. That was
-once real duplication; it is not any more. **No shared file is identical**, and the
-closest pairs differ for good reasons — `org-move.md` because each names
-the other repository, `glossary.md` because this scaffold defines nine terms the
-template repository has no use for, `further-reading.md` because Release Please
-is a template-repo entry a module must not follow.
-
-No sync mechanism is planned. A module created from this template must be
-self-contained: replacing its copy of `glossary.md` or `maintenance.md` with a
-link back to the template would break the moment the module is developed
-independently, which is the whole point of a template.

@@ -5,14 +5,10 @@
      (ImplementationGuide-<id>.html). Without this file the page renders bare:
      no dependency table, no cross-version analysis, no copyright statements.
      Ported from kerndatensatz-basis input/pagecontent/ImplementationGuide-mii-ig-base.md
-     and adapted to the scaffold.
      German mirror: input/translations/de/pagecontent/ (same file name) — both
      files must say the same thing.
-     FILE NAME CARRIES THE IG ID: like the IG-level .po catalogue, this file and
-     its German mirror must be RENAMED to your concrete IG id when you create a
-     module (docs/recipes/create-a-new-module.md step 4) — the pages: entry in
-     sushi-config.yaml references it by that name. The template repo's CI
-     self-check renames all three automatically for the preview. -->
+     FILE NAME CARRIES THE IG ID: the pages: entry in sushi-config.yaml
+     references this file by that name. -->
 This ImplementationGuide resource defines the technical details of this
 publication, including dependencies and publishing parameters.
 

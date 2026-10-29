@@ -4,7 +4,7 @@
 narrative page, instead of linking the reader away to the generated artifact
 page.
 
-**Prerequisites.** A module that builds ([create a new module](create-a-new-module.md))
+**Prerequisites.** A local build that works ([first build in the dev container](first-build-in-devcontainer.md))
 and at least one artifact to render.
 
 **Not this recipe:** improving the page the Publisher *generates* for a profile —

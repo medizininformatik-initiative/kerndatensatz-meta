@@ -41,7 +41,6 @@ build on earlier ones.
 | **CRMI** | *Canonical Resource Management Infrastructure* — an HL7 IG whose profiles this scaffold claims on its ImplementationGuide resource (shareable/publishable/computable), so the module is a well-described, versioned publication unit. |
 | **Metadata contract** | The set of `sushi-config.yaml` fields (packageId, id, name, title, canonical, version, CRMI profiles, `artifact-*` extensions) a module must fill correctly; the `convention-check` enforces the patterns. |
 | **Placeholder (`{{…}}`)** | A slot in the scaffold (e.g. `{{MODULE_SLUG}}`) you replace when creating a module. The CI self-check substitutes demo values so the template repo itself still builds. |
-| **First-run bootstrap** | The one-time step in a new module that creates `dev`, applies branch protection, and **removes** the template's own release automation (Release Please etc.) — but keeps the setup recipe, which stays as your module's reference. See [recipes/first-run-setup.md](recipes/first-run-setup.md). |
 | **`publication-request.json`** | The file the IG Publisher's `-go-publish` reads to publish an IG (version, path, dates). |
 | **`special-url`** | A `sushi-config.yaml` list of canonical URLs a module defines that do **not** start with its own canonical; usually empty for a new module. See [recipes/regenerate-special-url.md](recipes/regenerate-special-url.md). |
 | **`-go-publish`** | The IG Publisher's production-publication mode. Here it is a **gated**, manual, dry-run-by-default workflow — never run automatically. |

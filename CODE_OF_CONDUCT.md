@@ -47,7 +47,7 @@ This Code of Conduct applies within all community spaces, and also applies when 
 
 ## Enforcement
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the **owning organisation's coordination office** (the ownership handover is recorded in [docs/org-move.md](docs/org-move.md); contact data researched 2026-08-28): until 2026-12-31 the MII — Koordinationsstelle der Medizininformatik-Initiative at TMF e.V., <info@medizininformatik-initiative.de>; from 2027-01-01 NUM — NUM-Koordinierungsstelle at Charité – Universitätsmedizin Berlin, <forschungsnetzwerk-unimedizin@charite.de>. To report anonymously, or outside the owning organisation, GitHub's own [report abuse](https://github.com/contact/report-abuse) route remains available. All complaints will be reviewed and investigated promptly and fairly.
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the **owning organisation's coordination office** (contact data researched 2026-08-28): until 2026-12-31 the MII — Koordinationsstelle der Medizininformatik-Initiative at TMF e.V., <info@medizininformatik-initiative.de>; from 2027-01-01 NUM — NUM-Koordinierungsstelle at Charité – Universitätsmedizin Berlin, <forschungsnetzwerk-unimedizin@charite.de>. To report anonymously, or outside the owning organisation, GitHub's own [report abuse](https://github.com/contact/report-abuse) route remains available. All complaints will be reviewed and investigated promptly and fairly.
 
 All community leaders are obligated to respect the privacy and security of the reporter of any incident.
 

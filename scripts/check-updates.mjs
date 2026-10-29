@@ -263,8 +263,8 @@ async function fetchJson(url, { github = false, allow404 = false } = {}) {
 
 const TEMPLATE_PKG_ID = "de.medizininformatikinitiative.template";
 // The repository that HOSTS the template releases — its home in the
-// medizininformatik-initiative organisation since the 2026-08-27 org move
-// (docs/org-move.md); the pre-move repository is an archived snapshot.
+// medizininformatik-initiative organisation since the 2026-08-27 org move;
+// the pre-move repository is an archived snapshot.
 const TEMPLATE_REPO = "medizininformatik-initiative/ig-template-mii-kds";
 
 // The FIXED FHIR package watch list: these always get a row, even
@@ -272,11 +272,10 @@ const TEMPLATE_REPO = "medizininformatik-initiative/ig-template-mii-kds";
 // are watched on top.
 const WATCHED_FHIR_DEPS = [
   "de.basisprofil.r4",
-  "de.medizininformatikinitiative.kerndatensatz.meta",
   "hl7.fhir.uv.crmi",
   "hl7.fhir.uv.xver-r5.r4",
   // Pinned DIRECTLY by design — the publisher injects the latest release
-  // when an IG does not declare them itself (see scripts/meta-pin-drift.mjs).
+  // when an IG does not declare them itself.
   "hl7.terminology.r4",
   "hl7.fhir.uv.extensions.r4",
 ];
