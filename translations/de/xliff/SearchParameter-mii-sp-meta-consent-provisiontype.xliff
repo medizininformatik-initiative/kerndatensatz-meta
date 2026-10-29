@@ -42,7 +42,7 @@
              <notes>
                <note id="n1">SearchParameter.description</note>
              </notes>
-        <source>Suche im Typ der Provison (permit, deny).</source>
+        <source>Suche im Typ der Provision (permit, deny).</source>
         <target></target>
       </trans-unit>
       <trans-unit id="SearchParameter-mii-sp-meta-consent-provisiontype" resname="Coding.display">

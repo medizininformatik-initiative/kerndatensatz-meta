@@ -3,8 +3,8 @@ parent:
 ---
 # Kerndatensatz Modul 'Modul'
 
-Die vorliegende Spezifikation beschreibt die FHIR Repräsentation des Kerndatensatz Moduls 'Modul' der Medizinformatik Initiative.
-Im Folgenden werden die Use Case des Moduls, sowie die dazuhegörigen FHIR Profile und Terminologie Ressourcen in ihrer verbindlichen Form beschrieben.
+Die vorliegende Spezifikation beschreibt die FHIR Repräsentation des Kerndatensatz Moduls 'Modul' der Medizininformatik-Initiative.
+Im Folgenden werden die Use Cases des Moduls, sowie die dazugehörigen FHIR Profile und Terminologie Ressourcen in ihrer verbindlichen Form beschrieben.
 
 | Veröffentlichung   |   |
 |---------|---|
@@ -19,7 +19,7 @@ Im Folgenden werden die Use Case des Moduls, sowie die dazuhegörigen FHIR Profi
 {{index:root}}
 
 ## Impressum
-Dieser Leitfaden ist im Rahmen der Medizininformatik Initative erstellt wurden und unterliegt per Governance Prozess dem Abstimmungsverfahren des Interoperabilitätsforums und der Technischen Komitees von HL7 Deutschland e. V..
+Dieser Leitfaden ist im Rahmen der Medizininformatik-Initiative erstellt worden und unterliegt per Governance Prozess dem Abstimmungsverfahren des Interoperabilitätsforums und der Technischen Komitees von HL7 Deutschland e. V..
 
 ## Ansprechpartner
 * Ansprechpartner:in 1, Konsortium
@@ -51,4 +51,4 @@ Zu den Nutzungsrechten der zugrunde liegenden FHIR-Technologie siehe die FHIR-Ba
 Einige verwendete Codesysteme werden von anderen Organisationen herausgegeben und gepflegt. Es gilt das Copyright der dort jeweils aufgeführten Herausgeber (Publisher).
 
 ## Disclaimer
-Der Inhalt dieses Dokuments ist öffentlich. Zu beachten ist, dass Teile dieses Dokuments auf FHIR Version R4 beruhen, für die Copyright HL7 International gilt.
+Der Inhalt dieses Dokuments ist öffentlich. Zu beachten ist, dass Teile dieses Dokuments auf FHIR Version R4 beruhen, für die das Copyright von HL7 International gilt.

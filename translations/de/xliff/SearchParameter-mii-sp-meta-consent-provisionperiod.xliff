@@ -42,7 +42,7 @@
              <notes>
                <note id="n1">SearchParameter.description</note>
              </notes>
-        <source>Suche im Zeitraum der Provision. Dieser Suchparameter bezieht sich explizit auf die zweite Verschachtelungsebene von provison.</source>
+        <source>Suche im Zeitraum der Provision. Dieser Suchparameter bezieht sich explizit auf die zweite Verschachtelungsebene von provision.</source>
         <target></target>
       </trans-unit>
       <trans-unit id="SearchParameter-mii-sp-meta-consent-provisionperiod" resname="Coding.display">

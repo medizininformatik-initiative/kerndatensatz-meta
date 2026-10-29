@@ -36,7 +36,7 @@
     {
       "id" : "SearchParameter.description",
       "context" : "SearchParameter.description",
-      "source" : "Suche im Code der Provison",
+      "source" : "Suche im Code der Provision",
       "target" : null
     },
     {

@@ -84,7 +84,7 @@ Usage: #definition
 // No search parameters to cover
 
 //----------------------------------------
-// SearchParameters for Redidualstatus
+// SearchParameters for Residualstatus
 //----------------------------------------
 
 // No search parameters to cover
@@ -405,7 +405,7 @@ Usage: #definition
 // * insert LicenseCodeableCCBY40Instance
 // * insert SP_Profile
 // * insert Version
-// * name = "MII_SP_Meta_Tod_Interpreation"
+// * name = "MII_SP_Meta_Tod_Interpretation"
 // * description = "SearchParameter for Observation.interpretation"
 // * status = #active
 // * code = #interpretation

@@ -11,7 +11,7 @@ Usage: #definition
 * status = #active
 * experimental = false
 * date = "2026-09-01"
-* description = "Suche im Code der Provison"
+* description = "Suche im Code der Provision"
 * code = #mii-provision-provision-code
 * base = #Consent
 * type = #token

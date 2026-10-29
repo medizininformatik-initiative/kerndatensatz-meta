@@ -348,7 +348,7 @@
     {
       "id" : "ImplementationGuide.definition.resource.description",
       "context" : "ImplementationGuide.definition.resource.description",
-      "source" : "Suche im Code der Provison",
+      "source" : "Suche im Code der Provision",
       "target" : null
     },
     {
@@ -384,7 +384,7 @@
     {
       "id" : "ImplementationGuide.definition.resource.description",
       "context" : "ImplementationGuide.definition.resource.description",
-      "source" : "Suche im Zeitraum der Provision. Dieser Suchparameter bezieht sich explizit auf die zweite Verschachtelungsebene von provison.",
+      "source" : "Suche im Zeitraum der Provision. Dieser Suchparameter bezieht sich explizit auf die zweite Verschachtelungsebene von provision.",
       "target" : null
     },
     {
@@ -396,7 +396,7 @@
     {
       "id" : "ImplementationGuide.definition.resource.description",
       "context" : "ImplementationGuide.definition.resource.description",
-      "source" : "Suche im Typ der Provison (permit, deny).",
+      "source" : "Suche im Typ der Provision (permit, deny).",
       "target" : null
     },
     {
