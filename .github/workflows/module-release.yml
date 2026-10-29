@@ -93,7 +93,7 @@ env:
   # scripts/toolchain-pins.test.mjs fails the build if they drift apart.
   PUBLISHER_VERSION: "2.3.2"
   PUBLISHER_SHA256: "07c576024df917cc1f879b6b5a64147cd0222d5b4129688e8f0ad9ccce58b1d5"
-  SUSHI_VERSION: "3.20.1"
+  SUSHI_VERSION: "3.21.0"
   JEKYLL_VERSION: "4.4.1"
 
 jobs:

@@ -1,6 +1,6 @@
 services:
   blaze:
-    image: "samply/blaze:latest"
+    image: "samply/blaze:1.12.1"
     environment:
       DB_SEARCH_PARAM_BUNDLE: "/app/search-params.json"
       ENFORCE_REFERENTIAL_INTEGRITY: "false"

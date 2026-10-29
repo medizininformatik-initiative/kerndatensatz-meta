@@ -59,7 +59,7 @@
   ],
 
   // Toolchain installs, all pinned:
-  // - fsh-sushi 3.20.1 = latest release on npm (re-verified 2026-08-19)
+  // - fsh-sushi 3.21.0 = latest release on npm (re-verified 2026-10-29)
   // NOTE on Node/Ruby: the features below pin EXACT versions for container
   // reproducibility, while CI deliberately floats the patch level
   // (setup-node "22", setup-ruby "3.3") — on divergence, CI wins.
@@ -69,7 +69,7 @@
   // The IG Publisher jar is deliberately NOT installed here: the CI
   // workflows and the first-build recipe fetch it pinned to an exact
   // version, keeping this container decoupled from publisher releases.
-  "postCreateCommand": "npm install -g fsh-sushi@3.20.1 && gem install jekyll -v 4.4.1 && sudo apt-get update && sudo apt-get install -y graphviz",
+  "postCreateCommand": "npm install -g fsh-sushi@3.21.0 && gem install jekyll -v 4.4.1 && sudo apt-get update && sudo apt-get install -y graphviz",
 
   "customizations": {
     "vscode": {
