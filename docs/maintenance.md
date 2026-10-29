@@ -10,12 +10,8 @@ bump is a proposal that a human reviews and merges.
 > pins Dependabot cannot see; the scanners find *known vulnerabilities* rather
 > than newer versions. Only together do they cover this repo.
 
-**A module created from this template inherits all of this monitoring** — the
-`.github/dependabot.yml`, both workflows, the checker script, and these docs
-propagate on "Use this template" and keep running in the module unchanged
-(unlike the template's own Release Please files, which the first-run
-bootstrap removes). The checker reads pins from the module's own files, so it
-reports the module's drift without any adaptation.
+The checker reads every pin from this repository's own files, so it needs no
+configuration when a pin moves.
 
 ## The cadence at a glance
 
@@ -36,7 +32,7 @@ in sync:
 | Pin | Location |
 |---|---|
 | `de.medizininformatikinitiative.template` | `ig.ini` → the `template =` line. Today it is the interim repository URL (follows the template's released `main` — no version pin; the checker reports it as unpinned); the endgame is `template = de.medizininformatikinitiative.template#<version>` once published — follow [`recipes/switch-template-to-published.md`](recipes/switch-template-to-published.md) |
-| `fhir2.base.template` | inside the template package (transitive) — locally only in the vendored fallback copy (`ig-template/package/package.json`) |
+| `fhir2.base.template` | inside the template package (transitive) — not pinned in this repository |
 | FHIR package dependencies (`de.basisprofil.r4`, `de.medizininformatikinitiative.kerndatensatz.meta`, `hl7.fhir.uv.crmi`, `hl7.fhir.uv.xver-r5.r4`, …) | `sushi-config.yaml` → `dependencies:` block |
 | IG Publisher / SUSHI / Jekyll | `env:` values (`PUBLISHER_VERSION`, `PUBLISHER_SHA256`, `SUSHI_VERSION`, `JEKYLL_VERSION`) in each build workflow — `ig-publisher.yml`, `module-release.yml` and `go-publish.yml`. A workflow cannot read another workflow's `env:`, so the three blocks are copies and must stay identical — `scripts/toolchain-pins.test.mjs` fails the build if they drift. The SUSHI-only workflows `publish-fsh-generated.yml` and `search-param-tests.yml` carry their own `SUSHI_VERSION`, held to the same value by the same test. The checker reads `go-publish.yml`. **Also sweep the copy-paste block in `docs/recipes/first-build-in-devcontainer.md`** (publisher URL + jar SHA + expected `sushi --version` output) — it is covered by no test and has gone stale before |
 | Jekyll gem checksum | `go-publish.yml` → `JEKYLL_GEM_SHA256` (**only** there — the release path verifies the gem bytes). **Covered by no test and not watched by the checker**: a Jekyll bump that updates the four `JEKYLL_VERSION` blocks but not this checksum passes every test and then fails `go-publish` at its `gem fetch … sha256sum --check` step. Recompute with `gem fetch jekyll -v <version> && sha256sum jekyll-<version>.gem` |
@@ -74,7 +70,6 @@ For those artifacts the **layer-B version checker is the available safeguard**:
 staying on the latest reviewed release is the only systematic mitigation.
 A green Security tab therefore does *not* mean "the FHIR toolchain is known
 to be safe" — it means "no known vulnerability in the scannable ecosystems".
-This limit applies equally to every module created from this template.
 
 Two further dev-container limits, stated plainly:
 
@@ -143,11 +138,11 @@ The guards are worth more than the drift they catch, so their reach is stated
 rather than assumed.
 
 - **No test guards the `CDS_DEV_CLIENT_CERT_PASSWORD` secret name** in this
-  repository (the anti-drift assertion lives in the template repository). A
-  re-introduction of a wrong secret name would not be caught.
+  repository. A re-introduction of a wrong secret name would not be caught.
 - **`qc/custom.rules.yaml` is not verified end to end.** The MII reusable
-  validation that reads it only runs on created modules, never here, so its
-  `parse` glob has not been observed against a real run. The .NET job is
+  validation that reads it (on the `master` branch) is not called by this
+  repository's workflows, so its `parse` glob has not been observed against a
+  real run here. The .NET job is
   configured upstream to pass regardless, so the worst case is log noise.
 - **`scripts/language-model-check.sh` is curated, not exhaustive.** It matches
   line by line, so a claim split across a line break passes. It was tested

@@ -22,16 +22,14 @@ outside the IG's canonical base, because that usually indicates a typo.
 - The module builds with SUSHI (`sushi .` succeeds), so `fsh-generated/` is
   populated.
 - `jq` and a shell (the dev container has both).
-- Every `{{...}}` placeholder in `sushi-config.yaml` is already replaced —
-  the module canonical must be final before you derive exceptions from it.
 
 ## When you need this
 
-- Your module keeps **legacy canonicals** (e.g. the pre-consolidation
+- The module keeps **legacy canonicals** (e.g. the pre-consolidation
   `.../fhir/core/modul-<x>/...` URLs) for backward compatibility.
-- Your module defines **cross-version extensions** with `hl7.org/fhir/5.0/...`
+- The module defines **cross-version extensions** with `hl7.org/fhir/5.0/...`
   URLs (basis: `extension-Encounter.plannedStartDate`).
-- Your module defines any other resource whose `url` intentionally does not
+- The module defines any other resource whose `url` intentionally does not
   start with the module canonical (e.g. a `CapabilityStatement/metadata`
   instance under a legacy base).
 
@@ -44,7 +42,7 @@ outside the IG's canonical base, because that usually indicates a typo.
    ```
 
 2. List every locally defined canonical that falls outside the module
-   canonical (replace `<slug>` with your module slug):
+   canonical (replace `<slug>` with the module slug):
 
    ```bash
    CANONICAL="https://www.medizininformatik-initiative.de/fhir/modul-<slug>"

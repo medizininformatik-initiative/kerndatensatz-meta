@@ -31,16 +31,16 @@ then pick the recipe for your task.
 
 | Recipe | Use it when |
 | --- | --- |
-| [regenerate the `special-url` list](regenerate-special-url.md) | The build warns about canonicals outside your module |
+| [regenerate the `special-url` list](regenerate-special-url.md) | The build warns about canonicals outside the module |
 | [switch to the published template](switch-template-to-published.md) | The MII IG template has a release you can pin |
-| [cut a release (CalVer)](cut-a-release.md) | Your module is ready to publish |
+| [cut a release (CalVer)](cut-a-release.md) | The module is ready to publish |
 | [review a dependency update](review-a-dependency-update.md) | A bump was proposed and someone has to decide |
 | [triage a vulnerability alert](triage-a-vulnerability-alert.md) | A security finding needs a decision |
 
 ## The pattern every recipe follows
 
 Recipes are written to the same shape so you always know where to look. If you
-add one — for your own module or back into this template — follow it:
+add one, follow it:
 
 ```markdown
 # Recipe: <imperative task>

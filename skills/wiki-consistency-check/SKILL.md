@@ -26,11 +26,11 @@ This is the **same single convention checker** the project uses in the template
 package repo
 ([`ig-template-mii-kds`](https://github.com/medizininformatik-initiative/ig-template-mii-kds)):
 both repos share the same check-matrix contract (`references/check-matrix.md`,
-Sections 1a module / 1b template package). This copy is **scoped to the module
-scaffold** — it additionally implements the hard Section-1a assertions
-mechanically and placeholder-aware via
-[`../../scripts/convention-check.mjs`](../../scripts/convention-check.mjs) (which the
-template package repo does not carry, having no `{{PLACEHOLDER}}` values). It is
+Sections 1a module / 1b template package). This copy came with the module
+template (`mii-kds-module-template`) and is **scoped to a module IG** — the Meta
+module here. It additionally implements the hard Section-1a assertions
+mechanically via
+[`../../scripts/convention-check.mjs`](../../scripts/convention-check.mjs). It is
 adapted from the skill of the same name in the MII KDS sample IG
 ([`mii-kds-sample-ig-inoffiziell`](https://github.com/forschungsgruppe-digital-health/mii-kds-sample-ig-inoffiziell),
 CC-BY-4.0).
@@ -47,21 +47,14 @@ CC-BY-4.0).
   live wiki by an agent or a maintainer running this skill; they are reported,
   never failed.
 
-## This repository is the module scaffold — placeholder-aware checking
+## This repository is a module — the Section 1a assertions apply in full
 
-This repo is a GitHub **template repository**: its `sushi-config.yaml`, `ig.ini`,
-and workflows carry `{{PLACEHOLDER}}` values that a created module fills in. The
-hard **module** assertions (Section 1a) therefore apply to the **modules created
-from this scaffold**, and on this scaffold itself they are checked in
-**parameterized mode**:
-
-- A field whose value contains a `{{PLACEHOLDER}}` is treated as
-  **"parameterized — check the surrounding pattern only"** and passes (for
-  example `id: mii-ig-{{MODULE_SLUG}}` passes because it matches the expected
-  parameterized shape `mii-ig-<slug>`).
-- A field with a concrete value is validated against the full rule.
-- On a **release branch** (`release/**`) an unresolved `{{PLACEHOLDER}}` is a
-  **failure** — a module must not release with placeholders left in.
+The Meta module's `sushi-config.yaml` and `ig.ini` carry concrete values, so
+every Section 1a assertion is validated against its full rule. The checker
+stays **placeholder-aware** (it came from the module template): a field still
+holding a `{{PLACEHOLDER}}` would only be pattern-checked on a development
+branch and **fail** on a release branch (`release/**`). In this repository no
+such field remains.
 
 > This repo has no IG-Publisher template *package* manifest
 > (`package/package.json`); the **template package** assertions (Section 1b)

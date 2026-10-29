@@ -1,14 +1,13 @@
 # Secrets & variables — enabling the gated features
 
-A module built from this template builds and previews **without any secrets** (it
+The module builds and previews **without any secrets** (it
 uses the public HL7 terminology server; announcements skip cleanly). This page
 lists the optional secrets that turn on the human-gated features, with the exact
 commands. The workflows are already wired — adding the secret is the only step.
-Replace `<owner>/<module-repo>` with your module repository.
 
 ```sh
-gh secret set NAME --repo <owner>/<module-repo> < value.txt
-gh variable set NAME --repo <owner>/<module-repo> --body "value"
+gh secret set NAME --repo medizininformatik-initiative/kerndatensatz-meta < value.txt
+gh variable set NAME --repo medizininformatik-initiative/kerndatensatz-meta --body "value"
 ```
 
 ## SU-TermServ terminology server (optional)
@@ -61,7 +60,7 @@ can prove the certificate against the live server first.
 
 ```sh
 D=/path/to/certificate
-R=<owner>/<your-module-repo>
+R=medizininformatik-initiative/kerndatensatz-meta
 
 # 1. Prove it works — validates locally AND does a real mTLS call. Uploads nothing.
 scripts/set-su-termserv-secrets.sh --p12 "$D/cert.p12" --password-file "$D/pw.txt" \
@@ -102,7 +101,7 @@ export PWV="$(tr -d '\r\n' < pw.txt)"          # never echoed
 openssl pkcs12 -in cert.p12 -clcerts -nokeys -passin env:PWV | openssl x509 -out cert.pem
 openssl pkcs12 -in cert.p12 -nocerts -passin env:PWV -passout env:PWV -out key-enc.pem
 
-R=<owner>/<your-module-repo>
+R=medizininformatik-initiative/kerndatensatz-meta
 base64 < cert.pem    | tr -d '\n' | gh secret set CDS_DEV_CLIENT_CERT          --repo "$R"
 base64 < key-enc.pem | tr -d '\n' | gh secret set CDS_DEV_CLIENT_KEY           --repo "$R"
 printf '%s' "$PWV"                 | gh secret set CDS_DEV_CLIENT_CERT_PASSWORD --repo "$R"
@@ -126,7 +125,7 @@ an expired certificate fails the handshake, so rotate before `notAfter`.
 
 ## Zulip release announcement (optional)
 
-Your module's release announcement is the `notify_zulip` job of
+The module's release announcement is the `notify_zulip` job of
 `module-release.yml`. It fires when a GitHub Release is **published** (not when
 the tag is pushed) and posts to the MII Zulip organisation, stream
 `MII-Kerndatensatz`, topic `Releases`, as the MII bot
@@ -134,7 +133,7 @@ the tag is pushed) and posts to the MII Zulip organisation, stream
 variable. One secret turns it on:
 
 ```sh
-R=<owner>/<your-module-repo>
+R=medizininformatik-initiative/kerndatensatz-meta
 gh secret set ZULIP_API_KEY --repo "$R"   # value on stdin
 ```
 

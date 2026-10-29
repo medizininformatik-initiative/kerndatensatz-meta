@@ -1,6 +1,6 @@
 # Recipe: information models — Logical Models vs profiles
 
-**Goal.** Decide which artifact expresses your module's data model, and put it in
+**Goal.** Decide which artifact expresses the module's data model, and put it in
 the right place.
 
 **Prerequisites.** A local build that works ([first build in the dev container](first-build-in-devcontainer.md))
@@ -24,8 +24,8 @@ and sign off, the profiles are what implementers build against.
    (`MII_LM_<Module>`):
 
    ```fsh
-   Logical: MII_LM_{{MODULE_NAME}}
-   Title: "MII LM {{MODULE_TITLE}}"
+   Logical: MII_LM_Meta
+   Title: "MII LM Meta"
    Description: "Logisches Modell des Moduls …"
    * element 1..1 string "Kurzbeschreibung"
    ```
@@ -42,7 +42,7 @@ and sign off, the profiles are what implementers build against.
 
 ## When NOT to add a logical model
 
-If your module is a thin binding of an existing, already-agreed data set, a
+If the module is a thin binding of an existing, already-agreed data set, a
 logical model duplicating the profiles adds maintenance without adding meaning.
 The best practices warn explicitly that every artifact must be maintained for
 years — ship one only if it is reviewed and used.
