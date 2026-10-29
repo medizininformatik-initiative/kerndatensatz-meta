@@ -10,6 +10,7 @@ import {
   parsePackageJsonPin,
   parseWorkflowEnvPin,
   parseShellVarPin,
+  newestPublishedRelease,
   parseSushiDependencies,
   parseIgIniTemplate,
   mergeWatchedDeps,
@@ -107,6 +108,22 @@ test("parseShellVarPin reads a quoted shell assignment", () => {
 
 test("parseShellVarPin returns null when the variable is absent", () => {
   assert.equal(parseShellVarPin("FOO=bar\n", "BLAZECTL_VERSION"), null);
+});
+
+// --- newestPublishedRelease --------------------------------------------------
+
+test("newestPublishedRelease counts pre-releases, skips drafts, orders by publication", () => {
+  const releases = [
+    { tag_name: "v2026.0.0-rc.2", draft: true, published_at: null },
+    { tag_name: "v2026.0.0-rc.1", draft: false, prerelease: false, published_at: "2026-09-01T00:00:00Z" },
+    { tag_name: "v2027.0.0-ballot.rc2", draft: false, prerelease: true, published_at: "2026-09-29T09:47:36Z" },
+  ];
+  assert.equal(newestPublishedRelease(releases), "v2027.0.0-ballot.rc2");
+});
+
+test("newestPublishedRelease returns null for an empty or invalid listing", () => {
+  assert.equal(newestPublishedRelease([]), null);
+  assert.equal(newestPublishedRelease(null), null);
 });
 
 // --- parseSushiDependencies -------------------------------------------------

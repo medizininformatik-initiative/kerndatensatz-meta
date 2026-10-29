@@ -108,6 +108,18 @@ export function parseShellVarPin(shText, name) {
 }
 
 /**
+ * Tag of the newest published release in a GitHub /releases listing
+ * (pre-releases count, drafts do not). Ordered by publication date, because
+ * the API's own order follows creation date.
+ */
+export function newestPublishedRelease(releases) {
+  if (!Array.isArray(releases)) return null;
+  const published = releases.filter((r) => r && !r.draft && r.published_at && r.tag_name);
+  published.sort((a, b) => Date.parse(b.published_at) - Date.parse(a.published_at));
+  return published[0]?.tag_name ?? null;
+}
+
+/**
  * Parse the `dependencies:` block of a sushi-config.yaml into { id: version }.
  * Taken over from the MII KDS sample IG's scripts/check-updates.py: only pinned
  * (version starts with a digit), non-commented entries count; the block ends
@@ -313,6 +325,10 @@ const SEARCH_PARAM_TEST_PINS = [
     artifact: "mii-testdata",
     shellVar: "MII_TESTDATA_VERSION",
     repo: "medizininformatik-initiative/mii-testdata",
+    // Test data for ballots ships as GitHub PRE-releases (e.g.
+    // v2027.0.0-ballot.rc2); /releases/latest would skip them and report an
+    // older full release as "latest".
+    includePrereleases: true,
   },
 ];
 
@@ -348,13 +364,22 @@ const upstream = {
     );
     return resolveTemplateLatest(pkgMeta, latestRelease);
   },
-  // Latest non-prerelease GitHub release tag of a repository.
-  githubLatest: async (repo) =>
-    (
-      await fetchJson(`https://api.github.com/repos/${repo}/releases/latest`, {
-        github: true,
-      })
-    ).tag_name,
+  // Latest GitHub release tag of a repository; with includePrereleases the
+  // newest published (non-draft) release, pre-releases included.
+  githubLatest: async (repo, { includePrereleases = false } = {}) => {
+    if (!includePrereleases) {
+      return (
+        await fetchJson(`https://api.github.com/repos/${repo}/releases/latest`, {
+          github: true,
+        })
+      ).tag_name;
+    }
+    const releases = await fetchJson(
+      `https://api.github.com/repos/${repo}/releases?per_page=30`,
+      { github: true },
+    );
+    return newestPublishedRelease(releases);
+  },
   fhirPkg: async (id) => {
     const meta = await fetchJson(`https://packages.fhir.org/${id}`);
     return (
@@ -547,7 +572,12 @@ export async function collectRows() {
   const testScript = readFileIfExists(SEARCH_PARAM_TEST_SCRIPT);
   for (const pin of SEARCH_PARAM_TEST_PINS) {
     const pinned = testScript == null ? null : parseShellVarPin(testScript, pin.shellVar);
-    const latest = pinned == null ? null : await lookup(() => upstream.githubLatest(pin.repo));
+    const latest =
+      pinned == null
+        ? null
+        : await lookup(() =>
+            upstream.githubLatest(pin.repo, { includePrereleases: pin.includePrereleases }),
+          );
     rows.push({
       artifact: pin.artifact,
       pinned: pinned ?? `pin not found (\`${pin.shellVar}\` not set in \`${SEARCH_PARAM_TEST_SCRIPT}\`)`,
