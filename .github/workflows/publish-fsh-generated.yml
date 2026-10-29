@@ -1,5 +1,14 @@
-# This workflow publishes the SUSHI-generated FHIR resources to a separate branch
-# so they can be inspected in Simplifier. It does not publish an NPM package.
+# Mirrors the SUSHI-generated FHIR resources (fsh-generated/ + package.json) to
+# the orphan branch `fsh-generated`, which the Simplifier project syncs from. It
+# does not publish an NPM package.
+#
+# Transitional: this exists only while package releases are still provided via
+# Simplifier. The authoritative publication is the IG Publisher build on
+# GitHub Pages (go-publish.yml). Remove this workflow once Simplifier no longer
+# serves the packages.
+#
+# fsh-generated/ is gitignored on main/dev — this workflow regenerates it from
+# the FSH sources on every run, so the mirror can never lag behind the FSH.
 
 name: Publish FSH Generated Resources
 
@@ -8,69 +17,75 @@ on:
     branches:
       - main
       - 'release/**'
-      - publish-fsh-generated
   workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-fsh-generated
+  cancel-in-progress: false
+
+env:
+  # Keep in step with the build workflows — scripts/toolchain-pins.test.mjs
+  # fails if this drifts.
+  SUSHI_VERSION: "3.21.0"
 
 jobs:
   publish-fsh-output:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           fetch-depth: 0
-      
+
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
-          node-version: '20'
-      
+          node-version: "22"
+
       - name: Install SUSHI
-        run: npm install -g fsh-sushi@latest
-      
+        run: npm install --global "fsh-sushi@${SUSHI_VERSION}"
+
       - name: Run SUSHI
         run: sushi .
-      
+
       - name: Create/Update fsh-generated branch
+        env:
+          CURRENT_BRANCH: ${{ github.ref_name }}
+          CURRENT_SHA: ${{ github.sha }}
         run: |
-          # Store the current branch and generated files location
-          CURRENT_BRANCH="${{ github.ref_name }}"
-          CURRENT_SHA="${{ github.sha }}"
-          
-          # Copy generated files to a temporary location
-          mkdir -p /tmp/fsh-output
-          cp -r fsh-generated /tmp/fsh-output/
-          cp package.json /tmp/fsh-output/
-          
-          # Configure git
+          set -euo pipefail
+
+          # Stash the generated output outside the work tree
+          OUT="${RUNNER_TEMP}/fsh-output"
+          rm -rf "${OUT}" && mkdir -p "${OUT}"
+          cp -r fsh-generated "${OUT}/"
+          cp package.json "${OUT}/"
+
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          
-          # Fetch all branches
+
+          # Leave nothing behind that could block the branch switch
+          git reset --hard --quiet
+          git clean -ffdx --quiet
+
           git fetch origin
-          
-          # Create or switch to fsh-generated branch (orphan if new)
           if git rev-parse --verify origin/fsh-generated >/dev/null 2>&1; then
-            git checkout --track origin/fsh-generated
-            # Remove all files
-            git rm -rf . 2>/dev/null || true
-            find . -maxdepth 1 ! -name '.git' ! -name '.' -exec rm -rf {} + 2>/dev/null || true
+            git checkout --force -B fsh-generated origin/fsh-generated
           else
             git checkout --orphan fsh-generated
-            # Remove all files from staging and working directory
-            git rm -rf . 2>/dev/null || true
-            find . -maxdepth 1 ! -name '.git' ! -name '.' -exec rm -rf {} + 2>/dev/null || true
           fi
-          
-          # Copy the generated files from temp location
-          cp -r /tmp/fsh-output/fsh-generated .
-          cp /tmp/fsh-output/package.json .
-          
-          # Add and commit
+
+          # Replace the branch contents with the fresh output
+          git rm -rf --quiet . 2>/dev/null || true
+          find . -mindepth 1 -maxdepth 1 ! -name '.git' -exec rm -rf {} +
+          cp -r "${OUT}/fsh-generated" .
+          cp "${OUT}/package.json" .
+
           git add -A
-          
-          # Only commit if there are changes
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else

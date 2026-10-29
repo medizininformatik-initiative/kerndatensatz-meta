@@ -28,6 +28,13 @@ const WORKFLOWS = [
 
 const KEYS = ["PUBLISHER_VERSION", "PUBLISHER_SHA256", "SUSHI_VERSION", "JEKYLL_VERSION"];
 
+// Workflows that run SUSHI but not the IG Publisher — they carry only a
+// SUSHI_VERSION pin, which must match the build workflows'.
+const SUSHI_ONLY_WORKFLOWS = [
+  ".github/workflows/publish-fsh-generated.yml",
+  ".github/workflows/search-param-tests.yml",
+];
+
 function readIfPresent(relativePath) {
   const file = `${repository}${relativePath}`;
   return existsSync(file) ? readFileSync(file, "utf8") : null;
@@ -59,3 +66,18 @@ for (const key of KEYS) {
     }
   });
 }
+
+test("SUSHI_VERSION in every SUSHI-only workflow matches the build workflows", () => {
+  const [build] = presentWorkflows();
+  assert.ok(build, "no build workflow found");
+  const expected = parseWorkflowEnvPin(build.text, "SUSHI_VERSION");
+
+  for (const file of SUSHI_ONLY_WORKFLOWS) {
+    const text = readIfPresent(file);
+    if (text === null) continue;
+    assert.doesNotMatch(text, /fsh-sushi@latest/, `${file} installs fsh-sushi@latest`);
+    const value = parseWorkflowEnvPin(text, "SUSHI_VERSION");
+    assert.ok(value, `${file} has no SUSHI_VERSION env pin`);
+    assert.equal(value, expected, `${file} pins SUSHI_VERSION=${value}, ${build.file} pins ${expected}`);
+  }
+});
