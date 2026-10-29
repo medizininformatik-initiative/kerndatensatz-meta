@@ -402,9 +402,8 @@ test "Patient with adresszusatz=Burg count" \
      "$(search "Patient" "adresszusatz=Burg")" \
      "0"
 
-test "Patient with adresszusatz=Schloss count" \
-     "$(search "Patient" "adresszusatz=Schloss")" \
-     "1"
+test_at_least_one "Patient with adresszusatz=Schloss count" \
+     "$(search "Patient" "adresszusatz=Schloss")"
 
 # Patient assigner-pid
 test_at_least_one "Patient with assigner-pid=http://fhir.de/sid/arge-ik/iknr|123456789 count" \
@@ -414,19 +413,16 @@ test_at_least_one "Patient with assigner-pid=http://fhir.de/sid/arge-ik/iknr|123
 # test "ResearchSubject with consent=Consent/mii-exa-test-data-patient-1-consent-1 count" "$(search "ResearchSubject" "consent=Consent/mii-exa-test-data-patient-1-consent-1")" "1"
 
 # Patient gemeindeschluessel
-test "Patient with gemeindeschluessel=http://fhir.de/sid/destatis/ags|11000000 count" \
-     "$(search "Patient" "gemeindeschluessel=http://fhir.de/sid/destatis/ags|11000000")" \
-     "1"
+test_at_least_one "Patient with gemeindeschluessel=http://fhir.de/sid/destatis/ags|11000000 count" \
+     "$(search "Patient" "gemeindeschluessel=http://fhir.de/sid/destatis/ags|11000000")"
 
 # Patient strasse hausnummer stadtteil
-test "Patient with strasse=Dorfstraße&hausnummer=9&stadtteil=Malchow count" \
-     "$(search "Patient" "strasse=Dorfstraße&hausnummer=9&stadtteil=Malchow")" \
-     "1"
+test_at_least_one "Patient with strasse=Dorfstraße&hausnummer=9&stadtteil=Malchow count" \
+     "$(search "Patient" "strasse=Dorfstraße&hausnummer=9&stadtteil=Malchow")"
 
 # Patient gender other-amtlich
-test "Patient with other-amtlich=http://fhir.de/CodeSystem/gender-amtlich-de|D count" \
-    "$(search "Patient" "other-amtlich=http://fhir.de/CodeSystem/gender-amtlich-de|D")" \
-    "1"
+test_at_least_one "Patient with other-amtlich=http://fhir.de/CodeSystem/gender-amtlich-de|D count" \
+    "$(search "Patient" "other-amtlich=http://fhir.de/CodeSystem/gender-amtlich-de|D")"
 
 # Patient postfach
 # TODO
@@ -435,24 +431,20 @@ test "Patient with other-amtlich=http://fhir.de/CodeSystem/gender-amtlich-de|D c
 #      "1"
 
 # Patient prefix
-test "Patient with prefix=Prinz von Preußen count" \
-     "$(search "Patient" "prefix=Prinz%20von%20Preußen")" \
-     "1"
+test_at_least_one "Patient with prefix=Prinz von Preußen count" \
+     "$(search "Patient" "prefix=Prinz%20von%20Preußen")"
 
 # prefix-qualifier
-test "Patient with prefix-qualifier=NB count" \
-     "$(search "Patient" "prefix-qualifier=NB")" \
-     "1"
+test_at_least_one "Patient with prefix-qualifier=NB count" \
+     "$(search "Patient" "prefix-qualifier=NB")"
 
 # stadtteil
-test "Patient with stadtteil=Malchow count" \
-     "$(search "Patient" "stadtteil=Malchow")" \
-     "1"
+test_at_least_one "Patient with stadtteil=Malchow count" \
+     "$(search "Patient" "stadtteil=Malchow")"
 
 # strasse
-test "Patient with strasse=Dorfstraße count" \
-     "$(search "Patient" "strasse=Dorfstraße")" \
-     "1"
+test_at_least_one "Patient with strasse=Dorfstraße count" \
+     "$(search "Patient" "strasse=Dorfstraße")"
 
 # =========================================================
 # Procedure
