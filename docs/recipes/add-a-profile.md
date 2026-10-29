@@ -2,8 +2,8 @@
 
 **Goal.** Write your first FHIR profile in FSH, build it, and read the QA report.
 
-**Prerequisites.** A module created from this template that already builds (see
-[create-a-new-module.md](create-a-new-module.md)).
+**Prerequisites.** A local build that works (see
+[first build in the dev container](first-build-in-devcontainer.md)).
 
 ## Steps
 

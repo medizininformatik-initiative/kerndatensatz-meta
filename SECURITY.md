@@ -14,8 +14,7 @@ Do **not** open a public issue for a security problem.
 > repository.
 
 If you cannot use GitHub, report to the owning organisation's coordination
-office (the ownership handover is recorded in
-[docs/org-move.md](docs/org-move.md); contact data researched 2026-08-28):
+office (contact data researched 2026-08-28):
 
 - **Until 2026-12-31 — the MII:** Koordinationsstelle der
   Medizininformatik-Initiative at TMF e.V., Charlottenstr. 42, 10117 Berlin —

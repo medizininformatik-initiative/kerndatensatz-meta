@@ -6,8 +6,8 @@
      publisher writes _includes/<name>-<lang>.xhtml plus a bare default-language
      alias, and no .html variant — kerndatensatz-basis' .html include names
      belong to a different publisher version, do not copy them here.
-     FILE NAME CARRIES THE IG ID — rename together with the English page and
-     the IG-level .po catalogue (docs/recipes/create-a-new-module.md step 4). -->
+     FILE NAME CARRIES THE IG ID — keep it in step with the English page and
+     the IG-level .po catalogue. -->
 Diese ImplementationGuide-Ressource definiert die technischen Details dieser
 Publikation, einschließlich Abhängigkeiten und Veröffentlichungsparametern.
 

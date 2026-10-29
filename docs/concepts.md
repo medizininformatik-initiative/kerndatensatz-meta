@@ -1,19 +1,15 @@
-# Concepts — how this module template works and why
+# Concepts — how this module is built and why
 
 Read this after the [Glossary](glossary.md). It explains the ideas behind this
 repository.
 
 ## 1. What this repository is
 
-This is a **GitHub template repository**: click **"Use this template"** and you get
-a fresh copy that is a ready-to-run MII KDS **module IG** project. You then replace
-the `{{…}}` placeholders with your module's details, and you have a buildable,
-MII-branded FHIR Implementation Guide.
-
-> **Why a template repository, not a library:** an IG project is *your* code — you
-> edit its profiles and pages. A template gives you a correct, complete starting
-> point (CI, release automation, docs, an example profile) that you then own,
-> instead of assembling it from scratch.
+The MII Kerndatensatz module **Meta**: a FHIR Implementation Guide project
+(FSH sources, narrative pages, SUSHI + IG Publisher build, CI and release
+automation). It was migrated from Simplifier/Forge onto the MII KDS module
+template (`mii-kds-module-template`), which is where the CI, release automation
+and most of these docs come from. The repository now owns all of it.
 
 ## 2. How it references the MII template — URL now, published package later
 
@@ -28,10 +24,9 @@ This scaffold references it in `ig.ini`, in one of three forms (decision
   branch, i.e. the released state on `main`. Nothing vendored can go stale;
   the trade is that a build needs network access and follows `main` rather
   than a pinned version.
-- **Vendored (offline / reproducibility fallback):** a copy lives in
-  `ig-template/`, referenced as `template = #ig-template`, kept in sync from
-  the companion repository's `dev` branch by the `sync-ig-template` workflow.
-  Use it when a build must run offline or byte-stable against a committed copy.
+- **Vendored (offline / reproducibility fallback):** not used in this
+  repository. A local copy referenced as `template = #ig-template` would work
+  for an offline or byte-stable build, but it is not committed here.
 - **Published (the endgame):** `template = de.medizininformatikinitiative.template#<version>`
   — a pinned `id#version` resolves through the FHIR package server only, so
   this waits on the publication decision ([#1](../../../issues/1),
@@ -53,31 +48,18 @@ versioned, shareable publication unit. The `convention-check` job enforces the
 naming patterns (packageId, id, name, title, canonical, CalVer version). Fill
 every `{{PLACEHOLDER}}`; the comments in the file tell you what each one means.
 
-## 4. Two layers you must not confuse
+## 4. One release mechanism
 
-The single most important idea for a maintainer: **this template repository
-releases itself with SemVer; a module you create releases itself with CalVer and
-carries no Release Please at all.** [workflows.md](workflows.md) sets the two
-layers side by side; the [first-run bootstrap](recipes/first-run-setup.md) is
-what enforces the separation.
+The module releases with **CalVer** (`YYYY.n.n`) via the MII Module Release
+Workflow (`module-release.yml` + the human-gated `go-publish.yml`) and never with
+Release Please / SemVer — that belongs to the template tooling repositories only.
 
 > **Why one mechanism per repo:** SemVer tags fighting CalVer tags corrupt the
 > version history.
 
-## 5. What propagates to a module, and what does not
+## 5. Page set and menu
 
-The bootstrap **keeps** everything a module needs to live and **removes** only
-the files that maintain *this template repo itself*. The authoritative list is
-the `REMOVE=` line in `scripts/first-run-bootstrap.sh`, which the dry run
-prints; the first-run tooling itself stays, so the recipe a module links to
-still resolves — see [first-run-setup.md](recipes/first-run-setup.md).
-
-> **Why previews propagate but Release Please does not:** a branch preview is a
-> per-repo development aid every module wants; Release Please is a versioning
-> authority that would conflict with the module's CalVer process. Different purpose,
-> different fate.
-
-The **page set and the menu** propagate too, and they stay the module's to edit —
+The **page set and the menu** are the module's to edit —
 the IG template supplies presentation only. The mandatory (1..1) entries follow
 the MII-agreed menu structure; the optional (0..1) entries are decided per
 module ([optional-pages.md](optional-pages.md)). See

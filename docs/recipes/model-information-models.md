@@ -3,7 +3,7 @@
 **Goal.** Decide which artifact expresses your module's data model, and put it in
 the right place.
 
-**Prerequisites.** A module that builds ([create a new module](create-a-new-module.md))
+**Prerequisites.** A local build that works ([first build in the dev container](first-build-in-devcontainer.md))
 and an agreed data set to express.
 
 ## The distinction

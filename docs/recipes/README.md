@@ -3,17 +3,14 @@
 Short, task-shaped guides for authoring an MII KDS module IG. Each one takes a
 single job from start to a checkable result.
 
-**New here?** Do them in this order: [first-run setup](first-run-setup.md) →
-[first build in the dev container](first-build-in-devcontainer.md) →
-[create a new module](create-a-new-module.md) → [add a profile](add-a-profile.md).
+**New here?** Start with the [first build in the dev container](first-build-in-devcontainer.md),
+then pick the recipe for your task.
 
 ## Getting started
 
 | Recipe | Use it when |
 | --- | --- |
-| [first-run setup of a new module](first-run-setup.md) | You just created your repository from the template |
 | [first build in the dev container](first-build-in-devcontainer.md) | You need a working toolchain without installing anything |
-| [create a new module](create-a-new-module.md) | You are filling in your module's metadata and first content |
 | [decide an optional page](remove-an-optional-page.md) | You are keeping or removing one of the seven optional (0..1) menu entries |
 
 ## Authoring content

@@ -8,9 +8,8 @@ one-to-one onto the MII
 (the authoritative wiki page), and says plainly which steps are **automated** and
 which are **human-gated**.
 
-> **Who is this for:** a maintainer who has already created a module from this
-> template and wants to cut a version. New to the module itself? Start with the
-> README and `docs/recipes/create-a-new-module.md` first.
+> **Who is this for:** a maintainer who wants to cut a version of the Meta
+> module. New to the module itself? Start with the README first.
 
 > The click-by-click walkthrough lives in the companion recipe
 > `docs/recipes/cut-a-release.md`. Read this page once to understand the model;
@@ -31,11 +30,8 @@ which are **human-gated**.
 > **Why the hard boundary:** two release systems on one repo corrupt the version
 > history — a module carrying Release Please would auto-cut SemVer tags that
 > fight the MII CalVer process. One repo, one release mechanism. That is why the
-> **first-run bootstrap removes** all five template-only files from a new
-> module — Release Please (`release-please.yml`, `release-please-config.json`,
-> `.release-please-manifest.json`), `notify-zulip.yml` and the template
-> `CHANGELOG.md` — but **keeps** `module-release.yml`, `go-publish.yml`, and the
-> preview workflow. See `docs/recipes/first-run-setup.md`.
+> the release path is `module-release.yml` → `go-publish.yml`; there is no
+> Release Please in this repository.
 
 ### CalVer format
 
