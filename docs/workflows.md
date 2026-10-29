@@ -10,9 +10,7 @@ This repo has **two lives**, and keeping them apart is essential:
 Read both. A reader must never confuse "how this template repo releases itself" with
 "how a module I create releases itself." Details live in the linked docs.
 
-The two tables below describe the active workflow model. Legacy validation
-workflows retained under `.github/disabled-workflows/` are provenance only and
-are not loaded by GitHub Actions.
+The two tables below describe the active workflow model.
 
 ## Branching (both layers)
 
@@ -78,8 +76,10 @@ Everything below **propagates** to a module (the bootstrap keeps it). This is ho
 
 Notes:
 - **FHIR validation is performed by the IG Publisher builds.** The former
-  Simplifier .NET and standalone Java-validator workflows are retained under
-  `.github/disabled-workflows/` for provenance and are not active.
+  Simplifier .NET and standalone Java-validator workflows were removed from
+  `dev`/`main`. The reusable `ci_java_validation.yml` / `ci_dotnet_validation.yml`
+  that other MII modules still call live on the `master` branch (and at the
+  pinned commit `1db2e534`) — keep that branch.
 - **Terminology** is auto-selected, not a toggle: builds use **SU-TermServ** when the
   client-cert secrets are present, else fall back to HL7 `tx.fhir.org` with a notice.
 - **Pages mode** (`vars.PAGES_ACTIONS_ENABLED`) chooses the gh-pages push vs the
