@@ -9,6 +9,8 @@ import {
   compareVersions,
   parsePackageJsonPin,
   parseWorkflowEnvPin,
+  parseShellVarPin,
+  newestPublishedRelease,
   parseSushiDependencies,
   parseIgIniTemplate,
   mergeWatchedDeps,
@@ -88,6 +90,40 @@ test("parseWorkflowEnvPin reads quoted and unquoted env pins", () => {
 test("parseWorkflowEnvPin ignores commented lines and missing keys", () => {
   assert.equal(parseWorkflowEnvPin(workflowYaml, "JEKYLL_VERSION"), null);
   assert.equal(parseWorkflowEnvPin(workflowYaml, "NOT_THERE_VERSION"), null);
+});
+
+// --- parseShellVarPin -------------------------------------------------------
+
+test("parseShellVarPin reads a quoted shell assignment", () => {
+  const sh = [
+    "#!/bin/bash -e",
+    "# BLAZECTL_VERSION=\"0.0.1\" (commented out — ignored)",
+    'MII_TESTDATA_VERSION="v2025.0.0-dev.7"',
+    'BLAZECTL_VERSION="1.1.0"',
+    'BLAZECTL_URL="https://example.org/v${BLAZECTL_VERSION}.tar.gz"',
+  ].join("\n");
+  assert.equal(parseShellVarPin(sh, "BLAZECTL_VERSION"), "1.1.0");
+  assert.equal(parseShellVarPin(sh, "MII_TESTDATA_VERSION"), "v2025.0.0-dev.7");
+});
+
+test("parseShellVarPin returns null when the variable is absent", () => {
+  assert.equal(parseShellVarPin("FOO=bar\n", "BLAZECTL_VERSION"), null);
+});
+
+// --- newestPublishedRelease --------------------------------------------------
+
+test("newestPublishedRelease counts pre-releases, skips drafts, orders by publication", () => {
+  const releases = [
+    { tag_name: "v2026.0.0-rc.2", draft: true, published_at: null },
+    { tag_name: "v2026.0.0-rc.1", draft: false, prerelease: false, published_at: "2026-09-01T00:00:00Z" },
+    { tag_name: "v2027.0.0-ballot.rc2", draft: false, prerelease: true, published_at: "2026-09-29T09:47:36Z" },
+  ];
+  assert.equal(newestPublishedRelease(releases), "v2027.0.0-ballot.rc2");
+});
+
+test("newestPublishedRelease returns null for an empty or invalid listing", () => {
+  assert.equal(newestPublishedRelease([]), null);
+  assert.equal(newestPublishedRelease(null), null);
 });
 
 // --- parseSushiDependencies -------------------------------------------------

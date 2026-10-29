@@ -2,9 +2,9 @@
 # Weekly update PRs against dev; minor/patch grouped to limit PR noise.
 # Dependabot does NOT understand FHIR packages, the IG Publisher jar, or the
 # IG templates (de.medizininformatikinitiative.template / fhir2.base.template)
-# — those are watched by layer B (.github/workflows/dependency-check.yml).
-# See docs/maintenance.md. A module created from this template inherits this
-# file unchanged.
+# — those are watched by layer B (.github/workflows/dependency-check.yml),
+# which also watches the blazectl / mii-testdata pins of the SearchParameter
+# tests. See docs/maintenance.md.
 #
 # There is no vars.ENABLE_* toggle for Dependabot: it is switched by this
 # file's presence and the repository's Dependabot settings, not by a job `if:`.
@@ -22,15 +22,14 @@ updates:
       actions:
         patterns: ["*"]
 
-  # npm — the publication scripts (scripts/*.mjs) are dependency-free today,
-  # but a root package.json may land with them. Until a manifest exists,
-  # Dependabot logs a non-fatal "no manifest found" error for this entry and
-  # continues with the other entries — safe to ship ahead of the file.
-  # Do NOT point this at a FHIR package manifest (e.g. a vendored
-  # ig-template/package/package.json): its dependencies are FHIR packages
-  # that do not exist on npmjs — Dependabot would misread them.
-  - package-ecosystem: npm
-    directory: "/"
+  # No npm entry: the root package.json is the FHIR package manifest — its
+  # dependencies are FHIR packages that do not exist on npmjs, so Dependabot
+  # would misread them. The scripts in scripts/ are dependency-free.
+
+  # The Blaze FHIR server image of the SearchParameter tests
+  # (.github/workflows/search-param-test/blaze.yml, pinned by version tag).
+  - package-ecosystem: docker-compose
+    directory: "/.github/workflows/search-param-test"
     schedule:
       interval: weekly
       day: monday
