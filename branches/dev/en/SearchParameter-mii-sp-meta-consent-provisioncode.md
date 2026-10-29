@@ -12,7 +12,7 @@
 | Active as of 2026-09-01 | *Computable Name*:MII_SP_Meta_Consent_ProvisionCode |
 
  
-Suche im Code der Provison 
+Suche im Code der Provision 
 
 
 
@@ -90,7 +90,7 @@ Suche im Code der Provison
       "value" : "https://www.netzwerk-universitaetsmedizin.de"
     }]
   }],
-  "description" : "Suche im Code der Provison",
+  "description" : "Suche im Code der Provision",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

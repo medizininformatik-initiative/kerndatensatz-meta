@@ -10,7 +10,7 @@
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/modul-meta/ImplementationGuide/mii-ig-meta | *Version*:2027.0.0-ballot |
 | Active Stand: 2026-09-10 | *Maschinenlesbarer Name*:MII_IG_Meta |
 
-Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation des Kerndatensatz-Moduls 'Meta' der Medizinformatik-Initative. Im Folgenden werden die Use Cases des Moduls, sowie die dazugehörigen FHIR-Profile und Terminologie-Ressourcen in ihrer verbindlichen Form beschrieben.
+Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation des Kerndatensatz-Moduls 'Meta' der Medizininformatik-Initiative. Im Folgenden werden die Use Cases des Moduls, sowie die dazugehörigen FHIR-Profile und Terminologie-Ressourcen in ihrer verbindlichen Form beschrieben.
 
 Das Modul enthält Basisartefakte, die von allen weiteren MII-Implementierungsleitfäden verwendet werden.
 

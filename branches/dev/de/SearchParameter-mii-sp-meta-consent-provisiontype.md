@@ -12,7 +12,7 @@
 | Active Stand: 2026-09-01 | *Maschinenlesbarer Name*:MII_SP_Meta_Consent_ProvisionType |
 
  
-Suche im Typ der Provison (permit, deny). 
+Suche im Typ der Provision (permit, deny). 
 
 
 
@@ -90,7 +90,7 @@ Suche im Typ der Provison (permit, deny).
       "value" : "https://www.netzwerk-universitaetsmedizin.de"
     }]
   }],
-  "description" : "Suche im Typ der Provison (permit, deny).",
+  "description" : "Suche im Typ der Provision (permit, deny).",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

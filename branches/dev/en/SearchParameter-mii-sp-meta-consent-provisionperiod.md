@@ -12,7 +12,7 @@
 | Active as of 2026-09-01 | *Computable Name*:MII_SP_Meta_Consent_ProvisionPeriod |
 
  
-Suche im Zeitraum der Provision. Dieser Suchparameter bezieht sich explizit auf die zweite Verschachtelungsebene von provison. 
+Suche im Zeitraum der Provision. Dieser Suchparameter bezieht sich explizit auf die zweite Verschachtelungsebene von provision. 
 
 
 
@@ -90,7 +90,7 @@ Suche im Zeitraum der Provision. Dieser Suchparameter bezieht sich explizit auf 
       "value" : "https://www.netzwerk-universitaetsmedizin.de"
     }]
   }],
-  "description" : "Suche im Zeitraum der Provision. Dieser Suchparameter bezieht sich explizit auf die zweite Verschachtelungsebene von provison.",
+  "description" : "Suche im Zeitraum der Provision. Dieser Suchparameter bezieht sich explizit auf die zweite Verschachtelungsebene von provision.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

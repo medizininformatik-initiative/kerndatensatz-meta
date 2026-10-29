@@ -41,11 +41,11 @@ Diese definieren die Eigenschaften, nach denen ein RESTful-Server durchsucht wer
 | [ mii-sp-meta-condition-icd10gm-seitenlokalisation  ](SearchParameter-mii-sp-meta-condition-icd10gm-seitenlokalisation.md) | Suchparameter für Condition.code.coding:icd10-gm.extension:Seitenlokalisation |
 | [ mii-sp-meta-condition-verification-status  ](SearchParameter-mii-sp-meta-condition-verification-status.md) | SearchParameter for Condition.verificationStatus |
 | [ mii-sp-meta-consent-policyuri  ](SearchParameter-mii-sp-meta-consent-policyuri.md) | Suche in der Policy URI (versionsspezifische Policy / Broad Consent) |
-| [ mii-sp-meta-consent-provisioncode  ](SearchParameter-mii-sp-meta-consent-provisioncode.md) | Suche im Code der Provison |
+| [ mii-sp-meta-consent-provisioncode  ](SearchParameter-mii-sp-meta-consent-provisioncode.md) | Suche im Code der Provision |
 | [ mii-sp-meta-consent-provisioncodeperiod  ](SearchParameter-mii-sp-meta-consent-provisioncodeperiod.md) | Composite-Suche nach Zeitraum (period) einer bestimmten, durch einen Code definierten, Provision. |
 | [ mii-sp-meta-consent-provisioncodetype  ](SearchParameter-mii-sp-meta-consent-provisioncodetype.md) | Composite-Suche nach Typ (type) einer bestimmten, durch einen Code definierten, Provision. |
-| [ mii-sp-meta-consent-provisionperiod  ](SearchParameter-mii-sp-meta-consent-provisionperiod.md) | Suche im Zeitraum der Provision. Dieser Suchparameter bezieht sich explizit auf die zweite Verschachtelungsebene von provison. |
-| [ mii-sp-meta-consent-provisiontype  ](SearchParameter-mii-sp-meta-consent-provisiontype.md) | Suche im Typ der Provison (permit, deny). |
+| [ mii-sp-meta-consent-provisionperiod  ](SearchParameter-mii-sp-meta-consent-provisionperiod.md) | Suche im Zeitraum der Provision. Dieser Suchparameter bezieht sich explizit auf die zweite Verschachtelungsebene von provision. |
+| [ mii-sp-meta-consent-provisiontype  ](SearchParameter-mii-sp-meta-consent-provisiontype.md) | Suche im Typ der Provision (permit, deny). |
 | [ mii-sp-meta-description  ](SearchParameter-mii-sp-meta-description.md) | 
 | | | |
 | :--- | :--- | :--- |

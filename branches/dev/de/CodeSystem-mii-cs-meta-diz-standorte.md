@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/core-location-identifier | *Version*:2027.0.0-ballot |
-| Active Stand: 2026-09-01 | *Maschinenlesbarer Name*:MII_CS_Meta_DIZ_Standorte |
+| Active Stand: 2026-10-19 | *Maschinenlesbarer Name*:MII_CS_Meta_DIZ_Standorte |
 | **Copyright/Rechtliches**: Medizininformatik-Initiative | |
 
  
@@ -164,7 +164,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   "title" : "MII CS Meta DIZ Standorte",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-01",
+  "date" : "2026-10-19",
   "publisher" : "NUM-DIZ",
   "_publisher" : {
     "extension" : [{
@@ -199,7 +199,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   "valueSet" : "https://www.medizininformatik-initiative.de/fhir/core/ValueSet/core-location-identifier",
   "compositional" : false,
   "content" : "complete",
-  "count" : 52,
+  "count" : 53,
   "property" : [{
     "code" : "consortium",
     "uri" : "https://www.medizininformatik-initiative.de/de/konsortien",
@@ -655,6 +655,10 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
     {
       "code" : "status",
       "valueCode" : "active"
+    },
+    {
+      "code" : "dataManagement",
+      "valueBoolean" : true
     },
     {
       "code" : "contract",
@@ -1578,6 +1582,35 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
     {
       "code" : "dic",
       "valueBoolean" : true
+    }]
+  },
+  {
+    "code" : "UKT-FLAME",
+    "display" : "Universitätsklinikum Tübingen - FLAME",
+    "definition" : "Tübingen",
+    "property" : [{
+      "code" : "consortium",
+      "valueString" : "MII"
+    },
+    {
+      "code" : "uri",
+      "valueString" : "private-aim.de"
+    },
+    {
+      "code" : "status",
+      "valueCode" : "active"
+    },
+    {
+      "code" : "dataManagement",
+      "valueBoolean" : true
+    },
+    {
+      "code" : "contract",
+      "valueString" : "V6.15"
+    },
+    {
+      "code" : "abbreviation",
+      "valueString" : "UKT-FLAME"
     }]
   },
   {

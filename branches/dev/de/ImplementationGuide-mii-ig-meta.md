@@ -1640,7 +1640,7 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
         "reference" : "SearchParameter/mii-sp-meta-consent-provisioncode"
       },
       "name" : "mii-sp-meta-consent-provisioncode",
-      "description" : "Suche im Code der Provison",
+      "description" : "Suche im Code der Provision",
       "exampleBoolean" : false
     },
     {
@@ -1688,7 +1688,7 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
         "reference" : "SearchParameter/mii-sp-meta-consent-provisionperiod"
       },
       "name" : "mii-sp-meta-consent-provisionperiod",
-      "description" : "Suche im Zeitraum der Provision. Dieser Suchparameter bezieht sich explizit auf die zweite Verschachtelungsebene von provison.",
+      "description" : "Suche im Zeitraum der Provision. Dieser Suchparameter bezieht sich explizit auf die zweite Verschachtelungsebene von provision.",
       "exampleBoolean" : false
     },
     {
@@ -1704,7 +1704,7 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
         "reference" : "SearchParameter/mii-sp-meta-consent-provisiontype"
       },
       "name" : "mii-sp-meta-consent-provisiontype",
-      "description" : "Suche im Typ der Provison (permit, deny).",
+      "description" : "Suche im Typ der Provision (permit, deny).",
       "exampleBoolean" : false
     },
     {

@@ -2,8 +2,8 @@ MII_IG_Meta : Validation Results
 =========================================
 
 err = 0, warn = 960, info = 606
-IG Publisher Version: 2.3.2 Out of date - current version is 2.3.4
-Generated Thu Sep 10 13:42:22 UTC 2026. FHIR version 4.0.1 for de.medizininformatikinitiative.kerndatensatz.meta#2027.0.0-ballot (canonical = https://www.medizininformatik-initiative.de/fhir/modul-meta)
+IG Publisher Version: 2.3.2 Out of date - current version is 3.0.1
+Generated Thu Oct 29 10:30:26 UTC 2026. FHIR version 4.0.1 for de.medizininformatikinitiative.kerndatensatz.meta#2027.0.0-ballot (canonical = https://www.medizininformatik-initiative.de/fhir/modul-meta)
  Build Errors : 0 / 3 / 0
  /home/runner/work/kerndatensatz-meta/kerndatensatz-meta/fsh-generated/resources/Bundle-mii-exa-meta-searchparam-collection-bundle : 0 / 256 / 711
  /home/runner/work/kerndatensatz-meta/kerndatensatz-meta/fsh-generated/resources/Bundle-mii-exa-meta-searchparam-transaction-bundle : 0 / 256 / 717
@@ -1006,8 +1006,8 @@ INFORMATION: ImplementationGuide/mii-ig-meta: ImplementationGuide.language: Refe
 WARNING: ImplementationGuide/mii-ig-meta: ImplementationGuide.extension[3].extension[2].value.ofType(uri): No definition could be found for URL value 'https://www.medizininformatik-initiative.de/fhir/modul-meta'
 INFORMATION: ImplementationGuide/mii-ig-meta: ImplementationGuide.extension[15].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl|25.6.0-e
 WARNING: ImplementationGuide/mii-ig-meta: ImplementationGuide.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166:-2' could not be found, so the code cannot be validated
-WARNING: ImplementationGuide/mii-ig-meta: ImplementationGuide.dependsOn[1]: The ImplementationGuide uses package hl7.terminology.r4#7.1.0 released on 2026-03-08, but the most recent appropriate version is 7.3.0. This reference is getting old and the more recent version should be considered
-WARNING: ImplementationGuide/mii-ig-meta: ImplementationGuide.dependsOn[2]: The ImplementationGuide uses package hl7.fhir.uv.extensions.r4#5.2.0 released on 2025-02-10, but the most recent appropriate version is 5.3.0. This reference is getting old and the more recent version should be considered
+WARNING: ImplementationGuide/mii-ig-meta: ImplementationGuide.dependsOn[1]: The ImplementationGuide uses package hl7.terminology.r4#7.1.0 released on 2026-03-08, but the most recent appropriate version is 7.5.0. This reference is getting old and the more recent version should be considered
+WARNING: ImplementationGuide/mii-ig-meta: ImplementationGuide.dependsOn[2]: The ImplementationGuide uses package hl7.fhir.uv.extensions.r4#5.2.0 released on 2025-02-10, but the most recent appropriate version is 5.4.0. This reference is getting old and the more recent version should be considered
 INFORMATION: ImplementationGuide/mii-ig-meta: ImplementationGuide.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareableimplementationguide|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: ImplementationGuide/mii-ig-meta: ImplementationGuide.extension[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareableimplementationguide|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: ImplementationGuide/mii-ig-meta: ImplementationGuide.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareableimplementationguide|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)

@@ -3271,7 +3271,7 @@
             <value value="https://www.medizininformatik-initiative.de"/>
           </telecom>
         </contact>
-        <description value="Suche im Code der Provison"/>
+        <description value="Suche im Code der Provision"/>
         <code value="mii-provision-provision-code"/>
         <base value="Consent"/>
         <type value="token"/>
@@ -3481,7 +3481,7 @@
             <value value="https://www.medizininformatik-initiative.de"/>
           </telecom>
         </contact>
-        <description value="Suche im Zeitraum der Provision. Dieser Suchparameter bezieht sich explizit auf die zweite Verschachtelungsebene von provison."/>
+        <description value="Suche im Zeitraum der Provision. Dieser Suchparameter bezieht sich explizit auf die zweite Verschachtelungsebene von provision."/>
         <code value="mii-provision-provision-period"/>
         <base value="Consent"/>
         <type value="date"/>
@@ -3547,7 +3547,7 @@
             <value value="https://www.medizininformatik-initiative.de"/>
           </telecom>
         </contact>
-        <description value="Suche im Typ der Provison (permit, deny)."/>
+        <description value="Suche im Typ der Provision (permit, deny)."/>
         <code value="mii-provision-provision-type"/>
         <base value="Consent"/>
         <type value="token"/>
@@ -7904,7 +7904,7 @@
         </component>
         <component>
           <definition value="http://hl7.org/fhir/SearchParameter/ImagingStudy-bodysite"/>
-          <expression value="bodysite"/>
+          <expression value="bodySite"/>
         </component>
       </SearchParameter>
     </resource>

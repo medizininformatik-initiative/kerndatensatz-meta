@@ -3569,7 +3569,7 @@
           "value" : "https://www.medizininformatik-initiative.de"
         }]
       }],
-      "description" : "Suche im Code der Provison",
+      "description" : "Suche im Code der Provision",
       "code" : "mii-provision-provision-code",
       "base" : ["Consent"],
       "type" : "token",
@@ -3797,7 +3797,7 @@
           "value" : "https://www.medizininformatik-initiative.de"
         }]
       }],
-      "description" : "Suche im Zeitraum der Provision. Dieser Suchparameter bezieht sich explizit auf die zweite Verschachtelungsebene von provison.",
+      "description" : "Suche im Zeitraum der Provision. Dieser Suchparameter bezieht sich explizit auf die zweite Verschachtelungsebene von provision.",
       "code" : "mii-provision-provision-period",
       "base" : ["Consent"],
       "type" : "date",
@@ -3869,7 +3869,7 @@
           "value" : "https://www.medizininformatik-initiative.de"
         }]
       }],
-      "description" : "Suche im Typ der Provison (permit, deny).",
+      "description" : "Suche im Typ der Provision (permit, deny).",
       "code" : "mii-provision-provision-type",
       "base" : ["Consent"],
       "type" : "token",
@@ -8628,7 +8628,7 @@
       },
       {
         "definition" : "http://hl7.org/fhir/SearchParameter/ImagingStudy-bodysite",
-        "expression" : "bodysite"
+        "expression" : "bodySite"
       }]
     }
   },

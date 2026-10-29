@@ -1173,7 +1173,7 @@
         <reference value="SearchParameter/mii-sp-meta-consent-provisioncode"/>
       </reference>
       <name value="mii-sp-meta-consent-provisioncode"/>
-      <description value="Suche im Code der Provison"/>
+      <description value="Suche im Code der Provision"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1206,7 +1206,7 @@
         <reference value="SearchParameter/mii-sp-meta-consent-provisionperiod"/>
       </reference>
       <name value="mii-sp-meta-consent-provisionperiod"/>
-      <description value="Suche im Zeitraum der Provision. Dieser Suchparameter bezieht sich explizit auf die zweite Verschachtelungsebene von provison."/>
+      <description value="Suche im Zeitraum der Provision. Dieser Suchparameter bezieht sich explizit auf die zweite Verschachtelungsebene von provision."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1217,7 +1217,7 @@
         <reference value="SearchParameter/mii-sp-meta-consent-provisiontype"/>
       </reference>
       <name value="mii-sp-meta-consent-provisiontype"/>
-      <description value="Suche im Typ der Provison (permit, deny)."/>
+      <description value="Suche im Typ der Provision (permit, deny)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
