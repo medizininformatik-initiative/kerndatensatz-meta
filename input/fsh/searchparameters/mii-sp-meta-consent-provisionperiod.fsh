@@ -11,7 +11,7 @@ Usage: #definition
 * status = #active
 * experimental = false
 * date = "2026-09-01"
-* description = "Suche im Zeitraum der Provision. Dieser Suchparameter bezieht sich explizit auf die zweite Verschachtelungsebene von provison."
+* description = "Suche im Zeitraum der Provision. Dieser Suchparameter bezieht sich explizit auf die zweite Verschachtelungsebene von provision."
 * code = #mii-provision-provision-period
 * base = #Consent
 * type = #date

@@ -20,7 +20,7 @@ on:
         required: false
         type: string
       JAVA_VALIDATION_ENABLED:
-        description: 'Boolean flag to run the offical HL7 Java validator to validate conformance resources and examples'
+        description: 'Boolean flag to run the official HL7 Java validator to validate conformance resources and examples'
         required: true
         default: true
         type: boolean

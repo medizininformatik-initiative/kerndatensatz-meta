@@ -721,7 +721,7 @@
              <notes>
                <note id="n1">SearchParameter.description</note>
              </notes>
-        <source>Suche im Code der Provison</source>
+        <source>Suche im Code der Provision</source>
         <target></target>
       </trans-unit>
       <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
@@ -784,7 +784,7 @@
              <notes>
                <note id="n1">SearchParameter.description</note>
              </notes>
-        <source>Suche im Zeitraum der Provision. Dieser Suchparameter bezieht sich explizit auf die zweite Verschachtelungsebene von provison.</source>
+        <source>Suche im Zeitraum der Provision. Dieser Suchparameter bezieht sich explizit auf die zweite Verschachtelungsebene von provision.</source>
         <target></target>
       </trans-unit>
       <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">
@@ -798,7 +798,7 @@
              <notes>
                <note id="n1">SearchParameter.description</note>
              </notes>
-        <source>Suche im Typ der Provison (permit, deny).</source>
+        <source>Suche im Typ der Provision (permit, deny).</source>
         <target></target>
       </trans-unit>
       <trans-unit id="Bundle-mii-exa-meta-searchparam-transaction-bundle" resname="SearchParameter.name">

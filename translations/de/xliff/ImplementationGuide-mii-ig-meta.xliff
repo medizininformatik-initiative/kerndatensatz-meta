@@ -407,7 +407,7 @@ The extension is a R4-compatible version of the FHIR for FAIR R4B IG Licence Ter
              <notes>
                <note id="n1">ImplementationGuide.definition.resource.description</note>
              </notes>
-        <source>Suche im Code der Provison</source>
+        <source>Suche im Code der Provision</source>
         <target></target>
       </trans-unit>
       <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
@@ -449,7 +449,7 @@ The extension is a R4-compatible version of the FHIR for FAIR R4B IG Licence Ter
              <notes>
                <note id="n1">ImplementationGuide.definition.resource.description</note>
              </notes>
-        <source>Suche im Zeitraum der Provision. Dieser Suchparameter bezieht sich explizit auf die zweite Verschachtelungsebene von provison.</source>
+        <source>Suche im Zeitraum der Provision. Dieser Suchparameter bezieht sich explizit auf die zweite Verschachtelungsebene von provision.</source>
         <target></target>
       </trans-unit>
       <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">
@@ -463,7 +463,7 @@ The extension is a R4-compatible version of the FHIR for FAIR R4B IG Licence Ter
              <notes>
                <note id="n1">ImplementationGuide.definition.resource.description</note>
              </notes>
-        <source>Suche im Typ der Provison (permit, deny).</source>
+        <source>Suche im Typ der Provision (permit, deny).</source>
         <target></target>
       </trans-unit>
       <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">

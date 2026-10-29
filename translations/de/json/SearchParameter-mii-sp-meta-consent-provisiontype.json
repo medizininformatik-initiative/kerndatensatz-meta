@@ -36,7 +36,7 @@
     {
       "id" : "SearchParameter.description",
       "context" : "SearchParameter.description",
-      "source" : "Suche im Typ der Provison (permit, deny).",
+      "source" : "Suche im Typ der Provision (permit, deny).",
       "target" : null
     },
     {

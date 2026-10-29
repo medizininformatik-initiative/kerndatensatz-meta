@@ -62,7 +62,7 @@ Description: "Medizininformatik-Initiative Standorte"
 * insert CRMIResourceEffectivePeriod
 * insert CRMIArtifactTopic(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, C80260)
 * insert CRMIArtifactContributors
-* ^date = "2026-09-01"
+* ^date = "2026-10-19"
 * ^status = #active
 * ^caseSensitive = true
 * ^compositional = false
@@ -198,6 +198,7 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UKEr insert AddKonsortium(MIRACUM)
 * #UKEr insert AddUri(www.uk-erlangen.de)
 * #UKEr insert AddStatus(active)
+* #UKEr insert AddDatenmanagementstelle(true)
 * #UKEr insert AddTRV(V6.15)
 * #UKEr insert AddAbbreviation(UKEr)
 * #UKEr insert AddDiz(true)
@@ -421,6 +422,13 @@ Description: "Medizininformatik-Initiative Standorte"
 * #UKT insert AddTRV(V6.15)
 * #UKT insert AddAbbreviation(UKT)
 * #UKT insert AddDiz(true)
+* #UKT-FLAME "Universitätsklinikum Tübingen - FLAME" "Tübingen"
+* #UKT-FLAME insert AddKonsortium(MII)
+* #UKT-FLAME insert AddUri(private-aim.de)
+* #UKT-FLAME insert AddStatus(active)
+* #UKT-FLAME insert AddDatenmanagementstelle(true)
+* #UKT-FLAME insert AddTRV(V6.15)
+* #UKT-FLAME insert AddAbbreviation(UKT-FLAME)
 * #UKU "Universitätsklinikum Ulm" "Ulm"
 * #UKU insert AddKonsortium(DIFUTURE)
 * #UKU insert AddUri(uniklinik-ulm.de)

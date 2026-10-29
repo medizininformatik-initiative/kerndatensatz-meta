@@ -150,7 +150,7 @@ Usage: #definition
 * component[0].definition = "http://hl7.org/fhir/SearchParameter/ImagingStudy-modality"
 * component[=].expression = "modality"
 * component[+].definition = "http://hl7.org/fhir/SearchParameter/ImagingStudy-bodysite"
-* component[=].expression = "bodysite" 
+* component[=].expression = "bodySite"
 
 Instance: mii-sp-meta-imaging-study-bildgebungsgrund
 InstanceOf: SearchParameter
