@@ -1,0 +1,2 @@
+URL,Version,Status,OIDs,Name,Title,Description,Uses,Used,Sources
+http://hl7.org/fhir/ValueSet/spdx-license,4.0.1,draft,"2.16.840.1.113883.4.642.3.1026",SPDXLicense,SPDXLicense,"The license that applies to an Implementation Guide (using an SPDX license Identifiers, or 'not-open-source'). The binding is required but new SPDX license Identifiers are allowed to be used (https://spdx.org/licenses/).","StructureDefinition/mii-ex-meta-license-codeable","Internal"
