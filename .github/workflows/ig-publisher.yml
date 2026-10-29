@@ -32,6 +32,10 @@
 #            otherwise falls back to the public HL7 server https://tx.fhir.org
 #            with a ::notice. The build must not hard-fail without the cert;
 #            some MII-specific value sets may then not fully expand (a QA note).
+#            The same fallback applies, with a ::warning, when the cert is set
+#            but SU-TermServ does not answer /fhir/metadata through the proxy
+#            (5 attempts) — a terminology outage degrades the PREVIEW instead of
+#            failing it. module-release.yml and go-publish.yml stay strict.
 #
 # Fixed versions: every Action is pinned to a commit SHA (# vX.Y.Z); the
 #            IG Publisher jar, SUSHI and Jekyll are pinned in the `env:` block
@@ -206,8 +210,30 @@ jobs:
               sleep 2
             done
             if [[ "${ready}" != "true" ]]; then docker logs preview-nginx; exit 1; fi
-            echo "tx=http://127.0.0.1:8090/fhir" >> "${GITHUB_OUTPUT}"
-            echo "Terminology: SU-TermServ via client-certificate proxy" >> "${GITHUB_STEP_SUMMARY}"
+            # The proxy being up says nothing about SU-TermServ behind it: probe
+            # the endpoint the IG Publisher connects to first (and warm it up).
+            # If SU-TermServ stays unreachable, build the PREVIEW against the
+            # public HL7 server instead of failing it. Releases (module-release,
+            # go-publish) deliberately keep failing hard in that case.
+            tx_ok=false
+            for attempt in 1 2 3 4 5; do
+              if curl --silent --fail --max-time 60 --output /dev/null \
+                   -H "Accept: application/fhir+json" "http://127.0.0.1:8090/fhir/metadata"; then
+                tx_ok=true; break
+              fi
+              echo "SU-TermServ /metadata not reachable through the proxy (attempt ${attempt}/5)."
+              if (( attempt < 5 )); then sleep 10; fi
+            done
+            if [[ "${tx_ok}" == "true" ]]; then
+              echo "tx=http://127.0.0.1:8090/fhir" >> "${GITHUB_OUTPUT}"
+              echo "Terminology: SU-TermServ via client-certificate proxy" >> "${GITHUB_STEP_SUMMARY}"
+            else
+              docker logs --tail 50 preview-nginx || true
+              docker rm --force preview-nginx >/dev/null 2>&1 || true
+              echo "tx=https://tx.fhir.org" >> "${GITHUB_OUTPUT}"
+              echo "::warning::SU-TermServ did not answer /fhir/metadata through the proxy after 5 attempts — this PREVIEW is built against the public HL7 terminology server https://tx.fhir.org. Some MII-specific value sets may not fully expand. Re-run the job once SU-TermServ is reachable again."
+              echo "Terminology: **public HL7 fallback (https://tx.fhir.org) — SU-TermServ unreachable**" >> "${GITHUB_STEP_SUMMARY}"
+            fi
           else
             echo "tx=https://tx.fhir.org" >> "${GITHUB_OUTPUT}"
             echo "::notice::No SU-TermServ client certificate configured — falling back to the public HL7 terminology server https://tx.fhir.org. Some MII-specific value sets may not fully expand (a QA note, not a failure)."
@@ -263,13 +289,29 @@ jobs:
         run: |
           set -euo pipefail
           remote_url="https://x-access-token:${GITHUB_TOKEN}@github.com/${REPO}.git"
-          rm -rf gh-pages
+          # The gh-pages checkout is large (~90k files even shallow); a dropped
+          # connection mid-transfer ("fatal: early EOF") must not fail the
+          # preview. Retry with backoff, starting from a clean directory.
+          clone_with_retry() {
+            local attempt delay
+            for attempt in 1 2 3; do
+              rm -rf gh-pages
+              if git clone "$@" "${remote_url}" gh-pages; then return 0; fi
+              if (( attempt < 3 )); then
+                delay=$(( attempt * 15 ))
+                echo "::warning::git clone of gh-pages failed (attempt ${attempt}/3) — retrying in ${delay}s."
+                sleep "${delay}"
+              fi
+            done
+            echo "::error::git clone of gh-pages failed after 3 attempts."
+            return 1
+          }
           if git ls-remote --heads "${remote_url}" gh-pages | grep -q "."; then
-            git clone --depth 1 --branch gh-pages "${remote_url}" gh-pages
+            clone_with_retry --depth 1 --branch gh-pages
           else
             # First preview ever: orphan-init gh-pages with a .nojekyll marker so
             # Pages serves the IG output verbatim (no Jekyll re-processing).
-            git clone "${remote_url}" gh-pages
+            clone_with_retry
             cd gh-pages
             git config user.name "${GIT_AUTHOR_NAME}"
             git config user.email "${GIT_AUTHOR_EMAIL}"

@@ -38,6 +38,10 @@ Notes:
   it by path at commit `1db2e534`. Never move or rename it.
 - **Terminology** is auto-selected, not a toggle: builds use **SU-TermServ** when the
   client-cert secrets are present, else fall back to HL7 `tx.fhir.org` with a notice.
+  The preview build (`ig-publisher.yml`) also falls back — with a warning in the
+  job summary — when SU-TermServ does not answer through the proxy; re-run the job
+  once it is reachable to get an SU-TermServ preview. Release builds
+  (`module-release.yml`, `go-publish.yml`) never fall back.
 - **Pages mode** (`vars.PAGES_ACTIONS_ENABLED`) chooses the gh-pages push vs the
   Actions deploy path; either serves the previews. Set it to match Settings →
   Pages ("Deploy from a branch → `gh-pages`" ⇒ leave it unset; "GitHub Actions"
