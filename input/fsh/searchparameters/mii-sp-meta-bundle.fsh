@@ -105,7 +105,6 @@ Description: "Transaction bundle containing the SearchParameter resources publis
 * insert AddTransactionEntry(mii-sp-meta-media-partof)
 // ICU
 * insert AddTransactionEntry(mii-sp-meta-device-property-type)
-* insert AddTransactionEntry(mii-sp-meta-devicemetric-source)
 * insert AddTransactionEntry(mii-sp-meta-observation-bodysite)
 * insert AddTransactionEntry(mii-sp-meta-observation-component-interpretation)
 * insert AddTransactionEntry(mii-sp-meta-observation-referencerange)
@@ -130,9 +129,6 @@ Description: "Transaction bundle containing the SearchParameter resources publis
 * insert AddTransactionEntry(mii-sp-meta-researchstudy-rekrutierungsziel)
 * insert AddTransactionEntry(mii-sp-meta-researchstudy-rekrutierungsstart)
 // Onko
-* insert AddTransactionEntry(mii-sp-meta-condition-verification-status)
-* insert AddTransactionEntry(mii-sp-meta-condition-evidence-detail)
-* insert AddTransactionEntry(mii-sp-meta-observation-hasmember)
 * insert AddTransactionEntry(mii-sp-meta-procedure-complication)
 * insert AddTransactionEntry(mii-sp-meta-procedure-outcome)
 * insert AddTransactionEntry(mii-sp-meta-adverseevent-suspectentity-instance)
@@ -140,8 +136,6 @@ Description: "Transaction bundle containing the SearchParameter resources publis
 * insert AddTransactionEntry(mii-sp-meta-careplan-created)
 * insert AddTransactionEntry(mii-sp-meta-careplan-contributor)
 * insert AddTransactionEntry(mii-sp-meta-careplan-addresses)
-* insert AddTransactionEntry(mii-sp-meta-observation-focus)
-* insert AddTransactionEntry(mii-sp-meta-observation-encounter)
 // Bildgebung
 * insert AddTransactionEntry(mii-sp-meta-supporting-info)
 * insert AddTransactionEntry(mii-sp-meta-description)
@@ -300,7 +294,6 @@ Description: "Collection bundle containing the SearchParameter resources publish
 
 // ICU
 * insert AddCollectionEntry(mii-sp-meta-device-property-type)
-* insert AddCollectionEntry(mii-sp-meta-devicemetric-source)
 * insert AddCollectionEntry(mii-sp-meta-observation-bodysite)
 * insert AddCollectionEntry(mii-sp-meta-observation-referencerange)
 * insert AddCollectionEntry(mii-sp-meta-observation-referencerange-low)
@@ -325,9 +318,6 @@ Description: "Collection bundle containing the SearchParameter resources publish
 * insert AddCollectionEntry(mii-sp-meta-researchstudy-rekrutierungsziel)
 * insert AddCollectionEntry(mii-sp-meta-researchstudy-rekrutierungsstart)
 // Onko
-* insert AddCollectionEntry(mii-sp-meta-condition-verification-status)
-* insert AddCollectionEntry(mii-sp-meta-condition-evidence-detail)
-* insert AddCollectionEntry(mii-sp-meta-observation-hasmember)
 * insert AddCollectionEntry(mii-sp-meta-procedure-complication)
 * insert AddCollectionEntry(mii-sp-meta-procedure-outcome)
 * insert AddCollectionEntry(mii-sp-meta-adverseevent-suspectentity-instance)
@@ -335,8 +325,6 @@ Description: "Collection bundle containing the SearchParameter resources publish
 * insert AddCollectionEntry(mii-sp-meta-careplan-created)
 * insert AddCollectionEntry(mii-sp-meta-careplan-contributor)
 * insert AddCollectionEntry(mii-sp-meta-careplan-addresses)
-* insert AddCollectionEntry(mii-sp-meta-observation-focus)
-* insert AddCollectionEntry(mii-sp-meta-observation-encounter)
 // Bildgebung
 * insert AddCollectionEntry(mii-sp-meta-supporting-info)
 * insert AddCollectionEntry(mii-sp-meta-description)

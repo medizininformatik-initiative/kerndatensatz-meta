@@ -1660,7 +1660,7 @@ The extension is a R4-compatible version of the FHIR for FAIR R4B IG Licence Ter
              <notes>
                <note id="n1">ImplementationGuide.definition.resource.description</note>
              </notes>
-        <source>Suchparameter für (MedicationAdministration|MedicationStatement).partOf</source>
+        <source>Suchparameter für MedicationAdministration.partOf</source>
         <target></target>
       </trans-unit>
       <trans-unit id="ImplementationGuide-mii-ig-meta" resname="ImplementationGuide.definition.resource.name">

@@ -491,7 +491,7 @@ msgstr ""
 
 # SearchParameter.description
 #: SearchParameter.description
-msgid "Suchparameter für (MedicationAdministration|MedicationStatement).partOf"
+msgid "Suchparameter für MedicationAdministration.partOf"
 msgstr ""
 
 # SearchParameter.name
@@ -826,16 +826,6 @@ msgstr ""
 
 # SearchParameter.name
 #: SearchParameter.name
-msgid "MII_SP_Meta_DeviceMetric_Source"
-msgstr ""
-
-# SearchParameter.description
-#: SearchParameter.description
-msgid "Suchparameter für DeviceMetric.source"
-msgstr ""
-
-# SearchParameter.name
-#: SearchParameter.name
 msgid "MII_SP_Meta_Observation_BodySite"
 msgstr ""
 
@@ -1056,36 +1046,6 @@ msgstr ""
 
 # SearchParameter.name
 #: SearchParameter.name
-msgid "MII_SP_Meta_Condition_Verification_Status"
-msgstr ""
-
-# SearchParameter.description
-#: SearchParameter.description
-msgid "SearchParameter for Condition.verificationStatus"
-msgstr ""
-
-# SearchParameter.name
-#: SearchParameter.name
-msgid "MII_SP_Meta_Condition_Evidence_Detail"
-msgstr ""
-
-# SearchParameter.description
-#: SearchParameter.description
-msgid "SearchParameter for Condition.evidence.detail"
-msgstr ""
-
-# SearchParameter.name
-#: SearchParameter.name
-msgid "MII_SP_Meta_Observation_hasMember"
-msgstr ""
-
-# SearchParameter.description
-#: SearchParameter.description
-msgid "SearchParameter for Observation.hasMember"
-msgstr ""
-
-# SearchParameter.name
-#: SearchParameter.name
 msgid "MII_SP_Meta_Procedure_Complication"
 msgstr ""
 
@@ -1152,26 +1112,6 @@ msgstr ""
 # SearchParameter.description
 #: SearchParameter.description
 msgid "SearchParameter for CarePlan.addresses"
-msgstr ""
-
-# SearchParameter.name
-#: SearchParameter.name
-msgid "MII_SP_Meta_Observation_Focus"
-msgstr ""
-
-# SearchParameter.description
-#: SearchParameter.description
-msgid "SearchParameter for Observation.focus"
-msgstr ""
-
-# SearchParameter.name
-#: SearchParameter.name
-msgid "MII_SP_Meta_Observation_Encounter"
-msgstr ""
-
-# SearchParameter.description
-#: SearchParameter.description
-msgid "SearchParameter for Observation.encounter"
 msgstr ""
 
 # SearchParameter.name

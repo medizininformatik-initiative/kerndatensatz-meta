@@ -72,7 +72,7 @@
   "date": "2026-09-01",
   "name": "MII_SP_Meta_Observation_hasMember",
   "description": "SearchParameter for Observation.hasMember",
-  "status": "active",
+  "status": "retired",
   "code": "has-member",
   "type": "reference",
   "expression": "Observation.hasMember"

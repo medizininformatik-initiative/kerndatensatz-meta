@@ -1422,7 +1422,7 @@
     {
       "id" : "ImplementationGuide.definition.resource.description",
       "context" : "ImplementationGuide.definition.resource.description",
-      "source" : "Suchparameter für (MedicationAdministration|MedicationStatement).partOf",
+      "source" : "Suchparameter für MedicationAdministration.partOf",
       "target" : null
     },
     {
