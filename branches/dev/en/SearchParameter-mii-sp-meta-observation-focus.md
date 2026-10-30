@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-focus | *Version*:2027.0.0-ballot |
-| Active as of 2026-09-01 | *Computable Name*:MII_SP_Meta_Observation_Focus |
+| Retired as of 2026-09-01 | *Computable Name*:MII_SP_Meta_Observation_Focus |
 
  
 SearchParameter for Observation.focus 
@@ -66,7 +66,7 @@ SearchParameter for Observation.focus
   "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-focus",
   "version" : "2027.0.0-ballot",
   "name" : "MII_SP_Meta_Observation_Focus",
-  "status" : "active",
+  "status" : "retired",
   "experimental" : false,
   "date" : "2026-09-01",
   "publisher" : "NUM-DIZ",

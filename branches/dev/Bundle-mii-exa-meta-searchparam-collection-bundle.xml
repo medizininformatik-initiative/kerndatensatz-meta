@@ -3101,8 +3101,8 @@
           <profile value="https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"/>
         </meta>
         <text>
-          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><a name="SearchParameter_mii-sp-meta-medication-partof"> </a><p class="res-header-id"><b>Generated Narrative: SearchParameter mii-sp-meta-medication-partof</b></p><a name="mii-sp-meta-medication-partof"> </a><a name="hcmii-sp-meta-medication-partof"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-meta-searchparameter.html">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href="http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}">Package</span></p><p><b>url</b>: <a href="SearchParameter-mii-sp-meta-medication-partof.html">MII_SP_Meta_Medication_PartOf</a></p><p><b>version</b>: 2027.0.0-ballot</p><p><b>name</b>: MII_SP_Meta_Medication_PartOf</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href="https://www.medizininformatik-initiative.de">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für (MedicationAdministration|MedicationStatement).partOf</p>
-</div><p><b>code</b>: part-of</p><p><b>base</b>: MedicationStatement, MedicationAdministration</p><p><b>type</b>: Reference</p><p><b>expression</b>: MedicationAdministration.partOf | MedicationStatement.partOf</p><p><b>target</b>: MedicationAdministration, Procedure, MedicationDispense, MedicationStatement, Observation</p></div></div>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><a name="SearchParameter_mii-sp-meta-medication-partof"> </a><p class="res-header-id"><b>Generated Narrative: SearchParameter mii-sp-meta-medication-partof</b></p><a name="mii-sp-meta-medication-partof"> </a><a name="hcmii-sp-meta-medication-partof"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-meta-searchparameter.html">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href="http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}">Package</span></p><p><b>url</b>: <a href="SearchParameter-mii-sp-meta-medication-partof.html">MII_SP_Meta_Medication_PartOf</a></p><p><b>version</b>: 2027.0.0-ballot</p><p><b>name</b>: MII_SP_Meta_Medication_PartOf</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href="https://www.medizininformatik-initiative.de">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für MedicationAdministration.partOf</p>
+</div><p><b>code</b>: part-of</p><p><b>base</b>: MedicationAdministration</p><p><b>type</b>: Reference</p><p><b>expression</b>: MedicationAdministration.partOf</p><p><b>target</b>: MedicationAdministration, Procedure</p></div></div>
         </text>
         <extension url="http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm">
           <valueCoding>
@@ -3134,17 +3134,13 @@
             <value value="https://www.medizininformatik-initiative.de"/>
           </telecom>
         </contact>
-        <description value="Suchparameter für (MedicationAdministration|MedicationStatement).partOf"/>
+        <description value="Suchparameter für MedicationAdministration.partOf"/>
         <code value="part-of"/>
-        <base value="MedicationStatement"/>
         <base value="MedicationAdministration"/>
         <type value="reference"/>
-        <expression value="MedicationAdministration.partOf | MedicationStatement.partOf"/>
+        <expression value="MedicationAdministration.partOf"/>
         <target value="MedicationAdministration"/>
         <target value="Procedure"/>
-        <target value="MedicationDispense"/>
-        <target value="MedicationStatement"/>
-        <target value="Observation"/>
       </SearchParameter>
     </resource>
   </entry>
@@ -5180,70 +5176,6 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-devicemetric-source"/>
-    <resource>
-      <SearchParameter>
-        <id value="mii-sp-meta-devicemetric-source"/>
-        <meta>
-          <extension url="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license">
-            <valueCode value="CC-BY-4.0"/>
-          </extension>
-          <extension url="http://hl7.org/fhir/StructureDefinition/package-source">
-            <extension url="packageId">
-              <valueId value="de.medizininformatikinitiative.kerndatensatz.meta"/>
-            </extension>
-            <extension url="version">
-              <valueString value="2027.0.0-ballot"/>
-            </extension>
-            <extension url="uri">
-              <valueUri value="https://www.medizininformatik-initiative.de/fhir/modul-meta"/>
-            </extension>
-          </extension>
-          <profile value="https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"/>
-        </meta>
-        <text>
-          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><a name="SearchParameter_mii-sp-meta-devicemetric-source"> </a><p class="res-header-id"><b>Generated Narrative: SearchParameter mii-sp-meta-devicemetric-source</b></p><a name="mii-sp-meta-devicemetric-source"> </a><a name="hcmii-sp-meta-devicemetric-source"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-meta-searchparameter.html">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Algorithm</b>: <a href="http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver">Version Algorithm: semver</a> (SemVer)</p><p><b>Artifact Version Policy</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}">Package</span></p><p><b>url</b>: <a href="SearchParameter-mii-sp-meta-devicemetric-source.html">MII_SP_Meta_DeviceMetric_Source</a></p><p><b>version</b>: 2027.0.0-ballot</p><p><b>name</b>: MII_SP_Meta_DeviceMetric_Source</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href="https://www.medizininformatik-initiative.de">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>Suchparameter für DeviceMetric.source</p>
-</div><p><b>code</b>: source</p><p><b>base</b>: DeviceMetric</p><p><b>type</b>: Reference</p><p><b>expression</b>: DeviceMetric.source</p></div></div>
-        </text>
-        <extension url="http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm">
-          <valueCoding>
-            <system value="http://hl7.org/fhir/version-algorithm"/>
-            <code value="semver"/>
-            <display value="SemVer"/>
-          </valueCoding>
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy">
-          <valueCodeableConcept>
-            <coding>
-              <system value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes"/>
-              <version value="3.0.0"/>
-              <code value="package"/>
-              <display value="Package"/>
-            </coding>
-          </valueCodeableConcept>
-        </extension>
-        <url value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-devicemetric-source"/>
-        <version value="2027.0.0-ballot"/>
-        <name value="MII_SP_Meta_DeviceMetric_Source"/>
-        <status value="active"/>
-        <experimental value="false"/>
-        <date value="2026-09-01"/>
-        <publisher value="Medizininformatik Initiative"/>
-        <contact>
-          <telecom>
-            <system value="url"/>
-            <value value="https://www.medizininformatik-initiative.de"/>
-          </telecom>
-        </contact>
-        <description value="Suchparameter für DeviceMetric.source"/>
-        <code value="source"/>
-        <base value="DeviceMetric"/>
-        <type value="reference"/>
-        <expression value="DeviceMetric.source"/>
-      </SearchParameter>
-    </resource>
-  </entry>
-  <entry>
     <fullUrl value="https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-observation-bodysite"/>
     <resource>
       <SearchParameter>
@@ -6664,199 +6596,6 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-condition-verification-status"/>
-    <resource>
-      <SearchParameter>
-        <id value="mii-sp-meta-condition-verification-status"/>
-        <meta>
-          <extension url="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license">
-            <valueCode value="CC-BY-4.0"/>
-          </extension>
-          <extension url="http://hl7.org/fhir/StructureDefinition/package-source">
-            <extension url="packageId">
-              <valueId value="de.medizininformatikinitiative.kerndatensatz.meta"/>
-            </extension>
-            <extension url="version">
-              <valueString value="2027.0.0-ballot"/>
-            </extension>
-            <extension url="uri">
-              <valueUri value="https://www.medizininformatik-initiative.de/fhir/modul-meta"/>
-            </extension>
-          </extension>
-          <profile value="https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"/>
-        </meta>
-        <text>
-          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><a name="SearchParameter_mii-sp-meta-condition-verification-status"> </a><p class="res-header-id"><b>Generated Narrative: SearchParameter mii-sp-meta-condition-verification-status</b></p><a name="mii-sp-meta-condition-verification-status"> </a><a name="hcmii-sp-meta-condition-verification-status"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-meta-searchparameter.html">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Policy</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}">Package</span></p><p><b>Artifact Version Algorithm</b>: <a href="http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver">Version Algorithm: semver</a> (SemVer)</p><p><b>url</b>: <a href="SearchParameter-mii-sp-meta-condition-verification-status.html">MII_SP_Meta_Condition_Verification_Status</a></p><p><b>version</b>: 2027.0.0-ballot</p><p><b>name</b>: MII_SP_Meta_Condition_Verification_Status</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href="https://www.medizininformatik-initiative.de">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>SearchParameter for Condition.verificationStatus</p>
-</div><p><b>code</b>: verification-status</p><p><b>base</b>: Condition</p><p><b>type</b>: Token</p><p><b>expression</b>: Condition.verificationStatus</p></div></div>
-        </text>
-        <extension url="http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy">
-          <valueCodeableConcept>
-            <coding>
-              <system value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes"/>
-              <version value="3.0.0"/>
-              <code value="package"/>
-              <display value="Package"/>
-            </coding>
-          </valueCodeableConcept>
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm">
-          <valueCoding>
-            <system value="http://hl7.org/fhir/version-algorithm"/>
-            <code value="semver"/>
-            <display value="SemVer"/>
-          </valueCoding>
-        </extension>
-        <url value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-verification-status"/>
-        <version value="2027.0.0-ballot"/>
-        <name value="MII_SP_Meta_Condition_Verification_Status"/>
-        <status value="active"/>
-        <experimental value="false"/>
-        <date value="2026-09-01"/>
-        <publisher value="Medizininformatik Initiative"/>
-        <contact>
-          <telecom>
-            <system value="url"/>
-            <value value="https://www.medizininformatik-initiative.de"/>
-          </telecom>
-        </contact>
-        <description value="SearchParameter for Condition.verificationStatus"/>
-        <code value="verification-status"/>
-        <base value="Condition"/>
-        <type value="token"/>
-        <expression value="Condition.verificationStatus"/>
-      </SearchParameter>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-condition-evidence-detail"/>
-    <resource>
-      <SearchParameter>
-        <id value="mii-sp-meta-condition-evidence-detail"/>
-        <meta>
-          <extension url="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license">
-            <valueCode value="CC-BY-4.0"/>
-          </extension>
-          <extension url="http://hl7.org/fhir/StructureDefinition/package-source">
-            <extension url="packageId">
-              <valueId value="de.medizininformatikinitiative.kerndatensatz.meta"/>
-            </extension>
-            <extension url="version">
-              <valueString value="2027.0.0-ballot"/>
-            </extension>
-            <extension url="uri">
-              <valueUri value="https://www.medizininformatik-initiative.de/fhir/modul-meta"/>
-            </extension>
-          </extension>
-          <profile value="https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"/>
-        </meta>
-        <text>
-          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><a name="SearchParameter_mii-sp-meta-condition-evidence-detail"> </a><p class="res-header-id"><b>Generated Narrative: SearchParameter mii-sp-meta-condition-evidence-detail</b></p><a name="mii-sp-meta-condition-evidence-detail"> </a><a name="hcmii-sp-meta-condition-evidence-detail"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-meta-searchparameter.html">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Policy</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}">Package</span></p><p><b>Artifact Version Algorithm</b>: <a href="http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver">Version Algorithm: semver</a> (SemVer)</p><p><b>url</b>: <a href="SearchParameter-mii-sp-meta-condition-evidence-detail.html">MII_SP_Meta_Condition_Evidence_Detail</a></p><p><b>version</b>: 2027.0.0-ballot</p><p><b>name</b>: MII_SP_Meta_Condition_Evidence_Detail</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href="https://www.medizininformatik-initiative.de">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>SearchParameter for Condition.evidence.detail</p>
-</div><p><b>code</b>: evidence-detail</p><p><b>base</b>: Condition</p><p><b>type</b>: Reference</p><p><b>expression</b>: Condition.evidence.detail</p><p><b>target</b>: List</p></div></div>
-        </text>
-        <extension url="http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy">
-          <valueCodeableConcept>
-            <coding>
-              <system value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes"/>
-              <version value="3.0.0"/>
-              <code value="package"/>
-              <display value="Package"/>
-            </coding>
-          </valueCodeableConcept>
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm">
-          <valueCoding>
-            <system value="http://hl7.org/fhir/version-algorithm"/>
-            <code value="semver"/>
-            <display value="SemVer"/>
-          </valueCoding>
-        </extension>
-        <url value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-evidence-detail"/>
-        <version value="2027.0.0-ballot"/>
-        <name value="MII_SP_Meta_Condition_Evidence_Detail"/>
-        <status value="active"/>
-        <experimental value="false"/>
-        <date value="2026-09-01"/>
-        <publisher value="Medizininformatik Initiative"/>
-        <contact>
-          <telecom>
-            <system value="url"/>
-            <value value="https://www.medizininformatik-initiative.de"/>
-          </telecom>
-        </contact>
-        <description value="SearchParameter for Condition.evidence.detail"/>
-        <code value="evidence-detail"/>
-        <base value="Condition"/>
-        <type value="reference"/>
-        <expression value="Condition.evidence.detail"/>
-        <target value="List"/>
-      </SearchParameter>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-observation-hasmember"/>
-    <resource>
-      <SearchParameter>
-        <id value="mii-sp-meta-observation-hasmember"/>
-        <meta>
-          <extension url="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license">
-            <valueCode value="CC-BY-4.0"/>
-          </extension>
-          <extension url="http://hl7.org/fhir/StructureDefinition/package-source">
-            <extension url="packageId">
-              <valueId value="de.medizininformatikinitiative.kerndatensatz.meta"/>
-            </extension>
-            <extension url="version">
-              <valueString value="2027.0.0-ballot"/>
-            </extension>
-            <extension url="uri">
-              <valueUri value="https://www.medizininformatik-initiative.de/fhir/modul-meta"/>
-            </extension>
-          </extension>
-          <profile value="https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"/>
-        </meta>
-        <text>
-          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><a name="SearchParameter_mii-sp-meta-observation-hasmember"> </a><p class="res-header-id"><b>Generated Narrative: SearchParameter mii-sp-meta-observation-hasmember</b></p><a name="mii-sp-meta-observation-hasmember"> </a><a name="hcmii-sp-meta-observation-hasmember"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-meta-searchparameter.html">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Policy</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}">Package</span></p><p><b>Artifact Version Algorithm</b>: <a href="http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver">Version Algorithm: semver</a> (SemVer)</p><p><b>url</b>: <a href="SearchParameter-mii-sp-meta-observation-hasmember.html">MII_SP_Meta_Observation_hasMember</a></p><p><b>version</b>: 2027.0.0-ballot</p><p><b>name</b>: MII_SP_Meta_Observation_hasMember</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href="https://www.medizininformatik-initiative.de">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>SearchParameter for Observation.hasMember</p>
-</div><p><b>code</b>: has-member</p><p><b>base</b>: Observation</p><p><b>type</b>: Reference</p><p><b>expression</b>: Observation.hasMember</p></div></div>
-        </text>
-        <extension url="http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy">
-          <valueCodeableConcept>
-            <coding>
-              <system value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes"/>
-              <version value="3.0.0"/>
-              <code value="package"/>
-              <display value="Package"/>
-            </coding>
-          </valueCodeableConcept>
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm">
-          <valueCoding>
-            <system value="http://hl7.org/fhir/version-algorithm"/>
-            <code value="semver"/>
-            <display value="SemVer"/>
-          </valueCoding>
-        </extension>
-        <url value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-hasmember"/>
-        <version value="2027.0.0-ballot"/>
-        <name value="MII_SP_Meta_Observation_hasMember"/>
-        <status value="active"/>
-        <experimental value="false"/>
-        <date value="2026-09-01"/>
-        <publisher value="Medizininformatik Initiative"/>
-        <contact>
-          <telecom>
-            <system value="url"/>
-            <value value="https://www.medizininformatik-initiative.de"/>
-          </telecom>
-        </contact>
-        <description value="SearchParameter for Observation.hasMember"/>
-        <code value="has-member"/>
-        <base value="Observation"/>
-        <type value="reference"/>
-        <expression value="Observation.hasMember"/>
-      </SearchParameter>
-    </resource>
-  </entry>
-  <entry>
     <fullUrl value="https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-procedure-complication"/>
     <resource>
       <SearchParameter>
@@ -7301,134 +7040,6 @@
         <base value="CarePlan"/>
         <type value="reference"/>
         <expression value="CarePlan.addresses"/>
-      </SearchParameter>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-observation-focus"/>
-    <resource>
-      <SearchParameter>
-        <id value="mii-sp-meta-observation-focus"/>
-        <meta>
-          <extension url="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license">
-            <valueCode value="CC-BY-4.0"/>
-          </extension>
-          <extension url="http://hl7.org/fhir/StructureDefinition/package-source">
-            <extension url="packageId">
-              <valueId value="de.medizininformatikinitiative.kerndatensatz.meta"/>
-            </extension>
-            <extension url="version">
-              <valueString value="2027.0.0-ballot"/>
-            </extension>
-            <extension url="uri">
-              <valueUri value="https://www.medizininformatik-initiative.de/fhir/modul-meta"/>
-            </extension>
-          </extension>
-          <profile value="https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"/>
-        </meta>
-        <text>
-          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><a name="SearchParameter_mii-sp-meta-observation-focus"> </a><p class="res-header-id"><b>Generated Narrative: SearchParameter mii-sp-meta-observation-focus</b></p><a name="mii-sp-meta-observation-focus"> </a><a name="hcmii-sp-meta-observation-focus"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-meta-searchparameter.html">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Policy</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}">Package</span></p><p><b>Artifact Version Algorithm</b>: <a href="http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver">Version Algorithm: semver</a> (SemVer)</p><p><b>url</b>: <a href="SearchParameter-mii-sp-meta-observation-focus.html">MII_SP_Meta_Observation_Focus</a></p><p><b>version</b>: 2027.0.0-ballot</p><p><b>name</b>: MII_SP_Meta_Observation_Focus</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href="https://www.medizininformatik-initiative.de">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>SearchParameter for Observation.focus</p>
-</div><p><b>code</b>: focus</p><p><b>base</b>: Observation</p><p><b>type</b>: Reference</p><p><b>expression</b>: Observation.focus</p></div></div>
-        </text>
-        <extension url="http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy">
-          <valueCodeableConcept>
-            <coding>
-              <system value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes"/>
-              <version value="3.0.0"/>
-              <code value="package"/>
-              <display value="Package"/>
-            </coding>
-          </valueCodeableConcept>
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm">
-          <valueCoding>
-            <system value="http://hl7.org/fhir/version-algorithm"/>
-            <code value="semver"/>
-            <display value="SemVer"/>
-          </valueCoding>
-        </extension>
-        <url value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-focus"/>
-        <version value="2027.0.0-ballot"/>
-        <name value="MII_SP_Meta_Observation_Focus"/>
-        <status value="active"/>
-        <experimental value="false"/>
-        <date value="2026-09-01"/>
-        <publisher value="Medizininformatik Initiative"/>
-        <contact>
-          <telecom>
-            <system value="url"/>
-            <value value="https://www.medizininformatik-initiative.de"/>
-          </telecom>
-        </contact>
-        <description value="SearchParameter for Observation.focus"/>
-        <code value="focus"/>
-        <base value="Observation"/>
-        <type value="reference"/>
-        <expression value="Observation.focus"/>
-      </SearchParameter>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://www.medizininformatik-initiative.de/SearchParameter/mii-sp-meta-observation-encounter"/>
-    <resource>
-      <SearchParameter>
-        <id value="mii-sp-meta-observation-encounter"/>
-        <meta>
-          <extension url="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-license">
-            <valueCode value="CC-BY-4.0"/>
-          </extension>
-          <extension url="http://hl7.org/fhir/StructureDefinition/package-source">
-            <extension url="packageId">
-              <valueId value="de.medizininformatikinitiative.kerndatensatz.meta"/>
-            </extension>
-            <extension url="version">
-              <valueString value="2027.0.0-ballot"/>
-            </extension>
-            <extension url="uri">
-              <valueUri value="https://www.medizininformatik-initiative.de/fhir/modul-meta"/>
-            </extension>
-          </extension>
-          <profile value="https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter"/>
-        </meta>
-        <text>
-          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><a name="SearchParameter_mii-sp-meta-observation-encounter"> </a><p class="res-header-id"><b>Generated Narrative: SearchParameter mii-sp-meta-observation-encounter</b></p><a name="mii-sp-meta-observation-encounter"> </a><a name="hcmii-sp-meta-observation-encounter"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-meta-searchparameter.html">MII PR Meta SearchParameter</a></p></div><p><b>Artifact Version Policy</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes package}">Package</span></p><p><b>Artifact Version Algorithm</b>: <a href="http://hl7.org/fhir/R5/codesystem-version-algorithm.html#version-algorithm-semver">Version Algorithm: semver</a> (SemVer)</p><p><b>url</b>: <a href="SearchParameter-mii-sp-meta-observation-encounter.html">MII_SP_Meta_Observation_Encounter</a></p><p><b>version</b>: 2027.0.0-ballot</p><p><b>name</b>: MII_SP_Meta_Observation_Encounter</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2026-09-01</p><p><b>publisher</b>: Medizininformatik Initiative</p><p><b>contact</b>: <a href="https://www.medizininformatik-initiative.de">https://www.medizininformatik-initiative.de</a></p><p><b>description</b>: </p><div><p>SearchParameter for Observation.encounter</p>
-</div><p><b>code</b>: encounter</p><p><b>base</b>: Observation</p><p><b>type</b>: Reference</p><p><b>expression</b>: Observation.encounter</p></div></div>
-        </text>
-        <extension url="http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy">
-          <valueCodeableConcept>
-            <coding>
-              <system value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes"/>
-              <version value="3.0.0"/>
-              <code value="package"/>
-              <display value="Package"/>
-            </coding>
-          </valueCodeableConcept>
-        </extension>
-        <extension url="http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm">
-          <valueCoding>
-            <system value="http://hl7.org/fhir/version-algorithm"/>
-            <code value="semver"/>
-            <display value="SemVer"/>
-          </valueCoding>
-        </extension>
-        <url value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-encounter"/>
-        <version value="2027.0.0-ballot"/>
-        <name value="MII_SP_Meta_Observation_Encounter"/>
-        <status value="active"/>
-        <experimental value="false"/>
-        <date value="2026-09-01"/>
-        <publisher value="Medizininformatik Initiative"/>
-        <contact>
-          <telecom>
-            <system value="url"/>
-            <value value="https://www.medizininformatik-initiative.de"/>
-          </telecom>
-        </contact>
-        <description value="SearchParameter for Observation.encounter"/>
-        <code value="encounter"/>
-        <base value="Observation"/>
-        <type value="reference"/>
-        <expression value="Observation.encounter"/>
       </SearchParameter>
     </resource>
   </entry>

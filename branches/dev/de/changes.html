@@ -296,6 +296,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
+  <li><a href="#version-202700-draft" id="markdown-toc-version-202700-draft">Version 2027.0.0-draft</a></li>
   <li><a href="#version-202700-ballot" id="markdown-toc-version-202700-ballot">Version 2027.0.0-ballot</a></li>
   <li><a href="#version-202600" id="markdown-toc-version-202600">Version 2026.0.0</a></li>
   <li><a href="#version-202503" id="markdown-toc-version-202503">Version 2025.0.3</a></li>
@@ -306,6 +307,27 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 </div>
 <!-- markdownlint-disable MD041 -->
+
+<h3 id="version-202700-draft">Version 2027.0.0-draft</h3>
+
+<p><strong>Datum:</strong> unveröffentlicht</p>
+
+<ul>
+  <li><strong>Removed:</strong> Die <code class="language-plaintext highlighter-rouge">SearchParameter</code>-Ressourcen <code class="language-plaintext highlighter-rouge">verification-status</code> und
+<code class="language-plaintext highlighter-rouge">evidence-detail</code> für <code class="language-plaintext highlighter-rouge">Condition</code>, <code class="language-plaintext highlighter-rouge">has-member</code>, <code class="language-plaintext highlighter-rouge">focus</code> und <code class="language-plaintext highlighter-rouge">encounter</code> für
+<code class="language-plaintext highlighter-rouge">Observation</code> sowie <code class="language-plaintext highlighter-rouge">source</code> für <code class="language-plaintext highlighter-rouge">DeviceMetric</code> wurden <code class="language-plaintext highlighter-rouge">retired</code>, da sie
+identisch mit den Suchparametern des FHIR-Core-Standards sind. Sie sind nicht
+mehr Teil der Collection- und Transaction-Bundles.</li>
+  <li><strong>Changed:</strong> Die <code class="language-plaintext highlighter-rouge">SearchParameter</code>-Ressource <code class="language-plaintext highlighter-rouge">part-of</code>
+(<code class="language-plaintext highlighter-rouge">mii-sp-meta-medication-partof</code>) gilt nur noch für
+<code class="language-plaintext highlighter-rouge">MedicationAdministration</code>; für <code class="language-plaintext highlighter-rouge">MedicationStatement</code> gilt der Suchparameter
+<code class="language-plaintext highlighter-rouge">part-of</code> aus dem FHIR-Core-Standard.</li>
+  <li><strong>Changed:</strong> Das CapabilityStatement verweist nun statt auf die MII- auf die
+FHIR-Core-Definitionen für <code class="language-plaintext highlighter-rouge">verification-status</code> und <code class="language-plaintext highlighter-rouge">evidence-detail</code> an
+<code class="language-plaintext highlighter-rouge">Condition</code>, <code class="language-plaintext highlighter-rouge">has-member</code>, <code class="language-plaintext highlighter-rouge">focus</code> und <code class="language-plaintext highlighter-rouge">encounter</code> an <code class="language-plaintext highlighter-rouge">Observation</code>, <code class="language-plaintext highlighter-rouge">source</code>
+an <code class="language-plaintext highlighter-rouge">DeviceMetric</code> sowie <code class="language-plaintext highlighter-rouge">part-of</code> an <code class="language-plaintext highlighter-rouge">MedicationStatement</code>; siehe
+<a href="CapabilityStatement-mii-cps-meta-server-capabilities.html">MII CapabilityStatement Meta Server Capabilities</a>.</li>
+</ul>
 
 <h3 id="version-202700-ballot">Version 2027.0.0-ballot</h3>
 
@@ -406,7 +428,7 @@ Kerndatensatz veröffentlichte Artefakte bereitzustellen.</li>
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de">NUM-DIZ</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.meta#2027.0.0-ballot basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Fri, Oct 30, 2026 11:29+0000">2026-10-30</span>
+          Erstellt <span title="Fri, Oct 30, 2026 11:42+0000">2026-10-30</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

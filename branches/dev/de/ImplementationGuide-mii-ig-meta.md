@@ -3080,7 +3080,7 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
         "reference" : "SearchParameter/mii-sp-meta-medication-partof"
       },
       "name" : "mii-sp-meta-medication-partof",
-      "description" : "Suchparameter für (MedicationAdministration|MedicationStatement).partOf",
+      "description" : "Suchparameter für MedicationAdministration.partOf",
       "exampleBoolean" : false
     },
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-hasmember | *Version*:2027.0.0-ballot |
-| Active as of 2026-09-01 | *Computable Name*:MII_SP_Meta_Observation_hasMember |
+| Retired as of 2026-09-01 | *Computable Name*:MII_SP_Meta_Observation_hasMember |
 
  
 SearchParameter for Observation.hasMember 
@@ -66,7 +66,7 @@ SearchParameter for Observation.hasMember
   "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-hasmember",
   "version" : "2027.0.0-ballot",
   "name" : "MII_SP_Meta_Observation_hasMember",
-  "status" : "active",
+  "status" : "retired",
   "experimental" : false,
   "date" : "2026-09-01",
   "publisher" : "NUM-DIZ",

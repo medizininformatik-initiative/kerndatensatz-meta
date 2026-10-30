@@ -327,6 +327,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
+  <li><a href="#version-202700-draft" id="markdown-toc-version-202700-draft">Version 2027.0.0-draft</a></li>
   <li><a href="#version-202700-ballot" id="markdown-toc-version-202700-ballot">Version 2027.0.0-ballot</a></li>
   <li><a href="#version-202600" id="markdown-toc-version-202600">Version 2026.0.0</a></li>
   <li><a href="#version-202503" id="markdown-toc-version-202503">Version 2025.0.3</a></li>
@@ -337,6 +338,27 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 </div>
 <!-- markdownlint-disable MD041 -->
+
+<h3 id="version-202700-draft">Version 2027.0.0-draft</h3>
+
+<p><strong>Date:</strong> unreleased</p>
+
+<ul>
+  <li><strong>Removed:</strong> The <code class="language-plaintext highlighter-rouge">SearchParameter</code> resources <code class="language-plaintext highlighter-rouge">verification-status</code> and
+<code class="language-plaintext highlighter-rouge">evidence-detail</code> for <code class="language-plaintext highlighter-rouge">Condition</code>, <code class="language-plaintext highlighter-rouge">has-member</code>, <code class="language-plaintext highlighter-rouge">focus</code> and <code class="language-plaintext highlighter-rouge">encounter</code> for
+<code class="language-plaintext highlighter-rouge">Observation</code>, and <code class="language-plaintext highlighter-rouge">source</code> for <code class="language-plaintext highlighter-rouge">DeviceMetric</code> were retired because they are
+identical to the FHIR Core search parameters. They are no longer part of the
+collection and transaction bundles.</li>
+  <li><strong>Changed:</strong> The <code class="language-plaintext highlighter-rouge">SearchParameter</code> resource <code class="language-plaintext highlighter-rouge">part-of</code>
+(<code class="language-plaintext highlighter-rouge">mii-sp-meta-medication-partof</code>) now covers <code class="language-plaintext highlighter-rouge">MedicationAdministration</code> only;
+for <code class="language-plaintext highlighter-rouge">MedicationStatement</code>, the FHIR Core search parameter <code class="language-plaintext highlighter-rouge">part-of</code> applies.</li>
+  <li><strong>Changed:</strong> The CapabilityStatement now references the FHIR Core
+definitions instead of the MII ones for <code class="language-plaintext highlighter-rouge">verification-status</code> and
+<code class="language-plaintext highlighter-rouge">evidence-detail</code> on <code class="language-plaintext highlighter-rouge">Condition</code>, <code class="language-plaintext highlighter-rouge">has-member</code>, <code class="language-plaintext highlighter-rouge">focus</code> and <code class="language-plaintext highlighter-rouge">encounter</code> on
+<code class="language-plaintext highlighter-rouge">Observation</code>, <code class="language-plaintext highlighter-rouge">source</code> on <code class="language-plaintext highlighter-rouge">DeviceMetric</code> and <code class="language-plaintext highlighter-rouge">part-of</code> on
+<code class="language-plaintext highlighter-rouge">MedicationStatement</code>; see
+<a href="CapabilityStatement-mii-cps-meta-server-capabilities.html">MII CapabilityStatement Meta Server Capabilities</a>.</li>
+</ul>
 
 <h3 id="version-202700-ballot">Version 2027.0.0-ballot</h3>
 
@@ -434,7 +456,7 @@ machine-processable licence information for published artifacts.</li>
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de">NUM-DIZ</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.meta#2027.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Fri, Oct 30, 2026 11:29+0000">2026-10-30</span>
+          Generated <span title="Fri, Oct 30, 2026 11:42+0000">2026-10-30</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

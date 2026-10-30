@@ -12,12 +12,7 @@
 | Active Stand: 2026-09-01 | *Maschinenlesbarer Name*:MII_SP_Meta_Medication_PartOf |
 
  
-
-| | |
-| :--- | :--- |
-| Suchparameter für (MedicationAdministration | MedicationStatement).partOf |
-
- 
+Suchparameter für MedicationAdministration.partOf 
 
 
 
@@ -95,7 +90,7 @@
       "value" : "https://www.netzwerk-universitaetsmedizin.de"
     }]
   }],
-  "description" : "Suchparameter für (MedicationAdministration|MedicationStatement).partOf",
+  "description" : "Suchparameter für MedicationAdministration.partOf",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -104,14 +99,10 @@
     }]
   }],
   "code" : "part-of",
-  "base" : ["MedicationStatement", "MedicationAdministration"],
+  "base" : ["MedicationAdministration"],
   "type" : "reference",
-  "expression" : "MedicationAdministration.partOf | MedicationStatement.partOf",
-  "target" : ["MedicationAdministration",
-  "Procedure",
-  "MedicationDispense",
-  "MedicationStatement",
-  "Observation"]
+  "expression" : "MedicationAdministration.partOf",
+  "target" : ["MedicationAdministration", "Procedure"]
 }
 
 ```

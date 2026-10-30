@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-devicemetric-source | *Version*:2027.0.0-ballot |
-| Active as of 2026-09-01 | *Computable Name*:MII_SP_Meta_DeviceMetric_Source |
+| Retired as of 2026-09-01 | *Computable Name*:MII_SP_Meta_DeviceMetric_Source |
 
  
 Suchparameter für DeviceMetric.source 
@@ -66,7 +66,7 @@ Suchparameter für DeviceMetric.source
   "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-devicemetric-source",
   "version" : "2027.0.0-ballot",
   "name" : "MII_SP_Meta_DeviceMetric_Source",
-  "status" : "active",
+  "status" : "retired",
   "experimental" : false,
   "date" : "2026-09-01",
   "publisher" : "NUM-DIZ",

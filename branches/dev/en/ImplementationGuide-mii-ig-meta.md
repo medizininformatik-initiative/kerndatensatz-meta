@@ -3080,7 +3080,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "SearchParameter/mii-sp-meta-medication-partof"
       },
       "name" : "mii-sp-meta-medication-partof",
-      "description" : "Suchparameter für (MedicationAdministration|MedicationStatement).partOf",
+      "description" : "Suchparameter für MedicationAdministration.partOf",
       "exampleBoolean" : false
     },
     {
