@@ -1,1 +1,0 @@
-Alias: $spdx-license = http://hl7.org/fhir/spdx-license

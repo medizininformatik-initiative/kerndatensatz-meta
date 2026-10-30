@@ -139,11 +139,6 @@ rather than assumed.
 
 - **No test guards the `CDS_DEV_CLIENT_CERT_PASSWORD` secret name** in this
   repository. A re-introduction of a wrong secret name would not be caught.
-- **`qc/custom.rules.yaml` is not verified end to end.** The MII reusable
-  validation that reads it (on the `master` branch) is not called by this
-  repository's workflows, so its `parse` glob has not been observed against a
-  real run here. The .NET job is
-  configured upstream to pass regardless, so the worst case is log noise.
 - **`scripts/language-model-check.sh` is curated, not exhaustive.** It matches
   line by line, so a claim split across a line break passes. It was tested
   against 20 phrasings and catches every wording that has actually occurred

@@ -91,7 +91,7 @@ Base-template facts verified against
 
 | Area | Repo artifact | Wiki page | Check point | Applies to |
 |------|---------------|-----------|-------------|------------|
-| Naming conventions (prefixes) | `qc/custom.rules.yaml` (id/name regex rules) | Namenskonventionen für FHIR‐Ressourcen in der MII | Does the rule set cover the wiki's current prefix list (PR, EX, LM, VS, CS, CM, SM, NS, SP, CPS, OD, IG, QST, OBSDEF, MSR, EXA, PARAM)? | Module |
+| Naming conventions (prefixes) | `qc/custom.rules.yaml` (id/name regex rules) | Namenskonventionen für FHIR‐Ressourcen in der MII | Does the rule set cover the wiki's current prefix list (PR, EX, LM, VS, CS, CM, SM, NS, SP, CPS, OD, IG, QST, OBSDEF, MSR, EXA, PARAM)? Not applicable to Meta: it does not call the reusable validation workflows; FHIR validation runs in the IG Publisher build. | Module |
 | Naming conventions (name) | `input/fsh/*.fsh` | Namenskonventionen → Element name | `name` in Upper_Snake_Case with resource-type prefix? | Module |
 | Naming conventions (id) | `input/fsh/*.fsh` | Namenskonventionen → Element id | `id` kebab-case, ≤ 64 chars, corresponds to `name`? | Module |
 | Naming conventions (title) | `input/fsh/*.fsh` | Namenskonventionen → Element title | Pattern `MII <Präfix> <ModulAbk> <Beschreibung>`? | Module |
@@ -101,11 +101,11 @@ Base-template facts verified against
 | Terminology (versions) | terminology documentation, `sushi-config.yaml` | Terminology Version Policy | Dated SNOMED INTERNATIONAL version per CalVer release? | Module |
 | Terminology (instance data) | profiles/documentation | Terminology Version Policy | `Coding.version` required for ICD-10-GM/OPS/ATC? | Module |
 | CI (validation) | `.github/workflows/` | GitHub Reusable Validation Workflows | Are `ci_dotnet_validation.yml` + `ci_java_validation.yml` consumed via `workflow_call` (pinned to a fixed ref) instead of reimplemented? | Module |
-| CI (required files) | `qc/custom.rules.yaml`, `advisor.json` | GitHub Reusable Validation Workflows | Both files present, paths per the wiki folder structure? | Module |
+| CI (required files) | `qc/custom.rules.yaml`, `advisor.json` | GitHub Reusable Validation Workflows | Both files present, paths per the wiki folder structure? Not applicable to Meta: it does not call the reusable validation workflows; FHIR validation runs in the IG Publisher build. | Module |
 | Release | release workflow / process docs | Module Release Workflow | Modules: `release/vYYYY.n.n` branch → PR to `main` → tag per wiki. Template repos deliberately use SemVer/Release Please instead — for them, only report that the divergence is documented. | Both (different expectations) |
 | Notification | release workflow (`NOTIFY_ZULIP` step) | GitHub Reusable Validation Workflows | Release notification to Zulip, stream `MII-Kerndatensatz`? | Both |
 | Dev container | `.devcontainer/devcontainer.json` | Dev Container ‐ IG Publisher | Image `ghcr.io/cybernop/vscode-ig-publisher:…`, `.fhir` bind mount? | Both |
-| Folder structure | repo root | Übersicht Ordnerstruktur ‐ Forge-basiertes KDS-Modul / GitHub Reusable Validation Workflows | Module: `input/fsh/`, `fsh-generated/resources/`, `qc/`, `advisor.json`, `sushi-config.yaml`. Template repo: `package/`, `includes/`, `content/` mirroring the base template layout. | Both (different expectations) |
+| Folder structure | repo root | Übersicht Ordnerstruktur ‐ Forge-basiertes KDS-Modul / GitHub Reusable Validation Workflows | Module: `input/fsh/`, `fsh-generated/resources/`, `qc/`, `advisor.json` (not here — see the CI row), `sushi-config.yaml`. Template repo: `package/`, `includes/`, `content/` mirroring the base template layout. | Both (different expectations) |
 
 ## Wiki pages (verified to exist, 2026-07-21)
 
