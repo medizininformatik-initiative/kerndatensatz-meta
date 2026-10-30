@@ -75,6 +75,8 @@ The dev container (`.devcontainer/`) carries the pinned toolchain; see
 adjust a test in `.github/workflows/search-param-test/test-search.sh`. The
 matching resources must exist in
 [`mii-testdata`](https://github.com/medizininformatik-initiative/mii-testdata).
+Then run `node scripts/gen-cps-search-examples.mjs`: positive tests become the
+example queries in the CapabilityStatement, and CI fails when the two drift.
 See [the test README](.github/workflows/search-param-test/README.md).
 
 ## Workflows

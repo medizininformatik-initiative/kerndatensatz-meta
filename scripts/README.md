@@ -32,6 +32,7 @@ list — not a glob, because this directory now holds unrelated helpers too.
 | --- | --- | --- |
 | `convention-check.mjs` | Asserts the MII metadata contract (id/canonical/name/packageId, pinned versions) and that OPTIONAL (0..1) menu pages are decided before a release (M9, `docs/optional-pages.md`) | `convention-check.yml` |
 | `language-model-check.sh` | Fails the build when prose contradicts the English-default / German-translation language model | `convention-check.yml` |
+| `gen-cps-search-examples.mjs` | Writes the positive queries of `search-param-test/test-search.sh` as `GET [base]/…` examples into the `documentation` of the matching `searchParam` in the CapabilityStatement; its test fails when the two drift apart | a maintainer after changing a search test; checked by `convention-check.yml` |
 | `check-updates.mjs` | Reports drift between the pinned toolchain and what upstream released | `dependency-check.yml` |
 | `set-su-termserv-secrets.sh` | Validates an SU-TermServ client certificate and uploads it as repository secrets | a maintainer, once |
 | `seed-comparison-cache.sh` | Places the previous release's `package.tgz` (a GitHub Release asset) into `~/.fhir/packages` so the publisher's `version-comparison` can load it; no-op while the parameter is commented out | `ig-publisher.yml`, `module-release.yml`, `go-publish.yml` (before the publisher) |
