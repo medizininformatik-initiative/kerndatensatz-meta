@@ -433,14 +433,10 @@ Usage: #definition
 * status = #active
 * experimental = false
 * date = "2026-09-01"
-* description = "Suchparameter für (MedicationAdministration|MedicationStatement).partOf"
+* description = "Suchparameter für MedicationAdministration.partOf"
 * code = #part-of
-* base[+] = #MedicationStatement
-* base[+] = #MedicationAdministration 
+* base = #MedicationAdministration
 * type = #reference
-* expression = "MedicationAdministration.partOf | MedicationStatement.partOf"
+* expression = "MedicationAdministration.partOf"
 * target[+] = #MedicationAdministration
 * target[+] = #Procedure
-* target[+] = #MedicationDispense
-* target[+] = #MedicationStatement
-* target[+] = #Observation
