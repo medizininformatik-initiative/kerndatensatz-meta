@@ -7,12 +7,12 @@ Suchparameter, sortiert nach dem Ressourcentyp, für den sie gelten.
 * **Code** ist der Name, der in einer Suchanfrage verwendet wird, und verlinkt
   auf die vollständige Definition.
 * **Ausdruck** ist der FHIRPath-Ausdruck, den der Server indiziert.
-* **Beispiel** zeigt eine Suchanfrage, die die Suchparameter-Tests in der CI
-  gegen einen FHIR-Server mit den
-  [MII-Testdaten](https://github.com/medizininformatik-initiative/mii-testdata)
-  ausführen. Dieselben Beispiele sind im
-  [CapabilityStatement](CapabilityStatement-mii-cps-meta-server-capabilities.html)
-  dokumentiert. Ein Suchparameter ohne Beispiel hat noch keinen Test.
+
+Beispielanfragen sind im
+[CapabilityStatement](CapabilityStatement-mii-cps-meta-server-capabilities.html)
+dokumentiert: Jede wird in der CI gegen einen FHIR-Server mit den
+[MII-Testdaten](https://github.com/medizininformatik-initiative/mii-testdata)
+ausgeführt. Ein Suchparameter ohne Beispiel hat noch keinen Test.
 
 Um alle Suchparameter in einen FHIR-Server zu laden, nutzen Sie das
 [Collection-Bundle](Bundle-mii-exa-meta-searchparam-collection-bundle.html) oder
@@ -21,7 +21,7 @@ das [Transaction-Bundle](Bundle-mii-exa-meta-searchparam-transaction-bundle.html
 ### Aktive Suchparameter
 
 {% sql {
-  "query": "SELECT (SELECT group_concat(b.value, ', ') FROM json_each(CAST(s.Json AS TEXT), '$.base') b) AS Base, json_extract(CAST(s.Json AS TEXT), '$.code') AS Code, s.Web, json_extract(CAST(s.Json AS TEXT), '$.type') AS Type, json_extract(CAST(s.Json AS TEXT), '$.expression') AS Expression, (SELECT group_concat(replace(replace(d, '**Examples** (tested in CI):' || char(10) || char(10), ''), '**Example** (tested in CI): ', ''), char(10)) FROM (SELECT DISTINCT json_extract(p.value, '$.documentation') AS d FROM Resources c, json_each(CAST(c.Json AS TEXT), '$.rest[0].resource') r, json_each(r.value, '$.searchParam') p WHERE c.Type = 'CapabilityStatement' AND json_extract(p.value, '$.definition') = s.Url AND d IS NOT NULL)) AS Example FROM Resources s WHERE s.Type = 'SearchParameter' AND s.Status <> 'retired' ORDER BY Base, Code",
+  "query": "SELECT (SELECT group_concat(b.value, ', ') FROM json_each(CAST(s.Json AS TEXT), '$.base') b) AS Base, json_extract(CAST(s.Json AS TEXT), '$.code') AS Code, s.Web, json_extract(CAST(s.Json AS TEXT), '$.type') AS Type, json_extract(CAST(s.Json AS TEXT), '$.expression') AS Expression FROM Resources s WHERE s.Type = 'SearchParameter' AND s.Status <> 'retired' ORDER BY Base, Code",
   "class": "grid",
   "columns": [
     {
@@ -44,11 +44,6 @@ das [Transaction-Bundle](Bundle-mii-exa-meta-searchparam-transaction-bundle.html
       "title": "Ausdruck",
       "type": "text",
       "source": "Expression"
-    },
-    {
-      "title": "Beispiel",
-      "type": "markdown",
-      "source": "Example"
     }
   ]
 } %}
