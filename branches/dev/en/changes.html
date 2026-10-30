@@ -67,8 +67,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"11"}
-    h3,h4,h5,h6{--heading-prefix:"11"}</style>
+    <style type="text/css">h2{--heading-prefix:"12"}
+    h3,h4,h5,h6{--heading-prefix:"12"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -237,7 +237,7 @@
       <li><a href="profiles.html">Profiles</a></li>
       <li><a href="extensions.html">Extensions</a></li>
       <li><a href="capability-statements.html">Capability Statements</a></li>
-      <li><a href="artifacts.html#2">Search Parameters</a></li>
+      <li><a href="search-parameters.html">Search Parameters</a></li>
       <li><a href="logical-models.html">Logical Models</a></li>
       <li><a href="code-systems.html">Code Systems</a></li>
       <li><a href="examples.html">Examples</a></li>
@@ -344,6 +344,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p><strong>Date:</strong> unreleased</p>
 
 <ul>
+  <li><strong>Added:</strong> A <a href="search-parameters.html">search parameter overview</a> listing
+every active search parameter with its resource type, type, FHIRPath
+expression and an example query, and the retired search parameters.</li>
+  <li><strong>Added:</strong> The CapabilityStatement documents an example query for every
+search parameter covered by the CI search tests; see
+<a href="CapabilityStatement-mii-cps-meta-server-capabilities.html">MII CapabilityStatement Meta Server Capabilities</a>.</li>
   <li><strong>Removed:</strong> The <code class="language-plaintext highlighter-rouge">SearchParameter</code> resources <code class="language-plaintext highlighter-rouge">verification-status</code> and
 <code class="language-plaintext highlighter-rouge">evidence-detail</code> for <code class="language-plaintext highlighter-rouge">Condition</code>, <code class="language-plaintext highlighter-rouge">has-member</code>, <code class="language-plaintext highlighter-rouge">focus</code> and <code class="language-plaintext highlighter-rouge">encounter</code> for
 <code class="language-plaintext highlighter-rouge">Observation</code>, and <code class="language-plaintext highlighter-rouge">source</code> for <code class="language-plaintext highlighter-rouge">DeviceMetric</code> were retired because they are
@@ -456,7 +462,7 @@ machine-processable licence information for published artifacts.</li>
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de">NUM-DIZ</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.meta#2027.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Fri, Oct 30, 2026 11:42+0000">2026-10-30</span>
+          Generated <span title="Fri, Oct 30, 2026 12:20+0000">2026-10-30</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

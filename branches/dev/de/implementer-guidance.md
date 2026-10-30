@@ -13,6 +13,6 @@ Nutzen Sie das [herunterladbare FHIR-Paket](downloads.md) als versionierte Quell
 Bei der Implementierung von Suchparametern:
 
 * Verwenden Sie das [MII-SearchParameter-Profil](StructureDefinition-mii-pr-meta-searchparameter.md) als Grundlage. Es definiert die Mindestanforderungen, die im MII-Kerndatensatz veröffentlichte SearchParameter-Ressourcen erfüllen müssen.
-* Prüfen Sie die [Suchparameterliste](artifacts.md#2) und das [CapabilityStatement des Meta-Moduls](capability-statements.md), um die zusätzlich für den MII-Kerndatensatz definierten benutzerdefinierten Suchparameter zu ermitteln.
+* Prüfen Sie die [Suchparameterliste](search-parameters.md) und das [CapabilityStatement des Meta-Moduls](capability-statements.md), um die zusätzlich für den MII-Kerndatensatz definierten benutzerdefinierten Suchparameter zu ermitteln.
 * Für den gebündelten Import in einen FHIR-Server stehen auf der Seite [Beispiele](examples.md) ein SearchParameter-Collection-Bundle und ein SearchParameter-Transaction-Bundle bereit. Beide Bundles enthalten sämtliche aktiven SearchParameter-Ressourcen, die dieses Modul veröffentlicht.
 

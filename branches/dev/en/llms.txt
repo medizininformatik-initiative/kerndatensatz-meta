@@ -17,6 +17,7 @@
 * [Profiles](profiles.md)
 * [Translation Information](translationinfo.md)
 * [Extensions](extensions.md)
+* [Search Parameters](search-parameters.md)
 * [Examples](examples.md)
 * [Code Systems](code-systems.md)
 

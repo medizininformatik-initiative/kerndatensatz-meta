@@ -9,6 +9,8 @@
 
 **Datum:** unveröffentlicht
 
+* **Added:** Eine [Übersicht der Suchparameter](search-parameters.md) mit allen aktiven Suchparametern samt Ressourcentyp, Typ, FHIRPath-Ausdruck und einer Beispielanfrage sowie den zurückgezogenen Suchparametern.
+* **Added:** Das CapabilityStatement dokumentiert für jeden Suchparameter, den die Suchparameter-Tests in der CI abdecken, eine Beispielanfrage; siehe [MII CapabilityStatement Meta Server Capabilities](CapabilityStatement-mii-cps-meta-server-capabilities.md).
 * **Removed:** Die `SearchParameter`-Ressourcen `verification-status` und `evidence-detail` für `Condition`, `has-member`, `focus` und `encounter` für `Observation` sowie `source` für `DeviceMetric` wurden `retired`, da sie identisch mit den Suchparametern des FHIR-Core-Standards sind. Sie sind nicht mehr Teil der Collection- und Transaction-Bundles.
 * **Changed:** Die `SearchParameter`-Ressource `part-of` (`mii-sp-meta-medication-partof`) gilt nur noch für `MedicationAdministration`; für `MedicationStatement` gilt der Suchparameter `part-of` aus dem FHIR-Core-Standard.
 * **Changed:** Das CapabilityStatement verweist nun statt auf die MII- auf die FHIR-Core-Definitionen für `verification-status` und `evidence-detail` an `Condition`, `has-member`, `focus` und `encounter` an `Observation`, `source` an `DeviceMetric` sowie `part-of` an `MedicationStatement`; siehe [MII CapabilityStatement Meta Server Capabilities](CapabilityStatement-mii-cps-meta-server-capabilities.md).
