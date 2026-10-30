@@ -2,14 +2,12 @@
 # Dependabot cannot see: de.medizininformatikinitiative.template,
 # fhir2.base.template, the FHIR package dependencies, IG Publisher, SUSHI,
 # Jekyll. Dependabot has no FHIR-package ecosystem and cannot parse
-# sushi-config.yaml — this workflow IS the coverage for those pins, including
-# the THO/Extensions-Pack lockstep with meta via scripts/meta-pin-drift.mjs).
+# sushi-config.yaml — this workflow IS the coverage for those pins).
 #
 # Purpose:   run scripts/check-updates.mjs and surface version drift as ONE
 #            continuously-updated tracking issue ("Dependency status <YYYYWww>",
-#            label: dependencies). Proposes only — never bumps anything itself.
-#            A module created from this template inherits this workflow
-#            unchanged (see docs/maintenance.md).
+#            label: dependencies). Proposes only — never bumps anything itself
+#            (see docs/maintenance.md).
 # Triggers:  schedule (Mondays 06:00 UTC) + workflow_dispatch. There is no
 #            "mode" input: only the tracking-issue path exists. A PR-per-drift
 #            path is sketched at the bottom of this file; add the input, the
@@ -42,7 +40,7 @@ jobs:
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
-      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
           node-version: "22"
 
@@ -55,22 +53,8 @@ jobs:
         # the has_updates output), never via the exit code.
         run: node scripts/check-updates.mjs --format=markdown > drift.md
 
-      - name: Meta pin drift (THO + Extensions Pack)
-        # The IG Publisher injects the LATEST THO/extensions release when a
-        # module does not pin them DIRECTLY (its auto-add guard reads only
-        # this IG's own dependsOn — PublisherIGLoader, verified at the pinned
-        # release). The module therefore pins both; this step warns when the
-        # pins drift from what the PINNED meta package ships. Meta is
-        # resolved via the FHIR package registries with the npm protocol
-        # (packages.fhir.org, fallback packages.simplifier.net) — never from
-        # a repo or an IG download page. Warning only — never fails the run;
-        # the section lands in the same tracking issue as the drift report.
-        run: |
-          node scripts/meta-pin-drift.mjs --markdown-out meta-drift.md
-          cat meta-drift.md >> drift.md
-
       - name: Upload drift report
-        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: drift-report
           path: drift.md

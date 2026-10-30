@@ -4,8 +4,8 @@
 parts it cannot invent — the prose that explains *why* a profile looks the way it
 does.
 
-**Prerequisites.** A module that builds (see
-[create a new module](create-a-new-module.md)) and at least one profile
+**Prerequisites.** A local build that works (see
+[first build in the dev container](first-build-in-devcontainer.md)) and at least one profile
 ([add a profile](add-a-profile.md)).
 
 ## What you get for free

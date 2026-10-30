@@ -1,26 +1,32 @@
+# OS / editor
 .DS_Store
 Thumbs.db
-/input-cache
-/output
-/temp
-/template
-fsh-generated/includes
-/fsh-generated/
+.history
+.vscode
+
+# IG Publisher build output and caches
+/input-cache/
 /output/
 /temp/
 /template/
-/input-cache/
+/translations/
 publisher.jar
-ImplementationGuide-medizininformatikinitiative-modulmedikation-implementationguide.json
-.vscode
+
+# SUSHI output — mirrored to the fsh-generated branch by publish-fsh-generated.yml
+/fsh-generated/
 fsh-index.json
 fsh-index.txt
-terminologie/CodeSystem/core-location-identifier.CodeSystem.json
+
+# IG Publisher helper scripts (fetched by _updatePublisher)
+_build.bat
+_build.sh
 _gencontinuous.bat
 _gencontinuous.sh
 _genonce.bat
 _genonce.sh
 _updatePublisher.bat
 _updatePublisher.sh
-_build.bat
-_build.sh
+
+# Locally installed catalog skills / template checkouts
+.github/skills*
+/mii-ig-template

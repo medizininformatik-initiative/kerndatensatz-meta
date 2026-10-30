@@ -21,10 +21,16 @@ this split, and keeping it makes MII modules navigable the same way):
 
 | File | What it is |
 |---|---|
-| `aliases.fsh` | the root-level `Alias:` list (basis idiom) — every `$name` shortcut shared by all files, reduced to the module-independent entries. Add the code systems your module binds. |
+| `aliases.fsh` | the root-level `Alias:` list (basis idiom) — every `$name` shortcut shared by all files. Add the code systems a new artifact binds. |
+| `searchparameters/` | the cross-module `SearchParameter` instances (`mii-sp-meta-*.fsh`) and the collection/transaction Bundles that package them (`mii-sp-meta-bundle.fsh`). Every change needs a test in `.github/workflows/search-param-test/test-search.sh`. |
+| `profiles/MII_PR_Meta_SearchParameter.fsh` | the profile every MII SearchParameter conforms to |
+| `extensions/mii-ex-meta-license-codeable.fsh` | the licence extension |
+| `codesystems/mii-cs-meta-diz-standorte.fsh` | the DIZ-Standorte CodeSystem — see [`docs/recipes/add-a-diz-standort.md`](../../docs/recipes/add-a-diz-standort.md) |
+| `capabilitystatements/mii-cps-meta-server-capabilities.fsh` | the server CapabilityStatement |
 | `rulesets/` | the shared `RuleSet:` library ported from basis — version, publisher, licence, CRMI metadata, package source, translations, test-data label, CapabilityStatement helpers. See `rulesets/README.md`. |
-| `profiles/example-patient.fsh`, `instances/example-patient-instance.fsh` | the one worked starter artifact, showing the full metadata `insert` block for a profile and for an example. Replace them with your module's artifacts. |
 | `parameters/manifest.fsh` | the expansion-parameters manifest as FSH — commented out, because the authoritative copy is the JSON in `input/resources/` (see `input/resources/README.md`). |
+
+`instances/` and `logicals/` are currently empty.
 
 An `Alias:` is plain text substitution applied across the whole project, so a
 duplicate alias with a different value is a SUSHI error. A few aliases live next

@@ -11,9 +11,7 @@ entry.
 
 ## How optional entries are marked
 
-Every optional page ships in **three visible forms**, chosen to fit the
-scaffold's existing conventions (placeholder table, `[TODO]` banners, the
-convention check):
+An undecided optional page is marked in **three visible forms**:
 
 1. **In the rendered preview** — a banner at the top of the page ("Optional
    page (0..1)…", `ig-highlight` style, in both languages), so a module lead
@@ -37,7 +35,7 @@ convention check):
 
 | Menu entry (cluster) | Page | Keep it when … | Drop it when … |
 | --- | --- | --- | --- |
-| Guidance for Researchers (Guidance) | `researcher-guidance.md` | your module's data needs research-specific interpretation notes | the guidance page covers everything |
+| Guidance for Researchers (Guidance) | `researcher-guidance.md` | the module's data needs research-specific interpretation notes | the guidance page covers everything |
 | Extensions (Artifacts) | `extensions.md` | the module defines its own extensions | it defines none |
 | Search Parameters (Artifacts) | `search-parameters.md` | the module defines its own search parameters | it defines none (cross-module ones live in the Meta module) |
 | Operations (Artifacts) | `operations.md` | the module defines FHIR operations | it defines none |
@@ -69,9 +67,9 @@ For any optional page `<page>.md` remove, in the same commit:
 3. **the `pages:` entry** — the two lines (`<page>.md:` + `title:`) in
    `sushi-config.yaml`
 4. **the `.po` unit** — the page's `msgid`/`msgstr` block in
-   `input/translations/de/ImplementationGuide-<your-ig-id>.po`
+   `input/translations/de/ImplementationGuide-mii-ig-meta.po`
 5. **inbound links** — grep the remaining pages for `<page>.html` and reroute
-   (`git grep -n '<page>.html' input/`). The scaffold's known cross-links:
+   (`git grep -n '<page>.html' input/`). The known cross-links:
    `profiles.md` ↔ `extensions.md` and `value-sets.md` ↔ `code-systems.md`
    link each other in both languages — when you remove one of a pair, drop the
    sentence that links it from its partner.
@@ -91,10 +89,3 @@ five touches above are exactly the places a page is wired in.
 - **`extensions.md` / `value-sets.md` / `code-systems.md` /
   `search-parameters.md` / `operations.md`**: partner links per step 5; no
   other wiring.
-
-## Relationship to the demo page (M8)
-
-`rendering-artifacts.md` is **not** an optional menu entry — it is the
-scaffold's demonstration page with its own release gate (M8) and removal list
-(see `docs/recipes/render-existing-artifacts.md`). The mechanisms are
-deliberately parallel: both are visible in development and fail a release.

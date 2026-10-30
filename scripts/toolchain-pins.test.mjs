@@ -18,15 +18,16 @@ const WORKFLOWS = [
   ".github/workflows/go-publish.yml",
   ".github/workflows/ig-publisher.yml",
   ".github/workflows/module-release.yml",
-  // Template-repo only — the first-run bootstrap removes it from a created
-  // module, which readIfPresent below tolerates. It matters here because the
-  // release demo is the artifact the Pages root index calls "the release": a
-  // demo rendered by a different IG Publisher than the previews it is compared
-  // against would be a silent difference in exactly that artifact.
-  ".github/workflows/release-demo.yml",
 ];
 
 const KEYS = ["PUBLISHER_VERSION", "PUBLISHER_SHA256", "SUSHI_VERSION", "JEKYLL_VERSION"];
+
+// Workflows that run SUSHI but not the IG Publisher — they carry only a
+// SUSHI_VERSION pin, which must match the build workflows'.
+const SUSHI_ONLY_WORKFLOWS = [
+  ".github/workflows/publish-fsh-generated.yml",
+  ".github/workflows/search-param-tests.yml",
+];
 
 function readIfPresent(relativePath) {
   const file = `${repository}${relativePath}`;
@@ -59,3 +60,18 @@ for (const key of KEYS) {
     }
   });
 }
+
+test("SUSHI_VERSION in every SUSHI-only workflow matches the build workflows", () => {
+  const [build] = presentWorkflows();
+  assert.ok(build, "no build workflow found");
+  const expected = parseWorkflowEnvPin(build.text, "SUSHI_VERSION");
+
+  for (const file of SUSHI_ONLY_WORKFLOWS) {
+    const text = readIfPresent(file);
+    if (text === null) continue;
+    assert.doesNotMatch(text, /fsh-sushi@latest/, `${file} installs fsh-sushi@latest`);
+    const value = parseWorkflowEnvPin(text, "SUSHI_VERSION");
+    assert.ok(value, `${file} has no SUSHI_VERSION env pin`);
+    assert.equal(value, expected, `${file} pins SUSHI_VERSION=${value}, ${build.file} pins ${expected}`);
+  }
+});

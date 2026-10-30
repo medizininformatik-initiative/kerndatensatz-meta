@@ -1,6 +1,6 @@
 # Recipe: first build in the dev container
 
-**Goal.** Go from "I want to author an MII KDS module" to a first local IG build — with
+**Goal.** Go from a fresh checkout of this repository to a first local build of the Meta IG — with
 a working, fully equipped FHIR toolchain (Java 17, Node 22, SUSHI,
 Ruby/Jekyll, Graphviz) — without installing any of those tools on your own
 machine. Everything runs inside a container that VS Code builds for you.
@@ -23,41 +23,30 @@ access (the first build downloads the base image and tools):
 
 ## Steps
 
-1. Create your module repository from this template: on
-   [the template's GitHub page](https://github.com/medizininformatik-initiative/mii-kds-module-template)
-   click **"Use this template" → "Create a new repository"**.
-   Mind the warning in the `README.md`: tick **"Include all branches"** (or
-   run the first-run bootstrap afterwards) so your repository gets the `dev`
-   branch.
-
-   *(You can also run this recipe directly on a clone of the template repo —
-   for example to try the toolchain or to contribute to the template
-   itself.)*
-
-2. Clone **your new module repository** and switch to the `dev` branch:
+1. Clone the repository and switch to the `dev` branch:
 
    ```sh
-   git clone https://github.com/<your-org>/<your-module-repo>.git
-   cd <your-module-repo>
+   git clone https://github.com/medizininformatik-initiative/kerndatensatz-meta.git
+   cd kerndatensatz-meta
    git checkout dev
    ```
 
    > **Why `dev`:** day-to-day work happens on `dev`; `main` only receives
    > releases. See `CONTRIBUTING.md`.
 
-3. Open the folder in VS Code:
+2. Open the folder in VS Code:
 
    ```sh
    code .
    ```
 
-4. VS Code detects `.devcontainer/devcontainer.json` and shows a toast:
+3. VS Code detects `.devcontainer/devcontainer.json` and shows a toast:
    *"Folder contains a Dev Container configuration file. Reopen folder to
    develop in a container"*. Click **Reopen in Container**.
    If you missed the toast: press `F1` and run
    **Dev Containers: Reopen in Container**.
 
-5. Wait for the first build to finish. Expect **5–15 minutes**: the base
+4. Wait for the first build to finish. Expect **5–15 minutes**: the base
    image is downloaded, Ruby is compiled from source, and SUSHI, Jekyll and
    Graphviz are installed. Every later "Reopen in Container" reuses the built
    image and takes seconds.
@@ -66,13 +55,13 @@ access (the first build downloads the base image and tools):
    > Ruby 3.3.12 with `ruby-build` (compile, not binary download) so the
    > version is exact and reproducible. This is a one-time cost.
 
-6. Verify the toolchain. Open a terminal inside VS Code
+5. Verify the toolchain. Open a terminal inside VS Code
    (`Terminal → New Terminal` — it now runs *inside* the container) and run:
 
    ```sh
    java -version     # OpenJDK 17.x
    node --version    # v22.23.1
-   sushi --version   # SUSHI v3.20.1
+   sushi --version   # SUSHI v3.21.0
    ruby --version    # ruby 3.3.12
    jekyll --version  # jekyll 4.4.1
    dot -V            # graphviz version ...
@@ -80,24 +69,16 @@ access (the first build downloads the base image and tools):
 
    Each command must print the version shown in the comment.
 
-7. **Replace the `{{PLACEHOLDER}}` values first — SUSHI cannot compile
-   them.** In a new module, work through the placeholder list in the
-   `sushi-config.yaml` header (`id: mii-ig-{{MODULE_SLUG}}` is not a valid id
-   until you do). On a clone of the template repo itself there is nothing to
-   replace permanently: substitute throwaway values locally and do not commit
-   them — CI does the same for its self-check build
-   (`.github/workflows/ig-publisher.yml`, workspace-only substitution).
-
-   Then run SUSHI to compile the module's FSH sources into FHIR resources:
+6. Run SUSHI to compile the module's FSH sources into FHIR resources:
 
    ```sh
    sushi .
    ```
 
    SUSHI reads `sushi-config.yaml` and `input/fsh/` and writes the generated
-   resources to `fsh-generated/`.
+   resources to `fsh-generated/` (gitignored — never commit it).
 
-8. Run the IG Publisher to build the full IG website locally:
+7. Run the IG Publisher to build the full IG website locally:
 
    ```sh
    curl -L -o publisher.jar \
@@ -133,7 +114,7 @@ access (the first build downloads the base image and tools):
 
 - VS Code runs inside the container (the green remote indicator in the
   bottom-left corner shows the dev container name).
-- All six version checks in step 6 print the pinned versions.
+- All six version checks in step 5 print the pinned versions.
 - `sushi .` reports `0 Errors` and the publisher produces
   `output/index.html` plus a QA report.
 - **Green CI build:** pushing your branch gives you the same build in CI
@@ -150,7 +131,7 @@ access (the first build downloads the base image and tools):
 | First build seems stuck at the Ruby feature | Ruby is compiling from source; this is the slow step. | Wait — it can take several minutes. Do not cancel. |
 | Publisher dies with `java.lang.OutOfMemoryError: Java heap space` | The IG Publisher needs more heap than the JVM default; KDS builds with many dependencies are memory-hungry. | Run it with an explicit heap limit: `java -Xmx6g -jar publisher.jar -ig ig.ini` (raise to `-Xmx8g` if your machine has the RAM; also raise Docker Desktop's memory limit if the container itself is capped). |
 | Publisher hangs or fails while "Fetching" / "Loading" packages; or errors mention a corrupt package | The FHIR package cache (`~/.fhir/packages`) has a truncated download from an interrupted run. | Delete the offending package directory from `~/.fhir/packages` on the host (or the whole `packages` folder in the worst case) and rebuild — the cache repopulates. |
-| QA report notes that value sets could not be expanded; log shows a fallback notice about `tx.fhir.org` | No SU-TermServ client certificate configured, so the build used the public HL7 terminology server, which does not carry every MII-specific value set. | Expected fallback behavior, not a failure — see the terminology note in step 8. For full expansion a maintainer configures the SU-TermServ client-certificate secret (Germany-only access). |
+| QA report notes that value sets could not be expanded; log shows a fallback notice about `tx.fhir.org` | No SU-TermServ client certificate configured, so the build used the public HL7 terminology server, which does not carry every MII-specific value set. | Expected fallback behavior, not a failure — see the terminology note in step 7. For full expansion a maintainer configures the SU-TermServ client-certificate secret (Germany-only access). |
 | `npm install -g` or `gem install` fails with `EACCES` / "permission denied" during post-create | A stale container image from an older configuration. | Run `F1` → **Dev Containers: Rebuild Container Without Cache**. |
 | Downloads fail with TLS/certificate errors | A corporate proxy intercepts TLS. | Configure Docker and VS Code for your proxy (ask your IT for the CA certificate), or build outside the proxied network once. |
 | You edited `.devcontainer/devcontainer.json` but nothing changed | The old container is still running. | `F1` → **Dev Containers: Rebuild Container**. |

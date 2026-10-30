@@ -1,6 +1,6 @@
 # Multi-language support (English default, German translation)
 
-This template produces a bilingual IG with **English as the default language
+This IG is bilingual, with **English as the default language
 and German as the translation**, the same model as
 [kerndatensatz-basis](https://github.com/medizininformatik-initiative/kerndatensatz-basis).
 
@@ -25,7 +25,7 @@ input/
         │                            #   names as input/pagecontent/)
         ├── includes/                # Translated fragments (e.g. menu.xml)
         ├── intro-notes/             # Translated per-artifact intro/notes
-        ├── ImplementationGuide-<ig-id>.po
+        ├── ImplementationGuide-mii-ig-meta.po
         │                            # IG-level catalogue: page titles,
         │                            #   breadcrumbs, table of contents
         └── *.po                     # Resource translations (PO format), e.g.
@@ -51,10 +51,9 @@ input/
    `input/translations/de/includes/`.
 5. **Page titles, breadcrumbs and the table of contents:** these come from the
    ImplementationGuide resource, not from the pages, so they need the IG-level
-   catalogue `ImplementationGuide-<your-ig-id>.po`. This repository ships it as
-   `ImplementationGuide-mii-ig-meta.po` — **rename it** to match your
-   IG's `id` when you replace the placeholders, or the publisher never finds it
-   and silently leaves those labels in English. Each `msgid` is the exact page
+   catalogue `ImplementationGuide-mii-ig-meta.po`. Its name must match the
+   IG's `id` (`mii-ig-meta`), or the publisher never finds it and silently
+   leaves those labels in English. Each `msgid` is the exact page
    `title` from `sushi-config.yaml`, plus the generated root page
    `"Table of Contents"`. See
    [`docs/recipes/add-translation.md`](../../docs/recipes/add-translation.md) §5.

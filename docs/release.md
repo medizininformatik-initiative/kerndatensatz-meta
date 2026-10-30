@@ -1,16 +1,14 @@
-# Releasing a module (MII CalVer — the reference)
+# Releasing the Meta module (MII CalVer — the reference)
 
-This page is the **reference** for how a module built from this template is
-released. It maps the automation in
+This page is the **reference** for how the Meta module is released. It maps the automation in
 [`.github/workflows/module-release.yml`](../.github/workflows/module-release.yml)
 one-to-one onto the MII
 **[Module Release Workflow](https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Module-Release-Workflow)**
 (the authoritative wiki page), and says plainly which steps are **automated** and
 which are **human-gated**.
 
-> **Who is this for:** a maintainer who has already created a module from this
-> template and wants to cut a version. New to the module itself? Start with the
-> README and `docs/recipes/create-a-new-module.md` first.
+> **Who is this for:** a maintainer who wants to cut a version of the Meta
+> module. New to the module itself? Start with the README first.
 
 > The click-by-click walkthrough lives in the companion recipe
 > `docs/recipes/cut-a-release.md`. Read this page once to understand the model;
@@ -18,24 +16,17 @@ which are **human-gated**.
 
 ---
 
-## The one hard rule: CalVer here, SemVer there — never mix
+## The one hard rule: CalVer, one release path
 
-- **Modules** (this repo, and every repo created from this template) are
-  released **only** with **CalVer `YYYY.n.n`** via the **MII Module Release
-  Workflow** — the tag-driven, human-gated automation described below. **Never
-  Release Please.**
-- **The two template repos** (`ig-template-mii-kds` and `mii-kds-module-template`
-  itself) release **themselves** with **SemVer** via **Release Please**. That is
-  *tooling* versioning, and it lives only on those template repos.
+The module is released **only** with **CalVer `YYYY.n.n`** via the **MII Module
+Release Workflow** — the tag-driven, human-gated automation described below
+(`module-release.yml` → `go-publish.yml`). No other tool cuts versions or tags
+in this repository.
 
-> **Why the hard boundary:** two release systems on one repo corrupt the version
-> history — a module carrying Release Please would auto-cut SemVer tags that
-> fight the MII CalVer process. One repo, one release mechanism. That is why the
-> **first-run bootstrap removes** all five template-only files from a new
-> module — Release Please (`release-please.yml`, `release-please-config.json`,
-> `.release-please-manifest.json`), `notify-zulip.yml` and the template
-> `CHANGELOG.md` — but **keeps** `module-release.yml`, `go-publish.yml`, and the
-> preview workflow. See `docs/recipes/first-run-setup.md`.
+> **Simplifier mirror:** while package releases are still provided via
+> Simplifier, `publish-fsh-generated.yml` mirrors the SUSHI output of `main`
+> and `release/**` to the `fsh-generated` branch, which Simplifier syncs from.
+> It is not a release mechanism and needs no action here.
 
 ### CalVer format
 
@@ -77,7 +68,7 @@ prerelease, and the preview build labels itself `2027.0.0-draft.1` this way).
 
 ## Step by step, mapped to the MII Module Release Workflow
 
-The headings below match the wiki's numbered steps. This template is
+The headings below match the wiki's numbered steps. The module is
 **IG-Publisher-native** (it builds with SUSHI + the HL7 IG Publisher, not the
 Simplifier bake pipeline), so the Simplifier-specific wiki sub-steps are replaced
 by the IG-Publisher / `go-publish.yml` path — noted inline where they differ.
@@ -90,7 +81,7 @@ git pull origin dev
 git checkout -b release/v2026.0.1   # release/** arms the strict convention check
 ```
 
-> **Why off `dev`, not `main`:** this template uses the `dev` → `main` branching
+> **Why off `dev`, not `main`:** this repository uses the `dev` → `main` branching
 > model (see `CONTRIBUTING.md`). Release preparation happens on a short-lived
 > branch off `dev`; the release itself is the `dev` → `main` promotion. (The wiki
 > branches off `main` because the reference modules use a single-branch model —
@@ -108,25 +99,14 @@ git checkout -b release/v2026.0.1   # release/** arms the strict convention chec
 > `comparison-v<previous>/index.html` and annotates changed elements on the
 > artifact pages — link that report from the version's changelog section,
 > next to the prose explanation of any breaking change. Until the first
-> formal publication the comparator has no version history to read; this
-> template repo demonstrates the report anyway with the validator's compare
-> command on its preview (`comparison-demo/` — see `docs/workflows.md`).
+> formal publication the comparator has no version history to read.
 
-> **First release of a module: delete the scaffold's demonstration page
-> first.** The convention check hard-fails a `release/**` branch while it is
-> present (M8) and its message lists every file to remove; the same list is in
-> [render existing artifacts](recipes/render-existing-artifacts.md) step 4.
-> The same gate covers the **optional (0..1) pages**: any page still carrying
-> its `OPTIONAL-PAGE` banner fails the release check (M9) until you keep or
-> remove it per [optional-pages.md](optional-pages.md) — and the **scaffold's
-> illustrative examples** (M11): the highlighted *Person* example in the
-> module-specific section of `security-and-privacy.md` must be deleted (both
-> languages) before the first release; write your module's own aspects there
-> or adopt the section's documented default text.
+> **The release branch arms the strict convention check.** Any optional
+> (0..1) page still carrying its `OPTIONAL-PAGE` banner fails it (M9) until
+> you keep or remove it per [optional-pages.md](optional-pages.md).
 
-Bump the CalVer version everywhere it appears **in this template**. The wiki's
-file list names Simplifier's `package.json` and `guide.yaml`, which are not
-present here; the surface in this scaffold is:
+Bump the CalVer version everywhere it appears. The wiki's file list names
+Simplifier's `guide.yaml`, which is not present here; the surface is:
 
 - **`sushi-config.yaml`**
   - `version:` — the module version (e.g. `version: "2026.0.1"`).
@@ -137,11 +117,12 @@ present here; the surface in this scaffold is:
     hard-fails when it does not equal the publication date (its
     *Validate release input and publication request* step).
   - the `resource-approvalDate` extension's `valueDate` — the date *this*
-    release was approved by whoever governs your module (for a KDS module, its
+    release was approved by whoever governs the module (for a KDS module, its
     responsible MII body). If no formal approval step applies, use the date you
     decided to release and say so in `input/pagecontent/metadata.md` (and its
     German mirror): the extension records an approval date, it does not create
     an approval process.
+- **`package.json`** — `version`, kept equal to `sushi-config.yaml`.
 - **`publication-request.json`**
   - `version` — the CalVer version.
   - `path` — ends in the version (`.../<version>`); update it too.
@@ -155,10 +136,10 @@ present here; the surface in this scaffold is:
   - `version.fsh` — `version` / `^version` and the package-source version.
   - `meta-profile.fsh` — `meta.profile[+] = "<canonical>|<version>"`.
   - `cps-rules.fsh` — `supportedProfile[+] = "<profile>|<version>"`.
-  See [`input/fsh/rulesets/README.md`](../input/fsh/rulesets/README.md) for the
-  placeholder-to-file table.
+  See [`input/fsh/rulesets/README.md`](../input/fsh/rulesets/README.md) for
+  what each ruleset stamps.
 - **Approval-date call sites** — every `insert CRMIApprovalDate(<date>)` in
-  `input/fsh/` (e.g. `input/fsh/profiles/example-patient.fsh`). `crmi.fsh`
+  `input/fsh/` (e.g. `input/fsh/profiles/MII_PR_Meta_SearchParameter.fsh`). `crmi.fsh`
   takes the date at the call site, so bumping the ruleset is not enough.
 - **The narrative pages** — `index.md`, `changes.md`, `metadata.md` and
   `version-history.md`, and their German mirrors under
@@ -212,10 +193,9 @@ Pushing the tag triggers **`module-release.yml`** (automated):
 - the **`release`** job then creates a **draft** GitHub Release named for the tag,
   with GitHub's auto-generated notes plus a body template to fill in.
 
-> **On the un-instantiated template repo this workflow does nothing:** a `guard`
-> job detects unreplaced `{{…}}` placeholders and every downstream job skips with
-> a `::notice`. Only a real, bootstrapped module runs it for real. This also
-> keeps a template-repo SemVer tag from ever driving the module path.
+> **The `guard` job** skips every downstream job with a `::notice` if
+> `sushi-config.yaml` still holds unreplaced `{{…}}` placeholders. It never
+> triggers here, since the module's metadata is filled in.
 
 ### 6. Package publishing — *does not apply*
 
@@ -233,11 +213,6 @@ gated **`go-publish.yml`** in step 8.
 
 Publishing fires the **`notify_zulip`** job (automated): it posts to the MII
 Zulip organisation, stream `MII-Kerndatensatz`, **topic `Releases`**.
-
-> **Why topic `Releases` (not `Template Releases`):** `Releases` is the **module**
-> topic; the *template repos* announce their SemVer tooling releases under
-> `Template Releases`. Keeping the two topics apart keeps the CalVer/SemVer split
-> legible in chat too.
 
 > **The announcement key:** `notify_zulip` maps `secrets.ZULIP_API_KEY`
 > to an env var; when the key is absent the job **skips with a `::notice`, it

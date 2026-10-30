@@ -8,10 +8,6 @@
 #            any version-like paths (e.g. 2026.0.0/) are NEVER cleanup
 #            candidates — they belong to -go-publish, not to previews.
 #
-# PROPAGATION: like ig-publisher.yml, this file is meant to propagate to
-#            modules created from this template (the first-run bootstrap keeps
-#            it) — every module's gh-pages benefits from the same sweep.
-#
 # Triggers:  weekly schedule (Sundays 00:00 UTC) + manual workflow_dispatch
 #            (with a dry_run input to list stale previews without deleting).
 #
@@ -246,4 +242,4 @@ jobs:
     steps:
       - name: Deploy Pages artifact
         id: deployment
-        uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128 # v5.0.0
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1

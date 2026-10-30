@@ -9,14 +9,6 @@
 #            removes previews of deleted branches (keyed on the .branch-name
 #            marker each preview drops here).
 #
-# PROPAGATION: this workflow — unlike Release Please — is MEANT to
-#            propagate to modules created from this template. A module maintainer
-#            wants dev/feature previews too, and the MII modules work this way
-#            — for example kerndatensatz-basis builds on every branch, which shows
-#            modules use exactly this model. The first-run bootstrap KEEPS this
-#            file (and cleanup-gh-pages.yml); it strips only the template's own
-#            release automation.
-#
 # Triggers:  push to every branch except main / gh-pages / fsh-generated, plus
 #            manual workflow_dispatch (rebuild one branch's preview). main and
 #            tags are reserved for formal publication and are NOT previewed here.
@@ -40,22 +32,10 @@
 #            otherwise falls back to the public HL7 server https://tx.fhir.org
 #            with a ::notice. The build must not hard-fail without the cert;
 #            some MII-specific value sets may then not fully expand (a QA note).
-#
-# TEMPLATE-REPO SELF-CHECK (this repo only — a created module skips it):
-#            sushi-config.yaml here still carries {{PLACEHOLDER}} values, so the
-#            repo is not buildable as-is. The "Template-repo self-check
-#            substitution" step is gated to the template repository and, in a
-#            WORKSPACE COPY that is NEVER committed, sed-substitutes the
-#            documented self-check values (MODULE_SLUG=template, …) into
-#            sushi-config.yaml, ig.ini and the build inputs so a real build can
-#            run. The template line itself is left alone: both the repository-URL
-#            default and `#ig-template` (the vendored fallback folder) are
-#            buildable, so the full build + preview run.
-#            Should a repository ever carry a TODO template line instead, the
-#            build DEGRADES at runtime to a SUSHI-only check with a clear
-#            ::notice — no edit to this file needed either way. In a created
-#            module every placeholder is already replaced and this whole step is
-#            a no-op (it never runs, the repo name differs).
+#            The same fallback applies, with a ::warning, when the cert is set
+#            but SU-TermServ does not answer /fhir/metadata through the proxy
+#            (5 attempts) — a terminology outage degrades the PREVIEW instead of
+#            failing it. module-release.yml and go-publish.yml stay strict.
 #
 # Fixed versions: every Action is pinned to a commit SHA (# vX.Y.Z); the
 #            IG Publisher jar, SUSHI and Jekyll are pinned in the `env:` block
@@ -96,14 +76,14 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  # Pinned toolchain — identical to go-publish.yml, module-release.yml and
-  # (template repo only) release-demo.yml, and the names docs/maintenance.md
-  # tells the maintainer to edit. A workflow cannot read another workflow's
-  # env:, so the four blocks are copies; scripts/toolchain-pins.test.mjs
+  # Pinned toolchain — identical to go-publish.yml and module-release.yml, and
+  # the names docs/maintenance.md tells the maintainer to edit. A workflow
+  # cannot read another workflow's env:, so the blocks are copies;
+  # scripts/toolchain-pins.test.mjs
   # fails the build if they drift apart.
   PUBLISHER_VERSION: "2.3.2"
   PUBLISHER_SHA256: "07c576024df917cc1f879b6b5a64147cd0222d5b4129688e8f0ad9ccce58b1d5"
-  SUSHI_VERSION: "3.20.1"
+  SUSHI_VERSION: "3.21.0"
   JEKYLL_VERSION: "4.4.1"
 
 jobs:
@@ -120,7 +100,7 @@ jobs:
           persist-credentials: false
 
       - name: Set up Node.js
-        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
           node-version: "22"
 
@@ -131,7 +111,7 @@ jobs:
       # Microsoft Build of OpenJDK (the base image's default) — fine for a Java
       # program the container merely runs; CI (Temurin) is the reference.
       - name: Set up Java (for the IG Publisher)
-        uses: actions/setup-java@b6effb05e454b25005698d916606bdc6ffcbf961 # v5.7.0
+        uses: actions/setup-java@b843ebf9b913146b38da2eaa7aeddf76074ae1ad # v6.1.0
         with:
           distribution: temurin
           java-version: "17"
@@ -141,35 +121,17 @@ jobs:
       # `Cannot run program "jekyll" ... No such file or directory`. Pinned to the
       # same Jekyll version as go-publish.yml / the ig-template-mii-kds preview.
       - name: Set up Ruby (for Jekyll)
-        uses: ruby/setup-ruby@95ef2b042f9d7a56d8268cba8559e2842e2ad01b # v1.321.0
+        uses: ruby/setup-ruby@7f797815d8adceb1c412e7abefdd1ab4abc47a5f # v1.335.0
         with:
           ruby-version: "3.3"
 
       - name: Install Jekyll (pinned — the IG template renders via Jekyll)
         run: gem install jekyll -v "${JEKYLL_VERSION}"
 
-      - name: Template-repo self-check substitution (workspace only, never committed)
-        # WHY: this repo ships {{PLACEHOLDER}} values so a module author starts
-        # from a documented scaffold. To let CI still prove the pipeline builds,
-        # substitute the documented self-check values into WORKSPACE copies. The
-        # workflow never commits source, so nothing here reaches the repo. In a
-        # created module the placeholders are gone and this step does not run.
-        #
-        # The value table itself lives in scripts/self-check-substitute.sh rather
-        # than inline here, because release-demo.yml needs the SAME substitution
-        # to render the demo the Pages root index advertises. Two copies of the
-        # table is how the two builds drift apart — exactly the class of bug
-        # release-demo.yml exists to end. Leaving SELF_CHECK_RELEASE_TAG unset
-        # keeps the fixed draft CALVER_VERSION that a preview should carry; the
-        # release demo sets it so the render names the tag it was built from.
-        if: ${{ endsWith(github.repository, '/mii-kds-module-template') }}
-        shell: bash
-        run: bash scripts/self-check-substitute.sh
-
       - name: Disable the version comparison when toggled off
         # ENABLE_VERSION_COMPARISON=false switches the FEATURE off - the real
         # publisher comparison (by deactivating the sushi-config parameter in
-        # the workspace copy before SUSHI reads it) AND the demo below.
+        # the workspace copy before SUSHI reads it).
         if: ${{ vars.ENABLE_VERSION_COMPARISON == 'false' }}
         shell: bash
         run: |
@@ -248,8 +210,30 @@ jobs:
               sleep 2
             done
             if [[ "${ready}" != "true" ]]; then docker logs preview-nginx; exit 1; fi
-            echo "tx=http://127.0.0.1:8090/fhir" >> "${GITHUB_OUTPUT}"
-            echo "Terminology: SU-TermServ via client-certificate proxy" >> "${GITHUB_STEP_SUMMARY}"
+            # The proxy being up says nothing about SU-TermServ behind it: probe
+            # the endpoint the IG Publisher connects to first (and warm it up).
+            # If SU-TermServ stays unreachable, build the PREVIEW against the
+            # public HL7 server instead of failing it. Releases (module-release,
+            # go-publish) deliberately keep failing hard in that case.
+            tx_ok=false
+            for attempt in 1 2 3 4 5; do
+              if curl --silent --fail --max-time 60 --output /dev/null \
+                   -H "Accept: application/fhir+json" "http://127.0.0.1:8090/fhir/metadata"; then
+                tx_ok=true; break
+              fi
+              echo "SU-TermServ /metadata not reachable through the proxy (attempt ${attempt}/5)."
+              if (( attempt < 5 )); then sleep 10; fi
+            done
+            if [[ "${tx_ok}" == "true" ]]; then
+              echo "tx=http://127.0.0.1:8090/fhir" >> "${GITHUB_OUTPUT}"
+              echo "Terminology: SU-TermServ via client-certificate proxy" >> "${GITHUB_STEP_SUMMARY}"
+            else
+              docker logs --tail 50 preview-nginx || true
+              docker rm --force preview-nginx >/dev/null 2>&1 || true
+              echo "tx=https://tx.fhir.org" >> "${GITHUB_OUTPUT}"
+              echo "::warning::SU-TermServ did not answer /fhir/metadata through the proxy after 5 attempts — this PREVIEW is built against the public HL7 terminology server https://tx.fhir.org. Some MII-specific value sets may not fully expand. Re-run the job once SU-TermServ is reachable again."
+              echo "Terminology: **public HL7 fallback (https://tx.fhir.org) — SU-TermServ unreachable**" >> "${GITHUB_STEP_SUMMARY}"
+            fi
           else
             echo "tx=https://tx.fhir.org" >> "${GITHUB_OUTPUT}"
             echo "::notice::No SU-TermServ client certificate configured — falling back to the public HL7 terminology server https://tx.fhir.org. Some MII-specific value sets may not fully expand (a QA note, not a failure)."
@@ -287,119 +271,6 @@ jobs:
           test -s output/index.html
           jq empty output/qa.json
 
-      - name: Template-repo self-check DEMO — render the version-comparison report
-        # Demonstrates what a version delta looks like and where it lives,
-        # using the FHIR validator's compare command (the publisher's own
-        # `version-comparison` needs a formal publication history at the
-        # canonical, which this scaffold will never have). The last dev
-        # preview's package is relabelled 2027.0.0-draft.0 and compared to the
-        # package just built: on dev a self-comparison (a clean, no-changes
-        # report), on a feature branch the REAL delta against dev. The report
-        # lands in output/comparison-demo/ and deploys with the preview.
-        # Template repo only; skip-not-fail throughout.
-        # Toggle: ENABLE_VERSION_COMPARISON=false switches the whole feature
-        # off - this demo and the real publisher comparison alike; unset/true =
-        # on (the repo's usual toggle convention).
-        if: ${{ endsWith(github.repository, '/mii-kds-module-template') && steps.build.outputs.mode == 'full' && vars.ENABLE_VERSION_COMPARISON != 'false' }}
-        env:
-          VALIDATOR_VERSION: "6.5.7"
-          VALIDATOR_SHA256: "e9ee13966d5cef045adf946c3e4ecb57400eaaa459c889f4ec0f68ba23551bff"
-        shell: bash
-        run: |
-          set -euo pipefail
-          canonical="https://www.medizininformatik-initiative.de/fhir/modul-template/StructureDefinition/example-patient"
-          # Org-agnostic on purpose: survives the move to the target GitHub
-          # organisation without an edit.
-          prev_url="https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}/branches/dev/package.tgz"
-          work="${RUNNER_TEMP}/comparison-demo"
-          mkdir -p "${work}"
-          if ! curl -fsSL "${prev_url}" --output "${work}/current-dev.tgz"; then
-            echo "::warning::comparison demo skipped — no dev preview package.tgz reachable."
-            exit 0
-          fi
-          mkdir -p "${work}/prev" && tar -xzf "${work}/current-dev.tgz" -C "${work}/prev"
-          python3 -c '
-          import json, glob, sys
-          for f in glob.glob(sys.argv[1] + "/package/*.json"):
-              try: d = json.load(open(f))
-              except Exception: continue
-              if isinstance(d, dict) and "version" in d:
-                  d["version"] = "2027.0.0-draft.0"
-                  json.dump(d, open(f, "w"), indent=2)
-          ' "${work}/prev"
-          (cd "${work}/prev" && tar -czf "${work}/prev.tgz" package)
-          curl -fsSL "https://github.com/hapifhir/org.hl7.fhir.core/releases/download/${VALIDATOR_VERSION}/validator_cli.jar"             --output "${work}/validator_cli.jar"
-          echo "${VALIDATOR_SHA256}  ${work}/validator_cli.jar" | sha256sum --check
-          mkdir -p output/comparison-demo
-          # After rendering, the compare command calls Desktop.getDesktop() to
-          # open a browser and dies with a HeadlessException on CI - the files
-          # are already on disk at that point, so success is judged by the
-          # rendered index, not by the exit code.
-          java -Xmx4g -jar "${work}/validator_cli.jar" -compare               -dest "$(pwd)/output/comparison-demo" -version 4.0.1 -tx n/a               -ig "${work}/prev.tgz" -ig output/package.tgz               -left "${canonical}|2027.0.0-draft.0"               -right "${canonical}|2027.0.0-draft.1" || true
-          if [ -s output/comparison-demo/index.html ]; then
-            echo "Comparison demo rendered to output/comparison-demo/ (deploys with the preview)."
-            # Link the demo from the QA report: qa.html already carries a
-            # "Previous Version Comparison:" row (here it reports that the
-            # canonical serves no version history - expected pre-publication);
-            # a sibling row right after it links the demo report.
-            python3 -c '
-          import re
-          p = "output/qa.html"
-          h = open(p, encoding="utf-8").read()
-          i = h.find("Previous Version Comparison:")
-          j = h.find("</tr>", i) if i >= 0 else -1
-          if i >= 0 and j >= 0:
-              row = "<tr><td>Version Comparison (demo):</td><td><a href=\"comparison-demo/index.html\">comparison-demo/index.html</a> - the previous dev preview (relabelled 2027.0.0-draft.0) vs this build</td></tr>"
-              h = h[:j+5] + row + h[j+5:]
-              open(p, "w", encoding="utf-8").write(h)
-              print("comparison-demo link injected into qa.html")
-          else:
-              # The anchor is publisher-generated markup: a publisher bump may
-              # rename or restructure it. Warn loudly so the bump PR shows it.
-              print("::warning::qa.html no longer carries the \"Previous Version Comparison:\" row this injection anchors on - the qa link to the comparison demo was NOT added. Re-check the injection against the new IG Publisher qa.html format.")
-          '
-            # Link the demo from the rendered Versioning pages (both languages)
-            # - injected AFTER the build so the link exists only when the
-            # report does: no dead link on a skipped demo, no effect on the QA
-            # link check (inspection already ran), nothing in a created module.
-            python3 -c '
-          import sys
-          blocks = {
-            "output/en/version-history.html": (
-              "machine-generated",
-              "<div class=\"mii-highlight mii-highlight-grey\"><h5>Demonstration (this template repository&#39;s preview only)</h5>"
-              "<p>This preview renders a live demonstration of such a report, produced with the FHIR validator&#39;s "
-              "<code>-compare</code>: the previous dev build (relabelled <code>2027.0.0-draft.0</code>) against this build - "
-              "<a href=\"../comparison-demo/index.html\">open the comparison report</a>. "
-              "On <code>dev</code> it is a self-comparison; on a feature branch it shows the real delta against <code>dev</code>.</p></div>"),
-            "output/de/version-history.html": (
-              "maschinell erzeugten",
-              "<div class=\"mii-highlight mii-highlight-grey\"><h5>Demonstration (nur in der Vorschau dieses Vorlagen-Repositories)</h5>"
-              "<p>Diese Vorschau rendert eine lebende Demonstration eines solchen Berichts, erzeugt mit dem "
-              "<code>-compare</code> des FHIR-Validators: der vorherige dev-Build (umbenannt zu <code>2027.0.0-draft.0</code>) "
-              "gegen diesen Build - <a href=\"../comparison-demo/index.html\">Vergleichsbericht &ouml;ffnen</a>. "
-              "Auf <code>dev</code> ist es ein Selbstvergleich; auf einem Feature-Branch zeigt er das echte Delta gegen&uuml;ber <code>dev</code>.</p></div>"),
-          }
-          for path, (anchor, block) in blocks.items():
-              try:
-                  h = open(path, encoding="utf-8").read()
-              except OSError:
-                  print("::warning::" + path + " not found - comparison-demo link not injected there.")
-                  continue
-              i = h.find(anchor)
-              j = h.find("</p>", i) if i >= 0 else -1
-              if i < 0 or j < 0:
-                  print("::warning::" + path + " no longer contains the anchor text this injection relies on - comparison-demo link not injected there.")
-                  continue
-              h = h[:j+4] + block + h[j+4:]
-              open(path, "w", encoding="utf-8").write(h)
-              print("comparison-demo link injected into " + path)
-          '
-          else
-            rm -rf output/comparison-demo
-            echo "::warning::comparison demo skipped — the validator compare produced no report; the preview deploys without it."
-          fi
-
       - name: Stop terminology proxy
         if: ${{ always() && steps.build.outputs.mode == 'full' }}
         shell: bash
@@ -418,13 +289,29 @@ jobs:
         run: |
           set -euo pipefail
           remote_url="https://x-access-token:${GITHUB_TOKEN}@github.com/${REPO}.git"
-          rm -rf gh-pages
+          # The gh-pages checkout is large (~90k files even shallow); a dropped
+          # connection mid-transfer ("fatal: early EOF") must not fail the
+          # preview. Retry with backoff, starting from a clean directory.
+          clone_with_retry() {
+            local attempt delay
+            for attempt in 1 2 3; do
+              rm -rf gh-pages
+              if git clone "$@" "${remote_url}" gh-pages; then return 0; fi
+              if (( attempt < 3 )); then
+                delay=$(( attempt * 15 ))
+                echo "::warning::git clone of gh-pages failed (attempt ${attempt}/3) — retrying in ${delay}s."
+                sleep "${delay}"
+              fi
+            done
+            echo "::error::git clone of gh-pages failed after 3 attempts."
+            return 1
+          }
           if git ls-remote --heads "${remote_url}" gh-pages | grep -q "."; then
-            git clone --depth 1 --branch gh-pages "${remote_url}" gh-pages
+            clone_with_retry --depth 1 --branch gh-pages
           else
             # First preview ever: orphan-init gh-pages with a .nojekyll marker so
             # Pages serves the IG output verbatim (no Jekyll re-processing).
-            git clone "${remote_url}" gh-pages
+            clone_with_retry
             cd gh-pages
             git config user.name "${GIT_AUTHOR_NAME}"
             git config user.email "${GIT_AUTHOR_EMAIL}"
@@ -445,20 +332,6 @@ jobs:
           cp -R "output/." "${branch_dir}/"
           # Marker consumed by cleanup-gh-pages.yml to detect deleted branches.
           echo "${BRANCH}" > "${branch_dir}/.branch-name"
-          # TEMPLATE REPOSITORY ONLY: (re)generate the root index — a plain
-          # autoindex-style listing of branches/dev/ + the latest demo/<tag>/ —
-          # so it heals on every preview deploy. A created module's site root
-          # stays reserved for the gated -go-publish output, so the generator
-          # never runs there (same guard as release-demo.yml's job).
-          case "${REPO}" in
-            */mii-kds-module-template)
-              if [ -f scripts/gen-pages-index.mjs ]; then
-                node scripts/gen-pages-index.mjs gh-pages "${REPO}"
-              else
-                echo "gen-pages-index.mjs not on this branch yet - root index unchanged (rebase onto dev/main to heal it)"
-              fi
-              ;;
-          esac
           cd gh-pages
           if [[ "${PAGES_ACTIONS_ENABLED}" == "true" ]]; then
             bytes="$(du --bytes --summarize --exclude=.git . | cut -f1)"
@@ -483,9 +356,6 @@ jobs:
         run: |
           base="https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}/branches/${GITHUB_REF_NAME}"
           echo "Preview: ${base}/" >> "${GITHUB_STEP_SUMMARY}"
-          if [ -s output/comparison-demo/index.html ]; then
-            echo "Comparison demo: ${base}/comparison-demo/index.html" >> "${GITHUB_STEP_SUMMARY}"
-          fi
 
       # ── PAGES_ACTIONS_ENABLED mode only: also publish via the Pages Actions
       # pipeline (Settings → Pages → GitHub Actions). Mirrors go-publish.yml's
@@ -512,7 +382,7 @@ jobs:
     steps:
       - name: Deploy Pages artifact
         id: deployment
-        uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128 # v5.0.0
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
 
   announce:
     name: Report preview URL

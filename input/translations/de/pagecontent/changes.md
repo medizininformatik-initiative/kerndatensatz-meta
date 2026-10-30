@@ -5,6 +5,12 @@
 
 **Datum:** unveröffentlicht
 
+* **Added:** Eine [Übersicht der Suchparameter](search-parameters.html) mit
+  allen aktiven Suchparametern samt Ressourcentyp, Typ, FHIRPath-Ausdruck und
+  einer Beispielanfrage sowie den zurückgezogenen Suchparametern.
+* **Added:** Das CapabilityStatement dokumentiert für jeden Suchparameter, den
+  die Suchparameter-Tests in der CI abdecken, eine Beispielanfrage; siehe
+  [MII CapabilityStatement Meta Server Capabilities](CapabilityStatement-mii-cps-meta-server-capabilities.html).
 * **Removed:** Die `SearchParameter`-Ressourcen `verification-status` und
   `evidence-detail` für `Condition`, `has-member`, `focus` und `encounter` für
   `Observation` sowie `source` für `DeviceMetric` wurden `retired`, da sie
@@ -22,8 +28,13 @@
 
 ### Version 2027.0.0-ballot
 
-**Datum:** 01.09.2026
+**Datum:** 10.09.2026
 
+* **Added:** Eine `SearchParameter`-Ressource `asserted-date` für
+  `Condition.extension:assertedDate` (Standardextension
+  `condition-assertedDate`), verwendet u.&nbsp;a. im Basis-Diagnose-Profil
+  sowie im Onkologie- und MTB-Modul; siehe
+  [Kerndatensatz-Suchparameter](artifacts.html#2).
 * **Added:** Abhängigkeit `hl7.terminology.r4`: `7.1.0`
 * **Added:** Abhängigkeit `hl7.fhir.uv.extensions.r4`: `5.2.0`
 * **Added:** Abhängigkeit `hl7.fhir.uv.crmi`: `2.0.0`

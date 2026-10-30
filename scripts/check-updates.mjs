@@ -94,6 +94,32 @@ export function parseWorkflowEnvPin(yamlText, key) {
 }
 
 /**
+ * Read a `NAME="value"` assignment from a shell script (comments ignored).
+ * Used for the SearchParameter-test pins in search-param-test/load-data.sh.
+ */
+export function parseShellVarPin(shText, name) {
+  const re = new RegExp(`^\\s*${name}=["']?([^"'\\s#]+)["']?`);
+  for (const line of shText.split("\n")) {
+    if (line.trimStart().startsWith("#")) continue;
+    const m = line.match(re);
+    if (m) return m[1];
+  }
+  return null;
+}
+
+/**
+ * Tag of the newest published release in a GitHub /releases listing
+ * (pre-releases count, drafts do not). Ordered by publication date, because
+ * the API's own order follows creation date.
+ */
+export function newestPublishedRelease(releases) {
+  if (!Array.isArray(releases)) return null;
+  const published = releases.filter((r) => r && !r.draft && r.published_at && r.tag_name);
+  published.sort((a, b) => Date.parse(b.published_at) - Date.parse(a.published_at));
+  return published[0]?.tag_name ?? null;
+}
+
+/**
  * Parse the `dependencies:` block of a sushi-config.yaml into { id: version }.
  * Taken over from the MII KDS sample IG's scripts/check-updates.py: only pinned
  * (version starts with a digit), non-commented entries count; the block ends
@@ -263,8 +289,8 @@ async function fetchJson(url, { github = false, allow404 = false } = {}) {
 
 const TEMPLATE_PKG_ID = "de.medizininformatikinitiative.template";
 // The repository that HOSTS the template releases — its home in the
-// medizininformatik-initiative organisation since the 2026-08-27 org move
-// (docs/org-move.md); the pre-move repository is an archived snapshot.
+// medizininformatik-initiative organisation since the 2026-08-27 org move;
+// the pre-move repository is an archived snapshot.
 const TEMPLATE_REPO = "medizininformatik-initiative/ig-template-mii-kds";
 
 // The FIXED FHIR package watch list: these always get a row, even
@@ -272,11 +298,10 @@ const TEMPLATE_REPO = "medizininformatik-initiative/ig-template-mii-kds";
 // are watched on top.
 const WATCHED_FHIR_DEPS = [
   "de.basisprofil.r4",
-  "de.medizininformatikinitiative.kerndatensatz.meta",
   "hl7.fhir.uv.crmi",
   "hl7.fhir.uv.xver-r5.r4",
   // Pinned DIRECTLY by design — the publisher injects the latest release
-  // when an IG does not declare them itself (see scripts/meta-pin-drift.mjs).
+  // when an IG does not declare them itself.
   "hl7.terminology.r4",
   "hl7.fhir.uv.extensions.r4",
 ];
@@ -288,7 +313,24 @@ const LINKS = {
   base2: "https://github.com/HL7/ig-template-base2/blob/main/package-list.json",
   template: `https://github.com/${TEMPLATE_REPO}/releases`,
   fhirPkg: (id) => `https://simplifier.net/packages/${id}`,
+  githubReleases: (repo) => `https://github.com/${repo}/releases`,
 };
+
+// Pins of the SearchParameter integration tests (search-param-tests.yml).
+// The Blaze image in blaze.yml is watched by Dependabot (docker-compose).
+const SEARCH_PARAM_TEST_SCRIPT = ".github/workflows/search-param-test/load-data.sh";
+const SEARCH_PARAM_TEST_PINS = [
+  { artifact: "blazectl", shellVar: "BLAZECTL_VERSION", repo: "samply/blazectl" },
+  {
+    artifact: "mii-testdata",
+    shellVar: "MII_TESTDATA_VERSION",
+    repo: "medizininformatik-initiative/mii-testdata",
+    // Test data for ballots ships as GitHub PRE-releases (e.g.
+    // v2027.0.0-ballot.rc2); /releases/latest would skip them and report an
+    // older full release as "latest".
+    includePrereleases: true,
+  },
+];
 
 const upstream = {
   igPublisher: async () =>
@@ -321,6 +363,22 @@ const upstream = {
       { github: true, allow404: true },
     );
     return resolveTemplateLatest(pkgMeta, latestRelease);
+  },
+  // Latest GitHub release tag of a repository; with includePrereleases the
+  // newest published (non-draft) release, pre-releases included.
+  githubLatest: async (repo, { includePrereleases = false } = {}) => {
+    if (!includePrereleases) {
+      return (
+        await fetchJson(`https://api.github.com/repos/${repo}/releases/latest`, {
+          github: true,
+        })
+      ).tag_name;
+    }
+    const releases = await fetchJson(
+      `https://api.github.com/repos/${repo}/releases?per_page=30`,
+      { github: true },
+    );
+    return newestPublishedRelease(releases);
   },
   fhirPkg: async (id) => {
     const meta = await fetchJson(`https://packages.fhir.org/${id}`);
@@ -507,6 +565,25 @@ export async function collectRows() {
       latest,
       status: statusFor(dep.pinned, latest),
       link: LINKS.fhirPkg(dep.id),
+    });
+  }
+
+  // SearchParameter integration-test pins (shell variables, not workflow env).
+  const testScript = readFileIfExists(SEARCH_PARAM_TEST_SCRIPT);
+  for (const pin of SEARCH_PARAM_TEST_PINS) {
+    const pinned = testScript == null ? null : parseShellVarPin(testScript, pin.shellVar);
+    const latest =
+      pinned == null
+        ? null
+        : await lookup(() =>
+            upstream.githubLatest(pin.repo, { includePrereleases: pin.includePrereleases }),
+          );
+    rows.push({
+      artifact: pin.artifact,
+      pinned: pinned ?? `pin not found (\`${pin.shellVar}\` not set in \`${SEARCH_PARAM_TEST_SCRIPT}\`)`,
+      latest,
+      status: statusFor(pinned, latest),
+      link: LINKS.githubReleases(pin.repo),
     });
   }
 

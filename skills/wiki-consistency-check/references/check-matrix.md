@@ -4,9 +4,8 @@ Two sections. Section 1 is the **hard** module-metadata contract (violations
 fail the run). Section 2 lists the **advisory** wiki-drift checks (reported,
 never failed). The **Applies to** column states whether a row concerns a
 **template repository** (the template package repo `ig-template-mii-kds`, and
-this scaffold repo `mii-kds-module-template` itself) or a **module IG** (a KDS
-module repository created from the scaffold, and the scaffold's starter
-content) — or both.
+the module template `mii-kds-module-template`) or a **module IG** (a KDS
+module repository such as this one, Meta) — or both.
 
 Section 1 is implemented mechanically and placeholder-aware by
 [`../../../scripts/convention-check.mjs`](../../../scripts/convention-check.mjs) and run in
@@ -41,13 +40,13 @@ pin). Reference values verified against
 | M5 | *wiki* — `canonical` is under the agreed MII path | `sushi-config.yaml` → `canonical` | `^https://www\.medizininformatik-initiative\.de/fhir/(?:(?:ext\|core)/)?<technischer Modulname>$` — the canonical universe has THREE published spaces (measured 2026-08-27: `ext/` ×14, `core/` ×7, bare ×5), all accepted because a canonical is immutable; technical module name per the wiki table in "Namenskonventionen für FHIR‐Ressourcen in der MII" | `https://www.medizininformatik-initiative.de/fhir/modul-base`, `…/fhir/ext/modul-patho`, `…/fhir/core/modul-labor` |
 | M6 | *wiki* — `version` is CalVer | `sushi-config.yaml` → `version` | CalVer core `YYYY.n.n`, optionally followed by a SemVer-style prerelease suffix (`-<identifier>[.<identifier>…]`); prerelease identifiers are non-empty ASCII alphanumeric/hyphen strings and purely numeric identifiers have no leading zero | `2026.0.1`, `2027.0.0-ballot.rc3` |
 | M7 | *local* — no dependency — including the IG template — pinned to a floating label | `sushi-config.yaml` → `dependencies`; `ig.ini` → `template` | No `current`, `#current`, `latest`, `dev`, or `cibuild` anywhere; every dependency and the template use a fixed version | `kerndatensatz-basis` itself floats `template = fhir2.base.template#current` — a known upstream practice this project deliberately does **not** follow. Do not copy it, and do not "correct" a fixed pin back to `#current`. |
-| M8 | *local* — the scaffold's demonstration page does not reach a release | `input/pagecontent/rendering-artifacts.md` | On a `release/**` branch (or `--release`) the page and its generator files must be gone; present = hard fail. In development the row passes with a reminder | The check's failure message enumerates every file to remove |
+| M8 | *local* — the module template's demonstration page does not reach a release (not present in this repository) | `input/pagecontent/rendering-artifacts.md` | On a `release/**` branch (or `--release`) the page and its generator files must be gone; present = hard fail. In development the row passes with a reminder | The check's failure message enumerates every file to remove |
 
-### Placeholder-aware evaluation (this scaffold)
+### Placeholder-aware evaluation (module template)
 
-This scaffold's `sushi-config.yaml` and `ig.ini` are parameterized with
-`{{PLACEHOLDER}}` values that a created module fills in. The mechanical checker
-evaluates Section 1a **placeholder-aware**:
+In the module template, `sushi-config.yaml` and `ig.ini` are parameterized with
+`{{PLACEHOLDER}}` values that a created module fills in; this repository has
+none left. The mechanical checker evaluates Section 1a **placeholder-aware**:
 
 - A value containing a `{{PLACEHOLDER}}` (e.g. `id: mii-ig-{{MODULE_SLUG}}`) is
   treated as **parameterized** — only the surrounding pattern is checked (here:
@@ -62,10 +61,10 @@ evaluates Section 1a **placeholder-aware**:
   re-checks the same label set on `ig.ini` — defence in depth, kept in step by
   hand.
 
-### 1b. Assertions for TEMPLATE PACKAGE repositories (do **not** apply to this scaffold)
+### 1b. Assertions for TEMPLATE PACKAGE repositories (do **not** apply to this repository)
 
 Checked in `package/package.json` (the IG-Publisher template package
-manifest). This scaffold has **no** such manifest — the mechanical checker skips
+manifest). This repository has **no** such manifest — the mechanical checker skips
 Section 1b when the file is absent; these rows apply to `ig-template-mii-kds`.
 Base-template facts verified against
 [`HL7/ig-template-base2`](https://github.com/HL7/ig-template-base2) on
@@ -92,7 +91,7 @@ Base-template facts verified against
 
 | Area | Repo artifact | Wiki page | Check point | Applies to |
 |------|---------------|-----------|-------------|------------|
-| Naming conventions (prefixes) | `qc/custom.rules.yaml` (id/name regex rules) | Namenskonventionen für FHIR‐Ressourcen in der MII | Does the rule set cover the wiki's current prefix list (PR, EX, LM, VS, CS, CM, SM, NS, SP, CPS, OD, IG, QST, OBSDEF, MSR, EXA, PARAM)? | Module |
+| Naming conventions (prefixes) | `qc/custom.rules.yaml` (id/name regex rules) | Namenskonventionen für FHIR‐Ressourcen in der MII | Does the rule set cover the wiki's current prefix list (PR, EX, LM, VS, CS, CM, SM, NS, SP, CPS, OD, IG, QST, OBSDEF, MSR, EXA, PARAM)? Not applicable to Meta: it does not call the reusable validation workflows; FHIR validation runs in the IG Publisher build. | Module |
 | Naming conventions (name) | `input/fsh/*.fsh` | Namenskonventionen → Element name | `name` in Upper_Snake_Case with resource-type prefix? | Module |
 | Naming conventions (id) | `input/fsh/*.fsh` | Namenskonventionen → Element id | `id` kebab-case, ≤ 64 chars, corresponds to `name`? | Module |
 | Naming conventions (title) | `input/fsh/*.fsh` | Namenskonventionen → Element title | Pattern `MII <Präfix> <ModulAbk> <Beschreibung>`? | Module |
@@ -102,11 +101,11 @@ Base-template facts verified against
 | Terminology (versions) | terminology documentation, `sushi-config.yaml` | Terminology Version Policy | Dated SNOMED INTERNATIONAL version per CalVer release? | Module |
 | Terminology (instance data) | profiles/documentation | Terminology Version Policy | `Coding.version` required for ICD-10-GM/OPS/ATC? | Module |
 | CI (validation) | `.github/workflows/` | GitHub Reusable Validation Workflows | Are `ci_dotnet_validation.yml` + `ci_java_validation.yml` consumed via `workflow_call` (pinned to a fixed ref) instead of reimplemented? | Module |
-| CI (required files) | `qc/custom.rules.yaml`, `advisor.json` | GitHub Reusable Validation Workflows | Both files present, paths per the wiki folder structure? | Module |
+| CI (required files) | `qc/custom.rules.yaml`, `advisor.json` | GitHub Reusable Validation Workflows | Both files present, paths per the wiki folder structure? Not applicable to Meta: it does not call the reusable validation workflows; FHIR validation runs in the IG Publisher build. | Module |
 | Release | release workflow / process docs | Module Release Workflow | Modules: `release/vYYYY.n.n` branch → PR to `main` → tag per wiki. Template repos deliberately use SemVer/Release Please instead — for them, only report that the divergence is documented. | Both (different expectations) |
 | Notification | release workflow (`NOTIFY_ZULIP` step) | GitHub Reusable Validation Workflows | Release notification to Zulip, stream `MII-Kerndatensatz`? | Both |
 | Dev container | `.devcontainer/devcontainer.json` | Dev Container ‐ IG Publisher | Image `ghcr.io/cybernop/vscode-ig-publisher:…`, `.fhir` bind mount? | Both |
-| Folder structure | repo root | Übersicht Ordnerstruktur ‐ Forge-basiertes KDS-Modul / GitHub Reusable Validation Workflows | Module: `input/fsh/`, `fsh-generated/resources/`, `qc/`, `advisor.json`, `sushi-config.yaml`. Template repo: `package/`, `includes/`, `content/` mirroring the base template layout. | Both (different expectations) |
+| Folder structure | repo root | Übersicht Ordnerstruktur ‐ Forge-basiertes KDS-Modul / GitHub Reusable Validation Workflows | Module: `input/fsh/`, `fsh-generated/resources/`, `qc/`, `advisor.json` (not here — see the CI row), `sushi-config.yaml`. Template repo: `package/`, `includes/`, `content/` mirroring the base template layout. | Both (different expectations) |
 
 ## Wiki pages (verified to exist, 2026-07-21)
 

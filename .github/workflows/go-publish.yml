@@ -109,7 +109,7 @@ env:
   # scripts/toolchain-pins.test.mjs fails the build if they drift apart.
   PUBLISHER_VERSION: "2.3.2"
   PUBLISHER_SHA256: "07c576024df917cc1f879b6b5a64147cd0222d5b4129688e8f0ad9ccce58b1d5"
-  SUSHI_VERSION: "3.20.1"
+  SUSHI_VERSION: "3.21.0"
   JEKYLL_VERSION: "4.4.1"
   JEKYLL_GEM_SHA256: "4c1144d857a5b2b80d45b8cf5138289579a9f8136aadfa6dd684b31fe2bc18c1"
 
@@ -403,13 +403,13 @@ jobs:
           } >> "${GITHUB_STEP_SUMMARY}"
 
       - name: Set up Java
-        uses: actions/setup-java@b6effb05e454b25005698d916606bdc6ffcbf961 # v5.7.0
+        uses: actions/setup-java@b843ebf9b913146b38da2eaa7aeddf76074ae1ad # v6.1.0
         with:
           distribution: temurin
           java-version: "17"
 
       - name: Set up Node.js
-        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
           node-version: "22"
 
@@ -653,10 +653,47 @@ jobs:
             }' > site/publish-setup.json
           touch site/.nojekyll
 
+          # publish-setup.json DECLARES both feeds but nothing creates them on
+          # first publication — the Publisher appends entries to existing feeds,
+          # it does not seed the files. LC_ALL=C forces RFC-822 English dates
+          # (a German locale writes "Do., 03 Sep. 2026", which is invalid RSS).
+          RSS_DATE="$(LC_ALL=C date -u +'%a, %d %b %Y %H:%M:%S GMT')"
+          for feed in package-feed.xml publication-feed.xml; do
+            [[ -s "site/${feed}" ]] && continue
+            title="MII Meta Module — ${feed%%-feed.xml} feed"
+            # The publisher's feed updater (PublicationProcess.updateFeed) reads
+            # channel/lastBuildDate AND channel/pubDate unconditionally (NPE if
+            # either is missing) and its text fallback requires an existing
+            # "<item" marker — measured on the proms module's dry runs. Both
+            # date elements are therefore mandatory in the seed, and the dc:/
+            # fhir: namespaces its generated items use are declared up front.
+            printf '%s\n' \
+              '<?xml version="1.0" encoding="UTF-8"?>' \
+              '<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:fhir="http://hl7.org/fhir/feed" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">' \
+              '  <channel>' \
+              "    <title>${title}</title>" \
+              "    <link>${PUBLICATION_BASE}</link>" \
+              "    <description>${title}</description>" \
+              "    <atom:link rel=\"self\" type=\"application/rss+xml\" href=\"${PUBLICATION_BASE}/${feed}\"/>" \
+              '    <generator>MII module go-publish bootstrap</generator>' \
+              "    <lastBuildDate>${RSS_DATE}</lastBuildDate>" \
+              "    <pubDate>${RSS_DATE}</pubDate>" \
+              '  </channel>' \
+              '</rss>' > "site/${feed}"
+          done
+
+          # IG Publisher 2.x refuses -go-publish without a package-registry.json
+          # in the webroot; on a first publication none exists yet, so let the
+          # pinned Publisher generate it for the empty website.
+          java -jar "${RUNNER_TEMP}/publisher.jar" \
+            -generate-package-registry "${GITHUB_WORKSPACE}/site"
+          test -s site/package-registry.json
+
           {
             echo "### First-publication webroot seeded"
             echo
             echo "- Generated publish-setup.json for ${PUBLICATION_BASE}"
+            echo "- Generated package-registry.json"
           } >> "${GITHUB_STEP_SUMMARY}"
 
       - name: Prepare publication workspace
@@ -691,7 +728,13 @@ jobs:
           TX_URL: ${{ steps.terminology.outputs.tx_url }}
         run: |
           set -euo pipefail
+          # -fhir-settings must reach BOTH publisher invocations: the build call
+          # already carries it; without it here, -go-publish re-runs the SSRF
+          # server checks against the raw tx URL and refuses the proxy setup.
+          # (Do not comment inside the continuation below: a # in a
+          # backslash-continued line comments out the REST of the logical line.)
           java -Xmx6g -jar "${RUNNER_TEMP}/publisher.jar" -go-publish \
+            -fhir-settings "${GITHUB_WORKSPACE}/source/.github/fhir-settings.json" \
             -source "${GITHUB_WORKSPACE}/source" \
             -web "${GITHUB_WORKSPACE}/site" \
             -history "${GITHUB_WORKSPACE}/publication/history" \
@@ -967,7 +1010,7 @@ jobs:
           cp "${RUNNER_TEMP}/go-publish.log" "${RUNNER_TEMP}/publication-process.log"
 
       - name: Upload exact publication candidate
-        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: github-pages
           path: ${{ runner.temp }}/artifact.tar
@@ -975,7 +1018,7 @@ jobs:
           retention-days: 7
 
       - name: Upload publication review material
-        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: publication-review
           path: |
@@ -1005,7 +1048,7 @@ jobs:
 
     steps:
       - name: Download publication candidate
-        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
         with:
           name: github-pages
           path: candidate
@@ -1087,7 +1130,7 @@ jobs:
     steps:
       - name: Deploy exact Pages artifact
         id: deployment
-        uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128 # v5.0.0
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
 
       - name: Verify Pages publication
         shell: bash

@@ -1,13 +1,13 @@
-# Recipe: extend the translations of your module IG (menu, footer, content, resources, page titles)
+# Recipe: extend the translations of the IG (menu, footer, content, resources, page titles)
 
-**Goal.** Add or extend a translation for any part of your module IG — the
+**Goal.** Add or extend a translation for any part of the IG — the
 navigation **menu**, the **footer / base UI chrome**, the **narrative content**,
 the **conformance resources**, and the **page titles, breadcrumbs and table of
 contents**.
 
 **Prerequisites.**
 
-- A module that builds ([create a new module](create-a-new-module.md)).
+- A local build that works ([first build in the dev container](first-build-in-devcontainer.md)).
 - The language must be declared in `sushi-config.yaml`: listed under
   `i18n-lang`, **and** its source folder listed under the
   `translation-sources` parameter. `de` ships pre-declared:
@@ -114,10 +114,10 @@ Rules:
 
 The footer's `Links` / table-of-contents / QA-report labels, the copyright line,
 `Package … based on FHIR …`, `Generated <date>` and the page-navigation buttons
-come from the **IG template**, not from your module. You get German and English
+come from the **IG template**, not from this repository. You get German and English
 for free.
 
-**Nothing to do in a module.** If a base label is blank in some language, the
+**Nothing to do here.** If a base label is blank in some language, the
 fix belongs in the template repository
 ([`ig-template-mii-kds`](https://github.com/medizininformatik-initiative/ig-template-mii-kds)),
 which vendors the base UI-string catalogs — see its
@@ -126,9 +126,7 @@ around it here.
 
 > **Keep the template current** so you receive such fixes: with the default
 > repository-URL reference in `ig.ini` every build fetches the template's
-> released `main` automatically; if you build from the vendored offline
-> fallback, the copy in `ig-template/` is refreshed by
-> `scripts/sync-ig-template.sh` and the `sync-ig-template` workflow.
+> released `main` automatically.
 
 ---
 
@@ -186,34 +184,24 @@ contents on `/de/`. Without it, a page whose prose is fully German still renders
 `Guidance` as its title, `Home > Guidance` as its breadcrumb and `Guidance` in
 the ToC.
 
-#### ⚠️ Rename the shipped catalogue — a file name that carries a placeholder
+#### ⚠️ The catalogue's file name must match the IG id
 
-The scaffold ships the catalogue as:
+The catalogue is:
 
 ```text
-input/translations/de/ImplementationGuide-mii-ig-{{MODULE_SLUG}}.po
+input/translations/de/ImplementationGuide-mii-ig-meta.po
 ```
 
 **The publisher matches the catalogue to its IG resource BY FILE NAME**
-(`<resourceType>-<id>`), so when you replace `{{MODULE_SLUG}}` in the file
-*contents* you must **also rename the file** to match your IG's `id` in
-`sushi-config.yaml`:
-
-```sh
-# your sushi-config.yaml has:  id: mii-ig-person
-git mv 'input/translations/de/ImplementationGuide-mii-ig-{{MODULE_SLUG}}.po' \
-       'input/translations/de/ImplementationGuide-mii-ig-person.po'
-```
+(`<resourceType>-<id>`), so the name must stay in step with `id: mii-ig-meta`
+in `sushi-config.yaml`. The same applies to the two ImplementationGuide intro
+pages (`ImplementationGuide-mii-ig-meta.md` in `input/pagecontent/` and its
+German mirror).
 
 > **Why this bites:** a catalogue whose name does not match an IG resource id is
 > **silently ignored** — no warning, no QA error, a green build. The only symptom
 > is that page titles, breadcrumbs and the ToC stay in the default language, which
-> is easy to mistake for "the publisher cannot do this". Besides this catalogue, only the two
-> ImplementationGuide intro pages (`ImplementationGuide-mii-ig-{{MODULE_SLUG}}.md`
-> in `input/pagecontent/` and its German mirror) carry a placeholder in their
-> file *name* — those fail the build loudly when unrenamed
-> ([create-a-new-module.md](create-a-new-module.md) step 4 renames all three);
-> every other placeholder in this repository lives in file *contents* only.
+> is easy to mistake for "the publisher cannot do this".
 
 #### The `msgid` rule
 
@@ -286,10 +274,10 @@ moves between them.
 | Menu stays in one language everywhere | A `menu:` property crept into `sushi-config.yaml`, or the per-language menu file is missing | Remove the property; add `input/translations/<lang>/includes/menu.xml` (§2) |
 | Menu QA error about `href="#"` | A dropdown parent has no real target | Point it at a real page (§2) |
 | Navigation differs between languages | An entry was added to one menu file only | Keep both menu files in step (§2) |
-| Base/footer labels blank in some language | The template lacks that language's UI-string catalog | Fix in the template repo (§3); rebuild once released (the URL default fetches it), or — if you build from the vendored fallback — make sure your `ig-template/` mirror is current |
+| Base/footer labels blank in some language | The template lacks that language's UI-string catalog | Fix in the template repo (§3); rebuild once released (`ig.ini` references the template by URL, so the next build fetches it) |
 | A translated page does not appear on `/de/` | It is a `<name>-de.md` sibling, or the file name differs from the English source page | Move it to `input/translations/de/pagecontent/<same-filename>` (§1) |
 | A resource supplement does nothing | `msgid` mismatch, wrong file name, or an untranslatable field | Copy the `msgid` from `fsh-generated/resources/…`; check §4 |
-| **Page content is German but the title, breadcrumb and ToC entry stay English** | The IG-level catalogue was never renamed from `ImplementationGuide-mii-ig-{{MODULE_SLUG}}.po` to your IG id, so the publisher never matched it to the resource | Rename it to `ImplementationGuide-<your-ig-id>.po` (§5) |
+| **Page content is German but the title, breadcrumb and ToC entry stay English** | The IG-level catalogue's file name does not match the IG id, so the publisher never matched it to the resource | It must be `ImplementationGuide-mii-ig-meta.po` (§5) |
 | One page title is German, another is not | That page's title is missing from the catalogue, or its `msgid` does not match the `pages:` title character for character | Add/correct the `msgid` (§5) |
 | The breadcrumb root reads "Table of Contents" on `/de/` | The catalogue has no `msgid "Table of Contents"` | Add that entry (§5) |
 | A whole language folder is ignored | The folder is not listed under the `translation-sources` parameter | Add it (Prerequisites) |
@@ -303,7 +291,7 @@ moves between them.
 2. Create `input/translations/<lang>/` with `pagecontent/`, `includes/menu.xml`
    and any resource `.po` files.
 3. Copy the IG-level catalogue to
-   `input/translations/<lang>/ImplementationGuide-<your-ig-id>.po` and translate
+   `input/translations/<lang>/ImplementationGuide-mii-ig-meta.po` and translate
    its `msgstr` lines (§5) — otherwise that language's page titles, breadcrumbs
    and table of contents stay English.
 4. Ask the template repo to vendor that language's base UI-string catalogs (§3),

@@ -1,12 +1,11 @@
-# FHIR IG best practices — this scaffold's self-check (module author)
+# FHIR IG best practices — self-check for the Meta module
 
-A recommendation set, not a compliance gate. It is this scaffold's reading of
-HL7's IG best-practice guidance and of the MII meta wiki, with the current state
-of the scaffold proven item by item. HL7's guidance recommends; it does not
+A recommendation set, not a compliance gate. It is this repository's reading of
+HL7's IG best-practice guidance and of the MII meta wiki, checked item by item. HL7's guidance recommends; it does not
 oblige. No MII governance document makes any of it a release gate for a KDS
 module, and this repository decides nothing about MII modules — where the meta
-wiki and this page disagree, the wiki wins. Use it when you build your module and
-again before a release, and drop the items your module has no use for.
+wiki and this page disagree, the wiki wins. Use it when you change the IG and
+again before a release, and drop the items the module has no use for.
 
 ## Sources (retrieved 2026-07-26)
 
@@ -21,8 +20,8 @@ again before a release, and drop the items your module has no use for.
 | S7 | [FHIR core **Security & Privacy module**](https://build.fhir.org/secpriv-module.html) + [security checklist](https://build.fhir.org/security.html) | security/privacy baseline |
 | S8 | [MII meta wiki](https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki) — naming conventions, conformance, terminology version policy, module release workflow | MII-specific rules |
 
-**Legend** — ✅ done by the scaffold · 📝 **your job** as module author (the
-scaffold gives you the place and a prompt) · ➖ not applicable.
+**Legend** — ✅ done in this repository · 📝 **the author's job** (the
+repository gives the place and a prompt) · ➖ not applicable.
 
 ---
 
@@ -36,11 +35,11 @@ scaffold gives you the place and a prompt) · ➖ not applicable.
 | Has a downloads page | ✅ | `downloads.md` |
 | Has one or more pages defining the normative content | ✅ | the MII-wide conformance rules are maintained centrally by the Meta module and linked from the Conformance menu; `security-and-privacy.md` carries the module-specific normative considerations |
 | **Security and Privacy Considerations section** | ✅ | `security-and-privacy.md` — ships the MII-agreed three-stage structure (1 · MII data protection concept, 2 · DIMP, 3 · module-specific aspects); **fill the stage-3 `[TODO]` block** 📝 |
-| Index page starts with an accessible explanation of the IG's purpose | ✅ / 📝 | `index.md` opens with *Introduction* + *Target audience*; replace the `[TODO]` with your module's purpose in lay terms |
+| Index page starts with an accessible explanation of the IG's purpose | ✅ / 📝 | `index.md` opens with *Introduction* + *Target audience*; states the module's purpose in lay terms |
 | Explains what `mustSupport` means for this IG | ✅ | the "Must Support" menu entry links the meta-wiki definition (MII-wide, maintained once) |
 | Explains prerequisite knowledge (FHIR basics, SHALL/SHOULD/MAY, the domain) | ✅ | the "General Requirements" menu entry links the meta-wiki conformance verbs + `docs/glossary.md`; link further reading from `guidance.md` 📝 |
 | Says how to engage with the community — durable for 5+ years | ✅ | `index.md` → *Contact*: `chat.fhir.org` stream `german/mi-initiative` + the repo's GitHub issues |
-| Explains the relationship to other guides **and references the IG registry** | ✅ / 📝 | `index.md` → *Related guides* links the [FHIR IG Registry](https://fhir.org/guides/registry/); add your module's formal dependencies |
+| Explains the relationship to other guides **and references the IG registry** | ✅ / 📝 | `index.md` → *Related guides* links the [FHIR IG Registry](https://fhir.org/guides/registry/); list the module's formal dependencies |
 | Prefer single larger pages over many tiny ones | 📝 | The page set implements the MII-agreed menu structure (one page per artifact type — see [page-structure.md](page-structure.md)); the (0..1) pages exist precisely so a module drops the ones it cannot fill ([optional-pages.md](optional-pages.md)) |
 | Good anchor names on pages | 📝 | Use explicit headings; the Publisher generates version-specific anchors otherwise |
 
@@ -54,7 +53,7 @@ scaffold gives you the place and a prompt) · ➖ not applicable.
 | Uses the defined narrative styles where appropriate (`stu-note`, `dragon`, …) | 📝 | Available from the template; use `{:.stu-note}` / `{:.dragon}` for open issues and warnings |
 | Intros/notes on artifacts | 📝 | Put `StructureDefinition-<id>-intro.md` / `-notes.md` in `input/intro-notes/` (wired via `path-pages`) |
 | Rationale for controversial design decisions is captured | 📝 | Record it in the artifact's notes or in `guidance.md` |
-| Normative sentences are machine-readably marked | 📝 | The `§<page>-<n>:…§` marker + `§§§` table mechanism (an IG-Publisher feature) is available for the module's OWN normative sentences; the scaffold ships none since the MII-wide rules moved to the Meta module. How to use it: [page-structure.md](page-structure.md) § "Where module-specific conformance statements go now". Markers are English-only — [why](maintenance.md#verified-by-observation-not-by-specification) |
+| Normative sentences are machine-readably marked | 📝 | The `§<page>-<n>:…§` marker + `§§§` table mechanism (an IG-Publisher feature) is available for the module's OWN normative sentences; none are marked yet. How to use it: [page-structure.md](page-structure.md) § "Where module-specific conformance statements go now". Markers are English-only — [why](maintenance.md#verified-by-observation-not-by-specification) |
 
 ## 3. Images and diagrams (S1)
 
@@ -71,7 +70,7 @@ scaffold gives you the place and a prompt) · ➖ not applicable.
 | Artifact volume is reviewable and maintainable | 📝 | Ship the profiles your use cases need — every artifact must be maintained for years |
 | Uses `mustSupport` to express support expectations, **not** cardinality | ✅ / 📝 | The example profile (`input/fsh/profiles/example-patient.fsh`) uses `MS` with `0..1`/`1..1` deliberately; the MII-wide Must-Support semantics are linked from the menu ([meta wiki](https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance#must-support-ms)) |
 | Avoids constraining `max` / does not block legacy data | 📝 | The example constrains no `max`; follow that when profiling |
-| Does not force `meta.profile`, never forbids extra values | ✅ | Not constrained anywhere in the scaffold |
+| Does not force `meta.profile`, never forbids extra values | ✅ | Not constrained anywhere in this IG |
 | Uses appropriate artifact types beyond profiles | ✅ | Page slots + `input/fsh/` subfolders exist for CapabilityStatements, ValueSets, CodeSystems, Logical Models, Parameters |
 | Follows the MII naming conventions | ✅ / 📝 | Enforced by `convention-check.yml` (packageId/id/name/title/canonical/CalVer); artifact names follow `MII_PR_<Module>_<Name>` per `input/fsh/README.md` |
 
@@ -109,14 +108,14 @@ scaffold gives you the place and a prompt) · ➖ not applicable.
 |---|---|---|
 | Canonical references are pinned | ✅ | `pin-canonicals: pin-all` in `sushi-config.yaml` (S4) |
 | Dependencies are pinned to fixed versions (never `current`/`dev`) | ✅ | `dependencies:` in `sushi-config.yaml`; enforced by `convention-check.yml`, monitored by `dependency-check.yml` |
-| Version scheme follows the MII module release workflow (CalVer) | ✅ | `version: {{CALVER_VERSION}}`, released via `module-release.yml` — see [`docs/release.md`](release.md) |
+| Version scheme follows the MII module release workflow (CalVer) | ✅ | `version: 2027.0.0-ballot`, released via `module-release.yml` — see [`docs/release.md`](release.md) |
 | Publication runs through the IG Publisher's `-go-publish` | ✅ | `go-publish.yml`, manual and dry-run by default — see [`docs/release.md`](release.md) |
 | Multi-language is set up the supported way | ✅ | `i18n-default-lang: en`, `i18n-lang: [de]`, `translation-sources`; menu/content/resource translation per [`docs/recipes/add-translation.md`](recipes/add-translation.md) (S3) |
 | Required IG metadata is complete (publisher, contact, jurisdiction, licence, copyright) | ✅ | `sushi-config.yaml` — `publisher`, `jurisdiction: DE`, `license: CC-BY-4.0`, `copyrightYear` |
 
 ---
 
-## Before every release — this scaffold's own check
+## Before every release — this repository's own check
 
 None of this is an MII release gate. What the MII publishes for a KDS module is
 the [KDS governance, v4.0 (7 May 2026)](https://www.medizininformatik-initiative.de/sites/default/files/2026-07/KDS-Governance-v4.pdf)
@@ -124,18 +123,16 @@ and the [Module Release Workflow](https://github.com/medizininformatik-initiativ
 in the meta wiki; neither makes an item below a condition of releasing. The gates
 that really stop a release here are the IG Publisher build and, on a release
 branch, `convention-check` (see [release.md](release.md)). The rest is
-what this scaffold recommends:
+what this repository recommends:
 
 1. Every `[TODO]` prompt is resolved in **both** page trees —
    `grep -rn '\[TODO' input/pagecontent input/translations` must come back
    empty. German is a rendered language here, so an unresolved prompt in the
-   translation ships to `/de/` just as visibly. (The scaffold's HTML authoring
-   comments mention `[TODO ...]` too; those comments are meant to be deleted —
-   see `input/pagecontent/index.md`.)
+   translation ships to `/de/` just as visibly.
 2. `security-and-privacy.md` is filled in. HL7's guidance recommends a
-   security-and-privacy section and this scaffold ships the page pre-structured;
-   whether an unfilled section blocks your release is your project's decision.
-3. Read `output/qa.html` and `input/ignoreWarnings.txt`. This scaffold aims for 0
+   security-and-privacy section and the page is pre-structured; whether an
+   unfilled section blocks a release is the module's decision.
+3. Read `output/qa.html` and `input/ignoreWarnings.txt`. Aim for 0
    QA errors and no unreviewed ignore entries; the Publisher QA report is the
    authoritative validation result.
 4. `convention-check` passes on the release branch.

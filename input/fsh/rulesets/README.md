@@ -11,9 +11,8 @@ per artifact is how modules drift apart.
 
 [kerndatensatz-basis](https://github.com/medizininformatik-initiative/kerndatensatz-basis)
 solves it with a small library of `RuleSet:` definitions that every profile,
-extension, value set, code system and example `insert`s. This template ships the
-same library, with basis's module-specific literals replaced by the repository's
-`{{...}}` placeholders.
+extension, value set, code system and example `insert`s. This module uses the
+same library, with basis's module-specific literals replaced by Meta's values.
 
 ## What is here
 
@@ -29,6 +28,7 @@ same library, with basis's module-specific literals replaced by the repository's
 | `translation.fsh` | `Translation(path, language, translation)` + the coding-specific helpers | any element whose `^short`/`^definition` needs a second language |
 | `cps-rules.fsh` | `SupportResource`, `Profile`, `SupportProfile`, `SupportInteraction`, `SupportSearchParam`, `SupportSpecialSearchParam` | CapabilityStatement instances |
 | `extension-context.fsh` | `ExtensionContext(path)` | Extension definitions |
+| `searchparam-profile.fsh` | `SP_Profile` — the `meta.profile` claim on `MII_PR_Meta_SearchParameter`, plus version policy and package source | every SearchParameter instance |
 
 ## The two flavours: `^` vs. no `^`
 
@@ -44,23 +44,20 @@ That is why most RuleSets come in pairs — `CRMIApprovalDate` (caret) and
 `CRMIApprovalDateInstance` (instance). Pick the one matching the declaration
 form, otherwise SUSHI reports an unknown-path error.
 
-## Placeholders in this directory
+## Module values in this directory
 
-These files carry the repository's `{{...}}` placeholders (see the table at the
-top of `sushi-config.yaml`). Replace them together with every other placeholder
-when you create a module — `version.fsh` and `crmi.fsh` will not produce a valid
-IG until you do:
+These literals are stamped onto every artifact; update them on a release (see
+[`docs/release.md`](../../../docs/release.md) step 2):
 
-| Placeholder | Where |
+| Value | Where |
 |---|---|
 | `2026.0.0` | `version.fsh`, `meta-profile.fsh`, `cps-rules.fsh` |
 | `meta` | `version.fsh` (package id + canonical of the package source) |
 | `2026` | `version.fsh` (`resource-effectivePeriod.start`) |
 | `2019` | `crmi.fsh` (`artifact-copyrightLabel`) |
 | `julian.sass@charite.de` | `crmi.fsh` (`artifact-author`) |
-| `2026-08-31` | passed in at the call site: `insert CRMIApprovalDate(2026-08-31)` |
+| `2026-09-10` | passed in at the call site: `insert CRMIApprovalDate(2026-09-10)` |
 | `C80260` | passed in at the call site: `insert CRMIArtifactTopic(…, C80260)` |
 
-`input/fsh/profiles/example-patient.fsh` and
-`input/fsh/instances/example-patient-instance.fsh` show the full insert block for
-a profile and for an example — copy it when you add your own artifacts.
+`input/fsh/profiles/MII_PR_Meta_SearchParameter.fsh` shows the full insert
+block for a profile — copy it when you add an artifact.

@@ -3,17 +3,14 @@
 Short, task-shaped guides for authoring an MII KDS module IG. Each one takes a
 single job from start to a checkable result.
 
-**New here?** Do them in this order: [first-run setup](first-run-setup.md) →
-[first build in the dev container](first-build-in-devcontainer.md) →
-[create a new module](create-a-new-module.md) → [add a profile](add-a-profile.md).
+**New here?** Start with the [first build in the dev container](first-build-in-devcontainer.md),
+then pick the recipe for your task.
 
 ## Getting started
 
 | Recipe | Use it when |
 | --- | --- |
-| [first-run setup of a new module](first-run-setup.md) | You just created your repository from the template |
 | [first build in the dev container](first-build-in-devcontainer.md) | You need a working toolchain without installing anything |
-| [create a new module](create-a-new-module.md) | You are filling in your module's metadata and first content |
 | [decide an optional page](remove-an-optional-page.md) | You are keeping or removing one of the seven optional (0..1) menu entries |
 
 ## Authoring content
@@ -27,22 +24,23 @@ single job from start to a checkable result.
 | [render existing artifacts in a page](render-existing-artifacts.md) | You want a profile, example or artifact table inline in your prose |
 | [add UML diagrams and other images](add-uml-diagrams.md) | A picture would explain it better |
 | [extend the translations](add-translation.md) | Menu, pages, footer or resource text needs a second language |
+| [add a DIZ site to the Standorte CodeSystem](add-a-diz-standort.md) | A data integration centre (DIZ) needs a new or updated entry in `mii-cs-meta-diz-standorte` |
 
 
 ## Build, release and upkeep
 
 | Recipe | Use it when |
 | --- | --- |
-| [regenerate the `special-url` list](regenerate-special-url.md) | The build warns about canonicals outside your module |
+| [regenerate the `special-url` list](regenerate-special-url.md) | The build warns about canonicals outside the module |
 | [switch to the published template](switch-template-to-published.md) | The MII IG template has a release you can pin |
-| [cut a release (CalVer)](cut-a-release.md) | Your module is ready to publish |
+| [cut a release (CalVer)](cut-a-release.md) | The module is ready to publish |
 | [review a dependency update](review-a-dependency-update.md) | A bump was proposed and someone has to decide |
 | [triage a vulnerability alert](triage-a-vulnerability-alert.md) | A security finding needs a decision |
 
 ## The pattern every recipe follows
 
 Recipes are written to the same shape so you always know where to look. If you
-add one — for your own module or back into this template — follow it:
+add one, follow it:
 
 ```markdown
 # Recipe: <imperative task>

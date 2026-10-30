@@ -2,8 +2,8 @@
 
 **Goal.** Write your first FHIR profile in FSH, build it, and read the QA report.
 
-**Prerequisites.** A module created from this template that already builds (see
-[create-a-new-module.md](create-a-new-module.md)).
+**Prerequisites.** A local build that works (see
+[first build in the dev container](first-build-in-devcontainer.md)).
 
 ## Steps
 
@@ -11,7 +11,7 @@
    instance `input/fsh/instances/example-patient-instance.fsh` — copy their shape.
 2. Create your profile file under `input/fsh/profiles/`. Name the **artifact**
    per the MII naming conventions (meta wiki, *Namenskonventionen für
-   FHIR-Ressourcen in der MII*). For the **file** name this scaffold follows
+   FHIR-Ressourcen in der MII*). For the **file** name this repository follows
    kerndatensatz-basis — `MII_PR_<Module>_<Name>.fsh`, e.g.
    `MII_PR_Person_Patient.fsh`; SUSHI does not care, but matching basis keeps
    MII modules navigable the same way (see `input/fsh/README.md`).

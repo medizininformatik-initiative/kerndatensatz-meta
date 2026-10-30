@@ -6,8 +6,6 @@
 **Prerequisites.** A Dependabot PR, a checker PR, or a row in the
 `dependencies` tracking issue.
 
-This recipe applies unchanged in a module created from this template.
-
 > **Updates are proposals, never automatic**
 > ([`docs/maintenance.md`](../maintenance.md)). The human in the loop is you.
 
@@ -45,7 +43,7 @@ The two that catch reviewers out (excerpt — the full list is in
 
 | Artifact | Edit here |
 |---|---|
-| IG Publisher | `PUBLISHER_VERSION` **and** the jar SHA-256 (step 4) in all build workflows — `ig-publisher.yml`, `module-release.yml`, `go-publish.yml` and (template repo only) `release-demo.yml`; the `env:` blocks must stay identical. Also update the copy-paste download block in `docs/recipes/first-build-in-devcontainer.md` (URL + SHA + prose date) |
+| IG Publisher | `PUBLISHER_VERSION` **and** the jar SHA-256 (step 4) in all build workflows — `ig-publisher.yml`, `module-release.yml` and `go-publish.yml`; the `env:` blocks must stay identical. Also update the copy-paste download block in `docs/recipes/first-build-in-devcontainer.md` (URL + SHA + prose date) |
 | SUSHI / Jekyll | `SUSHI_VERSION` / `JEKYLL_VERSION` in the same `env:` blocks — plus the dev-container `postCreateCommand` and the recipe's expected `sushi --version` output. For Jekyll only: recompute `JEKYLL_GEM_SHA256` in `go-publish.yml` (`gem fetch jekyll -v <version> && sha256sum jekyll-<version>.gem`) — no test covers that checksum |
 
 `scripts/toolchain-pins.test.mjs` fails the build when the `env:` blocks stop

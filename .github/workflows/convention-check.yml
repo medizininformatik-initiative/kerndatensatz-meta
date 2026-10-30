@@ -8,8 +8,7 @@
 #            scripts/convention-check.mjs, and runs that checker's own unit tests.
 #            It also guards the IG's language model (English default, German
 #            translation) via scripts/language-model-check.sh, and runs the
-#            offline test suites — the publication scripts everywhere, the
-#            template scaffold contract on the template repo only.
+#            offline test suites in scripts/*.test.mjs.
 #            This is the ONLY metadata linter — do not add a second one. The
 #            advisory repo/MII-wiki drift findings (Section 2 of the check
 #            matrix) are reviewed by hand and are never failed here.
@@ -58,7 +57,7 @@ jobs:
         with:
           persist-credentials: false
 
-      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
           node-version: "22"
 
@@ -69,13 +68,6 @@ jobs:
       # every push and pull request.
       - name: Test the scripts
         run: node --test scripts/*.test.mjs
-
-      # The scaffold contract asserts the un-replaced {{PLACEHOLDER}} values,
-      # so it holds on the template repository only — a created module has
-      # replaced them. Org-agnostic guard: the repos have not moved yet.
-      - name: Test the template scaffold contract (template repo only)
-        if: ${{ endsWith(github.repository, '/mii-kds-module-template') }}
-        run: node --test scripts/*.template-test.mjs
 
       - name: Decide strict (release) mode
         id: mode

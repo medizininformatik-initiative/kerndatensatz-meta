@@ -1,9 +1,9 @@
 # Recipe: add UML diagrams and other images
 
-**Goal.** Add a diagram that explains your module's structure, in a way that is
+**Goal.** Add a diagram that explains the module's structure, in a way that is
 still maintainable in five years.
 
-**Prerequisites.** A module that builds ([create a new module](create-a-new-module.md)),
+**Prerequisites.** A local build that works ([first build in the dev container](first-build-in-devcontainer.md)),
 and Graphviz for PlantUML rendering — the dev container has it.
 
 ## Where files go
@@ -18,7 +18,7 @@ available (the dev container has it). Keep the source in the repository: HL7's
 [IG best-practice guidance](https://build.fhir.org/ig/FHIR/ig-guidance/best-practice.html)
 asks that a diagram's source be checked in and its tool be free or widely used,
 so that the picture can still be changed after its author has moved on. This
-scaffold treats that as the default and gives you `input/images-source/` for it.
+repository treats that as the default and keeps sources in `input/images-source/`.
 
 ## Steps
 
@@ -26,7 +26,7 @@ scaffold treats that as the default and gives you `input/images-source/` for it.
 2. Reference the rendered image from a page:
 
    ```markdown
-   <img src="module-overview.svg" alt="Overview of the {{MODULE_TITLE}} module" style="max-width:100%">
+   <img src="module-overview.svg" alt="Overview of the Meta module" style="max-width:100%">
    ```
 
 3. Always write a meaningful `alt` text — it is what screen readers and search

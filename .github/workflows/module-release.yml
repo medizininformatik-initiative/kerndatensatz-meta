@@ -1,15 +1,9 @@
 # =============================================================================
 # module-release.yml — MII CalVer module release path
 #
-# INHERITED BY MODULES: this workflow is a MODULE file. The first-run bootstrap
-# (docs/recipes/first-run-setup.md) KEEPS it in a created module — unlike the
-# template-maintenance release automation (release-please.yml / notify-zulip.yml),
-# which the bootstrap removes. A module released from this template uses THIS
-# workflow (MII CalVer `YYYY.n.n`) and NEVER Release Please. See docs/release.md.
-#
-#   The two template repos release themselves with SemVer via Release Please.
-#   The MODULES they produce release with CalVer via THIS workflow. Never mix
-#   the two on one repo — two release systems corrupt the history.
+# The Meta module releases with MII CalVer `YYYY.n.n` via THIS workflow and
+# never with Release Please / SemVer — two release systems on one repo corrupt
+# the history. See docs/release.md.
 #
 # Purpose:   Faithful, gated automation of the MII "Module Release Workflow"
 #            (kerndatensatz-meta wiki). Modelled on the reference module's
@@ -93,15 +87,15 @@ env:
   # scripts/toolchain-pins.test.mjs fails the build if they drift apart.
   PUBLISHER_VERSION: "2.3.2"
   PUBLISHER_SHA256: "07c576024df917cc1f879b6b5a64147cd0222d5b4129688e8f0ad9ccce58b1d5"
-  SUSHI_VERSION: "3.20.1"
+  SUSHI_VERSION: "3.21.0"
   JEKYLL_VERSION: "4.4.1"
 
 jobs:
   # ---------------------------------------------------------------------------
-  # guard — temporary release gate disabled.
-  # The repository currently uses this workflow directly for tag-based module
-  # releases, so the placeholder-based self-skip is intentionally disabled.
-  # Keep the rest of the release pipeline as the actual enforcement point.
+  # guard — is this a real, bootstrapped MODULE, or the un-instantiated template?
+  # A created module has every {{...}} placeholder replaced; the template repo
+  # does not. This is the self-skip that keeps the module release path from ever
+  # running on the template repo (including on a Release Please SemVer tag).
   # ---------------------------------------------------------------------------
   guard:
     runs-on: ubuntu-latest
@@ -110,13 +104,18 @@ jobs:
     steps:
       - name: Check out the repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-      - name: Placeholder guard (disabled)
+      - name: Detect unreplaced template placeholders
         id: detect
         shell: bash
         run: |
           set -euo pipefail
-          echo "is_module=true" >> "${GITHUB_OUTPUT}"
-          echo "::notice::Placeholder-based module guard disabled for this repository. The release workflow is allowed to proceed."
+          if grep -v '^[[:space:]]*#' sushi-config.yaml | grep -q '{{'; then
+            echo "is_module=false" >> "${GITHUB_OUTPUT}"
+            echo "::notice::Unreplaced {{...}} placeholders found in sushi-config.yaml. This looks like the un-instantiated module template (or a module whose set-up is unfinished), so the MII CalVer release path is skipped. A real module — placeholders replaced by hand, per the first-run bootstrap's checklist — runs it for real."
+          else
+            echo "is_module=true" >> "${GITHUB_OUTPUT}"
+            echo "Bootstrapped module detected — the CalVer release path applies."
+          fi
 
   # ---------------------------------------------------------------------------
   # build — wiki step 5 support: verify the tagged commit BUILDS before a release
@@ -144,13 +143,13 @@ jobs:
           path: kerndatensatz-meta
 
       - name: Set up Java (temurin 17)
-        uses: actions/setup-java@b6effb05e454b25005698d916606bdc6ffcbf961 # v5.7.0
+        uses: actions/setup-java@b843ebf9b913146b38da2eaa7aeddf76074ae1ad # v6.1.0
         with:
           distribution: temurin
           java-version: "17"
 
       - name: Set up Node.js
-        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
           node-version: "22"
 
@@ -160,7 +159,7 @@ jobs:
       # the JEKYLL_VERSION pin above real (it was previously declared but never
       # installed in this workflow).
       - name: Set up Ruby (for Jekyll)
-        uses: ruby/setup-ruby@95ef2b042f9d7a56d8268cba8559e2842e2ad01b # v1.321.0
+        uses: ruby/setup-ruby@7f797815d8adceb1c412e7abefdd1ab4abc47a5f # v1.335.0
         with:
           ruby-version: "3.3"
 
@@ -294,7 +293,7 @@ jobs:
           } >> "${GITHUB_STEP_SUMMARY}"
 
       - name: Upload the build (package + QA report)
-        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: module-release-build
           path: |
@@ -334,13 +333,13 @@ jobs:
         # Attaching the package to every release is what makes the version
         # comparison of FUTURE releases work: seed-comparison-cache.sh fetches
         # the previous version's package.tgz from exactly this asset.
-        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
         with:
           name: module-release-build
           path: release-assets
 
       - name: Create the draft GitHub Release
-        uses: softprops/action-gh-release@3d0d9888cb7fd7b750713d6e236d1fcb99157228 # v3.0.2
+        uses: softprops/action-gh-release@efb35369e0ad2afab669f228072c1b0d510eae64 # v3.0.3
         with:
           name: "${{ steps.prep.outputs.version }}"
           files: release-assets/package.tgz
