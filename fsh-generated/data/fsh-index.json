@@ -21,7 +21,7 @@
     "fshType": "Instance",
     "fshFile": "capabilitystatements/mii-cps-meta-server-capabilities.fsh",
     "startLine": 10,
-    "endLine": 722
+    "endLine": 811
   },
   {
     "outputFile": "CodeSystem-mii-cs-meta-diz-standorte.json",
