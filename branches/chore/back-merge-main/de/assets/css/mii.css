@@ -1,0 +1,126 @@
+/* mii.css - the MII palette for de.medizininformatikinitiative.template
+   ======================================================================
+
+   PALETTE FILE ONLY. This file declares CSS custom properties and nothing
+   else: the fhir2.base.template (0.1.0) variables from project.css (":root"
+   block, variables 1-32) plus the template's own --ig-table-* and
+   --ig-highlight-* variables consumed by the brand-independent rule blocks in
+   template-base.css. It is linked by includes/fragment-css.html ONLY when the
+   consuming IG selects the MII design with input/data/brand.json
+   { "design": "mii" }; the default build links num-diz.css instead - exactly
+   one palette per build (docs/styleguide.md §1/§10). Linked AFTER project.css
+   and template-base.css, so this :root block wins the cascade at equal
+   specificity.
+
+   Every value is derived from an MII source - see docs/styleguide.md for the full
+   palette table (exact source per color) and the WCAG contrast calculations.
+   Sources, short form (retrieved 2026-07-22):
+   - "logo"  = dominant pixel colors of the official MII logo
+               (medizininformatik-initiative.de/themes/custom/mii/assets/img/Logo_MII_270px_Hoehe_de.png)
+   - "site"  = medizininformatik-initiative.de theme CSS
+               (/themes/custom/mii/css/base.css and component.css)
+   Base variables NOT listed here keep their fhir2.base.template defaults
+   (publish box, TOC box, STU note, footer-nav strip, dragon, translation box):
+   those are IG-Publisher semantic signals, not brand surfaces. */
+
+:root {
+  /* 1. IG title/status text: MII slate (site menu-link color #6a7484) —
+        contrast verified in docs/styleguide.md §8. It renders on the header
+        container, which vars 21-22 below make white. */
+  --ig-status-text-color: #6a7484;
+
+  /* 2. Navbar: MII logo blue (dominant blue #3473aa of the logo dots;
+        white text on it = 5.03:1, AA) */
+  --navbar-bg-color: #3473aa;
+
+  /* 5. Decorative 8px top stripe: MII accent green (site section-border
+        green #9abc31; carries no text) */
+  --stripe-bg-color: #9abc31;
+
+  /* 6-8. Menu buttons: hover = site primary button blue #5773a2 (white on it
+        = 4.80:1, AA); active = MII slate-dark #6a7484 (white on it = 4.73:1,
+        AA); button text white instead of base #e6e6e6 (which is only 4.03:1
+        on our navbar blue) */
+  --btn-hover-color: #5773a2;
+  --btn-active-color: #6a7484;
+  --btn-text-color: #ffffff;
+
+  /* 9-12. Selected/hovered dropdown-item gradient: site blue -> logo blue
+        (both sourced; white item text is >= 4.80:1 on both ends, AA).
+        The -alpha variants feed the base's legacy IE DXImageTransform filter
+        and use its #AARRGGBB order (see base project.css vars 11-12). */
+  --btn-gradient-start-color: #5773a2;
+  --btn-gradient-end-color: #3473aa;
+  --btn-gradient-start-color-alpha: #ff5773a2;
+  --btn-gradient-end-color-alpha: #ff3473aa;
+
+  /* 13-14. Hyperlinks: the MII website's own link color #5773a2 (a{color} in
+        its base.css; 4.80:1 on white, AA); hover shifts to logo blue #3473aa
+        (5.03:1 on white, AA) */
+  --link-color: #5773a2;
+  --link-hover-color: #3473aa;
+
+  /* 3-4. Footer: ONE uniform grey - MII slate-dark #6a7484 (palette:
+        the site-css main-menu link color and the logo-svg wordmark fill) for
+        both the outer band and the text container. Slate-dark rather than the
+        site footer's own slate #7a8495 because text sits on the footer here:
+        white on slate-dark is 4.73:1 (AA), on slate only 3.78:1. The earlier
+        two-tone (band #7a8495 / container #6a7484) read as a seam. */
+  --footer-bg-color: #6a7484;
+  --footer-container-bg-color: #6a7484;
+
+  /* 25-26. Footer links + highlight: white, like the MII site footer
+        (4.73:1 on #6a7484, AA). Note: this makes footer links the same color
+        as surrounding footer text - see the accessibility notes in
+        docs/styleguide.md (WCAG 1.4.1). */
+  --footer-hyperlink-text-color: #ffffff;
+  --footer-highlight-text-color: #ffffff;
+
+  /* 27-28. Breadcrumb: site light background #ebedef with site body-text
+        color #333333 (10.77:1, AAA) */
+  --breadcrumb-bg-color: #ebedef;
+  --breadcrumb-text-color: #333333;
+
+  /* 21-22. Consistent WHITE page chrome. The base ships three different light
+        shades for the top of the page — header sides #f5f5f5, header container
+        #ffffff, breadcrumb #ebedef — which reads as an inconsistent white/grey
+        mix. Make the header band (sides AND container) WHITE, matching the
+        white logo background and the white content area, so the header reads as
+        one clean white surface. The green stripe and blue navbar provide the
+        visual structure. Status text (var 1) stays AA on white — see
+        docs/styleguide.md §8. The breadcrumb keeps the MII light #ebedef as a
+        subtle functional band below the navbar. */
+  --ig-header-color: #ffffff;
+  --ig-header-container-color: #ffffff;
+
+  /* Narrative tables (template-base.css, styleguide §5). */
+  /* MII light background — the same site value as the breadcrumb fill. */
+  --ig-table-header-bg-color: #ebedef;
+  /* MII slate. Non-text contrast (WCAG 1.4.11) 3.78:1 on white and 3.22:1 on
+     the header fill — both above the 3:1 the guideline asks of a boundary. */
+  --ig-table-border-color: #7a8495;
+  /* MII body text: 10.77:1 on the header fill. */
+  --ig-table-header-text-color: #333333;
+
+  /* Highlight boxes (template-base.css, styleguide §3): the MII-aligned
+     values carried over from kerndatensatz-basis. Headings on their
+     backgrounds are >= 6.1:1 (AA); orange/red/grey borders >= 3.2:1 (WCAG
+     1.4.11 non-text). The inherited green border sits below the 3:1 non-text
+     bar — recorded upstream trade-off, kept for parity with
+     kerndatensatz-basis; do not copy that compromise into new variants. */
+  --ig-highlight-blue-bg-color: #e8f4f8;
+  --ig-highlight-blue-border-color: #5c8db3;
+  --ig-highlight-blue-heading-color: #406a99;
+  --ig-highlight-green-bg-color: #f0f8e8;
+  --ig-highlight-green-border-color: #91bc3d;
+  --ig-highlight-green-heading-color: #5a6b2f;
+  --ig-highlight-orange-bg-color: #fdf3e7;
+  --ig-highlight-orange-border-color: #c9721c;
+  --ig-highlight-orange-heading-color: #8a4b12;
+  --ig-highlight-red-bg-color: #fbeaea;
+  --ig-highlight-red-border-color: #c0392b;
+  --ig-highlight-red-heading-color: #8f2318;
+  --ig-highlight-grey-bg-color: #f2f3f5;
+  --ig-highlight-grey-border-color: #7a8495; /* same slate as the narrative-table border */
+  --ig-highlight-grey-heading-color: #4a5260;
+}
