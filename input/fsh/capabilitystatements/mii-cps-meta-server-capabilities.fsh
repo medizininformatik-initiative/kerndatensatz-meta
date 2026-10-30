@@ -42,39 +42,49 @@ Description: "Migration-generated proposal describing the resource types and sea
 * rest[0].resource[=].searchParam[+].name = "encounter"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-adverseevent-encounter"
 * rest[0].resource[=].searchParam[=].type = #reference
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/AdverseEvent?_include=AdverseEvent:encounter`"
 * rest[0].resource[=].searchParam[+].name = "instance"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-adverseevent-suspectentity-instance"
 * rest[0].resource[=].searchParam[=].type = #reference
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/AdverseEvent?_include=AdverseEvent:instance`"
 * rest[0].resource[+].type = #BodyStructure
 * rest[0].resource[=].searchParam[+].name = "location-qualifier"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-body-structure-location-qualifier"
 * rest[0].resource[=].searchParam[=].type = #token
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/BodyStructure?location-qualifier=http://snomed.info/sct|7771000`"
 * rest[0].resource[+].type = #CarePlan
 * rest[0].resource[=].searchParam[+].name = "addresses"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-careplan-addresses"
 * rest[0].resource[=].searchParam[=].type = #reference
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/CarePlan?_include=CarePlan:addresses`"
 * rest[0].resource[=].searchParam[+].name = "contributor"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-careplan-contributor"
 * rest[0].resource[=].searchParam[=].type = #reference
 * rest[0].resource[=].searchParam[+].name = "created"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-careplan-created"
 * rest[0].resource[=].searchParam[=].type = #date
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/CarePlan?created=2024-03-28`"
 * rest[0].resource[=].searchParam[+].name = "description"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-description"
 * rest[0].resource[=].searchParam[=].type = #string
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/CarePlan?description=The patient`"
 * rest[0].resource[=].searchParam[+].name = "supporting-info"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-supporting-info"
 * rest[0].resource[=].searchParam[=].type = #reference
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/CarePlan?_include=CarePlan:supporting-info`"
 * rest[0].resource[+].type = #Composition
 * rest[0].resource[=].searchParam[+].name = "attester-mode"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-composition-attester-mode"
 * rest[0].resource[=].searchParam[=].type = #token
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/Composition?attester-mode=legal`"
 * rest[0].resource[=].searchParam[+].name = "custodian"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-composition-custodian"
 * rest[0].resource[=].searchParam[=].type = #reference
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/Composition?_include=Composition:custodian`"
 * rest[0].resource[=].searchParam[+].name = "relates-to-code"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-composition-relatesto-code"
 * rest[0].resource[=].searchParam[=].type = #token
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/Composition?relates-to-code=replaces`"
 * rest[0].resource[=].searchParam[+].name = "section-author"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-composition-section-author"
 * rest[0].resource[=].searchParam[=].type = #reference
@@ -82,10 +92,12 @@ Description: "Migration-generated proposal describing the resource types and sea
 * rest[0].resource[=].searchParam[+].name = "section-title"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-composition-section-title"
 * rest[0].resource[=].searchParam[=].type = #string
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/Composition?section-title=Diagnostic Report`"
 * rest[0].resource[+].type = #Condition
 * rest[0].resource[=].searchParam[+].name = "asserted-date"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-asserted-date"
 * rest[0].resource[=].searchParam[=].type = #date
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/Condition?asserted-date=2020-03-15`"
 * rest[0].resource[=].searchParam[+].name = "evidence-detail"
 * rest[0].resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Condition-evidence-detail"
 * rest[0].resource[=].searchParam[=].type = #reference
@@ -143,6 +155,7 @@ Description: "Migration-generated proposal describing the resource types and sea
 * rest[0].resource[=].searchParam[+].name = "conclusion-text"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-diagnostic-report-conclusion"
 * rest[0].resource[=].searchParam[=].type = #string
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/DiagnosticReport?conclusion-text=There are`"
 * rest[0].resource[=].searchParam[+].name = "imaging-study"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-diagnosticreport-imagingstudy"
 * rest[0].resource[=].searchParam[=].type = #reference
@@ -154,18 +167,23 @@ Description: "Migration-generated proposal describing the resource types and sea
 * rest[0].resource[=].searchParam[+].name = "creation"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-dokument-documentreference-attachment-creation"
 * rest[0].resource[=].searchParam[=].type = #date
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/DocumentReference?creation=2024-02-20`"
 * rest[0].resource[=].searchParam[+].name = "doc-status"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-dokument-documentreference-doc-status"
 * rest[0].resource[=].searchParam[=].type = #token
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/DocumentReference?doc-status=final`"
 * rest[0].resource[=].searchParam[+].name = "nlp-processing-status"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-dokument-documentreference-nlp-processing-status"
 * rest[0].resource[=].searchParam[=].type = #token
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/DocumentReference?nlp-processing-status=https://www.medizininformatik-initiative.de/fhir/ext/modul-dokument/CodeSystem/mii-cs-dokument-nlp-processing-status|unprocessed`"
 * rest[0].resource[=].searchParam[+].name = "size"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-documentreference-attachment-size"
 * rest[0].resource[=].searchParam[=].type = #number
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/DocumentReference?size=986112`"
 * rest[0].resource[=].searchParam[+].name = "title"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-documentreference-attachment-title"
 * rest[0].resource[=].searchParam[=].type = #string
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/DocumentReference?title=Kolon-Organoid Kulturprotokoll`"
 * rest[0].resource[+].type = #Encounter
 * rest[0].resource[=].searchParam[+].name = "aufnahmegrund-drittestelle"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-aufnahmegrund-drittestelle"
@@ -207,6 +225,7 @@ Description: "Migration-generated proposal describing the resource types and sea
 * rest[0].resource[=].searchParam[+].name = "characteristicDescription"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-evidencevariable-characteristic-description"
 * rest[0].resource[=].searchParam[=].type = #string
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/EvidenceVariable?characteristicDescription=Alter mindestens`"
 * rest[0].resource[+].type = #FamilyMemberHistory
 * rest[0].resource[=].searchParam[+].name = "reason-code"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-familymemberhistory-reasoncode"
@@ -220,12 +239,15 @@ Description: "Migration-generated proposal describing the resource types and sea
 * rest[0].resource[=].searchParam[+].name = "bildgebungsgrund"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-bildgebungsgrund"
 * rest[0].resource[=].searchParam[=].type = #string
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/ImagingStudy?bildgebungsgrund=Verdacht auf`"
 * rest[0].resource[=].searchParam[+].name = "contrast-bolus"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-contrast-bolus"
 * rest[0].resource[=].searchParam[=].type = #token
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/ImagingStudy?contrast-bolus=true`"
 * rest[0].resource[=].searchParam[+].name = "contrast-bolus-details"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-contrast-bolus-details"
 * rest[0].resource[=].searchParam[=].type = #reference
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/ImagingStudy?_include=ImagingStudy:contrast-bolus-details`"
 * rest[0].resource[=].searchParam[+].name = "convolutional-kernel"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-convolutional-kernel"
 * rest[0].resource[=].searchParam[=].type = #string
@@ -235,9 +257,11 @@ Description: "Migration-generated proposal describing the resource types and sea
 * rest[0].resource[=].searchParam[+].name = "description"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-description"
 * rest[0].resource[=].searchParam[=].type = #string
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/ImagingStudy?description=Mamma`"
 * rest[0].resource[=].searchParam[+].name = "echo-time"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-echo-time"
 * rest[0].resource[=].searchParam[=].type = #quantity
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/ImagingStudy?echo-time=388`"
 * rest[0].resource[=].searchParam[+].name = "exposure"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-exposure"
 * rest[0].resource[=].searchParam[=].type = #quantity
@@ -247,33 +271,41 @@ Description: "Migration-generated proposal describing the resource types and sea
 * rest[0].resource[=].searchParam[+].name = "flip-angle"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-flip-angle"
 * rest[0].resource[=].searchParam[=].type = #quantity
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/ImagingStudy?flip-angle=130`"
 * rest[0].resource[=].searchParam[+].name = "instance-burned-in-annotation"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-instance-burned-in-annotation"
 * rest[0].resource[=].searchParam[=].type = #token
 * rest[0].resource[=].searchParam[+].name = "instance-image-type"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-instance-image-type"
 * rest[0].resource[=].searchParam[=].type = #token
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/ImagingStudy?instance-image-type=https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type|ORIGINAL`"
 * rest[0].resource[=].searchParam[+].name = "instance-number"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-instance-number"
 * rest[0].resource[=].searchParam[=].type = #number
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/ImagingStudy?instance-number=28`"
 * rest[0].resource[=].searchParam[+].name = "instance-pixel-spacing-x"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-instance-pixel-x"
 * rest[0].resource[=].searchParam[=].type = #quantity
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/ImagingStudy?instance-pixel-spacing-x=0.260417`"
 * rest[0].resource[=].searchParam[+].name = "instance-pixel-spacing-y"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-instance-pixel-y"
 * rest[0].resource[=].searchParam[=].type = #quantity
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/ImagingStudy?instance-pixel-spacing-y=0.260417`"
 * rest[0].resource[=].searchParam[+].name = "instance-slice-thickness"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-instance-slice-thickness"
 * rest[0].resource[=].searchParam[=].type = #quantity
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/ImagingStudy?instance-slice-thickness=3`"
 * rest[0].resource[=].searchParam[+].name = "inversion-time"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-inversion-time"
 * rest[0].resource[=].searchParam[=].type = #quantity
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/ImagingStudy?inversion-time=900`"
 * rest[0].resource[=].searchParam[+].name = "kvp"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-kvp"
 * rest[0].resource[=].searchParam[=].type = #quantity
 * rest[0].resource[=].searchParam[+].name = "magnetic-field-strength"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-magnetic-field-strength"
 * rest[0].resource[=].searchParam[=].type = #quantity
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/ImagingStudy?magnetic-field-strength=3`"
 * rest[0].resource[=].searchParam[+].name = "modality-body-site"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-modality-body-site"
 * rest[0].resource[=].searchParam[=].type = #composite
@@ -281,12 +313,15 @@ Description: "Migration-generated proposal describing the resource types and sea
 * rest[0].resource[=].searchParam[+].name = "number-instances"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-number-instances"
 * rest[0].resource[=].searchParam[=].type = #number
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/ImagingStudy?number-instances=294`"
 * rest[0].resource[=].searchParam[+].name = "number-series"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-number-series"
 * rest[0].resource[=].searchParam[=].type = #number
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/ImagingStudy?number-series=11`"
 * rest[0].resource[=].searchParam[+].name = "procedure-reference"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-procedure-reference"
 * rest[0].resource[=].searchParam[=].type = #reference
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/ImagingStudy?_include=ImagingStudy:procedure-reference`"
 * rest[0].resource[=].searchParam[+].name = "pulse-frequency"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-pulse-frequency"
 * rest[0].resource[=].searchParam[=].type = #quantity
@@ -305,24 +340,31 @@ Description: "Migration-generated proposal describing the resource types and sea
 * rest[0].resource[=].searchParam[+].name = "reason-reference"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-reason-reference"
 * rest[0].resource[=].searchParam[=].type = #reference
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/ImagingStudy?_include=ImagingStudy:reason-reference`"
 * rest[0].resource[=].searchParam[+].name = "repetition-time"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-repetition-time"
 * rest[0].resource[=].searchParam[=].type = #quantity
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/ImagingStudy?repetition-time=5000`"
 * rest[0].resource[=].searchParam[+].name = "scanning-sequence"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-scanning-sequence"
 * rest[0].resource[=].searchParam[=].type = #token
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/ImagingStudy?scanning-sequence=https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence|SE`"
 * rest[0].resource[=].searchParam[+].name = "scanning-sequence-variant"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-scanning-sequence-variant"
 * rest[0].resource[=].searchParam[=].type = #token
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/ImagingStudy?scanning-sequence-variant=https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence-variant|SP`"
 * rest[0].resource[=].searchParam[+].name = "series-laterality"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-laterality"
 * rest[0].resource[=].searchParam[=].type = #token
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/ImagingStudy?series-laterality=http://snomed.info/sct|419161000`"
 * rest[0].resource[=].searchParam[+].name = "series-number"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-number"
 * rest[0].resource[=].searchParam[=].type = #number
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/ImagingStudy?series-number=9`"
 * rest[0].resource[=].searchParam[+].name = "series-started"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-started"
 * rest[0].resource[=].searchParam[=].type = #date
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/ImagingStudy?series-started=2024-07-19`"
 * rest[0].resource[=].searchParam[+].name = "series-type"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-series-type"
 * rest[0].resource[=].searchParam[=].type = #token
@@ -332,6 +374,7 @@ Description: "Migration-generated proposal describing the resource types and sea
 * rest[0].resource[=].searchParam[+].name = "study-modality"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-modality"
 * rest[0].resource[=].searchParam[=].type = #token
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/ImagingStudy?study-modality=http://dicom.nema.org/resources/ontology/DCM|MR`"
 * rest[0].resource[=].searchParam[+].name = "tracer-exposure-time"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-series-tracer-exposure-time"
 * rest[0].resource[=].searchParam[=].type = #quantity
@@ -357,9 +400,11 @@ Description: "Migration-generated proposal describing the resource types and sea
 * rest[0].resource[=].searchParam[+].name = "quellregister"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-library-quellregister"
 * rest[0].resource[=].searchParam[=].type = #token
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/Library?quellregister=true`"
 * rest[0].resource[=].searchParam[+].name = "relatedArtifactUrl"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-library-relatedartifact-url"
 * rest[0].resource[=].searchParam[=].type = #uri
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/Library?relatedArtifactUrl=https://drks.de/`"
 * rest[0].resource[+].type = #List
 * rest[0].resource[=].searchParam[+].name = "mode"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-list-mode"
@@ -389,9 +434,11 @@ Description: "Migration-generated proposal describing the resource types and sea
 * rest[0].resource[=].searchParam[+].name = "dosage-site"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-site"
 * rest[0].resource[=].searchParam[=].type = #token
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/MedicationAdministration?dosage-site=http://snomed.info/sct|368208006`"
 * rest[0].resource[=].searchParam[+].name = "dose-quantity"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-dosequantity"
 * rest[0].resource[=].searchParam[=].type = #quantity
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/MedicationAdministration?dose-quantity=111|http://unitsofmeasure.org|mL`"
 * rest[0].resource[=].searchParam[+].name = "part-of"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-partof"
 * rest[0].resource[=].searchParam[=].type = #reference
@@ -399,25 +446,31 @@ Description: "Migration-generated proposal describing the resource types and sea
 * rest[0].resource[=].searchParam[+].name = "ratequantity"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-ratequantity"
 * rest[0].resource[=].searchParam[=].type = #quantity
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/MedicationAdministration?ratequantity=111|http://unitsofmeasure.org|mL/min`"
 * rest[0].resource[=].searchParam[+].name = "rateratio"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio"
 * rest[0].resource[=].searchParam[=].type = #composite
 * rest[0].resource[=].searchParam[+].name = "rateratio-denominator"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-denominator"
 * rest[0].resource[=].searchParam[=].type = #quantity
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/MedicationAdministration?rateratio-denominator=1|http://unitsofmeasure.org|min`"
 * rest[0].resource[=].searchParam[+].name = "rateratio-numerator"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-numerator"
 * rest[0].resource[=].searchParam[=].type = #quantity
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/MedicationAdministration?rateratio-numerator=30|http://unitsofmeasure.org|mL`"
 * rest[0].resource[=].searchParam[+].name = "reason-reference"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-reasonreference"
 * rest[0].resource[=].searchParam[=].type = #reference
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/MedicationAdministration?_include=MedicationAdministration:reason-reference`"
 * rest[0].resource[+].type = #MedicationRequest
 * rest[0].resource[=].searchParam[+].name = "dosage-route"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-route"
 * rest[0].resource[=].searchParam[=].type = #token
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/MedicationRequest?dosage-route=http://snomed.info/sct|26643006`"
 * rest[0].resource[=].searchParam[+].name = "dosage-site"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-site"
 * rest[0].resource[=].searchParam[=].type = #token
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/MedicationRequest?dosage-site=http://snomed.info/sct|123851003`"
 * rest[0].resource[=].searchParam[+].name = "dose-quantity"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-dosequantity"
 * rest[0].resource[=].searchParam[=].type = #quantity
@@ -463,6 +516,7 @@ Description: "Migration-generated proposal describing the resource types and sea
 * rest[0].resource[=].searchParam[+].name = "dosage-route"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-route"
 * rest[0].resource[=].searchParam[=].type = #token
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/MedicationStatement?dosage-route=http://snomed.info/sct|26643006`"
 * rest[0].resource[=].searchParam[+].name = "dosage-site"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-site"
 * rest[0].resource[=].searchParam[=].type = #token
@@ -470,39 +524,47 @@ Description: "Migration-generated proposal describing the resource types and sea
 * rest[0].resource[=].searchParam[+].name = "dose-quantity"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-dosequantity"
 * rest[0].resource[=].searchParam[=].type = #quantity
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/MedicationStatement?dose-quantity=80|http://unitsofmeasure.org|mg`"
 * rest[0].resource[=].searchParam[+].name = "doserange"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange"
 * rest[0].resource[=].searchParam[=].type = #composite
 * rest[0].resource[=].searchParam[+].name = "doserange-high"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange-high"
 * rest[0].resource[=].searchParam[=].type = #quantity
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/MedicationStatement?doserange-high=80|http://unitsofmeasure.org|mg`"
 * rest[0].resource[=].searchParam[+].name = "doserange-low"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange-low"
 * rest[0].resource[=].searchParam[=].type = #quantity
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/MedicationStatement?doserange-low=40|http://unitsofmeasure.org|mg`"
 * rest[0].resource[=].searchParam[+].name = "part-of"
 * rest[0].resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/MedicationStatement-part-of"
 * rest[0].resource[=].searchParam[=].type = #reference
 * rest[0].resource[=].searchParam[+].name = "ratequantity"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-ratequantity"
 * rest[0].resource[=].searchParam[=].type = #quantity
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/MedicationStatement?ratequantity=3.3|http://unitsofmeasure.org|mg/h`"
 * rest[0].resource[=].searchParam[+].name = "raterange"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange"
 * rest[0].resource[=].searchParam[=].type = #composite
 * rest[0].resource[=].searchParam[+].name = "raterange-high"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange-high"
 * rest[0].resource[=].searchParam[=].type = #quantity
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/MedicationStatement?raterange-high=4|http://unitsofmeasure.org|mg/h`"
 * rest[0].resource[=].searchParam[+].name = "raterange-low"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange-low"
 * rest[0].resource[=].searchParam[=].type = #quantity
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/MedicationStatement?raterange-low=2|http://unitsofmeasure.org|mg/h`"
 * rest[0].resource[=].searchParam[+].name = "rateratio"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio"
 * rest[0].resource[=].searchParam[=].type = #composite
 * rest[0].resource[=].searchParam[+].name = "rateratio-denominator"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-denominator"
 * rest[0].resource[=].searchParam[=].type = #quantity
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/MedicationStatement?rateratio-denominator=1|http://unitsofmeasure.org|d`"
 * rest[0].resource[=].searchParam[+].name = "rateratio-numerator"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-numerator"
 * rest[0].resource[=].searchParam[=].type = #quantity
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/MedicationStatement?rateratio-numerator=80|http://unitsofmeasure.org|mg`"
 * rest[0].resource[=].searchParam[+].name = "reason-reference"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-reasonreference"
 * rest[0].resource[=].searchParam[=].type = #reference
@@ -511,12 +573,14 @@ Description: "Migration-generated proposal describing the resource types and sea
 * rest[0].resource[=].searchParam[+].name = "body-site"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-bodysite"
 * rest[0].resource[=].searchParam[=].type = #token
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/Observation?body-site=http://snomed.info/sct|76752008`"
 * rest[0].resource[=].searchParam[+].name = "body-structure"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-body-structure"
 * rest[0].resource[=].searchParam[=].type = #reference
 * rest[0].resource[=].searchParam[+].name = "component-interpretation"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-component-interpretation"
 * rest[0].resource[=].searchParam[=].type = #token
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/Observation?component-interpretation=http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation|N`"
 * rest[0].resource[=].searchParam[+].name = "encounter"
 * rest[0].resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/clinical-encounter"
 * rest[0].resource[=].searchParam[=].type = #reference
@@ -541,24 +605,30 @@ Description: "Migration-generated proposal describing the resource types and sea
 * rest[0].resource[=].searchParam[+].name = "reference-range-high"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-referencerange-high"
 * rest[0].resource[=].searchParam[=].type = #quantity
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/Observation?reference-range-high=3000|http://unitsofmeasure.org|mL`"
 * rest[0].resource[=].searchParam[+].name = "reference-range-low"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-referencerange-low"
 * rest[0].resource[=].searchParam[=].type = #quantity
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/Observation?reference-range-low=1000|http://unitsofmeasure.org|mL`"
 * rest[0].resource[=].searchParam[+].name = "series-uid"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-series-uid"
 * rest[0].resource[=].searchParam[=].type = #token
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/Observation?series-uid=1.2.34.5.6789.1.2.34.5678912.34567891234567891234`"
 * rest[0].resource[=].searchParam[+].name = "sop-instance-uid"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-sop-instance-uid"
 * rest[0].resource[=].searchParam[=].type = #token
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/Observation?sop-instance-uid=1.2.34.5.6789.1.2.3.45678.9123456789123456789123456789`"
 * rest[0].resource[=].searchParam[+].name = "value-ratio"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-value-ratio"
 * rest[0].resource[=].searchParam[=].type = #composite
 * rest[0].resource[=].searchParam[+].name = "value-ratio-denominator"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-value-ratio-denominator"
 * rest[0].resource[=].searchParam[=].type = #quantity
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/Observation?value-ratio-denominator=128|http://unitsofmeasure.org|{titer}`"
 * rest[0].resource[=].searchParam[+].name = "value-ratio-numerator"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-value-ratio-numerator"
 * rest[0].resource[=].searchParam[=].type = #quantity
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/Observation?value-ratio-numerator=1|http://unitsofmeasure.org|{titer}`"
 * rest[0].resource[+].type = #Patient
 * rest[0].resource[=].searchParam[+].name = "adresszusatz"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-adresszusatz"
@@ -583,6 +653,7 @@ Description: "Migration-generated proposal describing the resource types and sea
 * rest[0].resource[=].searchParam[+].name = "postfach"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-postfach"
 * rest[0].resource[=].searchParam[=].type = #string
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/Patient?postfach=Postfach-252618`"
 * rest[0].resource[=].searchParam[+].name = "prefix"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-prefix"
 * rest[0].resource[=].searchParam[=].type = #token
@@ -607,6 +678,7 @@ Description: "Migration-generated proposal describing the resource types and sea
 * rest[0].resource[=].searchParam[+].name = "complication"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-complication"
 * rest[0].resource[=].searchParam[=].type = #token
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/Procedure?complication=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-operation-komplikation|N`"
 * rest[0].resource[=].searchParam[+].name = "dokumentationsdatum"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-dokumentationsdatum"
 * rest[0].resource[=].searchParam[=].type = #date
@@ -622,6 +694,7 @@ Description: "Migration-generated proposal describing the resource types and sea
 * rest[0].resource[=].searchParam[+].name = "outcome"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-outcome"
 * rest[0].resource[=].searchParam[=].type = #token
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/Procedure?outcome=http://snomed.info/sct|385669000`"
 * rest[0].resource[=].searchParam[+].name = "recorder"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-recorder"
 * rest[0].resource[=].searchParam[=].type = #reference
@@ -629,41 +702,53 @@ Description: "Migration-generated proposal describing the resource types and sea
 * rest[0].resource[=].searchParam[+].name = "report"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-read-proc-report"
 * rest[0].resource[=].searchParam[=].type = #reference
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/Procedure?_include=Procedure:report`"
 * rest[0].resource[+].type = #ResearchStudy
 * rest[0].resource[=].searchParam[+].name = "akronym"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-akronym"
 * rest[0].resource[=].searchParam[=].type = #string
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/ResearchStudy?akronym=NSCLC-EGFR-III`"
 * rest[0].resource[=].searchParam[+].name = "armName"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-arm-name"
 * rest[0].resource[=].searchParam[=].type = #string
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/ResearchStudy?armName=Arm A: Osimertinib`"
 * rest[0].resource[=].searchParam[+].name = "finanzierung"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-finanzierung"
 * rest[0].resource[=].searchParam[=].type = #string
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/ResearchStudy?finanzierung=Industriefinanzierte Studie`"
 * rest[0].resource[=].searchParam[+].name = "label"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-label"
 * rest[0].resource[=].searchParam[=].type = #string
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/ResearchStudy?label=Phase-III-Studie zu`"
 * rest[0].resource[=].searchParam[+].name = "rekrutierungsstand"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-rekrutierungsstand"
 * rest[0].resource[=].searchParam[=].type = #number
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/ResearchStudy?rekrutierungsstand=120`"
 * rest[0].resource[=].searchParam[+].name = "rekrutierungsstand-datum"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-rekrutierungsstand-datum"
 * rest[0].resource[=].searchParam[=].type = #date
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/ResearchStudy?rekrutierungsstand-datum=2024-06-01`"
 * rest[0].resource[=].searchParam[+].name = "rekrutierungsstand-genauigkeit"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-rekrutierungsstand-genauigkeit"
 * rest[0].resource[=].searchParam[=].type = #string
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/ResearchStudy?rekrutierungsstand-genauigkeit=exakt`"
 * rest[0].resource[=].searchParam[+].name = "rekrutierungsstart"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-rekrutierungsstart"
 * rest[0].resource[=].searchParam[=].type = #date
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/ResearchStudy?rekrutierungsstart=2024-01-01`"
 * rest[0].resource[=].searchParam[+].name = "rekrutierungsziel"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-rekrutierungsziel"
 * rest[0].resource[=].searchParam[=].type = #number
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/ResearchStudy?rekrutierungsziel=300`"
 * rest[0].resource[=].searchParam[+].name = "studienregister"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchstudy-studienregister"
 * rest[0].resource[=].searchParam[=].type = #reference
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/ResearchStudy?_include=ResearchStudy:studienregister`"
 * rest[0].resource[+].type = #ResearchSubject
 * rest[0].resource[=].searchParam[+].name = "consent"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-researchsubject-consent"
 * rest[0].resource[=].searchParam[=].type = #reference
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/ResearchSubject?_include=ResearchSubject:consent`"
 * rest[0].resource[+].type = #SearchParameter
 * rest[0].resource[=].supportedProfile[+] = "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-pr-meta-searchparameter|2027.0.0-ballot"
 * rest[0].resource[+].type = #ServiceRequest
@@ -698,15 +783,19 @@ Description: "Migration-generated proposal describing the resource types and sea
 * rest[0].resource[=].searchParam[+].name = "processing-additive"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-processing-additive"
 * rest[0].resource[=].searchParam[=].type = #reference
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/Specimen?_include=Specimen:processing-additive`"
 * rest[0].resource[=].searchParam[+].name = "processing-date"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-processing-date"
 * rest[0].resource[=].searchParam[=].type = #date
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/Specimen?processing-date=2024-02-15`"
 * rest[0].resource[=].searchParam[+].name = "processing-procedure"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-processing-procedure"
 * rest[0].resource[=].searchParam[=].type = #token
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/Specimen?processing-procedure=http://snomed.info/sct|1186936003`"
 * rest[0].resource[=].searchParam[+].name = "request"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-request"
 * rest[0].resource[=].searchParam[=].type = #reference
+* rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/Specimen?_include=Specimen:request`"
 * rest[0].resource[+].type = #Task
 * rest[0].resource[=].searchParam[+].name = "for"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-task-for"

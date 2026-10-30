@@ -7,9 +7,14 @@ BLAZECTL_VERSION="1.5.1"
 BLAZECTL_URL="https://github.com/samply/blazectl/releases/download/v${BLAZECTL_VERSION}/blazectl-${BLAZECTL_VERSION}-linux-amd64.tar.gz"
 
 echo "Finding testdata bundle URL..."
-# Get the download URL for the testdata-bundles-ndjson file
-ZIP_URL=$(curl -s "https://api.github.com/repos/medizininformatik-initiative/mii-testdata/releases/tags/${MII_TESTDATA_VERSION}" | \
-  jq -r '.assets[] | select(.name | startswith("testdata-bundles-ndjson-")) | .browser_download_url')
+# Get the download URL for the testdata-bundles-ndjson file. Anonymous API
+# calls share a small rate limit per runner IP; CI passes GH_TOKEN to avoid it.
+AUTH=()
+if [ -n "$GH_TOKEN" ]; then
+  AUTH=(-H "Authorization: Bearer $GH_TOKEN")
+fi
+ZIP_URL=$(curl -sf "${AUTH[@]}" "https://api.github.com/repos/medizininformatik-initiative/mii-testdata/releases/tags/${MII_TESTDATA_VERSION}" | \
+  jq -r '.assets[]? | select(.name | startswith("testdata-bundles-ndjson-")) | .browser_download_url' || true)
 
 if [ -z "$ZIP_URL" ]; then
   echo "Error: Could not find testdata-bundles-ndjson asset for version ${MII_TESTDATA_VERSION}"

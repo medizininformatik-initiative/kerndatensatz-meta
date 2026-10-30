@@ -63,47 +63,68 @@ search() {
 # =========================================================
 # AdverseEvent
 # =========================================================
-# TODO: Add tests for AdverseEvent.encounter
-# TODO: Add tests for AdverseEvent.suspectEntity.instance
+# encounter
+test_includes_resource_type "AdverseEvent with _include=AdverseEvent:encounter" \
+                           "AdverseEvent" "_include=AdverseEvent:encounter" "Encounter"
+
+# instance
+test_includes_resource_type "AdverseEvent with _include=AdverseEvent:instance" \
+                           "AdverseEvent" "_include=AdverseEvent:instance" "Procedure"
+
+# =========================================================
+# BodyStructure
+# =========================================================
+# location-qualifier
+test_at_least_one "BodyStructure with location-qualifier=http://snomed.info/sct|7771000 count" \
+                  "$(search "BodyStructure" "location-qualifier=http://snomed.info/sct%7C7771000")"
 
 # =========================================================
 # CarePlan
 # =========================================================
-# TODO: Add tests for CarePlan.addresses
 # TODO: Add tests for CarePlan.contributor
-# TODO: Add tests for CarePlan.created
+
+# addresses
+test_includes_resource_type "CarePlan with _include=CarePlan:addresses" \
+                           "CarePlan" "_include=CarePlan:addresses" "Condition"
+
+# created
+test_at_least_one "CarePlan with created=2024-03-28 count" \
+                  "$(search "CarePlan" "created=2024-03-28")"
+
+# description
+test_at_least_one "CarePlan with description=The patient count" \
+                  "$(search "CarePlan" "description=The%20patient")"
+
+# supporting-info
+test_includes_resource_type "CarePlan with _include=CarePlan:supporting-info" \
+                           "CarePlan" "_include=CarePlan:supporting-info" "DiagnosticReport"
 
 # =========================================================
 # Composition
 # =========================================================
-# Composition.attester.mode
-#test "Composition.attester.mode=legal count" \
-#     "$(search "Composition" "attester-mode=legal")" \
-#     "1"
-
-# Composition.custodian
-#test "Composition.custodian count" \
-#     "$(search "Composition" "custodian=Organization/mii-exa-test-data-organization-charite")" \
-#     "1"
-
-# Composition.relatesTo.code
-#test "Composition.relatesTo.code=appends count" \
-#     "$(search "Composition" "relates-to-code=appends")" \
-#     "1"
-
 # Composition.section.author
 test_includes_resource_type "Composition with _include=Composition:section-author" \
                   "Composition" "_include=Composition:section-author" "Practitioner"
 
-# Composition.section.title
-# test_at_least_one "Composition with section-title:contains=Left" \
-#                   "$(search "Composition" "section-title:contains=Left")"
+# attester-mode
+test_at_least_one "Composition with attester-mode=legal count" \
+                  "$(search "Composition" "attester-mode=legal")"
+
+# custodian
+test_includes_resource_type "Composition with _include=Composition:custodian" \
+                           "Composition" "_include=Composition:custodian" "Organization"
+
+# relates-to-code
+test_at_least_one "Composition with relates-to-code=replaces count" \
+                  "$(search "Composition" "relates-to-code=replaces")"
+
+# section-title
+test_at_least_one "Composition with section-title=Diagnostic Report count" \
+                  "$(search "Composition" "section-title=Diagnostic%20Report")"
 
 # =========================================================
 # Condition
 # =========================================================
-# TODO: Add tests for Condition.evidence.detail
-
 # Condition code diagnosesicherheit mehrfachcodierung seitenlokalisation
 B05_3="http://fhir.de/CodeSystem/bfarm/icd-10-gm|B05.3"
 H67_1="http://fhir.de/CodeSystem/bfarm/icd-10-gm|H67.1"
@@ -149,6 +170,10 @@ test_at_least_one "Condition.code Mehrfachcodierung B05.3/E count" \
 # Condition.verificationStatus
 test_at_least_one "Condition with verificationStatus=confirmed count" \
                   "$(search "Condition" "verification-status=confirmed")" 
+
+# asserted-date
+test_at_least_one "Condition with asserted-date=2020-03-15 count" \
+                  "$(search "Condition" "asserted-date=2020-03-15")"
 
 # =========================================================
 # Consent
@@ -203,11 +228,32 @@ test_includes_resource_type "DiagnosticReport with _include=DiagnosticReport:ima
 # test_includes_resource_type "DiagnosticReport with _include=DiagnosticReport:patient" \
 #                            "DiagnosticReport" "_include=DiagnosticReport:patient" "Patient"
 
+# conclusion-text
+test_at_least_one "DiagnosticReport with conclusion-text=There are count" \
+                  "$(search "DiagnosticReport" "conclusion-text=There%20are")"
+
 # =========================================================
 # DocumentReference
 # =========================================================
-# TODO: DocumentReference.content.attachment.size
-# TODO: DocumentReference.content.attachment.title
+# size
+test_at_least_one "DocumentReference with size=986112 count" \
+                  "$(search "DocumentReference" "size=986112")"
+
+# title
+test_at_least_one "DocumentReference with title=Kolon-Organoid Kulturprotokoll count" \
+                  "$(search "DocumentReference" "title=Kolon-Organoid%20Kulturprotokoll")"
+
+# creation
+test_at_least_one "DocumentReference with creation=2024-02-20 count" \
+                  "$(search "DocumentReference" "creation=2024-02-20")"
+
+# doc-status
+test_at_least_one "DocumentReference with doc-status=final count" \
+                  "$(search "DocumentReference" "doc-status=final")"
+
+# nlp-processing-status
+test_at_least_one "DocumentReference with nlp-processing-status=https://www.medizininformatik-initiative.de/fhir/ext/modul-dokument/CodeSystem/mii-cs-dokument-nlp-processing-status|unprocessed count" \
+                  "$(search "DocumentReference" "nlp-processing-status=https://www.medizininformatik-initiative.de/fhir/ext/modul-dokument/CodeSystem/mii-cs-dokument-nlp-processing-status%7Cunprocessed")"
 
 # =========================================================
 # Encounter
@@ -239,7 +285,9 @@ test_at_least_one "Encounter with Entlassungsgrund=079 count" \
 # =========================================================
 # EvidenceVariable
 # =========================================================
-# TODO: EvidenceVariable.characteristic.description
+# characteristicDescription
+test_at_least_one "EvidenceVariable with characteristicDescription=Alter mindestens count" \
+                  "$(search "EvidenceVariable" "characteristicDescription=Alter%20mindestens")"
 
 # =========================================================
 # FamilyMemberHistory
@@ -259,11 +307,112 @@ test_includes_resource_type "FamilyMemberHistory with _include=FamilyMemberHisto
 test_at_least_one "ImagingStudy with modality-body-site=http://dicom.nema.org/resources/ontology/DCM|MR\$http://snomed.info/sct|76752008 count" \
                   "$(search "ImagingStudy" "modality-body-site=http://dicom.nema.org/resources/ontology/DCM%7CMR%24http://snomed.info/sct%7C76752008")"
 
+# description
+test_at_least_one "ImagingStudy with description=Mamma count" \
+                  "$(search "ImagingStudy" "description=Mamma")"
+
+# bildgebungsgrund
+test_at_least_one "ImagingStudy with bildgebungsgrund=Verdacht auf count" \
+                  "$(search "ImagingStudy" "bildgebungsgrund=Verdacht%20auf")"
+
+# instance-image-type
+test_at_least_one "ImagingStudy with instance-image-type=https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type|ORIGINAL count" \
+                  "$(search "ImagingStudy" "instance-image-type=https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type%7CORIGINAL")"
+
+# instance-number
+test_at_least_one "ImagingStudy with instance-number=28 count" \
+                  "$(search "ImagingStudy" "instance-number=28")"
+
+# study-modality
+test_at_least_one "ImagingStudy with study-modality=http://dicom.nema.org/resources/ontology/DCM|MR count" \
+                  "$(search "ImagingStudy" "study-modality=http://dicom.nema.org/resources/ontology/DCM%7CMR")"
+
+# number-instances
+test_at_least_one "ImagingStudy with number-instances=294 count" \
+                  "$(search "ImagingStudy" "number-instances=294")"
+
+# number-series
+test_at_least_one "ImagingStudy with number-series=11 count" \
+                  "$(search "ImagingStudy" "number-series=11")"
+
+# procedure-reference
+test_includes_resource_type "ImagingStudy with _include=ImagingStudy:procedure-reference" \
+                           "ImagingStudy" "_include=ImagingStudy:procedure-reference" "Procedure"
+
+# contrast-bolus-details
+test_includes_resource_type "ImagingStudy with _include=ImagingStudy:contrast-bolus-details" \
+                           "ImagingStudy" "_include=ImagingStudy:contrast-bolus-details" "MedicationAdministration"
+
+# contrast-bolus
+test_at_least_one "ImagingStudy with contrast-bolus=true count" \
+                  "$(search "ImagingStudy" "contrast-bolus=true")"
+
+# series-laterality
+test_at_least_one "ImagingStudy with series-laterality=http://snomed.info/sct|419161000 count" \
+                  "$(search "ImagingStudy" "series-laterality=http://snomed.info/sct%7C419161000")"
+
+# series-number
+test_at_least_one "ImagingStudy with series-number=9 count" \
+                  "$(search "ImagingStudy" "series-number=9")"
+
+# scanning-sequence-variant
+test_at_least_one "ImagingStudy with scanning-sequence-variant=https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence-variant|SP count" \
+                  "$(search "ImagingStudy" "scanning-sequence-variant=https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence-variant%7CSP")"
+
+# scanning-sequence
+test_at_least_one "ImagingStudy with scanning-sequence=https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence|SE count" \
+                  "$(search "ImagingStudy" "scanning-sequence=https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-scanning-sequence%7CSE")"
+
+# series-started
+test_at_least_one "ImagingStudy with series-started=2024-07-19 count" \
+                  "$(search "ImagingStudy" "series-started=2024-07-19")"
+
+# reason-reference
+test_includes_resource_type "ImagingStudy with _include=ImagingStudy:reason-reference" \
+                           "ImagingStudy" "_include=ImagingStudy:reason-reference" "Condition"
+
+# instance-pixel-spacing-x
+test_at_least_one "ImagingStudy with instance-pixel-spacing-x=0.260417 count" \
+                  "$(search "ImagingStudy" "instance-pixel-spacing-x=0.260417")"
+
+# instance-pixel-spacing-y
+test_at_least_one "ImagingStudy with instance-pixel-spacing-y=0.260417 count" \
+                  "$(search "ImagingStudy" "instance-pixel-spacing-y=0.260417")"
+
+# instance-slice-thickness
+test_at_least_one "ImagingStudy with instance-slice-thickness=3 count" \
+                  "$(search "ImagingStudy" "instance-slice-thickness=3")"
+
+# echo-time
+test_at_least_one "ImagingStudy with echo-time=388 count" \
+                  "$(search "ImagingStudy" "echo-time=388")"
+
+# flip-angle
+test_at_least_one "ImagingStudy with flip-angle=130 count" \
+                  "$(search "ImagingStudy" "flip-angle=130")"
+
+# inversion-time
+test_at_least_one "ImagingStudy with inversion-time=900 count" \
+                  "$(search "ImagingStudy" "inversion-time=900")"
+
+# magnetic-field-strength
+test_at_least_one "ImagingStudy with magnetic-field-strength=3 count" \
+                  "$(search "ImagingStudy" "magnetic-field-strength=3")"
+
+# repetition-time
+test_at_least_one "ImagingStudy with repetition-time=5000 count" \
+                  "$(search "ImagingStudy" "repetition-time=5000")"
+
 # =========================================================
 # Library
 # =========================================================
-# TODO: Library quellregister
-# TODO: Library.relatedArtifact.document.url
+# quellregister
+test_at_least_one "Library with quellregister=true count" \
+                  "$(search "Library" "quellregister=true")"
+
+# relatedArtifactUrl
+test_at_least_one "Library with relatedArtifactUrl=https://drks.de/ count" \
+                  "$(search "Library" "relatedArtifactUrl=https://drks.de/")"
 
 # =========================================================
 # List
@@ -293,8 +442,8 @@ test_at_least_one "Medication with ingredient-strength-numerator=100|http://unit
                   "$(search "Medication" "ingredient-strength-numerator=100%7Chttp://unitsofmeasure.org%7Cmg")"
 
 # =========================================================
-# MedicationStatement 
-# MedicationRequest 
+# MedicationStatement
+# MedicationRequest
 # MedicationAdministration
 # =========================================================
 # dose-quantity
@@ -351,19 +500,83 @@ test_includes_resource_type "MedicationAdministration with _include=MedicationAd
 test_includes_resource_type "MedicationStatement with _include=MedicationStatement:reason-reference" \
                   "MedicationStatement" "_include=MedicationStatement:reason-reference" "Condition"
 
+# --- MedicationStatement ---
+
+# dose-quantity
+test_at_least_one "MedicationStatement with dose-quantity=80|http://unitsofmeasure.org|mg count" \
+                  "$(search "MedicationStatement" "dose-quantity=80%7Chttp://unitsofmeasure.org%7Cmg")"
+
+# doserange-high
+test_at_least_one "MedicationStatement with doserange-high=80|http://unitsofmeasure.org|mg count" \
+                  "$(search "MedicationStatement" "doserange-high=80%7Chttp://unitsofmeasure.org%7Cmg")"
+
+# doserange-low
+test_at_least_one "MedicationStatement with doserange-low=40|http://unitsofmeasure.org|mg count" \
+                  "$(search "MedicationStatement" "doserange-low=40%7Chttp://unitsofmeasure.org%7Cmg")"
+
+# ratequantity
+test_at_least_one "MedicationStatement with ratequantity=3.3|http://unitsofmeasure.org|mg/h count" \
+                  "$(search "MedicationStatement" "ratequantity=3.3%7Chttp://unitsofmeasure.org%7Cmg/h")"
+
+# raterange-high
+test_at_least_one "MedicationStatement with raterange-high=4|http://unitsofmeasure.org|mg/h count" \
+                  "$(search "MedicationStatement" "raterange-high=4%7Chttp://unitsofmeasure.org%7Cmg/h")"
+
+# raterange-low
+test_at_least_one "MedicationStatement with raterange-low=2|http://unitsofmeasure.org|mg/h count" \
+                  "$(search "MedicationStatement" "raterange-low=2%7Chttp://unitsofmeasure.org%7Cmg/h")"
+
+# rateratio-denominator
+test_at_least_one "MedicationStatement with rateratio-denominator=1|http://unitsofmeasure.org|d count" \
+                  "$(search "MedicationStatement" "rateratio-denominator=1%7Chttp://unitsofmeasure.org%7Cd")"
+
+# rateratio-numerator
+test_at_least_one "MedicationStatement with rateratio-numerator=80|http://unitsofmeasure.org|mg count" \
+                  "$(search "MedicationStatement" "rateratio-numerator=80%7Chttp://unitsofmeasure.org%7Cmg")"
+
+# dosage-route
+test_at_least_one "MedicationStatement with dosage-route=http://snomed.info/sct|26643006 count" \
+                  "$(search "MedicationStatement" "dosage-route=http://snomed.info/sct%7C26643006")"
+
+# --- MedicationRequest ---
+
+# dosage-route
+test_at_least_one "MedicationRequest with dosage-route=http://snomed.info/sct|26643006 count" \
+                  "$(search "MedicationRequest" "dosage-route=http://snomed.info/sct%7C26643006")"
+
+# dosage-site
+test_at_least_one "MedicationRequest with dosage-site=http://snomed.info/sct|123851003 count" \
+                  "$(search "MedicationRequest" "dosage-site=http://snomed.info/sct%7C123851003")"
+
+# --- MedicationAdministration ---
+
+# dose-quantity
+test_at_least_one "MedicationAdministration with dose-quantity=111|http://unitsofmeasure.org|mL count" \
+                  "$(search "MedicationAdministration" "dose-quantity=111%7Chttp://unitsofmeasure.org%7CmL")"
+
+# ratequantity
+test_at_least_one "MedicationAdministration with ratequantity=111|http://unitsofmeasure.org|mL/min count" \
+                  "$(search "MedicationAdministration" "ratequantity=111%7Chttp://unitsofmeasure.org%7CmL/min")"
+
+# rateratio-denominator
+test_at_least_one "MedicationAdministration with rateratio-denominator=1|http://unitsofmeasure.org|min count" \
+                  "$(search "MedicationAdministration" "rateratio-denominator=1%7Chttp://unitsofmeasure.org%7Cmin")"
+
+# rateratio-numerator
+test_at_least_one "MedicationAdministration with rateratio-numerator=30|http://unitsofmeasure.org|mL count" \
+                  "$(search "MedicationAdministration" "rateratio-numerator=30%7Chttp://unitsofmeasure.org%7CmL")"
+
+# dosage-site
+test_at_least_one "MedicationAdministration with dosage-site=http://snomed.info/sct|368208006 count" \
+                  "$(search "MedicationAdministration" "dosage-site=http://snomed.info/sct%7C368208006")"
+
+# reason-reference
+test_includes_resource_type "MedicationAdministration with _include=MedicationAdministration:reason-reference" \
+                           "MedicationAdministration" "_include=MedicationAdministration:reason-reference" "Condition"
+
 # =========================================================
 # Observation
 # =========================================================
-# body-site
-# test_at_least_one "Observation with body-site=http://snomed.info/sct|42859004 count" \
-#                   "$(search "Observation" "body-site=http://snomed.info/sct%7C42859004")"
-
-# TODO: component-interpretation
-
-# TODO: encounter
-
-# TODO: focus
-
 # has-member
 test_includes_resource_type "Observation with _include=Observation:has-member" \
                            "Observation" "_include=Observation:has-member" "Observation"
@@ -378,21 +591,39 @@ test_at_least_one "Observation with issued=2024-02-15 count" \
 
 # TODO: reference-range
 
-# TODO: reference-range-high
-# test_at_least_one "Observation with reference-range-high=65|http://unitsofmeasure.org|a count" \
-#                   "$(search "Observation" "reference-range-high=65%7Chttp://unitsofmeasure.org%7Ca")"
-
-# TODO: reference-range-low
-
 # TODO: value-ratio
 
+# body-site
+test_at_least_one "Observation with body-site=http://snomed.info/sct|76752008 count" \
+                  "$(search "Observation" "body-site=http://snomed.info/sct%7C76752008")"
+
+# component-interpretation
+test_at_least_one "Observation with component-interpretation=http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation|N count" \
+                  "$(search "Observation" "component-interpretation=http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation%7CN")"
+
+# reference-range-high
+test_at_least_one "Observation with reference-range-high=3000|http://unitsofmeasure.org|mL count" \
+                  "$(search "Observation" "reference-range-high=3000%7Chttp://unitsofmeasure.org%7CmL")"
+
+# reference-range-low
+test_at_least_one "Observation with reference-range-low=1000|http://unitsofmeasure.org|mL count" \
+                  "$(search "Observation" "reference-range-low=1000%7Chttp://unitsofmeasure.org%7CmL")"
+
+# series-uid
+test_at_least_one "Observation with series-uid=1.2.34.5.6789.1.2.34.5678912.34567891234567891234 count" \
+                  "$(search "Observation" "series-uid=1.2.34.5.6789.1.2.34.5678912.34567891234567891234")"
+
+# sop-instance-uid
+test_at_least_one "Observation with sop-instance-uid=1.2.34.5.6789.1.2.3.45678.9123456789123456789123456789 count" \
+                  "$(search "Observation" "sop-instance-uid=1.2.34.5.6789.1.2.3.45678.9123456789123456789123456789")"
+
 # value-ratio-denominator
-# test_at_least_one "Observation with value-ratio-denominator=1|http://unitsofmeasure.org|mL count" \
-#                   "$(search "Observation" "value-ratio-denominator=1%7Chttp://unitsofmeasure.org%7CmL")"
+test_at_least_one "Observation with value-ratio-denominator=128|http://unitsofmeasure.org|{titer} count" \
+                  "$(search "Observation" "value-ratio-denominator=128%7Chttp://unitsofmeasure.org%7C%7Btiter%7D")"
 
 # value-ratio-numerator
-# test_at_least_one "Observation with value-ratio-numerator=16|http://unitsofmeasure.org|ng count" \
-#                   "$(search "Observation" "value-ratio-numerator=16%7Chttp://unitsofmeasure.org%7Cng")"
+test_at_least_one "Observation with value-ratio-numerator=1|http://unitsofmeasure.org|{titer} count" \
+                  "$(search "Observation" "value-ratio-numerator=1%7Chttp://unitsofmeasure.org%7C%7Btiter%7D")"
 
 # =========================================================
 # Patient
@@ -446,14 +677,16 @@ test_at_least_one "Patient with stadtteil=Malchow count" \
 test_at_least_one "Patient with strasse=Dorfstraße count" \
      "$(search "Patient" "strasse=Dorfstraße")"
 
+# postfach
+test_at_least_one "Patient with postfach=Postfach-252618 count" \
+                  "$(search "Patient" "postfach=Postfach-252618")"
+
 # =========================================================
 # Procedure
 # =========================================================
 # bodySite
 test_at_least_one "Procedure with bodySite=http://snomed.info/sct|44714003 count" \
                   "$(search "Procedure" "bodySite=http://snomed.info/sct%7C44714003")"
-
-# TODO: complication
 
 # dokumentationsdatum
 test_at_least_one "Procedure with dokumentationsdatum=2024-02-20 count" \
@@ -463,8 +696,6 @@ test_at_least_one "Procedure with dokumentationsdatum=2024-02-20 count" \
 test_at_least_one "Procedure with durchfuehrungsabsicht=http://snomed.info/sct|262202000 count" \
                   "$(search "Procedure" "durchfuehrungsabsicht=http://snomed.info/sct%7C262202000")"
 
-# TODO: outcome
-
 # recorder
 test_includes_resource_type "Procedure with _include=Procedure:recorder" \
                   "Procedure" "_include=Procedure:recorder" "PractitionerRole"
@@ -473,20 +704,67 @@ test_includes_resource_type "Procedure with _include=Procedure:recorder" \
 test_at_least_one "Procedure.code Seitenlokalisation 5-322.d1/R count" \
      "$(search "Procedure" "code=http://fhir.de/CodeSystem/bfarm/ops%7C5-322.d1&ops-seitenlokalisation=$R")"
 
+# complication
+test_at_least_one "Procedure with complication=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-operation-komplikation|N count" \
+                  "$(search "Procedure" "complication=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-operation-komplikation%7CN")"
+
+# outcome
+test_at_least_one "Procedure with outcome=http://snomed.info/sct|385669000 count" \
+                  "$(search "Procedure" "outcome=http://snomed.info/sct%7C385669000")"
+
+# report
+test_includes_resource_type "Procedure with _include=Procedure:report" \
+                           "Procedure" "_include=Procedure:report" "DiagnosticReport"
+
 # =========================================================
 # ResearchStudy
 # =========================================================
-# TODO: akronym
-# TODO: armName
-# TODO: finanzierung
-# TODO: label
-# TODO: rekrutierungsstand
-# TODO: rekrutierungsstand-datum
-# TODO: rekrutierungsstand-genauigkeit
-# TODO: rekrutierungsstart
-# TODO: rekrutierungsziel
-# TODO: studienregister
-# TODO: consent
+# akronym
+test_at_least_one "ResearchStudy with akronym=NSCLC-EGFR-III count" \
+                  "$(search "ResearchStudy" "akronym=NSCLC-EGFR-III")"
+
+# armName
+test_at_least_one "ResearchStudy with armName=Arm A: Osimertinib count" \
+                  "$(search "ResearchStudy" "armName=Arm%20A:%20Osimertinib")"
+
+# finanzierung
+test_at_least_one "ResearchStudy with finanzierung=Industriefinanzierte Studie count" \
+                  "$(search "ResearchStudy" "finanzierung=Industriefinanzierte%20Studie")"
+
+# label
+test_at_least_one "ResearchStudy with label=Phase-III-Studie zu count" \
+                  "$(search "ResearchStudy" "label=Phase-III-Studie%20zu")"
+
+# rekrutierungsstand-datum
+test_at_least_one "ResearchStudy with rekrutierungsstand-datum=2024-06-01 count" \
+                  "$(search "ResearchStudy" "rekrutierungsstand-datum=2024-06-01")"
+
+# rekrutierungsstand-genauigkeit
+test_at_least_one "ResearchStudy with rekrutierungsstand-genauigkeit=exakt count" \
+                  "$(search "ResearchStudy" "rekrutierungsstand-genauigkeit=exakt")"
+
+# rekrutierungsstand
+test_at_least_one "ResearchStudy with rekrutierungsstand=120 count" \
+                  "$(search "ResearchStudy" "rekrutierungsstand=120")"
+
+# rekrutierungsstart
+test_at_least_one "ResearchStudy with rekrutierungsstart=2024-01-01 count" \
+                  "$(search "ResearchStudy" "rekrutierungsstart=2024-01-01")"
+
+# rekrutierungsziel
+test_at_least_one "ResearchStudy with rekrutierungsziel=300 count" \
+                  "$(search "ResearchStudy" "rekrutierungsziel=300")"
+
+# studienregister
+test_includes_resource_type "ResearchStudy with _include=ResearchStudy:studienregister" \
+                           "ResearchStudy" "_include=ResearchStudy:studienregister" "Library"
+
+# =========================================================
+# ResearchSubject
+# =========================================================
+# consent
+test_includes_resource_type "ResearchSubject with _include=ResearchSubject:consent" \
+                           "ResearchSubject" "_include=ResearchSubject:consent" "Consent"
 
 # =========================================================
 # ServiceRequest
@@ -523,20 +801,20 @@ test_includes_resource_type "Specimen with _include=Specimen:diagnose" \
                   "Specimen" "_include=Specimen:diagnose" "Condition"
 
 # processing-additive
-# test_includes_resource_type "Specimen with processing-additive=Substance/mii-exa-test-data-patient-1-patho-hematoxylin-stain count" \
-#                   "$(search "Specimen" "processing-additive=Substance/mii-exa-test-data-patient-1-patho-hematoxylin-stain")"
+test_includes_resource_type "Specimen with _include=Specimen:processing-additive" \
+                           "Specimen" "_include=Specimen:processing-additive" "Substance"
 
 # processing-date
-# test_at_least_one "Specimen with processing-date=gt2021 count" \
-#                   "$(search "Specimen" "processing-date=gt2021")"
+test_at_least_one "Specimen with processing-date=2024-02-15 count" \
+                  "$(search "Specimen" "processing-date=2024-02-15")"
 
 # processing-procedure
-# test_at_least_one "Specimen with processing-procedure=http://snomed.info/sct|40923002 count" \
-#                   "$(search "Specimen" "processing-procedure=http://snomed.info/sct%7C40923002")"
+test_at_least_one "Specimen with processing-procedure=http://snomed.info/sct|1186936003 count" \
+                  "$(search "Specimen" "processing-procedure=http://snomed.info/sct%7C1186936003")"
 
 # request
-# test_at_least_one "Specimen with request=ServiceRequest/mii-exa-test-data-patient-1-patho-request-1 count" \
-#                   "$(search "Specimen" "request=ServiceRequest/mii-exa-test-data-patient-1-patho-request-1")"
+test_includes_resource_type "Specimen with _include=Specimen:request" \
+                           "Specimen" "_include=Specimen:request" "ServiceRequest"
 
 # =========================================================
 # Task
