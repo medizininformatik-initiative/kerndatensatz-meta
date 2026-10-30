@@ -15,7 +15,7 @@
           },
           {
             "url": "version",
-            "valueString": "2027.0.0-ballot.rc3"
+            "valueString": "2027.0.0-ballot"
           },
           {
             "url": "uri",
@@ -67,12 +67,12 @@
     "Observation"
   ],
   "publisher": "Medizininformatik Initiative",
-  "version": "2027.0.0-ballot.rc3",
+  "version": "2027.0.0-ballot",
   "experimental": false,
   "date": "2026-09-01",
   "name": "MII_SP_Meta_Observation_Encounter",
   "description": "SearchParameter for Observation.encounter",
-  "status": "active",
+  "status": "retired",
   "code": "encounter",
   "type": "reference",
   "expression": "Observation.encounter"

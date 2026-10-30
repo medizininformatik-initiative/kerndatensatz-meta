@@ -15,7 +15,7 @@
           },
           {
             "url": "version",
-            "valueString": "2027.0.0-ballot.rc3"
+            "valueString": "2027.0.0-ballot"
           },
           {
             "url": "uri",
@@ -70,12 +70,12 @@
     "List"
   ],
   "publisher": "Medizininformatik Initiative",
-  "version": "2027.0.0-ballot.rc3",
+  "version": "2027.0.0-ballot",
   "experimental": false,
   "date": "2026-09-01",
   "name": "MII_SP_Meta_Condition_Evidence_Detail",
   "description": "SearchParameter for Condition.evidence.detail",
-  "status": "active",
+  "status": "retired",
   "code": "evidence-detail",
   "type": "reference",
   "expression": "Condition.evidence.detail"

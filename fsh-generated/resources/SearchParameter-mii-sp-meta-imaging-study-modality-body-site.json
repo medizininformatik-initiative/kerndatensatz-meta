@@ -15,7 +15,7 @@
           },
           {
             "url": "version",
-            "valueString": "2027.0.0-ballot.rc3"
+            "valueString": "2027.0.0-ballot"
           },
           {
             "url": "uri",
@@ -73,11 +73,11 @@
     },
     {
       "definition": "http://hl7.org/fhir/SearchParameter/ImagingStudy-bodysite",
-      "expression": "bodysite"
+      "expression": "bodySite"
     }
   ],
   "publisher": "Medizininformatik Initiative",
-  "version": "2027.0.0-ballot.rc3",
+  "version": "2027.0.0-ballot",
   "name": "MII_SP_Bildgebung_Imaging_Study_Modality_Body_Site",
   "status": "active",
   "experimental": false,

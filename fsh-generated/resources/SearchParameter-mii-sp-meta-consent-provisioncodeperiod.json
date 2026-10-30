@@ -15,7 +15,7 @@
           },
           {
             "url": "version",
-            "valueString": "2027.0.0-ballot.rc3"
+            "valueString": "2027.0.0-ballot"
           },
           {
             "url": "uri",
@@ -76,7 +76,7 @@
       "expression": "period"
     }
   ],
-  "version": "2027.0.0-ballot.rc3",
+  "version": "2027.0.0-ballot",
   "publisher": "Medizininformatik Initiative",
   "name": "MII_SP_Meta_Consent_ProvisionCodePeriod",
   "status": "active",

@@ -11,7 +11,7 @@
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/resource-approvalDate",
-      "valueDate": "2026-08-31"
+      "valueDate": "2026-09-10"
     },
     {
       "url": "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
@@ -30,7 +30,7 @@
         },
         {
           "url": "version",
-          "valueString": "2027.0.0-ballot.rc3"
+          "valueString": "2027.0.0-ballot"
         },
         {
           "url": "uri",
@@ -143,12 +143,12 @@
     }
   ],
   "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/ImplementationGuide/mii-ig-meta",
-  "version": "2027.0.0-ballot.rc3",
+  "version": "2027.0.0-ballot",
   "name": "MII_IG_Meta",
   "title": "MII IG Meta",
   "status": "active",
   "experimental": false,
-  "date": "2026-08-31",
+  "date": "2026-09-10",
   "publisher": "NUM-DIZ",
   "contact": [
     {
@@ -345,6 +345,14 @@
       },
       {
         "reference": {
+          "reference": "SearchParameter/mii-sp-meta-condition-asserted-date"
+        },
+        "name": "mii-sp-meta-condition-asserted-date",
+        "description": "Suchparameter für Condition.extension:assertedDate (Standardextension http://hl7.org/fhir/StructureDefinition/condition-assertedDate)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "SearchParameter/mii-sp-meta-condition-evidence-detail"
         },
         "name": "mii-sp-meta-condition-evidence-detail",
@@ -396,7 +404,7 @@
           "reference": "SearchParameter/mii-sp-meta-consent-provisioncode"
         },
         "name": "mii-sp-meta-consent-provisioncode",
-        "description": "Suche im Code der Provison",
+        "description": "Suche im Code der Provision",
         "exampleBoolean": false
       },
       {
@@ -420,7 +428,7 @@
           "reference": "SearchParameter/mii-sp-meta-consent-provisionperiod"
         },
         "name": "mii-sp-meta-consent-provisionperiod",
-        "description": "Suche im Zeitraum der Provision. Dieser Suchparameter bezieht sich explizit auf die zweite Verschachtelungsebene von provison.",
+        "description": "Suche im Zeitraum der Provision. Dieser Suchparameter bezieht sich explizit auf die zweite Verschachtelungsebene von provision.",
         "exampleBoolean": false
       },
       {
@@ -428,7 +436,7 @@
           "reference": "SearchParameter/mii-sp-meta-consent-provisiontype"
         },
         "name": "mii-sp-meta-consent-provisiontype",
-        "description": "Suche im Typ der Provison (permit, deny).",
+        "description": "Suche im Typ der Provision (permit, deny).",
         "exampleBoolean": false
       },
       {
@@ -1116,7 +1124,7 @@
           "reference": "SearchParameter/mii-sp-meta-medication-partof"
         },
         "name": "mii-sp-meta-medication-partof",
-        "description": "Suchparameter für (MedicationAdministration|MedicationStatement).partOf",
+        "description": "Suchparameter für MedicationAdministration.partOf",
         "exampleBoolean": false
       },
       {
@@ -1661,6 +1669,11 @@
         {
           "nameUrl": "capability-statements.html",
           "title": "Capability Statements",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "search-parameters.html",
+          "title": "Search Parameters",
           "generation": "markdown"
         },
         {

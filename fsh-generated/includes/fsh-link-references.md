@@ -16,6 +16,7 @@
 [mii-sp-meta-composition-relatesto-code]: SearchParameter-mii-sp-meta-composition-relatesto-code.html
 [mii-sp-meta-composition-section-author]: SearchParameter-mii-sp-meta-composition-section-author.html
 [mii-sp-meta-composition-section-title]: SearchParameter-mii-sp-meta-composition-section-title.html
+[mii-sp-meta-condition-asserted-date]: SearchParameter-mii-sp-meta-condition-asserted-date.html
 [mii-sp-meta-condition-evidence-detail]: SearchParameter-mii-sp-meta-condition-evidence-detail.html
 [mii-sp-meta-condition-icd10gm-diagnosesicherheit]: SearchParameter-mii-sp-meta-condition-icd10gm-diagnosesicherheit.html
 [mii-sp-meta-condition-icd10gm-mehrfachcodierung]: SearchParameter-mii-sp-meta-condition-icd10gm-mehrfachcodierung.html
