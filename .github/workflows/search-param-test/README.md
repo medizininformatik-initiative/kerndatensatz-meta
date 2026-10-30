@@ -95,6 +95,23 @@ test_at_least_one "Device with property-type=urn:iso:std:iso:11073:10101|69684 c
                   "$(search "Device" "property-type=urn:iso:std:iso:11073:10101%7C69684")"
 ```
 
+### 5. Regenerate the CapabilityStatement examples
+
+Every positive test (`test_at_least_one`, `test_includes_resource_type`, or
+`test` with an expected count other than `0`) doubles as a documented example:
+it appears as `GET [base]/…` in the `documentation` of the matching
+`searchParam` of the CapabilityStatement
+(`input/fsh/capabilitystatements/mii-cps-meta-server-capabilities.fsh`).
+After adding or changing a test, run from the repository root:
+
+```bash
+node scripts/gen-cps-search-examples.mjs
+```
+
+and commit the updated FSH with the test. `convention-check.yml` fails when the
+two are out of step. Keep queries readable: variables defined at the top of the
+script are expanded and `%7C`-style encoding is decoded in the documentation.
+
 ## Example Test Cases
 
 ### Basic Search Parameter Test
