@@ -265,7 +265,8 @@ Migration-generated proposal describing the resource types and search parameters
       {
         "name" : "section-author",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-composition-section-author",
-        "type" : "reference"
+        "type" : "reference",
+        "documentation" : "**Example** (tested in CI): `GET [base]/Composition?_include=Composition:section-author`"
       },
       {
         "name" : "section-title",
@@ -288,22 +289,26 @@ Migration-generated proposal describing the resource types and search parameters
       {
         "name" : "icd10gm-diagnosesicherheit",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-icd10gm-diagnosesicherheit",
-        "type" : "token"
+        "type" : "token",
+        "documentation" : "**Example** (tested in CI): `GET [base]/Condition?code=http://fhir.de/CodeSystem/bfarm/icd-10-gm|B05.3&icd10gm-diagnosesicherheit=https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_DIAGNOSESICHERHEIT|G`"
       },
       {
         "name" : "icd10gm-mehrfachcodierung",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-icd10gm-mehrfachcodierung",
-        "type" : "token"
+        "type" : "token",
+        "documentation" : "**Example** (tested in CI): `GET [base]/Condition?code=http://fhir.de/CodeSystem/bfarm/icd-10-gm|B05.3&icd10gm-mehrfachcodierung=http://fhir.de/CodeSystem/icd-10-gm-mehrfachcodierungs-kennzeichen|†`"
       },
       {
         "name" : "icd10gm-seitenlokalisation",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-icd10gm-seitenlokalisation",
-        "type" : "token"
+        "type" : "token",
+        "documentation" : "**Example** (tested in CI): `GET [base]/Condition?code=http://fhir.de/CodeSystem/bfarm/icd-10-gm|B05.3&icd10gm-seitenlokalisation=https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION|B`"
       },
       {
         "name" : "verification-status",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-verification-status",
-        "type" : "token"
+        "type" : "token",
+        "documentation" : "**Example** (tested in CI): `GET [base]/Condition?verification-status=confirmed`"
       }]
     },
     {
@@ -311,12 +316,14 @@ Migration-generated proposal describing the resource types and search parameters
       "searchParam" : [{
         "name" : "mii-policy-uri",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-policyuri",
-        "type" : "uri"
+        "type" : "uri",
+        "documentation" : "**Example** (tested in CI): `GET [base]/Consent?mii-policy-uri=urn:oid:2.16.840.1.113883.3.1937.777.24.2.1791`"
       },
       {
         "name" : "mii-provision-provision-code",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-provisioncode",
-        "type" : "token"
+        "type" : "token",
+        "documentation" : "**Example** (tested in CI): `GET [base]/Consent?mii-provision-provision-code=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3|2.16.840.1.113883.3.1937.777.24.5.3.9`"
       },
       {
         "name" : "mii-provision-provision-code-period",
@@ -326,17 +333,20 @@ Migration-generated proposal describing the resource types and search parameters
       {
         "name" : "mii-provision-provision-code-type",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-provisioncodetype",
-        "type" : "composite"
+        "type" : "composite",
+        "documentation" : "**Example** (tested in CI): `GET [base]/Consent?mii-provision-provision-code-type=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3|2.16.840.1.113883.3.1937.777.24.5.3.7$permit`"
       },
       {
         "name" : "mii-provision-provision-period",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-provisionperiod",
-        "type" : "date"
+        "type" : "date",
+        "documentation" : "**Example** (tested in CI): `GET [base]/Consent?mii-provision-provision-period=ge2024`"
       },
       {
         "name" : "mii-provision-provision-type",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-consent-provisiontype",
-        "type" : "token"
+        "type" : "token",
+        "documentation" : "**Example** (tested in CI): `GET [base]/Consent?mii-provision-provision-type=permit`"
       }]
     },
     {
@@ -344,7 +354,8 @@ Migration-generated proposal describing the resource types and search parameters
       "searchParam" : [{
         "name" : "property-type",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-device-property-type",
-        "type" : "token"
+        "type" : "token",
+        "documentation" : "**Example** (tested in CI): `GET [base]/Device?property-type=urn:iso:std:iso:11073:10101|69684`"
       }]
     },
     {
@@ -352,7 +363,8 @@ Migration-generated proposal describing the resource types and search parameters
       "searchParam" : [{
         "name" : "source",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-devicemetric-source",
-        "type" : "reference"
+        "type" : "reference",
+        "documentation" : "**Example** (tested in CI): `GET [base]/DeviceMetric?_include=DeviceMetric:source`"
       }]
     },
     {
@@ -365,7 +377,8 @@ Migration-generated proposal describing the resource types and search parameters
       {
         "name" : "imaging-study",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-diagnosticreport-imagingstudy",
-        "type" : "reference"
+        "type" : "reference",
+        "documentation" : "**Example** (tested in CI): `GET [base]/DiagnosticReport?_include=DiagnosticReport:imaging-study`"
       },
       {
         "name" : "supporting-info",
@@ -406,47 +419,56 @@ Migration-generated proposal describing the resource types and search parameters
       "searchParam" : [{
         "name" : "aufnahmegrund-drittestelle",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-aufnahmegrund-drittestelle",
-        "type" : "token"
+        "type" : "token",
+        "documentation" : "**Example** (tested in CI): `GET [base]/Encounter?aufnahmegrund-ersteundzweitestelle=http://fhir.de/CodeSystem/dkgev/AufnahmegrundErsteUndZweiteStelle|01&aufnahmegrund-drittestelle=http://fhir.de/CodeSystem/dkgev/AufnahmegrundDritteStelle|0&aufnahmegrund-viertestelle=http://fhir.de/CodeSystem/dkgev/AufnahmegrundVierteStelle|1`"
       },
       {
         "name" : "aufnahmegrund-ersteundzweitestelle",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-aufnahmegrund-ersteundzweitestelle",
-        "type" : "token"
+        "type" : "token",
+        "documentation" : "**Example** (tested in CI): `GET [base]/Encounter?aufnahmegrund-ersteundzweitestelle=http://fhir.de/CodeSystem/dkgev/AufnahmegrundErsteUndZweiteStelle|01&aufnahmegrund-drittestelle=http://fhir.de/CodeSystem/dkgev/AufnahmegrundDritteStelle|0&aufnahmegrund-viertestelle=http://fhir.de/CodeSystem/dkgev/AufnahmegrundVierteStelle|1`"
       },
       {
         "name" : "aufnahmegrund-viertestelle",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-aufnahmegrund-viertestelle",
-        "type" : "token"
+        "type" : "token",
+        "documentation" : "**Example** (tested in CI): `GET [base]/Encounter?aufnahmegrund-ersteundzweitestelle=http://fhir.de/CodeSystem/dkgev/AufnahmegrundErsteUndZweiteStelle|01&aufnahmegrund-drittestelle=http://fhir.de/CodeSystem/dkgev/AufnahmegrundDritteStelle|0&aufnahmegrund-viertestelle=http://fhir.de/CodeSystem/dkgev/AufnahmegrundVierteStelle|1`"
       },
       {
         "name" : "diagnosis-use",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-diagnosis-use",
-        "type" : "token"
+        "type" : "token",
+        "documentation" : "**Example** (tested in CI): `GET [base]/Encounter?diagnosis-use=http://terminology.hl7.org/CodeSystem/diagnosis-role|AD`"
       },
       {
         "name" : "entlassungsgrund-drittestelle",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-entlassungsgrund-drittestelle",
-        "type" : "token"
+        "type" : "token",
+        "documentation" : "**Example** (tested in CI): `GET [base]/Encounter?entlassungsgrund-ersteundzweitestelle=http://fhir.de/CodeSystem/dkgev/EntlassungsgrundErsteUndZweiteStelle|07&entlassungsgrund-drittestelle=http://fhir.de/CodeSystem/dkgev/EntlassungsgrundDritteStelle|9`"
       },
       {
         "name" : "entlassungsgrund-ersteundzweitestelle",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-entlassungsgrund-ersteundzweitestelle",
-        "type" : "token"
+        "type" : "token",
+        "documentation" : "**Example** (tested in CI): `GET [base]/Encounter?entlassungsgrund-ersteundzweitestelle=http://fhir.de/CodeSystem/dkgev/EntlassungsgrundErsteUndZweiteStelle|07&entlassungsgrund-drittestelle=http://fhir.de/CodeSystem/dkgev/EntlassungsgrundDritteStelle|9`"
       },
       {
         "name" : "hospitalization-admitsource",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-hospitalization-admitsource",
-        "type" : "token"
+        "type" : "token",
+        "documentation" : "**Example** (tested in CI): `GET [base]/Encounter?hospitalization-admitsource=http://fhir.de/CodeSystem/dgkev/Aufnahmeanlass|E`"
       },
       {
         "name" : "location-physical-type",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-location-physical-type",
-        "type" : "token"
+        "type" : "token",
+        "documentation" : "**Example** (tested in CI): `GET [base]/Encounter?location-physical-type=http://terminology.hl7.org/CodeSystem/location-physical-type|ro`"
       },
       {
         "name" : "service-type",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-encounter-servicetype",
-        "type" : "token"
+        "type" : "token",
+        "documentation" : "**Example** (tested in CI): `GET [base]/Encounter?service-type=http://fhir.de/CodeSystem/dkgev/Fachabteilungsschluessel|0100`"
       }]
     },
     {
@@ -462,12 +484,14 @@ Migration-generated proposal describing the resource types and search parameters
       "searchParam" : [{
         "name" : "reason-code",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-familymemberhistory-reasoncode",
-        "type" : "token"
+        "type" : "token",
+        "documentation" : "**Example** (tested in CI): `GET [base]/FamilyMemberHistory?reason-code=http://snomed.info/sct|447886005`"
       },
       {
         "name" : "reason-reference",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-familymemberhistory-reasonreference",
-        "type" : "reference"
+        "type" : "reference",
+        "documentation" : "**Example** (tested in CI): `GET [base]/FamilyMemberHistory?_include=FamilyMemberHistory:reason-reference`"
       }]
     },
     {
@@ -570,7 +594,8 @@ Migration-generated proposal describing the resource types and search parameters
       {
         "name" : "modality-body-site",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-imaging-study-modality-body-site",
-        "type" : "composite"
+        "type" : "composite",
+        "documentation" : "**Example** (tested in CI): `GET [base]/ImagingStudy?modality-body-site=http://dicom.nema.org/resources/ontology/DCM|MR$http://snomed.info/sct|76752008`"
       },
       {
         "name" : "number-instances",
@@ -716,7 +741,8 @@ Migration-generated proposal describing the resource types and search parameters
       "searchParam" : [{
         "name" : "mode",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-list-mode",
-        "type" : "token"
+        "type" : "token",
+        "documentation" : "**Example** (tested in CI): `GET [base]/List?mode=snapshot`"
       }]
     },
     {
@@ -737,12 +763,14 @@ Migration-generated proposal describing the resource types and search parameters
       {
         "name" : "ingredient-strength-denominator",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength-denominator",
-        "type" : "quantity"
+        "type" : "quantity",
+        "documentation" : "**Example** (tested in CI): `GET [base]/Medication?ingredient-strength-denominator=1|http://standardterms.edqm.eu|10219000`"
       },
       {
         "name" : "ingredient-strength-numerator",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength-numerator",
-        "type" : "quantity"
+        "type" : "quantity",
+        "documentation" : "**Example** (tested in CI): `GET [base]/Medication?ingredient-strength-numerator=100|http://unitsofmeasure.org|mg`"
       }]
     },
     {
@@ -750,7 +778,8 @@ Migration-generated proposal describing the resource types and search parameters
       "searchParam" : [{
         "name" : "dosage-route",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-route",
-        "type" : "token"
+        "type" : "token",
+        "documentation" : "**Example** (tested in CI): `GET [base]/MedicationAdministration?dosage-route=http://standardterms.edqm.eu|20045000`"
       },
       {
         "name" : "dosage-site",
@@ -765,7 +794,8 @@ Migration-generated proposal describing the resource types and search parameters
       {
         "name" : "part-of",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-partof",
-        "type" : "reference"
+        "type" : "reference",
+        "documentation" : "**Example** (tested in CI): `GET [base]/MedicationAdministration?_include=MedicationAdministration:part-of`"
       },
       {
         "name" : "ratequantity",
@@ -808,7 +838,8 @@ Migration-generated proposal describing the resource types and search parameters
       {
         "name" : "dose-quantity",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-dosequantity",
-        "type" : "quantity"
+        "type" : "quantity",
+        "documentation" : "**Example** (tested in CI): `GET [base]/MedicationRequest?dose-quantity=1500|http://unitsofmeasure.org|mg`"
       },
       {
         "name" : "doserange",
@@ -818,17 +849,20 @@ Migration-generated proposal describing the resource types and search parameters
       {
         "name" : "doserange-high",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange-high",
-        "type" : "quantity"
+        "type" : "quantity",
+        "documentation" : "**Example** (tested in CI): `GET [base]/MedicationRequest?doserange-high=1000|http://unitsofmeasure.org|mg`"
       },
       {
         "name" : "doserange-low",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange-low",
-        "type" : "quantity"
+        "type" : "quantity",
+        "documentation" : "**Example** (tested in CI): `GET [base]/MedicationRequest?doserange-low=500|http://unitsofmeasure.org|mg`"
       },
       {
         "name" : "ratequantity",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-ratequantity",
-        "type" : "quantity"
+        "type" : "quantity",
+        "documentation" : "**Example** (tested in CI): `GET [base]/MedicationRequest?ratequantity=5|http://unitsofmeasure.org|mg/min`"
       },
       {
         "name" : "raterange",
@@ -838,12 +872,14 @@ Migration-generated proposal describing the resource types and search parameters
       {
         "name" : "raterange-high",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange-high",
-        "type" : "quantity"
+        "type" : "quantity",
+        "documentation" : "**Example** (tested in CI): `GET [base]/MedicationRequest?raterange-high=120|http://unitsofmeasure.org|mL/h`"
       },
       {
         "name" : "raterange-low",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange-low",
-        "type" : "quantity"
+        "type" : "quantity",
+        "documentation" : "**Example** (tested in CI): `GET [base]/MedicationRequest?raterange-low=60|http://unitsofmeasure.org|mL/h`"
       },
       {
         "name" : "rateratio",
@@ -853,12 +889,14 @@ Migration-generated proposal describing the resource types and search parameters
       {
         "name" : "rateratio-denominator",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-denominator",
-        "type" : "quantity"
+        "type" : "quantity",
+        "documentation" : "**Example** (tested in CI): `GET [base]/MedicationRequest?rateratio-denominator=1|http://unitsofmeasure.org|min`"
       },
       {
         "name" : "rateratio-numerator",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-numerator",
-        "type" : "quantity"
+        "type" : "quantity",
+        "documentation" : "**Example** (tested in CI): `GET [base]/MedicationRequest?rateratio-numerator=6.5|http://unitsofmeasure.org|mg`"
       }]
     },
     {
@@ -871,7 +909,8 @@ Migration-generated proposal describing the resource types and search parameters
       {
         "name" : "dosage-site",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-site",
-        "type" : "token"
+        "type" : "token",
+        "documentation" : "**Example** (tested in CI): `GET [base]/MedicationStatement?dosage-site=http://snomed.info/sct|789218009`"
       },
       {
         "name" : "dose-quantity",
@@ -936,7 +975,8 @@ Migration-generated proposal describing the resource types and search parameters
       {
         "name" : "reason-reference",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-reasonreference",
-        "type" : "reference"
+        "type" : "reference",
+        "documentation" : "**Example** (tested in CI): `GET [base]/MedicationStatement?_include=MedicationStatement:reason-reference`"
       }]
     },
     {
@@ -969,17 +1009,20 @@ Migration-generated proposal describing the resource types and search parameters
       {
         "name" : "has-member",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-hasmember",
-        "type" : "reference"
+        "type" : "reference",
+        "documentation" : "**Example** (tested in CI): `GET [base]/Observation?_include=Observation:has-member`"
       },
       {
         "name" : "interpretation",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-interpretation",
-        "type" : "token"
+        "type" : "token",
+        "documentation" : "**Example** (tested in CI): `GET [base]/Observation?interpretation=http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation|H`"
       },
       {
         "name" : "issued",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-issued",
-        "type" : "date"
+        "type" : "date",
+        "documentation" : "**Example** (tested in CI): `GET [base]/Observation?issued=2024-02-15`"
       },
       {
         "name" : "reference-range",
@@ -1027,27 +1070,32 @@ Migration-generated proposal describing the resource types and search parameters
       "searchParam" : [{
         "name" : "adresszusatz",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-adresszusatz",
-        "type" : "string"
+        "type" : "string",
+        "documentation" : "**Example** (tested in CI): `GET [base]/Patient?adresszusatz=Schloss`"
       },
       {
         "name" : "assigner-pid",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-assignerpid",
-        "type" : "token"
+        "type" : "token",
+        "documentation" : "**Example** (tested in CI): `GET [base]/Patient?assigner-pid=http://fhir.de/sid/arge-ik/iknr|123456789`"
       },
       {
         "name" : "gemeindeschluessel",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-gemeindeschluessel",
-        "type" : "token"
+        "type" : "token",
+        "documentation" : "**Example** (tested in CI): `GET [base]/Patient?gemeindeschluessel=http://fhir.de/sid/destatis/ags|11000000`"
       },
       {
         "name" : "hausnummer",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-hausnummer",
-        "type" : "string"
+        "type" : "string",
+        "documentation" : "**Example** (tested in CI): `GET [base]/Patient?strasse=Dorfstraße&hausnummer=9&stadtteil=Malchow`"
       },
       {
         "name" : "other-amtlich",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-otheramtlich",
-        "type" : "token"
+        "type" : "token",
+        "documentation" : "**Example** (tested in CI): `GET [base]/Patient?other-amtlich=http://fhir.de/CodeSystem/gender-amtlich-de|D`"
       },
       {
         "name" : "postfach",
@@ -1057,22 +1105,26 @@ Migration-generated proposal describing the resource types and search parameters
       {
         "name" : "prefix",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-prefix",
-        "type" : "token"
+        "type" : "token",
+        "documentation" : "**Example** (tested in CI): `GET [base]/Patient?prefix=Prinz von Preußen`"
       },
       {
         "name" : "prefix-qualifier",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-prefixqualifier",
-        "type" : "token"
+        "type" : "token",
+        "documentation" : "**Example** (tested in CI): `GET [base]/Patient?prefix-qualifier=NB`"
       },
       {
         "name" : "stadtteil",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-stadtteil",
-        "type" : "string"
+        "type" : "string",
+        "documentation" : "**Examples** (tested in CI):\n\n- `GET [base]/Patient?strasse=Dorfstraße&hausnummer=9&stadtteil=Malchow`\n- `GET [base]/Patient?stadtteil=Malchow`"
       },
       {
         "name" : "strasse",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-patient-strasse",
-        "type" : "string"
+        "type" : "string",
+        "documentation" : "**Examples** (tested in CI):\n\n- `GET [base]/Patient?strasse=Dorfstraße&hausnummer=9&stadtteil=Malchow`\n- `GET [base]/Patient?strasse=Dorfstraße`"
       }]
     },
     {
@@ -1080,7 +1132,8 @@ Migration-generated proposal describing the resource types and search parameters
       "searchParam" : [{
         "name" : "bodySite",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-bodysite",
-        "type" : "token"
+        "type" : "token",
+        "documentation" : "**Example** (tested in CI): `GET [base]/Procedure?bodySite=http://snomed.info/sct|44714003`"
       },
       {
         "name" : "complication",
@@ -1090,17 +1143,20 @@ Migration-generated proposal describing the resource types and search parameters
       {
         "name" : "dokumentationsdatum",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-dokumentationsdatum",
-        "type" : "date"
+        "type" : "date",
+        "documentation" : "**Example** (tested in CI): `GET [base]/Procedure?dokumentationsdatum=2024-02-20`"
       },
       {
         "name" : "durchfuehrungsabsicht",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-durchfuehrungsabsicht",
-        "type" : "token"
+        "type" : "token",
+        "documentation" : "**Example** (tested in CI): `GET [base]/Procedure?durchfuehrungsabsicht=http://snomed.info/sct|262202000`"
       },
       {
         "name" : "ops-seitenlokalisation",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-ops-seitenlokalisation",
-        "type" : "token"
+        "type" : "token",
+        "documentation" : "**Example** (tested in CI): `GET [base]/Procedure?code=http://fhir.de/CodeSystem/bfarm/ops|5-322.d1&ops-seitenlokalisation=https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION|R`"
       },
       {
         "name" : "outcome",
@@ -1110,7 +1166,8 @@ Migration-generated proposal describing the resource types and search parameters
       {
         "name" : "recorder",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-procedure-recorder",
-        "type" : "reference"
+        "type" : "reference",
+        "documentation" : "**Example** (tested in CI): `GET [base]/Procedure?_include=Procedure:recorder`"
       },
       {
         "name" : "report",
@@ -1188,17 +1245,20 @@ Migration-generated proposal describing the resource types and search parameters
       "searchParam" : [{
         "name" : "reason-code",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-servicerequest-reasoncode",
-        "type" : "token"
+        "type" : "token",
+        "documentation" : "**Example** (tested in CI): `GET [base]/ServiceRequest?reason-code=http://snomed.info/sct|447886005`"
       },
       {
         "name" : "reason-reference",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-servicerequest-reasonreference",
-        "type" : "reference"
+        "type" : "reference",
+        "documentation" : "**Example** (tested in CI): `GET [base]/ServiceRequest?_include=ServiceRequest:reason-reference`"
       },
       {
         "name" : "supporting-info",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-servicerequest-supportinginfo",
-        "type" : "reference"
+        "type" : "reference",
+        "documentation" : "**Example** (tested in CI): `GET [base]/ServiceRequest?_include=ServiceRequest:supporting-info`"
       }]
     },
     {
@@ -1211,17 +1271,20 @@ Migration-generated proposal describing the resource types and search parameters
       {
         "name" : "collection-method",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-collection-method",
-        "type" : "token"
+        "type" : "token",
+        "documentation" : "**Example** (tested in CI): `GET [base]/Specimen?collection-method=http://snomed.info/sct|129300006`"
       },
       {
         "name" : "container-additive",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-container-additive",
-        "type" : "reference"
+        "type" : "reference",
+        "documentation" : "**Example** (tested in CI): `GET [base]/Specimen?_include=Specimen:container-additive`"
       },
       {
         "name" : "diagnose",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-specimen-diagnose",
-        "type" : "reference"
+        "type" : "reference",
+        "documentation" : "**Example** (tested in CI): `GET [base]/Specimen?_include=Specimen:diagnose`"
       },
       {
         "name" : "processing-additive",
@@ -1249,17 +1312,20 @@ Migration-generated proposal describing the resource types and search parameters
       "searchParam" : [{
         "name" : "for",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-task-for",
-        "type" : "reference"
+        "type" : "reference",
+        "documentation" : "**Example** (tested in CI): `GET [base]/Task?_include=Task:for`"
       },
       {
         "name" : "reason-code",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-task-reasoncode",
-        "type" : "token"
+        "type" : "token",
+        "documentation" : "**Example** (tested in CI): `GET [base]/Task?reason-code=http://snomed.info/sct|447886005`"
       },
       {
         "name" : "reason-reference",
         "definition" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-task-reasonreference",
-        "type" : "reference"
+        "type" : "reference",
+        "documentation" : "**Example** (tested in CI): `GET [base]/Task?_include=Task:reason-reference`"
       }]
     }]
   }]
