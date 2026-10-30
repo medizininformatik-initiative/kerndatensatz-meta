@@ -87,7 +87,7 @@ Description: "Migration-generated proposal describing the resource types and sea
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-asserted-date"
 * rest[0].resource[=].searchParam[=].type = #date
 * rest[0].resource[=].searchParam[+].name = "evidence-detail"
-* rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-evidence-detail"
+* rest[0].resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Condition-evidence-detail"
 * rest[0].resource[=].searchParam[=].type = #reference
 * rest[0].resource[=].searchParam[+].name = "icd10gm-diagnosesicherheit"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-icd10gm-diagnosesicherheit"
@@ -102,7 +102,7 @@ Description: "Migration-generated proposal describing the resource types and sea
 * rest[0].resource[=].searchParam[=].type = #token
 * rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/Condition?code=http://fhir.de/CodeSystem/bfarm/icd-10-gm|B05.3&icd10gm-seitenlokalisation=https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION|B`"
 * rest[0].resource[=].searchParam[+].name = "verification-status"
-* rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-condition-verification-status"
+* rest[0].resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Condition-verification-status"
 * rest[0].resource[=].searchParam[=].type = #token
 * rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/Condition?verification-status=confirmed`"
 * rest[0].resource[+].type = #Consent
@@ -136,7 +136,7 @@ Description: "Migration-generated proposal describing the resource types and sea
 * rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/Device?property-type=urn:iso:std:iso:11073:10101|69684`"
 * rest[0].resource[+].type = #DeviceMetric
 * rest[0].resource[=].searchParam[+].name = "source"
-* rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-devicemetric-source"
+* rest[0].resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/DeviceMetric-source"
 * rest[0].resource[=].searchParam[=].type = #reference
 * rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/DeviceMetric?_include=DeviceMetric:source`"
 * rest[0].resource[+].type = #DiagnosticReport
@@ -480,7 +480,7 @@ Description: "Migration-generated proposal describing the resource types and sea
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange-low"
 * rest[0].resource[=].searchParam[=].type = #quantity
 * rest[0].resource[=].searchParam[+].name = "part-of"
-* rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-partof"
+* rest[0].resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/MedicationStatement-part-of"
 * rest[0].resource[=].searchParam[=].type = #reference
 * rest[0].resource[=].searchParam[+].name = "ratequantity"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-ratequantity"
@@ -518,13 +518,13 @@ Description: "Migration-generated proposal describing the resource types and sea
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-component-interpretation"
 * rest[0].resource[=].searchParam[=].type = #token
 * rest[0].resource[=].searchParam[+].name = "encounter"
-* rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-encounter"
+* rest[0].resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/clinical-encounter"
 * rest[0].resource[=].searchParam[=].type = #reference
 * rest[0].resource[=].searchParam[+].name = "focus"
-* rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-focus"
+* rest[0].resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Observation-focus"
 * rest[0].resource[=].searchParam[=].type = #reference
 * rest[0].resource[=].searchParam[+].name = "has-member"
-* rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-observation-hasmember"
+* rest[0].resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/Observation-has-member"
 * rest[0].resource[=].searchParam[=].type = #reference
 * rest[0].resource[=].searchParam[=].documentation = "**Example** (tested in CI): `GET [base]/Observation?_include=Observation:has-member`"
 * rest[0].resource[=].searchParam[+].name = "interpretation"
