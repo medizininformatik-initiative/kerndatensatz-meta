@@ -6,8 +6,8 @@
 **Date:** unreleased
 
 * **Added:** A [search parameter overview](search-parameters.html) listing
-  every active search parameter with its resource type, type, FHIRPath
-  expression and an example query, and the retired search parameters.
+  every active search parameter with its resource type, type and FHIRPath
+  expression, and the retired search parameters.
 * **Added:** The CapabilityStatement documents an example query for every
   search parameter covered by the CI search tests; see
   [MII CapabilityStatement Meta Server Capabilities](CapabilityStatement-mii-cps-meta-server-capabilities.html).
