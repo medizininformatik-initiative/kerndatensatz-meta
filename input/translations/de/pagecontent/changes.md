@@ -5,6 +5,12 @@
 
 **Datum:** unveröffentlicht
 
+* **Added:** Eine [Übersicht der Suchparameter](search-parameters.html) mit
+  allen aktiven Suchparametern samt Ressourcentyp, Typ, FHIRPath-Ausdruck und
+  einer Beispielanfrage sowie den zurückgezogenen Suchparametern.
+* **Added:** Das CapabilityStatement dokumentiert für jeden Suchparameter, den
+  die Suchparameter-Tests in der CI abdecken, eine Beispielanfrage; siehe
+  [MII CapabilityStatement Meta Server Capabilities](CapabilityStatement-mii-cps-meta-server-capabilities.html).
 * **Removed:** Die `SearchParameter`-Ressourcen `verification-status` und
   `evidence-detail` für `Condition`, `has-member`, `focus` und `encounter` für
   `Observation` sowie `source` für `DeviceMetric` wurden `retired`, da sie
