@@ -1,0 +1,135 @@
+/* num-diz.css - the NUM-DIZ palette for de.medizininformatikinitiative.template
+   ==============================================================================
+
+   DEFAULT corporate design of the template, and a PALETTE FILE ONLY: it
+   declares CSS custom properties and nothing else - the fhir2.base.template
+   (0.1.0) variables from project.css plus the template's own --ig-table-* and
+   --ig-highlight-* variables consumed by the brand-independent rule blocks in
+   template-base.css. includes/fragment-css.html links this file on every
+   build UNLESS the consuming IG switches to the MII design with:
+
+       input/data/brand.json  ->  { "design": "mii" }
+
+   (the base template's pre-process copies input/data/ into Jekyll's _data,
+   so the fragment reads the value as site.data.brand.design; only the exact
+   value 'mii' selects mii.css instead - an unset or unknown value renders
+   the NUM-DIZ default). Exactly ONE palette file is loaded per build; both
+   palettes declare the SAME variable set, enforced by
+   scripts/brand-switch.test.mjs.
+
+   Every value is derived from a NUM-DIZ source - see docs/styleguide.md §10
+   for the full palette table and the WCAG contrast calculations.
+   Sources, short form (retrieved 2026-08-13):
+   - "site" = www.netzwerk-universitaetsmedizin.de theme CSS (styles.css;
+              stock Bootstrap values were excluded from the measurement)
+   - "logo" = the official NUM/NUM-DIZ logo SVGs the template vendors in
+              content/assets/images/ (fill values of the outlined paths and
+              the DIZ emblem)
+   Base variables NOT listed here keep their fhir2.base.template defaults
+   (publish box, TOC box, STU note, footer-nav strip, dragon, translation
+   box): IG-Publisher semantic signals, not brand surfaces - same rule as
+   mii.css. */
+
+:root {
+  /* 1. IG title/status text: NUM-DIZ slate #485156 (site body-text color;
+        8.12:1 on the white header container - AAA) */
+  --ig-status-text-color: #485156;
+
+  /* 2. Navbar: NUM-DIZ coral #ea5167 - the color the site's own nav carries
+        (TF-KDS feedback 2026-08-14: the menu shall pick up the coral of the
+        header stripe instead of the slate grey; the enlarged-font variant
+        was rejected on review, so the navbar keeps the base template's
+        default link typography). White text on coral is 3.58:1 - below the
+        4.5:1 normal-text bar, RECORDED LIMITATION by TF-KDS decision, see
+        docs/styleguide.md §7. Dropdown items never sit on coral - their
+        surfaces (vars 6-12) all hold >= 4.5:1. */
+  --navbar-bg-color: #ea5167;
+
+  /* 5. Decorative 8px top stripe: NUM-DIZ coral #ea5167 (site accent color;
+        carries no text). Same coral as the navbar below it since 2026-08-14 -
+        stripe and menu deliberately merge into one coral band under the white
+        header. */
+  --stripe-bg-color: #ea5167;
+
+  /* 6-8. Menu buttons: hover = NUM-DIZ slate #485156 (the dominant site
+        color; white on it = 8.12:1, AAA); active = slate-blue #5c6f7e (the
+        combo logo's wordmark fill, class .st1 of logo-num-diz-de.svg; white
+        on it = 5.21:1, AA). Both darken decisively against the coral bar -
+        the site's own mid grey #706f6f read muddy on coral and was dropped.
+        Button text white (base #e6e6e6 would drop below AA on hover/active). */
+  --btn-hover-color: #485156;
+  --btn-active-color: #5c6f7e;
+  --btn-text-color: #ffffff;
+
+  /* 9-12. Selected/hovered dropdown-item gradient: slate-blue -> slate (both
+        sourced; white item text is >= 5.21:1 on both ends, AA). The -alpha
+        variants feed the base's legacy IE DXImageTransform filter and use
+        its #AARRGGBB order (see base project.css vars 11-12). */
+  --btn-gradient-start-color: #5c6f7e;
+  --btn-gradient-end-color: #485156;
+  --btn-gradient-start-color-alpha: #ff5c6f7e;
+  --btn-gradient-end-color-alpha: #ff485156;
+
+  /* 13-14. Hyperlinks: slate-blue #5c6f7e (logo wordmark fill; 5.21:1 on
+        white, AA); hover darkens to slate #485156 (8.12:1). Deliberately NOT
+        the NUM-DIZ site's own link coral #ea5167 - it is 3.58:1 on white and
+        fails the AA bar this template keeps for body text (styleguide §8/§10). */
+  --link-color: #5c6f7e;
+  --link-hover-color: #485156;
+
+  /* 3-4. Footer: ONE uniform NUM-DIZ slate #485156 for band and container
+        (white text on it = 8.12:1, AAA) - same single-surface decision as
+        the MII footer (no two-tone seam). */
+  --footer-bg-color: #485156;
+  --footer-container-bg-color: #485156;
+
+  /* 25-26. Footer links + highlight: white, 8.12:1 on the slate footer.
+        Footer links stay the color of the surrounding footer text - the same
+        recorded WCAG 1.4.1 limitation as the MII design (styleguide §7). */
+  --footer-hyperlink-text-color: #ffffff;
+  --footer-highlight-text-color: #ffffff;
+
+  /* 27-28. Breadcrumb: NUM-DIZ light grey #ecedee (site light background)
+        with slate text (6.93:1, AA) */
+  --breadcrumb-bg-color: #ecedee;
+  --breadcrumb-text-color: #485156;
+
+  /* 21-22. Consistent WHITE page chrome - the same design decision as the
+        MII palette (mii.css vars 21-22): header sides and container both
+        white, so the header reads as one clean surface under the coral
+        stripe-and-navbar band. */
+  --ig-header-color: #ffffff;
+  --ig-header-container-color: #ffffff;
+
+  /* Narrative tables (template-base.css, styleguide §5): NUM-DIZ light
+     grey fill, slate header text (6.93:1), site mid-grey border #706f6f
+     (non-text contrast 5.01:1 on white, 4.27:1 on the header fill - both
+     above the 3:1 of WCAG 1.4.11). */
+  --ig-table-header-bg-color: #ecedee;
+  --ig-table-border-color: #706f6f;
+  --ig-table-header-text-color: #485156;
+
+  /* Highlight boxes (template-base.css, styleguide §3): the NUM-DIZ set,
+     derived from the site/logo palette (TF-KDS feedback 2026-08-14) - blue
+     from the DIZ wordmark blue #1d6fa8, green from the DIZ emblem greens
+     (#8dbc0b/#6ea460, darkened for the border/heading), orange from the NUM
+     yellow #ffcc00 (darkened), red from the coral #ea5167 itself, grey from
+     the site greys/slate. All variants pass BOTH bars: heading on background
+     >= 6.4:1 (AA text), border on background >= 3.16:1 (WCAG 1.4.11
+     non-text) - no green exception like the inherited MII set. */
+  --ig-highlight-blue-bg-color: #e8f1f8;
+  --ig-highlight-blue-border-color: #1d6fa8;
+  --ig-highlight-blue-heading-color: #16537e;
+  --ig-highlight-green-bg-color: #f3f8e2;
+  --ig-highlight-green-border-color: #587f4e;
+  --ig-highlight-green-heading-color: #42590a;
+  --ig-highlight-orange-bg-color: #fff7db;
+  --ig-highlight-orange-border-color: #a38200;
+  --ig-highlight-orange-heading-color: #6e5800;
+  --ig-highlight-red-bg-color: #fdedf0;
+  --ig-highlight-red-border-color: #ea5167;
+  --ig-highlight-red-heading-color: #9c2038;
+  --ig-highlight-grey-bg-color: #f0f1f2;
+  --ig-highlight-grey-border-color: #706f6f; /* same mid grey as the narrative-table border */
+  --ig-highlight-grey-heading-color: #485156;
+}
