@@ -198,6 +198,14 @@ jobs:
               LOCAL_IG_PARAMETERS+="-ig $GITHUB_WORKSPACE/$p "
             done
             
+            # Write the report files the upload and summary steps below read,
+            # unless the caller already chose its own -output.
+            REPORT_OPTIONS=""
+            if [[ " $INPUT_JAVA_VALIDATION_OPTIONS " != *" -output "* ]]; then
+              REPORT_OPTIONS="-output validation.json -html-output validation.html"
+            fi
+            overallExit=0
+
             for p in $INPUT_PATH_TO_CONFORMANCE_RESOURCES; 
             do
             
@@ -208,7 +216,11 @@ jobs:
 
               UNESCPAED_IG_DEPENDENCIES=$(echo $IG_DEPENDENCIES | tr -d '"')
               
-              javaValidatorOutput=$(java -jar validator_cli.jar $GITHUB_WORKSPACE/$p*.xml $GITHUB_WORKSPACE/$p*.json -version $FHIR_VERSION $INPUT_JAVA_VALIDATION_OPTIONS $UNESCPAED_IG_DEPENDENCIES $LOCAL_IG_PARAMETERS -tx http://127.0.0.1:8090/fhir)
+              # The validator exits non-zero when it finds validation errors. Under
+              # `bash -e` a failing command substitution aborts the script before
+              # the output is printed, so keep the exit code and fail after echoing.
+              validatorExit=0
+              javaValidatorOutput=$(java -jar validator_cli.jar $GITHUB_WORKSPACE/$p*.xml $GITHUB_WORKSPACE/$p*.json -version $FHIR_VERSION $INPUT_JAVA_VALIDATION_OPTIONS $REPORT_OPTIONS $UNESCPAED_IG_DEPENDENCIES $LOCAL_IG_PARAMETERS -tx http://127.0.0.1:8090/fhir 2>&1) || validatorExit=$?
   
               javaValidatorOutput=$(echo "$javaValidatorOutput" | sed -E "
                 s/(:[[:space:]]*)Error([[:space:]]+-)/\1${ERROR}Error${NC}\2/g;
@@ -225,12 +237,19 @@ jobs:
   
               echo -e "$javaValidatorOutput"
 
+              if [ "$validatorExit" -ne 0 ]; then
+                echo "::error::Java validator exited with code $validatorExit for $p (see the output above)."
+                overallExit=$validatorExit
+              fi
+
               # if echo "$javaValidatorOutput" | grep -F "*FAILURE*" > /dev/null; then
               #   echo "Validation failed with errors. Check the logs for more details."
               #   exit 1
               # fi
               
             done
+            echo "Finished validation using Java validator ..." 
+            exit $overallExit
           fi
           echo "Finished validation using Java validator ..." 
         shell: bash
