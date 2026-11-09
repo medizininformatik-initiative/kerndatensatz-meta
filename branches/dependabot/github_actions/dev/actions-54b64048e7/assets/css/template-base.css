@@ -1,0 +1,306 @@
+/* template-base.css - brand-INDEPENDENT rules for de.medizininformatikinitiative.template
+   =======================================================================================
+
+   This file carries every rule block that is the same in BOTH corporate
+   designs. It sets NO colours of its own: every colour it references is a CSS
+   custom property that the ONE brand palette file linked after it declares -
+   num-diz.css (the default) or mii.css (the { "design": "mii" } fallback).
+   Exactly one palette file is loaded per build; see includes/fragment-css.html
+   and docs/styleguide.md §1/§10.
+
+   Linked AFTER the base template's stylesheets (project.css et al.), so no
+   rule here needs !important. Seven rule blocks live here; six add NEW
+   classes, the content-image block deliberately overrides base rules. Each is
+   explained at its own block and listed in docs/styleguide.md sections 3, 5,
+   5a and 8. Keep that list short - a base rule countermanded here stops
+   receiving base fixes. */
+
+/* ── Highlight boxes (background-colour highlight) ────────────────────────────
+   Reusable, purpose-neutral highlight-box classes the template provides for
+   calling out content on a page. A page writes:
+     <div class="ig-highlight ig-highlight-blue"><h5>…</h5><p>…</p></div>
+     Variants: -blue, -green, -orange (warning), -red (important), -grey (hint).
+   STRUCTURE lives here; the COLOURS are palette variables, so each corporate
+   design brings its own set (MII: the kerndatensatz-basis-aligned values;
+   NUM-DIZ: values derived from the NUM-DIZ site/logo palette - styleguide §3).
+   These are STYLING only - the template attaches no semantics (e.g.
+   "audience") to them; a module decides what each colour means. */
+.ig-highlight, .mii-highlight {
+  padding: 15px;
+  margin: 10px 0;
+  border-left: 5px solid;
+  border-radius: 3px;
+}
+.ig-highlight h5, .mii-highlight h5 {
+  margin-top: 0;
+}
+.ig-highlight-blue, .mii-highlight-blue {
+  background-color: var(--ig-highlight-blue-bg-color);
+  border-left-color: var(--ig-highlight-blue-border-color);
+}
+.ig-highlight-blue h5, .mii-highlight-blue h5 {
+  color: var(--ig-highlight-blue-heading-color);
+}
+.ig-highlight-green, .mii-highlight-green {
+  background-color: var(--ig-highlight-green-bg-color);
+  border-left-color: var(--ig-highlight-green-border-color);
+}
+.ig-highlight-green h5, .mii-highlight-green h5 {
+  color: var(--ig-highlight-green-heading-color);
+}
+.ig-highlight-orange, .mii-highlight-orange {
+  background-color: var(--ig-highlight-orange-bg-color);
+  border-left-color: var(--ig-highlight-orange-border-color);
+}
+.ig-highlight-orange h5, .mii-highlight-orange h5 {
+  color: var(--ig-highlight-orange-heading-color);
+}
+.ig-highlight-red, .mii-highlight-red {
+  background-color: var(--ig-highlight-red-bg-color);
+  border-left-color: var(--ig-highlight-red-border-color);
+}
+.ig-highlight-red h5, .mii-highlight-red h5 {
+  color: var(--ig-highlight-red-heading-color);
+}
+.ig-highlight-grey, .mii-highlight-grey {
+  background-color: var(--ig-highlight-grey-bg-color);
+  border-left-color: var(--ig-highlight-grey-border-color);
+}
+.ig-highlight-grey h5, .mii-highlight-grey h5 {
+  color: var(--ig-highlight-grey-heading-color);
+}
+
+/* ── Narrative tables ─────────────────────────────────────────────────────────
+   The base template styles the IG Publisher's own tables (profile trees,
+   artifact indices, binding tables) but leaves markdown tables in page content
+   completely unstyled: no border, no header fill. kerndatensatz-basis works
+   around this per page with an inline <style> block, which is why its
+   /en/metadata.html has borders while its profile pages do not. Styling it here
+   instead means every module built from this template gets it, once.
+
+   WHY THE LONG `:not(...)` CHAIN — this is the load-bearing part, and the
+   obvious short version is wrong. `table:not([class])` alone is NOT safe: the
+   IG Publisher emits its profile snapshot/differential trees as tables that
+   carry NO class, only presentation attributes:
+
+     <table border="0" fhir="generated-heirarchy" cellpadding="0"
+            cellspacing="0" style="..." id="..." data-fhir="...">
+
+   Their inline `style` sits on the <table>, so it does not stop a stylesheet
+   rule from bordering their <td>s — which boxes every cell of the hierarchy
+   tree. What actually separates the two is that a markdown table has NO
+   attributes at all, while every generated one carries at least `style`.
+
+   Measured over every page of both built sites: the chain below matches 14
+   markdown tables and 0 generated tables; `:not([class])` alone would have hit
+   34 generated ones. Verified by simulating the selector against the built
+   HTML, not by reading the markup — see scripts/narrative-table-styles.test.mjs,
+   which re-runs that check against fixtures.
+
+   Colours are the palette's --ig-table-* variables (docs/styleguide.md §5). */
+table:not([class]):not([style]):not([border]):not([data-fhir]) {
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+table:not([class]):not([style]):not([border]):not([data-fhir]) th,
+table:not([class]):not([style]):not([border]):not([data-fhir]) td {
+  border: 1px solid var(--ig-table-border-color);
+  padding: 6px 10px;
+  vertical-align: top;
+}
+table:not([class]):not([style]):not([border]):not([data-fhir]) th {
+  background-color: var(--ig-table-header-bg-color);
+  color: var(--ig-table-header-text-color);
+  text-align: left;
+}
+
+/* ── Content images (issue #66) ──────────────────────────────────────────────
+   The base template floats every `p > img` (project.css: float + margins) and
+   caps no image width. For CONTENT images — diagrams, screenshots, the normal
+   Markdown image — that wraps body text beside the image and lets wide
+   diagrams overflow the column. Content images are therefore block-centered
+   and width-capped by default; a small inline image can opt back into the
+   base float with class="float" (raw HTML img). This file loads after the
+   base stylesheets, so these rules win the cascade. */
+#segment-content p > img:not(.float) {
+  float: none;
+  display: block;
+  margin: 0.5rem auto 1rem auto;
+}
+#segment-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ── structure-tabs include ── spacing for the tabbed structure view ──────── */
+.structure-tabs { margin: 1rem 0; }
+.structure-tabs .tab-content {
+  border: 1px solid #ddd;
+  border-top: none;
+  padding: 0.75rem;
+  overflow-x: auto;
+}
+
+/* ── Long-title header fix ── the base's #ig-status pins height:50px, sized
+   for a two-line title + version line; a longer module title (e.g. three
+   lines: "MII Implementation Guide Medizinisches Forschungsvorhaben")
+   overflows the box and renders BEHIND the following navbar segment, hiding
+   the tail of the title and the version/flag line. Let the block grow with
+   its content instead - the header container and everything after it move
+   down; the one- and two-line cases keep their exact geometry via
+   min-height. */
+#ig-status {
+  height: auto;
+  min-height: 50px;
+}
+
+/* ── Font-size control (A / A+ / A++) ────────────────────────────────────────
+   Three reader-selectable levels wired by assets/js/font-size-control.js and
+   the .ig-fontsize block in includes/fragment-header.html.
+
+   LEVEL A IS THE UNTOUCHED DEFAULT: no data-fontsize attribute -> NO rule
+   fires and the page renders byte-identical to a build without this feature —
+   the per-reader revert. `zoom` (standardized in CSS Viewport; supported by
+   all current browsers incl. Firefox >= 126) is used instead of font-size
+   because the publisher-generated artifact tables carry INLINE px font sizes
+   (style="font-size: 11px") that no stylesheet font-size rule can reach —
+   zoom multiplies the computed rendering, inline styles included, and
+   reflows like browser zoom. Scaling covers the four reading regions —
+   #segment-content, the menu (#segment-navbar), the breadcrumb
+   (#segment-breadcrumb) and the footer (#segment-footer) — all SIBLINGS, so
+   the factors never multiply; a long menu row may wrap onto a second line
+   at level 2, exactly as under browser zoom. Only the header band (logos,
+   IG heading, this control) keeps its fitted layout. Print always renders
+   at 100 %.
+
+   Button colors are palette variables, so both corporate designs style the
+   control from their own sourced values (resting: slate text on the white
+   header, >= 4.5:1 in both palettes; active: the status color under
+   --btn-text-color, 8.12:1 NUM-DIZ / 4.73:1 MII — both AA, styleguide §8).
+
+   REMOVAL (one commit): delete this block, assets/js/font-size-control.js
+   and the .ig-fontsize block in includes/fragment-header.html (§5a). */
+.ig-fontsize {
+  float: var(--ig-right);
+  display: flex;
+  /* The three A glyphs share ONE TEXT BASELINE (all-caps "A" has no
+     descender, so the letters sit on a common line and the boxes grow
+     upward with the level) while the GROUP is middle-aligned on the
+     header's line: the tallest button is 26px (16px glyph + 2x4px padding
+     + 2x1px border), so margin-top 20px puts its middle at 33px - the same
+     middle as the base's #project-nav (margin-top 8px + 50px band) between
+     the FHIR logo (middle 29px) and the two-line #ig-status (~37px).
+     16px right margin separates the group from the FHIR logo. */
+  align-items: baseline;
+  gap: 3px;
+  margin: 20px 16px 0 10px;
+}
+.ig-fontsize button {
+  font-family: inherit;
+  line-height: 1;
+  padding: 4px 7px;
+  background: transparent;
+  border: 1px solid var(--ig-status-text-color);
+  border-radius: 3px;
+  color: var(--ig-status-text-color);
+  cursor: pointer;
+}
+.ig-fontsize button[data-level="0"] { font-size: 12px; }
+.ig-fontsize button[data-level="1"] { font-size: 14px; }
+.ig-fontsize button[data-level="2"] { font-size: 16px; }
+/* ONE hover convention for both chrome controls (this and .ig-back-to-top):
+   fill with the palette's menu-hover color under --btn-text-color (8.12:1
+   NUM-DIZ / 4.80:1 MII - AA). Declared BEFORE the aria-pressed rule at equal
+   specificity, so a pressed button keeps its own fill while hovered. */
+.ig-fontsize button:hover {
+  background: var(--btn-hover-color);
+  border-color: var(--btn-hover-color);
+  color: var(--btn-text-color);
+}
+.ig-fontsize button[aria-pressed="true"] {
+  background: var(--ig-status-text-color);
+  color: var(--btn-text-color);
+}
+.ig-fontsize button:focus-visible {
+  outline: 2px solid var(--link-color);
+  outline-offset: 1px;
+}
+html[data-fontsize="1"] #segment-content,
+html[data-fontsize="1"] #segment-navbar,
+html[data-fontsize="1"] #segment-breadcrumb,
+html[data-fontsize="1"] #segment-footer { zoom: 1.125; }
+html[data-fontsize="2"] #segment-content,
+html[data-fontsize="2"] #segment-navbar,
+html[data-fontsize="2"] #segment-breadcrumb,
+html[data-fontsize="2"] #segment-footer { zoom: 1.25; }
+@media print {
+  #segment-content,
+  #segment-navbar,
+  #segment-breadcrumb,
+  #segment-footer { zoom: 1 !important; }
+  .ig-fontsize { display: none; }
+}
+
+/* ── Back-to-top button ──────────────────────────────────────────────────────
+   Fixed bottom-right, hidden until the reader has scrolled about one
+   viewport (assets/js/back-to-top.js toggles .visible). The markup lives in
+   fragment-header.html inside #segment-header - OUTSIDE the data-fontsize
+   zoom regions, so the button keeps its size at every level. Colors are the
+   font-size control's INACTIVE pair inverted to a SOLID light ground: the
+   filled slate first shipped was the same variable value as the footer
+   (--footer-bg-color = --ig-status-text-color in the NUM-DIZ palette), so
+   the button vanished when it crossed the footer. A solid
+   --ig-header-container-color ground (white in both palettes) with slate
+   border/glyph stays visible on the white page AND on the slate footer
+   (8.12:1 NUM-DIZ / 4.73:1 MII, both directions); hover fills slate like
+   the control's active state. padding:0 keeps the flex-centered glyph
+   actually centered (the UA's default button padding shifted it).
+   Hidden-by-default also removes it from the tab order until it is useful.
+   REMOVAL (one commit): this block, assets/js/back-to-top.js and the
+   .ig-back-to-top block in includes/fragment-header.html (§8). */
+.ig-back-to-top {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 200;
+  display: none;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 1px solid var(--ig-status-text-color);
+  border-radius: 50%;
+  background: var(--ig-header-container-color);
+  color: var(--ig-status-text-color);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+}
+.ig-back-to-top:hover {
+  /* same hover convention as .ig-fontsize (WCAG 3.2.4 consistency) */
+  background: var(--btn-hover-color);
+  border-color: var(--btn-hover-color);
+  color: var(--btn-text-color);
+}
+.ig-back-to-top.visible {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ig-back-to-top:focus-visible {
+  outline: 2px solid var(--link-color);
+  outline-offset: 2px;
+}
+@media print {
+  .ig-back-to-top { display: none !important; }
+}
+
+/* DEPRECATED aliases (renamed 2026-08-14: brand-specific mii-* -> generic ig-*).
+   The --mii-table-* variables resolve to their --ig-table-* successors and the
+   .mii-highlight* selectors above remain as aliases so existing module content
+   keeps rendering for one deprecation window. New content uses ig-* only.
+   Remove the aliases in the next major. */
+:root {
+  --mii-table-border-color: var(--ig-table-border-color);
+  --mii-table-header-bg-color: var(--ig-table-header-bg-color);
+  --mii-table-header-text-color: var(--ig-table-header-text-color);
+}
