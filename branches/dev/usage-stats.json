@@ -120,7 +120,9 @@
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/translation": [
+      "CapabilityStatement.description",
       "CapabilityStatement.publisher",
+      "CapabilityStatement.rest.documentation",
       "CodeSystem.publisher",
       "ImplementationGuide.definition.page.page.page.title",
       "ImplementationGuide.definition.page.page.title",

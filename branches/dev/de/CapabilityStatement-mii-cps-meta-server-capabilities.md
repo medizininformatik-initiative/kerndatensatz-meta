@@ -12,7 +12,7 @@
 | Draft Stand: 2026-09-10 | *Maschinenlesbarer Name*:MII_CPS_Meta_Server_Capabilities |
 
  
-Migration-generated proposal describing the resource types and search parameters published by the Meta module. Review before use as a normative capability statement. 
+Anforderungs-CapabilityStatement mit den Ressourcentypen und den im Meta-Modul definierten SearchParametern. Es ist informativ und legt keine normativen Serveranforderungen fest; die CapabilityStatements der einzelnen MII-Module referenzieren diese SearchParameter. 
 
  [Rohdatei der OpenAPI-/Swagger-Definition](../mii-cps-meta-server-capabilities.openapi.json) | [Download](../mii-cps-meta-server-capabilities.openapi.json) 
 
@@ -180,7 +180,20 @@ Migration-generated proposal describing the resource types and search parameters
       "value" : "https://www.netzwerk-universitaetsmedizin.de"
     }]
   }],
-  "description" : "Migration-generated proposal describing the resource types and search parameters published by the Meta module. Review before use as a normative capability statement.",
+  "description" : "Requirements CapabilityStatement listing the resource types and the SearchParameters defined by the Meta module. It is informative and does not define normative server requirements; the CapabilityStatements of the individual MII modules reference these SearchParameters.",
+  "_description" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "lang",
+        "valueCode" : "de-DE"
+      },
+      {
+        "url" : "content",
+        "valueString" : "Anforderungs-CapabilityStatement mit den Ressourcentypen und den im Meta-Modul definierten SearchParametern. Es ist informativ und legt keine normativen Serveranforderungen fest; die CapabilityStatements der einzelnen MII-Module referenzieren diese SearchParameter."
+      }],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    }]
+  },
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -195,7 +208,20 @@ Migration-generated proposal describing the resource types and search parameters
   "implementationGuide" : ["https://www.medizininformatik-initiative.de/fhir/modul-meta/ImplementationGuide/mii-ig-meta|2027.0.0-ballot"],
   "rest" : [{
     "mode" : "server",
-    "documentation" : "Proposal derived from the module's published SearchParameter definitions; support expectations require module-team review.",
+    "documentation" : "Resource types and SearchParameters defined by the Meta module. Which of them a server supports is defined by the CapabilityStatements of the individual MII modules.",
+    "_documentation" : {
+      "extension" : [{
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "de-DE"
+        },
+        {
+          "url" : "content",
+          "valueString" : "Ressourcentypen und SearchParameter des Meta-Moduls. Welche davon ein Server unterstützt, legen die CapabilityStatements der einzelnen MII-Module fest."
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      }]
+    },
     "resource" : [{
       "type" : "AdverseEvent",
       "searchParam" : [{

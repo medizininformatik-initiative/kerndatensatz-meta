@@ -15,7 +15,7 @@ Die folgenden Artefakte definieren die spezifischen Fähigkeiten, die verschiede
 
 | | |
 | :--- | :--- |
-| [ MII CapabilityStatement Meta Server Capabilities  ](CapabilityStatement-mii-cps-meta-server-capabilities.md) | Migration-generated proposal describing the resource types and search parameters published by the Meta module. Review before use as a normative capability statement. |
+| [ MII CapabilityStatement Meta Server Capabilities  ](CapabilityStatement-mii-cps-meta-server-capabilities.md) | Requirements CapabilityStatement listing the resource types and the SearchParameters defined by the Meta module. It is informative and does not define normative server requirements; the CapabilityStatements of the individual MII modules reference these SearchParameters. |
 
 ### Verhalten: Suchparameter (SearchParameter) 
 

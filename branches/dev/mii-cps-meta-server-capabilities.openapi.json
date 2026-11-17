@@ -2,7 +2,7 @@
   "openapi": "3.0.2",
   "info": {
     "title": "MII CapabilityStatement Meta Server Capabilities",
-    "description": "Migration-generated proposal describing the resource types and search parameters published by the Meta module. Review before use as a normative capability statement.",
+    "description": "Requirements CapabilityStatement listing the resource types and the SearchParameters defined by the Meta module. It is informative and does not define normative server requirements; the CapabilityStatements of the individual MII modules reference these SearchParameters.",
     "license": {
       "name": "Creative Commons Attribution 4.0 International",
       "url": "http://spdx.org/licenses/CC-BY-4.0.html"
