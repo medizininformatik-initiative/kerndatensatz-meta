@@ -1,8 +1,3 @@
-// Migration-generated CapabilityStatement proposal.
-// Sources: the 170 SearchParameter resources and the SearchParameter profile
-// in this module. Gate review approved generating this draft; it does not
-// assert that the Simplifier source already declared server capabilities.
-//
 // The searchParam `documentation` lines are generated from the CI search tests
 // (.github/workflows/search-param-test/test-search.sh) — do not edit them by
 // hand; run `node scripts/gen-cps-search-examples.mjs` after changing a test.
@@ -11,7 +6,7 @@ Instance: mii-cps-meta-server-capabilities
 InstanceOf: CapabilityStatement
 Usage: #definition
 Title: "MII CapabilityStatement Meta Server Capabilities"
-Description: "Migration-generated proposal describing the resource types and search parameters published by the Meta module. Review before use as a normative capability statement."
+Description: "Requirements CapabilityStatement listing the resource types and the SearchParameters defined by the Meta module. It is informative and does not define normative server requirements; the CapabilityStatements of the individual MII modules reference these SearchParameters."
 * insert Version
 * insert SP_Publisher
 * insert LicenseCodeableCCBY40Instance
@@ -26,6 +21,7 @@ Description: "Migration-generated proposal describing the resource types and sea
 * insert CRMIArtifactTopicInstance(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, C80260)
 * insert CRMIArtifactContributorsInstance
 * name = "MII_CPS_Meta_Server_Capabilities"
+* insert Translation(description, de-DE, Anforderungs-CapabilityStatement mit den Ressourcentypen und den im Meta-Modul definierten SearchParametern. Es ist informativ und legt keine normativen Serveranforderungen fest; die CapabilityStatements der einzelnen MII-Module referenzieren diese SearchParameter.)
 * status = #draft
 * experimental = true
 * date = "2026-09-10"
@@ -37,7 +33,8 @@ Description: "Migration-generated proposal describing the resource types and sea
 * format[+] = #xml
 * implementationGuide[+] = "https://www.medizininformatik-initiative.de/fhir/modul-meta/ImplementationGuide/mii-ig-meta|2027.0.0-ballot"
 * rest[0].mode = #server
-* rest[0].documentation = "Proposal derived from the module's published SearchParameter definitions; support expectations require module-team review."
+* rest[0].documentation = "Resource types and SearchParameters defined by the Meta module. Which of them a server supports is defined by the CapabilityStatements of the individual MII modules."
+* insert Translation(rest[0].documentation, de-DE, Ressourcentypen und SearchParameter des Meta-Moduls. Welche davon ein Server unterstützt\, legen die CapabilityStatements der einzelnen MII-Module fest.)
 * rest[0].resource[+].type = #AdverseEvent
 * rest[0].resource[=].searchParam[+].name = "encounter"
 * rest[0].resource[=].searchParam[=].definition = "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-adverseevent-encounter"
