@@ -122,6 +122,7 @@
     "http://hl7.org/fhir/StructureDefinition/translation": [
       "CapabilityStatement.description",
       "CapabilityStatement.publisher",
+      "CapabilityStatement.purpose",
       "CapabilityStatement.rest.documentation",
       "CodeSystem.publisher",
       "ImplementationGuide.definition.page.page.page.title",

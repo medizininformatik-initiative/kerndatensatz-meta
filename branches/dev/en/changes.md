@@ -9,7 +9,7 @@
 
 **Date:** unreleased
 
-* **Changed:** The CapabilityStatement [MII CapabilityStatement Meta Server Capabilities](CapabilityStatement-mii-cps-meta-server-capabilities.md) has a proper description and `rest.documentation` instead of the placeholder texts from the migration ("Review before use as a normative capability statement"). It remains an informative requirements statement (`draft`, `experimental`). See: [HDB-1014](https://hl7germany.atlassian.net/browse/HDB-1014)
+* **Changed:** The CapabilityStatement [MII CapabilityStatement Meta Server Capabilities](CapabilityStatement-mii-cps-meta-server-capabilities.md) has a proper description, `purpose`, `rest.documentation` and usage note (`artifact-usage`) instead of the placeholder texts from the migration ("Review before use as a normative capability statement"). It remains an informative requirements statement (`draft`, `experimental`). See: [HDB-1014](https://hl7germany.atlassian.net/browse/HDB-1014)
 * **Added:** A [search parameter overview](search-parameters.md) listing every active search parameter with its resource type, type and FHIRPath expression, and the retired search parameters.
 * **Added:** The CapabilityStatement documents an example query for every search parameter covered by the CI search tests; see [MII CapabilityStatement Meta Server Capabilities](CapabilityStatement-mii-cps-meta-server-capabilities.md).
 * **Removed:** The `SearchParameter` resources `verification-status` and `evidence-detail` for `Condition`, `has-member`, `focus` and `encounter` for `Observation`, and `source` for `DeviceMetric` were retired because they are identical to the FHIR Core search parameters. They are no longer part of the collection and transaction bundles.

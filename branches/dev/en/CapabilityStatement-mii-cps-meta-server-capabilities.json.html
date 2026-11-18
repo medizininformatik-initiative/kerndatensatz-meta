@@ -445,7 +445,24 @@
     },
     {
       "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/artifact-usage",
-      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueMarkdown</a>" : "Use this draft CapabilityStatement to inspect the resource types and custom SearchParameters published by the MII Meta module. It is a migration-generated proposal and does not establish normative server support expectations until it has been reviewed and approved."
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueMarkdown</a>" : "Use this CapabilityStatement as a reference for the SearchParameters defined by the MII Meta module. It is informative; which SearchParameters a server supports is defined by the CapabilityStatements of the individual MII modules.",
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">_valueMarkdown</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#markdown.extension">extension</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Extension.extension">extension</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "lang",
+                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCode</a>" : "de-DE"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "content",
+                "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueString</a>" : "Dieses CapabilityStatement dient als Referenz für die im MII-Meta-Modul definierten SearchParameter. Es ist informativ; welche SearchParameter ein Server unterstützt, legen die CapabilityStatements der einzelnen MII-Module fest."
+              }
+            ],
+            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
     },
     {
       "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/resource-approvalDate",
@@ -565,7 +582,7 @@
       ]
     }
   ],
-  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.purpose">purpose</a>" : "Define the SearchParameter support described by the MII Meta module for implementations of the MII Core Data Set.",
+  "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.purpose">purpose</a>" : "Lists the SearchParameters defined by the MII Meta module as a reference for the CapabilityStatements of the individual MII modules.",
   "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.kind">kind</a>" : "requirements",
   "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.fhirVersion">fhirVersion</a>" : "4.0.1",
   "<a href="http://hl7.org/fhir/R4/capabilitystatement.html#CapabilityStatement.format">format</a>" : [
@@ -1894,7 +1911,7 @@
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de">NUM-DIZ</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.meta#2027.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Tue, Nov 17, 2026 16:05+0000">2026-11-17</span>
+          Generated <span title="Wed, Nov 18, 2026 10:58+0000">2026-11-18</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

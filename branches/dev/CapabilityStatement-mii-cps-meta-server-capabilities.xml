@@ -375,7 +375,16 @@
     </valueCodeableConcept>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/artifact-usage">
-    <valueMarkdown value="Use this draft CapabilityStatement to inspect the resource types and custom SearchParameters published by the MII Meta module. It is a migration-generated proposal and does not establish normative server support expectations until it has been reviewed and approved."/>
+    <valueMarkdown value="Use this CapabilityStatement as a reference for the SearchParameters defined by the MII Meta module. It is informative; which SearchParameters a server supports is defined by the CapabilityStatements of the individual MII modules.">
+      <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+        <extension url="lang">
+          <valueCode value="de-DE"/>
+        </extension>
+        <extension url="content">
+          <valueString value="Dieses CapabilityStatement dient als Referenz für die im MII-Meta-Modul definierten SearchParameter. Es ist informativ; welche SearchParameter ein Server unterstützt, legen die CapabilityStatements der einzelnen MII-Module fest."/>
+        </extension>
+      </extension>
+    </valueMarkdown>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/resource-approvalDate">
     <valueDate value="2026-09-10"/>
@@ -483,7 +492,16 @@
       <display value="Germany"/>
     </coding>
   </jurisdiction>
-  <purpose value="Define the SearchParameter support described by the MII Meta module for implementations of the MII Core Data Set."/>
+  <purpose value="Lists the SearchParameters defined by the MII Meta module as a reference for the CapabilityStatements of the individual MII modules.">
+    <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+      <extension url="lang">
+        <valueCode value="de-DE"/>
+      </extension>
+      <extension url="content">
+        <valueString value="Listet die im MII-Meta-Modul definierten SearchParameter als Referenz für die CapabilityStatements der einzelnen MII-Module."/>
+      </extension>
+    </extension>
+  </purpose>
   <kind value="requirements"/>
   <fhirVersion value="4.0.1"/>
   <format value="json"/>

@@ -57,7 +57,20 @@
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/artifact-usage",
-    "valueMarkdown" : "Use this draft CapabilityStatement to inspect the resource types and custom SearchParameters published by the MII Meta module. It is a migration-generated proposal and does not establish normative server support expectations until it has been reviewed and approved."
+    "valueMarkdown" : "Use this CapabilityStatement as a reference for the SearchParameters defined by the MII Meta module. It is informative; which SearchParameters a server supports is defined by the CapabilityStatements of the individual MII modules.",
+    "_valueMarkdown" : {
+      "extension" : [{
+        "extension" : [{
+          "url" : "lang",
+          "valueCode" : "de-DE"
+        },
+        {
+          "url" : "content",
+          "valueString" : "Dieses CapabilityStatement dient als Referenz für die im MII-Meta-Modul definierten SearchParameter. Es ist informativ; welche SearchParameter ein Server unterstützt, legen die CapabilityStatements der einzelnen MII-Module fest."
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+      }]
+    }
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/resource-approvalDate",
@@ -182,7 +195,20 @@
       "display" : "Germany"
     }]
   }],
-  "purpose" : "Define the SearchParameter support described by the MII Meta module for implementations of the MII Core Data Set.",
+  "purpose" : "Lists the SearchParameters defined by the MII Meta module as a reference for the CapabilityStatements of the individual MII modules.",
+  "_purpose" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "lang",
+        "valueCode" : "de-DE"
+      },
+      {
+        "url" : "content",
+        "valueString" : "Listet die im MII-Meta-Modul definierten SearchParameter als Referenz für die CapabilityStatements der einzelnen MII-Module."
+      }],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    }]
+  },
   "kind" : "requirements",
   "fhirVersion" : "4.0.1",
   "format" : ["json",
