@@ -7,8 +7,8 @@
 
 * **Changed:** The CapabilityStatement
   [MII CapabilityStatement Meta Server Capabilities](CapabilityStatement-mii-cps-meta-server-capabilities.html)
-  has a proper description and `rest.documentation` instead of the placeholder
-  texts from the migration ("Review before use as a normative capability
+  has a proper description, `purpose`, `rest.documentation` and usage note
+  (`artifact-usage`) instead of the placeholder texts from the migration ("Review before use as a normative capability
   statement"). It remains an informative requirements statement (`draft`,
   `experimental`). See:
   [HDB-1014](https://hl7germany.atlassian.net/browse/HDB-1014)

@@ -173,9 +173,10 @@ RuleSet: CRMIArtifactUsageCapabilityStatement
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/artifact-usage"
 * extension[=].valueMarkdown = "Use this CapabilityStatement to determine the minimum RESTful server capabilities required for a system that implements the corresponding module of the Medical Informatics Initiative core dataset. It lists the FHIR resource types and MII profiles that SHALL be supported, together with required interactions, supported formats, and search parameters for read and search access. Systems claiming conformance to the module are expected to implement the listed capabilities according to the stated conformance expectations."
 
-RuleSet: CRMIArtifactUsageDraftMetaCapabilityStatement
+RuleSet: CRMIArtifactUsageMetaCapabilityStatement
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/artifact-usage"
-* extension[=].valueMarkdown = "Use this draft CapabilityStatement to inspect the resource types and custom SearchParameters published by the MII Meta module. It is a migration-generated proposal and does not establish normative server support expectations until it has been reviewed and approved."
+* extension[=].valueMarkdown = "Use this CapabilityStatement as a reference for the SearchParameters defined by the MII Meta module. It is informative; which SearchParameters a server supports is defined by the CapabilityStatements of the individual MII modules."
+* insert Translation(extension[=].valueMarkdown, de-DE, Dieses CapabilityStatement dient als Referenz für die im MII-Meta-Modul definierten SearchParameter. Es ist informativ; welche SearchParameter ein Server unterstützt\, legen die CapabilityStatements der einzelnen MII-Module fest.)
 
 // ── CodeSystem ───────────────────────────────────────────────────────────────
 

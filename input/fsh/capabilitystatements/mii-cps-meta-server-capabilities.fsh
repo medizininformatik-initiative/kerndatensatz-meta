@@ -15,7 +15,7 @@ Description: "Requirements CapabilityStatement listing the resource types and th
 * insert CRMIKnowledgeCapabilitiesCapabilityStatement
 * insert CRMIVersionPolicyStrictInstance
 * insert CRMIPackageSource
-* insert CRMIArtifactUsageDraftMetaCapabilityStatement
+* insert CRMIArtifactUsageMetaCapabilityStatement
 * insert CRMIApprovalDateInstance(2026-09-10)
 * insert CRMIResourceEffectivePeriodInstance
 * insert CRMIArtifactTopicInstance(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, C80260)
@@ -26,7 +26,8 @@ Description: "Requirements CapabilityStatement listing the resource types and th
 * experimental = true
 * date = "2026-09-10"
 * jurisdiction = urn:iso:std:iso:3166#DE "Germany"
-* purpose = "Define the SearchParameter support described by the MII Meta module for implementations of the MII Core Data Set."
+* purpose = "Lists the SearchParameters defined by the MII Meta module as a reference for the CapabilityStatements of the individual MII modules."
+* insert Translation(purpose, de-DE, Listet die im MII-Meta-Modul definierten SearchParameter als Referenz für die CapabilityStatements der einzelnen MII-Module.)
 * kind = #requirements
 * fhirVersion = #4.0.1
 * format[+] = #json
