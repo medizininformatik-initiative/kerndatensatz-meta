@@ -112,14 +112,15 @@ KDS-wide conformance rules are maintained centrally in
 per the agreed structure, modules link them instead of restating them. The Meta
 module currently has **no published IG rendering** (only a CI build without
 conformance pages), so the menu links point at the authoritative wiki page
-sections:
+sections. The wiki keeps one page per language with the same structure; the
+English menu links the English page, the German menu the German one:
 
-| Menu entry | Interim target |
-| --- | --- |
-| Conformance | `…/kerndatensatz-meta/wiki/Conformance` |
-| General Requirements | `…/wiki/Conformance#anforderungsdokumentation` |
-| Must Support | `…/wiki/Conformance#must-support-ms` |
-| Handling Missing Data | `…/wiki/Conformance#fehlende-daten` |
+| Menu entry | Interim target, English menu | Interim target, German menu |
+| --- | --- | --- |
+| Conformance | `…/kerndatensatz-meta/wiki/Conformance-English` | `…/kerndatensatz-meta/wiki/Conformance` |
+| General Requirements | `…/wiki/Conformance-English#general-requirements` | `…/wiki/Conformance#anforderungsdokumentation` |
+| Must Support | `…/wiki/Conformance-English#must-support-ms` | `…/wiki/Conformance#must-support-ms` |
+| Handling Missing Data | `…/wiki/Conformance-English#handling-missing-data` | `…/wiki/Conformance#fehlende-daten` |
 
 > **Gate item:** when the Meta module publishes a stable IG rendering with its
 > own Conformance / General Requirements / Must Support / Handling Missing Data
