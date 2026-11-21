@@ -41,6 +41,8 @@
     <ul class="dropdown-menu">
       <li><a href="guidance.html">Guidance</a></li>
       <li><a href="implementer-guidance.html">Guidance for Implementers</a></li>
+      <!-- Meta-specific addition to the agreed menu (docs/page-structure.md) -->
+      <li><a href="conventions.html">Module Conventions</a></li>
       <!-- link-only entry: Logical-Models section of the Artifacts Summary (see header note) -->
       <li><a href="logical-models.html">Datasets and Descriptions</a></li>
       <li><a href="uml-diagrams.html">UML Diagrams</a></li>

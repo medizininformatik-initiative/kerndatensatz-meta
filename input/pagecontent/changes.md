@@ -5,6 +5,13 @@
 
 **Date:** unreleased
 
+* **Added:** A [Module Conventions](conventions.html) page describing how the
+  KDS modules label example instances as test data (`HTEST`) and declare
+  licences.
+* **Changed:** The copyright notice on the home page names the Medical
+  Informatics Initiative (MII) instead of TMF e. V. The
+  [Extensions](extensions.html) page marks MII EX Meta License Codeable as
+  deprecated in favour of the CRMI extension `crmi-license`.
 * **Changed:** The CapabilityStatement
   [MII CapabilityStatement Meta Server Capabilities](CapabilityStatement-mii-cps-meta-server-capabilities.html)
   has a proper description, `purpose`, `rest.documentation` and usage note

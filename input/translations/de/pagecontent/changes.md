@@ -5,6 +5,13 @@
 
 **Datum:** unveröffentlicht
 
+* **Added:** Eine Seite [Modulkonventionen](conventions.html) beschreibt, wie
+  die KDS-Module Beispielinstanzen als Testdaten (`HTEST`) kennzeichnen und
+  Lizenzen angeben.
+* **Changed:** Der Urheberrechtshinweis auf der Startseite nennt die
+  Medizininformatik-Initiative (MII) statt TMF e. V. Die Seite
+  [Extensions](extensions.html) kennzeichnet MII EX Meta License Codeable als
+  veraltet zugunsten der CRMI-Extension `crmi-license`.
 * **Changed:** Das CapabilityStatement
   [MII CapabilityStatement Meta Server Capabilities](CapabilityStatement-mii-cps-meta-server-capabilities.html)
   hat eine eigentliche Beschreibung, `purpose`, `rest.documentation` und einen

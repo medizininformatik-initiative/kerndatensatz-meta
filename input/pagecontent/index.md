@@ -39,7 +39,7 @@ Comments and criticism are welcome as
 
 ### Copyright and licence
 
-© 2019+ TMF e. V., Charlottenstraße 42, 10117 Berlin.
+© 2019+ Medical Informatics Initiative (MII).
 
 This work is licensed under the
 [Creative Commons Attribution 4.0 International licence](https://creativecommons.org/licenses/by/4.0/).

@@ -40,6 +40,7 @@ for the decision checklist and the per-entry removal procedure.
 | — Guidance | 1..1 | `guidance.html` |
 | — Guidance for Researchers | 0..1 | `researcher-guidance.html` |
 | — Guidance for Implementers | 1..1 | `implementer-guidance.html` |
+| — Module Conventions | Meta only | `conventions.html` — KDS-wide conventions for test data labels and licences; a Meta-specific addition, not part of the agreed module menu |
 | — Datasets and Descriptions | 1..1 | **link-only** → `logical-models.html` (same target as *Artifacts → Logical Models*; NEITHER Artifacts-Summary anchor is usable — see below) |
 | — UML Diagrams | 1..1 | `uml-diagrams.html` |
 | **Conformance** | 1..1 | dropdown (parent → Meta-module Conformance, external) |
