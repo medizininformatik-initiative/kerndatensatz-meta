@@ -77,10 +77,13 @@ RuleSet: CRMIArtifactTopicInstance(system, code)
 
 RuleSet: CRMIArtifactContributors
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/artifact-author"
+* ^extension[=].valueContactDetail.name = "Julian Saß"
 * ^extension[=].valueContactDetail.telecom[+].system = #email
 * ^extension[=].valueContactDetail.telecom[=].value = "julian.sass@charite.de"
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/artifact-editor"
-* ^extension[=].valueContactDetail.name = "Taskforce Core Data Set"
+* ^extension[=].valueContactDetail.name = "Julian Saß"
+* ^extension[=].valueContactDetail.telecom[+].system = #email
+* ^extension[=].valueContactDetail.telecom[=].value = "julian.sass@charite.de"
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/artifact-reviewer"
 * ^extension[=].valueContactDetail.name = "Interoperability Working Group"
 * ^extension[=].valueContactDetail.telecom[+].system = #url
@@ -100,10 +103,13 @@ RuleSet: CRMIArtifactContributors
 
 RuleSet: CRMIArtifactContributorsInstance
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/artifact-author"
+* extension[=].valueContactDetail.name = "Julian Saß"
 * extension[=].valueContactDetail.telecom[+].system = #email
 * extension[=].valueContactDetail.telecom[=].value = "julian.sass@charite.de"
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/artifact-editor"
-* extension[=].valueContactDetail.name = "Taskforce Core Data Set"
+* extension[=].valueContactDetail.name = "Julian Saß"
+* extension[=].valueContactDetail.telecom[+].system = #email
+* extension[=].valueContactDetail.telecom[=].value = "julian.sass@charite.de"
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/artifact-reviewer"
 * extension[=].valueContactDetail.name = "Interoperability Working Group"
 * extension[=].valueContactDetail.telecom[+].system = #url

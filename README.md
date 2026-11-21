@@ -23,20 +23,23 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the branching model and the commit
 convention, and [`docs/`](docs/README.md) for build, release and authoring
 guides. Coding agents follow [AGENTS.md](AGENTS.md).
 
-## Authors and contacts
+## Author
 
-* Alexander Zautke
-* Danny Ammon
-* Julian Saß
-* Karoline Buckow
+* Julian Saß ([@julsas](https://github.com/julsas))
 
-### With support from
+### Contributors
 
-* [@ThomasSmallert](https://github.com/ThomasSmallert)
-* [@Gauxi](https://github.com/Gauxi)
-* [@ThomasDeBe](https://github.com/ThomasDeBe)
-* [@alexanderkiel](https://github.com/alexanderkiel)
-* [@beanformer](https://github.com/beanformer)
-* [@alexa-ian](https://github.com/alexa-ian)
-* [@holger-stenzhorn](https://github.com/holger-stenzhorn)
-* [@msusky](https://github.com/msusky)
+In alphabetical order:
+
+* Danny Ammon ([@DannyAmmon](https://github.com/DannyAmmon))
+* Karoline Buckow ([@karoline-buckow](https://github.com/karoline-buckow))
+* Thomas Debertshäuser ([@ThomasDeBe](https://github.com/ThomasDeBe))
+* Margaux Gatrio ([@Gauxi](https://github.com/Gauxi))
+* Alexa Iancu ([@alexa-ian](https://github.com/alexa-ian))
+* Alexander Kiel ([@alexanderkiel](https://github.com/alexanderkiel))
+* Matthias Löbe ([@beanformer](https://github.com/beanformer))
+* Thomas Smallert ([@ThomasSmallert](https://github.com/ThomasSmallert))
+* Holger Stenzhorn ([@holger-stenzhorn](https://github.com/holger-stenzhorn))
+* Marcel Susky ([@msusky](https://github.com/msusky))
+* Patrick Werner ([@patrick-werner](https://github.com/patrick-werner))
+* Alexander Zautke ([@alexzautke](https://github.com/alexzautke))
