@@ -43,7 +43,7 @@ gern entgegengenommen.
 
 ### Copyright-Hinweis und Nutzungshinweise
 
-© 2019+ TMF e. V., Charlottenstraße 42, 10117 Berlin.
+© 2019+ Medizininformatik-Initiative (MII).
 
 Dieses Werk ist lizenziert unter der
 [Creative Commons Namensnennung 4.0 International Lizenz](https://creativecommons.org/licenses/by/4.0/).

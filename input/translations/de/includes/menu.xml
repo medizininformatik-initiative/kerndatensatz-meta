@@ -10,6 +10,8 @@
     <ul class="dropdown-menu">
       <li><a href="guidance.html">Anleitung</a></li>
       <li><a href="implementer-guidance.html">Anleitung für Implementierende</a></li>
+      <!-- Meta-spezifische Ergänzung des vereinbarten Menüs (docs/page-structure.md) -->
+      <li><a href="conventions.html">Modulkonventionen</a></li>
       <!-- Nur-Link-Eintrag: die Seite "Logische Modelle" (Begründung im Quell-Menü) -->
       <li><a href="logical-models.html">Datensätze und Beschreibungen</a></li>
       <li><a href="uml-diagrams.html">UML-Diagramme</a></li>

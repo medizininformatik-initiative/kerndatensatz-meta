@@ -45,6 +45,12 @@ msgstr "Anleitung für Implementierende"
 # A short title used to represent this page in navigational structures such
 # as table of contents, bread crumbs, etc.
 #: ImplementationGuide.definition.page.title
+msgid "Module Conventions"
+msgstr "Modulkonventionen"
+
+# A short title used to represent this page in navigational structures such
+# as table of contents, bread crumbs, etc.
+#: ImplementationGuide.definition.page.title
 msgid "UML Diagrams"
 msgstr "UML-Diagramme"
 

@@ -220,6 +220,8 @@ pages:
     title: Guidance
     implementer-guidance.md:
       title: Guidance for Implementers
+    conventions.md:
+      title: Module Conventions
     uml-diagrams.md:
       title: UML Diagrams
 
