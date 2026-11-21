@@ -1,0 +1,13 @@
+# Anleitung - MII IG Meta v2027.0.0-ballot
+
+* [**Inhaltsverzeichnis**](toc.md)
+* **Anleitung**
+
+## Anleitung
+
+ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde. Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie [hier](translationinfo.md). 
+
+Das Meta-Modul veröffentlicht grundlegende Konformitätsartefakte, die modulübergreifend im Kerndatensatz verwendet werden.
+
+Die [Modulkonventionen](conventions.md) beschreiben, wie die KDS-Module Testdaten kennzeichnen und Lizenzen angeben.
+
