@@ -9,6 +9,8 @@
 
 **Date:** unreleased
 
+* **Added:** The [Guidance for Implementers](implementer-guidance.md) explains how module CapabilityStatements list the result parameters `_count`, `_summary` and `_elements`. See: [#91](https://github.com/medizininformatik-initiative/kerndatensatz-meta/issues/91)
+* **Changed:** The [Metadata Overview](metadata.md) states the current approval date and the metadata the CapabilityStatement and the SearchParameter resources carry.
 * **Added:** A [Module Conventions](conventions.md) page describing how the KDS modules label example instances as test data (`HTEST`) and declare licences.
 * **Changed:** The copyright notice on the home page names the Medical Informatics Initiative (MII) instead of TMF e. V. The [Extensions](extensions.md) page marks MII EX Meta License Codeable as deprecated in favour of the CRMI extension `crmi-license`.
 * **Changed:** The CapabilityStatement [MII CapabilityStatement Meta Server Capabilities](CapabilityStatement-mii-cps-meta-server-capabilities.md) has a proper description, `purpose`, `rest.documentation` and usage note (`artifact-usage`) instead of the placeholder texts from the migration ("Review before use as a normative capability statement"). It remains an informative requirements statement (`draft`, `experimental`). See: [HDB-1014](https://hl7germany.atlassian.net/browse/HDB-1014)

@@ -13,7 +13,7 @@ The generated ImplementationGuide claims the CRMI shareable, publishable, and co
 
 | | |
 | :--- | :--- |
-| Approval date | `2026-08-31` |
+| Approval date | `2026-09-10` |
 | Effective period | starts in`2027` |
 | Knowledge capability | `shareable`,`publishable` |
 | Package source | `de.medizininformatikinitiative.kerndatensatz.meta`at`2027.0.0-ballot` |
@@ -33,8 +33,8 @@ The Meta module applies the Basis module's CRMI publication pattern to the resou
 | MII SearchParameter profile | CRMI shareable and publishable StructureDefinition profiles; knowledge capabilities; version algorithm and package policy; package source; usage; approval and effective dates; topic; contributors; CRMI licence |
 | Deprecated MII licence extension | The same StructureDefinition metadata, with usage directing implementers to the CRMI License extension |
 | MII site CodeSystem | CRMI shareable and publishable CodeSystem profiles; knowledge capabilities; version algorithm and package policy; package source; approval and effective dates; topic; contributors; CRMI licence |
-| Meta CapabilityStatement | CRMI shareable and publishable CapabilityStatement profiles; knowledge capabilities; version algorithm and package policy; package source; draft-specific usage; approval and effective dates; topic; contributors; CRMI licence |
-| SearchParameter resources | MII SearchParameter profile; CRMI licence; version algorithm |
+| Meta CapabilityStatement | CRMI shareable and publishable CapabilityStatement profiles; knowledge capabilities; version algorithm and package policy; package source; usage; approval and effective dates; topic; contributors; CRMI licence |
+| SearchParameter resources | MII SearchParameter profile; CRMI licence; version algorithm and package policy; package source |
 | SearchParameter collection and transaction bundles | Package source |
 | Expansion manifest | CRMI Manifest Parameters profile |
 
