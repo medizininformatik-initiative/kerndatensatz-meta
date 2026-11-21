@@ -5,6 +5,11 @@
 
 **Date:** unreleased
 
+* **Changed:** The home page lists the author and, new, the contributors by
+  name and GitHub handle. The contributor metadata of the conformance
+  artifacts names Julian Saß as author and editor (`artifact-author`,
+  `artifact-editor`). See:
+  [#275](https://github.com/medizininformatik-initiative/kerndatensatz-meta/issues/275)
 * **Added:** The [Guidance for Implementers](implementer-guidance.html)
   explains how module CapabilityStatements list the result parameters
   `_count`, `_summary` and `_elements`. See:
