@@ -156,6 +156,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-ex-meta-
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/artifact-author",
     "valueContactDetail" : {
+      "name" : "Julian Saß",
       "telecom" : [{
         "system" : "email",
         "value" : "julian.sass@charite.de"
@@ -165,7 +166,11 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-ex-meta-
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/artifact-editor",
     "valueContactDetail" : {
-      "name" : "Taskforce Core Data Set"
+      "name" : "Julian Saß",
+      "telecom" : [{
+        "system" : "email",
+        "value" : "julian.sass@charite.de"
+      }]
     }
   },
   {

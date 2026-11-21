@@ -27,14 +27,31 @@ This guide was created within the Medical Informatics Initiative and is subject 
 
 ### Contacts
 
-* Julian Saß, Berlin Institute of Health at Charité (BIH)
-* Karoline Buckow, TMF – Technology and Methods Platform for Networked Medical Research e. V.
+* Julian Saß ([@julsas](https://github.com/julsas))
+* Karoline Buckow ([@karoline-buckow](https://github.com/karoline-buckow))
 
 Questions about this publication may be asked at [chat.fhir.org](https://chat.fhir.org) in the `german/mi-initiative` stream. Comments and criticism are welcome as [GitHub issues](https://github.com/medizininformatik-initiative/kerndatensatz-meta/issues).
 
 ### Authors
 
-* Julian Saß, Berlin Institute of Health at Charité (BIH)
+* Julian Saß ([@julsas](https://github.com/julsas))
+
+### Contributors
+
+In alphabetical order:
+
+* Danny Ammon ([@DannyAmmon](https://github.com/DannyAmmon))
+* Karoline Buckow ([@karoline-buckow](https://github.com/karoline-buckow))
+* Thomas Debertshäuser ([@ThomasDeBe](https://github.com/ThomasDeBe))
+* Margaux Gatrio ([@Gauxi](https://github.com/Gauxi))
+* Alexa Iancu ([@alexa-ian](https://github.com/alexa-ian))
+* Alexander Kiel ([@alexanderkiel](https://github.com/alexanderkiel))
+* Matthias Löbe ([@beanformer](https://github.com/beanformer))
+* Thomas Smallert ([@ThomasSmallert](https://github.com/ThomasSmallert))
+* Holger Stenzhorn ([@holger-stenzhorn](https://github.com/holger-stenzhorn))
+* Marcel Susky ([@msusky](https://github.com/msusky))
+* Patrick Werner ([@patrick-werner](https://github.com/patrick-werner))
+* Alexander Zautke ([@alexzautke](https://github.com/alexzautke))
 
 ### Copyright and licence
 

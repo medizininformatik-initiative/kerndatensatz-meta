@@ -106,6 +106,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/artifact-author",
     "valueContactDetail" : {
+      "name" : "Julian Saß",
       "telecom" : [{
         "system" : "email",
         "value" : "julian.sass@charite.de"
@@ -115,7 +116,11 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/artifact-editor",
     "valueContactDetail" : {
-      "name" : "Taskforce Core Data Set"
+      "name" : "Julian Saß",
+      "telecom" : [{
+        "system" : "email",
+        "value" : "julian.sass@charite.de"
+      }]
     }
   },
   {

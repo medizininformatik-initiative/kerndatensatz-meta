@@ -9,6 +9,7 @@
 
 **Datum:** unveröffentlicht
 
+* **Changed:** Die Startseite nennt den Autor und, neu, die Mitwirkenden mit Namen und GitHub-Handle. Die Beitragenden-Metadaten der Konformitätsartefakte nennen Julian Saß als Autor und Redaktion (`artifact-author`, `artifact-editor`). Siehe: [#275](https://github.com/medizininformatik-initiative/kerndatensatz-meta/issues/275)
 * **Added:** Die [Anleitung für Implementierende](implementer-guidance.md) erläutert, wie Modul-CapabilityStatements die Ergebnisparameter `_count`, `_summary` und `_elements` aufführen. Siehe: [#91](https://github.com/medizininformatik-initiative/kerndatensatz-meta/issues/91)
 * **Changed:** Die [Metadaten-Übersicht](metadata.md) nennt das aktuelle Freigabedatum und die Metadaten, die das CapabilityStatement und die SearchParameter-Ressourcen tragen.
 * **Added:** Eine Seite [Modulkonventionen](conventions.md) beschreibt, wie die KDS-Module Beispielinstanzen als Testdaten (`HTEST`) kennzeichnen und Lizenzen angeben.

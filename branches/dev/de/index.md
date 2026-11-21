@@ -27,16 +27,33 @@ Dieser Leitfaden ist im Rahmen der Medizininformatik-Initiative erstellt worden 
 
 ### Ansprechpartner
 
-* Julian Saß, Berlin Institute of Health at Charité (BIH)
-* Karoline Buckow, TMF – Technologie- und Methodenplattform für die vernetzte medizinische Forschung e.V.
+* Julian Saß ([@julsas](https://github.com/julsas))
+* Karoline Buckow ([@karoline-buckow](https://github.com/karoline-buckow))
 
 Fragen zu der vorliegenden Publikation können unter [chat.fhir.org](https://chat.fhir.org) im Stream 'german/mi-initiative' gestellt werden.
 
 Anmerkungen und Kritik werden in Form von 'Issues' auf [GitHub](https://github.com/medizininformatik-initiative/kerndatensatz-meta/issues) gern entgegengenommen.
 
-### Autoren (in alphabetischer Reihenfolge)
+### Autor
 
-* Julian Saß, Berlin Institute of Health at Charité (BIH)
+* Julian Saß ([@julsas](https://github.com/julsas))
+
+### Mitwirkende
+
+In alphabetischer Reihenfolge:
+
+* Danny Ammon ([@DannyAmmon](https://github.com/DannyAmmon))
+* Karoline Buckow ([@karoline-buckow](https://github.com/karoline-buckow))
+* Thomas Debertshäuser ([@ThomasDeBe](https://github.com/ThomasDeBe))
+* Margaux Gatrio ([@Gauxi](https://github.com/Gauxi))
+* Alexa Iancu ([@alexa-ian](https://github.com/alexa-ian))
+* Alexander Kiel ([@alexanderkiel](https://github.com/alexanderkiel))
+* Matthias Löbe ([@beanformer](https://github.com/beanformer))
+* Thomas Smallert ([@ThomasSmallert](https://github.com/ThomasSmallert))
+* Holger Stenzhorn ([@holger-stenzhorn](https://github.com/holger-stenzhorn))
+* Marcel Susky ([@msusky](https://github.com/msusky))
+* Patrick Werner ([@patrick-werner](https://github.com/patrick-werner))
+* Alexander Zautke ([@alexzautke](https://github.com/alexzautke))
 
 ### Copyright-Hinweis und Nutzungshinweise
 

@@ -75,6 +75,7 @@
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/artifact-author">
     <valueContactDetail>
+      <name value="Julian Saß"/>
       <telecom>
         <system value="email"/>
         <value value="julian.sass@charite.de"/>
@@ -83,7 +84,11 @@
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/artifact-editor">
     <valueContactDetail>
-      <name value="Taskforce Core Data Set"/>
+      <name value="Julian Saß"/>
+      <telecom>
+        <system value="email"/>
+        <value value="julian.sass@charite.de"/>
+      </telecom>
     </valueContactDetail>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/artifact-reviewer">
