@@ -9,6 +9,8 @@
 
 **Date:** unreleased
 
+* **Added:** A [Module Conventions](conventions.md) page describing how the KDS modules label example instances as test data (`HTEST`) and declare licences.
+* **Changed:** The copyright notice on the home page names the Medical Informatics Initiative (MII) instead of TMF e. V. The [Extensions](extensions.md) page marks MII EX Meta License Codeable as deprecated in favour of the CRMI extension `crmi-license`.
 * **Changed:** The CapabilityStatement [MII CapabilityStatement Meta Server Capabilities](CapabilityStatement-mii-cps-meta-server-capabilities.md) has a proper description, `purpose`, `rest.documentation` and usage note (`artifact-usage`) instead of the placeholder texts from the migration ("Review before use as a normative capability statement"). It remains an informative requirements statement (`draft`, `experimental`). See: [HDB-1014](https://hl7germany.atlassian.net/browse/HDB-1014)
 * **Added:** A [search parameter overview](search-parameters.md) listing every active search parameter with its resource type, type and FHIRPath expression, and the retired search parameters.
 * **Added:** The CapabilityStatement documents an example query for every search parameter covered by the CI search tests; see [MII CapabilityStatement Meta Server Capabilities](CapabilityStatement-mii-cps-meta-server-capabilities.md).

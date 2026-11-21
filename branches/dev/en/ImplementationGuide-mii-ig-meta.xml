@@ -2870,6 +2870,14 @@
         </page>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="conventions.html"/>
+          </extension>
+          <nameUrl value="conventions.html"/>
+          <title value="Module Conventions"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
             <valueUrl value="uml-diagrams.html"/>
           </extension>
           <nameUrl value="uml-diagrams.html"/>

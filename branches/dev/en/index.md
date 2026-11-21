@@ -38,7 +38,7 @@ Questions about this publication may be asked at [chat.fhir.org](https://chat.fh
 
 ### Copyright and licence
 
-© 2019+ TMF e. V., Charlottenstraße 42, 10117 Berlin.
+© 2019+ Medical Informatics Initiative (MII).
 
 This work is licensed under the [Creative Commons Attribution 4.0 International licence](https://creativecommons.org/licenses/by/4.0/). For the rights governing the underlying FHIR technology, see the FHIR base specification. Some code systems are issued and maintained by other organisations; the copyright of the publisher named there applies.
 

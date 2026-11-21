@@ -7,3 +7,5 @@
 
 The Meta module publishes foundational conformance artifacts used across Core Data Set modules.
 
+The [Module Conventions](conventions.md) describe how the KDS modules label test data and declare licences.
+
