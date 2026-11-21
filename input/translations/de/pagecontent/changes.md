@@ -5,6 +5,13 @@
 
 **Datum:** unveröffentlicht
 
+* **Added:** Die [Anleitung für Implementierende](implementer-guidance.html)
+  erläutert, wie Modul-CapabilityStatements die Ergebnisparameter `_count`,
+  `_summary` und `_elements` aufführen. Siehe:
+  [#91](https://github.com/medizininformatik-initiative/kerndatensatz-meta/issues/91)
+* **Changed:** Die [Metadaten-Übersicht](metadata.html) nennt das aktuelle
+  Freigabedatum und die Metadaten, die das CapabilityStatement und die
+  SearchParameter-Ressourcen tragen.
 * **Added:** Eine Seite [Modulkonventionen](conventions.html) beschreibt, wie
   die KDS-Module Beispielinstanzen als Testdaten (`HTEST`) kennzeichnen und
   Lizenzen angeben.

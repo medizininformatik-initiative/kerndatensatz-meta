@@ -13,7 +13,7 @@ Metadaten:
 
 | Metadatum | Wert oder Verwendung |
 | --- | --- |
-| Freigabedatum | `2026-08-31` |
+| Freigabedatum | `2026-09-10` |
 | Geltungszeitraum | beginnt `2027` |
 | Wissensfähigkeit | `shareable`, `publishable` |
 | Paketquelle | `de.medizininformatikinitiative.kerndatensatz.meta` in `2027.0.0-ballot` |
@@ -37,8 +37,8 @@ Ressourcentypen an, die in beiden Modulen vorkommen:
 | MII-SearchParameter-Profil | CRMI-Profile für verteilbare und veröffentlichbare StructureDefinitions; Wissensfähigkeiten; Versionsalgorithmus und Paket-Versionsrichtlinie; Paketquelle; Nutzungshinweis; Freigabe- und Geltungsdatum; Thema; Beitragende; CRMI-Lizenz |
 | Veraltete MII-Lizenz-Extension | Dieselben StructureDefinition-Metadaten, mit einem Nutzungshinweis auf die CRMI License Extension |
 | MII-Standorte-CodeSystem | CRMI-Profile für verteilbare und veröffentlichbare CodeSystems; Wissensfähigkeiten; Versionsalgorithmus und Paket-Versionsrichtlinie; Paketquelle; Freigabe- und Geltungsdatum; Thema; Beitragende; CRMI-Lizenz |
-| Meta-CapabilityStatement | CRMI-Profile für verteilbare und veröffentlichbare CapabilityStatements; Wissensfähigkeiten; Versionsalgorithmus und Paket-Versionsrichtlinie; Paketquelle; entwurfsspezifischer Nutzungshinweis; Freigabe- und Geltungsdatum; Thema; Beitragende; CRMI-Lizenz |
-| SearchParameter-Ressourcen | MII-SearchParameter-Profil; CRMI-Lizenz; Versionsalgorithmus |
+| Meta-CapabilityStatement | CRMI-Profile für verteilbare und veröffentlichbare CapabilityStatements; Wissensfähigkeiten; Versionsalgorithmus und Paket-Versionsrichtlinie; Paketquelle; Nutzungshinweis; Freigabe- und Geltungsdatum; Thema; Beitragende; CRMI-Lizenz |
+| SearchParameter-Ressourcen | MII-SearchParameter-Profil; CRMI-Lizenz; Versionsalgorithmus und Paket-Versionsrichtlinie; Paketquelle |
 | SearchParameter-Collection- und Transaction-Bundles | Paketquelle |
 | Expansionsmanifest | CRMI Manifest Parameters-Profil |
 
