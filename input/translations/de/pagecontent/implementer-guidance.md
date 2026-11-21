@@ -19,3 +19,23 @@ Bei der Implementierung von Suchparametern:
   [Beispiele](examples.html) ein SearchParameter-Collection-Bundle und ein
   SearchParameter-Transaction-Bundle bereit. Beide Bundles enthalten sämtliche
   aktiven SearchParameter-Ressourcen, die dieses Modul veröffentlicht.
+
+### Ergebnisparameter in Modul-CapabilityStatements
+
+`_count`, `_summary` und `_elements` steuern das Ergebnis einer Suche; sie sind
+keine Suchparameter und haben keine SearchParameter-Definition. Die
+CapabilityStatements der Module führen sie auf, wo ein Server sie unterstützen
+muss: als `rest.resource.searchParam` mit `type` = `special` und ohne
+`definition`. Das folgt dem in der FHIR-Community diskutierten Kompromiss, bis
+es eine bessere Beschreibung solcher Fähigkeiten gibt. Das RuleSet
+`SupportSpecialSearchParam` in `input/fsh/rulesets/cps-rules.fsh` schreibt
+einen solchen Eintrag:
+
+```
+* insert SupportResource(Condition, #SHALL)
+* insert SupportSpecialSearchParam(_count, #special, #SHALL)
+* insert SupportSpecialSearchParam(_summary, #special, #SHALL)
+```
+
+Das CapabilityStatement des Meta-Moduls führt nur die von diesem Modul
+definierten SearchParameter auf und enthält daher keine Ergebnisparameter.
