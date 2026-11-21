@@ -63,9 +63,8 @@ Alias: $identifier-type-de-basis = http://fhir.de/CodeSystem/identifier-type-de-
 Alias: $gender-amtlich-de = http://fhir.de/CodeSystem/gender-amtlich-de
 Alias: $ags = http://fhir.de/sid/destatis/ags
 
-// ── FHIR core extensions / MII cross-module ──────────────────────────────────
+// ── FHIR core extensions ─────────────────────────────────────────────────────
 Alias: $data-absent-reason = http://hl7.org/fhir/StructureDefinition/data-absent-reason
-Alias: $MII-Reference = https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference
 
 // ── CRMI (hl7.fhir.uv.crmi, a pinned dependency) ─────────────────────────────
 // The full basis block. The profiles are claimed via the RuleSets in
